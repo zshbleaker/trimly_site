@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trimly — Clip the best moments from long videos</title>
+  <meta name="description" content="Trimly is a native, file-first media trimmer for iPhone, iPad, and Mac. Batch clip export with no re-encoding, ordered Photos timestamps, Apple Log LUTs, frame capture, Live Photos, and audio waveforms. Fully offline, no account.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂️</text></svg>">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange-start: #FF9500;
+      --orange-end: #FF6B00;
+      --blue-start: #32ADE6;
+      --blue-end: #007AFF;
+      --green: #30D158;
+      --purple: #BF5AF2;
+      --text-primary: #1D1D1F;
+      --text-secondary: #6E6E73;
+      --text-tertiary: #AEAEB2;
+      --bg-primary: #FFFFFF;
+      --bg-secondary: #F5F5F7;
+      --bg-dark: #1D1D1F;
+      --border-color: rgba(0, 0, 0, 0.06);
+      --font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Noto Sans SC', 'Noto Sans JP', Arial, sans-serif;
+      --max-w: 1080px;
+      --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font);
+      color: var(--text-primary);
+      background: var(--bg-primary);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* === NAV === */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.82);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text-primary);
+    }
+
+    .nav-brand svg { width: 32px; height: 32px; border-radius: 22%; }
+    .nav-brand span { font-weight: 600; font-size: 17px; letter-spacing: -0.01em; }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .nav-link {
+      font-size: 14px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-link:hover { color: var(--text-primary); }
+
+    @media (max-width: 767px) {
+      .nav-link { display: none; }
+    }
+
+    .lang-switcher { position: relative; }
+
+    .lang-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      background: none;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-family: var(--font);
+      font-size: 13px;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.2s var(--ease);
+    }
+
+    .lang-btn:hover { background: var(--bg-secondary); color: var(--text-primary); }
+    .lang-btn svg { width: 16px; height: 16px; }
+
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: calc(100% + 6px);
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: saturate(180%) blur(20px);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      overflow: hidden;
+      min-width: 140px;
+    }
+
+    .lang-dropdown.open { display: block; }
+
+    .lang-option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 16px;
+      font-size: 14px;
+      color: var(--text-primary);
+      cursor: pointer;
+      transition: background 0.15s;
+      border: none;
+      background: none;
+      width: 100%;
+      font-family: var(--font);
+      text-align: left;
+    }
+
+    .lang-option:hover { background: var(--bg-secondary); }
+    .lang-option .check { color: var(--blue-end); font-weight: 600; opacity: 0; }
+    .lang-option.active .check { opacity: 1; }
+
+    /* === HERO === */
+    .hero {
+      padding: 80px 24px 0;
+      text-align: center;
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    @media (max-width: 767px) {
+      .hero { padding: 56px 20px 0; }
+    }
+
+    .hero-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 22%;
+      overflow: hidden;
+      margin: 0 auto 24px;
+      box-shadow: 0 6px 30px rgba(0,0,0,0.10);
+      animation: heroFloat 0.8s var(--ease) both;
+    }
+
+    .hero-icon svg { width: 100%; height: 100%; display: block; }
+
+    .hero h1 {
+      font-size: clamp(36px, 5.5vw, 52px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.12;
+      animation: heroFade 0.7s 0.1s var(--ease) both;
+    }
+
+    .hero-tagline {
+      font-size: clamp(17px, 2.5vw, 22px);
+      color: var(--text-secondary);
+      margin-top: 12px;
+      font-weight: 400;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+      animation: heroFade 0.7s 0.2s var(--ease) both;
+    }
+
+    .hero-cta-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 32px;
+      animation: heroFade 0.7s 0.3s var(--ease) both;
+      flex-wrap: wrap;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 32px;
+      background: var(--text-primary);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      border-radius: 100px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+      font-family: var(--font);
+    }
+
+    .hero-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+    }
+
+    .hero-cta:active { transform: translateY(0); }
+    .hero-cta svg { width: 20px; height: 20px; }
+
+    .hero-meta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+      animation: heroFade 0.7s 0.4s var(--ease) both;
+    }
+
+    .hero-meta-item {
+      font-size: 13px;
+      color: var(--text-tertiary);
+      font-weight: 500;
+    }
+
+    /* === HERO SCREENSHOT === */
+    .hero-screenshot {
+      margin-top: 56px;
+      animation: heroFade 0.8s 0.45s var(--ease) both;
+      position: relative;
+    }
+
+    .screenshot-placeholder {
+      max-width: 900px;
+      margin: 0 auto;
+      aspect-ratio: 16 / 10;
+      border-radius: 16px 16px 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .screenshot-placeholder img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .screenshot-label {
+      color: var(--text-tertiary);
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+
+    @media (max-width: 767px) {
+      .hero-screenshot { margin-top: 40px; }
+      .screenshot-placeholder { border-radius: 12px 12px 0 0; }
+    }
+
+    /* === DEEP FEATURE SECTIONS === */
+    .features {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 80px 24px 0;
+    }
+
+    .feature-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+      align-items: center;
+      padding: 64px 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .feature-block:last-child { border-bottom: none; }
+
+    .feature-block.reverse .feature-text { order: 2; }
+    .feature-block.reverse .feature-visual { order: 1; }
+
+    @media (max-width: 767px) {
+      .features { padding: 24px 20px 0; }
+    }
+
+    @media (max-width: 700px) {
+      .feature-block { grid-template-columns: 1fr; gap: 32px; padding: 48px 0; }
+      .feature-block.reverse .feature-text { order: 1; }
+      .feature-block.reverse .feature-visual { order: 2; }
+    }
+
+    .feature-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+
+    .feature-eyebrow svg { width: 18px; height: 18px; }
+    .feature-eyebrow.orange { color: #E07B00; }
+    .feature-eyebrow.blue { color: #1A8FE3; }
+    .feature-eyebrow.green { color: #1FA34A; }
+    .feature-eyebrow.purple { color: #A33DD8; }
+
+    .feature-block h2 {
+      font-size: clamp(24px, 3.4vw, 32px);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      line-height: 1.18;
+      margin-bottom: 14px;
+    }
+
+    .feature-block p {
+      font-size: clamp(15px, 2vw, 17px);
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    .feature-points {
+      list-style: none;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .feature-points li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 15px;
+      color: var(--text-primary);
+    }
+
+    .feature-points li svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    .feature-points.orange li svg { color: var(--orange-end); }
+    .feature-points.blue li svg { color: var(--blue-end); }
+    .feature-points.green li svg { color: var(--green); }
+    .feature-points.purple li svg { color: var(--purple); }
+
+    /* Feature visual placeholder */
+    .feature-visual {
+      aspect-ratio: 4 / 3;
+      border-radius: 20px;
+      border: 1px solid var(--border-color);
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 16px;
+    }
+
+    .feature-visual img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .feature-visual.orange { background: linear-gradient(145deg, rgba(255,149,0,0.09), rgba(255,107,0,0.04)); }
+    .feature-visual.blue { background: linear-gradient(145deg, rgba(50,173,230,0.09), rgba(0,122,255,0.04)); }
+    .feature-visual.green { background: linear-gradient(145deg, rgba(48,209,88,0.09), rgba(36,176,72,0.04)); }
+    .feature-visual.purple { background: linear-gradient(145deg, rgba(191,90,242,0.09), rgba(120,40,200,0.04)); }
+
+    .fv-window {
+      width: 100%;
+      max-width: 272px;
+      background: var(--bg-primary);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      box-shadow: 0 14px 40px rgba(0,0,0,0.10);
+      overflow: hidden;
+    }
+    .fv-bar {
+      height: 30px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0 13px;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .fv-bar span { width: 9px; height: 9px; border-radius: 50%; background: rgba(0,0,0,0.10); }
+    .fv-body { display: flex; align-items: center; gap: 14px; padding: 20px 18px; }
+    .fv-badge {
+      width: 46px; height: 46px;
+      flex-shrink: 0;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .fv-badge svg { width: 24px; height: 24px; }
+    .fv-badge.orange { background: linear-gradient(135deg, rgba(255,149,0,0.18), rgba(255,107,0,0.12)); }
+    .fv-badge.blue { background: linear-gradient(135deg, rgba(50,173,230,0.18), rgba(0,122,255,0.12)); }
+    .fv-badge.green { background: linear-gradient(135deg, rgba(48,209,88,0.18), rgba(36,176,72,0.12)); }
+    .fv-badge.purple { background: linear-gradient(135deg, rgba(191,90,242,0.18), rgba(120,40,200,0.12)); }
+    .fv-lines { flex: 1; display: flex; flex-direction: column; gap: 8px; }
+    .fv-lines i { height: 7px; border-radius: 4px; background: rgba(0,0,0,0.07); display: block; }
+    .fv-lines i:first-child { width: 82%; }
+    .fv-lines i:last-child { width: 56%; }
+
+    .vlabel {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-tertiary);
+      letter-spacing: 0.03em;
+    }
+
+    /* === SHOWCASE (devices) === */
+    .showcase {
+      padding: 96px 24px;
+      background: var(--bg-dark);
+      color: #fff;
+      margin-top: 64px;
+    }
+
+    .showcase-inner { max-width: var(--max-w); margin: 0 auto; }
+
+    .showcase h2 {
+      text-align: center;
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      margin-bottom: 16px;
+    }
+
+    .showcase-subtitle {
+      text-align: center;
+      font-size: clamp(15px, 2vw, 18px);
+      color: rgba(255,255,255,0.5);
+      max-width: 480px;
+      margin: 0 auto 64px;
+    }
+
+    /* Carousel */
+    .carousel { max-width: 700px; margin: 0 auto; }
+
+    .carousel-stage {
+      position: relative;
+      height: 460px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .carousel-slide {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(14px) scale(0.97);
+      transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+      pointer-events: none;
+    }
+
+    .carousel-slide.active {
+      opacity: 1;
+      transform: none;
+      pointer-events: auto;
+    }
+
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 32px;
+    }
+
+    .carousel-dot {
+      width: 8px;
+      height: 8px;
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.25);
+      cursor: pointer;
+      transition: width 0.3s var(--ease), background 0.3s var(--ease), border-radius 0.3s var(--ease);
+    }
+
+    .carousel-dot:hover { background: rgba(255,255,255,0.5); }
+    .carousel-dot.active { width: 24px; border-radius: 4px; background: #fff; }
+
+    @media (max-width: 767px) {
+      .showcase { padding: 64px 20px 72px; margin-top: 48px; }
+      .showcase-subtitle { margin-bottom: 48px; }
+      .carousel-stage { height: 400px; }
+    }
+
+    .device { border-radius: 16px; overflow: hidden; position: relative; }
+
+    .device-phone {
+      aspect-ratio: 9 / 19.5;
+      background: linear-gradient(145deg, #2c2c2e, #3a3a3c);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 28px;
+      height: 100%;
+      width: auto;
+    }
+
+    .device-mac {
+      aspect-ratio: 2694 / 1758;
+      background: linear-gradient(145deg, #2c2c2e, #3a3a3c);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      width: 100%;
+      max-width: 560px;
+    }
+
+    .device-ipad {
+      aspect-ratio: 2360 / 1640;
+      background: linear-gradient(145deg, #2c2c2e, #3a3a3c);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 18px;
+      width: 100%;
+      max-width: 520px;
+    }
+
+    .device img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .device-label {
+      position: absolute;
+      bottom: 16px;
+      left: 0; right: 0;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.35);
+      letter-spacing: 0.03em;
+    }
+
+    /* === PRIVACY === */
+    .privacy {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 96px 24px;
+      text-align: center;
+    }
+
+    .privacy-icon {
+      width: 64px; height: 64px;
+      margin: 0 auto 24px;
+      border-radius: 16px;
+      display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, rgba(48,209,88,0.14), rgba(36,176,72,0.14));
+    }
+    .privacy-icon svg { width: 32px; height: 32px; color: var(--green); }
+
+    .privacy h2 {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      margin-bottom: 16px;
+    }
+
+    .privacy p {
+      font-size: clamp(15px, 2vw, 18px);
+      color: var(--text-secondary);
+      max-width: 560px;
+      margin: 0 auto 32px;
+    }
+
+    .privacy-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .privacy-tag {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-primary);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 100px;
+      padding: 8px 18px;
+    }
+
+    @media (max-width: 767px) { .privacy { padding: 72px 20px; } }
+
+    /* === BOTTOM CTA === */
+    .bottom-cta {
+      padding: 100px 24px;
+      text-align: center;
+    }
+
+    .bottom-cta h2 {
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      margin-bottom: 8px;
+    }
+
+    .bottom-cta-sub {
+      font-size: clamp(15px, 2vw, 18px);
+      color: var(--text-secondary);
+      margin-bottom: 32px;
+    }
+
+    .bottom-cta .hero-cta { animation: none; }
+
+    @media (max-width: 767px) { .bottom-cta { padding: 72px 20px; } }
+
+    /* === FOOTER === */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border-color);
+    }
+
+    .footer-copy { font-size: 13px; color: var(--text-tertiary); }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: var(--text-secondary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover { color: var(--text-primary); }
+
+    /* === ANIMATIONS === */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+    }
+
+    .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+    @keyframes heroFloat {
+      from { opacity: 0; transform: scale(0.9) translateY(16px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+
+    @keyframes heroFade {
+      from { opacity: 0; transform: translateY(16px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* === RTL === */
+    body[dir="rtl"] .lang-dropdown { right: auto; left: 0; }
+    body[dir="rtl"] .feature-points li { flex-direction: row-reverse; text-align: right; }
+    body[dir="rtl"] .feature-eyebrow { flex-direction: row-reverse; }
+    body[dir="rtl"] .hero-cta { flex-direction: row-reverse; }
+    body[dir="rtl"] .privacy-tags { direction: rtl; }
+    :lang(ar) body { font-family: 'SF Arabic', -apple-system, BlinkMacSystemFont, 'Geeza Pro', 'Arial Unicode MS', Arial, sans-serif; }
+    :lang(ar) .hero h1,
+    :lang(ar) .feature-block h2,
+    :lang(ar) .showcase h2,
+    :lang(ar) .privacy h2,
+    :lang(ar) .bottom-cta h2 { line-height: 1.3; }
+    :lang(ar) .hero-tagline,
+    :lang(ar) .feature-block p,
+    :lang(ar) .advantage-desc { line-height: 1.9; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-brand" href="#">
+        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="n-track" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1C1C1E"/><stop offset="100%" stop-color="#2C2C2E"/></linearGradient>
+            <linearGradient id="n-clip" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#32ADE6"/><stop offset="100%" stop-color="#007AFF"/></linearGradient>
+            <mask id="n-holes"><rect width="1024" height="1024" fill="white"/><line x1="230" y1="400" x2="794" y2="400" stroke="black" stroke-width="24" stroke-dasharray="24 36"/><line x1="230" y1="624" x2="794" y2="624" stroke="black" stroke-width="24" stroke-dasharray="24 36"/></mask>
+          </defs>
+          <g mask="url(#n-holes)">
+            <rect x="162" y="362" width="700" height="300" rx="24" fill="url(#n-track)"/>
+            <rect x="300" y="362" width="220" height="300" fill="url(#n-clip)"/>
+            <rect x="600" y="362" width="160" height="300" fill="url(#n-clip)"/>
+            <path d="M180,502 v20 M210,482 v60 M240,462 v100 M270,492 v40 M300,432 v160 M330,472 v80 M360,497 v30 M390,442 v140 M420,472 v80 M450,412 v200 M480,452 v120 M510,482 v60 M540,462 v100 M570,492 v40 M600,472 v80 M630,452 v120 M660,432 v160 M690,482 v60 M720,462 v100 M750,492 v40 M780,442 v140 M810,472 v80 M840,497 v30" stroke="#fff" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.4"/>
+          </g>
+          <rect x="162" y="362" width="700" height="300" rx="24" fill="none" stroke="#555" stroke-width="4" opacity="0.5"/>
+          <polygon points="276,266 324,266 300,311" fill="#30D158" stroke="#30D158" stroke-width="8" stroke-linejoin="round"/>
+          <rect x="296" y="306" width="8" height="390" rx="4" fill="#30D158"/>
+        </svg>
+        <span>Trimly</span>
+      </a>
+
+      <div class="nav-right">
+        <a class="nav-link" href="#features" data-i18n="nav.features">Features</a>
+        <a class="nav-link" href="https://apps.apple.com/app/trimly" target="_blank" rel="noopener" data-i18n="nav.download">Download</a>
+        <div class="lang-switcher">
+          <button class="lang-btn" onclick="toggleLangDropdown(event)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/></svg>
+            <span class="lang-current">EN</span>
+          </button>
+          <div class="lang-dropdown" id="langDropdown">
+            <button class="lang-option" data-lang="en" onclick="setLanguage('en')">English <span class="check">&#10003;</span></button>
+            <button class="lang-option" data-lang="zh" onclick="setLanguage('zh')">简体中文 <span class="check">&#10003;</span></button>
+            <button class="lang-option" data-lang="ja" onclick="setLanguage('ja')">日本語 <span class="check">&#10003;</span></button>
+            <button class="lang-option" data-lang="ar" onclick="setLanguage('ar')">عربي <span class="check">&#10003;</span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-icon">
+      <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="h-track" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#1C1C1E"/><stop offset="100%" stop-color="#2C2C2E"/></linearGradient>
+          <linearGradient id="h-clip" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#32ADE6"/><stop offset="100%" stop-color="#007AFF"/></linearGradient>
+          <filter id="h-shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.5"/></filter>
+          <mask id="h-holes"><rect width="1024" height="1024" fill="white"/><line x1="230" y1="400" x2="794" y2="400" stroke="black" stroke-width="24" stroke-dasharray="24 36"/><line x1="230" y1="624" x2="794" y2="624" stroke="black" stroke-width="24" stroke-dasharray="24 36"/></mask>
+        </defs>
+        <g mask="url(#h-holes)">
+          <rect x="162" y="362" width="700" height="300" rx="24" fill="url(#h-track)"/>
+          <path d="M190,362 v20 M220,362 v10 M250,362 v10 M280,362 v10 M310,362 v20 M340,362 v10 M370,362 v10 M400,362 v10 M430,362 v20 M460,362 v10 M490,362 v10 M520,362 v10 M550,362 v20 M580,362 v10 M610,362 v10 M640,362 v10 M670,362 v20 M700,362 v10 M730,362 v10 M760,362 v10 M790,362 v20 M820,362 v10 M850,362 v10" stroke="#fff" stroke-width="2" opacity="0.15"/>
+          <rect x="300" y="362" width="220" height="300" fill="url(#h-clip)"/>
+          <rect x="600" y="362" width="160" height="300" fill="url(#h-clip)"/>
+          <path d="M180,502 v20 M210,482 v60 M240,462 v100 M270,492 v40 M300,432 v160 M330,472 v80 M360,497 v30 M390,442 v140 M420,472 v80 M450,412 v200 M480,452 v120 M510,482 v60 M540,462 v100 M570,492 v40 M600,472 v80 M630,452 v120 M660,432 v160 M690,482 v60 M720,462 v100 M750,492 v40 M780,442 v140 M810,472 v80 M840,497 v30" stroke="#fff" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.4"/>
+        </g>
+        <rect x="162" y="362" width="700" height="300" rx="24" fill="none" stroke="#555" stroke-width="4" opacity="0.5"/>
+        <g filter="url(#h-shadow)">
+          <polygon points="276,266 324,266 300,311" fill="#30D158" stroke="#30D158" stroke-width="8" stroke-linejoin="round"/>
+          <rect x="296" y="306" width="8" height="390" rx="4" fill="#30D158"/>
+        </g>
+      </svg>
+    </div>
+    <h1 data-i18n="hero.heading">Clip the best moments<br>from your longest videos.</h1>
+    <p class="hero-tagline" data-i18n="hero.tagline">A native, file-first trimmer for iPhone, iPad, and Mac. Mark, trim, and batch export — in seconds, with zero re-encoding.</p>
+    <div class="hero-cta-row">
+      <a class="hero-cta" href="https://apps.apple.com/app/trimly" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        <span data-i18n="hero.cta">Download on the App Store</span>
+      </a>
+    </div>
+    <div class="hero-meta">
+      <span class="hero-meta-item" data-i18n="hero.meta1">iPhone · iPad · Mac</span>
+      <span class="hero-meta-item" data-i18n="hero.meta2">Native app</span>
+      <span class="hero-meta-item" data-i18n="hero.meta3">100% Offline</span>
+    </div>
+
+    <div class="hero-screenshot">
+      <div class="screenshot-placeholder">
+        <img src="assets/header.webp" alt="Trimly on Mac, iPad, and iPhone">
+      </div>
+    </div>
+  </section>
+
+  <!-- DEEP FEATURE SECTIONS -->
+  <section class="features" id="features"></section>
+
+  <!-- SHOWCASE -->
+  <section class="showcase">
+    <div class="showcase-inner">
+      <h2 class="fade-in" data-i18n="showcase.heading">Native on every Apple device.</h2>
+      <p class="showcase-subtitle fade-in" data-i18n="showcase.subtitle">iPhone, iPad, Mac. One app, every screen.</p>
+      <div class="carousel fade-in" id="deviceCarousel" style="transition-delay:0.1s">
+        <div class="carousel-stage">
+          <div class="carousel-slide active">
+            <div class="device device-phone">
+              <img src="assets/iphone.webp" alt="Trimly on iPhone">
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="device device-ipad">
+              <img src="assets/ipad.webp" alt="Trimly on iPad">
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <div class="device device-mac">
+              <img src="assets/mac.webp" alt="Trimly on Mac">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-dots">
+          <button class="carousel-dot active" aria-label="iPhone"></button>
+          <button class="carousel-dot" aria-label="iPad"></button>
+          <button class="carousel-dot" aria-label="Mac"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVACY -->
+  <section class="privacy fade-in">
+    <div class="privacy-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        <path d="M9 12l2 2 4-4"/>
+      </svg>
+    </div>
+    <h2 data-i18n="privacy.heading">Private by design.</h2>
+    <p data-i18n="privacy.body">Trimly runs fully on-device. It never requests network access, has no account system, and collects no user data. Your footage stays yours.</p>
+    <div class="privacy-tags" id="privacyTags"></div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="bottom-cta fade-in">
+    <h2 data-i18n="bottomCta.heading">Ready to trim?</h2>
+    <p class="bottom-cta-sub" data-i18n="bottomCta.subtitle">Available on iPhone, iPad, and Mac.</p>
+    <a class="hero-cta" href="https://apps.apple.com/app/trimly" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+      <span data-i18n="hero.cta">Download on the App Store</span>
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="mailto:hi@zshbleaker.me" data-i18n="footer.support">Support</a>
+      <a href="privacy.html" data-i18n="footer.privacy">Privacy Policy</a>
+    </div>
+    <p class="footer-copy">&copy; 2026 Trimly</p>
+  </footer>
+
+<script>
+// ===== Section icons (language-independent) =====
+const ICONS = {
+  import: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/><polyline points="9 14 12 11 15 14"/><line x1="12" y1="11" x2="12" y2="18"/></svg>',
+  export: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>',
+  clock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+  color: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="19" cy="13" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="10" cy="20" r="2.5"/><path d="M12 2a10 10 0 0 0 0 20"/></svg>',
+  capture: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>',
+  audio: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="3" y2="12"/><path d="M5 10v4M9 6v12M13 8v8M17 4v16M21 10v4"/></svg>',
+  keyboard: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M6 9h0M10 9h0M14 9h0M18 9h0M6 13h0M18 13h0M9 13h6"/></svg>',
+  ipad: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>',
+  rtl: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="12" x2="9" y2="12"/><line x1="21" y1="18" x2="3" y2="18"/><polyline points="6 15 3 12 6 9"/></svg>'
+};
+const CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+
+// Visual placeholder labels are language-independent; accents/icons by index
+const SECTION_META = [
+  { key: 'import',  accent: 'blue',   icon: 'import',   visual: 'Files · SSD · SD card' },
+  { key: 'export',  accent: 'orange', icon: 'export',   visual: 'Passthrough export' },
+  { key: 'order',   accent: 'blue',   icon: 'clock',    visual: 'Photos timeline' },
+  { key: 'lut',     accent: 'purple', icon: 'color',    visual: 'Apple Log → Rec. 709' },
+  { key: 'capture', accent: 'green',  icon: 'capture',  visual: 'Frame & Live Photo' },
+  { key: 'audio',   accent: 'orange', icon: 'audio',    visual: 'Waveform timeline' },
+  { key: 'keys',    accent: 'green',  icon: 'keyboard', visual: 'Keyboard shortcuts' },
+  { key: 'ipad',    accent: 'blue',   icon: 'ipad',     visual: 'iPad landscape layout' },
+  { key: 'rtl',    accent: 'green',  icon: 'rtl',      visual: 'RTL · يمين إلى يسار' }
+];
+
+const T = {
+  en: {
+    langLabel: 'EN',
+    nav: { features: 'Features', download: 'Download' },
+    hero: {
+      heading: 'Clip the best moments\nfrom your longest videos.',
+      tagline: 'A native, file-first trimmer for iPhone, iPad, and Mac. Mark, trim, and batch export — in seconds, with zero re-encoding.',
+      cta: 'Download on the App Store',
+      meta1: 'iPhone · iPad · Mac', meta2: 'Native app', meta3: '100% Offline'
+    },
+    sections: [
+      { eyebrow: 'Import', title: 'File-first, not Photos-first.', desc: 'Open media straight from on-device storage, iCloud Drive, external SSDs, SD cards, and other locations — without forcing everything through the system Photos library first.',
+        points: ['Direct access to Files, drives, and cards', 'No mandatory import into Photos', 'Pull media in from the Photos library too, with iCloud download progress'] },
+      { eyebrow: 'Export', title: 'Passthrough export. No transcoding.', desc: 'When your edits don’t require rendering, Trimly copies the media through untouched — keeping output fast and preserving the original quality bit for bit.',
+        points: ['No quality loss, no waiting', 'A short clip from a multi-hour file in seconds', 'FIFO export queue with unique output names'] },
+      { eyebrow: 'Organize', title: 'Timestamps that keep Photos in order.', desc: 'Exported clips can carry ordered creation dates derived from the source media and each clip’s offset, so a batch lands in the Photos library in the sequence you expect.',
+        points: ['Creation dates inherited from the source', 'Clip offsets preserve in-batch ordering', 'No manual re-sorting after export'] },
+      { eyebrow: 'Color', title: 'Apple Log and Log 2, handled.', desc: 'Built-in Apple Log and Apple Log 2 to Rec. 709 LUTs are included, with support for importing your own .cube 3D LUTs. Preview and export use the exact same LUT selection.',
+        points: ['Bundled Apple Log & Log 2 → Rec. 709 LUTs', 'Import custom .cube 3D LUTs', 'What you preview is what you export'] },
+      { eyebrow: 'Capture', title: 'Frames and Live Photos.', desc: 'Pull still frames from video, export them as screenshots, and create paired Live Photo assets ready for your Photos workflow.',
+        points: ['Capture any video frame as a still', 'Export clean screenshots', 'Generate paired Live Photo assets'] },
+      { eyebrow: 'Audio', title: 'Audio files, with real waveforms.', desc: 'Import and trim pure audio with waveform previews and audio-aware placeholders. Export avoids unsupported Photos video paths so audio just works.',
+        points: ['Trim pure audio with waveform previews', 'Segment-based waveform rendering', 'Raw PCM imported and saved as WAV'] },
+      { eyebrow: 'Speed', title: 'A complete keyboard workflow.', desc: 'Shortcuts cover playback, seeking, frame stepping, clip marking, undo/redo, deletion, and the other actions you repeat across long editing sessions.',
+        points: ['Play, seek, and step frame by frame', 'Mark clips and delete with a keypress', 'Per-file undo / redo history'] },
+      { eyebrow: 'iPad', title: 'Made for the big screen.', desc: 'iPad landscape uses a focused editing layout — player, timeline, clip controls, and export actions arranged side by side for faster review and batch clipping.',
+        points: ['Focused landscape editing layout', 'Player, timeline, and clips at a glance', 'Built for fast batch review'] }
+    ],
+    showcase: { heading: 'Native on every Apple device.', subtitle: 'iPhone, iPad, Mac. One app, every screen.' },
+    privacy: {
+      heading: 'Private by design.',
+      body: 'Trimly runs fully on-device. It never requests network access, has no account system, and collects no user data. Your footage stays yours.',
+      tags: ['Fully offline', 'No network permission', 'No account', 'No data collection']
+    },
+    bottomCta: { heading: 'Ready to trim?', subtitle: 'Available on iPhone, iPad, and Mac.' },
+    footer: { support: 'Support', privacy: 'Privacy Policy' }
+  },
+
+  zh: {
+    langLabel: '中文',
+    nav: { features: '功能', download: '下载' },
+    hero: {
+      heading: '从视频中\n截取精华时刻',
+      tagline: '一款原生、以文件为先的裁剪工具，支持 iPhone、iPad 和 Mac。标记、裁剪、批量导出 — 数秒完成，零转码。',
+      cta: '在 App Store 下载',
+      meta1: 'iPhone · iPad · Mac', meta2: '原生应用', meta3: '完全离线'
+    },
+    sections: [
+      { eyebrow: '导入', title: '以文件为先，而非照片图库优先', desc: '直接从本机存储、iCloud 云盘、外接 SSD、SD 卡等位置打开媒体，无需先把所有文件都导入系统照片图库。',
+        points: ['直接读取「文件」App、硬盘与存储卡', '无需强制导入照片图库', '也可从照片图库导入，并显示 iCloud 下载进度'] },
+      { eyebrow: '导出', title: '直通导出，不重新编码', desc: '当编辑无需渲染时，Trimly 直接原样拷贝媒体流，导出飞快，逐比特保留原始画质。',
+        points: ['不损失画质，无需等待', '从数小时长片中截取片段只需几秒', 'FIFO 导出队列，自动生成唯一文件名'] },
+      { eyebrow: '整理', title: '让照片图库保持正确顺序的时间戳', desc: '导出片段可继承基于源媒体与各片段偏移的有序拍摄时间，整批导入照片图库时自然按预期顺序排列。',
+        points: ['拍摄时间继承自源媒体', '片段偏移保留批次内顺序', '导出后无需手动重新排序'] },
+      { eyebrow: '调色', title: 'Apple Log 与 Log 2，开箱即用', desc: '内置 Apple Log 与 Apple Log 2 转 Rec. 709 的 LUT，并支持导入你自己的 .cube 3D LUT。预览与导出使用完全相同的 LUT 选择。',
+        points: ['内置 Apple Log / Log 2 → Rec. 709 LUT', '支持导入自定义 .cube 3D LUT', '预览所见即导出所得'] },
+      { eyebrow: '捕获', title: '抽帧与 Live Photo', desc: '从视频中提取静止画面，导出为截图，并生成可直接用于照片工作流的成对 Live Photo 素材。',
+        points: ['将任意视频帧捕获为静态图', '导出干净的截图', '生成成对的 Live Photo 素材'] },
+      { eyebrow: '音频', title: '纯音频，也有真实波形', desc: '导入并裁剪纯音频，提供波形预览和音频专用占位图。导出会避开照片图库不支持的视频路径，让音频顺畅可用。',
+        points: ['带波形预览的纯音频裁剪', '分段式波形渲染', '原始 PCM 导入并保存为 WAV'] },
+      { eyebrow: '高效', title: '完整的键盘工作流', desc: '快捷键覆盖播放、定位、逐帧步进、片段标记、撤销/重做、删除，以及长时间编辑中反复用到的其他操作。',
+        points: ['播放、定位与逐帧步进', '一键标记片段与删除', '每个文件独立的撤销 / 重做历史'] },
+      { eyebrow: 'iPad', title: '为大屏而生', desc: 'iPad 横屏采用专注的编辑布局 — 播放器、时间线、片段控制与导出操作并排排列，让审阅和批量裁剪更高效。',
+        points: ['专注的横屏编辑布局', '播放器、时间线与片段一目了然', '为快速批量审阅而设计'] }
+    ],
+    showcase: { heading: '每台 Apple 设备的原生体验', subtitle: 'iPhone、iPad、Mac，一个 App，适配每块屏幕。' },
+    privacy: {
+      heading: '隐私，从设计之初',
+      body: 'Trimly 完全在设备本地运行，从不请求网络访问，没有账号体系，也不收集任何用户数据。你的素材始终属于你。',
+      tags: ['完全离线', '无网络权限', '无账号', '不收集数据']
+    },
+    bottomCta: { heading: '准备好了吗？', subtitle: '支持 iPhone、iPad 和 Mac。' },
+    footer: { support: '支持', privacy: '隐私政策' }
+  },
+
+  ja: {
+    langLabel: '日本語',
+    nav: { features: '機能', download: 'ダウンロード' },
+    hero: {
+      heading: '長時間動画から\nベストな瞬間だけを。',
+      tagline: 'iPhone、iPad、Mac 向けのネイティブでファイル優先のトリマー。マーク、トリミング、一括エクスポート — 数秒で、再エンコードなし。',
+      cta: 'App Storeでダウンロード',
+      meta1: 'iPhone · iPad · Mac', meta2: 'ネイティブアプリ', meta3: '完全オフライン'
+    },
+    sections: [
+      { eyebrow: 'インポート', title: '写真ではなく、ファイル優先。', desc: '端末内ストレージ、iCloud Drive、外付けSSD、SDカードなどから直接メディアを開けます。すべてをまず写真ライブラリに取り込む必要はありません。',
+        points: ['ファイルApp・ドライブ・カードに直接アクセス', '写真ライブラリへの強制インポートなし', '写真ライブラリからも取り込み可（iCloudダウンロード進捗付き）'] },
+      { eyebrow: 'エクスポート', title: 'パススルーで書き出し。トランスコードなし。', desc: 'レンダリングが不要な編集では、メディアをそのままコピー。高速に書き出しつつ、元の画質をビット単位で保持します。',
+        points: ['画質劣化なし、待ち時間なし', '数時間のファイルから短いクリップを数秒で', 'FIFOエクスポートキューと一意な出力名'] },
+      { eyebrow: '整理', title: '写真の並び順を保つタイムスタンプ。', desc: '書き出したクリップには、元メディアと各クリップのオフセットに基づく順序付きの作成日時を付与可能。一括書き出しでも期待どおりの順序で写真ライブラリに並びます。',
+        points: ['作成日時を元メディアから継承', 'クリップのオフセットでバッチ内順序を維持', '書き出し後の手動並べ替え不要'] },
+      { eyebrow: 'カラー', title: 'Apple LogとLog 2に対応。', desc: 'Apple LogおよびApple Log 2からRec. 709へのLUTを内蔵。独自の.cube 3D LUTのインポートにも対応し、プレビューと書き出しでまったく同じLUTを使用します。',
+        points: ['Apple Log / Log 2 → Rec. 709 LUTを内蔵', 'カスタム.cube 3D LUTをインポート', 'プレビューした見た目のまま書き出し'] },
+      { eyebrow: 'キャプチャ', title: 'フレームとLive Photo。', desc: '動画から静止フレームを取り出してスクリーンショットとして書き出し、写真ワークフロー向けのLive Photoペア素材も作成できます。',
+        points: ['任意の動画フレームを静止画として取得', 'クリーンなスクリーンショットを書き出し', 'Live Photoのペア素材を生成'] },
+      { eyebrow: 'オーディオ', title: '音声ファイルにも、本物の波形を。', desc: '純粋な音声を波形プレビューと音声向けプレースホルダーでインポート・トリミング。書き出しは写真の非対応な動画経路を避け、音声がそのまま扱えます。',
+        points: ['波形プレビュー付きの音声トリミング', 'セグメント単位の波形レンダリング', 'RAW PCMを取り込みWAVとして保存'] },
+      { eyebrow: 'スピード', title: '完全なキーボードワークフロー。', desc: 'ショートカットは再生、シーク、フレーム送り、クリップのマーク、取り消し/やり直し、削除など、長い編集で繰り返す操作を網羅します。',
+        points: ['再生・シーク・フレーム単位の送り', 'キー操作でクリップのマークと削除', 'ファイルごとの取り消し / やり直し履歴'] },
+      { eyebrow: 'iPad', title: '大画面のために。', desc: 'iPadの横向きでは集中できる編集レイアウトを採用 — プレーヤー、タイムライン、クリップ操作、書き出しを横並びに配置し、確認と一括クリップを高速化します。',
+        points: ['集中できる横向き編集レイアウト', 'プレーヤー・タイムライン・クリップを一望', '高速な一括確認のために設計'] }
+    ],
+    showcase: { heading: 'すべてのAppleデバイスでネイティブ。', subtitle: 'iPhone、iPad、Mac。ひとつのアプリで、すべての画面に。' },
+    privacy: {
+      heading: '設計段階からプライバシー重視。',
+      body: 'Trimlyは完全に端末内で動作します。ネットワークアクセスを要求せず、アカウント制度もなく、ユーザーデータを一切収集しません。あなたの映像はあなたのものです。',
+      tags: ['完全オフライン', 'ネットワーク権限なし', 'アカウント不要', 'データ収集なし']
+    },
+    bottomCta: { heading: 'トリミングを始めよう。', subtitle: 'iPhone、iPad、Macで利用可能。' },
+    footer: { support: 'サポート', privacy: 'プライバシーポリシー' }
+  },
+
+  ar: {
+    langLabel: 'عربي',
+    nav: { features: 'المميزات', download: 'تنزيل' },
+    hero: {
+      heading: 'استخرج أفضل اللحظات\nمن أطول مقاطع الفيديو.',
+      tagline: 'أداة تقليم أصيلة تعمل بملفاتك مباشرةً على iPhone وiPad وMac. حدّد وقصّ وصدّر دفعات — في ثوانٍ، بدون إعادة ترميز.',
+      cta: 'تنزيل من App Store',
+      meta1: 'iPhone · iPad · Mac', meta2: 'تطبيق أصيل', meta3: 'يعمل دون إنترنت'
+    },
+    sections: [
+      { eyebrow: 'استيراد', title: 'الملفات أولاً، لا مكتبة الصور.', desc: 'افتح الوسائط مباشرةً من التخزين المحلي أو iCloud Drive أو أقراص SSD الخارجية أو بطاقات SD — دون الحاجة إلى استيراد كل شيء إلى مكتبة الصور أولاً.',
+        points: ['وصول مباشر إلى الملفات والأقراص والبطاقات', 'لا حاجة لاستيراد إجباري إلى الصور', 'استيراد من مكتبة الصور مع تتبع تقدم iCloud'] },
+      { eyebrow: 'تصدير', title: 'تصدير مباشر. بدون إعادة ترميز.', desc: 'عندما لا تستلزم تعديلاتك إعادة التصيير، تنسخ Trimly الوسائط كما هي — مما يجعل التصدير سريعاً ويحافظ على جودة الأصل بت بت.',
+        points: ['لا خسارة في الجودة، لا انتظار', 'مقطع قصير من ساعات طويلة في ثوانٍ', 'قائمة تصدير FIFO مع أسماء ملفات فريدة'] },
+      { eyebrow: 'تنظيم', title: 'طوابع زمنية تحافظ على ترتيب الصور.', desc: 'يمكن للمقاطع المصدَّرة أن تحمل تواريخ إنشاء مرتبة مستمدة من الوسائط الأصلية وإزاحة كل مقطع، فتصل الدفعة إلى مكتبة الصور بالترتيب المتوقع.',
+        points: ['تواريخ الإنشاء مستمدة من الملف الأصلي', 'إزاحات المقاطع تحفظ الترتيب داخل الدفعة', 'لا حاجة لإعادة الترتيب اليدوي بعد التصدير'] },
+      { eyebrow: 'الألوان', title: 'Apple Log وLog 2، جاهزان للاستخدام.', desc: 'جداول LUT مدمجة لتحويل Apple Log وApple Log 2 إلى Rec. 709، مع دعم استيراد ملفات .cube المخصصة. المعاينة والتصدير يستخدمان نفس اختيار LUT تماماً.',
+        points: ['LUT مدمجة: Apple Log / Log 2 ← Rec. 709', 'استيراد ملفات .cube ثلاثية الأبعاد المخصصة', 'ما تراه في المعاينة هو ما تحصل عليه'] },
+      { eyebrow: 'التقاط', title: 'الإطارات وLive Photo.', desc: 'استخرج إطارات ثابتة من الفيديو وصدّرها كلقطات شاشة، وأنشئ أزواج Live Photo جاهزة لسير عمل الصور.',
+        points: ['التقاط أي إطار فيديو كصورة ثابتة', 'تصدير لقطات شاشة نظيفة', 'إنشاء أزواج أصول Live Photo'] },
+      { eyebrow: 'الصوت', title: 'ملفات الصوت، مع أشكال موجية حقيقية.', desc: 'استورد ملفات الصوت الخالص وقصّها مع معاينات الشكل الموجي. التصدير يتجنب مسارات الفيديو غير المدعومة كي يعمل الصوت بسلاسة.',
+        points: ['قص الصوت الخالص مع معاينات الشكل الموجي', 'عرض موجي بالقطاعات', 'استيراد PCM الخام وحفظه بصيغة WAV'] },
+      { eyebrow: 'السرعة', title: 'سير عمل متكامل عبر لوحة المفاتيح.', desc: 'تغطي اختصارات لوحة المفاتيح التشغيل والانتقال والتقدم إطاراً بإطار وتحديد المقاطع والتراجع/الإعادة والحذف وغير ذلك مما تكرره في جلسات التحرير الطويلة.',
+        points: ['التشغيل والانتقال والتقدم إطاراً بإطار', 'تحديد المقاطع وحذفها بضغطة مفتاح', 'سجل تراجع/إعادة منفصل لكل ملف'] },
+      { eyebrow: 'iPad', title: 'مصمم للشاشة الكبيرة.', desc: 'يعتمد iPad في الوضع الأفقي تخطيطاً محورياً للتحرير — المشغل والجدول الزمني وأدوات التحكم وإجراءات التصدير جنباً إلى جنب لمراجعة أسرع وقص دفعات.',
+        points: ['تخطيط تحرير أفقي محوري', 'المشغل والجدول الزمني والمقاطع دفعة واحدة', 'مصمم للمراجعة السريعة للدفعات'] },
+      { eyebrow: 'عربي أصيل', title: 'دعم كامل لاتجاه اليمين إلى اليسار.', desc: 'كل عنصر في Trimly — القوائم والجدول الزمني وقائمة المقاطع وأدوات التحكم وتدفق التصدير — يتبع اتجاه القراءة من اليمين إلى اليسار بشكل أصيل تمامًا.',
+        points: ['واجهة مستخدم كاملة من اليمين إلى اليسار', 'محرر الجدول الزمني ولوحات التحكم تعكسان الاتجاه', 'خطوط وتباعد محسّنان للنصوص العربية'] }
+    ],
+    showcase: { heading: 'أصيل على كل أجهزة Apple.', subtitle: 'iPhone وiPad وMac. تطبيق واحد لكل شاشة.' },
+    privacy: {
+      heading: 'خصوصية بالتصميم.',
+      body: 'تعمل Trimly بالكامل على جهازك. لا تطلب صلاحيات الشبكة، وليس لها نظام حسابات، ولا تجمع أي بيانات مستخدم. لقطاتك تبقى لك.',
+      tags: ['يعمل دون إنترنت كلياً', 'بدون صلاحية شبكة', 'بدون حساب', 'لا جمع للبيانات']
+    },
+    bottomCta: { heading: 'هل أنت مستعد للتقليم؟', subtitle: 'متاح على iPhone وiPad وMac.' },
+    footer: { support: 'الدعم', privacy: 'سياسة الخصوصية' }
+  }
+};
+
+let currentLang = 'en';
+
+function detectLanguage() {
+  try {
+    const saved = localStorage.getItem('trimly-lang');
+    if (saved && T[saved]) return saved;
+  } catch(e) {}
+  const lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+  if (lang.startsWith('zh')) return 'zh';
+  if (lang.startsWith('ja')) return 'ja';
+  if (lang.startsWith('ar')) return 'ar';
+  return 'en';
+}
+
+function renderFeatures() {
+  const t = T[currentLang];
+  document.getElementById('features').innerHTML = t.sections.map((sec, i) => {
+    const meta = SECTION_META[i];
+    const reverse = i % 2 === 1 ? ' reverse' : '';
+    const points = sec.points.map(p =>
+      `<li><span style="display:inline-flex">${CHECK}</span><span>${p}</span></li>`).join('');
+    return `<div class="feature-block${reverse} fade-in">
+      <div class="feature-text">
+        <span class="feature-eyebrow ${meta.accent}">${ICONS[meta.icon]}${sec.eyebrow}</span>
+        <h2>${sec.title}</h2>
+        <p>${sec.desc}</p>
+        <ul class="feature-points ${meta.accent}">${points}</ul>
+      </div>
+      <div class="feature-visual ${meta.accent}">
+        <div class="fv-window">
+          <div class="fv-bar"><span></span><span></span><span></span></div>
+          <div class="fv-body">
+            <div class="fv-badge ${meta.accent}" style="color:var(--${meta.accent === 'orange' ? 'orange-end' : meta.accent === 'blue' ? 'blue-end' : meta.accent})">${ICONS[meta.icon]}</div>
+            <div class="fv-lines"><i></i><i></i></div>
+          </div>
+        </div>
+        <span class="vlabel">${meta.visual}</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function renderPrivacyTags() {
+  const t = T[currentLang];
+  document.getElementById('privacyTags').innerHTML =
+    t.privacy.tags.map(tag => `<span class="privacy-tag">${tag}</span>`).join('');
+}
+
+function applyStaticTranslations() {
+  const t = T[currentLang];
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const path = el.getAttribute('data-i18n').split('.');
+    let val = t;
+    for (const k of path) { val = val?.[k]; }
+    if (typeof val === 'string') {
+      if (el.tagName === 'H1' || el.tagName === 'H2') {
+        el.innerHTML = val.replace(/\n/g, '<br>');
+      } else {
+        el.textContent = val;
+      }
+    }
+  });
+  document.querySelector('.lang-current').textContent = t.langLabel;
+  document.querySelectorAll('.lang-option').forEach(opt => {
+    opt.classList.toggle('active', opt.dataset.lang === currentLang);
+  });
+}
+
+function setLanguage(lang) {
+  currentLang = lang;
+  try { localStorage.setItem('trimly-lang', lang); } catch(e) {}
+  document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : lang;
+  document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+  applyStaticTranslations();
+  renderFeatures();
+  renderPrivacyTags();
+  initAnimations();
+  closeLangDropdown();
+}
+
+function toggleLangDropdown(e) {
+  e.stopPropagation();
+  document.getElementById('langDropdown').classList.toggle('open');
+}
+function closeLangDropdown() {
+  document.getElementById('langDropdown').classList.remove('open');
+}
+document.addEventListener('click', closeLangDropdown);
+
+let animObserver = null;
+function initAnimations() {
+  if (!animObserver) {
+    animObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          animObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+  }
+  document.querySelectorAll('.fade-in:not(.visible)').forEach(el => animObserver.observe(el));
+}
+
+function initCarousel() {
+  const c = document.getElementById('deviceCarousel');
+  if (!c) return;
+  const slides = [...c.querySelectorAll('.carousel-slide')];
+  const dots = [...c.querySelectorAll('.carousel-dot')];
+  let idx = 0, timer = null;
+
+  function go(n) {
+    idx = (n + slides.length) % slides.length;
+    slides.forEach((s, i) => s.classList.toggle('active', i === idx));
+    dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+  }
+  function start() { stop(); timer = setInterval(() => go(idx + 1), 3500); }
+  function stop() { if (timer) { clearInterval(timer); timer = null; } }
+
+  dots.forEach((d, i) => d.addEventListener('click', () => { go(i); start(); }));
+  c.addEventListener('mouseenter', stop);
+  c.addEventListener('mouseleave', start);
+  go(0);
+  start();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  currentLang = detectLanguage();
+  setLanguage(currentLang);
+  initCarousel();
+});
+</script>
+
+</body>
+</html>
