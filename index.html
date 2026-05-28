@@ -437,130 +437,6 @@
       letter-spacing: 0.03em;
     }
 
-    /* === SHOWCASE (devices) === */
-    .showcase {
-      padding: 96px 24px;
-      background: var(--bg-dark);
-      color: #fff;
-      margin-top: 64px;
-    }
-
-    .showcase-inner { max-width: var(--max-w); margin: 0 auto; }
-
-    .showcase h2 {
-      text-align: center;
-      font-size: clamp(28px, 4vw, 40px);
-      font-weight: 700;
-      letter-spacing: -0.025em;
-      margin-bottom: 16px;
-    }
-
-    .showcase-subtitle {
-      text-align: center;
-      font-size: clamp(15px, 2vw, 18px);
-      color: rgba(255,255,255,0.5);
-      max-width: 480px;
-      margin: 0 auto 64px;
-    }
-
-    /* Carousel */
-    .carousel { max-width: 700px; margin: 0 auto; }
-
-    .carousel-stage {
-      position: relative;
-      height: 460px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .carousel-slide {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transform: translateY(14px) scale(0.97);
-      transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
-      pointer-events: none;
-    }
-
-    .carousel-slide.active {
-      opacity: 1;
-      transform: none;
-      pointer-events: auto;
-    }
-
-    .carousel-dots {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 32px;
-    }
-
-    .carousel-dot {
-      width: 8px;
-      height: 8px;
-      padding: 0;
-      border: none;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.25);
-      cursor: pointer;
-      transition: width 0.3s var(--ease), background 0.3s var(--ease), border-radius 0.3s var(--ease);
-    }
-
-    .carousel-dot:hover { background: rgba(255,255,255,0.5); }
-    .carousel-dot.active { width: 24px; border-radius: 4px; background: #fff; }
-
-    @media (max-width: 767px) {
-      .showcase { padding: 64px 20px 72px; margin-top: 48px; }
-      .showcase-subtitle { margin-bottom: 48px; }
-      .carousel-stage { height: 400px; }
-    }
-
-    .device { border-radius: 16px; overflow: hidden; position: relative; }
-
-    .device-phone {
-      aspect-ratio: 9 / 19.5;
-      background: linear-gradient(145deg, #2c2c2e, #3a3a3c);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 28px;
-      height: 100%;
-      width: auto;
-    }
-
-    .device-mac {
-      aspect-ratio: 2694 / 1758;
-      background: linear-gradient(145deg, #2c2c2e, #3a3a3c);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 14px;
-      width: 100%;
-      max-width: 560px;
-    }
-
-    .device-ipad {
-      aspect-ratio: 2360 / 1640;
-      background: linear-gradient(145deg, #2c2c2e, #3a3a3c);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 18px;
-      width: 100%;
-      max-width: 520px;
-    }
-
-    .device img { width: 100%; height: 100%; object-fit: cover; display: block; }
-
-    .device-label {
-      position: absolute;
-      bottom: 16px;
-      left: 0; right: 0;
-      text-align: center;
-      font-size: 13px;
-      font-weight: 500;
-      color: rgba(255,255,255,0.35);
-      letter-spacing: 0.03em;
-    }
-
     /* === PRIVACY === */
     .privacy {
       max-width: var(--max-w);
@@ -678,6 +554,61 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
+
+    /* === DARK MODE === */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text-primary:   #F5F5F7;
+        --text-secondary: #98989D;
+        --text-tertiary:  #636366;
+        --bg-primary:     #1C1C1E;
+        --bg-secondary:   #2C2C2E;
+        --bg-dark:        #000000;
+        --border-color:   rgba(255, 255, 255, 0.08);
+      }
+
+      /* Nav frosted glass — dark tint */
+      nav {
+        background: rgba(28, 28, 30, 0.85);
+      }
+
+      /* Language dropdown */
+      .lang-dropdown {
+        background: rgba(44, 44, 46, 0.96);
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+      }
+      .lang-option:hover { background: rgba(255, 255, 255, 0.06); }
+
+      /* Hero CTA: white pill with dark text on dark bg */
+      .hero-cta {
+        background: #FFFFFF;
+        color: #1D1D1F;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+      }
+      .hero-cta:hover { box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45); }
+
+      /* Feature eyebrows — brighter accent colours */
+      .feature-eyebrow.orange { color: #FF9500; }
+      .feature-eyebrow.blue   { color: #32ADE6; }
+      .feature-eyebrow.green  { color: #30D158; }
+      .feature-eyebrow.purple { color: #BF5AF2; }
+
+      /* Feature visual gradient cards — slightly more visible on dark */
+      .feature-visual.orange { background: linear-gradient(145deg, rgba(255,149,0,0.13), rgba(255,107,0,0.06)); }
+      .feature-visual.blue   { background: linear-gradient(145deg, rgba(50,173,230,0.13), rgba(0,122,255,0.06)); }
+      .feature-visual.green  { background: linear-gradient(145deg, rgba(48,209,88,0.13), rgba(36,176,72,0.06)); }
+      .feature-visual.purple { background: linear-gradient(145deg, rgba(191,90,242,0.13), rgba(120,40,200,0.06)); }
+
+      /* Mini window inside feature visual */
+      .fv-bar span  { background: rgba(255, 255, 255, 0.14); }
+      .fv-lines i   { background: rgba(255, 255, 255, 0.10); }
+
+      /* Badge gradients — boost opacity slightly */
+      .fv-badge.orange { background: linear-gradient(135deg, rgba(255,149,0,0.28), rgba(255,107,0,0.18)); }
+      .fv-badge.blue   { background: linear-gradient(135deg, rgba(50,173,230,0.28), rgba(0,122,255,0.18)); }
+      .fv-badge.green  { background: linear-gradient(135deg, rgba(48,209,88,0.28), rgba(36,176,72,0.18)); }
+      .fv-badge.purple { background: linear-gradient(135deg, rgba(191,90,242,0.28), rgba(120,40,200,0.18)); }
+    }
     /* === RTL === */
     body[dir="rtl"] .lang-dropdown { right: auto; left: 0; }
     body[dir="rtl"] .feature-points li { flex-direction: row-reverse; text-align: right; }
@@ -687,7 +618,6 @@
     :lang(ar) body { font-family: 'SF Arabic', -apple-system, BlinkMacSystemFont, 'Geeza Pro', 'Arial Unicode MS', Arial, sans-serif; }
     :lang(ar) .hero h1,
     :lang(ar) .feature-block h2,
-    :lang(ar) .showcase h2,
     :lang(ar) .privacy h2,
     :lang(ar) .bottom-cta h2 { line-height: 1.3; }
     :lang(ar) .hero-tagline,
@@ -764,7 +694,7 @@
       </svg>
     </div>
     <h1 data-i18n="hero.heading">Clip the best moments<br>from your longest videos.</h1>
-    <p class="hero-tagline" data-i18n="hero.tagline">A native media trimmer for iPhone, iPad, and Mac. Mark, trim, and batch export — in seconds, with zero re-encoding.</p>
+    <p class="hero-tagline" data-i18n="hero.tagline">A native media trimmer for iPhone, iPad, and Mac. Mark, trim, and batch export — in seconds.</p>
     <div class="hero-cta-row">
       <a class="hero-cta" href="https://apps.apple.com/app/trimly" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
@@ -779,45 +709,16 @@
 
     <div class="hero-screenshot">
       <div class="screenshot-placeholder">
-        <img src="assets/header.webp" alt="Trimly on Mac, iPad, and iPhone">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.webp">
+          <img src="assets/header.webp" alt="Trimly on Mac, iPad, and iPhone">
+        </picture>
       </div>
     </div>
   </section>
 
   <!-- DEEP FEATURE SECTIONS -->
   <section class="features" id="features"></section>
-
-  <!-- SHOWCASE -->
-  <section class="showcase">
-    <div class="showcase-inner">
-      <h2 class="fade-in" data-i18n="showcase.heading">Native on every Apple device.</h2>
-      <p class="showcase-subtitle fade-in" data-i18n="showcase.subtitle">iPhone, iPad, Mac. One app, every screen.</p>
-      <div class="carousel fade-in" id="deviceCarousel" style="transition-delay:0.1s">
-        <div class="carousel-stage">
-          <div class="carousel-slide active">
-            <div class="device device-phone">
-              <img src="assets/iphone.webp" alt="Trimly on iPhone">
-            </div>
-          </div>
-          <div class="carousel-slide">
-            <div class="device device-ipad">
-              <img src="assets/ipad.webp" alt="Trimly on iPad">
-            </div>
-          </div>
-          <div class="carousel-slide">
-            <div class="device device-mac">
-              <img src="assets/mac.webp" alt="Trimly on Mac">
-            </div>
-          </div>
-        </div>
-        <div class="carousel-dots">
-          <button class="carousel-dot active" aria-label="iPhone"></button>
-          <button class="carousel-dot" aria-label="iPad"></button>
-          <button class="carousel-dot" aria-label="Mac"></button>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- PRIVACY -->
   <section class="privacy fade-in">
@@ -885,7 +786,7 @@ const T = {
     nav: { features: 'Features', download: 'Download' },
     hero: {
       heading: 'Clip the best moments\nfrom your longest videos.',
-      tagline: 'A native media trimmer for iPhone, iPad, and Mac. Mark, trim, and batch export — in seconds, with zero re-encoding.',
+      tagline: 'A native media trimmer for iPhone, iPad, and Mac. Mark, trim, and batch export — in seconds.',
       cta: 'Download on the App Store',
       meta1: 'iPhone · iPad · Mac', meta2: 'Native app', meta3: '100% Offline'
     },
@@ -907,7 +808,6 @@ const T = {
       { eyebrow: 'iPad', title: 'Made for the big screen.', desc: 'iPad landscape uses a focused editing layout — player, timeline, clip controls, and export actions arranged side by side for faster review and batch clipping.',
         points: ['Focused landscape editing layout', 'Player, timeline, and clips at a glance', 'Built for fast batch review'] }
     ],
-    showcase: { heading: 'Native on every Apple device.', subtitle: 'iPhone, iPad, Mac. One app, every screen.' },
     privacy: {
       heading: 'Private by design.',
       body: 'Trimly runs fully on-device, never requests network access, has no accounts, and collects no user data. Your footage stays yours.',
@@ -944,7 +844,6 @@ const T = {
       { eyebrow: 'iPad', title: '为大屏而生', desc: 'iPad 横屏采用专注的编辑布局 — 播放器、时间线、片段控制与导出操作并排展示，让审阅和批量裁剪更高效。',
         points: ['专注的横屏编辑布局', '播放器、时间线与片段一目了然', '为快速批量审阅而设计'] }
     ],
-    showcase: { heading: '每台 Apple 设备的原生体验', subtitle: 'iPhone、iPad、Mac，一个 App，适配每块屏幕。' },
     privacy: {
       heading: '隐私，从设计之初',
       body: 'Trimly 完全在设备本地运行，从不请求网络访问，没有账号体系，也不收集任何用户数据。你的素材始终属于你。',
@@ -981,7 +880,6 @@ const T = {
       { eyebrow: 'iPad', title: '大画面のために。', desc: 'iPadの横向きでは集中できる編集レイアウトを採用 — プレーヤー、タイムライン、クリップ操作、書き出しを横並びに配置し、確認と一括クリップを高速化します。',
         points: ['集中できる横向き編集レイアウト', 'プレーヤー・タイムライン・クリップを一望', '高速な一括確認のために設計'] }
     ],
-    showcase: { heading: 'すべてのAppleデバイスでネイティブ。', subtitle: 'iPhone、iPad、Mac。ひとつのアプリで、すべての画面に。' },
     privacy: {
       heading: '設計段階からプライバシー重視。',
       body: 'Trimlyは完全に端末内で動作します。ネットワークへのアクセスを求めず、アカウントも不要、ユーザーデータも収集しません。あなたの映像は、あなたのものです。',
@@ -1020,7 +918,6 @@ const T = {
       { eyebrow: 'عربي أصيل', title: 'دعم كامل لاتجاه اليمين إلى اليسار.', desc: 'كل عنصر في Trimly — القوائم والجدول الزمني وقائمة المقاطع وأدوات التحكم وتدفق التصدير — يتبع اتجاه اليمين إلى اليسار بصورة أصيلة.',
         points: ['واجهة مستخدم كاملة من اليمين إلى اليسار', 'محرر الجدول الزمني ولوحات التحكم تعكسان الاتجاه', 'خطوط وتباعد محسّنان للنصوص العربية'] }
     ],
-    showcase: { heading: 'أصيل على كل أجهزة Apple.', subtitle: 'iPhone وiPad وMac. تطبيق واحد لكل شاشة.' },
     privacy: {
       heading: 'خصوصية بالتصميم.',
       body: 'تعمل Trimly بالكامل على جهازك. لا تطلب صلاحيات الشبكة، وليس لها نظام حسابات، ولا تجمع أي بيانات مستخدم. لقطاتك تبقى لك.',
@@ -1135,32 +1032,9 @@ function initAnimations() {
   document.querySelectorAll('.fade-in:not(.visible)').forEach(el => animObserver.observe(el));
 }
 
-function initCarousel() {
-  const c = document.getElementById('deviceCarousel');
-  if (!c) return;
-  const slides = [...c.querySelectorAll('.carousel-slide')];
-  const dots = [...c.querySelectorAll('.carousel-dot')];
-  let idx = 0, timer = null;
-
-  function go(n) {
-    idx = (n + slides.length) % slides.length;
-    slides.forEach((s, i) => s.classList.toggle('active', i === idx));
-    dots.forEach((d, i) => d.classList.toggle('active', i === idx));
-  }
-  function start() { stop(); timer = setInterval(() => go(idx + 1), 3500); }
-  function stop() { if (timer) { clearInterval(timer); timer = null; } }
-
-  dots.forEach((d, i) => d.addEventListener('click', () => { go(i); start(); }));
-  c.addEventListener('mouseenter', stop);
-  c.addEventListener('mouseleave', start);
-  go(0);
-  start();
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   currentLang = detectLanguage();
   setLanguage(currentLang);
-  initCarousel();
 });
 </script>
 
