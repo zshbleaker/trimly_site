@@ -16,6 +16,11 @@
       --blue-end: #007AFF;
       --green: #30D158;
       --purple: #BF5AF2;
+      --teal: #30B0C7;
+      --pink: #FF2D55;
+      --indigo: #5856D6;
+      --red: #FF3B30;
+      --yellow: #C49000;
       --text-primary: #1D1D1F;
       --text-secondary: #6E6E73;
       --text-tertiary: #AEAEB2;
@@ -328,6 +333,11 @@
     .feature-eyebrow.blue { color: #1A8FE3; }
     .feature-eyebrow.green { color: #1FA34A; }
     .feature-eyebrow.purple { color: #A33DD8; }
+    .feature-eyebrow.teal { color: #2898AC; }
+    .feature-eyebrow.pink { color: #D92550; }
+    .feature-eyebrow.indigo { color: #4B49B6; }
+    .feature-eyebrow.red { color: #E0321E; }
+    .feature-eyebrow.yellow { color: #A67A00; }
 
     .feature-block h2 {
       font-size: clamp(24px, 3.4vw, 32px);
@@ -370,6 +380,11 @@
     .feature-points.blue li svg { color: var(--blue-end); }
     .feature-points.green li svg { color: var(--green); }
     .feature-points.purple li svg { color: var(--purple); }
+    .feature-points.teal li svg { color: var(--teal); }
+    .feature-points.pink li svg { color: var(--pink); }
+    .feature-points.indigo li svg { color: var(--indigo); }
+    .feature-points.red li svg { color: var(--red); }
+    .feature-points.yellow li svg { color: var(--yellow); }
 
     /* Feature visual placeholder */
     .feature-visual {
@@ -392,6 +407,11 @@
     .feature-visual.blue { background: linear-gradient(145deg, rgba(50,173,230,0.09), rgba(0,122,255,0.04)); }
     .feature-visual.green { background: linear-gradient(145deg, rgba(48,209,88,0.09), rgba(36,176,72,0.04)); }
     .feature-visual.purple { background: linear-gradient(145deg, rgba(191,90,242,0.09), rgba(120,40,200,0.04)); }
+    .feature-visual.teal { background: linear-gradient(145deg, rgba(48,176,199,0.09), rgba(30,140,170,0.04)); }
+    .feature-visual.pink { background: linear-gradient(145deg, rgba(255,45,85,0.09), rgba(200,30,60,0.04)); }
+    .feature-visual.indigo { background: linear-gradient(145deg, rgba(88,86,214,0.09), rgba(60,58,180,0.04)); }
+    .feature-visual.red { background: linear-gradient(145deg, rgba(255,59,48,0.09), rgba(200,40,30,0.04)); }
+    .feature-visual.yellow { background: linear-gradient(145deg, rgba(196,144,0,0.09), rgba(160,110,0,0.04)); }
 
     .fv-window {
       width: 100%;
@@ -425,6 +445,11 @@
     .fv-badge.blue { background: linear-gradient(135deg, rgba(50,173,230,0.18), rgba(0,122,255,0.12)); }
     .fv-badge.green { background: linear-gradient(135deg, rgba(48,209,88,0.18), rgba(36,176,72,0.12)); }
     .fv-badge.purple { background: linear-gradient(135deg, rgba(191,90,242,0.18), rgba(120,40,200,0.12)); }
+    .fv-badge.teal { background: linear-gradient(135deg, rgba(48,176,199,0.18), rgba(30,140,170,0.12)); }
+    .fv-badge.pink { background: linear-gradient(135deg, rgba(255,45,85,0.18), rgba(200,30,60,0.12)); }
+    .fv-badge.indigo { background: linear-gradient(135deg, rgba(88,86,214,0.18), rgba(60,58,180,0.12)); }
+    .fv-badge.red { background: linear-gradient(135deg, rgba(255,59,48,0.18), rgba(200,40,30,0.12)); }
+    .fv-badge.yellow { background: linear-gradient(135deg, rgba(196,144,0,0.18), rgba(160,110,0,0.12)); }
     .fv-lines { flex: 1; display: flex; flex-direction: column; gap: 8px; }
     .fv-lines i { height: 7px; border-radius: 4px; background: rgba(0,0,0,0.07); display: block; }
     .fv-lines i:first-child { width: 82%; }
@@ -592,12 +617,22 @@
       .feature-eyebrow.blue   { color: #32ADE6; }
       .feature-eyebrow.green  { color: #30D158; }
       .feature-eyebrow.purple { color: #BF5AF2; }
+      .feature-eyebrow.teal   { color: #5AC8FA; }
+      .feature-eyebrow.pink   { color: #FF375F; }
+      .feature-eyebrow.indigo { color: #7A78E6; }
+      .feature-eyebrow.red    { color: #FF453A; }
+      .feature-eyebrow.yellow { color: #DBA400; }
 
       /* Feature visual gradient cards — slightly more visible on dark */
       .feature-visual.orange { background: linear-gradient(145deg, rgba(255,149,0,0.13), rgba(255,107,0,0.06)); }
       .feature-visual.blue   { background: linear-gradient(145deg, rgba(50,173,230,0.13), rgba(0,122,255,0.06)); }
       .feature-visual.green  { background: linear-gradient(145deg, rgba(48,209,88,0.13), rgba(36,176,72,0.06)); }
       .feature-visual.purple { background: linear-gradient(145deg, rgba(191,90,242,0.13), rgba(120,40,200,0.06)); }
+      .feature-visual.teal   { background: linear-gradient(145deg, rgba(48,176,199,0.13), rgba(30,140,170,0.06)); }
+      .feature-visual.pink   { background: linear-gradient(145deg, rgba(255,45,85,0.13), rgba(200,30,60,0.06)); }
+      .feature-visual.indigo { background: linear-gradient(145deg, rgba(88,86,214,0.13), rgba(60,58,180,0.06)); }
+      .feature-visual.red    { background: linear-gradient(145deg, rgba(255,59,48,0.13), rgba(200,40,30,0.06)); }
+      .feature-visual.yellow { background: linear-gradient(145deg, rgba(196,144,0,0.13), rgba(160,110,0,0.06)); }
 
       /* Mini window inside feature visual */
       .fv-bar span  { background: rgba(255, 255, 255, 0.14); }
@@ -608,6 +643,11 @@
       .fv-badge.blue   { background: linear-gradient(135deg, rgba(50,173,230,0.28), rgba(0,122,255,0.18)); }
       .fv-badge.green  { background: linear-gradient(135deg, rgba(48,209,88,0.28), rgba(36,176,72,0.18)); }
       .fv-badge.purple { background: linear-gradient(135deg, rgba(191,90,242,0.28), rgba(120,40,200,0.18)); }
+      .fv-badge.teal   { background: linear-gradient(135deg, rgba(48,176,199,0.28), rgba(30,140,170,0.18)); }
+      .fv-badge.pink   { background: linear-gradient(135deg, rgba(255,45,85,0.28), rgba(200,30,60,0.18)); }
+      .fv-badge.indigo { background: linear-gradient(135deg, rgba(88,86,214,0.28), rgba(60,58,180,0.18)); }
+      .fv-badge.red    { background: linear-gradient(135deg, rgba(255,59,48,0.28), rgba(200,40,30,0.18)); }
+      .fv-badge.yellow { background: linear-gradient(135deg, rgba(196,144,0,0.28), rgba(160,110,0,0.18)); }
     }
     /* === RTL === */
     body[dir="rtl"] .lang-dropdown { right: auto; left: 0; }
@@ -694,7 +734,7 @@
       </svg>
     </div>
     <h1 data-i18n="hero.heading">Your best moments,<br>straight to your Photo Library.</h1>
-    <p class="hero-tagline" data-i18n="hero.tagline">Clip the highlights, export fast, quality untouched, Photo Library in perfect order.</p>
+    <p class="hero-tagline" data-i18n="hero.tagline">Clip the highlights, export fast, quality untouched, timeline in order.</p>
     <div class="hero-cta-row">
       <a class="hero-cta" href="https://apps.apple.com/app/trimly" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
@@ -769,14 +809,14 @@ const CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
 // Visual placeholder labels are language-independent; accents/icons by index
 const SECTION_META = [
   { key: 'import',  accent: 'blue',   icon: 'import',   visual: 'Files · Drive · NAS' },
-  { key: 'order',   accent: 'blue',   icon: 'clock',    visual: 'Photos timeline' },
+  { key: 'order',   accent: 'orange', icon: 'clock',    visual: 'Photos timeline' },
   { key: 'capture', accent: 'green',  icon: 'capture',  visual: 'Frame & Live Photo' },
-  { key: 'export',  accent: 'orange', icon: 'export',   visual: 'Passthrough export' },
-  { key: 'lut',     accent: 'purple', icon: 'color',    visual: 'Apple Log → Rec. 709' },
-  { key: 'audio',   accent: 'orange', icon: 'audio',    visual: 'Waveform timeline' },
-  { key: 'keys',    accent: 'green',  icon: 'keyboard', visual: 'Keyboard shortcuts' },
-  { key: 'ipad',    accent: 'blue',   icon: 'ipad',     visual: 'iPad landscape layout' },
-  { key: 'rtl',    accent: 'green',  icon: 'rtl',      visual: 'RTL · يمين إلى يسار' }
+  { key: 'export',  accent: 'purple', icon: 'export',   visual: 'Passthrough export' },
+  { key: 'lut',     accent: 'teal',   icon: 'color',    visual: 'Apple Log → Rec. 709' },
+  { key: 'audio',   accent: 'pink',   icon: 'audio',    visual: 'Waveform timeline' },
+  { key: 'keys',    accent: 'indigo', icon: 'keyboard', visual: 'Keyboard shortcuts' },
+  { key: 'ipad',    accent: 'red',    icon: 'ipad',     visual: 'iPad landscape layout' },
+  { key: 'rtl',     accent: 'yellow', icon: 'rtl',      visual: 'RTL · يمين إلى يسار' }
 ];
 
 const T = {
@@ -785,7 +825,7 @@ const T = {
     nav: { features: 'Features', download: 'Download' },
     hero: {
       heading: 'Your best moments,\nstraight to your Photo Library.',
-      tagline: 'Clip the highlights, export fast, quality untouched, Photo Library in perfect order.',
+      tagline: 'Clip the highlights, export fast, quality untouched, timeline in order.',
       cta: 'Download on the App Store',
       meta1: 'Buy once', meta2: 'All platforms', meta3: 'Fully offline'
     },
@@ -821,7 +861,7 @@ const T = {
     nav: { features: '功能', download: '下载' },
     hero: {
       heading: '精彩时刻，一步到相册',
-      tagline: '撷取精华片段，快速导出，画质无损，相册井井有条',
+      tagline: '撷取精华片段，快速导出，画质无损，时间线井井有条',
       cta: '在 App Store 下载',
       meta1: '一次买断', meta2: '全平台通用', meta3: '完全离线'
     },
@@ -857,7 +897,7 @@ const T = {
     nav: { features: '機能', download: 'ダウンロード' },
     hero: {
       heading: 'ベストな瞬間を、\n写真ライブラリへ一発で',
-      tagline: 'ハイライトを切り出し、高速で書き出し、画質そのまま、ライブラリは時系列どおり。',
+      tagline: 'ハイライトを切り出し、高速で書き出し、画質そのまま、タイムラインどおり。',
       cta: 'App Storeでダウンロード',
       meta1: '買い切り', meta2: '全デバイス対応', meta3: '完全オフライン'
     },
@@ -893,7 +933,7 @@ const T = {
     nav: { features: 'المميزات', download: 'حمِّل' },
     hero: {
       heading: 'أفضل لحظاتك،\nبخطوة واحدة إلى مكتبة الصور.',
-      tagline: 'اقتطع المقاطع المميزة، صدِّرها بسرعة، بجودة الأصل، ومكتبة صورك مرتبة تلقائياً.',
+      tagline: 'اقتطع المقاطع المميزة، صدِّرها بسرعة، بجودة الأصل، والترتيب الزمني محفوظ.',
       cta: 'حمِّل من App Store',
       meta1: 'ادفع مرة', meta2: 'كل الأجهزة', meta3: 'يعمل دون إنترنت'
     },
@@ -959,7 +999,7 @@ function renderFeatures() {
         <div class="fv-window">
           <div class="fv-bar"><span></span><span></span><span></span></div>
           <div class="fv-body">
-            <div class="fv-badge ${meta.accent}" style="color:var(--${meta.accent === 'orange' ? 'orange-end' : meta.accent === 'blue' ? 'blue-end' : meta.accent})">${ICONS[meta.icon]}</div>
+            <div class="fv-badge ${meta.accent}" style="color:var(--${{orange:'orange-end',blue:'blue-end'}[meta.accent]||meta.accent})">${ICONS[meta.icon]}</div>
             <div class="fv-lines"><i></i><i></i></div>
           </div>
         </div>
