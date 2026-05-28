@@ -253,7 +253,7 @@
     }
 
     .screenshot-placeholder {
-      max-width: 900px;
+      max-width: 1100px;
       margin: 0 auto;
       aspect-ratio: 16 / 10;
       border-radius: 16px 16px 0 0;
@@ -833,7 +833,7 @@ const T = {
       { eyebrow: 'Timestamps', title: 'Every clip lands in Photos right where it belongs.', desc: 'Trimly sets each clip’s creation date from its position in the source video. Export a dozen clips from a long recording, and they appear in Photos in the exact order they occurred. No manual sorting needed.',
         points: ['Creation time tied to position in the source', 'Multiple clips stay in sequence, automatically', 'No re-sorting in Photos after export'] },
       { eyebrow: 'Capture', title: 'Frames and Live Photos.', desc: 'Grab any frame from video, capture Live Photos, and preserve original metadata like device and location.',
-        points: ['Capture any video frame as a still', 'Capture Live Photos from video', 'Preserve device, location, and other metadata'] },
+        points: ['Capture any video frame as an image', 'Capture Live Photos from video', 'Preserve device, location, and other metadata'] },
       { eyebrow: 'Export', title: 'Passthrough export. No transcoding.', desc: 'When no rendering is required, Trimly passes the media through untouched. Output is immediate, and the original quality is preserved exactly.',
         points: ['No quality loss, no waiting', 'A short clip from a multi-hour file in seconds', 'Tag clips with keywords for easy search'] },
       { eyebrow: 'Color', title: 'LUT color grading, built in.', desc: 'Apply LUTs while you trim. Bundled Apple Log → Rec. 709 conversions, plus import your own .cube files. What you preview is exactly what you export.',
@@ -842,8 +842,8 @@ const T = {
         points: ['Pure audio import and trim', 'Auto-generated waveform visualization', 'Raw PCM data support'] },
       { eyebrow: 'Speed', title: 'A complete keyboard workflow.', desc: 'Shortcuts cover playback, seek, frame step, clip marking, undo/redo, and deletion. Everything you reach for in a long editing session.',
         points: ['Play, seek, and step frame by frame', 'Mark clips and delete with a keypress', 'Per-file undo / redo history'] },
-      { eyebrow: 'iPad', title: 'Made for the big screen.', desc: 'iPad landscape uses a focused editing layout with player, timeline, clip controls, and export actions arranged side by side for faster review and batch clipping.',
-        points: ['Focused landscape editing layout', 'Player, timeline, and clips at a glance', 'Built for fast batch review'] }
+      { eyebrow: 'iPad', title: 'iPad. No compromise.', desc: 'Trimly adapts to your iPad with full keyboard shortcut support, multi-window multitasking, and a layout that adjusts to every screen size — from iPad mini to a large external display.',
+        points: ['Full keyboard shortcut support', 'Multi-window for side-by-side workflows', 'Adaptive layout for every screen size'] }
     ],
     privacy: {
       heading: 'Private by design.',
@@ -879,8 +879,8 @@ const T = {
         points: ['支持纯音频导入与裁剪', '自动生成波形图', '支持处理 PCM 原始数据'] },
       { eyebrow: '高效', title: '完整的键盘工作流', desc: '快捷键覆盖播放、定位、逐帧步进、片段标记、撤销/重做与删除，长时间编辑全程不离键盘。',
         points: ['播放、定位与逐帧步进', '一键标记片段与删除', '每个文件独立的撤销 / 重做历史'] },
-      { eyebrow: 'iPad', title: '为大屏而生', desc: 'iPad 横屏采用专注的编辑布局，播放器、时间线、片段控制与导出操作并排展示，让审阅和批量裁剪更高效。',
-        points: ['专注的横屏编辑布局', '播放器、时间线与片段一目了然', '为快速批量审阅而设计'] }
+      { eyebrow: 'iPad', title: 'iPad，全力释放', desc: 'Trimly 在 iPad 上支持完整的键盘快捷键、多窗口并行操作，布局随屏幕大小自适应调整——从 iPad mini 到外接大显示器，都是最佳体验。',
+        points: ['支持完整的键盘快捷键', '多窗口并行工作', '布局随屏幕大小自适应'] }
     ],
     privacy: {
       heading: '隐私，从设计之初',
@@ -916,8 +916,8 @@ const T = {
         points: ['純粋な音声ファイルに対応', '波形を自動生成', 'PCM生データの処理に対応'] },
       { eyebrow: 'スピード', title: '完全なキーボードワークフロー。', desc: '再生・シーク・フレーム送り・クリップのマーク・取り消し/やり直し・削除まで、よく使う操作はすべてショートカットで。',
         points: ['再生・シーク・フレーム単位の送り', 'キー操作でクリップのマークと削除', 'ファイルごとの取り消し / やり直し履歴'] },
-      { eyebrow: 'iPad', title: '大画面のために。', desc: 'iPadの横向きでは集中できる編集レイアウトを採用。プレーヤー、タイムライン、クリップ操作、書き出しを横並びに配置し、確認と一括クリップを高速化します。',
-        points: ['集中できる横向き編集レイアウト', 'プレーヤー・タイムライン・クリップを一望', '高速な一括確認のために設計'] }
+      { eyebrow: 'iPad', title: 'iPadの実力を、余すところなく。', desc: 'Trimlyはキーボードショートカットに完全対応し、マルチウィンドウでの並行作業もサポート。レイアウトはiPad miniから外部大画面ディスプレイまで、画面サイズに合わせて自動的に最適化されます。',
+        points: ['キーボードショートカットに完全対応', 'マルチウィンドウで並行作業', '画面サイズに応じた自動レイアウト調整'] }
     ],
     privacy: {
       heading: '設計段階からプライバシー重視。',
@@ -953,8 +953,8 @@ const T = {
         points: ['دعم استيراد وقص الصوت الخالص', 'توليد تلقائي للشكل الموجي', 'دعم بيانات PCM الخام'] },
       { eyebrow: 'السرعة', title: 'سير عمل متكامل عبر لوحة المفاتيح.', desc: 'تغطي اختصارات لوحة المفاتيح التشغيل والانتقال والتقدم إطاراً بإطار وتحديد المقاطع والتراجع/الإعادة والحذف. كل ما تحتاجه في جلسات التحرير الطويلة.',
         points: ['التشغيل والانتقال والتقدم إطاراً بإطار', 'تحديد المقاطع وحذفها بضغطة مفتاح', 'سجل تراجع/إعادة منفصل لكل ملف'] },
-      { eyebrow: 'iPad', title: 'مصمم للشاشة الكبيرة.', desc: 'يعتمد iPad في الوضع الأفقي تخطيطاً محورياً للتحرير. المشغل والجدول الزمني وأدوات التحكم وإجراءات التصدير جنباً إلى جنب لمراجعة أسرع وقص دفعات.',
-        points: ['تخطيط تحرير أفقي محوري', 'المشغل والجدول الزمني والمقاطع دفعة واحدة', 'مصمم للمراجعة السريعة للدفعات'] },
+      { eyebrow: 'iPad', title: 'iPad. بلا تنازلات.', desc: 'تدعم Trimly على iPad اختصارات لوحة المفاتيح بالكامل والنوافذ المتعددة للعمل جنباً إلى جنب، مع تخطيط يتكيّف تلقائياً مع كل حجم شاشة — من iPad mini إلى شاشة خارجية كبيرة.',
+        points: ['دعم كامل لاختصارات لوحة المفاتيح', 'نوافذ متعددة للعمل بالتوازي', 'تخطيط يتكيّف مع كل حجم شاشة'] },
       { eyebrow: 'عربي أصيل', title: 'دعم كامل لاتجاه اليمين إلى اليسار.', desc: 'كل عنصر في Trimly، من القوائم والجدول الزمني وقائمة المقاطع إلى أدوات التحكم وتدفق التصدير، يتبع اتجاه اليمين إلى اليسار بصورة أصيلة.',
         points: ['واجهة مستخدم كاملة من اليمين إلى اليسار', 'محرر الجدول الزمني ولوحات التحكم تعكسان الاتجاه', 'خطوط وتباعد محسّنان للنصوص العربية'] }
     ],
