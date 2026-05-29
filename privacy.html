@@ -206,6 +206,27 @@
       .legal-intro { margin-bottom: 36px; }
     }
 
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text-primary:   #F5F5F7;
+        --text-secondary: #98989D;
+        --text-tertiary:  #636366;
+        --bg-primary:     #2C2C2E;
+        --bg-secondary:   #3A3A3C;
+        --border-color:   rgba(255, 255, 255, 0.08);
+      }
+
+      nav {
+        background: rgba(44, 44, 46, 0.85);
+      }
+
+      .lang-dropdown {
+        background: rgba(44, 44, 46, 0.96);
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+      }
+      .lang-option:hover { background: rgba(255, 255, 255, 0.06); }
+    }
+
     /* === FOOTER === */
     footer {
       text-align: center;
