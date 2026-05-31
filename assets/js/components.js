@@ -1,4 +1,6 @@
 // window.T is loaded globally from translations.js
+const SUPPORT_MAILTO = 'mailto:hi@zshbleaker.me?subject='
+    + encodeURIComponent('Trimly App Support from Website');
 
 class TrimlyHeader extends HTMLElement {
     static get observedAttributes() {
@@ -168,7 +170,7 @@ class TrimlyFooter extends HTMLElement {
             <footer>
                 <div class="footer-links">
                     <a href="${homeHref}">${t.footer.home}</a>
-                    <a href="mailto:hi@zshbleaker.me">${t.footer.support}</a>
+                    <a href="${SUPPORT_MAILTO}">${t.footer.support}</a>
                     <a href="privacy.html">${t.footer.privacy}</a>
                 </div>
                 <p class="footer-copy">&copy; 2026 Trimly</p>
