@@ -84,6 +84,7 @@ class TrimlyHeader extends HTMLElement {
                                 <button class="lang-option" data-lang="en">English <span class="check">&#10003;</span></button>
                                 <button class="lang-option" data-lang="zh">简体中文 <span class="check">&#10003;</span></button>
                                 <button class="lang-option" data-lang="ja">日本語 <span class="check">&#10003;</span></button>
+                                <button class="lang-option" data-lang="es">Español <span class="check">&#10003;</span></button>
                                 <button class="lang-option" data-lang="ar">العربية <span class="check">&#10003;</span></button>
                             </div>
                         </div>

@@ -99,6 +99,9 @@ function detectLanguage() {
     if (lang.startsWith('ar')) {
         return 'ar';
     }
+    if (lang.startsWith('es')) {
+        return 'es';
+    }
     return 'en';
 }
 

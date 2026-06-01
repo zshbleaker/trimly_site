@@ -458,6 +458,159 @@ window.T = {
             ],
         },
     },
+    es: {
+        langLabel: 'ES',
+        indexTitle: 'Trimly — Tus mejores momentos, directo a tu biblioteca de Fotos.',
+        privacyTitle: 'Política de privacidad — Trimly',
+        nav: {
+            features: 'Funciones',
+            download: 'Descargar',
+            home: 'Inicio',
+        },
+        hero: {
+            heading: 'Tus mejores momentos,\ndirecto a tu biblioteca de Fotos.',
+            tagline: 'Recorta lo mejor, exporta rápido, calidad intacta, línea de tiempo en orden.',
+            cta: 'Descargar en el App Store',
+            meta1: 'Pago único',
+            meta2: 'Todas las plataformas',
+            meta3: 'Sin solicitudes de red',
+        },
+        features: [
+            {
+                eyebrow: 'Importar',
+                title: 'Discos externos, tarjetas SD, NAS y Fotos.',
+                desc: 'Vuelves de un viaje de buceo y, de camino a casa, conectas la tarjeta SD de la GoPro al lector. Trimly abre horas de metraje directamente desde la tarjeta, sin importar primero a Fotos. Navega todo, guarda Live Photos y clips cortos de los mejores momentos y llévalos a tu biblioteca, listos para Instagram o iMessage. Funciona igual con discos externos, NAS e iCloud Drive.',
+                points: [
+                    'Acceso directo a discos externos, tarjetas SD y NAS',
+                    'Explora Archivos, iCloud Drive y almacenamiento del dispositivo',
+                    'Importa desde la biblioteca de Fotos, con progreso de descarga de iCloud',
+                ],
+            },
+            {
+                eyebrow: 'Marcas de tiempo',
+                title: 'Cada clip llega a Fotos justo donde corresponde.',
+                desc: 'Grabaste todo el concierto, pero el teléfono no da abasto. La grabación completa está en un disco externo y cuesta revisarla al momento. Con Trimly, extrae una docena de clips destacados. Al abrir Fotos, ya están ordenados según ocurrieron, como revivir la noche momento a momento.',
+                points: [
+                    'La hora de creación se vincula a la posición en el origen',
+                    'Varios clips se mantienen en secuencia automáticamente',
+                    'Sin reordenar manualmente en Fotos tras exportar',
+                ],
+            },
+            {
+                eyebrow: 'Captura',
+                title: 'Fotogramas y Live Photos.',
+                desc: '¿Viste una escena icónica en una película o un anime? Conviértela en Live Photo para tu pantalla de bloqueo. Encuentra el fotograma perfecto, guárdalo como imagen fija o captura una Live Photo con movimiento. Los metadatos originales, como dispositivo y ubicación, se conservan.',
+                points: [
+                    'Captura cualquier fotograma de vídeo como imagen',
+                    'Captura Live Photos desde vídeo',
+                    'Conserva dispositivo, ubicación y otros metadatos',
+                ],
+            },
+            {
+                eyebrow: 'Exportar',
+                title: 'Exportación en passthrough. Sin transcodificación.',
+                desc: 'Da igual si el archivo pesa 500 MB o 50 GB: la exportación es prácticamente instantánea. Trimly copia el flujo de medios original sin volver a codificar, así que la calidad es idéntica bit a bit. Etiqueta tus clips con palabras clave y búscalos en Fotos cuando quieras.',
+                points: [
+                    'Sin pérdida de calidad, sin esperas',
+                    'Un clip corto de un archivo de varias horas en segundos',
+                    'Etiqueta clips con palabras clave para buscarlos fácilmente',
+                ],
+            },
+            {
+                eyebrow: 'Color',
+                title: 'Gradación con LUT, integrada.',
+                desc: 'El metraje Log de tu iPhone, DJI o Insta360 se ve plano y apagado fuera de una app de edición profesional. Trimly incluye LUT Rec. 709 integradas para Apple Log 2 y dispositivos populares de DJI e Insta360.<a class="fn-ref" href="#lut-disclaimer" aria-label="Aviso legal">*</a> Aplícalas mientras recortas y la imagen cobra vida al instante. Lo que ves en la vista previa es exactamente lo que se exporta. También puedes cargar tus propios archivos .cube.',
+                points: [
+                    'LUT Rec. 709 incluidas para Apple Log 2, DJI e Insta360',
+                    'Importa LUT .cube personalizadas',
+                    'Lo que previsualizas es lo que exportas',
+                ],
+            },
+            {
+                eyebrow: 'Audio',
+                title: 'Archivos de audio con formas de onda reales.',
+                desc: '¿Escuchaste una frase memorable en un pódcast y quieres recortarla para un amigo? Suelta el archivo de audio en Trimly. Aparece una forma de onda automáticamente. Desplázate al punto correcto, define el rango y corta. Rápido y limpio, sin un editor de audio pesado.',
+                points: [
+                    'Importación y recorte de audio puro',
+                    'Visualización de forma de onda generada automáticamente',
+                    'Compatibilidad con datos PCM sin procesar',
+                ],
+            },
+            {
+                eyebrow: 'Velocidad',
+                title: 'Un flujo de trabajo completo con teclado.',
+                desc: 'Si alguna vez trabajaste en un escritorio, sabes que nada supera al teclado. Los atajos de Trimly cubren cada paso que usas de verdad: reproducir, pausar, avanzar fotograma a fotograma, marcar un clip, borrar, deshacer. Cada archivo mantiene su propio historial, para volar por un día entero de metraje sin quitar las manos.',
+                points: [
+                    'Reproducir, buscar y avanzar fotograma a fotograma',
+                    'Marca clips y elimínalos con una tecla',
+                    'Historial de deshacer / rehacer por archivo',
+                ],
+            },
+            {
+                eyebrow: 'iPad',
+                title: 'iPad. Sin compromisos.',
+                desc: 'Todos dicen que el iPad es «para productividad» hasta que se convierte en un dispositivo de streaming. Suele ser culpa de la app, no del iPad. Trimly se diseñó para iPad desde cero: atajos de teclado completos, varias ventanas en paralelo y un diseño que se adapta a cualquier tamaño, desde un panel Slide Over compacto hasta una pantalla externa completa.',
+                points: [
+                    'Atajos de teclado completos',
+                    'Varias ventanas para flujos en paralelo',
+                    'Ventanas redimensionables con diseño adaptable',
+                ],
+            },
+        ],
+        privacy: {
+            heading: 'Privacidad por diseño.',
+            body: 'Trimly funciona íntegramente en el dispositivo, no envía solicitudes de red, no tiene cuentas y no recopila datos de usuario. Tu metraje sigue siendo tuyo.',
+            tags: [
+                'Solo en el dispositivo',
+                'Sin solicitudes de red',
+                'Sin cuenta',
+                'Sin recopilación de datos',
+            ],
+        },
+        bottomCta: {
+            heading: 'Tu próximo clip está a segundos.',
+            subtitle: 'Una compra para iPhone, iPad y Mac.',
+        },
+        footer: {
+            home: 'Inicio',
+            support: 'Soporte',
+            privacy: 'Política de privacidad',
+            disclaimer: 'Apple, Apple Log, iPhone, iPad y Mac son marcas comerciales de Apple Inc. DJI es una marca comercial de SZ DJI Technology Co., Ltd. Insta360 es una marca comercial de Arashi Vision Inc. Trimly se desarrolla de forma independiente y no está afiliada, patrocinada ni respaldada por ninguna de estas empresas. Los archivos LUT incluidos ayudan a los usuarios a procesar su propio metraje solo para uso personal y no comercial. Todas las marcas pertenecen a sus respectivos propietarios.',
+        },
+        legal: {
+            eyebrow: 'Legal',
+            title: 'Política de privacidad',
+            updated: 'Última actualización: 27 de mayo de 2026',
+            intro: 'Trimly está diseñada para funcionar por completo en tu dispositivo. Tus medios no tienen que salir de tu iPhone, iPad o Mac. Esta política explica, en términos sencillos, qué significa eso para tu privacidad.',
+            contactLabel: '¿Preguntas sobre privacidad? Escríbenos a',
+            sections: [
+                {
+                    h: 'Sin recopilación de datos',
+                    p: 'Trimly no recopila, almacena ni transmite información personal. No hay analíticas, seguimiento, identificadores publicitarios ni telemetría de ningún tipo.',
+                },
+                {
+                    h: 'Sin solicitudes de red',
+                    p: 'Trimly no envía solicitudes de red. Tu metraje, ediciones y metadatos nunca salen de tu dispositivo.',
+                },
+                {
+                    h: 'Acceso a Archivos y Fotos',
+                    p: 'Cuando abres medios desde la app Archivos, un disco externo o tu biblioteca de Fotos, Trimly solo los lee para que puedas recortarlos y exportarlos. Todo el procesamiento ocurre localmente en tu dispositivo y los clips exportados se guardan donde elijas. Trimly accede a tu biblioteca de Fotos solo con tu permiso y únicamente para importar o guardar los medios que selecciones.',
+                },
+                {
+                    h: 'Sin cuenta ni terceros',
+                    p: 'Trimly no tiene sistema de cuentas ni inicio de sesión. No utiliza servicios de terceros, SDK ni procesamiento en la nube.',
+                },
+                {
+                    h: 'Privacidad de menores',
+                    p: 'Como Trimly no recopila datos, no recopila a sabiendas información de nadie, incluidos los menores.',
+                },
+                {
+                    h: 'Cambios en esta política',
+                    p: 'Si esta política cambia, la versión actualizada se publicará en esta página con una nueva fecha.',
+                },
+            ],
+        },
+    },
     ar: {
         langLabel: 'العربية',
         indexTitle: 'Trimly — أفضل لحظاتك، مباشرةً إلى مكتبة الصور.',
