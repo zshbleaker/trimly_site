@@ -71,7 +71,7 @@ const SECTION_META = [
     { key: 'order', accent: 'orange', icon: 'clock', visual: 'Photos timeline' },
     { key: 'capture', accent: 'green', icon: 'capture', visual: 'Frame & Live Photo' },
     { key: 'export', accent: 'purple', icon: 'export', visual: 'Passthrough export' },
-    { key: 'lut', accent: 'teal', icon: 'color', visual: 'Apple Log 2 → Rec. 709' },
+    { key: 'lut', accent: 'teal', icon: 'color', visual: 'Apple Log 2 · DJI · Insta360' },
     { key: 'audio', accent: 'pink', icon: 'audio', visual: 'Waveform timeline' },
     { key: 'keys', accent: 'indigo', icon: 'keyboard', visual: 'Keyboard shortcuts' },
     { key: 'ipad', accent: 'red', icon: 'ipad', visual: 'iPad · resizable windows' },

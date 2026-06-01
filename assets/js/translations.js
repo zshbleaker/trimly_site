@@ -60,9 +60,9 @@ window.T = {
             {
                 eyebrow: 'Color',
                 title: 'LUT color grading, built in.',
-                desc: 'You shot Apple Log 2 on your iPhone for the best dynamic range, but now every clip looks flat and washed-out outside a pro editing app. Trimly has a built-in Apple Log 2 → Rec. 709 LUT. Apply it while you trim and the image comes alive instantly. What you see in the preview is exactly what gets exported. You can load your own .cube files too.',
+                desc: 'Log footage from your iPhone, DJI, or Insta360 looks flat and washed-out outside a pro editing app. Trimly includes built-in Rec. 709 LUTs for Apple Log 2, popular DJI and Insta360 devices. Apply one while you trim and the image comes alive instantly. What you see in the preview is exactly what gets exported. You can load your own .cube files too.',
                 points: [
-                    'Bundled Apple Log 2 → Rec. 709 LUT',
+                    'Bundled Rec. 709 LUTs for Apple Log 2, DJI & Insta360',
                     'Import custom .cube LUTs',
                     'What you preview is what you export',
                 ],
@@ -212,9 +212,9 @@ window.T = {
             {
                 eyebrow: '调色',
                 title: '支持 LUT 调色',
-                desc: '为了追求高画质，你用 iPhone 拍了 Apple Log 2 视频，结果只能在专业剪辑软件里当素材，平时回看全是灰蒙蒙的。Trimly 内置 Apple Log 2 → Rec. 709 转换 LUT，裁剪时一键挂上，画面立刻鲜活起来，导出的效果和预览完全一致。也可以导入你自己的 .cube 文件。',
+                desc: '为了追求高画质，你用 iPhone、大疆或影石设备拍了 Log 视频，结果只能在专业剪辑软件里当素材，平时回看全是灰蒙蒙的。Trimly 内置 Apple Log 2、大疆和影石常见设备的 Rec. 709 还原 LUT，裁剪时一键挂上，画面立刻鲜活起来，导出的效果和预览完全一致。也可以导入你自己的 .cube 文件。',
                 points: [
-                    '内置 Apple Log 2 → Rec. 709 LUT',
+                    '内置 Apple Log 2、大疆、影石 → Rec. 709 还原 LUT',
                     '支持导入自定义 .cube LUT',
                     '预览所见即导出所得',
                 ],
@@ -364,9 +364,9 @@ window.T = {
             {
                 eyebrow: 'カラー',
                 title: 'LUTカラーグレーディング対応。',
-                desc: '高画質を狙ってiPhoneでApple Log 2撮影したのに、普段見返すと全体がグレーでパッとしない……。Trimlyには Apple Log 2 → Rec. 709 変換 LUTが内蔵されているので、トリミング中にワンタップで適用すれば画面が一気に鮮やかに。プレビューと書き出しが完全に一致。自分の .cube ファイルも読み込める。',
+                desc: '高画質のためにiPhone、DJI、Insta360でLog撮影したのに、普段見返すと全体がグレーでパッとしない……。Trimlyには Apple Log 2、DJI・Insta360の一般的な機種向け Rec. 709 変換 LUTが内蔵されているので、トリミング中にワンタップで適用すれば画面が一気に鮮やかに。プレビューと書き出しが完全に一致。自分の .cube ファイルも読み込める。',
                 points: [
-                    'Apple Log 2 → Rec. 709 LUTを内蔵',
+                    'Apple Log 2、DJI・Insta360 → Rec. 709 LUTを内蔵',
                     'カスタム.cube LUTをインポート',
                     'プレビューした見た目のまま書き出し',
                 ],
@@ -516,9 +516,9 @@ window.T = {
             {
                 eyebrow: 'الألوان',
                 title: 'تدريج ألوان LUT مدمج.',
-                desc: 'صوّرت بـ Apple Log 2 على iPhone للحصول على أفضل جودة، لكن المقاطع تبدو باهتة ورمادية خارج برنامج مونتاج احترافي. Trimly يحتوي على LUT مدمج لتحويل Apple Log 2 إلى Rec. 709. طبّقه أثناء القص وسترى الصورة تنبض بالحياة. ما تراه في المعاينة هو تماماً ما يُصدّر. يمكنك أيضاً تحميل ملفات .cube الخاصة بك.',
+                desc: 'لقطات Log من iPhone أو أجهزة DJI أو Insta360 تبدو باهتة ورمادية خارج برنامج مونتاج احترافي. Trimly يتضمن LUT مدمجة لتحويل Apple Log 2 وأجهزة DJI وInsta360 الشائعة إلى Rec. 709. طبّقها أثناء القص وسترى الصورة تنبض بالحياة. ما تراه في المعاينة هو تماماً ما يُصدّر. يمكنك أيضاً تحميل ملفات .cube الخاصة بك.',
                 points: [
-                    'LUT مدمجة: Apple Log 2 → Rec. 709',
+                    'LUT مدمجة: Apple Log 2 وDJI وInsta360 → Rec. 709',
                     'استيراد ملفات .cube LUT المخصصة',
                     'ما تراه في المعاينة هو ما تحصل عليه',
                 ],
