@@ -1,6 +1,6 @@
 window.T = {
     en: {
-        langLabel: 'EN',
+        langLabel: 'English',
         indexTitle: 'Trimly — Your best moments, straight into your Photo Library.',
         privacyTitle: 'Privacy Policy — Trimly',
         nav: {
@@ -153,7 +153,7 @@ window.T = {
         },
     },
     zh: {
-        langLabel: '中文',
+        langLabel: '简体中文',
         indexTitle: 'Trimly — 精彩时刻，一步到相册',
         privacyTitle: '隐私政策 — Trimly',
         nav: {
@@ -458,8 +458,161 @@ window.T = {
             ],
         },
     },
+    ko: {
+        langLabel: '한국어',
+        indexTitle: 'Trimly — 최고의 순간을 사진 보관함으로 바로.',
+        privacyTitle: '개인정보 처리방침 — Trimly',
+        nav: {
+            features: '기능',
+            download: '다운로드',
+            home: '홈',
+        },
+        hero: {
+            heading: '최고의 순간을\n사진 보관함으로 바로.',
+            tagline: '하이라이트만 잘라내고, 빠르게보내고, 화질은 그대로, 타임라인은 순서대로.',
+            cta: 'App Store에서 다운로드',
+            meta1: '한 번 구매',
+            meta2: '모든 플랫폼',
+            meta3: '네트워크 요청 없음',
+        },
+        features: [
+            {
+                eyebrow: '가져오기',
+                title: '외장 드라이브, SD 카드, NAS, 사진.',
+                desc: '다이빙 여행에서 돌아오는 길, 집으로 가는 차 안에서 카드 리더에 GoPro SD 카드를 꽂습니다. Trimly는 카드에서 바로 몇 시간 분량의 영상을 엽니다. 사진에 먼저 가져올 필요 없이 전부 둘러보고, 최고의 순간 Live Photo와 짧은 클립으로 골라 보관함에 저장하면 Instagram이나 iMessage에 바로 쓸 수 있습니다. 외장 드라이브, NAS, iCloud Drive도 같은 방식으로 사용할 수 있습니다.',
+                points: [
+                    '외장 드라이브, SD 카드, NAS에 직접 접근',
+                    '파일, iCloud Drive, 기기 저장 공간 탐색',
+                    '사진 보관함에서 가져오기, iCloud 다운로드 진행 표시',
+                ],
+            },
+            {
+                eyebrow: '타임스탬프',
+                title: '모든 클립이 사진 앱에서 제자리에.',
+                desc: '콘서트 전체를 찍었지만 휴대폰 용량이 부족합니다. 전체 녹화본은 외장 드라이브에 있어서 마음이 생길 때마다 보기 어렵죠. Trimly로 하이라이트 클립 여러 개를 뽑아내면, 사진을 열었을 때 이미 그날 순서대로 정렬되어 있어 밤의 흐름을 그대로 따라갈 수 있습니다.',
+                points: [
+                    '생성 시간이 원본 내 위치와 연결',
+                    '여러 클립이 자동으로 순서 유지',
+                    '보낸 뒤 사진에서 다시 정렬할 필요 없음',
+                ],
+            },
+            {
+                eyebrow: '캡처',
+                title: '프레임과 Live Photo.',
+                desc: '영화나 애니에서 명장면을 봤나요? 잠금 화면 Live Photo로 만들 수 있습니다. 완벽한 프레임을 찾아 정지 이미지로 저장하거나, 움직이는 Live Photo로 캡처하세요. 기기, 위치 등 원본 메타데이터는 그대로 유지됩니다.',
+                points: [
+                    '동영상의 아무 프레임이나 이미지로 캡처',
+                    '동영상에서 Live Photo 캡처',
+                    '기기, 위치 등 메타데이터 보존',
+                ],
+            },
+            {
+                eyebrow: '보내기',
+                title: '패스스루보내기. 재인코딩 없음.',
+                desc: '원본이 500MB든 50GB든보내기는 거의 즉시입니다. Trimly는 재인코딩 없이 원본 미디어 스트림을 복사하므로 화질은 비트 단위로 동일합니다. 클립에 키워드를 붙여 두면 사진에서 언제든 검색할 수 있습니다.',
+                points: [
+                    '화질 손실 없음, 기다림 없음',
+                    '몇 시간짜리 파일에서 짧은 클립을 몇 초 만에',
+                    '클립에 키워드 태그로 쉽게 검색',
+                ],
+            },
+            {
+                eyebrow: '색감',
+                title: 'LUT 색보정, 내장.',
+                desc: 'iPhone, DJI, Insta360에서 찍은 Log 영상은 전문 편집 앱 밖에서는 밋밋하고 탁해 보입니다. Trimly에는 Apple Log 2와 인기 DJI·Insta360 기기용 Rec. 709 LUT가 내장되어 있습니다.<a class="fn-ref" href="#lut-disclaimer" aria-label="법적 고지">*</a> 자를 때 적용하면 화면이 바로 살아납니다. 미리보기와보내기 결과가 완전히 같습니다. 직접 만든 .cube 파일도 불러올 수 있습니다.',
+                points: [
+                    'Apple Log 2, DJI, Insta360용 Rec. 709 LUT 내장',
+                    '사용자 정의 .cube LUT 가져오기',
+                    '미리본 그대로보내기',
+                ],
+            },
+            {
+                eyebrow: '오디오',
+                title: '오디오 파일, 실제 파형으로.',
+                desc: '팟캐스트에서 인상 깊은 한 마디를 들었고 친구에게 잘라 보내고 싶나요? 오디오 파일을 Trimly에 넣으면 파형이 자동으로 나타납니다. 원하는 지점으로 스크롤해 구간을 정하고 자르면 됩니다. 무거운 오디오 편집기 없이 깔끔하고 빠릅니다.',
+                points: [
+                    '순수 오디오 가져오기 및 트리밍',
+                    '자동 생성 파형 시각화',
+                    '원시 PCM 데이터 지원',
+                ],
+            },
+            {
+                eyebrow: '속도',
+                title: '완전한 키보드 워크플로.',
+                desc: '책상에서 일해 본 사람이라면 키보드가 최고라는 걸 압니다. Trimly 단축키는 실제로 쓰는 모든 단계를 다룹니다. 재생, 일시 정지, 프레임 단위 이동, 클립 표시, 삭제, 실행 취소. 파일마다 독립 실행 취소 기록이 있어 하루 분량 영상도 손을 떼지 않고 처리할 수 있습니다.',
+                points: [
+                    '재생, 탐색, 프레임 단위 이동',
+                    '키 한 번으로 클립 표시 및 삭제',
+                    '파일별 실행 취소 / 다시 실행 기록',
+                ],
+            },
+            {
+                eyebrow: 'iPad',
+                title: 'iPad. 타협 없음.',
+                desc: 'iPad는 "생산성"용이라다 결국 스트리밍 기기가 되기 쉽습니다. 대개 iPad 탓이 아니라 앱 탓입니다. Trimly는 처음부터 iPad용으로 설계했습니다. 전체 키보드 단축키, 나란히 쓰는 다중 창, Slide Over 작은 패널부터 외장 디스플레이까지 어떤 창 크기에도 맞는 레이아웃.',
+                points: [
+                    '전체 키보드 단축키 지원',
+                    '나란히 작업하는 다중 창',
+                    '크기 조절 가능한 창과 적응형 레이아웃',
+                ],
+            },
+        ],
+        privacy: {
+            heading: '설계 단계부터의 프라이버시.',
+            body: 'Trimly는 기기 안에서만 동작합니다. 네트워크 요청을 보내지 않고, 계정도 없으며 사용자 데이터를 수집하지 않습니다. 촬영본은 항상 당신의 것입니다.',
+            tags: [
+                '기기 내에서만',
+                '네트워크 요청 없음',
+                '계정 없음',
+                '데이터 수집 없음',
+            ],
+        },
+        bottomCta: {
+            heading: '다음 클립까지 몇 초.',
+            subtitle: '한 번 구매로 iPhone, iPad, Mac 모두.',
+        },
+        footer: {
+            home: '홈',
+            support: '지원',
+            privacy: '개인정보 처리방침',
+            disclaimer: 'Apple, Apple Log, iPhone, iPad, Mac은 Apple Inc.의 상표입니다. DJI는 SZ DJI Technology Co., Ltd.의 상표입니다. Insta360은 Arashi Vision Inc.의 상표입니다. Trimly는 독립적으로 개발된 앱이며 위 회사들과 제휴·후원·승인 관계가 없습니다. 포함된 LUT 파일은 사용자가 자신의 촬영본을 개인적·비상업적 용도로 처리하도록 제공됩니다. 모든 상표는 각 소유자에게 귀속됩니다.',
+        },
+        legal: {
+            eyebrow: '법적 고지',
+            title: '개인정보 처리방침',
+            updated: '최종 업데이트: 2026년 5월 27일',
+            intro: 'Trimly는 기기에서만 완전히 동작하도록 설계되었습니다. 미디어가 iPhone, iPad, Mac을 떠날 필요가 없습니다. 이 방침은 그것이 프라이버시에 무엇을 의미하는지 쉬운 말로 설명합니다.',
+            contactLabel: '프라이버시 문의는',
+            sections: [
+                {
+                    h: '데이터 수집 없음',
+                    p: 'Trimly는 개인정보를 수집·저장·전송하지 않습니다. 분석, 추적, 광고 식별자, 이용 텔레메트리가 전혀 없습니다.',
+                },
+                {
+                    h: '네트워크 요청 없음',
+                    p: 'Trimly는 네트워크 요청을 보내지 않습니다. 촬영본, 편집 내용, 메타데이터는 기기를 벗어나지 않습니다.',
+                },
+                {
+                    h: '파일 및 사진 접근',
+                    p: '파일 앱, 외장 드라이브, 사진 보관함에서 미디어를 열면 Trimly는 자르고보내기 위해 읽을 뿐입니다. 모든 처리는 기기에서 로컬로 이루어지며,보낸 클립은 선택한 위치에 저장됩니다. Trimly는 허용된 경우에만 사진 보관함에 접근하며, 선택한 미디어를 가져오거나 저장하는 데만 사용합니다.',
+                },
+                {
+                    h: '계정 없음, 제3자 없음',
+                    p: 'Trimly에는 계정 시스템이나 로그인이 없습니다. 제3자 서비스, SDK, 클라우드 처리를 사용하지 않습니다.',
+                },
+                {
+                    h: '아동 프라이버시',
+                    p: 'Trimly는 데이터를 전혀 수집하지 않으므로 아동을 포함해 누구의 정보도 의도적으로 수집하지 않습니다.',
+                },
+                {
+                    h: '방침 변경',
+                    p: '이 방침이 변경되면 업데이트된 버전이 새 날짜와 함께 이 페이지에 게시됩니다.',
+                },
+            ],
+        },
+    },
     es: {
-        langLabel: 'ES',
+        langLabel: 'Español',
         indexTitle: 'Trimly — Tus mejores momentos, directo a tu biblioteca de Fotos.',
         privacyTitle: 'Política de privacidad — Trimly',
         nav: {

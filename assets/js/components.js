@@ -2,6 +2,42 @@
 const SUPPORT_MAILTO = 'mailto:hi@zshbleaker.me?subject='
     + encodeURIComponent('Trimly App Support from Website');
 
+const LANG_BADGES = {
+    en: { glyph: 'EN', className: '' },
+    zh: { glyph: '简', className: 'lang-badge-zh' },
+    ja: { glyph: 'あ', className: 'lang-badge-ja' },
+    ko: { glyph: '한', className: 'lang-badge-ko' },
+    es: { glyph: 'ES', className: '' },
+    ar: { glyph: 'ع', className: 'lang-badge-ar' },
+};
+
+const LANG_OPTIONS = [
+    { code: 'en', label: 'English' },
+    { code: 'zh', label: '简体中文' },
+    { code: 'ja', label: '日本語' },
+    { code: 'ko', label: '한국어' },
+    { code: 'es', label: 'Español' },
+    { code: 'ar', label: 'العربية' },
+];
+
+function renderLangFlag(code) {
+    const badge = LANG_BADGES[code] || LANG_BADGES.en;
+    const extraClass = badge.className ? ` ${badge.className}` : '';
+    return `<span class="lang-badge${extraClass}" aria-hidden="true">${badge.glyph}</span>`;
+}
+
+function renderLangOptions() {
+    return LANG_OPTIONS.map(({ code, label }) => `
+        <button class="lang-option" type="button" data-lang="${code}">
+            <span class="lang-option-main">
+                ${renderLangFlag(code)}
+                <span class="lang-option-label">${label}</span>
+            </span>
+            <span class="check">&#10003;</span>
+        </button>
+    `).join('');
+}
+
 class TrimlyHeader extends HTMLElement {
     static get observedAttributes() {
         return ['lang'];
@@ -21,12 +57,13 @@ class TrimlyHeader extends HTMLElement {
         const lang = this.getAttribute('lang') || 'en';
         const T = window.T || {};
         const t = T[lang] || T.en || {
-            langLabel: 'EN',
             nav: {
                 features: 'Features',
                 download: 'Download',
             },
         };
+
+        const currentLangLabel = LANG_OPTIONS.find(o => o.code === lang)?.label || LANG_OPTIONS[0].label;
 
         const isIndex = window.location.pathname.endsWith('index.html')
             || window.location.pathname === '/'
@@ -34,6 +71,7 @@ class TrimlyHeader extends HTMLElement {
 
         const brandHref = isIndex ? '#' : 'index.html';
         const featuresHref = isIndex ? '#features' : 'index.html#features';
+        const currentFlag = renderLangFlag(lang);
 
         this.innerHTML = `
             <nav>
@@ -72,20 +110,12 @@ class TrimlyHeader extends HTMLElement {
                         <a class="nav-link" href="${featuresHref}">${t.nav.features}</a>
                         <a class="nav-link" href="https://apps.apple.com/app/trimly" target="_blank" rel="noopener">${t.nav.download}</a>
                         <div class="lang-switcher">
-                            <button class="lang-btn">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <path d="M2 12h20"/>
-                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/>
-                                </svg>
-                                <span class="lang-current">${t.langLabel}</span>
+                            <button class="lang-btn" type="button" aria-haspopup="listbox" aria-expanded="false">
+                                ${currentFlag}
+                                <span class="lang-current">${currentLangLabel}</span>
                             </button>
                             <div class="lang-dropdown" id="langDropdown">
-                                <button class="lang-option" data-lang="en">English <span class="check">&#10003;</span></button>
-                                <button class="lang-option" data-lang="zh">简体中文 <span class="check">&#10003;</span></button>
-                                <button class="lang-option" data-lang="ja">日本語 <span class="check">&#10003;</span></button>
-                                <button class="lang-option" data-lang="es">Español <span class="check">&#10003;</span></button>
-                                <button class="lang-option" data-lang="ar">العربية <span class="check">&#10003;</span></button>
+                                ${renderLangOptions()}
                             </div>
                         </div>
                     </div>
@@ -107,11 +137,13 @@ class TrimlyHeader extends HTMLElement {
 
         btn.addEventListener('click', e => {
             e.stopPropagation();
-            dropdown.classList.toggle('open');
+            const isOpen = dropdown.classList.toggle('open');
+            btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
         });
 
         const closeDropdown = () => {
             dropdown.classList.remove('open');
+            btn.setAttribute('aria-expanded', 'false');
         };
 
         document.addEventListener('click', closeDropdown);

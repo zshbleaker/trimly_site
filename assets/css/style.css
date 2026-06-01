@@ -24,6 +24,10 @@
     --bg-secondary: #F5F5F7;
     --bg-dark: #1D1D1F;
     --border-color: rgba(0, 0, 0, 0.06);
+    --lang-badge-bg: #1D1D1F;
+    --lang-badge-fg: #FFFFFF;
+    --lang-badge-bg-active: #007AFF;
+    --lang-badge-fg-active: #FFFFFF;
     --font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Noto Sans SC', 'Noto Sans JP', Arial, sans-serif;
     --max-w: 1080px;
     --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -132,9 +136,52 @@ nav {
     color: var(--text-primary);
 }
 
-.lang-btn svg {
-    width: 16px;
-    height: 16px;
+.lang-badge {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 2.1em;
+    height: 1.48em;
+    padding: 0.12em 0 0.04em;
+    border-radius: 0.3em;
+    font-size: 0.74em;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    font-family: var(--font);
+    background: var(--lang-badge-bg);
+    color: var(--lang-badge-fg);
+}
+
+.lang-badge-zh {
+    font-family: 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', var(--font);
+}
+
+.lang-badge-ja {
+    font-family: 'Hiragino Sans', 'Yu Gothic', 'Meiryo', var(--font);
+    font-weight: 500;
+}
+
+.lang-badge-ko {
+    font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', var(--font);
+}
+
+.lang-badge-ar {
+    font-family: 'SF Arabic', 'Geeza Pro', 'Noto Naskh Arabic', var(--font);
+    font-weight: 500;
+}
+
+.lang-option-main {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.lang-option-label {
+    flex: 1;
 }
 
 .lang-dropdown {
@@ -149,7 +196,7 @@ nav {
     border-radius: 12px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
     overflow: hidden;
-    min-width: 140px;
+    min-width: 172px;
 }
 
 .lang-dropdown.open {
@@ -169,7 +216,7 @@ nav {
     background: none;
     width: 100%;
     font-family: var(--font);
-    text-align: left;
+    text-align: start;
 }
 
 .lang-option:hover {
@@ -184,6 +231,11 @@ nav {
 
 .lang-option.active .check {
     opacity: 1;
+}
+
+.lang-option.active .lang-badge {
+    background: var(--lang-badge-bg-active);
+    color: var(--lang-badge-fg-active);
 }
 
 /* === HERO === */
@@ -839,6 +891,10 @@ footer {
         --bg-secondary: #3A3A3C;
         --bg-dark: #000000;
         --border-color: rgba(255, 255, 255, 0.08);
+        --lang-badge-bg: #F5F5F7;
+        --lang-badge-fg: #1D1D1F;
+        --lang-badge-bg-active: #0A84FF;
+        --lang-badge-fg-active: #FFFFFF;
     }
 
     /* Nav frosted glass — dark tint */

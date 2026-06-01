@@ -96,6 +96,9 @@ function detectLanguage() {
     if (lang.startsWith('ja')) {
         return 'ja';
     }
+    if (lang.startsWith('ko')) {
+        return 'ko';
+    }
     if (lang.startsWith('ar')) {
         return 'ar';
     }
