@@ -157,6 +157,7 @@ class TrimlyFooter extends HTMLElement {
                 home: 'Home',
                 support: 'Support',
                 privacy: 'Privacy Policy',
+                disclaimer: '',
             },
         };
 
@@ -166,6 +167,10 @@ class TrimlyFooter extends HTMLElement {
 
         const homeHref = isIndex ? '#' : 'index.html';
 
+        const disclaimer = t.footer.disclaimer
+            ? `<p class="footer-disclaimer" id="lut-disclaimer">${t.footer.disclaimer}</p>`
+            : '';
+
         this.innerHTML = `
             <footer>
                 <div class="footer-links">
@@ -173,6 +178,7 @@ class TrimlyFooter extends HTMLElement {
                     <a href="${SUPPORT_MAILTO}">${t.footer.support}</a>
                     <a href="privacy.html">${t.footer.privacy}</a>
                 </div>
+                ${disclaimer}
                 <p class="footer-copy">&copy; 2026 Trimly</p>
             </footer>
         `;

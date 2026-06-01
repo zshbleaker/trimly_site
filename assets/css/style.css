@@ -420,6 +420,20 @@ nav {
     line-height: 1.6;
 }
 
+.feature-block p .fn-ref {
+    font-size: 0.75em;
+    vertical-align: super;
+    color: var(--text-tertiary);
+    text-decoration: none;
+    margin-inline-start: 1px;
+    transition: color 0.2s;
+}
+
+.feature-block p .fn-ref:hover {
+    color: var(--text-secondary);
+    text-decoration: underline;
+}
+
 .feature-points {
     list-style: none;
     margin-top: 20px;
@@ -770,6 +784,15 @@ footer {
 
 .footer-links a:hover {
     color: var(--text-primary);
+}
+
+.footer-disclaimer {
+    max-width: 720px;
+    margin: 0 auto 16px;
+    font-size: 11px;
+    line-height: 1.6;
+    color: var(--text-tertiary);
+    scroll-margin-top: 72px;
 }
 
 /* === ANIMATIONS === */

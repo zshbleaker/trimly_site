@@ -14,7 +14,7 @@ window.T = {
             cta: 'Download on the App Store',
             meta1: 'Buy once',
             meta2: 'All platforms',
-            meta3: 'Fully offline',
+            meta3: 'No network requests',
         },
         features: [
             {
@@ -60,7 +60,7 @@ window.T = {
             {
                 eyebrow: 'Color',
                 title: 'LUT color grading, built in.',
-                desc: 'Log footage from your iPhone, DJI, or Insta360 looks flat and washed-out outside a pro editing app. Trimly includes built-in Rec. 709 LUTs for Apple Log 2, popular DJI and Insta360 devices. Apply one while you trim and the image comes alive instantly. What you see in the preview is exactly what gets exported. You can load your own .cube files too.',
+                desc: 'Log footage from your iPhone, DJI, or Insta360 looks flat and washed-out outside a pro editing app. Trimly includes built-in Rec. 709 LUTs for Apple Log 2, popular DJI and Insta360 devices.<a class="fn-ref" href="#lut-disclaimer" aria-label="Legal disclaimer">*</a> Apply one while you trim and the image comes alive instantly. What you see in the preview is exactly what gets exported. You can load your own .cube files too.',
                 points: [
                     'Bundled Rec. 709 LUTs for Apple Log 2, DJI & Insta360',
                     'Import custom .cube LUTs',
@@ -100,10 +100,10 @@ window.T = {
         ],
         privacy: {
             heading: 'Private by design.',
-            body: 'Trimly runs fully on-device, never requests network access, has no accounts, and collects no user data. Your footage stays yours.',
+            body: 'Trimly runs fully on-device, never sends network requests, has no accounts, and collects no user data. Your footage stays yours.',
             tags: [
-                'Fully offline',
-                'No network permission',
+                'On-device only',
+                'No network requests',
                 'No account',
                 'No data collection',
             ],
@@ -116,6 +116,7 @@ window.T = {
             home: 'Home',
             support: 'Support',
             privacy: 'Privacy Policy',
+            disclaimer: 'Apple, Apple Log, iPhone, iPad, and Mac are trademarks of Apple Inc. DJI is a trademark of SZ DJI Technology Co., Ltd. Insta360 is a trademark of Arashi Vision Inc. Trimly is developed independently and is not affiliated with, sponsored by, or endorsed by any of these companies. Bundled LUT files are provided to help users process their own footage for personal, non-commercial use only. All trademarks are the property of their respective owners.',
         },
         legal: {
             eyebrow: 'Legal',
@@ -129,8 +130,8 @@ window.T = {
                     p: 'Trimly does not collect, store, or transmit any personal information. There is no analytics, no tracking, no advertising identifiers, and no telemetry of any kind.',
                 },
                 {
-                    h: 'Fully offline',
-                    p: 'Trimly does not request network access and does not connect to the internet. Because nothing is ever sent anywhere, your footage and edits stay entirely on your device.',
+                    h: 'No network requests',
+                    p: 'Trimly does not send any network requests. Your footage, edits, and metadata never leave your device.',
                 },
                 {
                     h: 'Files and Photos access',
@@ -166,7 +167,7 @@ window.T = {
             cta: '在 App Store 下载',
             meta1: '一次买断',
             meta2: '全平台通用',
-            meta3: '完全离线',
+            meta3: '不发送网络请求',
         },
         features: [
             {
@@ -212,7 +213,7 @@ window.T = {
             {
                 eyebrow: '调色',
                 title: '支持 LUT 调色',
-                desc: '为了追求高画质，你用 iPhone、大疆或影石设备拍了 Log 视频，结果只能在专业剪辑软件里当素材，平时回看全是灰蒙蒙的。Trimly 内置 Apple Log 2、大疆和影石常见设备的 Rec. 709 还原 LUT，裁剪时一键挂上，画面立刻鲜活起来，导出的效果和预览完全一致。也可以导入你自己的 .cube 文件。',
+                desc: '为了追求高画质，你用 iPhone、大疆或影石设备拍了 Log 视频，结果只能在专业剪辑软件里当素材，平时回看全是灰蒙蒙的。Trimly 内置 Apple Log 2、大疆和影石常见设备的 Rec. 709 还原 LUT<a class="fn-ref" href="#lut-disclaimer" aria-label="法律说明">*</a>，裁剪时一键挂上，画面立刻鲜活起来，导出的效果和预览完全一致。也可以导入你自己的 .cube 文件。',
                 points: [
                     '内置 Apple Log 2、大疆、影石 → Rec. 709 还原 LUT',
                     '支持导入自定义 .cube LUT',
@@ -252,10 +253,10 @@ window.T = {
         ],
         privacy: {
             heading: '隐私，从设计之初',
-            body: 'Trimly 完全在设备本地运行，从不请求网络访问，没有账号体系，也不收集任何用户数据。你的素材始终属于你。',
+            body: 'Trimly 完全在设备本地运行，不会发送任何网络请求，没有账号体系，也不收集任何用户数据。你的素材始终属于你。',
             tags: [
-                '完全离线',
-                '无网络权限',
+                '本地运行',
+                '不发送网络请求',
                 '无账号',
                 '不收集数据',
             ],
@@ -268,6 +269,7 @@ window.T = {
             home: '首页',
             support: '支持',
             privacy: '隐私政策',
+            disclaimer: 'Apple、Apple Log、iPhone、iPad、Mac 是 Apple Inc. 的商标。大疆（DJI）是深圳市大疆创新科技有限公司的商标。影石（Insta360）是影石创新科技股份有限公司的商标。Trimly 为独立开发的应用，与上述公司及其关联企业无任何隶属、赞助或授权关系。内置 LUT 文件旨在帮助用户处理个人素材，仅供个人非商业用途。所有商标均归其各自所有者所有。',
         },
         legal: {
             eyebrow: '法律',
@@ -281,8 +283,8 @@ window.T = {
                     p: 'Trimly 不收集、不存储、也不传输任何个人信息。没有数据分析，没有追踪，没有广告标识符，也没有任何形式的使用统计。',
                 },
                 {
-                    h: '完全离线',
-                    p: 'Trimly 不请求网络权限，也不连接互联网。由于不会向任何地方发送数据，你的素材和编辑内容都完整保留在你的设备上。',
+                    h: '不发送网络请求',
+                    p: 'Trimly 不会发起任何网络请求。你的素材、编辑内容和元数据始终保留在设备本地，不会上传至任何服务器。',
                 },
                 {
                     h: '文件与照片访问',
@@ -318,7 +320,7 @@ window.T = {
             cta: 'App Storeでダウンロード',
             meta1: '買い切り',
             meta2: '全デバイス対応',
-            meta3: '完全オフライン',
+            meta3: 'ネットワーク送信なし',
         },
         features: [
             {
@@ -364,7 +366,7 @@ window.T = {
             {
                 eyebrow: 'カラー',
                 title: 'LUTカラーグレーディング対応。',
-                desc: '高画質のためにiPhone、DJI、Insta360でLog撮影したのに、普段見返すと全体がグレーでパッとしない……。Trimlyには Apple Log 2、DJI・Insta360の一般的な機種向け Rec. 709 変換 LUTが内蔵されているので、トリミング中にワンタップで適用すれば画面が一気に鮮やかに。プレビューと書き出しが完全に一致。自分の .cube ファイルも読み込める。',
+                desc: '高画質のためにiPhone、DJI、Insta360でLog撮影したのに、普段見返すと全体がグレーでパッとしない……。Trimlyには Apple Log 2、DJI・Insta360の一般的な機種向け Rec. 709 変換 LUT<a class="fn-ref" href="#lut-disclaimer" aria-label="法的免責事項">*</a>が内蔵されているので、トリミング中にワンタップで適用すれば画面が一気に鮮やかに。プレビューと書き出しが完全に一致。自分の .cube ファイルも読み込める。',
                 points: [
                     'Apple Log 2、DJI・Insta360 → Rec. 709 LUTを内蔵',
                     'カスタム.cube LUTをインポート',
@@ -404,10 +406,10 @@ window.T = {
         ],
         privacy: {
             heading: '設計段階からプライバシー重視。',
-            body: 'Trimlyは完全に端末内で動作します。ネットワークへのアクセスを求めず、アカウントも不要、ユーザーデータも収集しません。あなたの映像は、あなたのものです。',
+            body: 'Trimlyは完全に端末内で動作します。ネットワークリクエストは一切送信せず、アカウントも不要、ユーザーデータも収集しません。あなたの映像は、あなたのものです。',
             tags: [
-                '完全オフライン',
-                'ネットワーク権限なし',
+                '端末内で完結',
+                'ネットワーク送信なし',
                 'アカウント不要',
                 'データ収集なし',
             ],
@@ -420,6 +422,7 @@ window.T = {
             home: 'ホーム',
             support: 'サポート',
             privacy: 'プライバシーポリシー',
+            disclaimer: 'Apple、Apple Log、iPhone、iPad、MacはApple Inc.の商標です。DJIはSZ DJI Technology Co., Ltd.の商標です。Insta360はArashi Vision Inc.の商標です。Trimlyは独立して開発されたアプリであり、これらの企業とは提携・後援・承認の関係にありません。内蔵LUTはユーザー自身の映像を個人的・非商用目的で処理するために提供されています。すべての商標は各所有者に帰属します。',
         },
         legal: {
             eyebrow: '法的事項',
@@ -433,8 +436,8 @@ window.T = {
                     p: 'Trimlyは個人情報を収集・保存・送信しません。分析、トラッキング、広告識別子、利用テレメトリの類は一切ありません。',
                 },
                 {
-                    h: '完全オフライン',
-                    p: 'Trimlyはネットワーク権限を要求せず、インターネットにも接続しません。どこにも送信しないため、あなたの映像や編集内容はすべてデバイス内に留まります。',
+                    h: 'ネットワーク送信なし',
+                    p: 'Trimlyはネットワークリクエストを一切送信しません。あなたの映像、編集内容、メタデータはデバイスから外に出ることはありません。',
                 },
                 {
                     h: 'ファイルと写真へのアクセス',
@@ -470,7 +473,7 @@ window.T = {
             cta: 'حمِّل من App Store',
             meta1: 'ادفع مرة',
             meta2: 'كل الأجهزة',
-            meta3: 'يعمل دون إنترنت',
+            meta3: 'لا طلبات شبكة',
         },
         features: [
             {
@@ -516,7 +519,7 @@ window.T = {
             {
                 eyebrow: 'الألوان',
                 title: 'تدريج ألوان LUT مدمج.',
-                desc: 'لقطات Log من iPhone أو أجهزة DJI أو Insta360 تبدو باهتة ورمادية خارج برنامج مونتاج احترافي. Trimly يتضمن LUT مدمجة لتحويل Apple Log 2 وأجهزة DJI وInsta360 الشائعة إلى Rec. 709. طبّقها أثناء القص وسترى الصورة تنبض بالحياة. ما تراه في المعاينة هو تماماً ما يُصدّر. يمكنك أيضاً تحميل ملفات .cube الخاصة بك.',
+                desc: 'لقطات Log من iPhone أو أجهزة DJI أو Insta360 تبدو باهتة ورمادية خارج برنامج مونتاج احترافي. Trimly يتضمن LUT مدمجة لتحويل Apple Log 2 وأجهزة DJI وInsta360 الشائعة إلى Rec. 709.<a class="fn-ref" href="#lut-disclaimer" aria-label="إخلاء مسؤولية قانوني">*</a> طبّقها أثناء القص وسترى الصورة تنبض بالحياة. ما تراه في المعاينة هو تماماً ما يُصدّر. يمكنك أيضاً تحميل ملفات .cube الخاصة بك.',
                 points: [
                     'LUT مدمجة: Apple Log 2 وDJI وInsta360 → Rec. 709',
                     'استيراد ملفات .cube LUT المخصصة',
@@ -566,10 +569,10 @@ window.T = {
         ],
         privacy: {
             heading: 'خصوصية بالتصميم.',
-            body: 'تعمل Trimly بالكامل على جهازك. لا تطلب صلاحيات الشبكة، وليس لها نظام حسابات، ولا تجمع أي بيانات مستخدم. لقطاتك تبقى لك.',
+            body: 'تعمل Trimly بالكامل على جهازك. لا ترسل أي طلبات شبكة، وليس لها نظام حسابات، ولا تجمع أي بيانات مستخدم. لقطاتك تبقى لك.',
             tags: [
-                'يعمل دون إنترنت كلياً',
-                'بدون صلاحية شبكة',
+                'تعمل على الجهاز فقط',
+                'لا طلبات شبكة',
                 'بدون حساب',
                 'لا جمع للبيانات',
             ],
@@ -582,6 +585,7 @@ window.T = {
             home: 'الرئيسية',
             support: 'الدعم',
             privacy: 'سياسة الخصوصية',
+            disclaimer: 'Apple وApple Log وiPhone وiPad وMac علامات تجارية لـ Apple Inc. DJI علامة تجارية لـ SZ DJI Technology Co., Ltd. Insta360 علامة تجارية لـ Arashi Vision Inc. Trimly تطبيق مستقل ولا يرتبط بأي من هذه الشركات ولا يرعاه ولا يحظى باعتمادها. ملفات LUT المدمجة مخصّصة لمساعدة المستخدمين على معالجة لقطاتهم الشخصية لأغراض شخصية وغير تجارية فقط. جميع العلامات التجارية ملك لأصحابها.',
         },
         legal: {
             eyebrow: 'قانوني',
@@ -595,8 +599,8 @@ window.T = {
                     p: 'لا تجمع Trimly أي معلومات شخصية ولا تخزّنها ولا تنقلها. لا تحليلات، لا تتبع، لا معرّفات إعلانية، ولا أي قياس للاستخدام من أي نوع.',
                 },
                 {
-                    h: 'تعمل دون إنترنت كلياً',
-                    p: 'لا تطلب Trimly صلاحية الوصول إلى الشبكة ولا تتصل بالإنترنت. ولأنه لا شيء يُرسَل إلى أي مكان، تبقى لقطاتك وتعديلاتك بالكامل على جهازك.',
+                    h: 'لا طلبات شبكة',
+                    p: 'لا ترسل Trimly أي طلبات شبكة. تبقى لقطاتك وتعديلاتك وبياناتك الوصفية على جهازك ولا تغادره.',
                 },
                 {
                     h: 'الوصول إلى الملفات والصور',
