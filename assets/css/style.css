@@ -91,6 +91,8 @@
 
 html {
     scroll-behavior: smooth;
+    color-scheme: light;
+    background-color: var(--bg-primary);
 }
 
 body {
@@ -1003,6 +1005,10 @@ footer {
 
 /* === DARK MODE === */
 @media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+
     :root {
         --text-primary: #F5F5F7;
         --text-secondary: #98989D;

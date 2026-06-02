@@ -6,6 +6,12 @@
     <title>Trimly — Your best moments, straight into your Photo Library.</title>
     <meta name="description" content="Turn recordings into highlight clips that land in your Photo Library in seconds, no re-encoding, chronologically ordered. Frame capture, Live Photo generation, built-in Rec. 709 LUTs for Apple Log 2, DJI & Insta360, audio waveforms. Never sends network requests. Buy once, use on iPhone, iPad, and Mac.">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂️</text></svg>">
+    <meta name="color-scheme" content="light dark">
+    <style>
+        @media (prefers-color-scheme: dark) {
+            html { color-scheme: dark; background-color: #2C2C2E; }
+        }
+    </style>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -68,8 +74,8 @@
         <div class="hero-screenshot">
             <div class="screenshot-placeholder">
                 <picture>
-                    <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.webp">
-                    <img src="assets/header.webp" alt="Trimly on Mac, iPad, and iPhone">
+                    <source media="(prefers-color-scheme: light)" srcset="assets/header.webp">
+                    <img src="assets/header-dark.webp" alt="Trimly on Mac, iPad, and iPhone">
                 </picture>
             </div>
         </div>
