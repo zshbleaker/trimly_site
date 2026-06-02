@@ -7,17 +7,72 @@
 
 :root {
     --orange-start: #FF9500;
-    --orange-end: #FF6B00;
+    --orange-end: #C93400;
     --blue-start: #32ADE6;
-    --blue-end: #007AFF;
-    --green: #30D158;
-    --purple: #BF5AF2;
-    --teal: #30B0C7;
-    --pink: #FF2D55;
-    --indigo: #5856D6;
-    --red: #FF3B30;
-    --yellow: #C49000;
-    --cyan: #5AC8FA;
+    --blue-end: #0071E3;
+    --green: #248A3D;
+    --purple: #8944AB;
+    --teal: #0F766E;
+    --pink: #D70050;
+    --indigo: #3634A3;
+    --red: #D70015;
+    --yellow: #9A7200;
+    --cyan: #0284C7;
+
+    /*
+     * Feature accent palette (10 unique hues — light mode)
+     * ┌─────────┬──────────┬────────────────────────────────────┐
+     * │ Accent  │ Hex      │ Section                            │
+     * ├─────────┼──────────┼────────────────────────────────────┤
+     * │ blue    │ #0071E3  │ Import                             │
+     * │ orange  │ #C93400  │ Timestamps                         │
+     * │ green   │ #248A3D  │ Capture                            │
+     * │ purple  │ #8944AB  │ Export                             │
+     * │ cyan    │ #0284C7  │ HDR                                │
+     * │ yellow  │ #9A7200  │ LUT                                │
+     * │ pink    │ #D70050  │ Audio                              │
+     * │ indigo  │ #3634A3  │ Keyboard                           │
+     * │ red     │ #D70015  │ iPad                               │
+     * │ teal    │ #0F766E  │ RTL (Arabic)                       │
+     * └─────────┴──────────┴────────────────────────────────────┘
+     */
+    --accent-blue: #0071E3;
+    --accent-orange: #C93400;
+    --accent-green: #248A3D;
+    --accent-purple: #8944AB;
+    --accent-cyan: #0284C7;
+    --accent-yellow: #9A7200;
+    --accent-pink: #D70050;
+    --accent-indigo: #3634A3;
+    --accent-red: #D70015;
+    --accent-teal: #0F766E;
+
+    --accent-blue-a: 0, 113, 227;
+    --accent-blue-b: 0, 82, 163;
+    --accent-orange-a: 201, 52, 0;
+    --accent-orange-b: 163, 42, 0;
+    --accent-green-a: 36, 138, 61;
+    --accent-green-b: 28, 110, 49;
+    --accent-purple-a: 137, 68, 171;
+    --accent-purple-b: 110, 54, 138;
+    --accent-cyan-a: 2, 132, 199;
+    --accent-cyan-b: 3, 105, 161;
+    --accent-yellow-a: 154, 114, 0;
+    --accent-yellow-b: 124, 92, 0;
+    --accent-pink-a: 215, 0, 80;
+    --accent-pink-b: 175, 0, 65;
+    --accent-indigo-a: 54, 52, 163;
+    --accent-indigo-b: 43, 42, 131;
+    --accent-red-a: 215, 0, 21;
+    --accent-red-b: 175, 0, 17;
+    --accent-teal-a: 15, 118, 110;
+    --accent-teal-b: 12, 95, 88;
+
+    --accent-visual-o1: 0.11;
+    --accent-visual-o2: 0.05;
+    --accent-badge-o1: 0.20;
+    --accent-badge-o2: 0.14;
+
     --text-primary: #1D1D1F;
     --text-secondary: #6E6E73;
     --text-tertiary: #AEAEB2;
@@ -449,16 +504,16 @@ nav {
     height: 18px;
 }
 
-.feature-eyebrow.orange { color: #E07B00; }
-.feature-eyebrow.blue { color: #1A8FE3; }
-.feature-eyebrow.green { color: #1FA34A; }
-.feature-eyebrow.purple { color: #A33DD8; }
-.feature-eyebrow.teal { color: #2898AC; }
-.feature-eyebrow.pink { color: #D92550; }
-.feature-eyebrow.indigo { color: #4B49B6; }
-.feature-eyebrow.red { color: #E0321E; }
-.feature-eyebrow.yellow { color: #A67A00; }
-.feature-eyebrow.cyan { color: #2898C0; }
+.feature-eyebrow.orange { color: var(--accent-orange); }
+.feature-eyebrow.blue { color: var(--accent-blue); }
+.feature-eyebrow.green { color: var(--accent-green); }
+.feature-eyebrow.purple { color: var(--accent-purple); }
+.feature-eyebrow.teal { color: var(--accent-teal); }
+.feature-eyebrow.pink { color: var(--accent-pink); }
+.feature-eyebrow.indigo { color: var(--accent-indigo); }
+.feature-eyebrow.red { color: var(--accent-red); }
+.feature-eyebrow.yellow { color: var(--accent-yellow); }
+.feature-eyebrow.cyan { color: var(--accent-cyan); }
 
 .feature-block h2 {
     font-size: clamp(24px, 3.4vw, 32px);
@@ -511,16 +566,16 @@ nav {
     margin-top: 3px;
 }
 
-.feature-points.orange li svg { color: var(--orange-end); }
-.feature-points.blue li svg { color: var(--blue-end); }
-.feature-points.green li svg { color: var(--green); }
-.feature-points.purple li svg { color: var(--purple); }
-.feature-points.teal li svg { color: var(--teal); }
-.feature-points.pink li svg { color: var(--pink); }
-.feature-points.indigo li svg { color: var(--indigo); }
-.feature-points.red li svg { color: var(--red); }
-.feature-points.yellow li svg { color: var(--yellow); }
-.feature-points.cyan li svg { color: var(--cyan); }
+.feature-points.orange li svg { color: var(--accent-orange); }
+.feature-points.blue li svg { color: var(--accent-blue); }
+.feature-points.green li svg { color: var(--accent-green); }
+.feature-points.purple li svg { color: var(--accent-purple); }
+.feature-points.teal li svg { color: var(--accent-teal); }
+.feature-points.pink li svg { color: var(--accent-pink); }
+.feature-points.indigo li svg { color: var(--accent-indigo); }
+.feature-points.red li svg { color: var(--accent-red); }
+.feature-points.yellow li svg { color: var(--accent-yellow); }
+.feature-points.cyan li svg { color: var(--accent-cyan); }
 
 /* Feature visual placeholder */
 .feature-visual {
@@ -546,16 +601,46 @@ nav {
     display: block;
 }
 
-.feature-visual.orange { background: linear-gradient(145deg, rgba(255, 149, 0, 0.09), rgba(255, 107, 0, 0.04)); }
-.feature-visual.blue { background: linear-gradient(145deg, rgba(50, 173, 230, 0.09), rgba(0, 122, 255, 0.04)); }
-.feature-visual.green { background: linear-gradient(145deg, rgba(48, 209, 88, 0.09), rgba(36, 176, 72, 0.04)); }
-.feature-visual.purple { background: linear-gradient(145deg, rgba(191, 90, 242, 0.09), rgba(120, 40, 200, 0.04)); }
-.feature-visual.teal { background: linear-gradient(145deg, rgba(48, 176, 199, 0.09), rgba(30, 140, 170, 0.04)); }
-.feature-visual.pink { background: linear-gradient(145deg, rgba(255, 45, 85, 0.09), rgba(200, 30, 60, 0.04)); }
-.feature-visual.indigo { background: linear-gradient(145deg, rgba(88, 86, 214, 0.09), rgba(60, 58, 180, 0.04)); }
-.feature-visual.red { background: linear-gradient(145deg, rgba(255, 59, 48, 0.09), rgba(200, 40, 30, 0.04)); }
-.feature-visual.yellow { background: linear-gradient(145deg, rgba(196, 144, 0, 0.09), rgba(160, 110, 0, 0.04)); }
-.feature-visual.cyan { background: linear-gradient(145deg, rgba(90, 200, 250, 0.09), rgba(40, 152, 192, 0.04)); }
+.feature-visual.orange {
+    background: linear-gradient(145deg, rgba(var(--accent-orange-a), var(--accent-visual-o1)),
+        rgba(var(--accent-orange-b), var(--accent-visual-o2)));
+}
+.feature-visual.blue {
+    background: linear-gradient(145deg, rgba(var(--accent-blue-a), var(--accent-visual-o1)),
+        rgba(var(--accent-blue-b), var(--accent-visual-o2)));
+}
+.feature-visual.green {
+    background: linear-gradient(145deg, rgba(var(--accent-green-a), var(--accent-visual-o1)),
+        rgba(var(--accent-green-b), var(--accent-visual-o2)));
+}
+.feature-visual.purple {
+    background: linear-gradient(145deg, rgba(var(--accent-purple-a), var(--accent-visual-o1)),
+        rgba(var(--accent-purple-b), var(--accent-visual-o2)));
+}
+.feature-visual.teal {
+    background: linear-gradient(145deg, rgba(var(--accent-teal-a), var(--accent-visual-o1)),
+        rgba(var(--accent-teal-b), var(--accent-visual-o2)));
+}
+.feature-visual.pink {
+    background: linear-gradient(145deg, rgba(var(--accent-pink-a), var(--accent-visual-o1)),
+        rgba(var(--accent-pink-b), var(--accent-visual-o2)));
+}
+.feature-visual.indigo {
+    background: linear-gradient(145deg, rgba(var(--accent-indigo-a), var(--accent-visual-o1)),
+        rgba(var(--accent-indigo-b), var(--accent-visual-o2)));
+}
+.feature-visual.red {
+    background: linear-gradient(145deg, rgba(var(--accent-red-a), var(--accent-visual-o1)),
+        rgba(var(--accent-red-b), var(--accent-visual-o2)));
+}
+.feature-visual.yellow {
+    background: linear-gradient(145deg, rgba(var(--accent-yellow-a), var(--accent-visual-o1)),
+        rgba(var(--accent-yellow-b), var(--accent-visual-o2)));
+}
+.feature-visual.cyan {
+    background: linear-gradient(145deg, rgba(var(--accent-cyan-a), var(--accent-visual-o1)),
+        rgba(var(--accent-cyan-b), var(--accent-visual-o2)));
+}
 
 .fv-window {
     width: 100%;
@@ -605,16 +690,46 @@ nav {
     height: 24px;
 }
 
-.fv-badge.orange { background: linear-gradient(135deg, rgba(255, 149, 0, 0.18), rgba(255, 107, 0, 0.12)); }
-.fv-badge.blue { background: linear-gradient(135deg, rgba(50, 173, 230, 0.18), rgba(0, 122, 255, 0.12)); }
-.fv-badge.green { background: linear-gradient(135deg, rgba(48, 209, 88, 0.18), rgba(36, 176, 72, 0.12)); }
-.fv-badge.purple { background: linear-gradient(135deg, rgba(191, 90, 242, 0.18), rgba(120, 40, 200, 0.12)); }
-.fv-badge.teal { background: linear-gradient(135deg, rgba(48, 176, 199, 0.18), rgba(30, 140, 170, 0.12)); }
-.fv-badge.pink { background: linear-gradient(135deg, rgba(255, 45, 85, 0.18), rgba(200, 30, 60, 0.12)); }
-.fv-badge.indigo { background: linear-gradient(135deg, rgba(88, 86, 214, 0.18), rgba(60, 58, 180, 0.12)); }
-.fv-badge.red { background: linear-gradient(135deg, rgba(255, 59, 48, 0.18), rgba(200, 40, 30, 0.12)); }
-.fv-badge.yellow { background: linear-gradient(135deg, rgba(196, 144, 0, 0.18), rgba(160, 110, 0, 0.12)); }
-.fv-badge.cyan { background: linear-gradient(135deg, rgba(90, 200, 250, 0.18), rgba(40, 152, 192, 0.12)); }
+.fv-badge.orange {
+    background: linear-gradient(135deg, rgba(var(--accent-orange-a), var(--accent-badge-o1)),
+        rgba(var(--accent-orange-b), var(--accent-badge-o2)));
+}
+.fv-badge.blue {
+    background: linear-gradient(135deg, rgba(var(--accent-blue-a), var(--accent-badge-o1)),
+        rgba(var(--accent-blue-b), var(--accent-badge-o2)));
+}
+.fv-badge.green {
+    background: linear-gradient(135deg, rgba(var(--accent-green-a), var(--accent-badge-o1)),
+        rgba(var(--accent-green-b), var(--accent-badge-o2)));
+}
+.fv-badge.purple {
+    background: linear-gradient(135deg, rgba(var(--accent-purple-a), var(--accent-badge-o1)),
+        rgba(var(--accent-purple-b), var(--accent-badge-o2)));
+}
+.fv-badge.teal {
+    background: linear-gradient(135deg, rgba(var(--accent-teal-a), var(--accent-badge-o1)),
+        rgba(var(--accent-teal-b), var(--accent-badge-o2)));
+}
+.fv-badge.pink {
+    background: linear-gradient(135deg, rgba(var(--accent-pink-a), var(--accent-badge-o1)),
+        rgba(var(--accent-pink-b), var(--accent-badge-o2)));
+}
+.fv-badge.indigo {
+    background: linear-gradient(135deg, rgba(var(--accent-indigo-a), var(--accent-badge-o1)),
+        rgba(var(--accent-indigo-b), var(--accent-badge-o2)));
+}
+.fv-badge.red {
+    background: linear-gradient(135deg, rgba(var(--accent-red-a), var(--accent-badge-o1)),
+        rgba(var(--accent-red-b), var(--accent-badge-o2)));
+}
+.fv-badge.yellow {
+    background: linear-gradient(135deg, rgba(var(--accent-yellow-a), var(--accent-badge-o1)),
+        rgba(var(--accent-yellow-b), var(--accent-badge-o2)));
+}
+.fv-badge.cyan {
+    background: linear-gradient(135deg, rgba(var(--accent-cyan-a), var(--accent-badge-o1)),
+        rgba(var(--accent-cyan-b), var(--accent-badge-o2)));
+}
 
 .fv-lines {
     flex: 1;
@@ -900,6 +1015,73 @@ footer {
         --lang-badge-fg: #1D1D1F;
         --lang-badge-bg-active: #0A84FF;
         --lang-badge-fg-active: #FFFFFF;
+
+        /*
+         * Feature accent palette — dark mode (10 unique hues)
+         * ┌─────────┬──────────┬────────────────────────────────────┐
+         * │ Accent  │ Hex      │ Section                            │
+         * ├─────────┼──────────┼────────────────────────────────────┤
+         * │ blue    │ #32ADE6  │ Import                             │
+         * │ orange  │ #FF9500  │ Timestamps                         │
+         * │ green   │ #30D158  │ Capture                            │
+         * │ purple  │ #BF5AF2  │ Export                             │
+         * │ cyan    │ #5AC8FA  │ HDR                                │
+         * │ yellow  │ #FFD60A  │ LUT                                │
+         * │ pink    │ #FF375F  │ Audio                              │
+         * │ indigo  │ #7A78E6  │ Keyboard                           │
+         * │ red     │ #FF453A  │ iPad                               │
+         * │ teal    │ #34D399  │ RTL (Arabic)                       │
+         * └─────────┴──────────┴────────────────────────────────────┘
+         */
+        --orange-start: #FF9500;
+        --orange-end: #FF9500;
+        --blue-start: #32ADE6;
+        --blue-end: #32ADE6;
+        --green: #30D158;
+        --purple: #BF5AF2;
+        --teal: #34D399;
+        --pink: #FF375F;
+        --indigo: #7A78E6;
+        --red: #FF453A;
+        --yellow: #FFD60A;
+        --cyan: #5AC8FA;
+
+        --accent-blue: #32ADE6;
+        --accent-orange: #FF9500;
+        --accent-green: #30D158;
+        --accent-purple: #BF5AF2;
+        --accent-cyan: #5AC8FA;
+        --accent-yellow: #FFD60A;
+        --accent-pink: #FF375F;
+        --accent-indigo: #7A78E6;
+        --accent-red: #FF453A;
+        --accent-teal: #34D399;
+
+        --accent-blue-a: 50, 173, 230;
+        --accent-blue-b: 0, 122, 255;
+        --accent-orange-a: 255, 149, 0;
+        --accent-orange-b: 255, 107, 0;
+        --accent-green-a: 48, 209, 88;
+        --accent-green-b: 36, 176, 72;
+        --accent-purple-a: 191, 90, 242;
+        --accent-purple-b: 120, 40, 200;
+        --accent-cyan-a: 90, 200, 250;
+        --accent-cyan-b: 10, 155, 212;
+        --accent-yellow-a: 255, 214, 10;
+        --accent-yellow-b: 184, 134, 11;
+        --accent-pink-a: 255, 55, 95;
+        --accent-pink-b: 200, 30, 60;
+        --accent-indigo-a: 122, 120, 230;
+        --accent-indigo-b: 60, 58, 180;
+        --accent-red-a: 255, 69, 58;
+        --accent-red-b: 200, 40, 30;
+        --accent-teal-a: 52, 211, 153;
+        --accent-teal-b: 16, 185, 129;
+
+        --accent-visual-o1: 0.14;
+        --accent-visual-o2: 0.07;
+        --accent-badge-o1: 0.30;
+        --accent-badge-o2: 0.20;
     }
 
     /* Nav frosted glass — dark tint */
@@ -928,30 +1110,6 @@ footer {
         box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
     }
 
-    /* Feature eyebrows — brighter accent colours */
-    .feature-eyebrow.orange { color: #FF9500; }
-    .feature-eyebrow.blue { color: #32ADE6; }
-    .feature-eyebrow.green { color: #30D158; }
-    .feature-eyebrow.purple { color: #BF5AF2; }
-    .feature-eyebrow.teal { color: #5AC8FA; }
-    .feature-eyebrow.pink { color: #FF375F; }
-    .feature-eyebrow.indigo { color: #7A78E6; }
-    .feature-eyebrow.red { color: #FF453A; }
-    .feature-eyebrow.yellow { color: #DBA400; }
-    .feature-eyebrow.cyan { color: #5AC8FA; }
-
-    /* Feature visual gradient cards — slightly more visible on dark */
-    .feature-visual.orange { background: linear-gradient(145deg, rgba(255, 149, 0, 0.13), rgba(255, 107, 0, 0.06)); }
-    .feature-visual.blue { background: linear-gradient(145deg, rgba(50, 173, 230, 0.13), rgba(0, 122, 255, 0.06)); }
-    .feature-visual.green { background: linear-gradient(145deg, rgba(48, 209, 88, 0.13), rgba(36, 176, 72, 0.06)); }
-    .feature-visual.purple { background: linear-gradient(145deg, rgba(191, 90, 242, 0.13), rgba(120, 40, 200, 0.06)); }
-    .feature-visual.teal { background: linear-gradient(145deg, rgba(48, 176, 199, 0.13), rgba(30, 140, 170, 0.06)); }
-    .feature-visual.pink { background: linear-gradient(145deg, rgba(255, 45, 85, 0.13), rgba(200, 30, 60, 0.06)); }
-    .feature-visual.indigo { background: linear-gradient(145deg, rgba(88, 86, 214, 0.13), rgba(60, 58, 180, 0.06)); }
-    .feature-visual.red { background: linear-gradient(145deg, rgba(255, 59, 48, 0.13), rgba(200, 40, 30, 0.06)); }
-    .feature-visual.yellow { background: linear-gradient(145deg, rgba(196, 144, 0, 0.13), rgba(160, 110, 0, 0.06)); }
-    .feature-visual.cyan { background: linear-gradient(145deg, rgba(90, 200, 250, 0.13), rgba(40, 152, 192, 0.06)); }
-
     /* Mini window inside feature visual */
     .fv-bar span {
         background: rgba(255, 255, 255, 0.14);
@@ -960,18 +1118,6 @@ footer {
     .fv-lines i {
         background: rgba(255, 255, 255, 0.10);
     }
-
-    /* Badge gradients — boost opacity slightly */
-    .fv-badge.orange { background: linear-gradient(135deg, rgba(255, 149, 0, 0.28), rgba(255, 107, 0, 0.18)); }
-    .fv-badge.blue { background: linear-gradient(135deg, rgba(50, 173, 230, 0.28), rgba(0, 122, 255, 0.18)); }
-    .fv-badge.green { background: linear-gradient(135deg, rgba(48, 209, 88, 0.28), rgba(36, 176, 72, 0.18)); }
-    .fv-badge.purple { background: linear-gradient(135deg, rgba(191, 90, 242, 0.28), rgba(120, 40, 200, 0.18)); }
-    .fv-badge.teal { background: linear-gradient(135deg, rgba(48, 176, 199, 0.28), rgba(30, 140, 170, 0.18)); }
-    .fv-badge.pink { background: linear-gradient(135deg, rgba(255, 45, 85, 0.28), rgba(200, 30, 60, 0.18)); }
-    .fv-badge.indigo { background: linear-gradient(135deg, rgba(88, 86, 214, 0.28), rgba(60, 58, 180, 0.18)); }
-    .fv-badge.red { background: linear-gradient(135deg, rgba(255, 59, 48, 0.28), rgba(200, 40, 30, 0.18)); }
-    .fv-badge.yellow { background: linear-gradient(135deg, rgba(196, 144, 0, 0.28), rgba(160, 110, 0, 0.18)); }
-    .fv-badge.cyan { background: linear-gradient(135deg, rgba(90, 200, 250, 0.28), rgba(40, 152, 192, 0.18)); }
 }
 
 /* === RTL === */

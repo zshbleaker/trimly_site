@@ -83,12 +83,12 @@ const SECTION_META = [
     { key: 'order', accent: 'orange', icon: 'clock', visual: 'Photos timeline' },
     { key: 'capture', accent: 'green', icon: 'capture', visual: 'Frame & Live Photo' },
     { key: 'export', accent: 'purple', icon: 'export', visual: 'Passthrough export' },
-    { key: 'hdr', accent: 'cyan', icon: 'hdr', visual: 'Video · Still · Live Photo · LUT' },
-    { key: 'lut', accent: 'teal', icon: 'color', visual: 'Apple Log 2 · DJI · Insta360' },
+    { key: 'hdr', accent: 'cyan', icon: 'hdr', visual: 'Video · Still · Live Photo · HDR' },
+    { key: 'lut', accent: 'yellow', icon: 'color', visual: 'Apple Log 2 · DJI · Insta360' },
     { key: 'audio', accent: 'pink', icon: 'audio', visual: 'Waveform timeline' },
     { key: 'keys', accent: 'indigo', icon: 'keyboard', visual: 'Keyboard shortcuts' },
     { key: 'ipad', accent: 'red', icon: 'ipad', visual: 'iPad · resizable windows' },
-    { key: 'rtl', accent: 'yellow', icon: 'rtl', visual: 'RTL · يمين إلى يسار' },
+    { key: 'rtl', accent: 'teal', icon: 'rtl', visual: 'RTL · يمين إلى يسار' },
 ];
 
 let currentLang = 'en';
@@ -142,10 +142,7 @@ function renderFeatures() {
             `<li><span style="display:inline-flex">${CHECK}</span><span>${p}</span></li>`
         ).join('');
 
-        const accentColor = {
-            orange: 'orange-end',
-            blue: 'blue-end',
-        }[meta.accent] || meta.accent;
+        const accentColor = `accent-${meta.accent}`;
 
         return `<div class="feature-block${reverse} fade-in">
             <div class="feature-text">

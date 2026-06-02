@@ -30,10 +30,10 @@ window.T = {
             {
                 eyebrow: 'Timestamps',
                 title: 'Every clip lands in Photos right where it belongs.',
-                desc: 'You filmed the entire concert but your phone can’t hold that much. The full recording sits on an external drive, hard to revisit on a whim. With Trimly, pull out a dozen highlight clips. When you open Photos, they’re already sorted in the order they happened, like flipping through the night moment by moment.',
+                desc: 'You filmed the entire concert in one long video. With Trimly, pull out a dozen highlight clips — each one gets a creation time that matches the moment it actually happened in the recording. When you open Photos, they line up in chronological order alongside everything else you’ve shot, as if you’d captured each highlight separately.',
                 points: [
-                    'Creation time tied to position in the source',
-                    'Multiple clips stay in sequence, automatically',
+                    'Timestamps reflect each clip’s real moment in the timeline',
+                    'Exported clips sort naturally with your other photos and videos',
                     'No re-sorting in Photos after export',
                 ],
             },
@@ -49,22 +49,22 @@ window.T = {
             },
             {
                 eyebrow: 'Export',
-                title: 'Passthrough export. No transcoding.',
-                desc: 'It doesn’t matter if the source file is 500 MB or 50 GB, export is practically instant. Trimly copies the original media stream without re-encoding, so quality is bit-for-bit identical. Tag your clips with keywords and they’re searchable in Photos whenever you need them.',
+                title: 'Passthrough export — or transcode to save space.',
+                desc: 'It doesn’t matter if the source file is 500 MB or 50 GB — passthrough export is practically instant. Trimly copies the original media stream without re-encoding, so quality is bit-for-bit identical. Original footage too heavy for your phone or iCloud? Choose from multiple transcode tiers to shrink file size while keeping the clip you need. Tag your clips with keywords and they’re searchable in Photos whenever you need them.',
                 points: [
-                    'No quality loss, no waiting',
+                    'Passthrough export: no quality loss, no waiting',
                     'A short clip from a multi-hour file in seconds',
-                    'Tag clips with keywords for easy search',
+                    'Multiple transcode tiers when the original is too big for your device or iCloud',
                 ],
             },
             {
                 eyebrow: 'HDR',
                 title: 'Full HDR support.',
-                desc: 'You shot HDR footage on a trip — bright highlights in the sky, detail still visible in the shadows. Open the same file in most editors and the preview looks flat; export a clip and the highlights clip or the whole thing gets crushed to SDR. In Trimly, HDR stays intact from preview to Photos: trimmed clips keep the same range, stills and Live Photos save as HDR images, and if your LUT supports HDR, Trimly applies and exports it correctly.',
+                desc: 'You shot HDR footage on a trip — bright highlights in the sky, detail still visible in the shadows. Open the same file in most editors and the preview looks flat; export a clip and the highlights clip or the whole thing gets crushed to SDR. In Trimly, HDR stays intact from preview to Photos: trimmed clips keep the same range, stills and Live Photos save as HDR images, and transcode export preserves HDR too.',
                 points: [
-                    'True HDR preview on XDR and ProMotion displays',
+                    'True HDR preview on XDR displays',
                     'Passthrough video and Live Photo export with HDR metadata intact',
-                    'HDR LUTs supported — load and export just like SDR LUTs',
+                    'Transcode export keeps HDR when you need smaller files',
                 ],
             },
             {
@@ -74,7 +74,7 @@ window.T = {
                 points: [
                     'Bundled Rec. 709 LUTs for Apple Log 2, DJI & Insta360',
                     'Import custom .cube LUTs',
-                    'What you preview is what you export',
+                    'HDR LUTs supported — load and export just like SDR LUTs',
                 ],
             },
             {
@@ -193,10 +193,10 @@ window.T = {
             {
                 eyebrow: '时间戳',
                 title: '每个片段，在相册里精准归位',
-                desc: '看演唱会录了超长的视频，舍不得删，但手机空间不够，存到移动硬盘里又不方便随时回味。用 Trimly 从中提取多个精彩时刻的短视频，导出后打开相册，它们已经按演出的先后顺序自动排好了，滑动浏览就能还原现场的心情起伏。',
+                desc: '看演唱会录了一整段超长视频，用 Trimly 从中提取多个精彩时刻。每个片段的创建时间会自动对应它在原片中的真实时刻，导出后打开相册，它们会和你在同一天拍的其他照片、视频一起，按时间顺序自然排列，滑动浏览就能还原现场的心情起伏。',
                 points: [
-                    '创建时间对应片段在原片中的位置',
-                    '多个片段自动保持先后顺序',
+                    '创建时间精确对应片段在原片中的真实时刻',
+                    '与相册里的其他内容自然混排、有序排列',
                     '无需在相册中手动重排',
                 ],
             },
@@ -212,22 +212,22 @@ window.T = {
             },
             {
                 eyebrow: '导出',
-                title: '直通导出，不重新编码',
-                desc: '无论原片有多大，导出都是一瞬间的事。Trimly 不重新编码，直接拷贝原始媒体流，画质分毫不差，几个 G 的文件也是秒出。给片段打上关键字标签，以后在相册里随时搜得到。',
+                title: '直通导出，也支持多档位转码',
+                desc: '无论原片有多大，直通导出都是一瞬间的事。Trimly 不重新编码，直接拷贝原始媒体流，画质分毫不差。原始素材码率太高、手机或 iCloud 装不下？可选多档位转码导出，在保留所需片段的同时节省空间。给片段打上关键字标签，以后在相册里随时搜得到。',
                 points: [
-                    '不损失画质，无需等待',
+                    '直通导出：不损失画质，无需等待',
                     '数小时长片中截取片段，瞬间完成',
-                    '支持给片段加关键字，方便检索',
+                    '多档位转码，原片太大时也能省空间',
                 ],
             },
             {
                 eyebrow: 'HDR',
                 title: '完整的 HDR 支持',
-                desc: '旅行时录了段 HDR 视频，回放时天空的高光和街景暗部的细节都还在。换到其他 App，预览发灰，导出后要么高光过曝，要么整段被压成发白的 SDR。Trimly 从预览到写入相册全程保留 HDR：裁一段短视频，动态范围和原片一致；截一帧或做 Live Photo，存进去仍是 HDR 图像；如果 LUT 本身支持 HDR，Trimly 也能正确应用并导出。',
+                desc: '旅行时录了段 HDR 视频，回放时天空的高光和街景暗部的细节都还在。换到其他 App，预览发灰，导出后要么高光过曝，要么整段被压成发白的 SDR。Trimly 从预览到写入相册全程保留 HDR：裁一段短视频，动态范围和原片一致；截一帧或做 Live Photo，存进去仍是 HDR 图像；需要转码省空间时，HDR 也能一并保留。',
                 points: [
-                    '在 XDR / ProMotion 屏上真实 HDR 预览，所见即所得',
+                    '在 XDR 屏上真实 HDR 预览，所见即所得',
                     '视频与 Live Photo 直通导出，HDR 元数据原样保留',
-                    '支持 HDR LUT，与 SDR LUT 一样即挂即用',
+                    '转码导出同样保留 HDR',
                 ],
             },
             {
@@ -237,7 +237,7 @@ window.T = {
                 points: [
                     '内置 Apple Log 2、大疆、影石 → Rec. 709 还原 LUT',
                     '支持导入自定义 .cube LUT',
-                    '预览所见即导出所得',
+                    '支持 HDR LUT，与 SDR LUT 一样即挂即用',
                 ],
             },
             {
@@ -356,10 +356,10 @@ window.T = {
             {
                 eyebrow: 'タイムスタンプ',
                 title: '書き出したクリップは、写真で自然な順に並ぶ。',
-                desc: 'ライブを丸ごと撮ったけど、ファイルが大きすぎてスマホには置いておけない。外付けドライブに退避したものの、見返すのがおっくう……。Trimlyなら、ベストシーンだけサクッと切り出せる。書き出したクリップは写真ライブラリにセットリスト順で自動的に並ぶから、あの夜の興奮をそのまま追体験できる。',
+                desc: 'ライブを一つの長い動画として撮影した——Trimlyならベストシーンだけ切り出せる。各クリップの作成日時は、元動画の中で実際に起きた瞬間に対応。書き出して写真ライブラリを開くと、同日に撮った他の写真や動画と混ざって時系列順に並ぶから、あの夜の興奮をそのまま追体験できる。',
                 points: [
-                    '作成日時が元動画のポジションに対応',
-                    '複数クリップが自動で時系列順に',
+                    '作成日時が元動画内の実際の瞬間に対応',
+                    '他の写真・動画と自然に混ざって時系列順に',
                     '写真での手動並び替えが不要',
                 ],
             },
@@ -375,22 +375,22 @@ window.T = {
             },
             {
                 eyebrow: 'エクスポート',
-                title: 'パススルーで書き出し。トランスコードなし。',
-                desc: '元ファイルが何GBあろうと、書き出しは一瞬。Trimlyは再エンコードせず元のメディアストリームをそのままコピーするので、画質はビット単位で完全に同じ。クリップにキーワードを付けておけば、写真でいつでも検索できる。',
+                title: 'パススルー書き出し、必要なら複数段階のトランスコードも。',
+                desc: '元ファイルが何GBあろうと、パススルー書き出しは一瞬。Trimlyは再エンコードせず元のメディアストリームをそのままコピーするので、画質はビット単位で完全に同じ。元素材のビットレートが高すぎて端末やiCloudに収まらない？複数のトランスコード段階から選んで、必要なクリップを保ちながらファイルサイズを抑えられる。クリップにキーワードを付けておけば、写真でいつでも検索できる。',
                 points: [
-                    '画質劣化なし、待ち時間なし',
+                    'パススルー書き出し：画質劣化なし、待ち時間なし',
                     '数時間のファイルから短いクリップを数秒で',
-                    'クリップにキーワードを付けて検索しやすく',
+                    '複数段階のトランスコードで、大きすぎる原素材も省スペースに',
                 ],
             },
             {
                 eyebrow: 'HDR',
                 title: '完全なHDR対応。',
-                desc: '旅行先でHDR映像を撮った——空のハイライトも、街の影のディテールも、そのまま残っている。別のアプリに開くとプレビューはフラットに、書き出せばハイライトが飛ぶか、全体が白飛びしたSDRに押し潰される。Trimlyならプレビューから写真ライブラリへの保存までHDRを維持：短いクリップも元のダイナミックレンジのまま、静止画やLive PhotoもHDR画像として保存、LUT自体がHDR対応なら正しく適用して書き出せる。',
+                desc: '旅行先でHDR映像を撮った——空のハイライトも、街の影のディテールも、そのまま残っている。別のアプリに開くとプレビューはフラットに、書き出せばハイライトが飛ぶか、全体が白飛びしたSDRに押し潰される。Trimlyならプレビューから写真ライブラリへの保存までHDRを維持：短いクリップも元のダイナミックレンジのまま、静止画やLive PhotoもHDR画像として保存、トランスコード書き出しでもHDRを保持できる。',
                 points: [
-                    'XDR / ProMotionディスプレイで本物のHDRプレビュー',
+                    'XDRディスプレイで本物のHDRプレビュー',
                     '動画・Live Photoのパススルー書き出しでHDRメタデータを保持',
-                    'HDR LUTにも対応——SDR LUTと同様に読み込んで書き出し',
+                    'トランスコード書き出しでもHDRを保持',
                 ],
             },
             {
@@ -400,7 +400,7 @@ window.T = {
                 points: [
                     'Apple Log 2、DJI・Insta360 → Rec. 709 LUTを内蔵',
                     'カスタム.cube LUTをインポート',
-                    'プレビューした見た目のまま書き出し',
+                    'HDR LUTにも対応——SDR LUTと同様に読み込んで書き出し',
                 ],
             },
             {
@@ -519,10 +519,10 @@ window.T = {
             {
                 eyebrow: '타임스탬프',
                 title: '모든 클립이 사진 앱에서 제자리에.',
-                desc: '콘서트 전체를 찍었지만 휴대폰 용량이 부족합니다. 전체 녹화본은 외장 드라이브에 있어서 마음이 생길 때마다 보기 어렵죠. Trimly로 하이라이트 클립 여러 개를 뽑아내면, 사진을 열었을 때 이미 그날 순서대로 정렬되어 있어 밤의 흐름을 그대로 따라갈 수 있습니다.',
+                desc: '콘서트 전체를 하나의 긴 영상으로 찍었다. Trimly로 하이라이트 클립 여러 개를 뽑아내면, 각 클립의 생성 시간이 원본에서 실제로 일어난 순간에 맞춰집니다. 사진을 열면 그날 찍은 다른 사진·동영상과 함께 시간순으로 자연스럽게 정렬되어, 밤의 흐름을 그대로 따라갈 수 있습니다.',
                 points: [
-                    '생성 시간이 원본 내 위치와 연결',
-                    '여러 클립이 자동으로 순서 유지',
+                    '생성 시간이 원본 타임라인의 실제 순간과 일치',
+                    '다른 사진·동영상과 자연스럽게 섞여 시간순 정렬',
                     '보낸 뒤 사진에서 다시 정렬할 필요 없음',
                 ],
             },
@@ -538,22 +538,22 @@ window.T = {
             },
             {
                 eyebrow: '보내기',
-                title: '패스스루보내기. 재인코딩 없음.',
-                desc: '원본이 500MB든 50GB든보내기는 거의 즉시입니다. Trimly는 재인코딩 없이 원본 미디어 스트림을 복사하므로 화질은 비트 단위로 동일합니다. 클립에 키워드를 붙여 두면 사진에서 언제든 검색할 수 있습니다.',
+                title: '패스스루보내기 — 필요하면 여러 단계 트랜스코딩도.',
+                desc: '원본이 500MB든 50GB든 패스스루보내기는 거의 즉시입니다. Trimly는 재인코딩 없이 원본 미디어 스트림을 복사하므로 화질은 비트 단위로 동일합니다. 원본 비트레이트가 너무 높아 기기나 iCloud에 담기 어렵다면, 여러 트랜스코딩 단계 중에서 골라 필요한 클립은 유지하면서 용량을 줄일 수 있습니다. 클립에 키워드를 붙여 두면 사진에서 언제든 검색할 수 있습니다.',
                 points: [
-                    '화질 손실 없음, 기다림 없음',
+                    '패스스루보내기: 화질 손실 없음, 기다림 없음',
                     '몇 시간짜리 파일에서 짧은 클립을 몇 초 만에',
-                    '클립에 키워드 태그로 쉽게 검색',
+                    '원본이 너무 클 때 여러 단계 트랜스코딩으로 용량 절약',
                 ],
             },
             {
                 eyebrow: 'HDR',
                 title: '완벽한 HDR 지원',
-                desc: '여행 중 HDR 영상을 찍었다 — 하늘의 하이라이트와 거리 그림자의 디테일이 그대로 남아 있다. 다른 앱에서 열면 미리보기는 밋밋하고, 내보내면 하이라이트가 날아가거나 전체가 SDR로 눌려 버린다. Trimly에서는 미리보기부터 사진 보관함 저장까지 HDR을 유지한다. 짧은 클립도 원본과 같은 다이내믹 레인지, 정지 이미지와 Live Photo도 HDR 이미지로 저장, LUT 자체가 HDR을 지원하면 올바르게 적용해 내보낸다.',
+                desc: '여행 중 HDR 영상을 찍었다 — 하늘의 하이라이트와 거리 그림자의 디테일이 그대로 남아 있다. 다른 앱에서 열면 미리보기는 밋밋하고, 내보내면 하이라이트가 날아가거나 전체가 SDR로 눌려 버린다. Trimly에서는 미리보기부터 사진 보관함 저장까지 HDR을 유지한다. 짧은 클립도 원본과 같은 다이내믹 레인지, 정지 이미지와 Live Photo도 HDR 이미지로 저장, 트랜스코딩 내보내기에서도 HDR을 보존한다.',
                 points: [
-                    'XDR / ProMotion 디스플레이에서 진짜 HDR 미리보기',
+                    'XDR 디스플레이에서 진짜 HDR 미리보기',
                     '동영상·Live Photo 패스스루 내보내기로 HDR 메타데이터 보존',
-                    'HDR LUT 지원 — SDR LUT처럼 불러와 내보내기',
+                    '트랜스코딩 내보내기에서도 HDR 유지',
                 ],
             },
             {
@@ -563,7 +563,7 @@ window.T = {
                 points: [
                     'Apple Log 2, DJI, Insta360용 Rec. 709 LUT 내장',
                     '사용자 정의 .cube LUT 가져오기',
-                    '미리본 그대로보내기',
+                    'HDR LUT 지원 — SDR LUT처럼 불러와 내보내기',
                 ],
             },
             {
@@ -682,10 +682,10 @@ window.T = {
             {
                 eyebrow: 'Marcas de tiempo',
                 title: 'Cada clip llega a Fotos justo donde corresponde.',
-                desc: 'Grabaste todo el concierto, pero el teléfono no da abasto. La grabación completa está en un disco externo y cuesta revisarla al momento. Con Trimly, extrae una docena de clips destacados. Al abrir Fotos, ya están ordenados según ocurrieron, como revivir la noche momento a momento.',
+                desc: 'Grabaste todo el concierto en un solo vídeo largo. Con Trimly, extrae una docena de clips destacados: cada uno recibe una hora de creación que coincide con el momento real en que ocurrió en la grabación. Al abrir Fotos, se alinean en orden cronológico junto con todo lo demás que hayas capturado ese día, como si hubieras grabado cada momento por separado.',
                 points: [
-                    'La hora de creación se vincula a la posición en el origen',
-                    'Varios clips se mantienen en secuencia automáticamente',
+                    'La hora de creación refleja el instante real en la línea de tiempo',
+                    'Los clips se ordenan naturalmente con tus otras fotos y vídeos',
                     'Sin reordenar manualmente en Fotos tras exportar',
                 ],
             },
@@ -701,22 +701,22 @@ window.T = {
             },
             {
                 eyebrow: 'Exportar',
-                title: 'Exportación en passthrough. Sin transcodificación.',
-                desc: 'Da igual si el archivo pesa 500 MB o 50 GB: la exportación es prácticamente instantánea. Trimly copia el flujo de medios original sin volver a codificar, así que la calidad es idéntica bit a bit. Etiqueta tus clips con palabras clave y búscalos en Fotos cuando quieras.',
+                title: 'Exportación en passthrough — o transcodifica para ahorrar espacio.',
+                desc: 'Da igual si el archivo pesa 500 MB o 50 GB: la exportación en passthrough es prácticamente instantánea. Trimly copia el flujo de medios original sin volver a codificar, así que la calidad es idéntica bit a bit. ¿El metraje original es demasiado pesado para tu teléfono o iCloud? Elige entre varios niveles de transcodificación para reducir el tamaño sin perder el clip que necesitas. Etiqueta tus clips con palabras clave y búscalos en Fotos cuando quieras.',
                 points: [
-                    'Sin pérdida de calidad, sin esperas',
+                    'Exportación en passthrough: sin pérdida de calidad, sin esperas',
                     'Un clip corto de un archivo de varias horas en segundos',
-                    'Etiqueta clips con palabras clave para buscarlos fácilmente',
+                    'Varios niveles de transcodificación cuando el original no cabe en el dispositivo o iCloud',
                 ],
             },
             {
                 eyebrow: 'HDR',
                 title: 'Soporte HDR completo.',
-                desc: 'Grabaste metraje HDR en un viaje: los reflejos brillantes en el cielo y el detalle en las sombras de la calle siguen ahí. Ábrelo en la mayoría de editores y la vista previa se ve plana; exporta un clip y los reflejos se queman o todo se aplasta a SDR. En Trimly, el HDR se mantiene de la vista previa a Fotos: los clips recortados conservan el mismo rango, las fotos fijas y Live Photos se guardan como imágenes HDR, y si tu LUT admite HDR, Trimly lo aplica y exporta correctamente.',
+                desc: 'Grabaste metraje HDR en un viaje: los reflejos brillantes en el cielo y el detalle en las sombras de la calle siguen ahí. Ábrelo en la mayoría de editores y la vista previa se ve plana; exporta un clip y los reflejos se queman o todo se aplasta a SDR. En Trimly, el HDR se mantiene de la vista previa a Fotos: los clips recortados conservan el mismo rango, las fotos fijas y Live Photos se guardan como imágenes HDR, y la transcodificación también preserva el HDR.',
                 points: [
-                    'Vista previa HDR real en pantallas XDR y ProMotion',
+                    'Vista previa HDR real en pantallas XDR',
                     'Exportación en passthrough de vídeo y Live Photo con metadatos HDR intactos',
-                    'LUT HDR compatibles — carga y exporta igual que las LUT SDR',
+                    'La transcodificación también conserva el HDR cuando necesitas archivos más pequeños',
                 ],
             },
             {
@@ -726,7 +726,7 @@ window.T = {
                 points: [
                     'LUT Rec. 709 incluidas para Apple Log 2, DJI e Insta360',
                     'Importa LUT .cube personalizadas',
-                    'Lo que previsualizas es lo que exportas',
+                    'LUT HDR compatibles — carga y exporta igual que las LUT SDR',
                 ],
             },
             {
@@ -845,10 +845,10 @@ window.T = {
             {
                 eyebrow: 'الطوابع الزمنية',
                 title: 'كل مقطع يظهر في الصور في مكانه الصحيح تماماً.',
-                desc: 'صوّرت حفل زفاف كاملاً، لكن الفيديو طويل جداً والجوال لا يتسع. نقلته إلى قرص خارجي، لكن مشاهدته صارت صعبة. مع Trimly، استخرج أجمل اللحظات كمقاطع قصيرة. وعندما تفتح الصور، ستجدها مرتبة حسب لحظات الحفل كما عشتها.',
+                desc: 'صوّرت حفل زفاف كاملاً في فيديو طويل واحد. مع Trimly، استخرج أجمل اللحظات كمقاطع قصيرة — يحصل كل مقطع على تاريخ إنشاء يطابق اللحظة الفعلية التي وقع فيها داخل التسجيل. وعندما تفتح الصور، ستجدها مرتبة زمنياً إلى جانب بقية ما التقطتَه في ذلك اليوم، وكأنك سجلت كل لحظة على حدة.',
                 points: [
-                    'تاريخ الإنشاء مرتبط بموضع المقطع في المصدر',
-                    'مقاطع متعددة تُرتَّب تلقائياً بالتسلسل',
+                    'تاريخ الإنشاء يعكس اللحظة الفعلية في الخط الزمني',
+                    'ترتيب طبيعي إلى جانب باقي الصور والفيديوهات',
                     'لا حاجة لإعادة الترتيب يدوياً في الصور',
                 ],
             },
@@ -864,22 +864,22 @@ window.T = {
             },
             {
                 eyebrow: 'تصدير',
-                title: 'تصدير مباشر. بدون إعادة ترميز.',
-                desc: 'لا يهمّ إن كان الملف 500 ميغا أو 50 غيغا، التصدير فوري. Trimly ينسخ التيار الأصلي دون إعادة ترميز، فالجودة مطابقة للأصل بدقة. أضف كلمات مفتاحية لمقاطعك وابحث عنها في الصور متى شئت.',
+                title: 'تصدير مباشر — أو إعادة ترميز لتوفير المساحة.',
+                desc: 'لا يهمّ إن كان الملف 500 ميغا أو 50 غيغا، التصدير المباشر فوري. Trimly ينسخ التيار الأصلي دون إعادة ترميز، فالجودة مطابقة للأصل بدقة. معدل البت في المادة الأصلية مرتفع جداً ولا يتسع في جوالك أو iCloud؟ اختر من بين عدة مستويات لإعادة الترميز لتصغير الحجم مع الإبقاء على المقطع الذي تحتاجه. أضف كلمات مفتاحية لمقاطعك وابحث عنها في الصور متى شئت.',
                 points: [
-                    'لا خسارة في الجودة، لا انتظار',
+                    'تصدير مباشر: لا خسارة في الجودة، لا انتظار',
                     'مقطع قصير من ساعات طويلة في ثوانٍ',
-                    'أضف كلمات مفتاحية للمقاطع لسهولة البحث',
+                    'عدة مستويات لإعادة الترميز عندما يكون الأصل أكبر من مساحة الجهاز أو iCloud',
                 ],
             },
             {
                 eyebrow: 'HDR',
                 title: 'دعم HDR كامل',
-                desc: 'صوّفت لقطات HDR في رحلة — الإضاءة الساطعة في السماء وتفاصيل الظلال في الشوارع ما زالت موجودة. افتح الملف في معظم المحررات فتبدو المعاينة باهتة؛ صدّر مقطعاً فتُحرَق الإضاءات أو يُضغَط الكل إلى SDR. في Trimly يبقى HDR سليماً من المعاينة إلى الصور: المقاطع المقصوصة تحافظ على نفس المدى، والصور الثابتة وLive Photo تُحفَظ كصور HDR، وإذا كان LUT يدعم HDR فإن Trimly يطبّقه ويصدّره بشكل صحيح.',
+                desc: 'صوّفت لقطات HDR في رحلة — الإضاءة الساطعة في السماء وتفاصيل الظلال في الشوارع ما زالت موجودة. افتح الملف في معظم المحررات فتبدو المعاينة باهتة؛ صدّر مقطعاً فتُحرَق الإضاءات أو يُضغَط الكل إلى SDR. في Trimly يبقى HDR سليماً من المعاينة إلى الصور: المقاطع المقصوصة تحافظ على نفس المدى، والصور الثابتة وLive Photo تُحفَظ كصور HDR، وإعادة الترميز تحافظ على HDR أيضاً.',
                 points: [
-                    'معاينة HDR حقيقية على شاشات XDR وProMotion',
+                    'معاينة HDR حقيقية على شاشات XDR',
                     'تصدير مباشر للفيديو وLive Photo مع الحفاظ على بيانات HDR',
-                    'LUT متوافقة مع HDR — تحميل وتصدير مثل LUT العادية',
+                    'إعادة الترميز تحافظ على HDR عند الحاجة لملفات أصغر',
                 ],
             },
             {
@@ -889,7 +889,7 @@ window.T = {
                 points: [
                     'LUT مدمجة: Apple Log 2 وDJI وInsta360 → Rec. 709',
                     'استيراد ملفات .cube LUT المخصصة',
-                    'ما تراه في المعاينة هو ما تحصل عليه',
+                    'LUT متوافقة مع HDR — تحميل وتصدير مثل LUT العادية',
                 ],
             },
             {
