@@ -94,29 +94,11 @@ const SECTION_META = [
 let currentLang = 'en';
 
 function detectLanguage() {
-    try {
-        const saved = localStorage.getItem('trimly-lang');
-        const T = window.T || {};
-        if (saved && T[saved]) {
-            return saved;
-        }
-    } catch (e) {}
-
-    const lang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-    if (lang.startsWith('zh')) {
-        return 'zh';
+    if (window.__TRIMLY_INITIAL_LANG__) {
+        return window.__TRIMLY_INITIAL_LANG__;
     }
-    if (lang.startsWith('ja')) {
-        return 'ja';
-    }
-    if (lang.startsWith('ko')) {
-        return 'ko';
-    }
-    if (lang.startsWith('ar')) {
-        return 'ar';
-    }
-    if (lang.startsWith('es')) {
-        return 'es';
+    if (typeof window.trimlyDetectLanguage === 'function') {
+        return window.trimlyDetectLanguage();
     }
     return 'en';
 }
@@ -231,6 +213,8 @@ function setLanguage(lang) {
     } catch (e) {}
 
     document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : lang;
+    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.classList.add('i18n-ready');
     document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
 
     applyStaticTranslations();
@@ -268,7 +252,7 @@ document.addEventListener('lang-change', e => {
     setLanguage(e.detail.lang);
 });
 
-document.addEventListener('DOMContentLoaded', () => {
+(function boot() {
     currentLang = detectLanguage();
     setLanguage(currentLang);
-});
+})();

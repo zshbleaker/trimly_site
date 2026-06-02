@@ -95,6 +95,10 @@ html {
     background-color: var(--bg-primary);
 }
 
+html[data-lang]:not([data-lang="en"]):not(.i18n-ready) body {
+    visibility: hidden;
+}
+
 body {
     font-family: var(--font);
     color: var(--text-primary);

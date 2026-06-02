@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="assets/js/lang-boot.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trimly — Your best moments, straight into your Photo Library.</title>
     <meta name="description" content="Turn recordings into highlight clips that land in your Photo Library in seconds, no re-encoding, chronologically ordered. Frame capture, Live Photo generation, built-in Rec. 709 LUTs for Apple Log 2, DJI & Insta360, audio waveforms. Never sends network requests. Buy once, use on iPhone, iPad, and Mac.">
@@ -10,6 +11,9 @@
     <style>
         @media (prefers-color-scheme: dark) {
             html { color-scheme: dark; background-color: #2C2C2E; }
+        }
+        html[data-lang]:not([data-lang="en"]):not(.i18n-ready) body {
+            visibility: hidden;
         }
     </style>
     <link rel="stylesheet" href="assets/css/style.css">

@@ -26,6 +26,13 @@ function renderLangFlag(code) {
     return `<span class="lang-badge${extraClass}" aria-hidden="true">${badge.glyph}</span>`;
 }
 
+function getPageLang(el) {
+    return el.getAttribute('lang')
+        || document.documentElement.getAttribute('data-lang')
+        || window.__TRIMLY_INITIAL_LANG__
+        || 'en';
+}
+
 function renderLangOptions() {
     return LANG_OPTIONS.map(({ code, label }) => `
         <button class="lang-option" type="button" data-lang="${code}">
@@ -54,7 +61,7 @@ class TrimlyHeader extends HTMLElement {
     }
 
     render() {
-        const lang = this.getAttribute('lang') || 'en';
+        const lang = getPageLang(this);
         const T = window.T || {};
         const t = T[lang] || T.en || {
             nav: {
@@ -148,7 +155,7 @@ class TrimlyHeader extends HTMLElement {
 
         document.addEventListener('click', closeDropdown);
 
-        const activeLang = this.getAttribute('lang') || 'en';
+        const activeLang = getPageLang(this);
         const options = dropdown.querySelectorAll('.lang-option');
         options.forEach(opt => {
             const isCurrent = opt.dataset.lang === activeLang;
@@ -183,7 +190,7 @@ class TrimlyFooter extends HTMLElement {
     }
 
     render() {
-        const lang = this.getAttribute('lang') || 'en';
+        const lang = getPageLang(this);
         const T = window.T || {};
         const t = T[lang] || T.en || {
             footer: {

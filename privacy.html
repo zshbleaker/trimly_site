@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src="assets/js/lang-boot.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy — Trimly</title>
     <meta name="description" content="Trimly's privacy policy. Trimly runs on-device on iPhone, iPad, and Mac — it collects no data, never sends network requests, and has no account system.">
@@ -11,6 +12,9 @@
     <style>
         @media (prefers-color-scheme: dark) {
             html { color-scheme: dark; background-color: #2C2C2E; }
+        }
+        html[data-lang]:not([data-lang="en"]):not(.i18n-ready) body {
+            visibility: hidden;
         }
     </style>
     <link rel="stylesheet" href="assets/css/style.css">
