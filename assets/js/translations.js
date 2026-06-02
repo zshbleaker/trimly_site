@@ -202,10 +202,10 @@ window.T = {
             },
             {
                 eyebrow: '截图',
-                title: '抽帧与 Live Photo',
+                title: '截图与 Live Photo',
                 desc: '看到电影或动画里的名场面，想做成 Live Photo 当壁纸？Trimly 轻松搞定。找到那一帧，截图保存，或者直接生成一张会动的 Live Photo，拍摄设备和位置信息原样保留。',
                 points: [
-                    '支持视频截帧',
+                    '支持视频截图',
                     '支持截取 Live Photo',
                     '保留拍摄设备、位置等元数据',
                 ],
