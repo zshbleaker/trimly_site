@@ -18,13 +18,13 @@ window.T = {
         },
         features: [
             {
-                eyebrow: 'Import',
-                title: 'External drives, SD cards, NAS, and Photos.',
-                desc: 'Back from a dive trip, you pop the GoPro’s SD card into a reader on the drive home. Trimly opens hours of footage right off the card — no importing into Photos first. Browse through it all, grab Live Photos and short clips of the best moments, and save them straight to your library, ready for Instagram or iMessage. Works the same with external drives, NAS, and iCloud Drive.',
+                eyebrow: 'Import & Export',
+                title: 'Flexible import and export.',
+                desc: 'Back from a dive trip, you plug the GoPro’s SD card into a reader on the drive home. Trimly opens hours of footage right off the card — no need to import the whole file into your phone first. Browse, pick your best moments, and export Live Photos and short clips straight to your Photo Library, ready for Instagram or iMessage. Footage already in Photos? Import it with one tap and watch iCloud download progress. External drives, NAS, and iCloud Drive work the same way. Prefer to save elsewhere? Export to the Files app instead. Mix sources and destinations however fits your workflow.',
                 points: [
-                    'Direct access to external drives, SD cards, and NAS',
-                    'Browse Files, iCloud Drive, and on-device storage',
-                    'Import from Photos library, with iCloud download progress',
+                    'Export trimmed highlights straight to your Photo Library',
+                    'One-tap import from Photos; open drives, SD cards, and cloud storage directly',
+                    'Export to the Files app too — flexible paths in and out',
                 ],
             },
             {
@@ -181,13 +181,13 @@ window.T = {
         },
         features: [
             {
-                eyebrow: '导入',
-                title: '直接读取外接硬盘、存储卡与 NAS',
-                desc: '潜水一天归来，回程路上手机插上读卡器，Trimly 直接读取运动相机的存储卡。几小时的原始素材不用导入手机，当场就能浏览、挑选、提取 Live Photo 和十几秒的短视频，一键存进相册，发朋友圈和抖音。硬盘、NAS、iCloud 云盘里的文件也一样随开随剪。',
+                eyebrow: '导入导出',
+                title: '灵活导入导出',
+                desc: '潜水归来插上读卡器，Trimly 直接打开存储卡上的几小时素材，不必先整段导入手机。浏览、挑选、截取 Live Photo 和短视频后，一键导出到系统相册——发朋友圈、发抖音立即可用。素材已在相册里？同样可以一键导入继续剪，iCloud 下载进度清晰可见。外接硬盘、NAS、iCloud 云盘随开随剪；需要写到别处时，也可导出到「文件」App。来源与去向任你搭配，怎么顺手怎么用。',
                 points: [
-                    '外接硬盘、SD 卡、NAS，直连即用',
-                    '兼容「文件」App、iCloud 云盘与本机存储',
-                    '也可从照片图库导入，显示 iCloud 下载进度',
+                    '裁好的片段一键导出至照片图库，分享即用',
+                    '可从系统相册导入；硬盘、存储卡、云盘直连打开',
+                    '也可导出至「文件」App，导入导出非常灵活',
                 ],
             },
             {
@@ -344,13 +344,13 @@ window.T = {
         },
         features: [
             {
-                eyebrow: 'インポート',
-                title: '外付けドライブ・SDカード・NASから直接開く。',
-                desc: 'ダイビングからの帰り道、電車の中でカードリーダーを挿してアクションカメラのSDカードをそのまま開く。何時間分の素材を写真に取り込む必要なし。その場でブラウズして、お気に入りのLive Photoやショートクリップを保存、SNSにもすぐシェアできる。外付けドライブやNAS、iCloud Driveも同じように使える。',
+                eyebrow: 'インポート・エクスポート',
+                title: '柔軟なインポートとエクスポート。',
+                desc: 'ダイビングからの帰り道、SDカードをそのまま開いて何時間分もブラウズ。Live Photoやショートクリップを切り出し、写真ライブラリへワンタップで書き出せば、SNSにもすぐシェアできる。すでに「写真」にある動画もワンタップで取り込み、iCloudのダウンロード進捗も表示。外付けドライブ、NAS、iCloud Driveも同様。必要ならファイルAppへ書き出すことも可能。入り口も出口も、自分のワークフローに合わせて自由に。',
                 points: [
-                    '外付けドライブ・SDカード・NASに直接アクセス',
-                    'iCloud Drive・端末内ストレージにも対応',
-                    '写真ライブラリからも取り込み可（iCloudダウンロード進捗付き）',
+                    '切り出したクリップを写真ライブラリへワンタップ書き出し',
+                    '「写真」からの取り込み、ドライブ・SD・クラウドの直接オープンに対応',
+                    'ファイルAppへの書き出しも可能 — 入出力が自由自在',
                 ],
             },
             {
@@ -507,13 +507,13 @@ window.T = {
         },
         features: [
             {
-                eyebrow: '가져오기',
-                title: '외장 드라이브, SD 카드, NAS, 사진.',
-                desc: '다이빙 여행에서 돌아오는 길, 집으로 가는 차 안에서 카드 리더에 GoPro SD 카드를 꽂습니다. Trimly는 카드에서 바로 몇 시간 분량의 영상을 엽니다. 사진에 먼저 가져올 필요 없이 전부 둘러보고, 최고의 순간 Live Photo와 짧은 클립으로 골라 보관함에 저장하면 Instagram이나 iMessage에 바로 쓸 수 있습니다. 외장 드라이브, NAS, iCloud Drive도 같은 방식으로 사용할 수 있습니다.',
+                eyebrow: '가져오기·보내기',
+                title: '유연한 가져오기와 보내기.',
+                desc: '다이빙에서 돌아와 SD 카드를 꽂으면 몇 시간 분량을 바로 엽니다. 골라낸 Live Photo와 짧은 클립을 사진 보관함으로 한 번에 내면 Instagram이나 iMessage에 바로 쓸 수 있습니다. 이미 사진에 있는 영상도 한 번의 탭으로 가져오고, iCloud 다운로드 진행도 확인할 수 있습니다. 외장 드라이브, NAS, iCloud Drive도 같고, 필요하면 파일 앱으로 보낼 수도 있습니다. 들어오는 곳과 나가는 곳을 자유롭게 조합하세요.',
                 points: [
-                    '외장 드라이브, SD 카드, NAS에 직접 접근',
-                    '파일, iCloud Drive, 기기 저장 공간 탐색',
-                    '사진 보관함에서 가져오기, iCloud 다운로드 진행 표시',
+                    '잘라낸 하이라이트를 사진 보관함으로 한 번에 보내기',
+                    '사진에서 한 번의 탭으로 가져오기, 드라이브·SD·클라우드 직접 열기',
+                    '파일 앱으로 보내기도 가능 — 입출력이 매우 유연함',
                 ],
             },
             {
@@ -670,13 +670,13 @@ window.T = {
         },
         features: [
             {
-                eyebrow: 'Importar',
-                title: 'Discos externos, tarjetas SD, NAS y Fotos.',
-                desc: 'Vuelves de un viaje de buceo y, de camino a casa, conectas la tarjeta SD de la GoPro al lector. Trimly abre horas de metraje directamente desde la tarjeta, sin importar primero a Fotos. Navega todo, guarda Live Photos y clips cortos de los mejores momentos y llévalos a tu biblioteca, listos para Instagram o iMessage. Funciona igual con discos externos, NAS e iCloud Drive.',
+                eyebrow: 'Importar y exportar',
+                title: 'Importación y exportación flexibles.',
+                desc: 'Vuelves de un viaje de buceo y conectas la tarjeta SD al lector. Trimly abre horas de metraje sin importar todo el archivo al teléfono. Elige los mejores momentos y exporta Live Photos y clips cortos a tu biblioteca de Fotos, listos para Instagram o iMessage. ¿Ya está en Fotos? Impórtalo con un toque y sigue la descarga de iCloud. Discos externos, NAS e iCloud Drive funcionan igual. ¿Prefieres guardarlo en otro sitio? Exporta a la app Archivos. Combina origen y destino como te convenga.',
                 points: [
-                    'Acceso directo a discos externos, tarjetas SD y NAS',
-                    'Explora Archivos, iCloud Drive y almacenamiento del dispositivo',
-                    'Importa desde la biblioteca de Fotos, con progreso de descarga de iCloud',
+                    'Exporta los highlights recortados directo a tu biblioteca de Fotos',
+                    'Importa con un toque desde Fotos; abre discos, SD y almacenamiento en la nube',
+                    'También exporta a Archivos — rutas de entrada y salida muy flexibles',
                 ],
             },
             {
@@ -833,13 +833,13 @@ window.T = {
         },
         features: [
             {
-                eyebrow: 'استيراد',
-                title: 'مباشرةً من الأقراص الخارجية وبطاقات SD وNAS.',
-                desc: 'عدت من رحلة غوص، وفي الطريق وصلت قارئ البطاقات بجوالك. Trimly يفتح بطاقة SD مباشرةً، ساعات من التصوير دون استيراد. تصفّح، اختر أفضل اللحظات، استخرج Live Photo ومقاطع قصيرة، واحفظها في مكتبتك جاهزةً للمشاركة على Instagram أو Snapchat. الأقراص الخارجية وNAS وiCloud Drive كلها تعمل بنفس الطريقة.',
+                eyebrow: 'استيراد وتصدير',
+                title: 'استيراد وتصدير مرنان.',
+                desc: 'عدت من رحلة غوص ووصلت قارئ البطاقات. Trimly يفتح بطاقة SD مباشرةً دون استيراد الملف بالكامل إلى الجوال. تصفّح، اختر أفضل اللحظات، وصدِّر Live Photo ومقاطع قصيرة إلى مكتبة الصور، جاهزةً للمشاركة. هل اللقطات في الصور أصلاً؟ استوردها بلمسة واحدة مع متابعة تنزيل iCloud. الأقراص الخارجية وNAS وiCloud Drive بنفس الطريقة. تفضّل الحفظ في مكان آخر؟ صدِّر إلى تطبيق الملفات. اختر المصدر والوجهة كما يناسبك.',
                 points: [
-                    'وصول مباشر إلى الأقراص الخارجية وبطاقات SD وNAS',
-                    'دعم iCloud Drive والتخزين المحلي',
-                    'استيراد من مكتبة الصور مع تتبع تقدم iCloud',
+                    'صدِّر المقاطع المقصوصة مباشرةً إلى مكتبة الصور',
+                    'استيراد بلمسة واحدة من الصور؛ فتح الأقراص وبطاقات SD والسحابة مباشرةً',
+                    'التصدير إلى تطبيق الملفات أيضاً — مرونة كاملة في الدخول والخروج',
                 ],
             },
             {
