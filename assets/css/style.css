@@ -17,6 +17,7 @@
     --indigo: #5856D6;
     --red: #FF3B30;
     --yellow: #C49000;
+    --cyan: #5AC8FA;
     --text-primary: #1D1D1F;
     --text-secondary: #6E6E73;
     --text-tertiary: #AEAEB2;
@@ -457,6 +458,7 @@ nav {
 .feature-eyebrow.indigo { color: #4B49B6; }
 .feature-eyebrow.red { color: #E0321E; }
 .feature-eyebrow.yellow { color: #A67A00; }
+.feature-eyebrow.cyan { color: #2898C0; }
 
 .feature-block h2 {
     font-size: clamp(24px, 3.4vw, 32px);
@@ -518,6 +520,7 @@ nav {
 .feature-points.indigo li svg { color: var(--indigo); }
 .feature-points.red li svg { color: var(--red); }
 .feature-points.yellow li svg { color: var(--yellow); }
+.feature-points.cyan li svg { color: var(--cyan); }
 
 /* Feature visual placeholder */
 .feature-visual {
@@ -552,6 +555,7 @@ nav {
 .feature-visual.indigo { background: linear-gradient(145deg, rgba(88, 86, 214, 0.09), rgba(60, 58, 180, 0.04)); }
 .feature-visual.red { background: linear-gradient(145deg, rgba(255, 59, 48, 0.09), rgba(200, 40, 30, 0.04)); }
 .feature-visual.yellow { background: linear-gradient(145deg, rgba(196, 144, 0, 0.09), rgba(160, 110, 0, 0.04)); }
+.feature-visual.cyan { background: linear-gradient(145deg, rgba(90, 200, 250, 0.09), rgba(40, 152, 192, 0.04)); }
 
 .fv-window {
     width: 100%;
@@ -610,6 +614,7 @@ nav {
 .fv-badge.indigo { background: linear-gradient(135deg, rgba(88, 86, 214, 0.18), rgba(60, 58, 180, 0.12)); }
 .fv-badge.red { background: linear-gradient(135deg, rgba(255, 59, 48, 0.18), rgba(200, 40, 30, 0.12)); }
 .fv-badge.yellow { background: linear-gradient(135deg, rgba(196, 144, 0, 0.18), rgba(160, 110, 0, 0.12)); }
+.fv-badge.cyan { background: linear-gradient(135deg, rgba(90, 200, 250, 0.18), rgba(40, 152, 192, 0.12)); }
 
 .fv-lines {
     flex: 1;
@@ -933,6 +938,7 @@ footer {
     .feature-eyebrow.indigo { color: #7A78E6; }
     .feature-eyebrow.red { color: #FF453A; }
     .feature-eyebrow.yellow { color: #DBA400; }
+    .feature-eyebrow.cyan { color: #5AC8FA; }
 
     /* Feature visual gradient cards — slightly more visible on dark */
     .feature-visual.orange { background: linear-gradient(145deg, rgba(255, 149, 0, 0.13), rgba(255, 107, 0, 0.06)); }
@@ -944,6 +950,7 @@ footer {
     .feature-visual.indigo { background: linear-gradient(145deg, rgba(88, 86, 214, 0.13), rgba(60, 58, 180, 0.06)); }
     .feature-visual.red { background: linear-gradient(145deg, rgba(255, 59, 48, 0.13), rgba(200, 40, 30, 0.06)); }
     .feature-visual.yellow { background: linear-gradient(145deg, rgba(196, 144, 0, 0.13), rgba(160, 110, 0, 0.06)); }
+    .feature-visual.cyan { background: linear-gradient(145deg, rgba(90, 200, 250, 0.13), rgba(40, 152, 192, 0.06)); }
 
     /* Mini window inside feature visual */
     .fv-bar span {
@@ -964,6 +971,7 @@ footer {
     .fv-badge.indigo { background: linear-gradient(135deg, rgba(88, 86, 214, 0.28), rgba(60, 58, 180, 0.18)); }
     .fv-badge.red { background: linear-gradient(135deg, rgba(255, 59, 48, 0.28), rgba(200, 40, 30, 0.18)); }
     .fv-badge.yellow { background: linear-gradient(135deg, rgba(196, 144, 0, 0.28), rgba(160, 110, 0, 0.18)); }
+    .fv-badge.cyan { background: linear-gradient(135deg, rgba(90, 200, 250, 0.28), rgba(40, 152, 192, 0.18)); }
 }
 
 /* === RTL === */

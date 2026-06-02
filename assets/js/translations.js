@@ -58,6 +58,16 @@ window.T = {
                 ],
             },
             {
+                eyebrow: 'HDR',
+                title: 'Full HDR support.',
+                desc: 'You shot HDR footage on a trip — bright highlights in the sky, detail still visible in the shadows. Open the same file in most editors and the preview looks flat; export a clip and the highlights clip or the whole thing gets crushed to SDR. In Trimly, HDR stays intact from preview to Photos: trimmed clips keep the same range, stills and Live Photos save as HDR images, and if your LUT supports HDR, Trimly applies and exports it correctly.',
+                points: [
+                    'True HDR preview on XDR and ProMotion displays',
+                    'Passthrough video and Live Photo export with HDR metadata intact',
+                    'HDR LUTs supported — load and export just like SDR LUTs',
+                ],
+            },
+            {
                 eyebrow: 'Color',
                 title: 'LUT color grading, built in.',
                 desc: 'Log footage from your iPhone, DJI, or Insta360 looks flat and washed-out outside a pro editing app. Trimly includes built-in Rec. 709 LUTs for Apple Log 2, popular DJI and Insta360 devices.<a class="fn-ref" href="#lut-disclaimer" aria-label="Legal disclaimer">*</a> Apply one while you trim and the image comes alive instantly. What you see in the preview is exactly what gets exported. You can load your own .cube files too.',
@@ -208,6 +218,16 @@ window.T = {
                     '不损失画质，无需等待',
                     '数小时长片中截取片段，瞬间完成',
                     '支持给片段加关键字，方便检索',
+                ],
+            },
+            {
+                eyebrow: 'HDR',
+                title: '完整的 HDR 支持',
+                desc: '旅行时录了段 HDR 视频，回放时天空的高光和街景暗部的细节都还在。换到其他 App，预览发灰，导出后要么高光过曝，要么整段被压成发白的 SDR。Trimly 从预览到写入相册全程保留 HDR：裁一段短视频，动态范围和原片一致；截一帧或做 Live Photo，存进去仍是 HDR 图像；如果 LUT 本身支持 HDR，Trimly 也能正确应用并导出。',
+                points: [
+                    '在 XDR / ProMotion 屏上真实 HDR 预览，所见即所得',
+                    '视频与 Live Photo 直通导出，HDR 元数据原样保留',
+                    '支持 HDR LUT，与 SDR LUT 一样即挂即用',
                 ],
             },
             {
@@ -364,6 +384,16 @@ window.T = {
                 ],
             },
             {
+                eyebrow: 'HDR',
+                title: '完全なHDR対応。',
+                desc: '旅行先でHDR映像を撮った——空のハイライトも、街の影のディテールも、そのまま残っている。別のアプリに開くとプレビューはフラットに、書き出せばハイライトが飛ぶか、全体が白飛びしたSDRに押し潰される。Trimlyならプレビューから写真ライブラリへの保存までHDRを維持：短いクリップも元のダイナミックレンジのまま、静止画やLive PhotoもHDR画像として保存、LUT自体がHDR対応なら正しく適用して書き出せる。',
+                points: [
+                    'XDR / ProMotionディスプレイで本物のHDRプレビュー',
+                    '動画・Live Photoのパススルー書き出しでHDRメタデータを保持',
+                    'HDR LUTにも対応——SDR LUTと同様に読み込んで書き出し',
+                ],
+            },
+            {
                 eyebrow: 'カラー',
                 title: 'LUTカラーグレーディング対応。',
                 desc: '高画質のためにiPhone、DJI、Insta360でLog撮影したのに、普段見返すと全体がグレーでパッとしない……。Trimlyには Apple Log 2、DJI・Insta360の一般的な機種向け Rec. 709 変換 LUT<a class="fn-ref" href="#lut-disclaimer" aria-label="法的免責事項">*</a>が内蔵されているので、トリミング中にワンタップで適用すれば画面が一気に鮮やかに。プレビューと書き出しが完全に一致。自分の .cube ファイルも読み込める。',
@@ -514,6 +544,16 @@ window.T = {
                     '화질 손실 없음, 기다림 없음',
                     '몇 시간짜리 파일에서 짧은 클립을 몇 초 만에',
                     '클립에 키워드 태그로 쉽게 검색',
+                ],
+            },
+            {
+                eyebrow: 'HDR',
+                title: '완벽한 HDR 지원',
+                desc: '여행 중 HDR 영상을 찍었다 — 하늘의 하이라이트와 거리 그림자의 디테일이 그대로 남아 있다. 다른 앱에서 열면 미리보기는 밋밋하고, 내보내면 하이라이트가 날아가거나 전체가 SDR로 눌려 버린다. Trimly에서는 미리보기부터 사진 보관함 저장까지 HDR을 유지한다. 짧은 클립도 원본과 같은 다이내믹 레인지, 정지 이미지와 Live Photo도 HDR 이미지로 저장, LUT 자체가 HDR을 지원하면 올바르게 적용해 내보낸다.',
+                points: [
+                    'XDR / ProMotion 디스플레이에서 진짜 HDR 미리보기',
+                    '동영상·Live Photo 패스스루 내보내기로 HDR 메타데이터 보존',
+                    'HDR LUT 지원 — SDR LUT처럼 불러와 내보내기',
                 ],
             },
             {
@@ -670,6 +710,16 @@ window.T = {
                 ],
             },
             {
+                eyebrow: 'HDR',
+                title: 'Soporte HDR completo.',
+                desc: 'Grabaste metraje HDR en un viaje: los reflejos brillantes en el cielo y el detalle en las sombras de la calle siguen ahí. Ábrelo en la mayoría de editores y la vista previa se ve plana; exporta un clip y los reflejos se queman o todo se aplasta a SDR. En Trimly, el HDR se mantiene de la vista previa a Fotos: los clips recortados conservan el mismo rango, las fotos fijas y Live Photos se guardan como imágenes HDR, y si tu LUT admite HDR, Trimly lo aplica y exporta correctamente.',
+                points: [
+                    'Vista previa HDR real en pantallas XDR y ProMotion',
+                    'Exportación en passthrough de vídeo y Live Photo con metadatos HDR intactos',
+                    'LUT HDR compatibles — carga y exporta igual que las LUT SDR',
+                ],
+            },
+            {
                 eyebrow: 'Color',
                 title: 'Gradación con LUT, integrada.',
                 desc: 'El metraje Log de tu iPhone, DJI o Insta360 se ve plano y apagado fuera de una app de edición profesional. Trimly incluye LUT Rec. 709 integradas para Apple Log 2 y dispositivos populares de DJI e Insta360.<a class="fn-ref" href="#lut-disclaimer" aria-label="Aviso legal">*</a> Aplícalas mientras recortas y la imagen cobra vida al instante. Lo que ves en la vista previa es exactamente lo que se exporta. También puedes cargar tus propios archivos .cube.',
@@ -820,6 +870,16 @@ window.T = {
                     'لا خسارة في الجودة، لا انتظار',
                     'مقطع قصير من ساعات طويلة في ثوانٍ',
                     'أضف كلمات مفتاحية للمقاطع لسهولة البحث',
+                ],
+            },
+            {
+                eyebrow: 'HDR',
+                title: 'دعم HDR كامل',
+                desc: 'صوّفت لقطات HDR في رحلة — الإضاءة الساطعة في السماء وتفاصيل الظلال في الشوارع ما زالت موجودة. افتح الملف في معظم المحررات فتبدو المعاينة باهتة؛ صدّر مقطعاً فتُحرَق الإضاءات أو يُضغَط الكل إلى SDR. في Trimly يبقى HDR سليماً من المعاينة إلى الصور: المقاطع المقصوصة تحافظ على نفس المدى، والصور الثابتة وLive Photo تُحفَظ كصور HDR، وإذا كان LUT يدعم HDR فإن Trimly يطبّقه ويصدّره بشكل صحيح.',
+                points: [
+                    'معاينة HDR حقيقية على شاشات XDR وProMotion',
+                    'تصدير مباشر للفيديو وLive Photo مع الحفاظ على بيانات HDR',
+                    'LUT متوافقة مع HDR — تحميل وتصدير مثل LUT العادية',
                 ],
             },
             {
