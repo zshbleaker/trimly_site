@@ -219,7 +219,7 @@ class TrimlyFooter extends HTMLElement {
                     <a href="privacy.html">${t.footer.privacy}</a>
                 </div>
                 ${disclaimer}
-                <p class="footer-copy">&copy; 2026 Trimly</p>
+                <p class="footer-copy">&copy; 2026 Trimly · Crafted by <a href="https://zshbleaker.me" target="_blank" rel="noopener noreferrer">@zshbleaker</a></p>
             </footer>
         `;
     }
