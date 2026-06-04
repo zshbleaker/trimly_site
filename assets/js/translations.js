@@ -70,9 +70,9 @@ window.T = {
             {
                 eyebrow: 'Color',
                 title: 'LUT color grading, built in.',
-                desc: 'Log footage from your iPhone, DJI, or Insta360 looks flat and washed-out outside a pro editing app. Trimly includes built-in Rec. 709 LUTs for Apple Log 2, popular DJI and Insta360 devices.<a class="fn-ref" href="#lut-disclaimer" aria-label="Legal disclaimer">*</a> Apply one while you trim and the image comes alive instantly. What you see in the preview is exactly what gets exported. You can load your own .cube files too.',
+                desc: 'Log footage from your iPhone, GoPro, DJI, or Insta360 looks flat and washed-out outside a pro editing app. Trimly includes built-in Rec. 709 LUTs for Apple Log 2, popular GoPro, DJI, and Insta360 devices.<a class="fn-ref" href="#lut-disclaimer" aria-label="Legal disclaimer">*</a> Apply one while you trim and the image comes alive instantly. What you see in the preview is exactly what gets exported. You can load your own .cube files too.',
                 points: [
-                    'Bundled Rec. 709 LUTs for Apple Log 2, DJI & Insta360',
+                    'Bundled Rec. 709 LUTs for Apple Log 2, GoPro, DJI & Insta360',
                     'Import custom .cube LUTs',
                     'HDR LUTs supported — load and export just like SDR LUTs',
                 ],
@@ -126,7 +126,7 @@ window.T = {
             home: 'Home',
             support: 'Support',
             privacy: 'Privacy Policy',
-            disclaimer: 'Apple, Apple Log, iPhone, iPad, and Mac are trademarks of Apple Inc. DJI is a trademark of SZ DJI Technology Co., Ltd. Insta360 is a trademark of Arashi Vision Inc. Trimly is developed independently and is not affiliated with, sponsored by, or endorsed by any of these companies. Bundled LUT files are provided to help users process their own footage for personal, non-commercial use only. All trademarks are the property of their respective owners.',
+            disclaimer: 'Apple, Apple Log, iPhone, iPad, and Mac are trademarks of Apple Inc. GoPro is a trademark of GoPro, Inc. DJI is a trademark of SZ DJI Technology Co., Ltd. Insta360 is a trademark of Arashi Vision Inc. Trimly is developed independently and is not affiliated with, sponsored by, or endorsed by any of these companies. Bundled LUT files are provided to help users process their own footage for personal, non-commercial use only. All trademarks are the property of their respective owners.',
         },
         legal: {
             eyebrow: 'Legal',
@@ -233,9 +233,9 @@ window.T = {
             {
                 eyebrow: '调色',
                 title: '支持 LUT 调色',
-                desc: '为了追求高画质，你用 iPhone、大疆或影石设备拍了 Log 视频，结果只能在专业剪辑软件里当素材，平时回看全是灰蒙蒙的。Trimly 内置 Apple Log 2、大疆和影石常见设备的 Rec. 709 还原 LUT<a class="fn-ref" href="#lut-disclaimer" aria-label="法律说明">*</a>，裁剪时一键挂上，画面立刻鲜活起来，导出的效果和预览完全一致。也可以导入你自己的 .cube 文件。',
+                desc: '为了追求高画质，你用 iPhone、GoPro、大疆或影石设备拍了 Log 视频，结果只能在专业剪辑软件里当素材，平时回看全是灰蒙蒙的。Trimly 内置 Apple Log 2、GoPro、大疆和影石常见设备的 Rec. 709 还原 LUT<a class="fn-ref" href="#lut-disclaimer" aria-label="法律说明">*</a>，裁剪时一键挂上，画面立刻鲜活起来，导出的效果和预览完全一致。也可以导入你自己的 .cube 文件。',
                 points: [
-                    '内置 Apple Log 2、大疆、影石 → Rec. 709 还原 LUT',
+                    '内置 Apple Log 2、GoPro、大疆、影石 → Rec. 709 还原 LUT',
                     '支持导入自定义 .cube LUT',
                     '支持 HDR LUT，与 SDR LUT 一样即挂即用',
                 ],
@@ -289,7 +289,7 @@ window.T = {
             home: '首页',
             support: '支持',
             privacy: '隐私政策',
-            disclaimer: 'Apple、Apple Log、iPhone、iPad、Mac 是 Apple Inc. 的商标。大疆（DJI）是深圳市大疆创新科技有限公司的商标。影石（Insta360）是影石创新科技股份有限公司的商标。Trimly 为独立开发的应用，与上述公司及其关联企业无任何隶属、赞助或授权关系。内置 LUT 文件旨在帮助用户处理个人素材，仅供个人非商业用途。所有商标均归其各自所有者所有。',
+            disclaimer: 'Apple、Apple Log、iPhone、iPad、Mac 是 Apple Inc. 的商标。GoPro 是 GoPro, Inc. 的商标。大疆（DJI）是深圳市大疆创新科技有限公司的商标。影石（Insta360）是影石创新科技股份有限公司的商标。Trimly 为独立开发的应用，与上述公司及其关联企业无任何隶属、赞助或授权关系。内置 LUT 文件旨在帮助用户处理个人素材，仅供个人非商业用途。所有商标均归其各自所有者所有。',
         },
         legal: {
             eyebrow: '法律',
@@ -396,9 +396,9 @@ window.T = {
             {
                 eyebrow: 'カラー',
                 title: 'LUTカラーグレーディング対応。',
-                desc: '高画質のためにiPhone、DJI、Insta360でLog撮影したのに、普段見返すと全体がグレーでパッとしない……。Trimlyには Apple Log 2、DJI・Insta360の一般的な機種向け Rec. 709 変換 LUT<a class="fn-ref" href="#lut-disclaimer" aria-label="法的免責事項">*</a>が内蔵されているので、トリミング中にワンタップで適用すれば画面が一気に鮮やかに。プレビューと書き出しが完全に一致。自分の .cube ファイルも読み込める。',
+                desc: '高画質のためにiPhone、GoPro、DJI、Insta360でLog撮影したのに、普段見返すと全体がグレーでパッとしない……。Trimlyには Apple Log 2、GoPro・DJI・Insta360の一般的な機種向け Rec. 709 変換 LUT<a class="fn-ref" href="#lut-disclaimer" aria-label="法的免責事項">*</a>が内蔵されているので、トリミング中にワンタップで適用すれば画面が一気に鮮やかに。プレビューと書き出しが完全に一致。自分の .cube ファイルも読み込める。',
                 points: [
-                    'Apple Log 2、DJI・Insta360 → Rec. 709 LUTを内蔵',
+                    'Apple Log 2、GoPro・DJI・Insta360 → Rec. 709 LUTを内蔵',
                     'カスタム.cube LUTをインポート',
                     'HDR LUTにも対応——SDR LUTと同様に読み込んで書き出し',
                 ],
@@ -452,7 +452,7 @@ window.T = {
             home: 'ホーム',
             support: 'サポート',
             privacy: 'プライバシーポリシー',
-            disclaimer: 'Apple、Apple Log、iPhone、iPad、MacはApple Inc.の商標です。DJIはSZ DJI Technology Co., Ltd.の商標です。Insta360はArashi Vision Inc.の商標です。Trimlyは独立して開発されたアプリであり、これらの企業とは提携・後援・承認の関係にありません。内蔵LUTはユーザー自身の映像を個人的・非商用目的で処理するために提供されています。すべての商標は各所有者に帰属します。',
+            disclaimer: 'Apple、Apple Log、iPhone、iPad、MacはApple Inc.の商標です。GoProはGoPro, Inc.の商標です。DJIはSZ DJI Technology Co., Ltd.の商標です。Insta360はArashi Vision Inc.の商標です。Trimlyは独立して開発されたアプリであり、これらの企業とは提携・後援・承認の関係にありません。内蔵LUTはユーザー自身の映像を個人的・非商用目的で処理するために提供されています。すべての商標は各所有者に帰属します。',
         },
         legal: {
             eyebrow: '法的事項',
@@ -559,9 +559,9 @@ window.T = {
             {
                 eyebrow: '색감',
                 title: 'LUT 색보정, 내장.',
-                desc: 'iPhone, DJI, Insta360에서 찍은 Log 영상은 전문 편집 앱 밖에서는 밋밋하고 탁해 보입니다. Trimly에는 Apple Log 2와 인기 DJI·Insta360 기기용 Rec. 709 LUT가 내장되어 있습니다.<a class="fn-ref" href="#lut-disclaimer" aria-label="법적 고지">*</a> 자를 때 적용하면 화면이 바로 살아납니다. 미리보기와보내기 결과가 완전히 같습니다. 직접 만든 .cube 파일도 불러올 수 있습니다.',
+                desc: 'iPhone, GoPro, DJI, Insta360에서 찍은 Log 영상은 전문 편집 앱 밖에서는 밋밋하고 탁해 보입니다. Trimly에는 Apple Log 2와 인기 GoPro·DJI·Insta360 기기용 Rec. 709 LUT가 내장되어 있습니다.<a class="fn-ref" href="#lut-disclaimer" aria-label="법적 고지">*</a> 자를 때 적용하면 화면이 바로 살아납니다. 미리보기와보내기 결과가 완전히 같습니다. 직접 만든 .cube 파일도 불러올 수 있습니다.',
                 points: [
-                    'Apple Log 2, DJI, Insta360용 Rec. 709 LUT 내장',
+                    'Apple Log 2, GoPro, DJI, Insta360용 Rec. 709 LUT 내장',
                     '사용자 정의 .cube LUT 가져오기',
                     'HDR LUT 지원 — SDR LUT처럼 불러와 내보내기',
                 ],
@@ -615,7 +615,7 @@ window.T = {
             home: '홈',
             support: '지원',
             privacy: '개인정보 처리방침',
-            disclaimer: 'Apple, Apple Log, iPhone, iPad, Mac은 Apple Inc.의 상표입니다. DJI는 SZ DJI Technology Co., Ltd.의 상표입니다. Insta360은 Arashi Vision Inc.의 상표입니다. Trimly는 독립적으로 개발된 앱이며 위 회사들과 제휴·후원·승인 관계가 없습니다. 포함된 LUT 파일은 사용자가 자신의 촬영본을 개인적·비상업적 용도로 처리하도록 제공됩니다. 모든 상표는 각 소유자에게 귀속됩니다.',
+            disclaimer: 'Apple, Apple Log, iPhone, iPad, Mac은 Apple Inc.의 상표입니다. GoPro는 GoPro, Inc.의 상표입니다. DJI는 SZ DJI Technology Co., Ltd.의 상표입니다. Insta360은 Arashi Vision Inc.의 상표입니다. Trimly는 독립적으로 개발된 앱이며 위 회사들과 제휴·후원·승인 관계가 없습니다. 포함된 LUT 파일은 사용자가 자신의 촬영본을 개인적·비상업적 용도로 처리하도록 제공됩니다. 모든 상표는 각 소유자에게 귀속됩니다.',
         },
         legal: {
             eyebrow: '법적 고지',
@@ -722,9 +722,9 @@ window.T = {
             {
                 eyebrow: 'Color',
                 title: 'Gradación con LUT, integrada.',
-                desc: 'El metraje Log de tu iPhone, DJI o Insta360 se ve plano y apagado fuera de una app de edición profesional. Trimly incluye LUT Rec. 709 integradas para Apple Log 2 y dispositivos populares de DJI e Insta360.<a class="fn-ref" href="#lut-disclaimer" aria-label="Aviso legal">*</a> Aplícalas mientras recortas y la imagen cobra vida al instante. Lo que ves en la vista previa es exactamente lo que se exporta. También puedes cargar tus propios archivos .cube.',
+                desc: 'El metraje Log de tu iPhone, GoPro, DJI o Insta360 se ve plano y apagado fuera de una app de edición profesional. Trimly incluye LUT Rec. 709 integradas para Apple Log 2 y dispositivos populares de GoPro, DJI e Insta360.<a class="fn-ref" href="#lut-disclaimer" aria-label="Aviso legal">*</a> Aplícalas mientras recortas y la imagen cobra vida al instante. Lo que ves en la vista previa es exactamente lo que se exporta. También puedes cargar tus propios archivos .cube.',
                 points: [
-                    'LUT Rec. 709 incluidas para Apple Log 2, DJI e Insta360',
+                    'LUT Rec. 709 incluidas para Apple Log 2, GoPro, DJI e Insta360',
                     'Importa LUT .cube personalizadas',
                     'LUT HDR compatibles — carga y exporta igual que las LUT SDR',
                 ],
@@ -778,7 +778,7 @@ window.T = {
             home: 'Inicio',
             support: 'Soporte',
             privacy: 'Política de privacidad',
-            disclaimer: 'Apple, Apple Log, iPhone, iPad y Mac son marcas comerciales de Apple Inc. DJI es una marca comercial de SZ DJI Technology Co., Ltd. Insta360 es una marca comercial de Arashi Vision Inc. Trimly se desarrolla de forma independiente y no está afiliada, patrocinada ni respaldada por ninguna de estas empresas. Los archivos LUT incluidos ayudan a los usuarios a procesar su propio metraje solo para uso personal y no comercial. Todas las marcas pertenecen a sus respectivos propietarios.',
+            disclaimer: 'Apple, Apple Log, iPhone, iPad y Mac son marcas comerciales de Apple Inc. GoPro es una marca comercial de GoPro, Inc. DJI es una marca comercial de SZ DJI Technology Co., Ltd. Insta360 es una marca comercial de Arashi Vision Inc. Trimly se desarrolla de forma independiente y no está afiliada, patrocinada ni respaldada por ninguna de estas empresas. Los archivos LUT incluidos ayudan a los usuarios a procesar su propio metraje solo para uso personal y no comercial. Todas las marcas pertenecen a sus respectivos propietarios.',
         },
         legal: {
             eyebrow: 'Legal',
@@ -885,9 +885,9 @@ window.T = {
             {
                 eyebrow: 'الألوان',
                 title: 'تدريج ألوان LUT مدمج.',
-                desc: 'لقطات Log من iPhone أو أجهزة DJI أو Insta360 تبدو باهتة ورمادية خارج برنامج مونتاج احترافي. Trimly يتضمن LUT مدمجة لتحويل Apple Log 2 وأجهزة DJI وInsta360 الشائعة إلى Rec. 709.<a class="fn-ref" href="#lut-disclaimer" aria-label="إخلاء مسؤولية قانوني">*</a> طبّقها أثناء القص وسترى الصورة تنبض بالحياة. ما تراه في المعاينة هو تماماً ما يُصدّر. يمكنك أيضاً تحميل ملفات .cube الخاصة بك.',
+                desc: 'لقطات Log من iPhone أو GoPro أو أجهزة DJI أو Insta360 تبدو باهتة ورمادية خارج برنامج مونتاج احترافي. Trimly يتضمن LUT مدمجة لتحويل Apple Log 2 وأجهزة GoPro وDJI وInsta360 الشائعة إلى Rec. 709.<a class="fn-ref" href="#lut-disclaimer" aria-label="إخلاء مسؤولية قانوني">*</a> طبّقها أثناء القص وسترى الصورة تنبض بالحياة. ما تراه في المعاينة هو تماماً ما يُصدّر. يمكنك أيضاً تحميل ملفات .cube الخاصة بك.',
                 points: [
-                    'LUT مدمجة: Apple Log 2 وDJI وInsta360 → Rec. 709',
+                    'LUT مدمجة: Apple Log 2 وGoPro وDJI وInsta360 → Rec. 709',
                     'استيراد ملفات .cube LUT المخصصة',
                     'LUT متوافقة مع HDR — تحميل وتصدير مثل LUT العادية',
                 ],
@@ -951,7 +951,7 @@ window.T = {
             home: 'الرئيسية',
             support: 'الدعم',
             privacy: 'سياسة الخصوصية',
-            disclaimer: 'Apple وApple Log وiPhone وiPad وMac علامات تجارية لـ Apple Inc. DJI علامة تجارية لـ SZ DJI Technology Co., Ltd. Insta360 علامة تجارية لـ Arashi Vision Inc. Trimly تطبيق مستقل ولا يرتبط بأي من هذه الشركات ولا يرعاه ولا يحظى باعتمادها. ملفات LUT المدمجة مخصّصة لمساعدة المستخدمين على معالجة لقطاتهم الشخصية لأغراض شخصية وغير تجارية فقط. جميع العلامات التجارية ملك لأصحابها.',
+            disclaimer: 'Apple وApple Log وiPhone وiPad وMac علامات تجارية لـ Apple Inc. GoPro علامة تجارية لـ GoPro, Inc. DJI علامة تجارية لـ SZ DJI Technology Co., Ltd. Insta360 علامة تجارية لـ Arashi Vision Inc. Trimly تطبيق مستقل ولا يرتبط بأي من هذه الشركات ولا يرعاه ولا يحظى باعتمادها. ملفات LUT المدمجة مخصّصة لمساعدة المستخدمين على معالجة لقطاتهم الشخصية لأغراض شخصية وغير تجارية فقط. جميع العلامات التجارية ملك لأصحابها.',
         },
         legal: {
             eyebrow: 'قانوني',
