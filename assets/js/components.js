@@ -1,4 +1,5 @@
 // window.T is loaded globally from translations.js
+const APP_STORE_URL = 'https://apps.apple.com/us/app/trimly-trim-long-media/id6773276396';
 const SUPPORT_MAILTO = 'mailto:hi@zshbleaker.me?subject='
     + encodeURIComponent('Trimly App Support from Website');
 
@@ -115,7 +116,7 @@ class TrimlyHeader extends HTMLElement {
 
                     <div class="nav-right">
                         <a class="nav-link" href="${featuresHref}">${t.nav.features}</a>
-                        <a class="nav-link" href="https://apps.apple.com/app/trimly" target="_blank" rel="noopener">${t.nav.download}</a>
+                        <a class="nav-link" href="${APP_STORE_URL}" target="_blank" rel="noopener">${t.nav.download}</a>
                         <div class="lang-switcher">
                             <button class="lang-btn" type="button" aria-haspopup="listbox" aria-expanded="false">
                                 ${currentFlag}
