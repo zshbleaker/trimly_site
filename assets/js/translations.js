@@ -20,10 +20,10 @@ window.T = {
             {
                 eyebrow: 'Import & Export',
                 title: 'Flexible import and export.',
-                desc: 'Back from a dive trip, you plug the GoPro’s SD card into a reader on the drive home. Trimly opens hours of footage right off the card — no need to import the whole file into your phone first. Browse, pick your best moments, and export Live Photos and short clips straight to your Photo Library, ready for Instagram or iMessage. Footage already in Photos? Import it with one tap and watch iCloud download progress. External drives, NAS, and iCloud Drive work the same way. Prefer to save elsewhere? Export to the Files app instead. Mix sources and destinations however fits your workflow.',
+                desc: 'Back from a dive trip, plug your GoPro’s SD card into a reader. Trimly opens hours of footage right off the card — no need to import the whole file into your phone first. Browse, pick your best moments, and export Live Photos and short clips straight to your Photo Library, ready for Instagram or iMessage. Footage already in Photos? Import it with one tap and watch iCloud download progress. USB storage, NAS, and iCloud Drive work the same way. Prefer to save elsewhere? Export to the Files app instead. Mix sources and destinations however fits your workflow.',
                 points: [
                     'Export trimmed highlights straight to your Photo Library',
-                    'One-tap import from Photos; open drives, SD cards, and cloud storage directly',
+                    'One-tap import from Photos; open SD cards, USB storage, and cloud locations directly',
                     'Export to the Files app too — flexible paths in and out',
                 ],
             },
@@ -145,7 +145,7 @@ window.T = {
                 },
                 {
                     h: 'Files and Photos access',
-                    p: 'When you open media from the Files app, an external drive, or your Photos library, Trimly reads it only so you can trim and export it. All processing happens locally on your device, and exported clips are saved to the location you choose. Trimly accesses your Photos library only with your permission, and only to import or save the media you select.',
+                    p: 'When you open media from the Files app, USB storage, or your Photos library, Trimly reads it only so you can trim and export it. All processing happens locally on your device, and exported clips are saved to the location you choose. Trimly accesses your Photos library only with your permission, and only to import or save the media you select.',
                 },
                 {
                     h: 'No account, no third parties',
