@@ -86,8 +86,8 @@ const CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
     + '</svg>';
 
 const SECTION_META = [
-    { key: 'import', accent: 'blue', icon: 'import', visual: '→ Photos · → Files' },
     { key: 'scenarios', accent: 'teal', icon: 'scenarios', visual: 'Travel · Party · Concert · Action' },
+    { key: 'import', accent: 'blue', icon: 'import', visual: '→ Photos · → Files' },
     { key: 'order', accent: 'orange', icon: 'clock', visual: 'Photos timeline' },
     { key: 'capture', accent: 'green', icon: 'capture', visual: 'Frame & Live Photo' },
     { key: 'export', accent: 'purple', icon: 'export', visual: 'Passthrough export' },

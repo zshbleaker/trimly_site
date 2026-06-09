@@ -17,20 +17,7 @@ window.T = {
             meta2: 'All platforms',
             meta3: 'No network requests',
         },
-        features: [
-            {
-                eyebrow: 'Import & Export',
-                title: 'Flexible import and export.',
-                desc: 'Back from a dive trip, plug your GoPro\'s SD card into a reader. Trimly opens hours of footage right off the card — no need to import the whole file into your phone first. Cut vows, hugs, and confetti as separate clips from the same video, then batch-export them in chronological order. Pick your best moments and export Live Photos and short clips straight to your Photo Library, ready for Instagram or iMessage. Footage already in Photos? Import with one tap and watch iCloud download progress. Share from another app and jump straight into Trimly. USB storage, NAS, iCloud Drive, and the Files app all work too.',
-                points: [
-                    'Multiple clips from one video — vows, hugs, and confetti each exported separately',
-                    'Export trimmed highlights straight to your Photo Library',
-                    'One-tap import from Photos; open SD cards, USB storage, and cloud locations directly',
-                    'Share from another app; reads source files without copying',
-                    'Batch export in chronological order; export to the Files app too',
-                ],
-            },
-            {
+        features: [{
                 eyebrow: 'Use Cases',
                 title: 'Built for real-life shooting.',
                 desc: 'Trimly is for the footage you actually shoot — long recordings where the good parts are buried inside. Pull out shareable clips in minutes, not hours at a desk.',
@@ -43,9 +30,19 @@ window.T = {
                 ],
             },
             {
+                eyebrow: 'Import & Export',
+                title: 'Flexible import and export.',
+                desc: 'Open hours of footage from SD cards, USB storage, NAS, or cloud — no need to copy the whole file first. Export multiple clips from one video to your Photo Library or Files, or share from another app and start trimming right away.',
+                points: [
+                    'Multiple clips from one video; batch export in chronological order',
+                    'Photo Library, Files, SD cards, USB, and cloud storage',
+                    'Share from another app; reads source files without copying',
+                ],
+            },
+            {
                 eyebrow: 'Timestamps',
                 title: 'Every clip lands in Photos right where it belongs.',
-                desc: 'You filmed the entire concert in one long video. With Trimly, pull out a dozen highlight clips — each gets a creation time that matches the moment it actually happened. A beach clip from the afternoon won\'t land before breakfast from the morning; highlights from the last day of a trip won\'t mix with empty shots from departure day. When you open Photos, they line up in chronological order alongside everything else you\'ve shot. GPS location, camera model, lens info, and other metadata stay intact — still visible in photo details.',
+                desc: 'Film the whole concert in one long video, then pull out highlight clips — each keeps the real moment it happened. A beach clip from the afternoon won\'t land before breakfast; everything lines up in Photos. GPS, camera, and lens info stay in photo details.',
                 points: [
                     'Timestamps reflect each clip\'s real moment in the timeline',
                     'Exported clips sort naturally with your other photos and videos',
@@ -55,7 +52,7 @@ window.T = {
             {
                 eyebrow: 'Capture',
                 title: 'Frames and Live Photos.',
-                desc: 'Drag the timeline to mark in and out points — cut as many segments as you want, undo if you mark wrong. Tag clips with labels like “Vows,” “Sunset,” or “Funny.” Frame-by-frame fine-tuning, or jump five seconds with one tap — freeze on the smile before the jump, the peak of a wave. Caught an iconic scene in a movie or anime? Save it as a still or Live Photo for your Lock Screen. Rotate footage directly without transcoding.',
+                desc: 'Mark in and out points on the timeline — undo if you miss. Tag clips as "Vows," "Sunset," or "Funny." Frame-by-frame or 5-second jumps to freeze a smile or a wave peak. Save a movie or anime scene as a still or Live Photo. Rotate without transcoding.',
                 points: [
                     'In/out points with undo — tag clips as you go',
                     'Frame-by-frame tuning or one-tap 5-second jumps',
@@ -66,7 +63,7 @@ window.T = {
             {
                 eyebrow: 'Export',
                 title: 'Passthrough export — or transcode to save space.',
-                desc: 'It doesn’t matter if the source file is 500 MB or 50 GB — passthrough export is practically instant. Trimly copies the original media stream without re-encoding, so quality is bit-for-bit identical. Original footage too heavy for your phone or iCloud? Choose from multiple transcode tiers to shrink file size while keeping the clip you need. Tag your clips with keywords and they’re searchable in Photos whenever you need them.',
+                desc: '500 MB or 50 GB — passthrough export is practically instant, bit-for-bit quality. Original too heavy for your phone or iCloud? Pick a transcode tier to shrink the clip. Tag clips with keywords so they\'re searchable in Photos.',
                 points: [
                     'Passthrough export: no quality loss, no waiting',
                     'A short clip from a multi-hour file in seconds',
@@ -76,7 +73,7 @@ window.T = {
             {
                 eyebrow: 'HDR',
                 title: 'Full HDR support.',
-                desc: 'You shot HDR footage on a trip — bright highlights in the sky, detail still visible in the shadows. Open the same file in most editors and the preview looks flat; export a clip and the highlights clip or the whole thing gets crushed to SDR. In Trimly, HDR stays intact from preview to Photos: trimmed clips keep the same range, stills and Live Photos save as HDR images, and transcode export preserves HDR too.',
+                desc: 'HDR travel footage — bright sky, detail in the shadows. Most editors flatten the preview or crush highlights on export. In Trimly, HDR stays intact from preview to Photos, including stills, Live Photos, and transcode export.',
                 points: [
                     'True HDR preview on XDR displays',
                     'Passthrough video and Live Photo export with HDR metadata intact',
@@ -86,7 +83,7 @@ window.T = {
             {
                 eyebrow: 'Color',
                 title: 'LUT color grading, built in.',
-                desc: 'Log footage from your iPhone, GoPro, DJI, or Insta360 looks flat and washed-out outside a pro editing app. Trimly includes built-in Rec. 709 LUTs for Apple Log 2, popular GoPro, DJI, and Insta360 devices.<a class="fn-ref" href="#lut-disclaimer" aria-label="Legal disclaimer">*</a> Apply one while you trim and the image comes alive instantly. What you see in the preview is exactly what gets exported. You can load your own .cube files too.',
+                desc: 'Log footage from iPhone, GoPro, DJI, or Insta360 looks flat without a pro editor. Trimly includes Rec. 709 LUTs for Apple Log 2 and popular action cameras.<a class="fn-ref" href="#lut-disclaimer" aria-label="Legal disclaimer">*</a> Apply while you trim — preview matches export. Load your own .cube files too.',
                 points: [
                     'Bundled Rec. 709 LUTs for Apple Log 2, GoPro, DJI & Insta360',
                     'Import custom .cube LUTs',
@@ -96,7 +93,7 @@ window.T = {
             {
                 eyebrow: 'Audio',
                 title: 'Audio files, with real waveforms.',
-                desc: 'Heard a killer quote in a podcast and want to clip it for a friend? Or trimming an interview or meeting recording? Drop the audio file into Trimly. A waveform appears automatically — align speech with the waveform and cut silence and filler. Clean and quick, no bloated audio editor required.',
+                desc: 'Heard a great podcast quote or trimming an interview? Drop the audio into Trimly — a waveform appears automatically. Align speech with the wave and cut silence. No bloated audio editor needed.',
                 points: [
                     'Pure audio import and trim',
                     'Auto-generated waveform visualization',
@@ -106,7 +103,7 @@ window.T = {
             {
                 eyebrow: 'Speed',
                 title: 'A complete keyboard workflow.',
-                desc: 'If you’ve ever worked at a desk, you know nothing beats a keyboard. Trimly’s shortcuts cover every step you actually use: play, pause, step frame by frame, mark a clip, delete, undo. Each file keeps its own undo history, so you can fly through a full day of footage without lifting your hands.',
+                desc: 'Keyboard beats a mouse every time. Play, pause, step frame by frame, mark clips, delete, undo — all with shortcuts. Each file keeps its own undo history for a full day of footage.',
                 points: [
                     'Play, seek, and step frame by frame',
                     'Mark clips and delete with a keypress',
@@ -116,14 +113,13 @@ window.T = {
             {
                 eyebrow: 'iPad',
                 title: 'iPad. No compromise.',
-                desc: 'Everyone says the iPad is “for productivity” until it turns into a streaming device. That’s usually the app’s fault, not the iPad’s. Trimly was designed for iPad from the ground up: full keyboard shortcuts, multi-window side by side, and a layout that adapts to any window size, from a compact slide-over panel to a full external display.',
+                desc: 'Trimly was built for iPad from the ground up: full keyboard shortcuts, multi-window side by side, and a layout that scales from slide-over to an external display.',
                 points: [
                     'Full keyboard shortcut support',
                     'Multi-window for side-by-side workflows',
                     'Resizable windows with adaptive layout',
                 ],
-            },
-        ],
+            }],
         privacy: {
             heading: 'Private by design.',
             body: 'Trimly runs on-device — no account, uploads, or ads. No network requests, cloud processing, tracking, or third-party SDKs.',
@@ -197,20 +193,7 @@ window.T = {
             meta2: '全平台通用',
             meta3: '不发送网络请求',
         },
-        features: [
-            {
-                eyebrow: '导入导出',
-                title: '灵活导入导出',
-                desc: '潜水一日归来，插上读卡器，Trimly 直接打开存储卡上的几小时素材，不必先整段导入手机。同一段视频里，誓词、拥抱、撒花可以分开导出，还能按时间顺序批量导出。轻松截取 Live Photo 和短视频后，一键导出到系统相册，立即可发朋友圈。素材已在相册里？同样可以一键导入继续剪，iCloud 下载进度也看得见。从其他 App 分享视频，直接进入 Trimly 开剪。外接硬盘、NAS、iCloud 云盘也都支持，也可导出到「文件」App。',
-                points: [
-                    '一条视频剪出多个片段：誓词、拥抱、撒花各自独立导出',
-                    '裁好的片段一键导出至照片图库，分享即用',
-                    '可从系统相册导入；硬盘、存储卡、云盘直连打开',
-                    '从其他 App 分享；直接读取源文件，不额外复制',
-                    '按时间顺序批量导出；也可导出至「文件」App',
-                ],
-            },
-            {
+        features: [{
                 eyebrow: '使用场景',
                 title: '为真实拍摄场景而生',
                 desc: 'Trimly 面向你真正会拍的素材——长录制里藏着精彩，几分钟就能拆出可分享的片段，不必在剪辑软件里耗上一小时。',
@@ -223,9 +206,19 @@ window.T = {
                 ],
             },
             {
+                eyebrow: '导入导出',
+                title: '灵活导入导出',
+                desc: 'Trimly 可直接打开 SD 卡、外接硬盘、NAS 和云盘上的长素材，无需先整段导入手机。一段视频可剪出多个片段并批量导出，也可从其他 App 分享后立刻开剪，导出到相册或「文件」。',
+                points: [
+                    '一条视频多个片段，按时间顺序批量导出',
+                    '导出至相册或「文件」；相册一键导入',
+                    '从其他 App 分享；直读源文件，不额外复制',
+                ],
+            },
+            {
                 eyebrow: '时间戳',
                 title: '每个片段，在相册里精准归位',
-                desc: '看演唱会录了一整段超长视频，用 Trimly 从中提取多个精彩时刻。每个片段的创建时间会自动对应它在原片中的真实时刻。下午海边的片段不会跑到上午早餐前面，旅行最后一天的高光也不会混进出发那天的空镜。导出后打开相册，它们会和当天其他照片、视频一起按时间顺序自然排列，滑动浏览就能还原现场的心情起伏。GPS 位置、拍摄设备、镜头型号等信息在相册详情里仍能看到。',
+                desc: '演唱会录了一整段长视频，Trimly 可拆出多个精彩片段，创建时间对应原片中的真实时刻。下午海边的片段不会跑到上午早餐前面，导出后在相册里自然按序排列。GPS、设备与镜头信息仍保留在详情中。',
                 points: [
                     '创建时间精确对应片段在原片中的真实时刻',
                     '与相册里的其他内容自然混排、有序排列',
@@ -235,7 +228,7 @@ window.T = {
             {
                 eyebrow: '截图',
                 title: '截图与 Live Photo',
-                desc: '拖动时间轴标记入点、出点，想剪几段就剪几段，标错可以撤销。给片段加标签，方便辨认「誓词」「日落」「搞笑」。逐帧微调，或一键跳转五秒——定格在起跳前那个笑容、浪花最高的瞬间。看到电影或动画里的名场面，想做成 Live Photo 当壁纸？找到那一帧截图保存，或直接生成会动的 Live Photo，拍摄设备和位置信息原样保留。也可以直接旋转素材，无需耗时转码。',
+                desc: '拖动时间轴标记入出点，标错可撤销。给片段加标签如「誓词」「日落」「搞笑」。逐帧微调或一键跳转五秒——定格起跳前的笑容、浪花最高的瞬间。电影或动画名场面可存为截图或 Live Photo，也可直接旋转素材，无需转码。',
                 points: [
                     '入点出点可撤销，剪辑时给片段打标签',
                     '逐帧微调或一键跳转五秒',
@@ -246,7 +239,7 @@ window.T = {
             {
                 eyebrow: '导出',
                 title: '直通导出，也支持多档位转码',
-                desc: '无论原片有多大，直通导出都是一瞬间的事。Trimly 不重新编码，直接拷贝原始媒体流，画质分毫不差。原始素材码率太高、手机或 iCloud 装不下？可选多档位转码导出，在保留所需片段的同时节省空间。给片段打上关键字标签，以后在相册里随时搜得到。',
+                desc: '无论原片多大，直通导出都是一瞬间的事，画质分毫不差。原片码率太高、手机或 iCloud 装不下？可选多档位转码省空间。给片段打关键字，相册里随时搜得到。',
                 points: [
                     '直通导出：不损失画质，无需等待',
                     '数小时长片中截取片段，瞬间完成',
@@ -256,7 +249,7 @@ window.T = {
             {
                 eyebrow: 'HDR',
                 title: '完整的 HDR 支持',
-                desc: '旅行时录了段 HDR 视频，回放时天空的高光和街景暗部的细节都还在。换到其他 App，预览发灰，导出后要么高光过曝，要么整段被压成发白的 SDR。Trimly 从预览到写入相册全程保留 HDR：裁一段短视频，动态范围和原片一致；截一帧或做 Live Photo，存进去仍是 HDR 图像；需要转码省空间时，HDR 也能一并保留。',
+                desc: '旅行录的 HDR 视频，天空高光和暗部细节都还在。多数 App 预览发灰、导出压成 SDR。Trimly 从预览到写入相册全程保留 HDR——短视频、截图、Live Photo 和转码导出均如此。',
                 points: [
                     '在 XDR 屏上真实 HDR 预览，所见即所得',
                     '视频与 Live Photo 直通导出，HDR 元数据原样保留',
@@ -266,7 +259,7 @@ window.T = {
             {
                 eyebrow: '调色',
                 title: '支持 LUT 调色',
-                desc: '为了追求高画质，你用 iPhone、GoPro、大疆或影石设备拍了 Log 视频，结果只能在专业剪辑软件里当素材，平时回看全是灰蒙蒙的。Trimly 内置 Apple Log 2、GoPro、大疆和影石常见设备的 Rec. 709 还原 LUT<a class="fn-ref" href="#lut-disclaimer" aria-label="法律说明">*</a>，裁剪时一键挂上，画面立刻鲜活起来，导出的效果和预览完全一致。也可以导入你自己的 .cube 文件。',
+                desc: 'iPhone、GoPro、大疆或影石拍的 Log 视频，平时回看灰蒙蒙的。Trimly 内置 Apple Log 2 及常见设备的 Rec. 709 还原 LUT<a class="fn-ref" href="#lut-disclaimer" aria-label="法律说明">*</a>，裁剪时一键挂上，预览与导出一致。也可导入 .cube 文件。',
                 points: [
                     '内置 Apple Log 2、GoPro、大疆、影石 → Rec. 709 还原 LUT',
                     '支持导入自定义 .cube LUT',
@@ -276,7 +269,7 @@ window.T = {
             {
                 eyebrow: '音频',
                 title: '纯音频，也有真实波形',
-                desc: '听播客听到一段金句，想切出来分享给朋友。或者需要剪采访、会议录音？把音频文件拖进 Trimly，波形自动生成，一眼就能定位到那句话。波形对齐说话段落，剪掉静音和废话。干净利落，不用打开臃肿的音频编辑器。',
+                desc: '播客听到金句想切给朋友，或要剪采访、会议录音？拖进 Trimly，波形自动生成，对齐说话段落、剪掉静音。不用打开臃肿的音频编辑器。',
                 points: [
                     '支持纯音频导入与裁剪',
                     '自动生成波形图',
@@ -286,7 +279,7 @@ window.T = {
             {
                 eyebrow: '高效',
                 title: '完整的键盘工作流',
-                desc: '键盘效率高，上过班的都知道。Trimly 的快捷键覆盖了你最常用的每一步：播放暂停、逐帧查看、标记片段、一键删除、撤销误操作。每个文件都有独立的操作历史，手不用离开键盘就能搞定一整天的素材。',
+                desc: '键盘效率高，Trimly 快捷键覆盖播放、逐帧、标记、删除、撤销。每个文件独立操作历史，手不离键盘就能剪完一天的素材。',
                 points: [
                     '播放、定位与逐帧步进',
                     '一键标记片段与删除',
@@ -296,14 +289,13 @@ window.T = {
             {
                 eyebrow: 'iPad',
                 title: 'iPad，全力释放',
-                desc: '买后爱奇艺？Trimly 让它真正变成生产力工具。完整的键盘快捷键、多窗口并行操作、窗口大小随意拉伸布局都能自适应，从侧拉小窗口到外接大屏，每一寸都不浪费。',
+                desc: 'Trimly 为 iPad 从头设计：完整键盘快捷键、多窗口并行，布局从侧拉小窗到外接大屏都能自适应。',
                 points: [
                     '支持完整的键盘快捷键',
                     '多窗口并行工作',
                     '可变窗口大小，布局自适应调整',
                 ],
-            },
-        ],
+            }],
         privacy: {
             heading: '隐私，从设计之初',
             body: 'Trimly 全程本地运行，无需账号，不上传，无广告。不发起网络请求，无云端处理、追踪或第三方 SDK。',
@@ -377,20 +369,7 @@ window.T = {
             meta2: '全デバイス対応',
             meta3: 'ネットワーク送信なし',
         },
-        features: [
-            {
-                eyebrow: 'インポート・エクスポート',
-                title: '柔軟なインポートとエクスポート。',
-                desc: 'ダイビングからの帰り道、SDカードをそのまま開いて何時間分もブラウズ——スマホに丸ごと取り込む必要はありません。同じ動画から誓い、ハグ、花びらまきを別々に切り出し、時系列で一括書き出し。Live Photoやショートクリップを切り出し、写真ライブラリへワンタップで書き出せば、SNSにもすぐシェアできます。すでに「写真」にある動画もワンタップで取り込み、iCloudのダウンロード進捗も表示。他のアプリから共有してTrimlyですぐ編集。外付けドライブ、NAS、iCloud Drive、ファイルAppにも対応。',
-                points: [
-                    '1本の動画から複数クリップ——誓い、ハグ、花びらまきをそれぞれ書き出し',
-                    '切り出したクリップを写真ライブラリへワンタップ書き出し',
-                    '「写真」からの取り込み、SD・ドライブ・クラウドの直接オープン',
-                    '他アプリから共有；ソース直読みで重複コピーなし',
-                    '時系列一括書き出し；ファイルAppへの書き出しも可能',
-                ],
-            },
-            {
+        features: [{
                 eyebrow: '使用シーン',
                 title: '実際の撮影シーンのために。',
                 desc: 'Trimlyは、長い録画の中に埋もれた名場面を、机の前で何時間もかけずに、数分でシェアできるクリップに変えるためのアプリです。',
@@ -403,9 +382,19 @@ window.T = {
                 ],
             },
             {
+                eyebrow: 'インポート・エクスポート',
+                title: '柔軟なインポートとエクスポート。',
+                desc: 'SDカード、外付けドライブ、NAS、クラウド上の長尺動画を、コピーせずそのまま開けます。1本から複数クリップを切り出して一括書き出し、他アプリから共有してすぐ編集。写真ライブラリやファイルAppへ書き出し。',
+                points: [
+                    '1本の動画から複数クリップ、時系列で一括書き出し',
+                    '写真ライブラリ・ファイルApp・SD・クラウドに対応',
+                    '他アプリから共有；ソース直読み、重複コピーなし',
+                ],
+            },
+            {
                 eyebrow: 'タイムスタンプ',
                 title: '書き出したクリップは、写真で自然な順に並ぶ。',
-                desc: 'ライブを一つの長い動画として撮影した——Trimlyならベストシーンだけ切り出せる。各クリップの作成日時は、元動画の中で実際に起きた瞬間に対応。午後の海辺のクリップが午前の朝食より前に来ることはない。旅行最終日のハイライトが出発日の空撮と混ざることもない。書き出して写真ライブラリを開くと、同日に撮った他の写真や動画と混ざって時系列順に並ぶ。GPS、撮影機材、レンズ情報も写真の詳細に残る。',
+                desc: 'ライブを一つの長い動画として撮影——Trimlyならベストシーンだけ切り出せる。各クリップの作成日時は元動画の実際の瞬間に対応。午後の海辺が午前の朝食より前には来ない。GPS、機材、レンズ情報も写真詳細に残る。',
                 points: [
                     '作成日時が元動画内の実際の瞬間に対応',
                     '他の写真・動画と自然に混ざって時系列順に',
@@ -415,7 +404,7 @@ window.T = {
             {
                 eyebrow: 'キャプチャ',
                 title: 'フレームとLive Photo。',
-                desc: 'タイムラインをドラッグしてイン・アウトポイントを指定——好きなだけ切り、間違えたら元に戻せます。「誓い」「夕日」「おもしろ」などタグ付けも可能。フレーム単位の微調整、または5秒ジャンプ——ジャンプ直前の笑顔、波の最高潮の瞬間にピンポイント。映画やアニメの名シーンをLive Photoのロック画面に？静止画として保存するも、動くLive Photoとして保存するもよし。素材を直接回転——トランスコード不要。',
+                desc: 'タイムラインでイン・アウトを指定——間違えたら元に戻せます。「誓い」「夕日」などタグ付けも。フレーム単位か5秒ジャンプで、ジャンプ直前の笑顔や波の頂点にピンポイント。映画やアニメの名シーンを静止画やLive Photoに。回転もトランスコード不要。',
                 points: [
                     'イン・アウト指定と取り消し、タグ付け',
                     'フレーム単位の調整または5秒ジャンプ',
@@ -426,7 +415,7 @@ window.T = {
             {
                 eyebrow: 'エクスポート',
                 title: 'パススルー書き出し、必要なら複数段階のトランスコードも。',
-                desc: '元ファイルが何GBあろうと、パススルー書き出しは一瞬。Trimlyは再エンコードせず元のメディアストリームをそのままコピーするので、画質はビット単位で完全に同じ。元素材のビットレートが高すぎて端末やiCloudに収まらない？複数のトランスコード段階から選んで、必要なクリップを保ちながらファイルサイズを抑えられる。クリップにキーワードを付けておけば、写真でいつでも検索できる。',
+                desc: '元ファイルが何GBでも、パススルー書き出しは一瞬で画質そのまま。元素材が大きすぎる？複数段階のトランスコードで省スペース。キーワードを付ければ写真で検索できる。',
                 points: [
                     'パススルー書き出し：画質劣化なし、待ち時間なし',
                     '数時間のファイルから短いクリップを数秒で',
@@ -436,7 +425,7 @@ window.T = {
             {
                 eyebrow: 'HDR',
                 title: '完全なHDR対応。',
-                desc: '旅行先でHDR映像を撮った——空のハイライトも、街の影のディテールも、そのまま残っている。別のアプリに開くとプレビューはフラットに、書き出せばハイライトが飛ぶか、全体が白飛びしたSDRに押し潰される。Trimlyならプレビューから写真ライブラリへの保存までHDRを維持：短いクリップも元のダイナミックレンジのまま、静止画やLive PhotoもHDR画像として保存、トランスコード書き出しでもHDRを保持できる。',
+                desc: '旅行先のHDR映像——空のハイライトも影のディテールもそのまま。多くのアプリはプレビューがフラット、書き出しでSDRに潰れる。Trimlyならプレビューから写真ライブラリまでHDRを維持——静止画、Live Photo、トランスコードも。',
                 points: [
                     'XDRディスプレイで本物のHDRプレビュー',
                     '動画・Live Photoのパススルー書き出しでHDRメタデータを保持',
@@ -446,7 +435,7 @@ window.T = {
             {
                 eyebrow: 'カラー',
                 title: 'LUTカラーグレーディング対応。',
-                desc: '高画質のためにiPhone、GoPro、DJI、Insta360でLog撮影したのに、普段見返すと全体がグレーでパッとしない……。Trimlyには Apple Log 2、GoPro・DJI・Insta360の一般的な機種向け Rec. 709 変換 LUT<a class="fn-ref" href="#lut-disclaimer" aria-label="法的免責事項">*</a>が内蔵されているので、トリミング中にワンタップで適用すれば画面が一気に鮮やかに。プレビューと書き出しが完全に一致。自分の .cube ファイルも読み込める。',
+                desc: 'iPhone、GoPro、DJI、Insta360のLog映像は、普段見返すとグレーでパッとしない。Trimlyには Apple Log 2 や人気機種向け Rec. 709 LUT<a class="fn-ref" href="#lut-disclaimer" aria-label="法的免責事項">*</a>が内蔵。トリミング中に適用すればプレビューと書き出しが一致。自分の .cube も読み込める。',
                 points: [
                     'Apple Log 2、GoPro・DJI・Insta360 → Rec. 709 LUTを内蔵',
                     'カスタム.cube LUTをインポート',
@@ -456,7 +445,7 @@ window.T = {
             {
                 eyebrow: 'オーディオ',
                 title: '音声ファイルにも、本物の波形を。',
-                desc: 'ポッドキャストで「これは！」という一言に出会い、友達にも聞かせたい。またはインタビュー・会議録音を切りたいとき。音声ファイルをTrimlyにドロップすれば波形が自動表示。波形で発話区間を合わせ、無音や冗長部分をカット。重たい音声編集アプリは不要です。',
+                desc: 'ポッドキャストの名セリフやインタビュー・会議録音を切りたいとき。音声をTrimlyにドロップすれば波形が自動表示。発話区間を合わせ、無音をカット。重たい音声編集アプリは不要。',
                 points: [
                     '純粋な音声ファイルに対応',
                     '波形を自動生成',
@@ -466,7 +455,7 @@ window.T = {
             {
                 eyebrow: 'スピード',
                 title: '完全なキーボードワークフロー。',
-                desc: '仕事でキーボードを使っている人ならわかるはず。マウスよりキーのほうが早い。Trimlyのショートカットは再生・一時停止・コマ送り・クリップのマーク・削除・取り消しまで全部カバー。ファイルごとに操作履歴が残るから、一日分の素材も手を止めずにさばける。',
+                desc: 'キーボードのほうがマウスより速い——仕事をした人ならわかるはず。再生・コマ送り・マーク・削除・取り消しまでショートカット対応。ファイルごとの履歴で一日分も手を止めずに。',
                 points: [
                     '再生・シーク・フレーム単位の送り',
                     'キー操作でクリップのマークと削除',
@@ -476,14 +465,13 @@ window.T = {
             {
                 eyebrow: 'iPad',
                 title: 'iPadの実力を、余すところなく。',
-                desc: 'iPadを買ったけど結局動画見るだけ……それ、アプリ側の問題かもしれません。Trimlyは最初からiPad向けに設計されています。キーボードショートカットはフル対応、マルチウィンドウで並行作業、ウィンドウサイズを自由に変えてもレイアウトが自動で最適化。Slide Overのコンパクトなパネルから外付けディスプレイまで、どんなサイズでも快適に使えます。',
+                desc: 'Trimlyは最初からiPad向けに設計。キーボードショートカットはフル対応、マルチウィンドウで並行作業。Slide Overから外付けディスプレイまでレイアウトが自動最適化。',
                 points: [
                     'キーボードショートカットに完全対応',
                     'マルチウィンドウで並行作業',
                     'ウィンドウサイズ可変、レイアウト自動調整',
                 ],
-            },
-        ],
+            }],
         privacy: {
             heading: '設計段階からプライバシー重視。',
             body: 'Trimlyは端末内で完結——アカウント、アップロード、広告なし。ネットワーク送信、クラウド処理、トラッキング、サードパーティSDKもなし。',
@@ -557,20 +545,7 @@ window.T = {
             meta2: '모든 플랫폼',
             meta3: '네트워크 요청 없음',
         },
-        features: [
-            {
-                eyebrow: '가져오기·보내기',
-                title: '유연한 가져오기와 보내기.',
-                desc: '다이빙에서 돌아와 SD 카드를 꽂으면 몇 시간 분량을 바로 엽니다 — 휴대폰에 통째로 가져올 필요 없습니다. 같은 영상에서 서약, 포옹, 꽃가루를 각각 따로 내보내고 시간순으로 일괄 내보낼 수 있습니다. 골라낸 Live Photo와 짧은 클립을 사진 보관함으로 한 번에 내면 Instagram이나 iMessage에 바로 쓸 수 있습니다. 이미 사진에 있는 영상도 한 번의 탭으로 가져오고, iCloud 다운로드 진행도 확인할 수 있습니다. 다른 앱에서 공유해 Trimly에서 바로 편집하세요. 외장 드라이브, NAS, iCloud Drive, 파일 앱도 지원합니다.',
-                points: [
-                    '한 영상에서 여러 클립——서약, 포옹, 꽃가루 각각 따로 내보내기',
-                    '잘라낸 하이라이트를 사진 보관함으로 한 번에 보내기',
-                    '사진에서 한 번의 탭으로 가져오기; SD·드라이브·클라우드 직접 열기',
-                    '다른 앱에서 공유; 원본 직접 읽기, 중복 복사 없음',
-                    '시간순 일괄 내보내기; 파일 앱으로 보내기도 가능',
-                ],
-            },
-            {
+        features: [{
                 eyebrow: '사용 사례',
                 title: '실제 촬영 장면을 위해.',
                 desc: 'Trimly는 긴 녹화 속에 묻힌 명장면을, 책상 앞에서 몇 시간이 아니라 몇 분 만에 공유 가능한 클립으로 만들어 줍니다.',
@@ -583,9 +558,19 @@ window.T = {
                 ],
             },
             {
+                eyebrow: '가져오기·보내기',
+                title: '유연한 가져오기와 보내기.',
+                desc: 'SD 카드, 외장 드라이브, NAS, 클라우드의 긴 영상을 복사 없이 바로 엽니다. 한 영상에서 여러 클립을 잘라 시간순으로 일괄 내보내거나, 다른 앱에서 공유해 바로 편집하세요. 사진 보관함이나 파일 앱으로 내보냅니다.',
+                points: [
+                    '한 영상에서 여러 클립, 시간순 일괄 내보내기',
+                    '사진 보관함·파일 앱·SD·클라우드 지원',
+                    '다른 앱에서 공유; 원본 직접 읽기, 중복 복사 없음',
+                ],
+            },
+            {
                 eyebrow: '타임스탬프',
                 title: '모든 클립이 사진 앱에서 제자리에.',
-                desc: '콘서트 전체를 하나의 긴 영상으로 찍었다. Trimly로 하이라이트 클립 여러 개를 뽑아내면, 각 클립의 생성 시간이 원본에서 실제로 일어난 순간에 맞춰집니다. 오후 해변 클립이 오전 아침 식사보다 앞에 오지 않습니다. 여행 마지막 날 하이라이트가 출발일의 빈 장면과 섞이지 않습니다. 사진을 열면 그날 찍은 다른 사진·동영상과 함께 시간순으로 자연스럽게 정렬됩니다. GPS, 촬영 기기, 렌즈 정보도 사진 상세에 보존됩니다.',
+                desc: '콘서트 전체를 하나의 긴 영상으로 찍었다. Trimly로 뽑은 클립마다 생성 시간이 원본의 실제 순간에 맞춰집니다. 오후 해변 클립이 오전 아침 식사보다 앞에 오지 않습니다. GPS, 기기, 렌즈 정보도 사진 상세에 보존됩니다.',
                 points: [
                     '생성 시간이 원본 타임라인의 실제 순간과 일치',
                     '다른 사진·동영상과 자연스럽게 섞여 시간순 정렬',
@@ -595,7 +580,7 @@ window.T = {
             {
                 eyebrow: '캡처',
                 title: '프레임과 Live Photo.',
-                desc: '타임라인을 드래그해 인·아웃 포인트를 표시——원하는 만큼 자르고, 잘못 표시하면 실행 취소. 「서약」「석양」「웃김」 등 태그 추가. 프레임 단위 미세 조정 또는 5초 점프——점프 직전 미소, 파도 최고점 순간에 정확히 고정. 영화나 애니의 명장면을 잠금 화면 Live Photo로? 정지 이미지로 저장하거나 움직이는 Live Photo로 캡처하세요. 소스를 직접 회전——트랜스코딩 불필요.',
+                desc: '타임라인에 인·아웃 포인트 표시——잘못 표시하면 실행 취소. 「서약」「석양」 등 태그 추가. 프레임 단위 또는 5초 점프로 점프 직전 미소, 파도 최고점에 고정. 영화·애니 명장면을 정지 이미지나 Live Photo로. 트랜스코딩 없이 회전.',
                 points: [
                     '인·아웃 포인트와 실행 취소, 태그 추가',
                     '프레임 단위 조정 또는 5초 점프',
@@ -606,7 +591,7 @@ window.T = {
             {
                 eyebrow: '보내기',
                 title: '패스스루보내기 — 필요하면 여러 단계 트랜스코딩도.',
-                desc: '원본이 500MB든 50GB든 패스스루보내기는 거의 즉시입니다. Trimly는 재인코딩 없이 원본 미디어 스트림을 복사하므로 화질은 비트 단위로 동일합니다. 원본 비트레이트가 너무 높아 기기나 iCloud에 담기 어렵다면, 여러 트랜스코딩 단계 중에서 골라 필요한 클립은 유지하면서 용량을 줄일 수 있습니다. 클립에 키워드를 붙여 두면 사진에서 언제든 검색할 수 있습니다.',
+                desc: '원본이 500MB든 50GB든 패스스루 내보내기는 거의 즉시, 화질 그대로. 원본이 너무 크면 트랜스코딩 단계를 골라 용량을 줄이세요. 키워드를 붙이면 사진에서 검색 가능.',
                 points: [
                     '패스스루보내기: 화질 손실 없음, 기다림 없음',
                     '몇 시간짜리 파일에서 짧은 클립을 몇 초 만에',
@@ -616,7 +601,7 @@ window.T = {
             {
                 eyebrow: 'HDR',
                 title: '완벽한 HDR 지원',
-                desc: '여행 중 HDR 영상을 찍었다 — 하늘의 하이라이트와 거리 그림자의 디테일이 그대로 남아 있다. 다른 앱에서 열면 미리보기는 밋밋하고, 내보내면 하이라이트가 날아가거나 전체가 SDR로 눌려 버린다. Trimly에서는 미리보기부터 사진 보관함 저장까지 HDR을 유지한다. 짧은 클립도 원본과 같은 다이내믹 레인지, 정지 이미지와 Live Photo도 HDR 이미지로 저장, 트랜스코딩 내보내기에서도 HDR을 보존한다.',
+                desc: '여행 중 HDR 영상 — 하늘 하이라이트와 그림자 디테일 그대로. 대부분 앱은 미리보기가 밋밋하고 내보내면 SDR로 눌림. Trimly는 미리보기부터 사진 보관함까지 HDR 유지 — 정지, Live Photo, 트랜스코딩도.',
                 points: [
                     'XDR 디스플레이에서 진짜 HDR 미리보기',
                     '동영상·Live Photo 패스스루 내보내기로 HDR 메타데이터 보존',
@@ -626,7 +611,7 @@ window.T = {
             {
                 eyebrow: '색감',
                 title: 'LUT 색보정, 내장.',
-                desc: 'iPhone, GoPro, DJI, Insta360에서 찍은 Log 영상은 전문 편집 앱 밖에서는 밋밋하고 탁해 보입니다. Trimly에는 Apple Log 2와 인기 GoPro·DJI·Insta360 기기용 Rec. 709 LUT가 내장되어 있습니다.<a class="fn-ref" href="#lut-disclaimer" aria-label="법적 고지">*</a> 자를 때 적용하면 화면이 바로 살아납니다. 미리보기와보내기 결과가 완전히 같습니다. 직접 만든 .cube 파일도 불러올 수 있습니다.',
+                desc: 'iPhone, GoPro, DJI, Insta360 Log 영상은 전문 편집 앱 밖에서는 밋밋합니다. Trimly에는 Apple Log 2와 인기 기기용 Rec. 709 LUT<a class="fn-ref" href="#lut-disclaimer" aria-label="법적 고지">*</a>가 내장. 자를 때 적용하면 미리보기와 내보내기가 같습니다. .cube 파일도 불러올 수 있습니다.',
                 points: [
                     'Apple Log 2, GoPro, DJI, Insta360용 Rec. 709 LUT 내장',
                     '사용자 정의 .cube LUT 가져오기',
@@ -636,7 +621,7 @@ window.T = {
             {
                 eyebrow: '오디오',
                 title: '오디오 파일, 실제 파형으로.',
-                desc: '팟캐스트에서 인상 깊은 한 마디를 들었고 친구에게 잘라 보내고 싶나요? 또는 인터뷰·회의 녹음을 잘라야 할 때. 오디오 파일을 Trimly에 넣으면 파형이 자동으로 나타납니다. 파형으로 발화 구간을 맞추고 무음과 군더더기를 삭제하세요. 무거운 오디오 편집기는 필요 없습니다.',
+                desc: '팟캐스트 명언이나 인터뷰·회의 녹음을 잘라야 할 때. 오디오를 Trimly에 넣으면 파형이 자동 표시. 발화 구간을 맞추고 무음을 삭제. 무거운 오디오 편집기는 불필요.',
                 points: [
                     '순수 오디오 가져오기 및 트리밍',
                     '자동 생성 파형 시각화',
@@ -646,7 +631,7 @@ window.T = {
             {
                 eyebrow: '속도',
                 title: '완전한 키보드 워크플로.',
-                desc: '책상에서 일해 본 사람이라면 키보드가 최고라는 걸 압니다. Trimly 단축키는 실제로 쓰는 모든 단계를 다룹니다. 재생, 일시 정지, 프레임 단위 이동, 클립 표시, 삭제, 실행 취소. 파일마다 독립 실행 취소 기록이 있어 하루 분량 영상도 손을 떼지 않고 처리할 수 있습니다.',
+                desc: '키보드가 마우스보다 빠릅니다. 재생, 일시 정지, 프레임 이동, 클립 표시, 삭제, 실행 취소까지 단축키. 파일마다 독립 실행 취소 기록으로 하루 분량도 손을 떼지 않고.',
                 points: [
                     '재생, 탐색, 프레임 단위 이동',
                     '키 한 번으로 클립 표시 및 삭제',
@@ -656,14 +641,13 @@ window.T = {
             {
                 eyebrow: 'iPad',
                 title: 'iPad. 타협 없음.',
-                desc: 'iPad는 "생산성"용이라다 결국 스트리밍 기기가 되기 쉽습니다. 대개 iPad 탓이 아니라 앱 탓입니다. Trimly는 처음부터 iPad용으로 설계했습니다. 전체 키보드 단축키, 나란히 쓰는 다중 창, Slide Over 작은 패널부터 외장 디스플레이까지 어떤 창 크기에도 맞는 레이아웃.',
+                desc: 'Trimly는 처음부터 iPad용으로 설계. 전체 키보드 단축키, 나란히 쓰는 다중 창, Slide Over 작은 패널부터 외장 디스플레이까지 적응형 레이아웃.',
                 points: [
                     '전체 키보드 단축키 지원',
                     '나란히 작업하는 다중 창',
                     '크기 조절 가능한 창과 적응형 레이아웃',
                 ],
-            },
-        ],
+            }],
         privacy: {
             heading: '설계 단계부터의 프라이버시.',
             body: 'Trimly는 기기 로컬에서 실행——계정, 업로드, 광고 없음. 네트워크 요청, 클라우드 처리, 추적, 서드파티 SDK 없음.',
@@ -737,20 +721,7 @@ window.T = {
             meta2: 'Todas las plataformas',
             meta3: 'Sin solicitudes de red',
         },
-        features: [
-            {
-                eyebrow: 'Importar y exportar',
-                title: 'Importación y exportación flexibles.',
-                desc: 'Vuelves de un viaje de buceo y conectas la tarjeta SD al lector. Trimly abre horas de metraje sin importar todo el archivo al teléfono. Recorta votos, abrazos y confeti por separado del mismo vídeo y expórtalos en lote en orden cronológico. Elige los mejores momentos y exporta Live Photos y clips cortos a tu biblioteca de Fotos, listos para Instagram o iMessage. ¿Ya está en Fotos? Impórtalo con un toque y sigue la descarga de iCloud. Comparte desde otra app y abre Trimly al instante. Discos externos, NAS, iCloud Drive y Archivos también funcionan.',
-                points: [
-                    'Varios clips de un vídeo — votos, abrazos y confeti por separado',
-                    'Exporta los highlights recortados directo a tu biblioteca de Fotos',
-                    'Importa con un toque desde Fotos; abre discos, SD y almacenamiento en la nube',
-                    'Compartir desde otra app; lee el original sin copiar',
-                    'Exportación por lotes en orden cronológico; también a Archivos',
-                ],
-            },
-            {
+        features: [{
                 eyebrow: 'Casos de uso',
                 title: 'Hecho para escenas reales.',
                 desc: 'Trimly es para el metraje que realmente grabas: grabaciones largas con momentos buenos en el interior. Saca clips compartibles en minutos, no horas en un escritorio.',
@@ -763,9 +734,19 @@ window.T = {
                 ],
             },
             {
+                eyebrow: 'Importar y exportar',
+                title: 'Importación y exportación flexibles.',
+                desc: 'Abre horas de metraje en tarjetas SD, discos, NAS o la nube sin copiar todo el archivo. Recorta varios clips de un vídeo, expórtalos en lote a Fotos o Archivos, o comparte desde otra app y edita al instante.',
+                points: [
+                    'Varios clips de un vídeo; exportación por lotes en orden',
+                    'Fotos, Archivos, SD, discos y almacenamiento en la nube',
+                    'Compartir desde otra app; lee el original sin copiar',
+                ],
+            },
+            {
                 eyebrow: 'Marcas de tiempo',
                 title: 'Cada clip llega a Fotos justo donde corresponde.',
-                desc: 'Grabaste todo el concierto en un solo vídeo largo. Con Trimly, extrae una docena de clips destacados — cada uno recibe una hora de creación que coincide con el momento real en que ocurrió. Un clip de playa por la tarde no irá antes del desayuno; los highlights del último día no se mezclarán con planos del día de salida. Al abrir Fotos, se alinean en orden cronológico junto con todo lo demás que hayas capturado ese día. GPS, cámara, lente y metadatos siguen visibles en los detalles de la foto.',
+                desc: 'Grabaste todo el concierto en un solo vídeo largo. Con Trimly, extrae clips destacados — cada uno lleva la hora real del momento. Un clip de playa por la tarde no irá antes del desayuno. GPS, cámara y lente se conservan en los detalles.',
                 points: [
                     'La hora refleja el instante real en la línea de tiempo',
                     'Los clips se ordenan naturalmente con tus otras fotos y vídeos',
@@ -775,7 +756,7 @@ window.T = {
             {
                 eyebrow: 'Captura',
                 title: 'Fotogramas y Live Photos.',
-                desc: 'Marca entrada y salida en la línea de tiempo — recorta lo que quieras, deshaz si te equivocas. Etiqueta clips como «Votos», «Atardecer» o «Gracioso». Ajuste fotograma a fotograma o salto de 5 s — congela la sonrisa antes del salto o el pico de una ola. ¿Viste una escena icónica en una película o un anime? Guárdala como imagen fija o Live Photo para tu pantalla de bloqueo. Rota el material sin transcodificar.',
+                desc: 'Marca entrada y salida en la línea de tiempo — deshaz si te equivocas. Etiqueta clips como «Votos» o «Atardecer». Fotograma a fotograma o salto de 5 s — congela la sonrisa o el pico de una ola. Guarda una escena de película o anime como fija o Live Photo. Rota sin transcodificar.',
                 points: [
                     'Entrada/salida con deshacer — etiqueta clips al recortar',
                     'Ajuste fotograma a fotograma o salto de 5 s',
@@ -786,7 +767,7 @@ window.T = {
             {
                 eyebrow: 'Exportar',
                 title: 'Exportación en passthrough — o transcodifica para ahorrar espacio.',
-                desc: 'Da igual si el archivo pesa 500 MB o 50 GB: la exportación en passthrough es prácticamente instantánea. Trimly copia el flujo de medios original sin volver a codificar, así que la calidad es idéntica bit a bit. ¿El metraje original es demasiado pesado para tu teléfono o iCloud? Elige entre varios niveles de transcodificación para reducir el tamaño sin perder el clip que necesitas. Etiqueta tus clips con palabras clave y búscalos en Fotos cuando quieras.',
+                desc: '500 MB o 50 GB — la exportación en passthrough es casi instantánea, calidad idéntica. ¿Original demasiado pesado para tu teléfono o iCloud? Elige un nivel de transcodificación. Etiqueta clips con palabras clave y búscalos en Fotos.',
                 points: [
                     'Exportación en passthrough: sin pérdida de calidad, sin esperas',
                     'Un clip corto de un archivo de varias horas en segundos',
@@ -796,7 +777,7 @@ window.T = {
             {
                 eyebrow: 'HDR',
                 title: 'Soporte HDR completo.',
-                desc: 'Grabaste metraje HDR en un viaje: los reflejos brillantes en el cielo y el detalle en las sombras de la calle siguen ahí. Ábrelo en la mayoría de editores y la vista previa se ve plana; exporta un clip y los reflejos se queman o todo se aplasta a SDR. En Trimly, el HDR se mantiene de la vista previa a Fotos: los clips recortados conservan el mismo rango, las fotos fijas y Live Photos se guardan como imágenes HDR, y la transcodificación también preserva el HDR.',
+                desc: 'Metraje HDR de un viaje — reflejos en el cielo y detalle en las sombras. La mayoría aplasta el HDR al exportar. En Trimly se mantiene de la vista previa a Fotos: clips, fotos fijas, Live Photos y transcodificación.',
                 points: [
                     'Vista previa HDR real en pantallas XDR',
                     'Exportación en passthrough de vídeo y Live Photo con metadatos HDR intactos',
@@ -806,7 +787,7 @@ window.T = {
             {
                 eyebrow: 'Color',
                 title: 'Gradación con LUT, integrada.',
-                desc: 'El metraje Log de tu iPhone, GoPro, DJI o Insta360 se ve plano y apagado fuera de una app de edición profesional. Trimly incluye LUT Rec. 709 integradas para Apple Log 2 y dispositivos populares de GoPro, DJI e Insta360.<a class="fn-ref" href="#lut-disclaimer" aria-label="Aviso legal">*</a> Aplícalas mientras recortas y la imagen cobra vida al instante. Lo que ves en la vista previa es exactamente lo que se exporta. También puedes cargar tus propios archivos .cube.',
+                desc: 'El metraje Log de iPhone, GoPro, DJI o Insta360 se ve plano fuera de un editor pro. Trimly incluye LUT Rec. 709 para Apple Log 2 y cámaras de acción populares.<a class="fn-ref" href="#lut-disclaimer" aria-label="Aviso legal">*</a> Aplícalas al recortar — la vista previa coincide con la exportación. Carga tus .cube también.',
                 points: [
                     'LUT Rec. 709 incluidas para Apple Log 2, GoPro, DJI e Insta360',
                     'Importa LUT .cube personalizadas',
@@ -816,7 +797,7 @@ window.T = {
             {
                 eyebrow: 'Audio',
                 title: 'Archivos de audio con formas de onda reales.',
-                desc: '¿Escuchaste una frase memorable en un pódcast y quieres recortarla para un amigo? ¿O una entrevista o reunión que recortar? Suelta el audio en Trimly. Aparece una forma de onda — alinea el habla con la onda y corta silencios y relleno. Rápido y limpio, sin un editor de audio pesado.',
+                desc: '¿Una frase memorable en un pódcast o una entrevista que recortar? Suelta el audio en Trimly — aparece la forma de onda. Alinea el habla y corta silencios. Sin un editor de audio pesado.',
                 points: [
                     'Importación y recorte de audio puro',
                     'Visualización de forma de onda generada automáticamente',
@@ -826,7 +807,7 @@ window.T = {
             {
                 eyebrow: 'Velocidad',
                 title: 'Un flujo de trabajo completo con teclado.',
-                desc: 'Si alguna vez trabajaste en un escritorio, sabes que nada supera al teclado. Los atajos de Trimly cubren cada paso que usas de verdad: reproducir, pausar, avanzar fotograma a fotograma, marcar un clip, borrar, deshacer. Cada archivo mantiene su propio historial, para volar por un día entero de metraje sin quitar las manos.',
+                desc: 'Nada supera al teclado. Reproducir, pausar, fotograma a fotograma, marcar, borrar, deshacer — todo con atajos. Cada archivo mantiene su historial para un día entero de metraje.',
                 points: [
                     'Reproducir, buscar y avanzar fotograma a fotograma',
                     'Marca clips y elimínalos con una tecla',
@@ -836,14 +817,13 @@ window.T = {
             {
                 eyebrow: 'iPad',
                 title: 'iPad. Sin compromisos.',
-                desc: 'Todos dicen que el iPad es «para productividad» hasta que se convierte en un dispositivo de streaming. Suele ser culpa de la app, no del iPad. Trimly se diseñó para iPad desde cero: atajos de teclado completos, varias ventanas en paralelo y un diseño que se adapta a cualquier tamaño, desde un panel Slide Over compacto hasta una pantalla externa completa.',
+                desc: 'Trimly se diseñó para iPad desde cero: atajos completos, varias ventanas en paralelo y diseño adaptable desde Slide Over hasta pantalla externa.',
                 points: [
                     'Atajos de teclado completos',
                     'Varias ventanas para flujos en paralelo',
                     'Ventanas redimensionables con diseño adaptable',
                 ],
-            },
-        ],
+            }],
         privacy: {
             heading: 'Privacidad por diseño.',
             body: 'Trimly funciona en el dispositivo — sin cuenta, subidas ni anuncios. Sin red, nube, seguimiento ni SDK de terceros.',
@@ -917,20 +897,7 @@ window.T = {
             meta2: 'كل الأجهزة',
             meta3: 'لا طلبات شبكة',
         },
-        features: [
-            {
-                eyebrow: 'استيراد وتصدير',
-                title: 'استيراد وتصدير مرنان.',
-                desc: 'عدت من رحلة غوص ووصلت قارئ البطاقات. Trimly يفتح بطاقة SD مباشرةً دون استيراد الملف بالكامل إلى الجوال. اقصّ النذور والعناق ورش الأزهار منفصلة من نفس الفيديو، ثم صدّرها دفعياً بالترتيب الزمني. اختر أفضل اللحظات وصدّر Live Photo ومقاطع قصيرة إلى مكتبة الصور، جاهزةً للمشاركة. هل اللقطات في الصور أصلاً؟ استوردها بلمسة واحدة مع متابعة تنزيل iCloud. شارك فيديو من تطبيق آخر وادخل Trimly فوراً. الأقراص الخارجية وNAS وiCloud Drive وتطبيق الملفات مدعومة أيضاً.',
-                points: [
-                    'عدة مقاطع من فيديو واحد — النذور والعناق ورش الأزهار على حدة',
-                    'صدّر المقاطع المقصوصة مباشرةً إلى مكتبة الصور',
-                    'استيراد بلمسة واحدة من الصور؛ فتح الأقراص وبطاقات SD والسحابة',
-                    'مشاركة من تطبيق آخر؛ قراءة المصدر دون نسخة مكررة',
-                    'تصدير دفعي بالترتيب الزمني؛ إلى تطبيق الملفات أيضاً',
-                ],
-            },
-            {
+        features: [{
                 eyebrow: 'حالات الاستخدام',
                 title: 'صُمّم لمواقف التصوير الحقيقية.',
                 desc: 'Trimly للقطات التي تصوّرها فعلاً — تسجيلات طويلة تختبئ فيها اللحظات الجميلة. استخرج مقاطع قابلة للمشاركة في دقائق، لا ساعات على المكتب.',
@@ -943,9 +910,19 @@ window.T = {
                 ],
             },
             {
+                eyebrow: 'استيراد وتصدير',
+                title: 'استيراد وتصدير مرنان.',
+                desc: 'افتح ساعات من اللقطات على بطاقات SD أو الأقراص أو NAS أو السحابة دون نسخ الملف بالكامل. اقصّ عدة مقاطع من فيديو واحد وصدّرها دفعياً إلى الصور أو الملفات، أو شارك من تطبيق آخر وابدأ فوراً.',
+                points: [
+                    'عدة مقاطع من فيديو واحد؛ تصدير دفعي بالترتيب الزمني',
+                    'الصور والملفات وبطاقات SD والأقراص والسحابة',
+                    'مشاركة من تطبيق آخر؛ قراءة المصدر دون نسخ',
+                ],
+            },
+            {
                 eyebrow: 'الطوابع الزمنية',
                 title: 'كل مقطع يظهر في الصور في مكانه الصحيح تماماً.',
-                desc: 'صوّرت حفلاً كاملاً في فيديو طويل واحد. مع Trimly، استخرج أجمل اللحظات كمقاطع قصيرة — يحصل كل مقطع على تاريخ إنشاء يطابق اللحظة الفعلية. مقطع الشاطئ بعد الظهر لن يظهر قبل فطور الصباح؛ لقطات آخر يوم في الرحلة لن تختلط بلقطات فارغة من يوم المغادرة. وعندما تفتح الصور، ستجدها مرتبة زمنياً إلى جانب بقية ما التقطتَه في ذلك اليوم. GPS والجهاز ونوع العدسة تبقى في تفاصيل الصورة.',
+                desc: 'صوّرت حفلاً كاملاً في فيديو طويل واحد. مع Trimly، استخرج المقاطع المميزة — كل مقطع يحمل وقت اللحظة الفعلية. مقطع الشاطئ بعد الظهر لن يسبق فطور الصباح. GPS والجهاز والعدسة تبقى في التفاصيل.',
                 points: [
                     'تاريخ الإنشاء يعكس اللحظة الفعلية في الخط الزمني',
                     'ترتيب طبيعي إلى جانب باقي الصور والفيديوهات',
@@ -955,7 +932,7 @@ window.T = {
             {
                 eyebrow: 'التقاط',
                 title: 'الإطارات وLive Photo.',
-                desc: 'اسحب المخطط الزمني لتحديد نقاط البداية والنهاية — اقصّ ما تشاء وتراجع إن أخطأت. أضف وسوماً مثل «النذور» أو «الغروب» أو «مضحك». ضبط إطار بإطار، أو قفزة بخمس ثوانٍ — ثبّت على الابتسامة قبل القفزة أو ذروة الموج. شاهدت مشهداً أسطورياً في فيلم أو مسلسل؟ احفظه كصورة ثابتة أو Live Photo لشاشة القفل. دوّر المادة مباشرة دون إعادة ترميز.',
+                desc: 'حدّد نقاط البداية والنهاية على المخطط الزمني — تراجع إن أخطأت. أضف وسوماً مثل «النذور» أو «الغروب». ضبط إطار بإطار أو قفزة 5 ثوانٍ — ثبّت على الابتسامة أو ذروة الموج. احفظ مشهداً من فيلم أو مسلسل كصورة أو Live Photo. دوران دون إعادة ترميز.',
                 points: [
                     'نقاط البداية/النهاية مع تراجع — وسوم للمقاطع',
                     'ضبط إطار بإطار أو قفزة 5 ثوانٍ',
@@ -966,7 +943,7 @@ window.T = {
             {
                 eyebrow: 'تصدير',
                 title: 'تصدير مباشر — أو إعادة ترميز لتوفير المساحة.',
-                desc: 'لا يهمّ إن كان الملف 500 ميغا أو 50 غيغا، التصدير المباشر فوري. Trimly ينسخ التيار الأصلي دون إعادة ترميز، فالجودة مطابقة للأصل بدقة. معدل البت في المادة الأصلية مرتفع جداً ولا يتسع في جوالك أو iCloud؟ اختر من بين عدة مستويات لإعادة الترميز لتصغير الحجم مع الإبقاء على المقطع الذي تحتاجه. أضف كلمات مفتاحية لمقاطعك وابحث عنها في الصور متى شئت.',
+                desc: '500 م.ب أو 50 ج.ب — التصدير المباشر شبه فوري بجودة مطابقة. الأصل ثقيل على الجوال أو iCloud؟ اختر مستوى إعادة ترميز. أضف كلمات مفتاحية للبحث في الصور.',
                 points: [
                     'تصدير مباشر: لا خسارة في الجودة، لا انتظار',
                     'مقطع قصير من ساعات طويلة في ثوانٍ',
@@ -976,7 +953,7 @@ window.T = {
             {
                 eyebrow: 'HDR',
                 title: 'دعم HDR كامل',
-                desc: 'صوّفت لقطات HDR في رحلة — الإضاءة الساطعة في السماء وتفاصيل الظلال في الشوارع ما زالت موجودة. افتح الملف في معظم المحررات فتبدو المعاينة باهتة؛ صدّر مقطعاً فتُحرَق الإضاءات أو يُضغَط الكل إلى SDR. في Trimly يبقى HDR سليماً من المعاينة إلى الصور: المقاطع المقصوصة تحافظ على نفس المدى، والصور الثابتة وLive Photo تُحفَظ كصور HDR، وإعادة الترميز تحافظ على HDR أيضاً.',
+                desc: 'لقطات HDR من رحلة — سماء مشرقة وتفاصيل في الظلال. معظم المحررات تمسح HDR عند التصدير. في Trimly يبقى من المعاينة إلى الصور: المقاطع والصور وLive Photo وإعادة الترميز.',
                 points: [
                     'معاينة HDR حقيقية على شاشات XDR',
                     'تصدير مباشر للفيديو وLive Photo مع الحفاظ على بيانات HDR',
@@ -986,7 +963,7 @@ window.T = {
             {
                 eyebrow: 'الألوان',
                 title: 'تدريج ألوان LUT مدمج.',
-                desc: 'لقطات Log من iPhone أو GoPro أو أجهزة DJI أو Insta360 تبدو باهتة ورمادية خارج محرر فيديو احترافي. Trimly يتضمن LUT مدمجة لتحويل Apple Log 2 وأجهزة GoPro وDJI وInsta360 الشائعة إلى Rec. 709.<a class="fn-ref" href="#lut-disclaimer" aria-label="إخلاء مسؤولية قانوني">*</a> طبّقها أثناء القص وسترى الصورة تنبض بالحياة. ما تراه في المعاينة هو تماماً ما يُصدّر. يمكنك أيضاً تحميل ملفات .cube الخاصة بك.',
+                desc: 'لقطات Log من iPhone أو GoPro أو DJI أو Insta360 تبدو باهتة خارج محرر احترافي. Trimly يتضمن LUT Rec. 709 لـ Apple Log 2 وكاميرات الحركة الشائعة.<a class="fn-ref" href="#lut-disclaimer" aria-label="إخلاء مسؤولية قانوني">*</a> طبّقها أثناء القص — المعاينة تطابق التصدير. حمّل ملفات .cube أيضاً.',
                 points: [
                     'LUT مدمجة: Apple Log 2 وGoPro وDJI وInsta360 → Rec. 709',
                     'استيراد ملفات .cube LUT المخصصة',
@@ -996,7 +973,7 @@ window.T = {
             {
                 eyebrow: 'الصوت',
                 title: 'ملفات الصوت، مع أشكال موجية حقيقية.',
-                desc: 'سمعت اقتباساً رائعاً في بودكاست وتريد قصّه لمشاركته؟ أو مقابلة أو تسجيل اجتماع تريد اختصاره؟ اسحب الملف الصوتي إلى Trimly. يظهر الشكل الموجي تلقائياً — محاذِ الكلام مع الموجة واقصِ الصمت والحشو. سريع ونظيف، دون محرر صوت ثقيل.',
+                desc: 'اقتباس رائع في بودكاست أو مقابلة تريد اختصارها؟ اسحب الملف الصوتي إلى Trimly — يظهر الشكل الموجي. محاذِ الكلام واقصِ الصمت. دون محرر صوت ثقيل.',
                 points: [
                     'دعم استيراد وقص الصوت الخالص',
                     'توليد تلقائي للشكل الموجي',
@@ -1006,7 +983,7 @@ window.T = {
             {
                 eyebrow: 'السرعة',
                 title: 'سير عمل متكامل عبر لوحة المفاتيح.',
-                desc: 'من جرّب العمل على لوحة مفاتيح يعرف أنها أسرع من الماوس. اختصارات Trimly تغطي كل خطوة: تشغيل، إيقاف، تقدم إطاراً بإطار، تحديد مقطع، حذف، تراجع. كل ملف يحتفظ بسجله الخاص، فتنجز يوماً كاملاً من المقاطع دون أن ترفع يديك عن المفاتيح.',
+                desc: 'لوحة المفاتيح أسرع من الفأرة. تشغيل، إيقاف، إطار بإطار، تحديد، حذف، تراجع — كلها باختصارات. كل ملف يحتفظ بسجله ليوم كامل من اللقطات.',
                 points: [
                     'التشغيل والانتقال والتقدم إطاراً بإطار',
                     'تحديد المقاطع وحذفها بضغطة مفتاح',
@@ -1016,7 +993,7 @@ window.T = {
             {
                 eyebrow: 'iPad',
                 title: 'iPad. بلا تنازلات.',
-                desc: 'الكل يقول إن iPad للإنتاجية، لكنه ينتهي كجهاز مشاهدة. السبب؟ قلة التطبيقات المصممة له فعلاً. Trimly صُمّم لـ iPad من الأساس: اختصارات لوحة مفاتيح كاملة، نوافذ متعددة جنباً إلى جنب، وتخطيط يتكيّف مع أي حجم نافذة: من لوحة Slide Over صغيرة إلى شاشة خارجية كبيرة.',
+                desc: 'Trimly صُمّم لـ iPad من الأساس: اختصارات كاملة، نوافذ متعددة جنباً إلى جنب، وتخطيط يتكيّف من Slide Over إلى شاشة خارجية.',
                 points: [
                     'دعم كامل لاختصارات لوحة المفاتيح',
                     'نوافذ متعددة للعمل بالتوازي',
@@ -1032,8 +1009,7 @@ window.T = {
                     'محرر الجدول الزمني ولوحات التحكم تعكسان الاتجاه',
                     'خطوط وتباعد محسّنان للنصوص العربية',
                 ],
-            },
-        ],
+            }],
         privacy: {
             heading: 'خصوصية بالتصميم.',
             body: 'Trimly يعمل على الجهاز — بدون حساب أو رفع أو إعلانات. بدون شبكة أو سحابة أو تتبع أو SDKs لطرف ثالث.',
