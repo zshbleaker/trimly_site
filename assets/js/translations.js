@@ -17,19 +17,44 @@ window.T = {
             meta2: 'All platforms',
             meta3: 'No network requests',
         },
+        scenarios: {
+            items: [
+                {
+                    id: 'travel',
+                    title: 'Travel footage',
+                    desc: 'You keep the camera rolling all day on a trip and end up with one long unedited file. '
+                        + 'Trimly pulls out the airport arrival, that great meal, and the night skyline as '
+                        + 'separate clips, each exported to Photos in the order they actually happened.',
+                },
+                {
+                    id: 'party',
+                    title: 'Birthdays & gatherings',
+                    desc: 'One continuous recording of the party becomes candles, gift opening, and group '
+                        + 'photos as individual clips. Share the best moments with family without '
+                        + 'rewatching the whole hour.',
+                },
+                {
+                    id: 'concert',
+                    title: 'Concerts',
+                    desc: 'Record the full show once, then keep only the chorus and encore. Skip the queue, '
+                        + 'the opening act, and the between song chatter. Each highlight keeps its real '
+                        + 'timestamp in your library.',
+                },
+                {
+                    id: 'action',
+                    title: 'Action & sports',
+                    desc: 'Hours of GoPro or action cam footage from a ride or ski day. Mark in and out on '
+                        + 'the timeline and save just the best jump, turn, or run as a clip ready to share.',
+                },
+                {
+                    id: 'interview',
+                    title: 'Interviews & meetings',
+                    desc: 'Drop in a podcast or meeting recording and trim with the waveform. Align cuts to '
+                        + 'speech, remove silence, and export only the quote or segment you actually need.',
+                },
+            ],
+        },
         features: [{
-                eyebrow: 'Use Cases',
-                title: 'Built for real-life shooting.',
-                desc: 'Trimly is for the footage you actually shoot — long recordings where the good parts are buried inside. Pull out shareable clips in minutes, not hours at a desk.',
-                points: [
-                    'Travel vlogs: landing, food, night scenes — clips ready from one long take',
-                    'Birthdays & gatherings: candles, gifts, group photos — each saved separately',
-                    'Concerts: chorus and encore only — drop the queue and warm-up',
-                    'Action cams, cycling, skiing: the best jump or turn from long recordings',
-                    'Interviews & meetings: align speech with the waveform, cut silence',
-                ],
-            },
-            {
                 eyebrow: 'Import & Export',
                 title: 'Flexible import and export.',
                 desc: 'Open hours of footage from SD cards, USB storage, NAS, or cloud — no need to copy the whole file first. Export multiple clips from one video to your Photo Library or Files, or share from another app and start trimming right away.',
@@ -193,19 +218,41 @@ window.T = {
             meta2: '全平台通用',
             meta3: '不发送网络请求',
         },
+        scenarios: {
+            items: [
+                {
+                    id: 'travel',
+                    title: '旅行随拍',
+                    desc: '出游时相机一直开着，落地、吃饭、看夜景全录进一条未剪辑的长片里。Trimly 可以拆出'
+                        + '几个独立片段，按真实发生的时间顺序导出到相册，随时发给朋友或留作纪念。',
+                },
+                {
+                    id: 'party',
+                    title: '生日派对与聚会',
+                    desc: '生日聚会录了一整段，吹蜡烛、拆礼物、合影各自单独保存。不用重看一小时，'
+                        + '就能把每个精彩瞬间发给家人，每个片段在相册里也是独立的一条。',
+                },
+                {
+                    id: 'concert',
+                    title: '演唱会与现场',
+                    desc: '整场演唱会录一次就够。只留下副歌和 Encore，排队、暖场、串场废话都可以丢掉。'
+                        + '每个高光片段保留真实拍摄时间，在相册里自然归位。',
+                },
+                {
+                    id: 'action',
+                    title: '运动与户外',
+                    desc: '骑行、滑雪、运动相机常常录好几个小时。在时间轴上标出入点，只导出最帅的一跳、'
+                        + '一个弯或一段冲刺，片段轻量好分享，不用带着整段原片。',
+                },
+                {
+                    id: 'interview',
+                    title: '采访与会议',
+                    desc: '把播客、采访或会议录音拖进来，波形帮你对齐说话段落。剪掉静音和废话，'
+                        + '只导出你要的那一段金句或结论，发给同事或朋友。',
+                },
+            ],
+        },
         features: [{
-                eyebrow: '使用场景',
-                title: '为真实拍摄场景而生',
-                desc: 'Trimly 面向你真正会拍的素材——长录制里藏着精彩，几分钟就能拆出可分享的片段，不必在剪辑软件里耗上一小时。',
-                points: [
-                    '旅行 vlog：落地、美食、夜景，从一条长片里快速拆出可发片段',
-                    '生日派对、家庭聚会：吹蜡烛、拆礼物、合影，各自独立保存',
-                    '演唱会、现场演出：只留副歌和 Encore，丢掉排队和暖场',
-                    '运动相机、骑行、滑雪：长录制里挑出最帅的一跳或一弯',
-                    '采访、会议录音：波形对齐说话段落，剪掉静音和废话',
-                ],
-            },
-            {
                 eyebrow: '导入导出',
                 title: '灵活导入导出',
                 desc: 'Trimly 可直接打开 SD 卡、外接硬盘、NAS 和云盘上的长素材，无需先整段导入手机。一段视频可剪出多个片段并批量导出，也可从其他 App 分享后立刻开剪，导出到相册或「文件」。',
@@ -369,19 +416,41 @@ window.T = {
             meta2: '全デバイス対応',
             meta3: 'ネットワーク送信なし',
         },
+        scenarios: {
+            items: [
+                {
+                    id: 'travel',
+                    title: '旅行の連続撮影',
+                    desc: '旅先でカメラを止めずに撮り続け、到着から食事、夜景まで1本の未編集ロングに。'
+                        + 'Trimlyならそれぞれを個別クリップに切り出し、実際の順番のまま写真ライブラリへ書き出せます。',
+                },
+                {
+                    id: 'party',
+                    title: '誕生日・家族の集まり',
+                    desc: 'パーティー全体の録画から、ろうそく、プレゼント、集合写真をそれぞれ切り出し。'
+                        + '1時間丸ごと見返さなくても、家族にベストな瞬間だけ送れます。',
+                },
+                {
+                    id: 'concert',
+                    title: 'コンサート',
+                    desc: 'ライブ全体は1回録れば十分。サビとアンコールだけ残し、列、ウォームアップ、'
+                        + 'MCトークは捨てられます。各ハイライトは撮影時刻もそのまま保持されます。',
+                },
+                {
+                    id: 'action',
+                    title: 'アクション・スポーツ',
+                    desc: 'サイクリング、スキー、アクションカメラの数時間の録画から、タイムラインで入出点を指定。'
+                        + '最高のジャンプやターンだけを軽いクリップとして書き出せます。',
+                },
+                {
+                    id: 'interview',
+                    title: 'インタビュー・会議',
+                    desc: 'ポッドキャスト、インタビュー、会議録音を読み込み、波形で発話区間に合わせてトリム。'
+                        + '無音や雑談をカットし、必要な引用だけを書き出せます。',
+                },
+            ],
+        },
         features: [{
-                eyebrow: '使用シーン',
-                title: '実際の撮影シーンのために。',
-                desc: 'Trimlyは、長い録画の中に埋もれた名場面を、机の前で何時間もかけずに、数分でシェアできるクリップに変えるためのアプリです。',
-                points: [
-                    '旅行Vlog：到着、グルメ、夜景——1本の長尺からすぐシェアできるクリップ',
-                    '誕生日・家族の集まり：ろうそく、プレゼント、集合写真——それぞれ独立保存',
-                    'コンサート：サビとアンコールだけ——列とウォームアップは捨てる',
-                    'アクションカメラ、サイクリング、スキー——最高のジャンプやターンを選択',
-                    'インタビュー、会議録音——波形で発話区間を合わせ、無音をカット',
-                ],
-            },
-            {
                 eyebrow: 'インポート・エクスポート',
                 title: '柔軟なインポートとエクスポート。',
                 desc: 'SDカード、外付けドライブ、NAS、クラウド上の長尺動画を、コピーせずそのまま開けます。1本から複数クリップを切り出して一括書き出し、他アプリから共有してすぐ編集。写真ライブラリやファイルAppへ書き出し。',
@@ -545,19 +614,41 @@ window.T = {
             meta2: '모든 플랫폼',
             meta3: '네트워크 요청 없음',
         },
+        scenarios: {
+            items: [
+                {
+                    id: 'travel',
+                    title: '여행 연속 촬영',
+                    desc: '여행 중 카메라를 계속 켜 두면 도착, 식사, 야경이 하나의 편집 전 긴 영상에 담깁니다. '
+                        + 'Trimly로 각각 클립으로 분리해 실제 순서대로 사진 보관함에 내보낼 수 있습니다.',
+                },
+                {
+                    id: 'party',
+                    title: '생일 파티·가족 모임',
+                    desc: '파티 전체 녹화에서 촛불, 선물, 단체 사진을 각각 잘라 저장합니다. '
+                        + '한 시간을 다시 보지 않아도 가족에게 최고의 순간만 보낼 수 있습니다.',
+                },
+                {
+                    id: 'concert',
+                    title: '콘서트',
+                    desc: '공연 전체는 한 번만 녹화하면 됩니다. 후렴과 앙코르만 남기고 줄 서기, '
+                        + '워밍업, 사회는 제거하세요. 각 하이라이트는 촬영 시각도 그대로 유지됩니다.',
+                },
+                {
+                    id: 'action',
+                    title: '액션·스포츠',
+                    desc: '라이딩, 스키, 액션 캠의 몇 시간짜리 녹화에서 타임라인으로 구간을 지정합니다. '
+                        + '가장 멋진 점프나 코너만 가벼운 클립으로 내보내 공유할 수 있습니다.',
+                },
+                {
+                    id: 'interview',
+                    title: '인터뷰·회의',
+                    desc: '팟캐스트, 인터뷰, 회의 녹음을 불러와 파형에 맞춰 구간을 자릅니다. '
+                        + '무음과 잡담을 제거하고 필요한 인용구만 내보낼 수 있습니다.',
+                },
+            ],
+        },
         features: [{
-                eyebrow: '사용 사례',
-                title: '실제 촬영 장면을 위해.',
-                desc: 'Trimly는 긴 녹화 속에 묻힌 명장면을, 책상 앞에서 몇 시간이 아니라 몇 분 만에 공유 가능한 클립으로 만들어 줍니다.',
-                points: [
-                    '여행 브이로그: 도착, 맛집, 야경——한 편의 긴 영상에서 바로 공유할 클립',
-                    '생일 파티, 가족 모임: 촛불, 선물, 단체 사진——각각 독립 저장',
-                    '콘서트: 후렴과 앙코르만——줄 서기와 워밍업은 제거',
-                    '액션 캠, 라이딩, 스키——긴 녹화에서 가장 멋진 점프나 코너',
-                    '인터뷰, 회의 녹음——파형으로 발화 구간 맞추고 무음 삭제',
-                ],
-            },
-            {
                 eyebrow: '가져오기·보내기',
                 title: '유연한 가져오기와 보내기.',
                 desc: 'SD 카드, 외장 드라이브, NAS, 클라우드의 긴 영상을 복사 없이 바로 엽니다. 한 영상에서 여러 클립을 잘라 시간순으로 일괄 내보내거나, 다른 앱에서 공유해 바로 편집하세요. 사진 보관함이나 파일 앱으로 내보냅니다.',
@@ -721,19 +812,44 @@ window.T = {
             meta2: 'Todas las plataformas',
             meta3: 'Sin solicitudes de red',
         },
+        scenarios: {
+            items: [
+                {
+                    id: 'travel',
+                    title: 'Metraje de viaje',
+                    desc: 'Dejas la cámara grabando todo el día y acabas con un solo archivo largo sin editar. '
+                        + 'Trimly saca la llegada, esa comida memorable y el paisaje nocturno como clips '
+                        + 'separados, exportados a Fotos en el orden en que ocurrieron.',
+                },
+                {
+                    id: 'party',
+                    title: 'Cumpleaños y reuniones',
+                    desc: 'Una grabación continua de la fiesta se convierte en velas, regalos y fotos de '
+                        + 'grupo como clips individuales. Comparte los mejores momentos sin ver la hora '
+                        + 'entera otra vez.',
+                },
+                {
+                    id: 'concert',
+                    title: 'Conciertos',
+                    desc: 'Graba el show completo una vez y conserva solo el estribillo y el encore. Omite '
+                        + 'la cola, el telonero y las charlas entre canciones. Cada momento mantiene su '
+                        + 'marca de tiempo real.',
+                },
+                {
+                    id: 'action',
+                    title: 'Acción y deportes',
+                    desc: 'Horas de metraje de GoPro o cámara de acción en bici o esquí. Marca entrada y '
+                        + 'salida en la línea de tiempo y guarda solo el mejor salto, curva o bajada.',
+                },
+                {
+                    id: 'interview',
+                    title: 'Entrevistas y reuniones',
+                    desc: 'Importa un podcast o una grabación de reunión y recorta con la forma de onda. '
+                        + 'Alinea los cortes al habla, elimina silencios y exporta solo la cita que necesitas.',
+                },
+            ],
+        },
         features: [{
-                eyebrow: 'Casos de uso',
-                title: 'Hecho para escenas reales.',
-                desc: 'Trimly es para el metraje que realmente grabas: grabaciones largas con momentos buenos en el interior. Saca clips compartibles en minutos, no horas en un escritorio.',
-                points: [
-                    'Viajes: llegada, comida, noche — clips listos de una toma larga',
-                    'Cumpleaños y reuniones: velas, regalos, fotos de grupo — cada uno por separado',
-                    'Conciertos: solo estribillo y encore — sin cola ni calentamiento',
-                    'Acción, bici, esquí: el mejor salto o curva de grabaciones largas',
-                    'Entrevistas y reuniones: alinea el habla con la onda, corta silencios',
-                ],
-            },
-            {
                 eyebrow: 'Importar y exportar',
                 title: 'Importación y exportación flexibles.',
                 desc: 'Abre horas de metraje en tarjetas SD, discos, NAS o la nube sin copiar todo el archivo. Recorta varios clips de un vídeo, expórtalos en lote a Fotos o Archivos, o comparte desde otra app y edita al instante.',
@@ -897,19 +1013,42 @@ window.T = {
             meta2: 'كل الأجهزة',
             meta3: 'لا طلبات شبكة',
         },
+        scenarios: {
+            items: [
+                {
+                    id: 'travel',
+                    title: 'تصوير السفر',
+                    desc: 'تُبقي الكاميرا تعمل طوال اليوم في الرحلة، فتنتهي بملف طويل واحد دون montage. '
+                        + 'Trimly يستخرج الوصول، تلك الوجبة الرائعة، والمشهد الليلي كمقاطع منفصلة، '
+                        + 'كل منها يُصدَّر إلى الصور بالترتيب الزمني الصحيح.',
+                },
+                {
+                    id: 'party',
+                    title: 'أعياد الميلاد والتجمعات',
+                    desc: 'تسجيل واحد متواصل للحفلة يتحول إلى شموع، فتح هدايا، وصور جماعية كمقاطع '
+                        + 'منفصلة. شارك أجمل اللحظات مع العائلة دون إعادة مشاهدة الساعة كاملة.',
+                },
+                {
+                    id: 'concert',
+                    title: 'الحفلات',
+                    desc: 'سجّل العرض كاملاً مرة واحدة، ثم احتفظ باللازمة وEncore فقط. تخطَّ الطابور '
+                        + 'والفقرة الافتتاحية والكلام بين الأغاني. كل لحظة بارزة تحتفظ بوقتها الحقيقي.',
+                },
+                {
+                    id: 'action',
+                    title: 'الحركة والرياضة',
+                    desc: 'ساعات من لقطات GoPro أو كاميرا الحركة في رحلة دراجة أو تزلج. حدّد نقاط '
+                        + 'البداية والنهاية على الخط الزمني واحفظ أفضل قفزة أو منعطف أو هبوط فقط.',
+                },
+                {
+                    id: 'interview',
+                    title: 'المقابلات والاجتماعات',
+                    desc: 'أدخل تسجيل بودكاست أو اجتماع وقصّ باستخدام الموجة. محاذِ القص مع الكلام، '
+                        + 'أزل الصمت، وصدّر الاقتباس أو المقطع الذي تحتاجه فقط.',
+                },
+            ],
+        },
         features: [{
-                eyebrow: 'حالات الاستخدام',
-                title: 'صُمّم لمواقف التصوير الحقيقية.',
-                desc: 'Trimly للقطات التي تصوّرها فعلاً — تسجيلات طويلة تختبئ فيها اللحظات الجميلة. استخرج مقاطع قابلة للمشاركة في دقائق، لا ساعات على المكتب.',
-                points: [
-                    'vlog السفر: الوصول، الطعام، المشاهد الليلية — من لقطة طويلة',
-                    'حفلات أعياد الميلاد والتجمعات: الشموع، الهدايا، الصور الجماعية',
-                    'الحفلات: اللازمة وEncore فقط — بلا طابور أو إحماء',
-                    'كاميرات الحركة، الدراجات، التزلج: أفضل قفزة أو منعطف',
-                    'المقابلات والاجتماعات: محاذاة الكلام مع الموجة، قص الصمت',
-                ],
-            },
-            {
                 eyebrow: 'استيراد وتصدير',
                 title: 'استيراد وتصدير مرنان.',
                 desc: 'افتح ساعات من اللقطات على بطاقات SD أو الأقراص أو NAS أو السحابة دون نسخ الملف بالكامل. اقصّ عدة مقاطع من فيديو واحد وصدّرها دفعياً إلى الصور أو الملفات، أو شارك من تطبيق آخر وابدأ فوراً.',

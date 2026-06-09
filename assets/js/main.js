@@ -71,13 +71,6 @@ const ICONS = {
         + '<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>'
         + '<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>'
         + '</svg>',
-    scenarios: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
-        + 'stroke-linecap="round" stroke-linejoin="round">'
-        + '<rect x="3" y="3" width="7" height="7" rx="1"/>'
-        + '<rect x="14" y="3" width="7" height="7" rx="1"/>'
-        + '<rect x="3" y="14" width="7" height="7" rx="1"/>'
-        + '<rect x="14" y="14" width="7" height="7" rx="1"/>'
-        + '</svg>',
 };
 
 const CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" '
@@ -86,7 +79,6 @@ const CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
     + '</svg>';
 
 const SECTION_META = [
-    { key: 'scenarios', accent: 'teal', icon: 'scenarios', visual: 'Travel · Party · Concert · Action' },
     { key: 'import', accent: 'blue', icon: 'import', visual: '→ Photos · → Files' },
     { key: 'order', accent: 'orange', icon: 'clock', visual: 'Photos timeline' },
     { key: 'capture', accent: 'green', icon: 'capture', visual: 'Frame & Live Photo' },
@@ -127,7 +119,7 @@ function renderFeatures() {
         if (!meta) {
             return '';
         }
-        const reverse = i % 2 === 1 ? ' reverse' : '';
+        const reverse = (i + 1) % 2 === 1 ? ' reverse' : '';
         const points = sec.points.map(p =>
             `<li><span class="feature-point-check">${CHECK}</span><span class="feature-point-text">${p}</span></li>`
         ).join('');
@@ -228,6 +220,9 @@ function setLanguage(lang) {
 
     applyStaticTranslations();
 
+    if (document.getElementById('scenarios')) {
+        renderScenarios(currentLang);
+    }
     if (document.getElementById('features')) {
         renderFeatures();
     }

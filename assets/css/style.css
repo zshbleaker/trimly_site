@@ -458,6 +458,140 @@ nav {
     }
 }
 
+/* === USE CASES === */
+.scenarios {
+    max-width: var(--max-w);
+    margin: 40px auto 0;
+    padding: 0 24px 72px;
+}
+
+.scenario-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+@media (min-width: 768px) {
+    .scenario-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .scenario-grid .scenario-card:nth-child(1),
+    .scenario-grid .scenario-card:nth-child(2) {
+        grid-column: span 3;
+    }
+
+    .scenario-grid .scenario-card:nth-child(3),
+    .scenario-grid .scenario-card:nth-child(4),
+    .scenario-grid .scenario-card:nth-child(5) {
+        grid-column: span 2;
+    }
+}
+
+.scenario-card {
+    padding: 26px 28px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+
+.scenario-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.scenario-card-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.scenario-card-icon svg {
+    width: 22px;
+    height: 22px;
+}
+
+.scenario-card-title {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+    margin-bottom: 8px;
+}
+
+.scenario-card-desc {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.65;
+}
+
+.scenario-card.cyan {
+    background: linear-gradient(160deg,
+        rgba(var(--accent-cyan-a), 0.10) 0%,
+        var(--bg-secondary) 55%);
+}
+
+.scenario-card.cyan .scenario-card-icon {
+    background: rgba(var(--accent-cyan-a), 0.16);
+    color: var(--accent-cyan);
+}
+
+.scenario-card.orange {
+    background: linear-gradient(160deg,
+        rgba(var(--accent-orange-a), 0.10) 0%,
+        var(--bg-secondary) 55%);
+}
+
+.scenario-card.orange .scenario-card-icon {
+    background: rgba(var(--accent-orange-a), 0.16);
+    color: var(--accent-orange);
+}
+
+.scenario-card.purple {
+    background: linear-gradient(160deg,
+        rgba(var(--accent-purple-a), 0.10) 0%,
+        var(--bg-secondary) 55%);
+}
+
+.scenario-card.purple .scenario-card-icon {
+    background: rgba(var(--accent-purple-a), 0.16);
+    color: var(--accent-purple);
+}
+
+.scenario-card.green {
+    background: linear-gradient(160deg,
+        rgba(var(--accent-green-a), 0.10) 0%,
+        var(--bg-secondary) 55%);
+}
+
+.scenario-card.green .scenario-card-icon {
+    background: rgba(var(--accent-green-a), 0.16);
+    color: var(--accent-green);
+}
+
+.scenario-card.indigo {
+    background: linear-gradient(160deg,
+        rgba(var(--accent-indigo-a), 0.10) 0%,
+        var(--bg-secondary) 55%);
+}
+
+.scenario-card.indigo .scenario-card-icon {
+    background: rgba(var(--accent-indigo-a), 0.16);
+    color: var(--accent-indigo);
+}
+
+@media (max-width: 767px) {
+    .scenarios {
+        margin-top: 32px;
+        padding: 0 20px 56px;
+    }
+}
+
 /* === DEEP FEATURE SECTIONS === */
 .features {
     max-width: var(--max-w);
@@ -1152,6 +1286,10 @@ footer {
         box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
     }
 
+    .scenario-card:hover {
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+    }
+
     /* Mini window inside feature visual */
     .fv-bar span {
         background: rgba(255, 255, 255, 0.14);
@@ -1194,6 +1332,7 @@ footer {
 
 :lang(ar) .hero h1,
 :lang(ar) .feature-block h2,
+:lang(ar) .scenario-card-title,
 :lang(ar) .privacy h2,
 :lang(ar) .bottom-cta h2 {
     line-height: 1.3;
@@ -1202,6 +1341,7 @@ footer {
 :lang(ar) .hero-tagline,
 :lang(ar) .hero-subtitle,
 :lang(ar) .feature-block p,
+:lang(ar) .scenario-card-desc,
 :lang(ar) .advantage-desc {
     line-height: 1.9;
 }
