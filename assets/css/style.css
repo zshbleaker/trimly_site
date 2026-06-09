@@ -346,6 +346,18 @@ nav {
     animation: heroFade 0.7s 0.2s var(--ease) both;
 }
 
+.hero-subtitle {
+    font-size: clamp(15px, 2vw, 18px);
+    color: var(--text-secondary);
+    margin-top: 10px;
+    font-weight: 400;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.55;
+    animation: heroFade 0.7s 0.25s var(--ease) both;
+}
+
 .hero-cta-row {
     display: flex;
     align-items: center;
@@ -563,6 +575,16 @@ nav {
     gap: 10px;
     font-size: 15px;
     color: var(--text-primary);
+}
+
+.feature-point-check {
+    display: inline-flex;
+    flex-shrink: 0;
+}
+
+.feature-point-text {
+    flex: 1;
+    min-width: 0;
 }
 
 .feature-points li svg {
@@ -1141,25 +1163,28 @@ footer {
 }
 
 /* === RTL === */
-body[dir="rtl"] .lang-dropdown {
+[dir="rtl"] .lang-dropdown {
     right: auto;
     left: 0;
 }
 
-body[dir="rtl"] .feature-points li {
-    flex-direction: row-reverse;
+[dir="rtl"] .feature-points {
+    direction: rtl;
+}
+
+[dir="rtl"] .feature-points li {
     text-align: right;
 }
 
-body[dir="rtl"] .feature-eyebrow {
+[dir="rtl"] .feature-eyebrow {
     flex-direction: row-reverse;
 }
 
-body[dir="rtl"] .hero-cta {
+[dir="rtl"] .hero-cta {
     flex-direction: row-reverse;
 }
 
-body[dir="rtl"] .privacy-tags {
+[dir="rtl"] .privacy-tags {
     direction: rtl;
 }
 
@@ -1175,6 +1200,7 @@ body[dir="rtl"] .privacy-tags {
 }
 
 :lang(ar) .hero-tagline,
+:lang(ar) .hero-subtitle,
 :lang(ar) .feature-block p,
 :lang(ar) .advantage-desc {
     line-height: 1.9;

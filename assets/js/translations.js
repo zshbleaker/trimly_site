@@ -10,7 +10,8 @@ window.T = {
         },
         hero: {
             heading: 'Your best moments,\nstraight into your Photo Library.',
-            tagline: 'Clip the highlights, fast export, quality untouched, timeline in order.',
+            tagline: 'Not buried in hour-long videos or bloated editors.',
+            subtitle: 'Trimly helps you clip the highlights and save them where you open every day.',
             cta: 'Download on the App Store',
             meta1: 'Buy once',
             meta2: 'All platforms',
@@ -20,31 +21,41 @@ window.T = {
             {
                 eyebrow: 'Import & Export',
                 title: 'Flexible import and export.',
-                desc: 'Back from a dive trip, plug your GoPro’s SD card into a reader. Trimly opens hours of footage right off the card — no need to import the whole file into your phone first. Browse, pick your best moments, and export Live Photos and short clips straight to your Photo Library, ready for Instagram or iMessage. Footage already in Photos? Import it with one tap and watch iCloud download progress. USB storage, NAS, and iCloud Drive work the same way. Prefer to save elsewhere? Export to the Files app instead. Mix sources and destinations however fits your workflow.',
+                desc: 'Hours of footage on your phone or SD card — Trimly reads the source directly, no extra copy. Cut separate clips from one video, batch-export in order, or share from another app and start cutting. Export to Photos, Files, USB, or cloud.',
                 points: [
-                    'Export trimmed highlights straight to your Photo Library',
-                    'One-tap import from Photos; open SD cards, USB storage, and cloud locations directly',
-                    'Export to the Files app too — flexible paths in and out',
+                    'Multiple clips from one video',
+                    'Share from another app; reads source without copying',
+                    'Batch export in chronological order',
+                ],
+            },
+            {
+                eyebrow: 'Use Cases',
+                title: 'Built for real-life shooting.',
+                desc: 'Long recordings, shareable clips — in minutes, not hours at a desk.',
+                points: [
+                    'Travel, parties, concerts — one long take, many clips',
+                    'Action cams & sports — pick the best moment',
+                    'Interviews & meetings — waveform, cut silence',
                 ],
             },
             {
                 eyebrow: 'Timestamps',
                 title: 'Every clip lands in Photos right where it belongs.',
-                desc: 'You filmed the entire concert in one long video. With Trimly, pull out a dozen highlight clips — each one gets a creation time that matches the moment it actually happened in the recording. When you open Photos, they line up in chronological order alongside everything else you’ve shot, as if you’d captured each highlight separately.',
+                desc: 'Each clip gets the real capture time from the source. Afternoon beach won\'t sort before morning breakfast; trip highlights stay on the right day. GPS, device, and lens info preserved.',
                 points: [
-                    'Timestamps reflect each clip’s real moment in the timeline',
-                    'Exported clips sort naturally with your other photos and videos',
-                    'No re-sorting in Photos after export',
+                    'Real timestamps for every frame',
+                    'Sorts naturally in Photos',
+                    'GPS and lens metadata kept',
                 ],
             },
             {
                 eyebrow: 'Capture',
                 title: 'Frames and Live Photos.',
-                desc: 'Caught an iconic scene in a movie or anime? Turn it into a Live Photo for your Lock Screen. Find the perfect frame, save it as a still, or capture a Live Photo that moves. Original metadata like device and location stays intact.',
+                desc: 'Mark in and out points, undo mistakes, tag clips as you go. Frame-by-frame or 5-second jumps. Screenshot, Live Photo, or rotate — no transcoding.',
                 points: [
-                    'Capture any video frame as an image',
-                    'Capture Live Photos from video',
-                    'Preserve device, location, and other metadata',
+                    'In/out points, undo, and tags',
+                    'Frame-by-frame or 5-second jumps',
+                    'Screenshot, Live Photo, rotate without transcoding',
                 ],
             },
             {
@@ -80,11 +91,10 @@ window.T = {
             {
                 eyebrow: 'Audio',
                 title: 'Audio files, with real waveforms.',
-                desc: 'Heard a killer quote in a podcast and want to clip it for a friend? Drop the audio file into Trimly. A waveform appears automatically. Scroll to the right spot, set your range, and cut. Clean and quick, no bloated audio editor required.',
+                desc: 'Drop in a podcast, interview, or meeting recording — the waveform shows where to cut. Trim silence and filler, no bloated editor needed.',
                 points: [
-                    'Pure audio import and trim',
-                    'Auto-generated waveform visualization',
-                    'Raw PCM data support',
+                    'Pure audio with auto waveforms',
+                    'Cut silence in speech recordings',
                 ],
             },
             {
@@ -110,12 +120,13 @@ window.T = {
         ],
         privacy: {
             heading: 'Private by design.',
-            body: 'Trimly runs fully on-device, never sends network requests, has no accounts, and collects no user data. Your footage stays yours.',
+            body: 'Trimly runs on-device — no account, uploads, or ads. No network requests, cloud processing, tracking, or third-party SDKs.',
             tags: [
                 'On-device only',
                 'No network requests',
                 'No account',
-                'No data collection',
+                'No ads',
+                'No third-party SDKs',
             ],
         },
         bottomCta: {
@@ -173,7 +184,8 @@ window.T = {
         },
         hero: {
             heading: '精彩时刻，一步到相册',
-            tagline: '撷取精华片段，快速导出，画质无损，时间线井井有条',
+            tagline: '最好的画面，应该在相册里，而不是躺在一小时长视频或臃肿剪辑软件里。',
+            subtitle: 'Trimly 帮你剪出精彩段落，存到你每天会打开的地方。',
             cta: '在 App Store 下载',
             meta1: '一次买断',
             meta2: '全平台通用',
@@ -183,31 +195,41 @@ window.T = {
             {
                 eyebrow: '导入导出',
                 title: '灵活导入导出',
-                desc: '潜水一日归来，插上读卡器，Trimly 直接打开存储卡上的几小时素材，不必先整段导入手机。轻松截取 Live Photo 和短视频后，一键导出到系统相册，立即可发朋友圈。素材已在相册里？同样可以一键导入继续剪。外接硬盘、NAS、iCloud 云盘也都支持。需要写到别处时，也可导出到「文件」App。来源与去向任你搭配，怎么顺手怎么用。',
+                desc: '几小时素材在手机或存储卡上——Trimly 直接读源文件，不额外复制。一段视频剪多个片段、按时间批量导出，或从其他 App 分享开剪。可导出到相册、文件、外接硬盘或云盘。',
                 points: [
-                    '裁好的片段一键导出至照片图库，分享即用',
-                    '可从系统相册导入；硬盘、存储卡、云盘直连打开',
-                    '也可导出至「文件」App，导入导出非常灵活',
+                    '一条视频剪出多个片段',
+                    '从其他 App 分享；直读源文件不复制',
+                    '按时间顺序批量导出',
+                ],
+            },
+            {
+                eyebrow: '使用场景',
+                title: '为真实拍摄场景而生',
+                desc: '长录制里藏着精彩——几分钟拆出可分享片段，不必在剪辑软件里耗上一小时。',
+                points: [
+                    '旅行、聚会、演唱会——一条长片，多个片段',
+                    '运动相机与极限运动——挑出最帅瞬间',
+                    '采访与会议——波形对齐，剪掉静音',
                 ],
             },
             {
                 eyebrow: '时间戳',
                 title: '每个片段，在相册里精准归位',
-                desc: '看演唱会录了一整段超长视频，用 Trimly 从中提取多个精彩时刻。每个片段的创建时间会自动对应它在原片中的真实时刻，导出后打开相册，它们会和你在同一天拍的其他照片、视频一起，按时间顺序自然排列，滑动浏览就能还原现场的心情起伏。',
+                desc: '按源视频拍摄时间与片内位置，算出每一帧的真实时刻。下午海边不会排到上午早餐前，旅行最后一天的高光也不会混进出发日空镜。GPS、设备与镜头信息在相册详情中保留。',
                 points: [
-                    '创建时间精确对应片段在原片中的真实时刻',
-                    '与相册里的其他内容自然混排、有序排列',
-                    '无需在相册中手动重排',
+                    '创建时间对应原片中的真实时刻',
+                    '与当天其他照片自然混排',
+                    'GPS 与镜头元数据保留',
                 ],
             },
             {
                 eyebrow: '截图',
                 title: '截图与 Live Photo',
-                desc: '看到电影或动画里的名场面，想做成 Live Photo 当壁纸？Trimly 轻松搞定。找到那一帧，截图保存，或者直接生成一张会动的 Live Photo，拍摄设备和位置信息原样保留。',
+                desc: '标记入点出点，标错可撤销，给片段打标签。逐帧微调或一键跳五秒；任意时刻截图、导出实况照片，或直接旋转素材，无需转码。',
                 points: [
-                    '支持视频截图',
-                    '支持截取 Live Photo',
-                    '保留拍摄设备、位置等元数据',
+                    '入点出点、撤销与标签',
+                    '逐帧微调或五秒跳转',
+                    '截图、Live Photo、旋转免转码',
                 ],
             },
             {
@@ -243,11 +265,10 @@ window.T = {
             {
                 eyebrow: '音频',
                 title: '纯音频，也有真实波形',
-                desc: '听播客听到一段金句，想切出来分享给朋友。把音频文件拖进 Trimly，波形自动生成，一眼就能定位到那句话，选好范围直接裁。干净利落，不用打开臃肿的音频编辑器。',
+                desc: '播客、采访或会议录音拖进来，波形帮你定位。剪掉静音和废话，不必开臃肿的音频编辑器。',
                 points: [
-                    '支持纯音频导入与裁剪',
-                    '自动生成波形图',
-                    '支持处理 PCM 原始数据',
+                    '纯音频，自动生成波形',
+                    '采访与会议中剪掉静音',
                 ],
             },
             {
@@ -273,12 +294,13 @@ window.T = {
         ],
         privacy: {
             heading: '隐私，从设计之初',
-            body: 'Trimly 完全在设备本地运行，不会发送任何网络请求，没有账号体系，也不收集任何用户数据。你的素材始终属于你。',
+            body: 'Trimly 全程本地运行，无需账号，不上传，无广告。不发起网络请求，无云端处理、追踪或第三方 SDK。',
             tags: [
                 '本地运行',
                 '不发送网络请求',
                 '无账号',
-                '不收集数据',
+                '无广告',
+                '无第三方 SDK',
             ],
         },
         bottomCta: {
@@ -336,7 +358,8 @@ window.T = {
         },
         hero: {
             heading: 'ベストな瞬間を、\n写真ライブラリへ一発で',
-            tagline: 'ハイライトを切り出し、高速で書き出し、画質そのまま、タイムラインどおり。',
+            tagline: '1時間の長い動画や重い編集ソフトに埋もれる必要はありません。',
+            subtitle: 'Trimlyは、名場面の切り出しと写真ライブラリへの保存を手伝います。',
             cta: 'App Storeでダウンロード',
             meta1: '買い切り',
             meta2: '全デバイス対応',
@@ -346,31 +369,41 @@ window.T = {
             {
                 eyebrow: 'インポート・エクスポート',
                 title: '柔軟なインポートとエクスポート。',
-                desc: 'ダイビングからの帰り道、SDカードをそのまま開いて何時間分もブラウズ。Live Photoやショートクリップを切り出し、写真ライブラリへワンタップで書き出せば、SNSにもすぐシェアできる。すでに「写真」にある動画もワンタップで取り込み、iCloudのダウンロード進捗も表示。外付けドライブ、NAS、iCloud Driveも同様。必要ならファイルAppへ書き出すことも可能。入り口も出口も、自分のワークフローに合わせて自由に。',
+                desc: 'スマホやSDカードの何時間分も——Trimlyはソースを直接読み込み、余分なコピーなし。1本から複数クリップ、時系列一括書き出し、他アプリから共有してすぐ編集。写真、ファイルApp、外付けドライブ、クラウドに対応。',
                 points: [
-                    '切り出したクリップを写真ライブラリへワンタップ書き出し',
-                    '「写真」からの取り込み、ドライブ・SD・クラウドの直接オープンに対応',
-                    'ファイルAppへの書き出しも可能 — 入出力が自由自在',
+                    '1本の動画から複数クリップ',
+                    '他アプリから共有；ソース直読み',
+                    '時系列一括書き出し',
+                ],
+            },
+            {
+                eyebrow: '使用シーン',
+                title: '実際の撮影シーンのために。',
+                desc: '長い録画から、机の前で何時間もかけずにシェアできるクリップを——数分で。',
+                points: [
+                    '旅行、パーティー、コンサート——長尺1本、クリップ複数',
+                    'アクションカメラとスポーツ——最高の一瞬を',
+                    'インタビューと会議——波形で無音をカット',
                 ],
             },
             {
                 eyebrow: 'タイムスタンプ',
                 title: '書き出したクリップは、写真で自然な順に並ぶ。',
-                desc: 'ライブを一つの長い動画として撮影した——Trimlyならベストシーンだけ切り出せる。各クリップの作成日時は、元動画の中で実際に起きた瞬間に対応。書き出して写真ライブラリを開くと、同日に撮った他の写真や動画と混ざって時系列順に並ぶから、あの夜の興奮をそのまま追体験できる。',
+                desc: '元動画の撮影時刻とクリップ内位置から本当の時刻を算出。午後の海辺が午前の朝食より前には来ない。GPS、機材、レンズ情報も写真詳細に残る。',
                 points: [
-                    '作成日時が元動画内の実際の瞬間に対応',
-                    '他の写真・動画と自然に混ざって時系列順に',
-                    '写真での手動並び替えが不要',
+                    '各フレームの本当の撮影時刻',
+                    '写真で自然に時系列順',
+                    'GPSとレンズ情報を保持',
                 ],
             },
             {
                 eyebrow: 'キャプチャ',
                 title: 'フレームとLive Photo。',
-                desc: '映画やアニメの名シーン、ロック画面にLive Photoとして設定できたら最高だと思いませんか？Trimlyなら簡単です。気に入ったフレームを見つけて、静止画として保存するもよし、動くLive Photoとして保存するもよし。撮影デバイスや位置情報などのメタデータもそのまま残ります。',
+                desc: 'イン・アウト指定、取り消し、タグ付け。フレーム単位か5秒ジャンプ。スクリーンショット、Live Photo、回転——トランスコード不要。',
                 points: [
-                    '動画フレームのキャプチャ',
-                    'Live Photoのキャプチャに対応',
-                    '撮影デバイス・位置情報などメタデータを保持',
+                    'イン・アウト、取り消し、タグ',
+                    'フレーム単位か5秒ジャンプ',
+                    'スクショ、Live Photo、回転',
                 ],
             },
             {
@@ -406,11 +439,10 @@ window.T = {
             {
                 eyebrow: 'オーディオ',
                 title: '音声ファイルにも、本物の波形を。',
-                desc: 'ポッドキャストで「これは！」という一言に出会った、友達にも聞かせたい。音声ファイルをTrimlyにドロップすれば波形が自動で現れるので、その部分を見つけてサクッとカット。重たい音声編集アプリを開く必要なし。',
+                desc: 'ポッドキャスト、インタビュー、会議録音——波形で切る位置がわかる。無音をカット、重い編集アプリは不要。',
                 points: [
-                    '純粋な音声ファイルに対応',
-                    '波形を自動生成',
-                    'PCM生データの処理に対応',
+                    '純音声、波形自動生成',
+                    '発話録音の無音をカット',
                 ],
             },
             {
@@ -436,12 +468,13 @@ window.T = {
         ],
         privacy: {
             heading: '設計段階からプライバシー重視。',
-            body: 'Trimlyは完全に端末内で動作します。ネットワークリクエストは一切送信せず、アカウントも不要、ユーザーデータも収集しません。あなたの映像は、あなたのものです。',
+            body: 'Trimlyは端末内で完結——アカウント、アップロード、広告なし。ネットワーク送信、クラウド処理、トラッキング、サードパーティSDKもなし。',
             tags: [
                 '端末内で完結',
                 'ネットワーク送信なし',
                 'アカウント不要',
-                'データ収集なし',
+                '広告なし',
+                'サードパーティSDKなし',
             ],
         },
         bottomCta: {
@@ -499,7 +532,8 @@ window.T = {
         },
         hero: {
             heading: '최고의 순간을\n사진 보관함으로 바로.',
-            tagline: '하이라이트만 잘라내고, 빠르게보내고, 화질은 그대로, 타임라인은 순서대로.',
+            tagline: '한 시간짜리 긴 영상이나 무거운 편집 소프트웨어에 묻힐 필요는 없습니다.',
+            subtitle: 'Trimly가 하이라이트를 잘라 사진 보관함에 저장하도록 도와줍니다.',
             cta: 'App Store에서 다운로드',
             meta1: '한 번 구매',
             meta2: '모든 플랫폼',
@@ -509,31 +543,41 @@ window.T = {
             {
                 eyebrow: '가져오기·보내기',
                 title: '유연한 가져오기와 보내기.',
-                desc: '다이빙에서 돌아와 SD 카드를 꽂으면 몇 시간 분량을 바로 엽니다. 골라낸 Live Photo와 짧은 클립을 사진 보관함으로 한 번에 내면 Instagram이나 iMessage에 바로 쓸 수 있습니다. 이미 사진에 있는 영상도 한 번의 탭으로 가져오고, iCloud 다운로드 진행도 확인할 수 있습니다. 외장 드라이브, NAS, iCloud Drive도 같고, 필요하면 파일 앱으로 보낼 수도 있습니다. 들어오는 곳과 나가는 곳을 자유롭게 조합하세요.',
+                desc: '휴대폰이나 SD 카드의 몇 시간 분량——Trimly는 원본을 직접 읽어 추가 복사 없음. 한 영상에서 여러 클립, 시간순 일괄 내보내기, 다른 앱에서 공유해 바로 편집. 사진, 파일, 외장 하드, 클라우드 지원.',
                 points: [
-                    '잘라낸 하이라이트를 사진 보관함으로 한 번에 보내기',
-                    '사진에서 한 번의 탭으로 가져오기, 드라이브·SD·클라우드 직접 열기',
-                    '파일 앱으로 보내기도 가능 — 입출력이 매우 유연함',
+                    '한 영상에서 여러 클립',
+                    '다른 앱에서 공유; 원본 직접 읽기',
+                    '시간순 일괄 내보내기',
+                ],
+            },
+            {
+                eyebrow: '사용 사례',
+                title: '실제 촬영 장면을 위해.',
+                desc: '긴 녹화에서 공유할 클립을——책상 앞 몇 시간이 아니라 몇 분 만에.',
+                points: [
+                    '여행, 파티, 콘서트——긴 영상 하나, 클립 여러 개',
+                    '액션 캠과 스포츠——최고의 순간 선택',
+                    '인터뷰와 회의——파형으로 무음 삭제',
                 ],
             },
             {
                 eyebrow: '타임스탬프',
                 title: '모든 클립이 사진 앱에서 제자리에.',
-                desc: '콘서트 전체를 하나의 긴 영상으로 찍었다. Trimly로 하이라이트 클립 여러 개를 뽑아내면, 각 클립의 생성 시간이 원본에서 실제로 일어난 순간에 맞춰집니다. 사진을 열면 그날 찍은 다른 사진·동영상과 함께 시간순으로 자연스럽게 정렬되어, 밤의 흐름을 그대로 따라갈 수 있습니다.',
+                desc: '원본 촬영 시각과 클립 내 위치로 실제 시각 계산. 오후 해변이 오전 아침보다 앞에 오지 않음. GPS, 기기, 렌즈 정보는 사진 상세에 보존.',
                 points: [
-                    '생성 시간이 원본 타임라인의 실제 순간과 일치',
-                    '다른 사진·동영상과 자연스럽게 섞여 시간순 정렬',
-                    '보낸 뒤 사진에서 다시 정렬할 필요 없음',
+                    '각 프레임의 실제 촬영 시각',
+                    '사진에서 자연스러운 시간순 정렬',
+                    'GPS와 렌즈 정보 보존',
                 ],
             },
             {
                 eyebrow: '캡처',
                 title: '프레임과 Live Photo.',
-                desc: '영화나 애니에서 명장면을 봤나요? 잠금 화면 Live Photo로 만들 수 있습니다. 완벽한 프레임을 찾아 정지 이미지로 저장하거나, 움직이는 Live Photo로 캡처하세요. 기기, 위치 등 원본 메타데이터는 그대로 유지됩니다.',
+                desc: '인·아웃 포인트, 실행 취소, 태그. 프레임 단위 또는 5초 점프. 스크린샷, Live Photo, 회전——트랜스코딩 불필요.',
                 points: [
-                    '동영상의 아무 프레임이나 이미지로 캡처',
-                    '동영상에서 Live Photo 캡처',
-                    '기기, 위치 등 메타데이터 보존',
+                    '인·아웃, 실행 취소, 태그',
+                    '프레임 단위 또는 5초 점프',
+                    '스크린샷, Live Photo, 회전',
                 ],
             },
             {
@@ -569,11 +613,10 @@ window.T = {
             {
                 eyebrow: '오디오',
                 title: '오디오 파일, 실제 파형으로.',
-                desc: '팟캐스트에서 인상 깊은 한 마디를 들었고 친구에게 잘라 보내고 싶나요? 오디오 파일을 Trimly에 넣으면 파형이 자동으로 나타납니다. 원하는 지점으로 스크롤해 구간을 정하고 자르면 됩니다. 무거운 오디오 편집기 없이 깔끔하고 빠릅니다.',
+                desc: '팟캐스트, 인터뷰, 회의 녹음——파형으로 자를 위치 확인. 무음 삭제, 무거운 편집기 불필요.',
                 points: [
-                    '순수 오디오 가져오기 및 트리밍',
-                    '자동 생성 파형 시각화',
-                    '원시 PCM 데이터 지원',
+                    '순수 오디오, 파형 자동 생성',
+                    '발화 녹음에서 무음 삭제',
                 ],
             },
             {
@@ -599,12 +642,13 @@ window.T = {
         ],
         privacy: {
             heading: '설계 단계부터의 프라이버시.',
-            body: 'Trimly는 기기 안에서만 동작합니다. 네트워크 요청을 보내지 않고, 계정도 없으며 사용자 데이터를 수집하지 않습니다. 촬영본은 항상 당신의 것입니다.',
+            body: 'Trimly는 기기 로컬에서 실행——계정, 업로드, 광고 없음. 네트워크 요청, 클라우드 처리, 추적, 서드파티 SDK 없음.',
             tags: [
                 '기기 내에서만',
                 '네트워크 요청 없음',
                 '계정 없음',
-                '데이터 수집 없음',
+                '광고 없음',
+                '서드파티 SDK 없음',
             ],
         },
         bottomCta: {
@@ -662,7 +706,8 @@ window.T = {
         },
         hero: {
             heading: 'Tus mejores momentos,\ndirecto a tu biblioteca de Fotos.',
-            tagline: 'Recorta lo mejor, exporta rápido, calidad intacta, línea de tiempo en orden.',
+            tagline: 'No enterrados en un vídeo de una hora ni atrapados en un editor pesado.',
+            subtitle: 'Trimly te ayuda a recortar lo mejor y guardarlo donde lo abres cada día.',
             cta: 'Descargar en el App Store',
             meta1: 'Pago único',
             meta2: 'Todas las plataformas',
@@ -672,31 +717,41 @@ window.T = {
             {
                 eyebrow: 'Importar y exportar',
                 title: 'Importación y exportación flexibles.',
-                desc: 'Vuelves de un viaje de buceo y conectas la tarjeta SD al lector. Trimly abre horas de metraje sin importar todo el archivo al teléfono. Elige los mejores momentos y exporta Live Photos y clips cortos a tu biblioteca de Fotos, listos para Instagram o iMessage. ¿Ya está en Fotos? Impórtalo con un toque y sigue la descarga de iCloud. Discos externos, NAS e iCloud Drive funcionan igual. ¿Prefieres guardarlo en otro sitio? Exporta a la app Archivos. Combina origen y destino como te convenga.',
+                desc: 'Horas de metraje en el teléfono o SD — Trimly lee el original sin copiar. Varios clips de un vídeo, exportación por lotes, o comparte desde otra app. Exporta a Fotos, Archivos, disco o nube.',
                 points: [
-                    'Exporta los highlights recortados directo a tu biblioteca de Fotos',
-                    'Importa con un toque desde Fotos; abre discos, SD y almacenamiento en la nube',
-                    'También exporta a Archivos — rutas de entrada y salida muy flexibles',
+                    'Varios clips de un vídeo',
+                    'Compartir desde otra app; lee el original',
+                    'Exportación por lotes en orden',
+                ],
+            },
+            {
+                eyebrow: 'Casos de uso',
+                title: 'Hecho para escenas reales.',
+                desc: 'Grabaciones largas, clips compartibles — en minutos, no horas en un escritorio.',
+                points: [
+                    'Viajes, fiestas, conciertos — una toma, muchos clips',
+                    'Acción y deportes — el mejor momento',
+                    'Entrevistas y reuniones — onda, corta silencios',
                 ],
             },
             {
                 eyebrow: 'Marcas de tiempo',
                 title: 'Cada clip llega a Fotos justo donde corresponde.',
-                desc: 'Grabaste todo el concierto en un solo vídeo largo. Con Trimly, extrae una docena de clips destacados: cada uno recibe una hora de creación que coincide con el momento real en que ocurrió en la grabación. Al abrir Fotos, se alinean en orden cronológico junto con todo lo demás que hayas capturado ese día, como si hubieras grabado cada momento por separado.',
+                desc: 'Cada clip lleva la hora real del original. La playa de la tarde no irá antes del desayuno. GPS, cámara y lente se conservan en los detalles.',
                 points: [
-                    'La hora de creación refleja el instante real en la línea de tiempo',
-                    'Los clips se ordenan naturalmente con tus otras fotos y vídeos',
-                    'Sin reordenar manualmente en Fotos tras exportar',
+                    'Hora real de cada fotograma',
+                    'Orden natural en Fotos',
+                    'GPS y metadatos de lente',
                 ],
             },
             {
                 eyebrow: 'Captura',
                 title: 'Fotogramas y Live Photos.',
-                desc: '¿Viste una escena icónica en una película o un anime? Conviértela en Live Photo para tu pantalla de bloqueo. Encuentra el fotograma perfecto, guárdalo como imagen fija o captura una Live Photo con movimiento. Los metadatos originales, como dispositivo y ubicación, se conservan.',
+                desc: 'Entrada y salida, deshacer, etiquetas. Fotograma a fotograma o salto de 5 s. Captura, Live Photo o rotación — sin transcodificar.',
                 points: [
-                    'Captura cualquier fotograma de vídeo como imagen',
-                    'Captura Live Photos desde vídeo',
-                    'Conserva dispositivo, ubicación y otros metadatos',
+                    'Entrada/salida, deshacer, etiquetas',
+                    'Fotograma a fotograma o salto de 5 s',
+                    'Captura, Live Photo, rotación',
                 ],
             },
             {
@@ -732,11 +787,10 @@ window.T = {
             {
                 eyebrow: 'Audio',
                 title: 'Archivos de audio con formas de onda reales.',
-                desc: '¿Escuchaste una frase memorable en un pódcast y quieres recortarla para un amigo? Suelta el archivo de audio en Trimly. Aparece una forma de onda automáticamente. Desplázate al punto correcto, define el rango y corta. Rápido y limpio, sin un editor de audio pesado.',
+                desc: 'Pódcast, entrevista o reunión — la onda muestra dónde cortar. Elimina silencios, sin editor pesado.',
                 points: [
-                    'Importación y recorte de audio puro',
-                    'Visualización de forma de onda generada automáticamente',
-                    'Compatibilidad con datos PCM sin procesar',
+                    'Audio puro con ondas automáticas',
+                    'Corta silencios en grabaciones de voz',
                 ],
             },
             {
@@ -762,12 +816,13 @@ window.T = {
         ],
         privacy: {
             heading: 'Privacidad por diseño.',
-            body: 'Trimly funciona íntegramente en el dispositivo, no envía solicitudes de red, no tiene cuentas y no recopila datos de usuario. Tu metraje sigue siendo tuyo.',
+            body: 'Trimly funciona en el dispositivo — sin cuenta, subidas ni anuncios. Sin red, nube, seguimiento ni SDK de terceros.',
             tags: [
                 'Solo en el dispositivo',
                 'Sin solicitudes de red',
                 'Sin cuenta',
-                'Sin recopilación de datos',
+                'Sin anuncios',
+                'Sin SDK de terceros',
             ],
         },
         bottomCta: {
@@ -825,7 +880,8 @@ window.T = {
         },
         hero: {
             heading: 'أفضل لحظاتك،\nبخطوة واحدة إلى مكتبة الصور.',
-            tagline: 'اقتطع المقاطع المميزة، صدِّرها بسرعة، بجودة الأصل، والترتيب الزمني محفوظ.',
+            tagline: 'لا مدفونة في فيديو طويل مدته ساعة، ولا محبوسة في محرر فيديو ثقيل.',
+            subtitle: 'Trimly يساعدك على قصّ اللقطات المميزة وحفظها حيث تفتح كل يوم.',
             cta: 'حمِّل من App Store',
             meta1: 'ادفع مرة',
             meta2: 'كل الأجهزة',
@@ -835,31 +891,41 @@ window.T = {
             {
                 eyebrow: 'استيراد وتصدير',
                 title: 'استيراد وتصدير مرنان.',
-                desc: 'عدت من رحلة غوص ووصلت قارئ البطاقات. Trimly يفتح بطاقة SD مباشرةً دون استيراد الملف بالكامل إلى الجوال. تصفّح، اختر أفضل اللحظات، وصدِّر Live Photo ومقاطع قصيرة إلى مكتبة الصور، جاهزةً للمشاركة. هل اللقطات في الصور أصلاً؟ استوردها بلمسة واحدة مع متابعة تنزيل iCloud. الأقراص الخارجية وNAS وiCloud Drive بنفس الطريقة. تفضّل الحفظ في مكان آخر؟ صدِّر إلى تطبيق الملفات. اختر المصدر والوجهة كما يناسبك.',
+                desc: 'ساعات من اللقطات على الجوال أو بطاقة SD — Trimly يقرأ المصدر مباشرة دون نسخ. عدة مقاطع من فيديو واحد، تصدير دفعي، أو شارك من تطبيق آخر. صدّر إلى الصور أو الملفات أو القرص أو السحابة.',
                 points: [
-                    'صدِّر المقاطع المقصوصة مباشرةً إلى مكتبة الصور',
-                    'استيراد بلمسة واحدة من الصور؛ فتح الأقراص وبطاقات SD والسحابة مباشرةً',
-                    'التصدير إلى تطبيق الملفات أيضاً — مرونة كاملة في الدخول والخروج',
+                    'عدة مقاطع من فيديو واحد',
+                    'مشاركة من تطبيق آخر؛ قراءة المصدر مباشرة',
+                    'تصدير دفعي بالترتيب الزمني',
+                ],
+            },
+            {
+                eyebrow: 'حالات الاستخدام',
+                title: 'صُمّم لمواقف التصوير الحقيقية.',
+                desc: 'تسجيلات طويلة، مقاطع قابلة للمشاركة — في دقائق، لا ساعات على المكتب.',
+                points: [
+                    'سفر، حفلات، حفلات موسيقية — لقطة واحدة، مقاطع متعددة',
+                    'كاميرات الحركة والرياضة — أفضل لحظة',
+                    'مقابلات واجتماعات — الموجة، قص الصمت',
                 ],
             },
             {
                 eyebrow: 'الطوابع الزمنية',
                 title: 'كل مقطع يظهر في الصور في مكانه الصحيح تماماً.',
-                desc: 'صوّرت حفل زفاف كاملاً في فيديو طويل واحد. مع Trimly، استخرج أجمل اللحظات كمقاطع قصيرة — يحصل كل مقطع على تاريخ إنشاء يطابق اللحظة الفعلية التي وقع فيها داخل التسجيل. وعندما تفتح الصور، ستجدها مرتبة زمنياً إلى جانب بقية ما التقطتَه في ذلك اليوم، وكأنك سجلت كل لحظة على حدة.',
+                desc: 'كل مقطع يحمل وقت التصوير الحقيقي. شاطئ الظهر لن يسبق فطور الصباح. GPS والجهاز والعدسة تبقى في التفاصيل.',
                 points: [
-                    'تاريخ الإنشاء يعكس اللحظة الفعلية في الخط الزمني',
-                    'ترتيب طبيعي إلى جانب باقي الصور والفيديوهات',
-                    'لا حاجة لإعادة الترتيب يدوياً في الصور',
+                    'وقت التصوير الحقيقي لكل إطار',
+                    'ترتيب طبيعي في الصور',
+                    'GPS وبيانات العدسة',
                 ],
             },
             {
                 eyebrow: 'التقاط',
                 title: 'الإطارات وLive Photo.',
-                desc: 'شاهدت مشهداً أسطورياً في فيلم أو مسلسل وتريده كخلفية Live Photo لشاشة القفل؟ Trimly يسهّل ذلك. جد الإطار المثالي، احفظه كصورة ثابتة أو كـ Live Photo متحركة. بيانات الجهاز والموقع تبقى كما هي.',
+                desc: 'نقاط البداية والنهاية، تراجع، وسوم. إطار بإطار أو قفزة 5 ثوانٍ. لقطة، Live Photo، أو تدوير — دون إعادة ترميز.',
                 points: [
-                    'التقاط أي إطار من الفيديو',
-                    'التقاط Live Photo من الفيديو',
-                    'الحفاظ على بيانات الجهاز والموقع',
+                    'بداية/نهاية، تراجع، وسوم',
+                    'إطار بإطار أو قفزة 5 ثوانٍ',
+                    'لقطة، Live Photo، تدوير',
                 ],
             },
             {
@@ -885,7 +951,7 @@ window.T = {
             {
                 eyebrow: 'الألوان',
                 title: 'تدريج ألوان LUT مدمج.',
-                desc: 'لقطات Log من iPhone أو GoPro أو أجهزة DJI أو Insta360 تبدو باهتة ورمادية خارج برنامج مونتاج احترافي. Trimly يتضمن LUT مدمجة لتحويل Apple Log 2 وأجهزة GoPro وDJI وInsta360 الشائعة إلى Rec. 709.<a class="fn-ref" href="#lut-disclaimer" aria-label="إخلاء مسؤولية قانوني">*</a> طبّقها أثناء القص وسترى الصورة تنبض بالحياة. ما تراه في المعاينة هو تماماً ما يُصدّر. يمكنك أيضاً تحميل ملفات .cube الخاصة بك.',
+                desc: 'لقطات Log من iPhone أو GoPro أو أجهزة DJI أو Insta360 تبدو باهتة ورمادية خارج محرر فيديو احترافي. Trimly يتضمن LUT مدمجة لتحويل Apple Log 2 وأجهزة GoPro وDJI وInsta360 الشائعة إلى Rec. 709.<a class="fn-ref" href="#lut-disclaimer" aria-label="إخلاء مسؤولية قانوني">*</a> طبّقها أثناء القص وسترى الصورة تنبض بالحياة. ما تراه في المعاينة هو تماماً ما يُصدّر. يمكنك أيضاً تحميل ملفات .cube الخاصة بك.',
                 points: [
                     'LUT مدمجة: Apple Log 2 وGoPro وDJI وInsta360 → Rec. 709',
                     'استيراد ملفات .cube LUT المخصصة',
@@ -895,11 +961,10 @@ window.T = {
             {
                 eyebrow: 'الصوت',
                 title: 'ملفات الصوت، مع أشكال موجية حقيقية.',
-                desc: 'سمعت اقتباساً رائعاً في بودكاست وتريد قصّه لمشاركته؟ اسحب الملف الصوتي إلى Trimly. يظهر الشكل الموجي تلقائياً، حدّد المقطع واقطعه. سريع ونظيف، دون فتح محرر صوت ثقيل.',
+                desc: 'البودكast أو مقابلة أو اجتماع — الموجة تُظهر أين تقطع. اقصِ الصمت، دون محرر ثقيل.',
                 points: [
-                    'دعم استيراد وقص الصوت الخالص',
-                    'توليد تلقائي للشكل الموجي',
-                    'دعم بيانات PCM الخام',
+                    'صوت خالص مع موجات تلقائية',
+                    'قص الصمت في تسجيلات الكلام',
                 ],
             },
             {
@@ -935,12 +1000,13 @@ window.T = {
         ],
         privacy: {
             heading: 'خصوصية بالتصميم.',
-            body: 'تعمل Trimly بالكامل على جهازك. لا ترسل أي طلبات شبكة، وليس لها نظام حسابات، ولا تجمع أي بيانات مستخدم. لقطاتك تبقى لك.',
+            body: 'Trimly يعمل على الجهاز — بدون حساب أو رفع أو إعلانات. بدون شبكة أو سحابة أو تتبع أو SDKs لطرف ثالث.',
             tags: [
                 'تعمل على الجهاز فقط',
                 'لا طلبات شبكة',
                 'بدون حساب',
-                'لا جمع للبيانات',
+                'بدون إعلانات',
+                'بدون SDKs لطرف ثالث',
             ],
         },
         bottomCta: {

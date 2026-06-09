@@ -36,4 +36,8 @@
     root.setAttribute('data-lang', lang);
     root.lang = lang === 'zh' ? 'zh-Hans' : lang;
     root.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+    document.addEventListener('DOMContentLoaded', () => {
+        document.body.dir = root.dir;
+    });
 })();

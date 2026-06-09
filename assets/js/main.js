@@ -71,6 +71,13 @@ const ICONS = {
         + '<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>'
         + '<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>'
         + '</svg>',
+    scenarios: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" '
+        + 'stroke-linecap="round" stroke-linejoin="round">'
+        + '<rect x="3" y="3" width="7" height="7" rx="1"/>'
+        + '<rect x="14" y="3" width="7" height="7" rx="1"/>'
+        + '<rect x="3" y="14" width="7" height="7" rx="1"/>'
+        + '<rect x="14" y="14" width="7" height="7" rx="1"/>'
+        + '</svg>',
 };
 
 const CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" '
@@ -80,6 +87,7 @@ const CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke
 
 const SECTION_META = [
     { key: 'import', accent: 'blue', icon: 'import', visual: '→ Photos · → Files' },
+    { key: 'scenarios', accent: 'teal', icon: 'scenarios', visual: 'Travel · Party · Concert · Action' },
     { key: 'order', accent: 'orange', icon: 'clock', visual: 'Photos timeline' },
     { key: 'capture', accent: 'green', icon: 'capture', visual: 'Frame & Live Photo' },
     { key: 'export', accent: 'purple', icon: 'export', visual: 'Passthrough export' },
@@ -121,7 +129,7 @@ function renderFeatures() {
         }
         const reverse = i % 2 === 1 ? ' reverse' : '';
         const points = sec.points.map(p =>
-            `<li><span style="display:inline-flex">${CHECK}</span><span>${p}</span></li>`
+            `<li><span class="feature-point-check">${CHECK}</span><span class="feature-point-text">${p}</span></li>`
         ).join('');
 
         const accentColor = `accent-${meta.accent}`;
@@ -215,7 +223,8 @@ function setLanguage(lang) {
     document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : lang;
     document.documentElement.setAttribute('data-lang', lang);
     document.documentElement.classList.add('i18n-ready');
-    document.body.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.body.dir = document.documentElement.dir;
 
     applyStaticTranslations();
 
