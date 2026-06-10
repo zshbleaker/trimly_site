@@ -128,6 +128,14 @@
         0 1px 0 rgba(255, 255, 255, 0.75),
         0 8px 32px rgba(44, 42, 38, 0.06);
 
+    /* Popover — opaque enough when nested inside frosted nav */
+    --dropdown-glass-fill: rgba(255, 255, 255, 0.94);
+    --dropdown-glass-border: rgba(44, 42, 38, 0.10);
+    --dropdown-glass-backdrop: saturate(200%) blur(44px);
+    --dropdown-glass-shadow:
+        0 1px 0 rgba(255, 255, 255, 0.85),
+        0 12px 40px rgba(44, 42, 38, 0.12);
+
     --font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Noto Sans SC', 'Noto Sans JP', Arial, sans-serif;
     --max-w: 1080px;
     --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -184,7 +192,6 @@ trimly-header {
 /* === LIQUID GLASS SURFACES === */
 .liquid-glass,
 .lang-btn,
-.lang-dropdown,
 .scenario-card,
 .feature-visual,
 .fv-window,
@@ -222,7 +229,6 @@ trimly-header {
 }
 
 .lang-btn,
-.lang-dropdown,
 .scenario-card,
 .feature-visual,
 .fv-window,
@@ -237,7 +243,6 @@ trimly-header {
 @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
     .liquid-glass,
     .lang-btn,
-    .lang-dropdown,
     .scenario-card,
     .feature-visual,
     .fv-window,
@@ -249,6 +254,10 @@ trimly-header {
 
     nav {
         background: var(--bg-primary);
+    }
+
+    .lang-dropdown {
+        background: var(--bg-elevated);
     }
 }
 
@@ -330,6 +339,7 @@ nav::before {
 
 .lang-switcher {
     position: relative;
+    z-index: 2;
 }
 
 .lang-btn {
@@ -408,6 +418,13 @@ nav::before {
     border-radius: 14px;
     overflow: hidden;
     min-width: 172px;
+    z-index: 210;
+    isolation: isolate;
+    background: var(--dropdown-glass-fill);
+    backdrop-filter: var(--dropdown-glass-backdrop);
+    -webkit-backdrop-filter: var(--dropdown-glass-backdrop);
+    border: 1px solid var(--dropdown-glass-border);
+    box-shadow: var(--dropdown-glass-shadow);
 }
 
 .lang-dropdown.open {
@@ -806,6 +823,7 @@ nav::before {
         margin-top: 24px;
         padding: 0 0 36px;
         overflow: hidden;
+        touch-action: pan-x pinch-zoom;
     }
 
     .scenario-grid {
@@ -813,8 +831,10 @@ nav::before {
         flex-direction: row;
         gap: 12px;
         overflow-x: auto;
-        overscroll-behavior-x: contain;
-        scroll-snap-type: x mandatory;
+        overflow-y: hidden;
+        overscroll-behavior: contain;
+        touch-action: pan-x pinch-zoom;
+        scroll-snap-type: x proximity;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         padding: 2px 20px 6px;
@@ -1595,6 +1615,13 @@ footer {
         --nav-glass-shadow:
             0 1px 0 rgba(255, 255, 255, 0.06),
             0 8px 32px rgba(0, 0, 0, 0.35);
+
+        --dropdown-glass-fill: rgba(24, 26, 32, 0.96);
+        --dropdown-glass-border: rgba(255, 255, 255, 0.12);
+        --dropdown-glass-backdrop: saturate(200%) blur(44px);
+        --dropdown-glass-shadow:
+            0 1px 0 rgba(255, 255, 255, 0.08),
+            0 12px 40px rgba(0, 0, 0, 0.45);
     }
 
 
