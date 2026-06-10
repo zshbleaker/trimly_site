@@ -10,7 +10,7 @@ window.T = {
         },
         hero: {
             heading: 'Your best moments,\nstraight into your Photo Library.',
-            tagline: 'Not buried in hour-long videos or bloated editors.',
+            tagline: 'Not buried out of sight.',
             subtitle: 'Trimly helps you clip the highlights and save them where you open every day.',
             cta: 'Download on the App Store',
             meta1: 'Buy once',
@@ -211,7 +211,7 @@ window.T = {
         },
         hero: {
             heading: '精彩时刻，一步到相册',
-            tagline: '最好的画面，应该在相册里，而不是躺在一小时长视频或臃肿剪辑软件里。',
+            tagline: '最好的画面，应该在相册里，而不是被埋没。',
             subtitle: 'Trimly 帮你剪出精彩段落，存到你每天会打开的地方。',
             cta: '在 App Store 下载',
             meta1: '一次买断',
@@ -409,7 +409,7 @@ window.T = {
         },
         hero: {
             heading: 'ベストな瞬間を、\n写真ライブラリへ一発で',
-            tagline: '1時間の長い動画や重い編集ソフトに埋もれる必要はありません。',
+            tagline: '埋もれたままにする必要はありません。',
             subtitle: 'Trimlyは、名場面の切り出しと写真ライブラリへの保存を手伝います。',
             cta: 'App Storeでダウンロード',
             meta1: '買い切り',
@@ -607,7 +607,7 @@ window.T = {
         },
         hero: {
             heading: '최고의 순간을\n사진 보관함으로 바로.',
-            tagline: '한 시간짜리 긴 영상이나 무거운 편집 소프트웨어에 묻힐 필요는 없습니다.',
+            tagline: '묻혀 둘 필요는 없습니다.',
             subtitle: 'Trimly가 하이라이트를 잘라 사진 보관함에 저장하도록 도와줍니다.',
             cta: 'App Store에서 다운로드',
             meta1: '한 번 구매',
@@ -805,7 +805,7 @@ window.T = {
         },
         hero: {
             heading: 'Tus mejores momentos,\ndirecto a tu biblioteca de Fotos.',
-            tagline: 'No enterrados en un vídeo de una hora ni atrapados en un editor pesado.',
+            tagline: 'No enterrados ni olvidados.',
             subtitle: 'Trimly te ayuda a recortar lo mejor y guardarlo donde lo abres cada día.',
             cta: 'Descargar en el App Store',
             meta1: 'Pago único',
@@ -1006,7 +1006,7 @@ window.T = {
         },
         hero: {
             heading: 'أفضل لحظاتك،\nبخطوة واحدة إلى مكتبة الصور.',
-            tagline: 'لا مدفونة في فيديو طويل مدته ساعة، ولا محبوسة في محرر فيديو ثقيل.',
+            tagline: 'لا يجب أن تبقى مدفونة.',
             subtitle: 'Trimly يساعدك على قصّ اللقطات المميزة وحفظها حيث تفتح كل يوم.',
             cta: 'حمِّل من App Store',
             meta1: 'ادفع مرة',
