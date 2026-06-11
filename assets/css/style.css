@@ -138,6 +138,7 @@
 
     --font: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', 'Noto Sans SC', 'Noto Sans JP', Arial, sans-serif;
     --max-w: 1080px;
+    --nav-height: 52px;
     --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
@@ -145,6 +146,7 @@ html {
     scroll-behavior: smooth;
     color-scheme: light;
     background-color: var(--bg-primary);
+    overflow-x: clip;
 }
 
 html[data-lang]:not([data-lang="en"]):not(.i18n-ready) body {
@@ -155,15 +157,15 @@ body {
     font-family: var(--font);
     color: var(--text-primary);
     background: var(--bg-primary);
-    padding-top: 52px;
+    padding-top: calc(var(--nav-height) + env(safe-area-inset-top, 0px));
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
-html.glow-ready body {
+html.glow-ready body > :not(#glow-canvas):not(trimly-header) {
     position: relative;
+    z-index: 1;
 }
 
 #glow-canvas {
@@ -175,18 +177,19 @@ html.glow-ready body {
     z-index: 0;
 }
 
-html.glow-ready body > :not(#glow-canvas):not(trimly-header) {
-    position: relative;
-    z-index: 1;
-}
-
 trimly-header {
     display: block;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
     z-index: 200;
+    overflow: visible;
+    isolation: isolate;
+    padding-top: env(safe-area-inset-top, 0px);
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 /* === LIQUID GLASS SURFACES === */
@@ -265,11 +268,16 @@ trimly-header {
 nav {
     position: relative;
     z-index: 1;
+    overflow: visible;
+    min-height: var(--nav-height);
+    box-sizing: border-box;
     background: var(--nav-glass-fill);
     backdrop-filter: var(--nav-glass-backdrop);
     -webkit-backdrop-filter: var(--nav-glass-backdrop);
     border-bottom: 1px solid var(--nav-glass-border);
     box-shadow: var(--nav-glass-shadow);
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
 }
 
 nav::before {
@@ -287,7 +295,9 @@ nav::before {
     max-width: var(--max-w);
     margin: 0 auto;
     padding: 0 24px;
-    height: 52px;
+    min-height: var(--nav-height);
+    height: var(--nav-height);
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-between;
