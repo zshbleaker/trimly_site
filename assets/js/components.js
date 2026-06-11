@@ -1,5 +1,23 @@
 // window.T is loaded globally from translations.js
-const APP_STORE_URL = 'https://apps.apple.com/us/app/trimly-trim-long-media/id6773276396';
+const APP_STORE_ID = '6773276396';
+const APP_STORE_WEB_URL = `https://apps.apple.com/app/id${APP_STORE_ID}`;
+
+function getAppStoreUrl() {
+    const ua = navigator.userAgent;
+    const isIOS = /iPad|iPhone|iPod/.test(ua)
+        || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    const isMac = /Macintosh|Mac OS X/.test(ua) && !isIOS;
+
+    if (isMac) {
+        return `macappstore://apps.apple.com/app/id${APP_STORE_ID}`;
+    }
+    if (isIOS) {
+        return `itms-apps://apps.apple.com/app/id${APP_STORE_ID}`;
+    }
+    return APP_STORE_WEB_URL;
+}
+
+window.getAppStoreUrl = getAppStoreUrl;
 const SUPPORT_MAILTO = 'mailto:hi@zshbleaker.me?subject='
     + encodeURIComponent('Trimly App Support from Website');
 
@@ -116,7 +134,7 @@ class TrimlyHeader extends HTMLElement {
 
                     <div class="nav-right">
                         <a class="nav-link" href="${featuresHref}">${t.nav.features}</a>
-                        <a class="nav-link" href="${APP_STORE_URL}" target="_blank" rel="noopener">${t.nav.download}</a>
+                        <a class="nav-link app-store-link" href="${getAppStoreUrl()}" target="_blank" rel="noopener">${t.nav.download}</a>
                         <div class="lang-switcher">
                             <button class="lang-btn" type="button" aria-haspopup="listbox" aria-expanded="false">
                                 ${currentFlag}

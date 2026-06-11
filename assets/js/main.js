@@ -238,6 +238,18 @@ function setLanguage(lang) {
 }
 
 let animObserver = null;
+function applyAppStoreLinks() {
+    const url = typeof window.getAppStoreUrl === 'function'
+        ? window.getAppStoreUrl()
+        : null;
+    if (!url) {
+        return;
+    }
+    document.querySelectorAll('.app-store-link').forEach(link => {
+        link.href = url;
+    });
+}
+
 function initAnimations() {
     if (!animObserver) {
         animObserver = new IntersectionObserver(entries => {
@@ -257,6 +269,7 @@ document.addEventListener('lang-change', e => {
 });
 
 (function boot() {
+    applyAppStoreLinks();
     currentLang = detectLanguage();
     setLanguage(currentLang);
 })();
