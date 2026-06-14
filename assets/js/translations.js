@@ -179,7 +179,7 @@ window.T = {
         legal: {
             eyebrow: 'Legal',
             title: 'Privacy Policy',
-            updated: 'Last updated: June 14, 2026',
+            updated: 'Last updated: June 15, 2026',
             intro: 'Trimly processes your media entirely on your device — your footage stays on your iPhone, iPad, or Mac. Data can sync across your Apple devices via iCloud. This policy explains, in plain terms, what that means for your privacy.',
             contactLabel: 'Questions about privacy? Reach us at',
             sections: [
@@ -197,7 +197,7 @@ window.T = {
                 },
                 {
                     h: 'No account, no third parties',
-                    p: 'Trimly has no account system and no sign-in. It does not use any third-party SDKs, analytics services, or cloud processing outside of Apple\'s built-in iCloud sync.',
+                    p: 'Trimly has no account system and no sign-in. It does not use any third-party SDKs, analytics services, or cloud processing outside of Apple\'s built-in iCloud sync. Supply chain attacks often enter apps through compromised third-party libraries; Trimly includes none.',
                 },
                 {
                     h: 'Children\'s privacy',
@@ -387,7 +387,7 @@ window.T = {
         legal: {
             eyebrow: '法律',
             title: '隐私政策',
-            updated: '最后更新：2026 年 6 月 14 日',
+            updated: '最后更新：2026 年 6 月 15 日',
             intro: 'Trimly 在设备本地处理你的媒体，素材始终保留在 iPhone、iPad 或 Mac 上。数据可通过 iCloud 在你的 Apple 设备间同步。本政策用直白的语言说明这对你的隐私意味着什么。',
             contactLabel: '对隐私有疑问？请联系',
             sections: [
@@ -405,7 +405,7 @@ window.T = {
                 },
                 {
                     h: '无账号、无第三方',
-                    p: 'Trimly 没有账号体系，也无需登录。除 Apple 内置的 iCloud 同步外，不使用任何第三方 SDK、分析服务或云端处理。',
+                    p: 'Trimly 没有账号体系，也无需登录。除 Apple 内置的 iCloud 同步外，不使用任何第三方 SDK、分析服务或云端处理。供应链攻击常通过第三方库潜入应用，而 Trimly 不集成任何第三方库。',
                 },
                 {
                     h: '儿童隐私',
@@ -595,7 +595,7 @@ window.T = {
         legal: {
             eyebrow: '法的事項',
             title: 'プライバシーポリシー',
-            updated: '最終更新：2026年6月14日',
+            updated: '最終更新：2026年6月15日',
             intro: 'Trimlyはメディアを端末内で処理します——映像はiPhone、iPad、Macに留まります。データはiCloudでAppleデバイス間に同期できます。本ポリシーでは、それがあなたのプライバシーにとって何を意味するかを平易に説明します。',
             contactLabel: 'プライバシーに関するご質問は',
             sections: [
@@ -613,7 +613,7 @@ window.T = {
                 },
                 {
                     h: 'アカウントなし、第三者なし',
-                    p: 'Trimlyにはアカウント制度もサインインもありません。Apple組み込みのiCloud同期を除き、第三者SDK、分析サービス、クラウド処理は一切使用しません。',
+                    p: 'Trimlyにはアカウント制度もサインインもありません。Apple組み込みのiCloud同期を除き、第三者SDK、分析サービス、クラウド処理は一切使用しません。サプライチェーン攻撃は第三者ライブラリ経由で入り込むことが多く、Trimlyは第三者ライブラリを一切含みません。',
                 },
                 {
                     h: '子どものプライバシー',
@@ -803,7 +803,7 @@ window.T = {
         legal: {
             eyebrow: '법적 고지',
             title: '개인정보 처리방침',
-            updated: '최종 업데이트: 2026년 6월 14일',
+            updated: '최종 업데이트: 2026년 6월 15일',
             intro: 'Trimly는 미디어를 기기에서 로컬로 처리합니다——촬영본은 iPhone, iPad, Mac에 그대로 둡니다. 데이터는 iCloud로 Apple 기기 간에 동기화할 수 있습니다. 이 방침은 그것이 프라이버시에 무엇을 의미하는지 쉬운 말로 설명합니다.',
             contactLabel: '프라이버시 문의는',
             sections: [
@@ -821,7 +821,7 @@ window.T = {
                 },
                 {
                     h: '계정 없음, 제3자 없음',
-                    p: 'Trimly에는 계정 시스템이나 로그인이 없습니다. Apple 내장 iCloud 동기화 외에는 제3자 SDK, 분석 서비스, 클라우드 처리를 사용하지 않습니다.',
+                    p: 'Trimly에는 계정 시스템이나 로그인이 없습니다. Apple 내장 iCloud 동기화 외에는 제3자 SDK, 분석 서비스, 클라우드 처리를 사용하지 않습니다. 공급망 공격은 종종 제3자 라이브러리를 통해 앱에 침투하며, Trimly에는 제3자 라이브러리가 없습니다.',
                 },
                 {
                     h: '아동 프라이버시',
@@ -1014,7 +1014,7 @@ window.T = {
         legal: {
             eyebrow: 'Legal',
             title: 'Política de privacidad',
-            updated: 'Última actualización: 14 de junio de 2026',
+            updated: 'Última actualización: 15 de junio de 2026',
             intro: 'Trimly procesa tu metraje en el dispositivo — tus archivos permanecen en tu iPhone, iPad o Mac. Los datos pueden sincronizarse entre tus dispositivos Apple mediante iCloud. Esta política explica, en términos sencillos, qué significa eso para tu privacidad.',
             contactLabel: '¿Preguntas sobre privacidad? Escríbenos a',
             sections: [
@@ -1032,7 +1032,7 @@ window.T = {
                 },
                 {
                     h: 'Sin cuenta ni terceros',
-                    p: 'Trimly no tiene sistema de cuentas ni inicio de sesión. No utiliza SDK, servicios de analíticas ni procesamiento en la nube de terceros, aparte de la sincronización iCloud integrada de Apple.',
+                    p: 'Trimly no tiene sistema de cuentas ni inicio de sesión. No utiliza SDK, servicios de analíticas ni procesamiento en la nube de terceros, aparte de la sincronización iCloud integrada de Apple. Los ataques a la cadena de suministro suelen entrar en las apps a través de bibliotecas de terceros comprometidas; Trimly no incluye ninguna.',
                 },
                 {
                     h: 'Privacidad de menores',
@@ -1233,7 +1233,7 @@ window.T = {
         legal: {
             eyebrow: 'قانوني',
             title: 'سياسة الخصوصية',
-            updated: 'آخر تحديث: 14 يونيو 2026',
+            updated: 'آخر تحديث: 15 يونيو 2026',
             intro: 'Trimly يعالج وسائطك على جهازك — تبقى لقطاتك على iPhone أو iPad أو Mac. يمكن مزامنة البيانات عبر iCloud بين أجهزة Apple. تشرح هذه السياسة، بلغة بسيطة، ما يعنيه ذلك لخصوصيتك.',
             contactLabel: 'لأي استفسار حول الخصوصية، تواصل معنا على',
             sections: [
@@ -1251,7 +1251,7 @@ window.T = {
                 },
                 {
                     h: 'لا حسابات، لا أطراف ثالثة',
-                    p: 'لا يوجد في Trimly نظام حسابات أو تسجيل دخول. لا تستخدم أي SDKs أو خدمات تحليلات أو معالجة سحابية لأطراف ثالثة، باستثناء مزامنة iCloud المدمجة من Apple.',
+                    p: 'لا يوجد في Trimly نظام حسابات أو تسجيل دخول. لا تستخدم أي SDKs أو خدمات تحليلات أو معالجة سحابية لأطراف ثالثة، باستثناء مزامنة iCloud المدمجة من Apple. غالباً ما تدخل هجمات سلسلة التوريد عبر مكتبات أطراف ثالثة مخترقة؛ Trimly لا تتضمن أيّاً منها.',
                 },
                 {
                     h: 'خصوصية الأطفال',
