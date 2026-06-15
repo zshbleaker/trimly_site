@@ -88,9 +88,9 @@ window.T = {
             {
                 eyebrow: 'Continuity',
                 title: 'Switch devices without losing your place.',
-                desc: 'Rough-cut on your iPhone during the commute — get home, open the same file on your Mac, and pick up exactly where you left off. Progress saves automatically and syncs via iCloud across iPhone, iPad, and Mac. Back from a trip? AirPlay to the living-room TV and trim together with family and friends on the couch.',
+                desc: 'Rough-cut on your iPhone during the commute — get home, open the same project on your Mac, and pick up exactly where you left off. Your edits and LUTs sync via iCloud automatically; video files never leave your device. Back from a trip? AirPlay to the living-room TV and trim together with family and friends on the couch.',
                 points: [
-                    'iCloud sync across devices',
+                    'Edits & LUTs sync via iCloud — video files stay on-device',
                     'Handoff — continue on another device instantly',
                     'AirPlay highlights to the TV',
                 ],
@@ -180,7 +180,7 @@ window.T = {
             eyebrow: 'Legal',
             title: 'Privacy Policy',
             updated: 'Last updated: June 15, 2026',
-            intro: 'Trimly processes your media entirely on your device — your footage stays on your iPhone, iPad, or Mac. Data can sync across your Apple devices via iCloud. This policy explains, in plain terms, what that means for your privacy.',
+            intro: 'Trimly processes your media entirely on your device — your footage stays on your iPhone, iPad, or Mac. Your edits and LUTs can sync across your Apple devices via iCloud; video files are never uploaded. This policy explains, in plain terms, what that means for your privacy.',
             contactLabel: 'Questions about privacy? Reach us at',
             sections: [
                 {
@@ -189,7 +189,7 @@ window.T = {
                 },
                 {
                     h: 'iCloud sync',
-                    p: 'Trimly does not connect to Trimly servers or any third-party services. The only network activity is iCloud sync, which uses Apple\'s iCloud to keep your data in sync across your devices when you enable it. Your video and audio files are not uploaded — only app data syncs through iCloud, subject to Apple\'s iCloud terms and privacy policy.',
+                    p: 'Trimly does not connect to Trimly servers or any third-party services. The only network activity is iCloud sync, which uses Apple\'s iCloud to keep your edits and LUTs in sync across your devices when you enable it. Your video and audio files are never uploaded or synced — subject to Apple\'s iCloud terms and privacy policy.',
                 },
                 {
                     h: 'Files and Photos access',
@@ -296,9 +296,9 @@ window.T = {
             {
                 eyebrow: '跨设备',
                 title: '换台设备，进度不丢',
-                desc: '路上用 iPhone 粗剪到一半？回到家打开 Mac，同一文件立刻接上进度。自动保存，经 iCloud 同步到各台设备。旅行归来，AirPlay 投屏到客厅电视，和家人朋友坐在沙发上一块剪、一块选。',
+                desc: '路上用 iPhone 粗剪到一半？回到家打开 Mac，进度立刻接上。iCloud 只同步剪辑记录与 LUT，视频文件始终留在设备本地。旅行归来，AirPlay 投屏到客厅电视，和家人朋友坐在沙发上一块剪、一块选。',
                 points: [
-                    'iCloud 跨设备同步',
+                    'iCloud 同步剪辑记录与 LUT（视频文件留在设备本地）',
                     'Handoff 换设备即继续',
                     'AirPlay 一键投屏至电视',
                 ],
@@ -388,7 +388,7 @@ window.T = {
             eyebrow: '法律',
             title: '隐私政策',
             updated: '最后更新：2026 年 6 月 15 日',
-            intro: 'Trimly 在设备本地处理你的媒体，素材始终保留在 iPhone、iPad 或 Mac 上。数据可通过 iCloud 在你的 Apple 设备间同步。本政策用直白的语言说明这对你的隐私意味着什么。',
+            intro: 'Trimly 在设备本地处理你的媒体，素材始终保留在 iPhone、iPad 或 Mac 上。剪辑记录与 LUT 可通过 iCloud 在你的 Apple 设备间同步，视频文件本身绝不会上传。本政策用直白的语言说明这对你的隐私意味着什么。',
             contactLabel: '对隐私有疑问？请联系',
             sections: [
                 {
@@ -397,7 +397,7 @@ window.T = {
                 },
                 {
                     h: 'iCloud 同步',
-                    p: 'Trimly 不会连接 Trimly 服务器或任何第三方服务。唯一的网络活动是 iCloud 同步——在你启用后，通过 Apple 的 iCloud 在设备间同步你的数据。你的视频和音频文件不会上传，仅应用数据经 iCloud 同步，并受 Apple iCloud 条款与隐私政策约束。',
+                    p: 'Trimly 不会连接 Trimly 服务器或任何第三方服务。唯一的网络活动是 iCloud 同步——在你启用后，通过 Apple 的 iCloud 在设备间同步剪辑记录与 LUT。视频和音频文件绝不会上传，也不经由 iCloud 同步，并受 Apple iCloud 条款与隐私政策约束。',
                 },
                 {
                     h: '文件与照片访问',
@@ -504,9 +504,9 @@ window.T = {
             {
                 eyebrow: '連携',
                 title: 'デバイスを替えても、進捗はそのまま。',
-                desc: '移動中にiPhoneで粗剪り——帰宅してMacで同じファイルを開けば、すぐ続きから。自動保存され、iCloudで各デバイスに同期。帰ってきたらAirPlayでリビングのテレビに映し、家族や友人とソファに並んで一緒に選び切り。',
+                desc: '移動中にiPhoneで粗剪り——帰宅してMacで同じプロジェクトを開けば、すぐ続きから。iCloudで同期されるのは編集データとLUTのみで、動画ファイルはデバイスに残ります。旅から帰ったらAirPlayでリビングのテレビに映し、家族や友人とソファに並んで一緒に選び切り。',
                 points: [
-                    'iCloudでデバイス間に同期',
+                    '編集データとLUTをiCloudで同期（動画はデバイスに保持）',
                     'Handoffで別デバイスに即座に引き継ぎ',
                     'AirPlayでテレビに投射',
                 ],
@@ -596,7 +596,7 @@ window.T = {
             eyebrow: '法的事項',
             title: 'プライバシーポリシー',
             updated: '最終更新：2026年6月15日',
-            intro: 'Trimlyはメディアを端末内で処理します——映像はiPhone、iPad、Macに留まります。データはiCloudでAppleデバイス間に同期できます。本ポリシーでは、それがあなたのプライバシーにとって何を意味するかを平易に説明します。',
+            intro: 'Trimlyはメディアを端末内で処理します——映像はiPhone、iPad、Macに留まります。iCloudで同期されるのは編集データとLUTのみで、動画ファイルはアップロードされません。本ポリシーでは、それがあなたのプライバシーにとって何を意味するかを平易に説明します。',
             contactLabel: 'プライバシーに関するご質問は',
             sections: [
                 {
@@ -605,7 +605,7 @@ window.T = {
                 },
                 {
                     h: 'iCloud同期',
-                    p: 'TrimlyはTrimlyのサーバーや第三者サービスに接続しません。ネットワーク通信はiCloud同期のみ——有効にすると、AppleのiCloud経由でデータをデバイス間に同期します。動画・音声ファイルはアップロードされず、アプリデータのみがiCloud経由で同期され、AppleのiCloud利用規約とプライバシーポリシーの対象となります。',
+                    p: 'TrimlyはTrimlyのサーバーや第三者サービスに接続しません。ネットワーク通信はiCloud同期のみ——有効にすると、AppleのiCloud経由で編集データとLUTをデバイス間に同期します。動画・音声ファイルはアップロードも同期もされません。同期データはAppleのiCloud利用規約とプライバシーポリシーの対象となります。',
                 },
                 {
                     h: 'ファイルと写真へのアクセス',
@@ -712,9 +712,9 @@ window.T = {
             {
                 eyebrow: '연속성',
                 title: '기기를 바꿔도 진행 상황 그대로.',
-                desc: '이동 중 iPhone으로 대략 자르다가 — 집에 와 Mac에서 같은 파일을 열면 바로 이어서. 자동 저장되고 iCloud로 각 기기에 동기화. 여행에서 돌아왔다면 AirPlay로 거실 TV에 띄워 가족·친구와 소파에 앉아 함께 골라 자르세요.',
+                desc: '이동 중 iPhone으로 대략 자르다가 — 집에 와 Mac을 열면 바로 이어서. iCloud로는 편집 기록과 LUT만 동기화되고, 동영상 파일은 기기에 그대로 남습니다. 여행에서 돌아왔다면 AirPlay로 거실 TV에 띄워 가족·친구와 소파에 앉아 함께 골라 자르세요.',
                 points: [
-                    'iCloud로 기기 간 동기화',
+                    '편집 기록 & LUT를 iCloud로 동기화 (동영상은 기기에 유지)',
                     'Handoff로 다른 기기에서 즉시 이어가기',
                     'AirPlay로 TV에 미러링',
                 ],
@@ -804,7 +804,7 @@ window.T = {
             eyebrow: '법적 고지',
             title: '개인정보 처리방침',
             updated: '최종 업데이트: 2026년 6월 15일',
-            intro: 'Trimly는 미디어를 기기에서 로컬로 처리합니다——촬영본은 iPhone, iPad, Mac에 그대로 둡니다. 데이터는 iCloud로 Apple 기기 간에 동기화할 수 있습니다. 이 방침은 그것이 프라이버시에 무엇을 의미하는지 쉬운 말로 설명합니다.',
+            intro: 'Trimly는 미디어를 기기에서 로컬로 처리합니다——촬영본은 iPhone, iPad, Mac에 그대로 둡니다. iCloud로는 편집 기록과 LUT만 동기화되며, 동영상 파일은 업로드되지 않습니다. 이 방침은 그것이 프라이버시에 무엇을 의미하는지 쉬운 말로 설명합니다.',
             contactLabel: '프라이버시 문의는',
             sections: [
                 {
@@ -813,7 +813,7 @@ window.T = {
                 },
                 {
                     h: 'iCloud 동기화',
-                    p: 'Trimly는 Trimly 서버나 제3자 서비스에 연결하지 않습니다. 유일한 네트워크 활동은 iCloud 동기화——활성화하면 Apple iCloud를 통해 데이터를 기기 간에 동기화합니다. 동영상·오디오 파일은 업로드되지 않으며, 앱 데이터만 iCloud로 동기화되고 Apple iCloud 약관 및 개인정보 처리방침의 적용을 받습니다.',
+                    p: 'Trimly는 Trimly 서버나 제3자 서비스에 연결하지 않습니다. 유일한 네트워크 활동은 iCloud 동기화——활성화하면 Apple iCloud를 통해 편집 기록과 LUT를 기기 간에 동기화합니다. 동영상·오디오 파일은 업로드되거나 동기화되지 않습니다. 동기화 데이터는 Apple iCloud 약관 및 개인정보 처리방침의 적용을 받습니다.',
                 },
                 {
                     h: '파일 및 사진 접근',
@@ -923,9 +923,9 @@ window.T = {
             {
                 eyebrow: 'Continuidad',
                 title: 'Cambia de dispositivo sin perder el hilo.',
-                desc: 'Recorta a groso modo en el iPhone de camino — en casa, abre el mismo archivo en el Mac y sigue justo donde lo dejaste. Se guarda y sincroniza por iCloud en todos tus dispositivos. ¿Vuelves de un viaje? Con AirPlay en la tele del salón, recorta junto a familia y amigos en el sofá.',
+                desc: 'Recorta a grosso modo en el iPhone de camino — en casa, abre el mismo proyecto en el Mac y sigue justo donde lo dejaste. Por iCloud solo se sincronizan los registros de edición y los LUTs; los archivos de vídeo se quedan en tu dispositivo. ¿Vuelves de un viaje? Con AirPlay en la tele del salón, recorta junto a familia y amigos en el sofá.',
                 points: [
-                    'Sincronización iCloud entre dispositivos',
+                    'Registros de edición y LUTs sincronizados por iCloud (vídeos en el dispositivo)',
                     'Handoff — continúa al instante en otro dispositivo',
                     'AirPlay de lo mejor a la tele',
                 ],
@@ -1015,7 +1015,7 @@ window.T = {
             eyebrow: 'Legal',
             title: 'Política de privacidad',
             updated: 'Última actualización: 15 de junio de 2026',
-            intro: 'Trimly procesa tu metraje en el dispositivo — tus archivos permanecen en tu iPhone, iPad o Mac. Los datos pueden sincronizarse entre tus dispositivos Apple mediante iCloud. Esta política explica, en términos sencillos, qué significa eso para tu privacidad.',
+            intro: 'Trimly procesa tu metraje en el dispositivo — tus archivos permanecen en tu iPhone, iPad o Mac. Los registros de edición y LUTs pueden sincronizarse entre tus dispositivos Apple mediante iCloud; los archivos de vídeo nunca se suben. Esta política explica, en términos sencillos, qué significa eso para tu privacidad.',
             contactLabel: '¿Preguntas sobre privacidad? Escríbenos a',
             sections: [
                 {
@@ -1024,7 +1024,7 @@ window.T = {
                 },
                 {
                     h: 'Sincronización iCloud',
-                    p: 'Trimly no se conecta a servidores de Trimly ni a servicios de terceros. La única actividad de red es la sincronización iCloud, que usa el iCloud de Apple para mantener tus datos sincronizados entre tus dispositivos cuando la activas. Tus archivos de vídeo y audio no se suben — solo se sincronizan datos de la app a través de iCloud, sujetos a los términos y la política de privacidad de iCloud de Apple.',
+                    p: 'Trimly no se conecta a servidores de Trimly ni a servicios de terceros. La única actividad de red es la sincronización iCloud, que usa el iCloud de Apple para mantener tus registros de edición y LUTs sincronizados entre tus dispositivos cuando la activas. Los archivos de vídeo y audio nunca se suben ni se sincronizan; los datos sincronizados están sujetos a los términos y la política de privacidad de iCloud de Apple.',
                 },
                 {
                     h: 'Acceso a Archivos y Fotos',
@@ -1132,9 +1132,9 @@ window.T = {
             {
                 eyebrow: 'الاستمرارية',
                 title: 'بدّل الجهاز دون فقدان تقدّمك.',
-                desc: 'اقصّ بسرعة على iPhone في الطريق — عد للمنزل وافتح نفس الملف على Mac وتابع من حيث توقفت. يُحفَظ تلقائياً ويُزامَن عبر iCloud بين أجهزتك. عدت من رحلة؟ اعرض عبر AirPlay على تلفاز غرفة المعيشة واقصّ مع العائلة والأصدقاء على الأريكة.',
+                desc: 'اقصّ بسرعة على iPhone في الطريق — عد للمنزل وافتح نفس المشروع على Mac وتابع من حيث توقفت. عبر iCloud تُزامَن سجلات التحرير وملفات LUT فقط، بينما تبقى ملفات الفيديو على الجهاز. عدت من رحلة؟ اعرض عبر AirPlay على تلفاز غرفة المعيشة واقصّ مع العائلة والأصدقاء على الأريكة.',
                 points: [
-                    'مزامنة iCloud بين الأجهزة',
+                    'مزامنة سجلات التحرير وLUT عبر iCloud (الفيديو يبقى على الجهاز)',
                     'Handoff — تابع فوراً على جهاز آخر',
                     'AirPlay للّقطات على التلفاز',
                 ],
@@ -1234,7 +1234,7 @@ window.T = {
             eyebrow: 'قانوني',
             title: 'سياسة الخصوصية',
             updated: 'آخر تحديث: 15 يونيو 2026',
-            intro: 'Trimly يعالج وسائطك على جهازك — تبقى لقطاتك على iPhone أو iPad أو Mac. يمكن مزامنة البيانات عبر iCloud بين أجهزة Apple. تشرح هذه السياسة، بلغة بسيطة، ما يعنيه ذلك لخصوصيتك.',
+            intro: 'Trimly يعالج وسائطك على جهازك — تبقى لقطاتك على iPhone أو iPad أو Mac. يمكن مزامنة سجلات التحرير وملفات LUT عبر iCloud بين أجهزة Apple؛ ملفات الفيديو لا تُرفَع أبداً. تشرح هذه السياسة، بلغة بسيطة، ما يعنيه ذلك لخصوصيتك.',
             contactLabel: 'لأي استفسار حول الخصوصية، تواصل معنا على',
             sections: [
                 {
@@ -1243,7 +1243,7 @@ window.T = {
                 },
                 {
                     h: 'مزامنة iCloud',
-                    p: 'لا تتصل Trimly بخوادم Trimly أو أي خدمات لأطراف ثالثة. النشاط الشبكي الوحيد هو مزامنة iCloud، التي تستخدم iCloud من Apple لمزامنة بياناتك بين أجهزتك عند تفعيلها. لا تُرفَع ملفات الفيديو والصوت — تُزامَن فقط بيانات التطبيق عبر iCloud، وفق شروط iCloud وسياسة خصوصية Apple.',
+                    p: 'لا تتصل Trimly بخوادم Trimly أو أي خدمات لأطراف ثالثة. النشاط الشبكي الوحيد هو مزامنة iCloud، التي تستخدم iCloud من Apple لمزامنة سجلات التحرير وملفات LUT بين أجهزتك عند تفعيلها. ملفات الفيديو والصوت لا تُرفَع ولا تُزامَن، وتخضع البيانات المُزامَنة لشروط iCloud وسياسة خصوصية Apple.',
                 },
                 {
                     h: 'الوصول إلى الملفات والصور',
