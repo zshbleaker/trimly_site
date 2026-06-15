@@ -1,8 +1,8 @@
 window.T = {
     en: {
         langLabel: 'English',
-        indexTitle: 'Trimly — Your best moments, straight into your Photo Library.',
-        privacyTitle: 'Privacy Policy — Trimly',
+        indexTitle: 'Trimly | Your best moments, straight into your Photo Library.',
+        privacyTitle: 'Privacy Policy | Trimly',
         nav: {
             features: 'Features',
             download: 'Download',
@@ -57,7 +57,7 @@ window.T = {
         features: [{
                 eyebrow: 'Import & Export',
                 title: 'Flexible import and export.',
-                desc: 'Open hours of footage from SD cards, USB storage, NAS, or cloud — no need to copy the whole file first. Export multiple clips from one video to your Photo Library or Files, or share from another app and start trimming right away.',
+                desc: 'Open hours of footage from SD cards, USB storage, NAS, or cloud. No need to copy the whole file first. Export multiple clips from one video to your Photo Library or Files, or share from another app and start trimming right away.',
                 points: [
                     'Multiple clips from one video; batch export in chronological order',
                     'Photo Library, Files, SD cards, USB, and cloud storage',
@@ -67,7 +67,7 @@ window.T = {
             {
                 eyebrow: 'Timestamps',
                 title: 'Every clip lands in Photos right where it belongs.',
-                desc: 'Film the whole concert in one long video, then pull out highlight clips — each keeps the real moment it happened. A beach clip from the afternoon won\'t land before breakfast; everything lines up in Photos. GPS, camera, and lens info stay in photo details.',
+                desc: 'Film the whole concert in one long video, then pull out highlight clips, each keeping the real moment it happened. A beach clip from the afternoon won\'t land before breakfast; everything lines up in Photos. GPS, camera, and lens info stay in photo details.',
                 points: [
                     'Timestamps reflect each clip\'s real moment in the timeline',
                     'Exported clips sort naturally with your other photos and videos',
@@ -77,9 +77,9 @@ window.T = {
             {
                 eyebrow: 'Capture',
                 title: 'Frames and Live Photos.',
-                desc: 'Mark in and out points on the timeline — undo if you miss. Tag clips as "Vows," "Sunset," or "Funny." Frame-by-frame or 5-second jumps to freeze a smile or a wave peak. Save a movie or anime scene as a still or Live Photo. Rotate without transcoding.',
+                desc: 'Mark in and out points on the timeline; undo if you miss. Tag clips as "Vows," "Sunset," or "Funny." Frame-by-frame or 5-second jumps to freeze a smile or a wave peak. Save a movie or anime scene as a still or Live Photo. Rotate without transcoding.',
                 points: [
-                    'In/out points with undo — tag clips as you go',
+                    'In/out points with undo; tag clips as you go',
                     'Frame-by-frame tuning or one-tap 5-second jumps',
                     'Capture any video frame or Live Photo from video',
                     'Rotate footage without transcoding',
@@ -88,17 +88,17 @@ window.T = {
             {
                 eyebrow: 'Continuity',
                 title: 'Switch devices without losing your place.',
-                desc: 'Rough-cut on your iPhone during the commute — get home, open the same project on your Mac, and pick up exactly where you left off. Your edits and LUTs sync via iCloud automatically; video files never leave your device. Back from a trip? AirPlay to the living-room TV and trim together with family and friends on the couch.',
+                desc: 'Rough-cut on your iPhone during the commute. Get home, open the same project on your Mac, and pick up exactly where you left off. Your edits and LUTs sync via iCloud automatically; video files never leave your device. Back from a trip? AirPlay to the living-room TV and trim together with family and friends on the couch.',
                 points: [
-                    'Edits & LUTs sync via iCloud — video files stay on-device',
-                    'Handoff — continue on another device instantly',
+                    'Edits & LUTs sync via iCloud (video files stay on-device)',
+                    'Handoff: continue on another device instantly',
                     'AirPlay highlights to the TV',
                 ],
             },
             {
                 eyebrow: 'Export',
-                title: 'Passthrough export — or transcode to save space.',
-                desc: '500 MB or 50 GB — passthrough export is practically instant, bit-for-bit quality. Original too heavy for your phone or iCloud? Pick a transcode tier to shrink the clip. Tag clips with keywords so they\'re searchable in Photos.',
+                title: 'Passthrough export, or transcode to save space.',
+                desc: '500 MB or 50 GB: passthrough export is practically instant, bit-for-bit quality. Original too heavy for your phone or iCloud? Pick a transcode tier to shrink the clip. Tag clips with keywords so they\'re searchable in Photos.',
                 points: [
                     'Passthrough export: no quality loss, no waiting',
                     'A short clip from a multi-hour file in seconds',
@@ -108,7 +108,7 @@ window.T = {
             {
                 eyebrow: 'HDR',
                 title: 'Full HDR support.',
-                desc: 'HDR travel footage — bright sky, detail in the shadows. Most editors flatten the preview or crush highlights on export. In Trimly, HDR stays intact from preview to Photos, including stills, Live Photos, and transcode export.',
+                desc: 'HDR travel footage: bright sky, detail in the shadows. Most editors flatten the preview or crush highlights on export. In Trimly, HDR stays intact from preview to Photos, including stills, Live Photos, and transcode export.',
                 points: [
                     'True HDR preview on XDR displays',
                     'Passthrough video and Live Photo export with HDR metadata intact',
@@ -118,17 +118,17 @@ window.T = {
             {
                 eyebrow: 'Color',
                 title: 'LUT color grading, built in.',
-                desc: 'Log footage from iPhone, GoPro, DJI, or Insta360 looks flat without a pro editor. Trimly includes Rec. 709 LUTs for Apple Log 2 and popular action cameras.<a class="fn-ref" href="#lut-disclaimer" aria-label="Legal disclaimer">*</a> Apply while you trim — preview matches export. Load your own .cube files too.',
+                desc: 'Log footage from iPhone, GoPro, DJI, or Insta360 looks flat without a pro editor. Trimly includes Rec. 709 LUTs for Apple Log 2 and popular action cameras.<a class="fn-ref" href="#lut-disclaimer" aria-label="Legal disclaimer">*</a> Apply while you trim; preview matches export. Load your own .cube files too.',
                 points: [
                     'Bundled Rec. 709 LUTs for Apple Log 2, GoPro, DJI & Insta360',
                     'Import custom .cube LUTs',
-                    'HDR LUTs supported — load and export just like SDR LUTs',
+                    'HDR LUTs supported; load and export just like SDR LUTs',
                 ],
             },
             {
                 eyebrow: 'Audio',
                 title: 'Audio files, with real waveforms.',
-                desc: 'Heard a great podcast quote or trimming an interview? Drop the audio into Trimly — a waveform appears automatically. Align speech with the wave and cut silence. No bloated audio editor needed.',
+                desc: 'Heard a great podcast quote or trimming an interview? Drop the audio into Trimly and a waveform appears automatically. Align speech with the wave and cut silence. No bloated audio editor needed.',
                 points: [
                     'Pure audio import and trim',
                     'Auto-generated waveform visualization',
@@ -138,7 +138,7 @@ window.T = {
             {
                 eyebrow: 'Speed',
                 title: 'A complete keyboard workflow.',
-                desc: 'Keyboard beats a mouse every time. Play, pause, step frame by frame, mark clips, delete, undo — all with shortcuts. Each file keeps its own undo history for a full day of footage.',
+                desc: 'Keyboard beats a mouse every time. Play, pause, step frame by frame, mark clips, delete, and undo: all with shortcuts. Each file keeps its own undo history for a full day of footage.',
                 points: [
                     'Play, seek, and step frame by frame',
                     'Mark clips and delete with a keypress',
@@ -157,7 +157,7 @@ window.T = {
             }],
         privacy: {
             heading: 'Private by design.',
-            body: 'Trimly processes your media on-device — no account, uploads, or ads. Trimly has no servers of its own; any network activity goes only to iCloud. No tracking or third-party SDKs.',
+            body: 'Trimly processes your media on-device, no account, uploads, or ads. Trimly has no servers of its own; any network activity goes only to iCloud. No tracking or third-party SDKs.',
             tags: [
                 'On-device processing',
                 'iCloud sync',
@@ -180,7 +180,7 @@ window.T = {
             eyebrow: 'Legal',
             title: 'Privacy Policy',
             updated: 'Last updated: June 15, 2026',
-            intro: 'Trimly processes your media entirely on your device — your footage stays on your iPhone, iPad, or Mac. Your edits and LUTs can sync across your Apple devices via iCloud; video files are never uploaded. This policy explains, in plain terms, what that means for your privacy.',
+            intro: 'Trimly processes your media entirely on your device. Your footage stays on your iPhone, iPad, or Mac. Your edits and LUTs can sync across your Apple devices via iCloud; video files are never uploaded. This policy explains, in plain terms, what that means for your privacy.',
             contactLabel: 'Questions about privacy? Reach us at',
             sections: [
                 {
@@ -189,7 +189,7 @@ window.T = {
                 },
                 {
                     h: 'iCloud sync',
-                    p: 'Trimly does not connect to Trimly servers or any third-party services. The only network activity is iCloud sync, which uses Apple\'s iCloud to keep your edits and LUTs in sync across your devices when you enable it. Your video and audio files are never uploaded or synced — subject to Apple\'s iCloud terms and privacy policy.',
+                    p: 'Trimly does not connect to Trimly servers or any third-party services. The only network activity is iCloud sync, which uses Apple\'s iCloud to keep your edits and LUTs in sync across your devices when you enable it, subject to Apple\'s iCloud terms and privacy policy. Your video and audio files are never uploaded or synced.',
                 },
                 {
                     h: 'Files and Photos access',
@@ -212,8 +212,8 @@ window.T = {
     },
     zh: {
         langLabel: '简体中文',
-        indexTitle: 'Trimly — 精彩时刻，一步到相册',
-        privacyTitle: '隐私政策 — Trimly',
+        indexTitle: 'Trimly | 精彩时刻，一步到相册',
+        privacyTitle: '隐私政策 | Trimly',
         nav: {
             features: '功能',
             download: '下载',
@@ -285,7 +285,7 @@ window.T = {
             {
                 eyebrow: '截图',
                 title: '截图与 Live Photo',
-                desc: '拖动时间轴标记入出点，标错可撤销。给片段加标签如「誓词」「日落」「搞笑」。逐帧微调或一键跳转五秒——定格起跳前的笑容、浪花最高的瞬间。电影或动画名场面可存为截图或 Live Photo，也可直接旋转素材，无需转码。',
+                desc: '拖动时间轴标记入出点，标错可撤销。给片段加标签如「誓词」「日落」「搞笑」。逐帧微调或一键跳转五秒，定格起跳前的笑容、浪花最高的瞬间。电影或动画名场面可存为截图或 Live Photo，也可直接旋转素材，无需转码。',
                 points: [
                     '入点出点可撤销，剪辑时给片段打标签',
                     '逐帧微调或一键跳转五秒',
@@ -316,7 +316,7 @@ window.T = {
             {
                 eyebrow: 'HDR',
                 title: '完整的 HDR 支持',
-                desc: '旅行录的 HDR 视频，天空高光和暗部细节都还在。多数 App 预览发灰、导出压成 SDR。Trimly 从预览到写入相册全程保留 HDR——短视频、截图、Live Photo 和转码导出均如此。',
+                desc: '旅行录的 HDR 视频，天空高光和暗部细节都还在。多数 App 预览发灰、导出压成 SDR。Trimly 从预览到写入相册全程保留 HDR，短视频、截图、Live Photo 和转码导出均如此。',
                 points: [
                     '在 XDR 屏上真实 HDR 预览，所见即所得',
                     '视频与 Live Photo 直通导出，HDR 元数据原样保留',
@@ -397,7 +397,7 @@ window.T = {
                 },
                 {
                     h: 'iCloud 同步',
-                    p: 'Trimly 不会连接 Trimly 服务器或任何第三方服务。唯一的网络活动是 iCloud 同步——在你启用后，通过 Apple 的 iCloud 在设备间同步剪辑记录与 LUT。视频和音频文件绝不会上传，也不经由 iCloud 同步，并受 Apple iCloud 条款与隐私政策约束。',
+                    p: 'Trimly 不会连接 Trimly 服务器或任何第三方服务。唯一的网络活动是 iCloud 同步，在你启用后通过 Apple 的 iCloud 在设备间同步剪辑记录与 LUT，受 Apple iCloud 条款与隐私政策约束。视频和音频文件绝不会上传，也不经由 iCloud 同步。',
                 },
                 {
                     h: '文件与照片访问',
@@ -420,8 +420,8 @@ window.T = {
     },
     ja: {
         langLabel: '日本語',
-        indexTitle: 'Trimly — ベストな瞬間を、写真ライブラリへ一発で',
-        privacyTitle: 'プライバシーポリシー — Trimly',
+        indexTitle: 'Trimly | ベストな瞬間を、写真ライブラリへ一発で',
+        privacyTitle: 'プライバシーポリシー | Trimly',
         nav: {
             features: '機能',
             download: 'ダウンロード',
@@ -483,7 +483,7 @@ window.T = {
             {
                 eyebrow: 'タイムスタンプ',
                 title: '書き出したクリップは、写真で自然な順に並ぶ。',
-                desc: 'ライブを一つの長い動画として撮影——Trimlyならベストシーンだけ切り出せる。各クリップの作成日時は元動画の実際の瞬間に対応。午後の海辺が午前の朝食より前には来ない。GPS、機材、レンズ情報も写真詳細に残る。',
+                desc: 'ライブを一つの長い動画として撮影したら、Trimlyでベストシーンだけ切り出せる。各クリップの作成日時は元動画の実際の瞬間に対応。午後の海辺が午前の朝食より前には来ない。GPS、機材、レンズ情報も写真詳細に残る。',
                 points: [
                     '作成日時が元動画内の実際の瞬間に対応',
                     '他の写真・動画と自然に混ざって時系列順に',
@@ -493,7 +493,7 @@ window.T = {
             {
                 eyebrow: 'キャプチャ',
                 title: 'フレームとLive Photo。',
-                desc: 'タイムラインでイン・アウトを指定——間違えたら元に戻せます。「誓い」「夕日」などタグ付けも。フレーム単位か5秒ジャンプで、ジャンプ直前の笑顔や波の頂点にピンポイント。映画やアニメの名シーンを静止画やLive Photoに。回転もトランスコード不要。',
+                desc: 'タイムラインでイン・アウトを指定。間違えたら元に戻せます。「誓い」「夕日」などタグ付けも。フレーム単位か5秒ジャンプで、ジャンプ直前の笑顔や波の頂点にピンポイント。映画やアニメの名シーンを静止画やLive Photoに。回転もトランスコード不要。',
                 points: [
                     'イン・アウト指定と取り消し、タグ付け',
                     'フレーム単位の調整または5秒ジャンプ',
@@ -504,7 +504,7 @@ window.T = {
             {
                 eyebrow: '連携',
                 title: 'デバイスを替えても、進捗はそのまま。',
-                desc: '移動中にiPhoneで粗剪り——帰宅してMacで同じプロジェクトを開けば、すぐ続きから。iCloudで同期されるのは編集データとLUTのみで、動画ファイルはデバイスに残ります。旅から帰ったらAirPlayでリビングのテレビに映し、家族や友人とソファに並んで一緒に選び切り。',
+                desc: '移動中にiPhoneで粗剪りして、帰宅してMacで同じプロジェクトを開けばすぐ続きから。iCloudで同期されるのは編集データとLUTのみで、動画ファイルはデバイスに残ります。旅から帰ったらAirPlayでリビングのテレビに映し、家族や友人とソファに並んで一緒に選び切り。',
                 points: [
                     '編集データとLUTをiCloudで同期（動画はデバイスに保持）',
                     'Handoffで別デバイスに即座に引き継ぎ',
@@ -524,7 +524,7 @@ window.T = {
             {
                 eyebrow: 'HDR',
                 title: '完全なHDR対応。',
-                desc: '旅行先のHDR映像——空のハイライトも影のディテールもそのまま。多くのアプリはプレビューがフラット、書き出しでSDRに潰れる。Trimlyならプレビューから写真ライブラリまでHDRを維持——静止画、Live Photo、トランスコードも。',
+                desc: '旅行先のHDR映像。空のハイライトも影のディテールもそのまま。多くのアプリはプレビューがフラット、書き出しでSDRに潰れる。Trimlyならプレビューから写真ライブラリまでHDRを維持。静止画、Live Photo、トランスコードも。',
                 points: [
                     'XDRディスプレイで本物のHDRプレビュー',
                     '動画・Live Photoのパススルー書き出しでHDRメタデータを保持',
@@ -538,7 +538,7 @@ window.T = {
                 points: [
                     'Apple Log 2、GoPro・DJI・Insta360 → Rec. 709 LUTを内蔵',
                     'カスタム.cube LUTをインポート',
-                    'HDR LUTにも対応——SDR LUTと同様に読み込んで書き出し',
+                    'HDR LUTにも対応、SDR LUTと同様に読み込んで書き出し',
                 ],
             },
             {
@@ -554,7 +554,7 @@ window.T = {
             {
                 eyebrow: 'スピード',
                 title: '完全なキーボードワークフロー。',
-                desc: 'キーボードのほうがマウスより速い——仕事をした人ならわかるはず。再生・コマ送り・マーク・削除・取り消しまでショートカット対応。ファイルごとの履歴で一日分も手を止めずに。',
+                desc: 'キーボードのほうがマウスより速い。再生・コマ送り・マーク・削除・取り消しまでショートカット対応。ファイルごとの履歴で一日分も手を止めずに。',
                 points: [
                     '再生・シーク・フレーム単位の送り',
                     'キー操作でクリップのマークと削除',
@@ -573,7 +573,7 @@ window.T = {
             }],
         privacy: {
             heading: '設計段階からプライバシー重視。',
-            body: 'Trimlyはメディアを端末内で処理——アカウント、アップロード、広告なし。Trimly独自のサーバーはなく、ネットワーク通信はiCloudのみ。トラッキング、サードパーティSDKもなし。',
+            body: 'Trimlyはメディアを端末内で処理。アカウント、アップロード、広告なし。Trimly独自のサーバーはなく、ネットワーク通信はiCloudのみ。トラッキング、サードパーティSDKもなし。',
             tags: [
                 '端末内処理',
                 'iCloud同期',
@@ -596,7 +596,7 @@ window.T = {
             eyebrow: '法的事項',
             title: 'プライバシーポリシー',
             updated: '最終更新：2026年6月15日',
-            intro: 'Trimlyはメディアを端末内で処理します——映像はiPhone、iPad、Macに留まります。iCloudで同期されるのは編集データとLUTのみで、動画ファイルはアップロードされません。本ポリシーでは、それがあなたのプライバシーにとって何を意味するかを平易に説明します。',
+            intro: 'Trimlyはメディアを端末内で処理します。映像はiPhone、iPad、Macに留まります。iCloudで同期されるのは編集データとLUTのみで、動画ファイルはアップロードされません。本ポリシーでは、それがあなたのプライバシーにとって何を意味するかを平易に説明します。',
             contactLabel: 'プライバシーに関するご質問は',
             sections: [
                 {
@@ -605,7 +605,7 @@ window.T = {
                 },
                 {
                     h: 'iCloud同期',
-                    p: 'TrimlyはTrimlyのサーバーや第三者サービスに接続しません。ネットワーク通信はiCloud同期のみ——有効にすると、AppleのiCloud経由で編集データとLUTをデバイス間に同期します。動画・音声ファイルはアップロードも同期もされません。同期データはAppleのiCloud利用規約とプライバシーポリシーの対象となります。',
+                    p: 'TrimlyはTrimlyのサーバーや第三者サービスに接続しません。ネットワーク通信はiCloud同期のみです。有効にすると、AppleのiCloud経由で編集データとLUTをデバイス間に同期します。動画・音声ファイルはアップロードも同期もされません。同期データはAppleのiCloud利用規約とプライバシーポリシーの対象となります。',
                 },
                 {
                     h: 'ファイルと写真へのアクセス',
@@ -628,8 +628,8 @@ window.T = {
     },
     ko: {
         langLabel: '한국어',
-        indexTitle: 'Trimly — 최고의 순간을 사진 보관함으로 바로.',
-        privacyTitle: '개인정보 처리방침 — Trimly',
+        indexTitle: 'Trimly | 최고의 순간을 사진 보관함으로 바로.',
+        privacyTitle: '개인정보 처리방침 | Trimly',
         nav: {
             features: '기능',
             download: '다운로드',
@@ -701,7 +701,7 @@ window.T = {
             {
                 eyebrow: '캡처',
                 title: '프레임과 Live Photo.',
-                desc: '타임라인에 인·아웃 포인트 표시——잘못 표시하면 실행 취소. 「서약」「석양」 등 태그 추가. 프레임 단위 또는 5초 점프로 점프 직전 미소, 파도 최고점에 고정. 영화·애니 명장면을 정지 이미지나 Live Photo로. 트랜스코딩 없이 회전.',
+                desc: '타임라인에 인·아웃 포인트를 표시합니다. 잘못 표시하면 실행 취소. 「서약」「석양」 등 태그 추가. 프레임 단위 또는 5초 점프로 점프 직전 미소, 파도 최고점에 고정. 영화·애니 명장면을 정지 이미지나 Live Photo로. 트랜스코딩 없이 회전.',
                 points: [
                     '인·아웃 포인트와 실행 취소, 태그 추가',
                     '프레임 단위 조정 또는 5초 점프',
@@ -712,7 +712,7 @@ window.T = {
             {
                 eyebrow: '연속성',
                 title: '기기를 바꿔도 진행 상황 그대로.',
-                desc: '이동 중 iPhone으로 대략 자르다가 — 집에 와 Mac을 열면 바로 이어서. iCloud로는 편집 기록과 LUT만 동기화되고, 동영상 파일은 기기에 그대로 남습니다. 여행에서 돌아왔다면 AirPlay로 거실 TV에 띄워 가족·친구와 소파에 앉아 함께 골라 자르세요.',
+                desc: '이동 중 iPhone으로 대략 자르다가 집에 와 Mac을 열면 바로 이어서. iCloud로는 편집 기록과 LUT만 동기화되고, 동영상 파일은 기기에 그대로 남습니다. 여행에서 돌아왔다면 AirPlay로 거실 TV에 띄워 가족·친구와 소파에 앉아 함께 골라 자르세요.',
                 points: [
                     '편집 기록 & LUT를 iCloud로 동기화 (동영상은 기기에 유지)',
                     'Handoff로 다른 기기에서 즉시 이어가기',
@@ -721,7 +721,7 @@ window.T = {
             },
             {
                 eyebrow: '보내기',
-                title: '패스스루보내기 — 필요하면 여러 단계 트랜스코딩도.',
+                title: '패스스루보내기, 필요하면 여러 단계 트랜스코딩도.',
                 desc: '원본이 500MB든 50GB든 패스스루 내보내기는 거의 즉시, 화질 그대로. 원본이 너무 크면 트랜스코딩 단계를 골라 용량을 줄이세요. 키워드를 붙이면 사진에서 검색 가능.',
                 points: [
                     '패스스루보내기: 화질 손실 없음, 기다림 없음',
@@ -732,7 +732,7 @@ window.T = {
             {
                 eyebrow: 'HDR',
                 title: '완벽한 HDR 지원',
-                desc: '여행 중 HDR 영상 — 하늘 하이라이트와 그림자 디테일 그대로. 대부분 앱은 미리보기가 밋밋하고 내보내면 SDR로 눌림. Trimly는 미리보기부터 사진 보관함까지 HDR 유지 — 정지, Live Photo, 트랜스코딩도.',
+                desc: '여행 중 HDR 영상. 하늘 하이라이트와 그림자 디테일 그대로. 대부분 앱은 미리보기가 밋밋하고 내보내면 SDR로 눌림. Trimly는 미리보기부터 사진 보관함까지 HDR 유지. 정지, Live Photo, 트랜스코딩도.',
                 points: [
                     'XDR 디스플레이에서 진짜 HDR 미리보기',
                     '동영상·Live Photo 패스스루 내보내기로 HDR 메타데이터 보존',
@@ -746,7 +746,7 @@ window.T = {
                 points: [
                     'Apple Log 2, GoPro, DJI, Insta360용 Rec. 709 LUT 내장',
                     '사용자 정의 .cube LUT 가져오기',
-                    'HDR LUT 지원 — SDR LUT처럼 불러와 내보내기',
+                    'HDR LUT 지원, SDR LUT처럼 불러와 내보내기',
                 ],
             },
             {
@@ -781,7 +781,7 @@ window.T = {
             }],
         privacy: {
             heading: '설계 단계부터의 프라이버시.',
-            body: 'Trimly는 미디어를 기기에서 로컬 처리——계정, 업로드, 광고 없음. Trimly 자체 서버 없음, 네트워크는 iCloud로만. 추적, 서드파티 SDK 없음.',
+            body: 'Trimly는 미디어를 기기에서 로컬로 처리. 계정, 업로드, 광고 없음. Trimly 자체 서버 없음, 네트워크는 iCloud로만. 추적, 서드파티 SDK 없음.',
             tags: [
                 '기기 내 처리',
                 'iCloud 동기화',
@@ -804,7 +804,7 @@ window.T = {
             eyebrow: '법적 고지',
             title: '개인정보 처리방침',
             updated: '최종 업데이트: 2026년 6월 15일',
-            intro: 'Trimly는 미디어를 기기에서 로컬로 처리합니다——촬영본은 iPhone, iPad, Mac에 그대로 둡니다. iCloud로는 편집 기록과 LUT만 동기화되며, 동영상 파일은 업로드되지 않습니다. 이 방침은 그것이 프라이버시에 무엇을 의미하는지 쉬운 말로 설명합니다.',
+            intro: 'Trimly는 미디어를 기기에서 로컬로 처리합니다. 촬영본은 iPhone, iPad, Mac에 그대로 둡니다. iCloud로는 편집 기록과 LUT만 동기화되며, 동영상 파일은 업로드되지 않습니다. 이 방침은 그것이 프라이버시에 무엇을 의미하는지 쉬운 말로 설명합니다.',
             contactLabel: '프라이버시 문의는',
             sections: [
                 {
@@ -813,7 +813,7 @@ window.T = {
                 },
                 {
                     h: 'iCloud 동기화',
-                    p: 'Trimly는 Trimly 서버나 제3자 서비스에 연결하지 않습니다. 유일한 네트워크 활동은 iCloud 동기화——활성화하면 Apple iCloud를 통해 편집 기록과 LUT를 기기 간에 동기화합니다. 동영상·오디오 파일은 업로드되거나 동기화되지 않습니다. 동기화 데이터는 Apple iCloud 약관 및 개인정보 처리방침의 적용을 받습니다.',
+                    p: 'Trimly는 Trimly 서버나 제3자 서비스에 연결하지 않습니다. 유일한 네트워크 활동은 iCloud 동기화입니다. 활성화하면 Apple iCloud를 통해 편집 기록과 LUT를 기기 간에 동기화합니다. 동영상·오디오 파일은 업로드되거나 동기화되지 않습니다. 동기화 데이터는 Apple iCloud 약관 및 개인정보 처리방침의 적용을 받습니다.',
                 },
                 {
                     h: '파일 및 사진 접근',
@@ -836,8 +836,8 @@ window.T = {
     },
     es: {
         langLabel: 'Español',
-        indexTitle: 'Trimly — Tus mejores momentos, directo a tu biblioteca de Fotos.',
-        privacyTitle: 'Política de privacidad — Trimly',
+        indexTitle: 'Trimly | Tus mejores momentos, directo a tu biblioteca de Fotos.',
+        privacyTitle: 'Política de privacidad | Trimly',
         nav: {
             features: 'Funciones',
             download: 'Descargar',
@@ -902,7 +902,7 @@ window.T = {
             {
                 eyebrow: 'Marcas de tiempo',
                 title: 'Cada clip llega a Fotos justo donde corresponde.',
-                desc: 'Grabaste todo el concierto en un solo vídeo largo. Con Trimly, extrae clips destacados — cada uno lleva la hora real del momento. Un clip de playa por la tarde no irá antes del desayuno. GPS, cámara y lente se conservan en los detalles.',
+                desc: 'Grabaste todo el concierto en un solo vídeo largo. Con Trimly, extrae clips destacados: cada uno lleva la hora real del momento. Un clip de playa por la tarde no irá antes del desayuno. GPS, cámara y lente se conservan en los detalles.',
                 points: [
                     'La hora refleja el instante real en la línea de tiempo',
                     'Los clips se ordenan naturalmente con tus otras fotos y vídeos',
@@ -912,9 +912,9 @@ window.T = {
             {
                 eyebrow: 'Captura',
                 title: 'Fotogramas y Live Photos.',
-                desc: 'Marca entrada y salida en la línea de tiempo — deshaz si te equivocas. Etiqueta clips como «Votos» o «Atardecer». Fotograma a fotograma o salto de 5 s — congela la sonrisa o el pico de una ola. Guarda una escena de película o anime como fija o Live Photo. Rota sin transcodificar.',
+                desc: 'Marca entrada y salida en la línea de tiempo; deshaz si te equivocas. Etiqueta clips como «Votos» o «Atardecer». Fotograma a fotograma o salto de 5 s: congela la sonrisa o el pico de una ola. Guarda una escena de película o anime como fija o Live Photo. Rota sin transcodificar.',
                 points: [
-                    'Entrada/salida con deshacer — etiqueta clips al recortar',
+                    'Entrada/salida con deshacer; etiqueta clips al recortar',
                     'Ajuste fotograma a fotograma o salto de 5 s',
                     'Captura cualquier fotograma o Live Photo desde vídeo',
                     'Rota el material sin transcodificar',
@@ -923,17 +923,17 @@ window.T = {
             {
                 eyebrow: 'Continuidad',
                 title: 'Cambia de dispositivo sin perder el hilo.',
-                desc: 'Recorta a grosso modo en el iPhone de camino — en casa, abre el mismo proyecto en el Mac y sigue justo donde lo dejaste. Por iCloud solo se sincronizan los registros de edición y los LUTs; los archivos de vídeo se quedan en tu dispositivo. ¿Vuelves de un viaje? Con AirPlay en la tele del salón, recorta junto a familia y amigos en el sofá.',
+                desc: 'Recorta a grosso modo en el iPhone de camino. En casa, abre el mismo proyecto en el Mac y sigue justo donde lo dejaste. Por iCloud solo se sincronizan los registros de edición y los LUTs; los archivos de vídeo se quedan en tu dispositivo. ¿Vuelves de un viaje? Con AirPlay en la tele del salón, recorta junto a familia y amigos en el sofá.',
                 points: [
                     'Registros de edición y LUTs sincronizados por iCloud (vídeos en el dispositivo)',
-                    'Handoff — continúa al instante en otro dispositivo',
+                    'Handoff: continúa al instante en otro dispositivo',
                     'AirPlay de lo mejor a la tele',
                 ],
             },
             {
                 eyebrow: 'Exportar',
-                title: 'Exportación en passthrough — o transcodifica para ahorrar espacio.',
-                desc: '500 MB o 50 GB — la exportación en passthrough es casi instantánea, calidad idéntica. ¿Original demasiado pesado para tu teléfono o iCloud? Elige un nivel de transcodificación. Etiqueta clips con palabras clave y búscalos en Fotos.',
+                title: 'Exportación en passthrough, o transcodifica para ahorrar espacio.',
+                desc: '500 MB o 50 GB: la exportación en passthrough es casi instantánea, calidad idéntica. ¿Original demasiado pesado para tu teléfono o iCloud? Elige un nivel de transcodificación. Etiqueta clips con palabras clave y búscalos en Fotos.',
                 points: [
                     'Exportación en passthrough: sin pérdida de calidad, sin esperas',
                     'Un clip corto de un archivo de varias horas en segundos',
@@ -943,7 +943,7 @@ window.T = {
             {
                 eyebrow: 'HDR',
                 title: 'Soporte HDR completo.',
-                desc: 'Metraje HDR de un viaje — reflejos en el cielo y detalle en las sombras. La mayoría aplasta el HDR al exportar. En Trimly se mantiene de la vista previa a Fotos: clips, fotos fijas, Live Photos y transcodificación.',
+                desc: 'Metraje HDR de un viaje: reflejos en el cielo y detalle en las sombras. La mayoría aplasta el HDR al exportar. En Trimly se mantiene de la vista previa a Fotos: clips, fotos fijas, Live Photos y transcodificación.',
                 points: [
                     'Vista previa HDR real en pantallas XDR',
                     'Exportación en passthrough de vídeo y Live Photo con metadatos HDR intactos',
@@ -953,17 +953,17 @@ window.T = {
             {
                 eyebrow: 'Color',
                 title: 'Gradación con LUT, integrada.',
-                desc: 'El metraje Log de iPhone, GoPro, DJI o Insta360 se ve plano fuera de un editor pro. Trimly incluye LUT Rec. 709 para Apple Log 2 y cámaras de acción populares.<a class="fn-ref" href="#lut-disclaimer" aria-label="Aviso legal">*</a> Aplícalas al recortar — la vista previa coincide con la exportación. Carga tus .cube también.',
+                desc: 'El metraje Log de iPhone, GoPro, DJI o Insta360 se ve plano fuera de un editor pro. Trimly incluye LUT Rec. 709 para Apple Log 2 y cámaras de acción populares.<a class="fn-ref" href="#lut-disclaimer" aria-label="Aviso legal">*</a> Aplícalas al recortar; la vista previa coincide con la exportación. Carga tus .cube también.',
                 points: [
                     'LUT Rec. 709 incluidas para Apple Log 2, GoPro, DJI e Insta360',
                     'Importa LUT .cube personalizadas',
-                    'LUT HDR compatibles — carga y exporta igual que las LUT SDR',
+                    'LUT HDR compatibles; carga y exporta igual que las LUT SDR',
                 ],
             },
             {
                 eyebrow: 'Audio',
                 title: 'Archivos de audio con formas de onda reales.',
-                desc: '¿Una frase memorable en un pódcast o una entrevista que recortar? Suelta el audio en Trimly — aparece la forma de onda. Alinea el habla y corta silencios. Sin un editor de audio pesado.',
+                desc: '¿Una frase memorable en un pódcast o una entrevista que recortar? Suelta el audio en Trimly y aparece la forma de onda. Alinea el habla y corta silencios. Sin un editor de audio pesado.',
                 points: [
                     'Importación y recorte de audio puro',
                     'Visualización de forma de onda generada automáticamente',
@@ -973,7 +973,7 @@ window.T = {
             {
                 eyebrow: 'Velocidad',
                 title: 'Un flujo de trabajo completo con teclado.',
-                desc: 'Nada supera al teclado. Reproducir, pausar, fotograma a fotograma, marcar, borrar, deshacer — todo con atajos. Cada archivo mantiene su historial para un día entero de metraje.',
+                desc: 'Nada supera al teclado. Reproducir, pausar, fotograma a fotograma, marcar, borrar, deshacer: todo con atajos. Cada archivo mantiene su historial para un día entero de metraje.',
                 points: [
                     'Reproducir, buscar y avanzar fotograma a fotograma',
                     'Marca clips y elimínalos con una tecla',
@@ -992,7 +992,7 @@ window.T = {
             }],
         privacy: {
             heading: 'Privacidad por diseño.',
-            body: 'Trimly procesa tu metraje en el dispositivo — sin cuenta, subidas ni anuncios. Trimly no tiene servidores propios; la actividad de red va solo a iCloud. Sin seguimiento ni SDK de terceros.',
+            body: 'Trimly procesa tu metraje en el dispositivo, sin cuenta, subidas ni anuncios. Trimly no tiene servidores propios; la actividad de red va solo a iCloud. Sin seguimiento ni SDK de terceros.',
             tags: [
                 'Procesamiento local',
                 'Sincronización iCloud',
@@ -1015,7 +1015,7 @@ window.T = {
             eyebrow: 'Legal',
             title: 'Política de privacidad',
             updated: 'Última actualización: 15 de junio de 2026',
-            intro: 'Trimly procesa tu metraje en el dispositivo — tus archivos permanecen en tu iPhone, iPad o Mac. Los registros de edición y LUTs pueden sincronizarse entre tus dispositivos Apple mediante iCloud; los archivos de vídeo nunca se suben. Esta política explica, en términos sencillos, qué significa eso para tu privacidad.',
+            intro: 'Trimly procesa tu metraje en el dispositivo. Tus archivos permanecen en tu iPhone, iPad o Mac. Los registros de edición y LUTs pueden sincronizarse entre tus dispositivos Apple mediante iCloud; los archivos de vídeo nunca se suben. Esta política explica, en términos sencillos, qué significa eso para tu privacidad.',
             contactLabel: '¿Preguntas sobre privacidad? Escríbenos a',
             sections: [
                 {
@@ -1047,8 +1047,8 @@ window.T = {
     },
     ar: {
         langLabel: 'العربية',
-        indexTitle: 'Trimly — أفضل لحظاتك، مباشرةً إلى مكتبة الصور.',
-        privacyTitle: 'سياسة الخصوصية — Trimly',
+        indexTitle: 'Trimly | أفضل لحظاتك، مباشرةً إلى مكتبة الصور.',
+        privacyTitle: 'سياسة الخصوصية | Trimly',
         nav: {
             features: 'المميزات',
             download: 'حمِّل',
@@ -1111,7 +1111,7 @@ window.T = {
             {
                 eyebrow: 'الطوابع الزمنية',
                 title: 'كل مقطع يظهر في الصور في مكانه الصحيح تماماً.',
-                desc: 'صوّرت حفلاً كاملاً في فيديو طويل واحد. مع Trimly، استخرج المقاطع المميزة — كل مقطع يحمل وقت اللحظة الفعلية. مقطع الشاطئ بعد الظهر لن يسبق فطور الصباح. GPS والجهاز والعدسة تبقى في التفاصيل.',
+                desc: 'صوّرت حفلاً كاملاً في فيديو طويل واحد. مع Trimly، استخرج المقاطع المميزة، كل مقطع يحمل وقت اللحظة الفعلية. مقطع الشاطئ بعد الظهر لن يسبق فطور الصباح. GPS والجهاز والعدسة تبقى في التفاصيل.',
                 points: [
                     'تاريخ الإنشاء يعكس اللحظة الفعلية في الخط الزمني',
                     'ترتيب طبيعي إلى جانب باقي الصور والفيديوهات',
@@ -1121,9 +1121,9 @@ window.T = {
             {
                 eyebrow: 'التقاط',
                 title: 'الإطارات وLive Photo.',
-                desc: 'حدّد نقاط البداية والنهاية على المخطط الزمني — تراجع إن أخطأت. أضف وسوماً مثل «النذور» أو «الغروب». ضبط إطار بإطار أو قفزة 5 ثوانٍ — ثبّت على الابتسامة أو ذروة الموج. احفظ مشهداً من فيلم أو مسلسل كصورة أو Live Photo. دوران دون إعادة ترميز.',
+                desc: 'حدّد نقاط البداية والنهاية على المخطط الزمني؛ تراجع إن أخطأت. أضف وسوماً مثل «النذور» أو «الغروب». ضبط إطار بإطار أو قفزة 5 ثوانٍ، وثبّت على الابتسامة أو ذروة الموج. احفظ مشهداً من فيلم أو مسلسل كصورة أو Live Photo. دوران دون إعادة ترميز.',
                 points: [
-                    'نقاط البداية/النهاية مع تراجع — وسوم للمقاطع',
+                    'نقاط البداية/النهاية مع تراجع، وسوم للمقاطع',
                     'ضبط إطار بإطار أو قفزة 5 ثوانٍ',
                     'التقاط أي إطار أو Live Photo من الفيديو',
                     'تدوير المادة دون إعادة ترميز',
@@ -1132,17 +1132,17 @@ window.T = {
             {
                 eyebrow: 'الاستمرارية',
                 title: 'بدّل الجهاز دون فقدان تقدّمك.',
-                desc: 'اقصّ بسرعة على iPhone في الطريق — عد للمنزل وافتح نفس المشروع على Mac وتابع من حيث توقفت. عبر iCloud تُزامَن سجلات التحرير وملفات LUT فقط، بينما تبقى ملفات الفيديو على الجهاز. عدت من رحلة؟ اعرض عبر AirPlay على تلفاز غرفة المعيشة واقصّ مع العائلة والأصدقاء على الأريكة.',
+                desc: 'اقصّ بسرعة على iPhone في الطريق. عد للمنزل وافتح نفس المشروع على Mac وتابع من حيث توقفت. عبر iCloud تُزامَن سجلات التحرير وملفات LUT فقط، بينما تبقى ملفات الفيديو على الجهاز. عدت من رحلة؟ اعرض عبر AirPlay على تلفاز غرفة المعيشة واقصّ مع العائلة والأصدقاء على الأريكة.',
                 points: [
                     'مزامنة سجلات التحرير وLUT عبر iCloud (الفيديو يبقى على الجهاز)',
-                    'Handoff — تابع فوراً على جهاز آخر',
+                    'Handoff: تابع فوراً على جهاز آخر',
                     'AirPlay للّقطات على التلفاز',
                 ],
             },
             {
                 eyebrow: 'تصدير',
-                title: 'تصدير مباشر — أو إعادة ترميز لتوفير المساحة.',
-                desc: '500 م.ب أو 50 ج.ب — التصدير المباشر شبه فوري بجودة مطابقة. الأصل ثقيل على الجوال أو iCloud؟ اختر مستوى إعادة ترميز. أضف كلمات مفتاحية للبحث في الصور.',
+                title: 'تصدير مباشر أو إعادة ترميز لتوفير المساحة.',
+                desc: '500 م.ب أو 50 ج.ب: التصدير المباشر شبه فوري بجودة مطابقة. الأصل ثقيل على الجوال أو iCloud؟ اختر مستوى إعادة ترميز. أضف كلمات مفتاحية للبحث في الصور.',
                 points: [
                     'تصدير مباشر: لا خسارة في الجودة، لا انتظار',
                     'مقطع قصير من ساعات طويلة في ثوانٍ',
@@ -1152,7 +1152,7 @@ window.T = {
             {
                 eyebrow: 'HDR',
                 title: 'دعم HDR كامل',
-                desc: 'لقطات HDR من رحلة — سماء مشرقة وتفاصيل في الظلال. معظم المحررات تمسح HDR عند التصدير. في Trimly يبقى من المعاينة إلى الصور: المقاطع والصور وLive Photo وإعادة الترميز.',
+                desc: 'لقطات HDR من رحلة: سماء مشرقة وتفاصيل في الظلال. معظم المحررات تمسح HDR عند التصدير. في Trimly يبقى من المعاينة إلى الصور: المقاطع والصور وLive Photo وإعادة الترميز.',
                 points: [
                     'معاينة HDR حقيقية على شاشات XDR',
                     'تصدير مباشر للفيديو وLive Photo مع الحفاظ على بيانات HDR',
@@ -1162,17 +1162,17 @@ window.T = {
             {
                 eyebrow: 'الألوان',
                 title: 'تدريج ألوان LUT مدمج.',
-                desc: 'لقطات Log من iPhone أو GoPro أو DJI أو Insta360 تبدو باهتة خارج محرر احترافي. Trimly يتضمن LUT Rec. 709 لـ Apple Log 2 وكاميرات الحركة الشائعة.<a class="fn-ref" href="#lut-disclaimer" aria-label="إخلاء مسؤولية قانوني">*</a> طبّقها أثناء القص — المعاينة تطابق التصدير. حمّل ملفات .cube أيضاً.',
+                desc: 'لقطات Log من iPhone أو GoPro أو DJI أو Insta360 تبدو باهتة خارج محرر احترافي. Trimly يتضمن LUT Rec. 709 لـ Apple Log 2 وكاميرات الحركة الشائعة.<a class="fn-ref" href="#lut-disclaimer" aria-label="إخلاء مسؤولية قانوني">*</a> طبّقها أثناء القص، والمعاينة تطابق التصدير. حمّل ملفات .cube أيضاً.',
                 points: [
                     'LUT مدمجة: Apple Log 2 وGoPro وDJI وInsta360 → Rec. 709',
                     'استيراد ملفات .cube LUT المخصصة',
-                    'LUT متوافقة مع HDR — تحميل وتصدير مثل LUT العادية',
+                    'LUT متوافقة مع HDR، تحميل وتصدير مثل LUT العادية',
                 ],
             },
             {
                 eyebrow: 'الصوت',
                 title: 'ملفات الصوت، مع أشكال موجية حقيقية.',
-                desc: 'اقتباس رائع في بودكاست أو مقابلة تريد اختصارها؟ اسحب الملف الصوتي إلى Trimly — يظهر الشكل الموجي. محاذِ الكلام واقصِ الصمت. دون محرر صوت ثقيل.',
+                desc: 'اقتباس رائع في بودكاست أو مقابلة تريد اختصارها؟ اسحب الملف الصوتي إلى Trimly ويظهر الشكل الموجي. محاذِ الكلام واقصِ الصمت. دون محرر صوت ثقيل.',
                 points: [
                     'دعم استيراد وقص الصوت الخالص',
                     'توليد تلقائي للشكل الموجي',
@@ -1182,7 +1182,7 @@ window.T = {
             {
                 eyebrow: 'السرعة',
                 title: 'سير عمل متكامل عبر لوحة المفاتيح.',
-                desc: 'لوحة المفاتيح أسرع من الفأرة. تشغيل، إيقاف، إطار بإطار، تحديد، حذف، تراجع — كلها باختصارات. كل ملف يحتفظ بسجله ليوم كامل من اللقطات.',
+                desc: 'لوحة المفاتيح أسرع من الفأرة. تشغيل، إيقاف، إطار بإطار، تحديد، حذف، تراجع: كلها باختصارات. كل ملف يحتفظ بسجله ليوم كامل من اللقطات.',
                 points: [
                     'التشغيل والانتقال والتقدم إطاراً بإطار',
                     'تحديد المقاطع وحذفها بضغطة مفتاح',
@@ -1211,7 +1211,7 @@ window.T = {
             }],
         privacy: {
             heading: 'خصوصية بالتصميم.',
-            body: 'Trimly يعالج وسائطك على الجهاز — بدون حساب أو رفع أو إعلانات. لا خوادم خاصة بـ Trimly — نشاط الشبكة يذهب إلى iCloud فقط. بدون تتبع أو SDKs لطرف ثالث.',
+            body: 'Trimly يعالج وسائطك على الجهاز، بدون حساب أو رفع أو إعلانات. لا خوادم خاصة بـ Trimly؛ نشاط الشبكة يذهب إلى iCloud فقط. بدون تتبع أو SDKs لطرف ثالث.',
             tags: [
                 'معالجة على الجهاز',
                 'مزامنة iCloud',
@@ -1234,7 +1234,7 @@ window.T = {
             eyebrow: 'قانوني',
             title: 'سياسة الخصوصية',
             updated: 'آخر تحديث: 15 يونيو 2026',
-            intro: 'Trimly يعالج وسائطك على جهازك — تبقى لقطاتك على iPhone أو iPad أو Mac. يمكن مزامنة سجلات التحرير وملفات LUT عبر iCloud بين أجهزة Apple؛ ملفات الفيديو لا تُرفَع أبداً. تشرح هذه السياسة، بلغة بسيطة، ما يعنيه ذلك لخصوصيتك.',
+            intro: 'Trimly يعالج وسائطك على جهازك. تبقى لقطاتك على iPhone أو iPad أو Mac. يمكن مزامنة سجلات التحرير وملفات LUT عبر iCloud بين أجهزة Apple؛ ملفات الفيديو لا تُرفَع أبداً. تشرح هذه السياسة، بلغة بسيطة، ما يعنيه ذلك لخصوصيتك.',
             contactLabel: 'لأي استفسار حول الخصوصية، تواصل معنا على',
             sections: [
                 {
