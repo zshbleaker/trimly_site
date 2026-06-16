@@ -22,8 +22,9 @@ window.T = {
                 {
                     id: 'travel',
                     title: 'Travel footage',
-                    desc: 'One long trip recording becomes separate clips. Trimly exports arrival, meals, '
-                        + 'and skyline to Photos in order.',
+                    desc: 'You keep the camera rolling all day and end up with one long unedited file. '
+                        + 'Trimly pulls out arrival, meals, and the night skyline as separate clips, '
+                        + 'exported to Photos in order.',
                 },
                 {
                     id: 'party',
@@ -232,7 +233,8 @@ window.T = {
                 {
                     id: 'travel',
                     title: '旅行随拍',
-                    desc: '一整天旅行录成一条长片。Trimly 拆出落地、吃饭、夜景等片段，按时间顺序导出到相册。',
+                    desc: '出游时相机一直开着，落地、吃饭、看夜景全录进一条长片里。'
+                        + 'Trimly 拆出几个独立片段，按真实时间顺序导出到相册。',
                 },
                 {
                     id: 'party',
@@ -439,8 +441,8 @@ window.T = {
                 {
                     id: 'travel',
                     title: '旅行の連続撮影',
-                    desc: '1本の旅行ロング動画から、到着・食事・夜景を個別クリップに切り出し、'
-                        + '順番のまま写真ライブラリへ。',
+                    desc: '旅先でカメラを止めずに撮り続け、到着・食事・夜景が1本の未編集ロングに。'
+                        + 'Trimlyなら個別クリップに切り出し、実際の順番のまま写真ライブラリへ。',
                 },
                 {
                     id: 'party',
@@ -647,8 +649,8 @@ window.T = {
                 {
                     id: 'travel',
                     title: '여행 연속 촬영',
-                    desc: '하루 종일 찍은 긴 여행 영상을 도착·식사·야경 클립으로 나눠 '
-                        + '순서대로 사진 보관함에보냅니다.',
+                    desc: '여행 중 카메라를 계속 켜 두면 도착, 식사, 야경이 하나의 긴 영상에 담깁니다. '
+                        + 'Trimly로 각각 클립으로 나눠 실제 순서대로 사진 보관함에보낼 수 있습니다.',
                 },
                 {
                     id: 'party',
@@ -855,8 +857,9 @@ window.T = {
                 {
                     id: 'travel',
                     title: 'Metraje de viaje',
-                    desc: 'Un solo vídeo largo del viaje. Trimly extrae llegada, comidas y paisaje nocturno '
-                        + 'como clips, exportados a Fotos en orden.',
+                    desc: 'Dejas la cámara grabando todo el día y acabas con un solo archivo largo sin editar. '
+                        + 'Trimly extrae la llegada, la comida y el paisaje nocturno como clips separados, '
+                        + 'exportados a Fotos en orden.',
                 },
                 {
                     id: 'party',
@@ -1065,8 +1068,9 @@ window.T = {
                 {
                     id: 'travel',
                     title: 'تصوير السفر',
-                    desc: 'يوم سفر كامل في ملف واحد. Trimly يستخرج الوصول والوجبات والمشهد الليلي '
-                        + 'كمقاطع منفصلة، مُصدَّرة إلى الصور بالترتيب.',
+                    desc: 'تُبقي الكاميرا تعمل طوال اليوم في الرحلة، فتنتهي بملف طويل واحد. '
+                        + 'Trimly يستخرج الوصول والوجبة والمشهد الليلي كمقاطع منفصلة، '
+                        + 'مُصدَّرة إلى الصور بالترتيب.',
                 },
                 {
                     id: 'party',
