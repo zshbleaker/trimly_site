@@ -10,7 +10,7 @@
 
     --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Noto Sans SC", "Noto Sans JP", Arial, sans-serif;
     --max-w: 1120px;
-    --hero-w: 1240px;
+    --hero-w: 1440px;
     --nav-height: 58px;
     --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
 
@@ -372,7 +372,7 @@ html[dir="rtl"] .lang-dropdown {
     margin: 0 auto;
     padding: 68px 28px 82px;
     display: grid;
-    grid-template-columns: minmax(420px, 0.95fr) minmax(0, 1.05fr);
+    grid-template-columns: minmax(380px, 0.72fr) minmax(0, 1.28fr);
     column-gap: clamp(28px, 3vw, 44px);
     row-gap: 28px;
     align-items: end;
@@ -463,6 +463,9 @@ html[dir="rtl"] .lang-dropdown {
 .hero-showcase {
     grid-column: 2;
     grid-row: 1;
+    width: 100%;
+    max-width: 920px;
+    justify-self: end;
     min-width: 0;
     padding: 18px;
     border-radius: 18px;
@@ -481,7 +484,8 @@ html[dir="rtl"] .lang-dropdown {
 
 .hero-shot {
     min-height: 0;
-    height: clamp(390px, 36vw, 500px);
+    aspect-ratio: 16 / 10;
+    height: auto;
 }
 
 .film-strip {
@@ -607,6 +611,12 @@ html[dir="rtl"] .lang-dropdown {
     object-fit: cover;
 }
 
+/* hero screenshot must always show the full image, centered — never cropped */
+.hero-shot.shot-frame img {
+    object-fit: contain;
+    object-position: center;
+}
+
 .shot-frame.is-missing img {
     display: none;
 }
@@ -642,31 +652,68 @@ html[dir="rtl"] .lang-dropdown {
 
 .use-cases {
     position: relative;
-    padding-top: 96px;
-    padding-bottom: 104px;
+    padding-top: 88px;
+    padding-bottom: 58px;
 }
 
 .use-case-grid {
     display: grid;
-    grid-template-columns: 132px minmax(0, 1fr);
-    gap: 0 34px;
-    border-top: 1px solid var(--line);
+    grid-template-columns: 72px repeat(12, minmax(0, 1fr));
+    gap: 8px 22px;
+    border-top: 0;
 }
 
 .use-case-row {
     display: grid;
     grid-column: 1 / -1;
-    grid-template-columns: 132px minmax(0, 1fr);
-    gap: 0 30px;
-    padding: 22px 0 24px;
-    border-bottom: 1px solid rgba(68, 56, 42, 0.09);
+    justify-self: center;
+    width: calc(100% - 44px);
+    grid-template-columns: 72px repeat(12, minmax(0, 1fr));
+    min-height: 112px;
+    padding: 18px 0 20px;
+    border-top: 1px solid rgba(68, 56, 42, 0.10);
+    border-bottom: 1px solid rgba(68, 56, 42, 0.08);
+    align-items: center;
+    transform: translateX(var(--case-shift, 0)) rotate(var(--case-tilt, 0deg));
+    transform-origin: center;
+}
+
+.use-case-row:nth-child(1) {
+    --case-tilt: -1.05deg;
+    --case-shift: -10px;
+}
+
+.use-case-row:nth-child(2) {
+    --case-tilt: 0.72deg;
+    --case-shift: 16px;
+    min-height: 96px;
+}
+
+.use-case-row:nth-child(3) {
+    --case-tilt: -0.48deg;
+    --case-shift: 2px;
+    min-height: 126px;
+}
+
+.use-case-row:nth-child(4) {
+    --case-tilt: 1.08deg;
+    --case-shift: -16px;
+}
+
+.use-case-row:nth-child(5) {
+    --case-tilt: -0.82deg;
+    --case-shift: 18px;
 }
 
 .use-case-row:last-child {
     border-bottom: 0;
+    padding-bottom: 8px;
 }
 
 .case-index {
+    grid-column: 1;
+    align-self: start;
+    padding-top: 10px;
     color: var(--accent-3);
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 13px;
@@ -674,13 +721,15 @@ html[dir="rtl"] .lang-dropdown {
 }
 
 .case-copy {
+    grid-column: 3 / -1;
     display: grid;
-    grid-template-columns: minmax(220px, 0.48fr) minmax(260px, 0.52fr);
-    gap: 32px;
-    align-items: baseline;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 0 22px;
+    align-items: center;
 }
 
 .case-copy h3 {
+    grid-column: 1 / 5;
     color: var(--text-primary);
     max-width: 560px;
     font-size: clamp(22px, 2.25vw, 30px);
@@ -690,11 +739,56 @@ html[dir="rtl"] .lang-dropdown {
 }
 
 .case-copy p {
+    grid-column: 7 / 13;
     max-width: 520px;
     color: var(--text-secondary);
     font-size: 16px;
     line-height: 1.52;
     text-wrap: pretty;
+}
+
+.use-case-row:nth-child(2) .case-copy {
+    grid-column: 4 / -1;
+}
+
+.use-case-row:nth-child(2) .case-copy h3 {
+    grid-column: 1 / 5;
+}
+
+.use-case-row:nth-child(2) .case-copy p {
+    grid-column: 6 / 12;
+}
+
+.use-case-row:nth-child(3) .case-copy {
+    grid-column: 2 / -2;
+}
+
+.use-case-row:nth-child(3) .case-copy h3 {
+    grid-column: 2 / 6;
+}
+
+.use-case-row:nth-child(3) .case-copy p {
+    grid-column: 7 / 12;
+}
+
+.use-case-row:nth-child(4) .case-copy h3 {
+    grid-column: 1 / 5;
+}
+
+.use-case-row:nth-child(4) .case-copy p {
+    grid-column: 8 / 13;
+}
+
+.use-case-row:nth-child(5) .case-copy {
+    grid-column: 4 / -2;
+}
+
+.use-case-row:nth-child(5) .case-copy h3 {
+    grid-column: 1 / 6;
+}
+
+.use-case-row:nth-child(5) .case-copy p {
+    grid-column: 7 / 12;
 }
 
 /* === PROOFS === */
@@ -1135,6 +1229,12 @@ footer {
         grid-row: auto;
     }
 
+    .hero-showcase {
+        width: 100%;
+        max-width: 920px;
+        justify-self: center;
+    }
+
     .hero::before {
         display: none;
     }
@@ -1152,6 +1252,25 @@ footer {
     .use-case-row,
     .case-copy {
         gap: 14px;
+    }
+
+    .use-case-row:nth-child(n) {
+        min-height: auto;
+        width: 100%;
+        justify-self: stretch;
+        transform: none;
+    }
+
+    .case-index,
+    .use-case-row:nth-child(n) .case-copy,
+    .use-case-row:nth-child(n) .case-copy h3,
+    .use-case-row:nth-child(n) .case-copy p {
+        grid-column: 1;
+        transform: none;
+    }
+
+    .case-index {
+        padding-top: 0;
     }
 
     .use-case-grid,
@@ -1184,10 +1303,6 @@ footer {
     .hero h1 {
         max-width: 760px;
         font-size: clamp(40px, 6vw, 54px);
-    }
-
-    .hero-shot {
-        height: clamp(320px, 48vw, 420px);
     }
 
     .proof-shot {
@@ -1260,11 +1375,6 @@ footer {
         padding: 10px;
     }
 
-    .hero-shot {
-        min-height: 0;
-        height: 280px;
-    }
-
     .proof-shot {
         min-height: 280px;
     }
@@ -1286,7 +1396,7 @@ footer {
 
     .use-cases {
         padding-top: 48px;
-        padding-bottom: 48px;
+        padding-bottom: 34px;
     }
 
     .use-case-grid {
@@ -1351,11 +1461,6 @@ footer {
 
     .hero-cta {
         width: 100%;
-    }
-
-    .hero-shot {
-        min-height: 0;
-        height: 240px;
     }
 
     .proof-shot {

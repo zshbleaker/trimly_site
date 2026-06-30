@@ -46,7 +46,7 @@ window.T = {
           "Passthrough, compressed, and balanced exports",
           "Save to Photos or Files",
         ],
-        shot: "timeline-iphone",
+        shot: "source-file-clips",
       },
       {
         title: "Clips land where they belong in Photos.",
@@ -55,7 +55,7 @@ window.T = {
           "Writes the actual moment on export",
           "Keeps GPS and device metadata",
         ],
-        shot: "photos-result-iphone",
+        shot: "photos-metadata-export",
       },
       {
         title: "Mark on the go. Export at your desk.",
@@ -64,7 +64,7 @@ window.T = {
           "iCloud and Handoff for natural continuity",
           "AirPlay when you want everyone watching",
         ],
-        shot: "ipad-workspace",
+        shot: "cross-device-editing",
       },
       {
         title: "Made for each screen.",
@@ -74,7 +74,7 @@ window.T = {
           "iPad: a productivity workspace optimized for external keyboards and displays",
           "Mac: efficient work on a large screen and a real file system",
         ],
-        shot: "hero-editor",
+        shot: "device-workspaces",
         shotAlt: "Trimly editing interface across different devices",
       },
       {
@@ -85,7 +85,7 @@ window.T = {
           "LOG video with built-in recovery LUTs for popular cameras",
           "Audio-only files, including raw PCM",
         ],
-        shot: "audio-waveform-mac",
+        shot: "pro-media-pipeline",
         shotAlt: "Trimly audio waveform and export controls",
       },
     ],
@@ -182,13 +182,13 @@ window.T = {
           "从不转码到高度压缩，几个档位，都支持",
           "支持导出到系统相册或文件系统",
         ],
-        shot: "timeline-iphone",
+        shot: "source-file-clips",
       },
       {
         title: "在系统相册里井井有条",
         body: "每一个片段或 Live Photo，都能对上实际的时间和地点，相册里再也不会乱糟糟了",
         points: ["导出时写入真实时间", "保留 GPS 与设备信息"],
-        shot: "photos-result-iphone",
+        shot: "photos-metadata-export",
       },
       {
         title: "路上先标，回家细看",
@@ -197,7 +197,7 @@ window.T = {
           "iCloud + Handoff，符合直觉的同步策略",
           "AirPlay 投屏，与家人朋友一起看",
         ],
-        shot: "ipad-workspace",
+        shot: "cross-device-editing",
       },
       {
         title: "每台设备都是一等公民",
@@ -207,7 +207,7 @@ window.T = {
           "iPad：生产力，为外接键盘和显示器高度优化",
           "Mac：在大屏幕与真正的文件系统上高效操作",
         ],
-        shot: "hero-editor",
+        shot: "device-workspaces",
       },
       {
         title: "HDR、LOG、纯音频，全都支持",
@@ -217,7 +217,7 @@ window.T = {
           "支持 LOG 格式视频，并内置热门设备的还原 LUT",
           "支持纯音频文件，甚至包括 PCM 原始数据",
         ],
-        shot: "audio-waveform-mac",
+        shot: "pro-media-pipeline",
       },
     ],
     privacy: {
@@ -314,7 +314,7 @@ window.T = {
           "無変換、圧縮、バランス重視の書き出し",
           "写真アプリまたはファイルへ保存",
         ],
-        shot: "timeline-iphone",
+        shot: "source-file-clips",
       },
       {
         title: "写真アプリで迷子にならない。",
@@ -323,7 +323,7 @@ window.T = {
           "実際の撮影時刻を書き込み",
           "GPS とデバイス情報を保持",
         ],
-        shot: "photos-result-iphone",
+        shot: "photos-metadata-export",
       },
       {
         title: "外でマーク、家で仕上げ。",
@@ -332,7 +332,7 @@ window.T = {
           "iCloud と Handoff で自然に引き継ぎ",
           "AirPlay でみんなと一緒に確認",
         ],
-        shot: "ipad-workspace",
+        shot: "cross-device-editing",
       },
       {
         title: "画面ごとに、ちょうどいい操作感。",
@@ -342,7 +342,7 @@ window.T = {
           "iPad：外付けキーボードとディスプレイに最適化した生産的な作業環境",
           "Mac：大きな画面と本物のファイルシステムで効率よく操作",
         ],
-        shot: "hero-editor",
+        shot: "device-workspaces",
         shotAlt: "複数デバイスでの Trimly 編集画面",
       },
       {
@@ -353,7 +353,7 @@ window.T = {
           "LOG 動画と人気カメラ向け復元 LUT",
           "音声のみのファイル、PCM 生データにも対応",
         ],
-        shot: "audio-waveform-mac",
+        shot: "pro-media-pipeline",
         shotAlt: "Trimly の音声波形と書き出しコントロール",
       },
     ],
@@ -451,13 +451,13 @@ window.T = {
           "무변환, 압축, 균형형 내보내기",
           "사진 앱 또는 파일로 저장",
         ],
-        shot: "timeline-iphone",
+        shot: "source-file-clips",
       },
       {
         title: "사진 앱에서도 제자리로.",
         body: "클립과 Live Photo에 실제 시간과 장소를 담아, 나중에도 찾기 쉽게 정리됩니다.",
         points: ["실제 촬영 시각 기록", "GPS와 기기 정보 보존"],
-        shot: "photos-result-iphone",
+        shot: "photos-metadata-export",
       },
       {
         title: "밖에서 표시하고, 집에서 마무리.",
@@ -466,7 +466,7 @@ window.T = {
           "iCloud와 Handoff로 자연스럽게 이어가기",
           "AirPlay로 함께 보며 고르기",
         ],
-        shot: "ipad-workspace",
+        shot: "cross-device-editing",
       },
       {
         title: "각 화면에 맞는 사용감.",
@@ -476,7 +476,7 @@ window.T = {
           "iPad: 외장 키보드와 디스플레이에 최적화된 생산성 작업 공간",
           "Mac: 큰 화면과 실제 파일 시스템에서 효율적으로 작업",
         ],
-        shot: "hero-editor",
+        shot: "device-workspaces",
         shotAlt: "여러 기기에서 보이는 Trimly 편집 화면",
       },
       {
@@ -487,7 +487,7 @@ window.T = {
           "LOG 영상과 인기 카메라용 복원 LUT",
           "오디오 전용 파일과 PCM 원시 데이터 지원",
         ],
-        shot: "audio-waveform-mac",
+        shot: "pro-media-pipeline",
         shotAlt: "Trimly 오디오 파형과 내보내기 컨트롤",
       },
     ],
@@ -584,7 +584,7 @@ window.T = {
           "Exportación directa, comprimida o equilibrada",
           "Guarda en Fotos o en Archivos",
         ],
-        shot: "timeline-iphone",
+        shot: "source-file-clips",
       },
       {
         title: "Cada clip cae en su sitio en Fotos.",
@@ -593,7 +593,7 @@ window.T = {
           "Escribe el momento real al exportar",
           "Conserva GPS y datos del dispositivo",
         ],
-        shot: "photos-result-iphone",
+        shot: "photos-metadata-export",
       },
       {
         title: "Marca fuera. Termina en casa.",
@@ -602,7 +602,7 @@ window.T = {
           "iCloud y Handoff para continuar sin pensar",
           "AirPlay para verlo con más gente",
         ],
-        shot: "ipad-workspace",
+        shot: "cross-device-editing",
       },
       {
         title: "Hecho para cada pantalla.",
@@ -612,7 +612,7 @@ window.T = {
           "iPad: un espacio de productividad optimizado para teclado y pantalla externa",
           "Mac: trabajo eficiente en pantalla grande y con un sistema de archivos real",
         ],
-        shot: "hero-editor",
+        shot: "device-workspaces",
         shotAlt: "Interfaz de edición de Trimly en distintos dispositivos",
       },
       {
@@ -623,7 +623,7 @@ window.T = {
           "Vídeo LOG con LUTs de recuperación para cámaras populares",
           "Audio solo, incluso PCM sin procesar",
         ],
-        shot: "audio-waveform-mac",
+        shot: "pro-media-pipeline",
         shotAlt: "Forma de onda de audio y controles de exportación de Trimly",
       },
     ],
@@ -720,7 +720,7 @@ window.T = {
           "تصدير مباشر أو مضغوط أو متوازن",
           "الحفظ إلى الصور أو الملفات",
         ],
-        shot: "timeline-iphone",
+        shot: "source-file-clips",
       },
       {
         title: "كل مقطع في مكانه داخل الصور.",
@@ -729,7 +729,7 @@ window.T = {
           "كتابة لحظة التصوير الحقيقية",
           "الحفاظ على GPS وتفاصيل الجهاز",
         ],
-        shot: "photos-result-iphone",
+        shot: "photos-metadata-export",
       },
       {
         title: "علّم خارجاً. وأنهِ في البيت.",
@@ -738,7 +738,7 @@ window.T = {
           "iCloud وHandoff لاستمرار طبيعي",
           "AirPlay عندما تريد أن يشاهد الجميع",
         ],
-        shot: "ipad-workspace",
+        shot: "cross-device-editing",
       },
       {
         title: "مصمم لكل شاشة.",
@@ -748,7 +748,7 @@ window.T = {
           "iPad: مساحة إنتاجية محسّنة للوحة المفاتيح والشاشات الخارجية",
           "Mac: عمل فعّال على شاشة كبيرة ونظام ملفات حقيقي",
         ],
-        shot: "hero-editor",
+        shot: "device-workspaces",
         shotAlt: "واجهة تحرير Trimly على أجهزة مختلفة",
       },
       {
@@ -759,7 +759,7 @@ window.T = {
           "فيديو LOG مع LUT استعادة للكاميرات الشائعة",
           "ملفات صوت فقط، بما في ذلك PCM الخام",
         ],
-        shot: "audio-waveform-mac",
+        shot: "pro-media-pipeline",
         shotAlt: "موجة الصوت وعناصر التحكم في التصدير داخل Trimly",
       },
     ],
