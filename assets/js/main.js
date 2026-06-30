@@ -73,38 +73,11 @@ function getTranslation() {
 }
 
 function buildUseCases(t) {
-    if (t.useCases?.length) {
-        return t.useCases;
-    }
-
-    return (t.scenarios?.items || []).slice(0, 5).map(item => ({
-        label: item.title,
-        title: item.title,
-        body: item.desc,
-    }));
+    return t.useCases || [];
 }
 
 function buildProofSections(t) {
-    if (t.proofSections?.length) {
-        return t.proofSections;
-    }
-
-    const shots = ['timeline-iphone', 'photos-result-iphone', 'ipad-workspace', 'audio-waveform-mac'];
-    const picks = [0, 1, 3, 6];
-    return picks.map((featureIndex, i) => {
-        const feature = t.features?.[featureIndex] || t.features?.[i];
-        if (!feature) {
-            return null;
-        }
-        return {
-            eyebrow: feature.eyebrow,
-            title: feature.title,
-            body: feature.desc,
-            points: feature.points?.slice(0, 3) || [],
-            shot: shots[i],
-            shotAlt: feature.title,
-        };
-    }).filter(Boolean);
+    return t.proofSections || [];
 }
 
 function renderUseCases() {
@@ -154,10 +127,6 @@ function renderProofs() {
     hydrateShotFrames();
 }
 
-function renderPrivacyTags() {
-    // Privacy is now a compact statement rather than a keyword cluster.
-}
-
 function renderSections() {
     const el = document.getElementById('sections');
     const contactEl = document.getElementById('contact');
@@ -183,9 +152,6 @@ function applyStaticTranslations() {
         let val = t;
         for (const k of path) {
             val = val?.[k];
-        }
-        if (typeof val !== 'string' && keyAttr === 'hero.purchaseNote') {
-            val = t.bottomCta?.subtitle;
         }
         if (typeof val !== 'string') {
             return;
@@ -221,7 +187,6 @@ function setLanguage(lang) {
     applyStaticTranslations();
     renderUseCases();
     renderProofs();
-    renderPrivacyTags();
     renderSections();
     hydrateShotFrames();
 
