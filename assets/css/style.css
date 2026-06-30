@@ -250,6 +250,7 @@ nav::before {
 
 .lang-switcher {
     position: relative;
+    direction: ltr;
 }
 
 .lang-btn {
@@ -287,6 +288,12 @@ nav::before {
     min-width: 178px;
     overflow: hidden;
     border-radius: 10px;
+    direction: ltr;
+}
+
+html[dir="rtl"] .lang-dropdown {
+    right: auto;
+    left: 0;
 }
 
 .lang-dropdown.open {
@@ -305,8 +312,9 @@ nav::before {
     color: var(--text-primary);
     font: inherit;
     font-size: 14px;
-    text-align: start;
+    text-align: left;
     cursor: pointer;
+    direction: ltr;
 }
 
 .lang-option:hover {
@@ -317,6 +325,11 @@ nav::before {
     display: flex;
     align-items: center;
     gap: 10px;
+    min-width: 0;
+}
+
+.lang-option-label {
+    unicode-bidi: plaintext;
 }
 
 .lang-option .check {
