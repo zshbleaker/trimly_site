@@ -657,63 +657,61 @@ html[dir="rtl"] .lang-dropdown {
 }
 
 .use-case-grid {
-    display: grid;
-    grid-template-columns: 72px repeat(12, minmax(0, 1fr));
-    gap: 8px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     border-top: 0;
+    padding: 6px 0 4px;
 }
 
 .use-case-row {
+    --case-tilt: 0deg;
+    --case-shift: 0px;
     display: grid;
-    grid-column: 1 / -1;
-    justify-self: center;
-    width: calc(100% - 44px);
-    grid-template-columns: 72px repeat(12, minmax(0, 1fr));
-    min-height: 112px;
-    padding: 18px 0 20px;
-    border-top: 1px solid rgba(68, 56, 42, 0.10);
-    border-bottom: 1px solid rgba(68, 56, 42, 0.08);
-    align-items: center;
-    transform: translateX(var(--case-shift, 0)) rotate(var(--case-tilt, 0deg));
+    grid-template-columns: 58px minmax(0, 1fr);
+    gap: 0 30px;
+    align-items: start;
+    width: min(100%, 940px);
+    margin: 0 auto;
+    padding: 28px 38px 30px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: var(--paper-3);
+    box-shadow: 0 14px 34px rgba(68, 56, 42, 0.09);
     transform-origin: center;
+    will-change: transform;
 }
 
-.use-case-row:nth-child(1) {
-    --case-tilt: -1.05deg;
-    --case-shift: -10px;
+/* Each slip leans at its own angle — no two the same. */
+.use-case-row:nth-child(1) { --case-tilt: -2.6deg; --case-shift: -16px; }
+.use-case-row:nth-child(2) { --case-tilt:  1.9deg; --case-shift:  20px; }
+.use-case-row:nth-child(3) { --case-tilt: -1.2deg; --case-shift:  -6px; }
+.use-case-row:nth-child(4) { --case-tilt:  2.7deg; --case-shift:  14px; }
+.use-case-row:nth-child(5) { --case-tilt: -2.0deg; --case-shift: -18px; }
+
+/* Keep the tilt baked into the fade-in transform (the generic .fade-in rule
+   would otherwise reset transform and flatten every row). */
+.use-case-row.fade-in {
+    opacity: 0;
+    transform: translate(var(--case-shift), 30px) rotate(var(--case-tilt));
+    transition: opacity 0.7s var(--ease), transform 0.7s var(--ease), box-shadow 0.4s var(--ease);
 }
 
-.use-case-row:nth-child(2) {
-    --case-tilt: 0.72deg;
-    --case-shift: 16px;
-    min-height: 96px;
+.use-case-row.fade-in.visible {
+    opacity: 1;
+    transform: translate(var(--case-shift), 0) rotate(var(--case-tilt));
 }
 
-.use-case-row:nth-child(3) {
-    --case-tilt: -0.48deg;
-    --case-shift: 2px;
-    min-height: 126px;
-}
-
-.use-case-row:nth-child(4) {
-    --case-tilt: 1.08deg;
-    --case-shift: -16px;
-}
-
-.use-case-row:nth-child(5) {
-    --case-tilt: -0.82deg;
-    --case-shift: 18px;
-}
-
-.use-case-row:last-child {
-    border-bottom: 0;
-    padding-bottom: 8px;
+/* Hover snaps the slip upright and lifts it — the section feels alive. */
+.use-case-row.fade-in.visible:hover {
+    transform: translate(var(--case-shift), -6px) rotate(0deg);
+    box-shadow: 0 24px 50px rgba(68, 56, 42, 0.15);
 }
 
 .case-index {
     grid-column: 1;
     align-self: start;
-    padding-top: 10px;
+    padding-top: 6px;
     color: var(--accent-3);
     font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     font-size: 13px;
@@ -721,74 +719,28 @@ html[dir="rtl"] .lang-dropdown {
 }
 
 .case-copy {
-    grid-column: 3 / -1;
+    grid-column: 2;
     display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    gap: 0 22px;
-    align-items: center;
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1fr);
+    gap: 10px 40px;
+    align-items: baseline;
 }
 
 .case-copy h3 {
-    grid-column: 1 / 5;
     color: var(--text-primary);
-    max-width: 560px;
-    font-size: clamp(22px, 2.25vw, 30px);
+    max-width: 360px;
+    font-size: clamp(21px, 2vw, 28px);
     line-height: 1.18;
     font-weight: 740;
     text-wrap: balance;
 }
 
 .case-copy p {
-    grid-column: 7 / 13;
-    max-width: 520px;
+    max-width: 480px;
     color: var(--text-secondary);
     font-size: 16px;
     line-height: 1.52;
     text-wrap: pretty;
-}
-
-.use-case-row:nth-child(2) .case-copy {
-    grid-column: 4 / -1;
-}
-
-.use-case-row:nth-child(2) .case-copy h3 {
-    grid-column: 1 / 5;
-}
-
-.use-case-row:nth-child(2) .case-copy p {
-    grid-column: 6 / 12;
-}
-
-.use-case-row:nth-child(3) .case-copy {
-    grid-column: 2 / -2;
-}
-
-.use-case-row:nth-child(3) .case-copy h3 {
-    grid-column: 2 / 6;
-}
-
-.use-case-row:nth-child(3) .case-copy p {
-    grid-column: 7 / 12;
-}
-
-.use-case-row:nth-child(4) .case-copy h3 {
-    grid-column: 1 / 5;
-}
-
-.use-case-row:nth-child(4) .case-copy p {
-    grid-column: 8 / 13;
-}
-
-.use-case-row:nth-child(5) .case-copy {
-    grid-column: 4 / -2;
-}
-
-.use-case-row:nth-child(5) .case-copy h3 {
-    grid-column: 1 / 6;
-}
-
-.use-case-row:nth-child(5) .case-copy p {
-    grid-column: 7 / 12;
 }
 
 /* === PROOFS === */
@@ -1207,9 +1159,17 @@ footer {
             0 18px 40px rgba(0, 0, 0, 0.22);
     }
 
-    .use-case-row,
     .proof-block {
         border-color: var(--line);
+    }
+
+    .use-case-row {
+        border-color: var(--line);
+        box-shadow: 0 16px 38px rgba(0, 0, 0, 0.34);
+    }
+
+    .use-case-row.fade-in.visible:hover {
+        box-shadow: 0 26px 54px rgba(0, 0, 0, 0.46);
     }
 
 }
@@ -1240,41 +1200,14 @@ footer {
     }
 
     .section-heading,
-    .use-case-grid,
-    .use-case-row,
-    .case-copy,
     .proof-block {
         grid-template-columns: 1fr;
     }
 
-    .section-heading,
-    .use-case-grid,
-    .use-case-row,
-    .case-copy {
+    .section-heading {
         gap: 14px;
     }
 
-    .use-case-row:nth-child(n) {
-        min-height: auto;
-        width: 100%;
-        justify-self: stretch;
-        transform: none;
-    }
-
-    .case-index,
-    .use-case-row:nth-child(n) .case-copy,
-    .use-case-row:nth-child(n) .case-copy h3,
-    .use-case-row:nth-child(n) .case-copy p {
-        grid-column: 1;
-        transform: none;
-    }
-
-    .case-index {
-        padding-top: 0;
-    }
-
-    .use-case-grid,
-    .use-case-row,
     .proof-block {
         border-color: var(--line);
     }
@@ -1397,19 +1330,38 @@ footer {
     .use-cases {
         padding-top: 48px;
         padding-bottom: 34px;
+        /* Contain the tilt/shift so leaning slips can't trigger sideways scroll. */
+        overflow-x: clip;
     }
 
     .use-case-grid {
         border-top: 0;
+        gap: 18px;
     }
 
     .use-case-row {
-        padding: 20px 0 22px;
-        border-bottom: 1px solid var(--line);
+        grid-template-columns: 1fr;
+        gap: 10px;
+        width: 100%;
+        padding: 22px 22px 24px;
+        border-radius: 16px;
     }
 
-    .use-case-row:last-child {
-        border-bottom: 0;
+    /* Keep each row's distinct tilt on phones, just pull the side shift in
+       so full-width slips stay clear of the edges. */
+    .use-case-row:nth-child(1) { --case-shift: -8px; }
+    .use-case-row:nth-child(2) { --case-shift:  10px; }
+    .use-case-row:nth-child(3) { --case-shift:  -4px; }
+    .use-case-row:nth-child(4) { --case-shift:   8px; }
+    .use-case-row:nth-child(5) { --case-shift:  -9px; }
+
+    .case-index {
+        padding-top: 0;
+    }
+
+    .case-copy {
+        grid-template-columns: 1fr;
+        gap: 6px;
     }
 
     .case-copy h3 {
