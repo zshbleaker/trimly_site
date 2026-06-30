@@ -9,9 +9,9 @@
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✂️</text></svg>">
     <meta name="color-scheme" content="light dark">
     <style>
-        html { color-scheme: light; background-color: #F8F5F2; }
+        html { color-scheme: light; background-color: #F6EFE4; }
         @media (prefers-color-scheme: dark) {
-            html { color-scheme: dark; background-color: #121417; }
+            html { color-scheme: dark; background-color: #080B0F; }
         }
         html[data-lang]:not([data-lang="en"]):not(.i18n-ready) body {
             visibility: hidden;
@@ -22,107 +22,65 @@
 <body>
     <script src="assets/js/glow.js?v=1.2.0"></script>
 
-    <!-- NAV -->
     <trimly-header></trimly-header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="hero-icon">
-            <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <linearGradient id="h-track" x1="0%" y1="0%" x2="0%" y2="100%">
-                        <stop offset="0%" stop-color="#1C1C1E"/>
-                        <stop offset="100%" stop-color="#2C2C2E"/>
-                    </linearGradient>
-                    <linearGradient id="h-clip" x1="0%" y1="0%" x2="0%" y2="100%">
-                        <stop offset="0%" stop-color="#32ADE6"/>
-                        <stop offset="100%" stop-color="#007AFF"/>
-                    </linearGradient>
-                    <filter id="h-shadow" x="-20%" y="-20%" width="140%" height="140%">
-                        <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity="0.5"/>
-                    </filter>
-                    <mask id="h-holes">
-                        <rect width="1024" height="1024" fill="white"/>
-                        <line x1="230" y1="400" x2="794" y2="400" stroke="black" stroke-width="24" stroke-dasharray="24 36"/>
-                        <line x1="230" y1="624" x2="794" y2="624" stroke="black" stroke-width="24" stroke-dasharray="24 36"/>
-                    </mask>
-                </defs>
-                <g mask="url(#h-holes)">
-                    <rect x="162" y="362" width="700" height="300" rx="24" fill="url(#h-track)"/>
-                    <path d="M190,362 v20 M220,362 v10 M250,362 v10 M280,362 v10 M310,362 v20 M340,362 v10 M370,362 v10 M400,362 v10 M430,362 v20 M460,362 v10 M490,362 v10 M520,362 v10 M550,362 v20 M580,362 v10 M610,362 v10 M640,362 v10 M670,362 v20 M700,362 v10 M730,362 v10 M760,362 v10 M790,362 v20 M820,362 v10 M850,362 v10" stroke="#fff" stroke-width="2" opacity="0.15"/>
-                    <rect x="300" y="362" width="220" height="300" fill="url(#h-clip)"/>
-                    <rect x="600" y="362" width="160" height="300" fill="url(#h-clip)"/>
-                    <path d="M180,502 v20 M210,482 v60 M240,462 v100 M270,492 v40 M300,432 v160 M330,472 v80 M360,497 v30 M390,442 v140 M420,472 v80 M450,412 v200 M480,452 v120 M510,482 v60 M540,462 v100 M570,492 v40 M600,472 v80 M630,452 v120 M660,432 v160 M690,482 v60 M720,462 v100 M750,492 v40 M780,442 v140 M810,472 v80 M840,497 v30" stroke="#fff" stroke-width="12" stroke-linecap="round" fill="none" opacity="0.4"/>
-                </g>
-                <rect x="162" y="362" width="700" height="300" rx="24" fill="none" stroke="#555" stroke-width="4" opacity="0.5"/>
-                <g filter="url(#h-shadow)">
-                    <polygon points="276,266 324,266 300,311" fill="#30D158" stroke="#30D158" stroke-width="8" stroke-linejoin="round"/>
-                    <rect x="296" y="306" width="8" height="390" rx="4" fill="#30D158"/>
-                </g>
-            </svg>
-        </div>
-        <h1 data-i18n="hero.heading">Your best moments,<br>straight into your Photo Library.</h1>
-        <p class="hero-tagline" data-i18n="hero.tagline">Not buried out of sight.</p>
-        <p class="hero-subtitle" data-i18n="hero.subtitle">Trimly helps you clip the highlights and save them where you open every day.</p>
-        <div class="hero-cta-row">
-            <a class="hero-cta app-store-link" href="https://apps.apple.com/app/id6773276396" target="_blank" rel="noopener">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-                </svg>
-                <span data-i18n="hero.cta">Download on the App Store</span>
-            </a>
-        </div>
-        <div class="hero-meta">
-            <span class="hero-meta-item" data-i18n="hero.meta1">Buy once</span>
-            <span class="hero-meta-item" data-i18n="hero.meta2">All platforms</span>
-            <span class="hero-meta-item" data-i18n="hero.meta3">iCloud sync</span>
-        </div>
+    <main>
+        <section class="hero">
+            <div class="hero-copy">
+                <h1 data-i18n="hero.heading">Your best moments,<br>straight into your Photo Library.</h1>
+                <p class="hero-tagline" data-i18n="hero.tagline">Keep the good part. Let it land where the day actually happened.</p>
+                <p class="hero-subtitle" data-i18n="hero.subtitle">Trimly turns long recordings into small, ordered clips for the library you already use every day.</p>
 
-        <div class="hero-screenshot">
-            <div class="screenshot-placeholder">
-                <picture>
-                    <source media="(prefers-color-scheme: light)" srcset="assets/header.webp">
-                    <img src="assets/header-dark.webp" alt="Trimly on Mac, iPad, and iPhone">
-                </picture>
+                <div class="hero-cta-row">
+                    <a class="hero-cta app-store-link" href="https://apps.apple.com/app/id6773276396" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                        <span data-i18n="hero.cta">Download on the App Store</span>
+                    </a>
+                    <p class="hero-note" data-i18n="hero.purchaseNote">One purchase for iPhone, iPad, and Mac.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="scenarios" id="scenarios"></div>
-    </section>
+            <div class="hero-showcase liquid-glass fade-in">
+                <div class="hero-shot shot-frame" data-shot="hero-editor" data-shot-alt="Trimly editor on Mac and iPad">
+                    <div class="shot-missing">
+                        <span>assets/screenshots/hero-editor-light.webp</span>
+                        <span>assets/screenshots/hero-editor-dark.webp</span>
+                    </div>
+                </div>
+                <div class="film-strip" aria-hidden="true">
+                    <i></i><i></i><i></i><i></i><i></i><i></i>
+                </div>
+            </div>
+        </section>
 
-    <!-- DEEP FEATURE SECTIONS -->
-    <section class="features" id="features"></section>
+        <section class="use-cases section-band" id="use-cases">
+            <div class="section-heading">
+                <h2 data-i18n="useCasesHeading">Long recordings become the few clips you will actually revisit.</h2>
+            </div>
+            <div class="use-case-grid" id="useCaseGrid"></div>
+        </section>
 
-    <!-- PRIVACY -->
-    <section class="privacy fade-in">
-        <div class="privacy-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                <path d="M9 12l2 2 4-4"/>
-            </svg>
-        </div>
-        <h2 data-i18n="privacy.heading">Private by design.</h2>
-        <p data-i18n="privacy.body">Trimly processes your media on-device — no account, uploads, or ads. Trimly has no servers of its own; any network activity goes only to iCloud. No tracking or third-party SDKs.</p>
-    </section>
+        <section class="proofs" id="features"></section>
 
-    <!-- BOTTOM CTA -->
-    <section class="bottom-cta fade-in">
-        <h2 data-i18n="bottomCta.heading">Your next clip is seconds away.</h2>
-        <p class="bottom-cta-sub" data-i18n="bottomCta.subtitle">One purchase for iPhone, iPad, and Mac.</p>
-        <a class="hero-cta app-store-link" href="https://apps.apple.com/app/id6773276396" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-            </svg>
-            <span data-i18n="hero.cta">Download on the App Store</span>
-        </a>
-    </section>
+        <section class="privacy fade-in">
+            <div class="privacy-icon liquid-glass">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="M9 12l2 2 4-4"/>
+                </svg>
+            </div>
+            <h2 data-i18n="privacy.heading">Private by design.</h2>
+            <p data-i18n="privacy.body">Trimly processes your media on-device. No account, no uploads, no ads, no tracking. iCloud sync is only for edits and LUTs.</p>
+        </section>
+    </main>
 
-    <!-- FOOTER -->
     <trimly-footer></trimly-footer>
 
-    <script src="assets/js/translations.js?v=1.4.0"></script>
-    <script src="assets/js/components.js?v=1.0.8"></script>
+    <script src="assets/js/translations.js?v=1.5.0"></script>
+    <script src="assets/js/components.js?v=1.0.9"></script>
     <script src="assets/js/scenarios.js?v=1.2.0"></script>
-    <script src="assets/js/main.js?v=1.1.0"></script>
+    <script src="assets/js/main.js?v=1.2.0"></script>
 </body>
 </html>

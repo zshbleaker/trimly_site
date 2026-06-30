@@ -9,14 +9,42 @@ window.T = {
             home: 'Home',
         },
         hero: {
-            heading: 'Your best moments,\nstraight into your Photo Library.',
-            tagline: 'Not buried out of sight.',
-            subtitle: 'Trimly helps you clip the highlights and save them where you open every day.',
+            heading: 'Keep the best part.',
+            tagline: 'Save short clips to Photos with the right time and place.',
+            subtitle: 'For trips, concerts, family videos, action cameras, and long recordings.',
             cta: 'Download on the App Store',
             meta1: 'Buy once',
-            meta2: 'All platforms',
-            meta3: 'iCloud sync',
+            meta2: 'iPhone, iPad, Mac',
+            meta3: 'iCloud edits sync',
         },
+        useCasesHeading: 'For recordings too long to rewatch.',
+        useCases: [
+            {
+                label: 'Travel',
+                title: 'After a long day out.',
+                body: 'Arrival, dinner, skyline. Three clips, back in order.',
+            },
+            {
+                label: 'Concerts',
+                title: 'The chorus, not the queue.',
+                body: 'Keep the song you came for. Leave the rest in the original.',
+            },
+            {
+                label: 'Family',
+                title: 'A party, split into moments.',
+                body: 'Candles, gifts, one laugh. Easy to send, easy to find.',
+            },
+            {
+                label: 'Action cameras',
+                title: 'One clean run.',
+                body: 'Mark the jump or turn that worked. Export only that.',
+            },
+            {
+                label: 'Audio',
+                title: 'The quote in the waveform.',
+                body: 'Find the line, trim the silence, send the clip.',
+            },
+        ],
         scenarios: {
             items: [
                 {
@@ -155,9 +183,55 @@ window.T = {
                     'Resizable windows with adaptive layout',
                 ],
             }],
+        proofSections: [
+            {
+                eyebrow: 'Long footage',
+                title: 'Start with the full recording. Leave with the keepers.',
+                body: 'Open big files where they are. Mark several clips and export them together.',
+                points: [
+                    'Multiple clips from one source',
+                    'Batch export to Photos or Files',
+                ],
+                shot: 'timeline-iphone',
+                shotAlt: 'Trimly timeline with several marked clips',
+            },
+            {
+                eyebrow: 'Photo Library',
+                title: 'Every clip lands where that moment happened.',
+                body: 'A sunset clip should not appear beside breakfast. Trimly writes the right time.',
+                points: [
+                    'Original moment, preserved',
+                    'GPS and camera details stay with it',
+                ],
+                shot: 'photos-result-iphone',
+                shotAlt: 'Exported Trimly clips sorted in Photos',
+            },
+            {
+                eyebrow: 'Across devices',
+                title: 'Rough-cut on iPhone. Finish on iPad or Mac.',
+                body: 'Edits sync through iCloud. Video files stay on your devices.',
+                points: [
+                    'iCloud sync for edits and LUTs',
+                    'Handoff and AirPlay ready',
+                ],
+                shot: 'ipad-workspace',
+                shotAlt: 'Trimly running in an iPad workspace',
+            },
+            {
+                eyebrow: 'Pro material',
+                title: 'HDR, LUTs, audio, fast export. Same desk.',
+                body: 'Keep HDR intact, trim with LUTs, cut audio by waveform, or export without transcoding.',
+                points: [
+                    'HDR and .cube LUT support',
+                    'Waveforms and passthrough export',
+                ],
+                shot: 'audio-waveform-mac',
+                shotAlt: 'Trimly audio waveform and export controls',
+            },
+        ],
         privacy: {
             heading: 'Private by design.',
-            body: 'Trimly processes your media on-device, no account, uploads, or ads. Trimly has no servers of its own; any network activity goes only to iCloud. No tracking or third-party SDKs.',
+            body: 'Trimly processes your media on-device. No account, no uploads, no ads, no tracking. iCloud sync is only for edits and LUTs.',
             tags: [
                 'On-device processing',
                 'iCloud sync',
@@ -167,7 +241,7 @@ window.T = {
             ],
         },
         bottomCta: {
-            heading: 'Your next clip is seconds away.',
+            heading: 'Cut the part you meant to keep.',
             subtitle: 'One purchase for iPhone, iPad, and Mac.',
         },
         footer: {
@@ -220,14 +294,42 @@ window.T = {
             home: '首页',
         },
         hero: {
-            heading: '精彩时刻，一步到相册',
-            tagline: '最好的画面，应该在相册里，而不是被埋没。',
-            subtitle: 'Trimly 帮你剪出精彩段落，存到你每天会打开的地方。',
+            heading: '留下该进相册的那一段',
+            tagline: '剪出几分钟，带着正确时间和地点回到相册。',
+            subtitle: '旅行、现场、家庭视频、运动相机、会议录音，都不用从头看到尾。',
             cta: '在 App Store 下载',
             meta1: '一次买断',
-            meta2: '全平台通用',
-            meta3: '支持 iCloud 同步',
+            meta2: 'iPhone、iPad、Mac',
+            meta3: 'iCloud 同步剪辑记录',
         },
+        useCasesHeading: '记录很长，记忆通常很短。',
+        useCases: [
+            {
+                label: '旅行',
+                title: '一天结束后',
+                body: '落地、晚饭、夜景。三段，按原来的时间回到相册。',
+            },
+            {
+                label: '现场',
+                title: '要副歌，不要排队',
+                body: '整场录着，最后只留下真正想重看的那首。',
+            },
+            {
+                label: '家人朋友',
+                title: '聚会拆成瞬间',
+                body: '吹蜡烛、拆礼物、一起笑。单独发，不用发整小时。',
+            },
+            {
+                label: '运动相机',
+                title: '只要最顺的一段',
+                body: '标出那次起跳、转弯或冲刺。导出轻量片段。',
+            },
+            {
+                label: '采访录音',
+                title: '波形里的一句话',
+                body: '找到重点，剪掉沉默，只发那一句。',
+            },
+        ],
         scenarios: {
             items: [
                 {
@@ -363,9 +465,55 @@ window.T = {
                     '可变窗口大小，布局自适应调整',
                 ],
             }],
+        proofSections: [
+            {
+                eyebrow: '长素材',
+                title: '打开完整记录，只带走片段',
+                body: '大文件不用先复制。标好几段，一次导出。',
+                points: [
+                    '一条原片，多段导出',
+                    '到相册或「文件」',
+                ],
+                shot: 'timeline-iphone',
+                shotAlt: 'Trimly 时间轴上标记了多个片段',
+            },
+            {
+                eyebrow: '相册归位',
+                title: '片段回到真正发生的时间',
+                body: '傍晚的海边，不会排到早餐前面。',
+                points: [
+                    '保留真实创建时间',
+                    '保留 GPS 与设备信息',
+                ],
+                shot: 'photos-result-iphone',
+                shotAlt: 'Trimly 导出的片段在相册中按时间排列',
+            },
+            {
+                eyebrow: '跨设备',
+                title: '路上粗剪，回家接着来',
+                body: 'iCloud 同步剪辑记录，视频文件留在本地。',
+                points: [
+                    'iCloud 同步剪辑记录与 LUT',
+                    '支持 Handoff 与 AirPlay',
+                ],
+                shot: 'ipad-workspace',
+                shotAlt: 'Trimly 在 iPad 工作区中运行',
+            },
+            {
+                eyebrow: '专业素材',
+                title: 'HDR、LUT、音频，都在同一处',
+                body: 'HDR 保留，Log 可挂 LUT，录音按波形剪。',
+                points: [
+                    'HDR 与 .cube LUT',
+                    '波形与直通导出',
+                ],
+                shot: 'audio-waveform-mac',
+                shotAlt: 'Trimly 的音频波形和导出控制',
+            },
+        ],
         privacy: {
             heading: '隐私，从设计之初',
-            body: 'Trimly 在设备本地处理媒体，无需账号，不上传，无广告。Trimly 没有自己的服务器，所有网络请求仅发往 iCloud。无追踪，无第三方 SDK。',
+            body: '本地处理。不上传。无账号、广告和追踪。iCloud 只同步剪辑记录与 LUT。',
             tags: [
                 '本地处理',
                 'iCloud 同步',
@@ -375,7 +523,7 @@ window.T = {
             ],
         },
         bottomCta: {
-            heading: '下一个片段，马上就好',
+            heading: '剪出想留下的那一段',
             subtitle: '一次购买，iPhone、iPad、Mac 全平台通用。',
         },
         footer: {
