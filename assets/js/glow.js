@@ -105,10 +105,10 @@
             float t = u_time;
             p += parallax;
 
-            vec3 blue = vec3(0.210, 0.410, 0.660);
-            vec3 cyan = vec3(0.360, 0.520, 0.660);
-            vec3 green = vec3(0.180, 0.620, 0.350);
-            vec3 purple = vec3(0.340, 0.390, 0.520);
+            vec3 blue = vec3(0.300, 0.470, 0.520);
+            vec3 cyan = vec3(0.420, 0.570, 0.570);
+            vec3 green = vec3(0.300, 0.540, 0.380);
+            vec3 copper = vec3(0.680, 0.450, 0.310);
             vec3 warm = vec3(1.000, 0.720, 0.480);
             vec3 sky = vec3(0.620, 0.780, 0.980);
             vec3 peach = vec3(0.980, 0.780, 0.620);
@@ -119,10 +119,10 @@
             float sidePurple = edgeGlow(p, vec2(0.74, 0.12), vec2(-1.0, -0.08), 1.4, 16.0);
 
             vec3 spillDark = vec3(0.0);
-            spillDark += blue * topBlue * 0.12;
-            spillDark += cyan * topCyan * 0.08;
-            spillDark += green * sideGreen * 0.045;
-            spillDark += purple * sidePurple * 0.035;
+            spillDark += blue * topBlue * 0.070;
+            spillDark += cyan * topCyan * 0.050;
+            spillDark += green * sideGreen * 0.032;
+            spillDark += copper * sidePurple * 0.026;
 
             float poolWarm = softPool(p, vec2(-0.22, 0.08), 0.55);
             float poolSky = softPool(p, vec2(0.30, -0.06), 0.48);
@@ -140,17 +140,17 @@
             float caust = caustics(p * mix(1.6, 2.1, u_theme), t);
             vec2 specCenter = (u_pointer - 0.5) * aspect * 0.55;
             float specular = exp(-dot(p - specCenter, p - specCenter) * mix(10.0, 14.0, u_theme));
-            vec3 glassSheen = mix(vec3(1.0), vec3(0.68, 0.76, 0.86), u_theme);
-            spill += glassSheen * caust * mix(0.035, 0.022, u_theme);
-            spill += glassSheen * specular * mix(0.04, 0.026, u_theme);
+            vec3 glassSheen = mix(vec3(1.0), vec3(0.70, 0.78, 0.76), u_theme);
+            spill += glassSheen * caust * mix(0.035, 0.014, u_theme);
+            spill += glassSheen * specular * mix(0.04, 0.016, u_theme);
 
             float shimmer = noise(p * 9.0 + vec2(t * 0.07, -t * 0.05)) * 0.03;
             spill *= 0.97 + shimmer;
             spill *= (0.94 + 0.06 * sin(t * 0.28)) * u_intensity;
 
             float strength = pow(max(max(spill.r, spill.g), spill.b), mix(1.25, 1.12, u_theme));
-            float alphaMax = mix(0.14, 0.12, u_theme);
-            float alpha = clamp(strength * mix(0.62, 0.48, u_theme), 0.0, alphaMax);
+            float alphaMax = mix(0.14, 0.070, u_theme);
+            float alpha = clamp(strength * mix(0.62, 0.34, u_theme), 0.0, alphaMax);
 
             gl_FragColor = vec4(spill * alpha, alpha);
         }
@@ -209,7 +209,7 @@
 
     const themes = {
         light: { intensity: 0.72, theme: 0.0 },
-        dark: { intensity: 0.42, theme: 1.0 },
+        dark: { intensity: 0.28, theme: 1.0 },
     };
 
     let theme = darkMq.matches ? themes.dark : themes.light;
