@@ -70,7 +70,7 @@ window.T = {
         body: "Trimly is not one interface stretched across devices. iPhone, iPad, and Mac each get their own rhythm.",
         points: [
           "iPhone: a layout carefully tuned for small screens",
-          "iPad: a productivity workspace optimized for external keyboards and displays",
+          "iPad: a touch-first workspace for reviewing and trimming, with keyboard and display support when you want it",
           "Mac: efficient work on a large screen and a real file system",
         ],
         shot: "device-workspaces",
@@ -202,7 +202,7 @@ window.T = {
         body: "不是把同一个界面放大缩小。Trimly 针对 iPhone、iPad 和 Mac 分别优化。",
         points: [
           "iPhone：针对小屏幕，专门优化的界面布局",
-          "iPad：生产力，为外接键盘和显示器高度优化",
+          "iPad：更大的触控工作区，适合快速浏览、标记与裁剪，也支持键盘和外接显示器",
           "Mac：在大屏幕与真正的文件系统上高效操作",
         ],
         shot: "device-workspaces",
@@ -333,7 +333,7 @@ window.T = {
         body: "同じ画面を拡大縮小しているだけではありません。iPhone、iPad、Mac それぞれに合う作りです。",
         points: [
           "iPhone：小さな画面に合わせて細かく調整したレイアウト",
-          "iPad：外付けキーボードとディスプレイに最適化した生産的な作業環境",
+          "iPad：広い画面で確認、マーク、トリミングしやすいタッチ中心の作業環境。キーボードや外部ディスプレイにも対応",
           "Mac：大きな画面と本物のファイルシステムで効率よく操作",
         ],
         shot: "device-workspaces",
@@ -466,7 +466,7 @@ window.T = {
         body: "같은 화면을 키우고 줄인 앱이 아닙니다. iPhone, iPad, Mac에 맞게 각각 다듬었습니다.",
         points: [
           "iPhone: 작은 화면에 맞게 세심하게 조정한 레이아웃",
-          "iPad: 외장 키보드와 디스플레이에 최적화된 생산성 작업 공간",
+          "iPad: 넓은 화면에서 확인, 표시, 다듬기에 좋은 터치 중심 작업 공간. 키보드와 외부 디스플레이도 지원",
           "Mac: 큰 화면과 실제 파일 시스템에서 효율적으로 작업",
         ],
         shot: "device-workspaces",
@@ -601,7 +601,7 @@ window.T = {
         body: "No es una interfaz estirada de un dispositivo a otro. iPhone, iPad y Mac tienen su propio ritmo.",
         points: [
           "iPhone: una interfaz cuidada para pantallas pequeñas",
-          "iPad: un espacio de productividad optimizado para teclado y pantalla externa",
+          "iPad: un espacio táctil amplio para revisar, marcar y recortar, con soporte para teclado y pantalla externa",
           "Mac: trabajo eficiente en pantalla grande y con un sistema de archivos real",
         ],
         shot: "device-workspaces",
@@ -736,7 +736,7 @@ window.T = {
         body: "ليست واجهة واحدة ممدودة على كل الأجهزة. لكل من iPhone وiPad وMac إيقاعه المناسب.",
         points: [
           "iPhone: واجهة مضبوطة بعناية للشاشات الصغيرة",
-          "iPad: مساحة إنتاجية محسّنة للوحة المفاتيح والشاشات الخارجية",
+          "iPad: مساحة لمس أوسع للمراجعة ووضع العلامات والقص، مع دعم لوحة المفاتيح والشاشة الخارجية",
           "Mac: عمل فعّال على شاشة كبيرة ونظام ملفات حقيقي",
         ],
         shot: "device-workspaces",

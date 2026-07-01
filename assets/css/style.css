@@ -2198,11 +2198,24 @@ footer {
         border-top: 1px solid var(--line);
     }
 
+    .proof-lines::before {
+        top: 14px;
+        bottom: 14px;
+        left: 15px;
+        width: 2px;
+    }
+
     .proof-lines span {
-        padding: 9px 0;
+        padding: 11px 12px 11px 36px;
         border-bottom: 0;
         color: var(--text-primary);
         font-size: 15px;
+    }
+
+    .proof-lines span::before {
+        left: 11px;
+        width: 8px;
+        height: 8px;
     }
 
     .proof-lines span + span {
