@@ -2,6 +2,16 @@
 
 const EMAIL = 'hi@zshbleaker.me';
 const SCREENSHOT_DIR = 'assets/screenshots/';
+const SHOT_WIDTHS = [960, 1440, 2160];
+const SHOT_META = {
+    'hero-editor-light': { width: 2880, height: 1800 },
+    'hero-editor-dark': { width: 2880, height: 1800 },
+    'source-file-clips': { width: 6000, height: 4500 },
+    'photos-metadata-export': { width: 2732, height: 2048 },
+    'cross-device-editing': { width: 6000, height: 4500 },
+    'device-workspaces': { width: 2880, height: 1800 },
+    'pro-media-pipeline': { width: 2880, height: 1800 },
+};
 
 let currentLang = 'en';
 let animObserver = null;
@@ -27,13 +37,44 @@ function shotPath(name) {
     return `${SCREENSHOT_DIR}${name}.webp`;
 }
 
-function renderShot(name, alt, themeMode = 'single') {
+function shotSrcset(name) {
+    const meta = SHOT_META[name];
+    const responsive = SHOT_WIDTHS
+        .filter(width => !meta || width < meta.width)
+        .map(width => `${SCREENSHOT_DIR}${name}-${width}w.webp ${width}w`);
+    const originalWidth = meta?.width || 2880;
+    return [...responsive, `${shotPath(name)} ${originalWidth}w`].join(', ');
+}
+
+function shotDimensions(name) {
+    const meta = SHOT_META[name] || { width: 2880, height: 1800 };
+    return `width="${meta.width}" height="${meta.height}"`;
+}
+
+function escapeAttr(value) {
+    return String(value || '').replace(/[&<>"']/g, char => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;',
+    })[char]);
+}
+
+function renderShot(name, alt, themeMode = 'single', options = {}) {
+    const loading = options.loading || 'lazy';
+    const fetchPriority = options.fetchPriority || (loading === 'eager' ? 'high' : 'auto');
+    const sizes = options.sizes || '(min-width: 900px) 58vw, calc(100vw - 48px)';
+    const escapedAlt = escapeAttr(alt);
+
     if (themeMode === 'adaptive') {
         const paths = themedShotPaths(name);
+        const lightName = `${name}-light`;
+        const darkName = `${name}-dark`;
         return `
             <picture>
-                <source media="(prefers-color-scheme: dark)" srcset="${paths.dark}">
-                <img class="shot-img" src="${paths.light}" alt="${alt || ''}" loading="lazy">
+                <source media="(prefers-color-scheme: dark)" srcset="${shotSrcset(darkName)}" sizes="${sizes}">
+                <img class="shot-img" src="${SCREENSHOT_DIR}${lightName}-1440w.webp" srcset="${shotSrcset(lightName)}" sizes="${sizes}" ${shotDimensions(lightName)} alt="${escapedAlt}" loading="${loading}" fetchpriority="${fetchPriority}" decoding="async">
             </picture>
             <div class="shot-missing" aria-hidden="true">
                 <span>${paths.light}</span>
@@ -44,7 +85,7 @@ function renderShot(name, alt, themeMode = 'single') {
 
     const path = shotPath(name);
     return `
-        <img class="shot-img" src="${path}" alt="${alt || ''}" loading="lazy">
+        <img class="shot-img" src="${SCREENSHOT_DIR}${name}-1440w.webp" srcset="${shotSrcset(name)}" sizes="${sizes}" ${shotDimensions(name)} alt="${escapedAlt}" loading="${loading}" fetchpriority="${fetchPriority}" decoding="async">
         <div class="shot-missing" aria-hidden="true">
             <span>${path}</span>
         </div>
@@ -54,10 +95,18 @@ function renderShot(name, alt, themeMode = 'single') {
 function hydrateShotFrames() {
     document.querySelectorAll('.shot-frame[data-shot]').forEach(frame => {
         if (!frame.querySelector('.shot-img')) {
+            const isHero = frame.classList.contains('hero-shot');
             frame.innerHTML = renderShot(
                 frame.dataset.shot,
                 frame.dataset.shotAlt || frame.dataset.shot || '',
-                frame.dataset.shotTheme || 'single'
+                frame.dataset.shotTheme || 'single',
+                {
+                    loading: isHero ? 'eager' : 'lazy',
+                    fetchPriority: isHero ? 'high' : 'auto',
+                    sizes: isHero
+                        ? '(min-width: 980px) 58vw, calc(100vw - 56px)'
+                        : '(min-width: 900px) 58vw, calc(100vw - 48px)',
+                }
             );
         }
 

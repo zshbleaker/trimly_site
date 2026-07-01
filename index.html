@@ -18,6 +18,8 @@
         }
     </style>
     <link rel="stylesheet" href="assets/css/style.css?v=1.7.3">
+    <link rel="preload" as="image" href="assets/screenshots/hero-editor-light-1440w.webp" imagesrcset="assets/screenshots/hero-editor-light-960w.webp 960w, assets/screenshots/hero-editor-light-1440w.webp 1440w, assets/screenshots/hero-editor-light-2160w.webp 2160w, assets/screenshots/hero-editor-light.webp 2880w" imagesizes="(min-width: 980px) 58vw, calc(100vw - 56px)" media="(prefers-color-scheme: light)">
+    <link rel="preload" as="image" href="assets/screenshots/hero-editor-dark-1440w.webp" imagesrcset="assets/screenshots/hero-editor-dark-960w.webp 960w, assets/screenshots/hero-editor-dark-1440w.webp 1440w, assets/screenshots/hero-editor-dark-2160w.webp 2160w, assets/screenshots/hero-editor-dark.webp 2880w" imagesizes="(min-width: 980px) 58vw, calc(100vw - 56px)" media="(prefers-color-scheme: dark)">
 </head>
 <body>
     <script src="assets/js/glow.js?v=1.2.0"></script>
@@ -43,6 +45,10 @@
 
             <div class="hero-showcase liquid-glass fade-in">
                 <div class="hero-shot shot-frame" data-shot="hero-editor" data-shot-theme="adaptive" data-shot-alt="Trimly editor on Mac and iPad">
+                    <picture>
+                        <source media="(prefers-color-scheme: dark)" srcset="assets/screenshots/hero-editor-dark-960w.webp 960w, assets/screenshots/hero-editor-dark-1440w.webp 1440w, assets/screenshots/hero-editor-dark-2160w.webp 2160w, assets/screenshots/hero-editor-dark.webp 2880w" sizes="(min-width: 980px) 58vw, calc(100vw - 56px)">
+                        <img class="shot-img" src="assets/screenshots/hero-editor-light-1440w.webp" srcset="assets/screenshots/hero-editor-light-960w.webp 960w, assets/screenshots/hero-editor-light-1440w.webp 1440w, assets/screenshots/hero-editor-light-2160w.webp 2160w, assets/screenshots/hero-editor-light.webp 2880w" sizes="(min-width: 980px) 58vw, calc(100vw - 56px)" width="2880" height="1800" alt="Trimly editor on Mac and iPad" loading="eager" fetchpriority="high" decoding="async">
+                    </picture>
                     <div class="shot-missing">
                         <span>assets/screenshots/hero-editor-light.webp</span>
                         <span>assets/screenshots/hero-editor-dark.webp</span>
@@ -79,6 +85,6 @@
 
     <script src="assets/js/translations.js?v=1.6.2"></script>
     <script src="assets/js/components.js?v=1.0.9"></script>
-    <script src="assets/js/main.js?v=1.2.1"></script>
+    <script src="assets/js/main.js?v=1.2.2"></script>
 </body>
 </html>
