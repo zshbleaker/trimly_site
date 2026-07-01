@@ -39,7 +39,7 @@ window.T = {
     proofSections: [
       {
         title: "Open huge files. Export only the keepers.",
-        body: "Work straight from an external drive or card reader. No upfront copy, no waiting just to start.",
+        body: "Work straight from an external drive, card reader, or Photos Library. No upfront copy, no waiting just to start.",
         points: [
           "Mark clips on the source file",
           "Passthrough, compressed, and balanced exports",
@@ -77,12 +77,12 @@ window.T = {
         shotAlt: "Trimly editing interface across different devices",
       },
       {
-        title: "Built for serious footage.",
+        title: "HDR, LOG, and lossless audio. All supported.",
         body: "Designed with professional creators in mind.",
         points: [
           "HDR-ready media pipeline",
           "LOG video with built-in recovery LUTs for popular cameras",
-          "Audio-only files, including raw PCM",
+          "All kinds of audio files, including raw PCM",
         ],
         shot: "pro-media-pipeline",
         shotAlt: "Trimly audio waveform and export controls",
@@ -117,7 +117,7 @@ window.T = {
         },
         {
           h: "Files and Photos access",
-          p: "When you open media from the Files app, USB storage, or your Photos library, Trimly reads it only so you can trim and export it. All processing happens locally on your device, and exported clips are saved to the location you choose. Trimly accesses your Photos library only with your permission, and only to import or save the media you select.",
+          p: "When you open media from the Files app, USB storage, or your Photos Library, Trimly reads it only so you can trim and export it. All processing happens locally on your device, and exported clips are saved to the location you choose. Trimly accesses your Photos Library only with your permission, and only to import or save the media you select.",
         },
         {
           h: "No account, no third parties",
@@ -174,7 +174,7 @@ window.T = {
     proofSections: [
       {
         title: "光速打开，按需导出",
-        body: "大文件不用复制，直接读外接硬盘或读卡器。支持多档位导出策略",
+        body: "大文件不用复制，直接读外接硬盘/读卡器或系统相册。支持多档位导出策略",
         points: [
           "直接在原始文件上标记片段",
           "从不转码到高度压缩，几个档位，都支持",
@@ -208,12 +208,12 @@ window.T = {
         shot: "device-workspaces",
       },
       {
-        title: "HDR、LOG、纯音频，全都支持",
+        title: "HDR、LOG、无损音频，全都支持",
         body: "为专业创作者专门考虑",
         points: [
           "整个媒体处理管线为 HDR 设计",
           "支持 LOG 格式视频，并内置热门设备的还原 LUT",
-          "支持纯音频文件，甚至包括 PCM 原始数据",
+          "支持各种音频文件，甚至包括 PCM 原始数据",
         ],
         shot: "pro-media-pipeline",
       },
@@ -305,7 +305,7 @@ window.T = {
     proofSections: [
       {
         title: "大きなファイルもすぐ開ける。",
-        body: "外付けドライブやカードリーダーから直接読み込み。コピー待ちなしで、すぐに作業を始められます。",
+        body: "外付けドライブ、カードリーダー、写真ライブラリから直接読み込み。コピー待ちなしで、すぐに作業を始められます。",
         points: [
           "元ファイルのままクリップをマーク",
           "無変換、圧縮、バランス重視の書き出し",
@@ -340,12 +340,12 @@ window.T = {
         shotAlt: "複数デバイスでの Trimly 編集画面",
       },
       {
-        title: "本気の素材にも対応。",
+        title: "HDR、LOG、ロスレス音声に対応。",
         body: "プロのクリエイターのために考え抜いた設計です。",
         points: [
           "HDR 前提のメディア処理",
           "LOG 動画と人気カメラ向け復元 LUT",
-          "音声のみのファイル、PCM 生データにも対応",
+          "各種音声ファイル、PCM 生データにも対応",
         ],
         shot: "pro-media-pipeline",
         shotAlt: "Trimly の音声波形と書き出しコントロール",
@@ -438,7 +438,7 @@ window.T = {
     proofSections: [
       {
         title: "큰 파일도 바로 열기.",
-        body: "외장 드라이브나 카드 리더에서 바로 읽습니다. 먼저 복사하느라 기다릴 필요가 없습니다.",
+        body: "외장 드라이브, 카드 리더, 사진 보관함에서 바로 읽습니다. 먼저 복사하느라 기다릴 필요가 없습니다.",
         points: [
           "원본 파일 위에서 바로 클립 표시",
           "무변환, 압축, 균형형 내보내기",
@@ -473,12 +473,12 @@ window.T = {
         shotAlt: "여러 기기에서 보이는 Trimly 편집 화면",
       },
       {
-        title: "진지한 촬영본까지.",
+        title: "HDR, LOG, 무손실 오디오까지 모두 지원.",
         body: "전문 크리에이터를 염두에 두고 설계했습니다.",
         points: [
           "HDR을 고려한 미디어 처리",
           "LOG 영상과 인기 카메라용 복원 LUT",
-          "오디오 전용 파일과 PCM 원시 데이터 지원",
+          "다양한 오디오 파일과 PCM 원시 데이터 지원",
         ],
         shot: "pro-media-pipeline",
         shotAlt: "Trimly 오디오 파형과 내보내기 컨트롤",
@@ -570,7 +570,7 @@ window.T = {
     proofSections: [
       {
         title: "Abre archivos enormes. Exporta solo lo bueno.",
-        body: "Trabaja directamente desde un disco externo o lector de tarjetas. Sin copiar primero, sin esperar para empezar.",
+        body: "Trabaja directamente desde un disco externo, lector de tarjetas o tu biblioteca de Fotos. Sin copiar primero, sin esperar para empezar.",
         points: [
           "Marca clips sobre el archivo original",
           "Exportación directa, comprimida o equilibrada",
@@ -608,12 +608,12 @@ window.T = {
         shotAlt: "Interfaz de edición de Trimly en distintos dispositivos",
       },
       {
-        title: "También para material exigente.",
+        title: "HDR, LOG y audio sin pérdida. Todo compatible.",
         body: "Pensado especialmente para creadores profesionales.",
         points: [
           "Procesamiento preparado para HDR",
           "Vídeo LOG con LUTs de recuperación para cámaras populares",
-          "Audio solo, incluso PCM sin procesar",
+          "Todo tipo de archivos de audio, incluso PCM sin procesar",
         ],
         shot: "pro-media-pipeline",
         shotAlt: "Forma de onda de audio y controles de exportación de Trimly",
@@ -705,7 +705,7 @@ window.T = {
     proofSections: [
       {
         title: "افتح الملفات الضخمة فوراً.",
-        body: "اعمل مباشرة من قرص خارجي أو قارئ بطاقات. لا نسخ مسبق ولا انتظار قبل البدء.",
+        body: "اعمل مباشرة من قرص خارجي أو قارئ بطاقات أو مكتبة الصور. لا نسخ مسبق ولا انتظار قبل البدء.",
         points: [
           "علّم المقاطع على الملف الأصلي",
           "تصدير مباشر أو مضغوط أو متوازن",
@@ -743,12 +743,12 @@ window.T = {
         shotAlt: "واجهة تحرير Trimly على أجهزة مختلفة",
       },
       {
-        title: "جاهز للمواد الجادة.",
+        title: "HDR وLOG والصوت بلا فقدان، كلها مدعومة.",
         body: "مصمم مع وضع المبدعين المحترفين في الحسبان.",
         points: [
           "معالجة وسائط جاهزة لـ HDR",
           "فيديو LOG مع LUT استعادة للكاميرات الشائعة",
-          "ملفات صوت فقط، بما في ذلك PCM الخام",
+          "ملفات صوت متنوعة، بما في ذلك PCM الخام",
         ],
         shot: "pro-media-pipeline",
         shotAlt: "موجة الصوت وعناصر التحكم في التصدير داخل Trimly",

@@ -369,6 +369,10 @@ html[dir="rtl"] .lang-dropdown {
     margin-top: 0;
 }
 
+.proof-copy h2 {
+    text-wrap: pretty;
+}
+
 /* === HERO === */
 .hero {
     position: relative;
@@ -740,13 +744,14 @@ html[dir="rtl"] .lang-dropdown {
 
 /* === PROOFS === */
 .proofs {
+    width: min(100%, 1280px);
     padding-top: 26px;
     padding-bottom: 76px;
 }
 
 .proof-block {
     display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-columns: repeat(24, minmax(0, 1fr));
     gap: 24px;
     align-items: stretch;
     padding: 78px 0;
@@ -754,17 +759,17 @@ html[dir="rtl"] .lang-dropdown {
 }
 
 .proof-shot-wrap {
-    grid-column: 1 / span 8;
+    grid-column: 1 / span 15;
     padding: 14px;
     border-radius: 18px;
 }
 
 .proof-block.reverse .proof-shot-wrap {
-    grid-column: 5 / -1;
+    grid-column: 10 / -1;
 }
 
 .proof-copy {
-    grid-column: 9 / -1;
+    grid-column: 16 / -1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -772,7 +777,7 @@ html[dir="rtl"] .lang-dropdown {
 }
 
 .proof-block.reverse .proof-copy {
-    grid-column: 1 / span 4;
+    grid-column: 1 / span 9;
     grid-row: 1;
     padding-left: 0;
     padding-right: 8px;

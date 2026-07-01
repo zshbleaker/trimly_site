@@ -16,33 +16,48 @@ function detectLanguage() {
     return 'en';
 }
 
-function shotPaths(name) {
+function themedShotPaths(name) {
     return {
         light: `${SCREENSHOT_DIR}${name}-light.webp`,
         dark: `${SCREENSHOT_DIR}${name}-dark.webp`,
     };
 }
 
-function renderShot(name, alt) {
-    const paths = shotPaths(name);
+function shotPath(name) {
+    return `${SCREENSHOT_DIR}${name}.webp`;
+}
+
+function renderShot(name, alt, themeMode = 'single') {
+    if (themeMode === 'adaptive') {
+        const paths = themedShotPaths(name);
+        return `
+            <picture>
+                <source media="(prefers-color-scheme: dark)" srcset="${paths.dark}">
+                <img class="shot-img" src="${paths.light}" alt="${alt || ''}" loading="lazy">
+            </picture>
+            <div class="shot-missing" aria-hidden="true">
+                <span>${paths.light}</span>
+                <span>${paths.dark}</span>
+            </div>
+        `;
+    }
+
+    const path = shotPath(name);
     return `
-        <picture>
-            <source media="(prefers-color-scheme: dark)" srcset="${paths.dark}">
-            <img class="shot-img" src="${paths.light}" alt="${alt || ''}" loading="lazy">
-        </picture>
+        <img class="shot-img" src="${path}" alt="${alt || ''}" loading="lazy">
         <div class="shot-missing" aria-hidden="true">
-            <span>${paths.light}</span>
-            <span>${paths.dark}</span>
+            <span>${path}</span>
         </div>
     `;
 }
 
 function hydrateShotFrames() {
     document.querySelectorAll('.shot-frame[data-shot]').forEach(frame => {
-        if (!frame.querySelector('picture')) {
+        if (!frame.querySelector('.shot-img')) {
             frame.innerHTML = renderShot(
                 frame.dataset.shot,
-                frame.dataset.shotAlt || frame.dataset.shot || ''
+                frame.dataset.shotAlt || frame.dataset.shot || '',
+                frame.dataset.shotTheme || 'single'
             );
         }
 
