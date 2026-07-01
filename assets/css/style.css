@@ -1340,8 +1340,8 @@ footer {
     }
 
     .use-case-row {
-        grid-template-columns: 1fr;
-        gap: 10px;
+        grid-template-columns: 42px minmax(0, 1fr);
+        gap: 0 18px;
         width: 100%;
         padding: 22px 22px 24px;
         border-radius: 16px;
@@ -1360,6 +1360,7 @@ footer {
     }
 
     .case-copy {
+        grid-column: 2;
         grid-template-columns: 1fr;
         gap: 6px;
     }

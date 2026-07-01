@@ -1,7 +1,7 @@
 window.T = {
   en: {
     indexTitle: "Trimly | Memories within Reach",
-    privacyTitle: "Privacy Policy | Trimly",
+    privacyTitle: "Trimly | Privacy Policy",
     nav: {
       features: "Features",
       download: "Download",
@@ -48,8 +48,8 @@ window.T = {
         shot: "source-file-clips",
       },
       {
-        title: "Clips land where they belong in Photos.",
-        body: "Each clip or Live Photo can carry the real time and place of the moment, so your library stays in order.",
+        title: "Metadata handled correctly.",
+        body: "Each clip or Live Photo can line up with the real time and place of the moment, so your library no longer turns messy.",
         points: [
           "Writes the actual moment on export",
           "Keeps GPS and device metadata",
@@ -78,7 +78,7 @@ window.T = {
       },
       {
         title: "Built for serious footage.",
-        body: "HDR, LOG, LUTs, and audio-only files are treated as core workflows, not edge cases.",
+        body: "Designed with professional creators in mind.",
         points: [
           "HDR-ready media pipeline",
           "LOG video with built-in recovery LUTs for popular cameras",
@@ -135,8 +135,8 @@ window.T = {
     },
   },
   zh: {
-    indexTitle: "Trimly|美好回忆，触手可及",
-    privacyTitle: "Trimly|隐私政策",
+    indexTitle: "Trimly | 美好回忆，触手可及",
+    privacyTitle: "Trimly | 隐私政策",
     nav: {
       features: "功能",
       download: "下载",
@@ -183,8 +183,8 @@ window.T = {
         shot: "source-file-clips",
       },
       {
-        title: "在系统相册里井井有条",
-        body: "每一个片段或 Live Photo，都能对上实际的时间和地点，相册里再也不会乱糟糟了",
+        title: "正确处理元数据",
+        body: "每一个片段或 Live Photo，都能对上实际的时间和地点，相册不再杂乱无章",
         points: ["导出时写入真实时间", "保留 GPS 与设备信息"],
         shot: "photos-metadata-export",
       },
@@ -209,7 +209,7 @@ window.T = {
       },
       {
         title: "HDR、LOG、纯音频，全都支持",
-        body: "为视频爱好者专门考虑",
+        body: "为专业创作者专门考虑",
         points: [
           "整个媒体处理管线为 HDR 设计",
           "支持 LOG 格式视频，并内置热门设备的还原 LUT",
@@ -266,7 +266,7 @@ window.T = {
   },
   ja: {
     indexTitle: "Trimly | 思い出を、すぐそばに。",
-    privacyTitle: "プライバシーポリシー | Trimly",
+    privacyTitle: "Trimly | プライバシーポリシー",
     nav: {
       features: "機能",
       download: "ダウンロード",
@@ -314,8 +314,8 @@ window.T = {
         shot: "source-file-clips",
       },
       {
-        title: "写真アプリで迷子にならない。",
-        body: "クリップや Live Photo に、その瞬間の時刻と場所を反映。あとから探しやすいまま残せます。",
+        title: "メタデータを正しく扱う。",
+        body: "クリップや Live Photo を、その瞬間の実際の時刻と場所に合わせて保存。写真ライブラリが散らかりません。",
         points: ["実際の撮影時刻を書き込み", "GPS とデバイス情報を保持"],
         shot: "photos-metadata-export",
       },
@@ -341,7 +341,7 @@ window.T = {
       },
       {
         title: "本気の素材にも対応。",
-        body: "HDR、LOG、LUT、音声のみのファイルも、特別扱いではなく標準のワークフローとして扱えます。",
+        body: "プロのクリエイターのために考え抜いた設計です。",
         points: [
           "HDR 前提のメディア処理",
           "LOG 動画と人気カメラ向け復元 LUT",
@@ -399,7 +399,7 @@ window.T = {
   },
   ko: {
     indexTitle: "Trimly | 추억을 가까이에",
-    privacyTitle: "개인정보 처리방침 | Trimly",
+    privacyTitle: "Trimly | 개인정보 처리방침",
     nav: {
       features: "기능",
       download: "다운로드",
@@ -447,8 +447,8 @@ window.T = {
         shot: "source-file-clips",
       },
       {
-        title: "사진 앱에서도 제자리로.",
-        body: "클립과 Live Photo에 실제 시간과 장소를 담아, 나중에도 찾기 쉽게 정리됩니다.",
+        title: "메타데이터를 올바르게 처리.",
+        body: "각 클립과 Live Photo가 실제 시간과 장소에 맞게 남아, 사진 보관함이 더 이상 어수선해지지 않습니다.",
         points: ["실제 촬영 시각 기록", "GPS와 기기 정보 보존"],
         shot: "photos-metadata-export",
       },
@@ -474,7 +474,7 @@ window.T = {
       },
       {
         title: "진지한 촬영본까지.",
-        body: "HDR, LOG, LUT, 오디오 전용 파일을 특별한 예외가 아니라 기본 흐름으로 다룹니다.",
+        body: "전문 크리에이터를 염두에 두고 설계했습니다.",
         points: [
           "HDR을 고려한 미디어 처리",
           "LOG 영상과 인기 카메라용 복원 LUT",
@@ -532,7 +532,7 @@ window.T = {
   },
   es: {
     indexTitle: "Trimly | Recuerdos siempre a mano",
-    privacyTitle: "Política de privacidad | Trimly",
+    privacyTitle: "Trimly | Política de privacidad",
     nav: {
       features: "Funciones",
       download: "Descargar",
@@ -579,8 +579,8 @@ window.T = {
         shot: "source-file-clips",
       },
       {
-        title: "Cada clip cae en su sitio en Fotos.",
-        body: "Los clips y Live Photos pueden llevar la hora y el lugar reales del momento, para que tu biblioteca siga ordenada.",
+        title: "Metadatos tratados como corresponde.",
+        body: "Cada clip o Live Photo puede alinearse con la hora y el lugar reales del momento, para que tu biblioteca deje de estar desordenada.",
         points: [
           "Escribe el momento real al exportar",
           "Conserva GPS y datos del dispositivo",
@@ -609,7 +609,7 @@ window.T = {
       },
       {
         title: "También para material exigente.",
-        body: "HDR, LOG, LUTs y archivos solo de audio forman parte del flujo principal, no son casos aparte.",
+        body: "Pensado especialmente para creadores profesionales.",
         points: [
           "Procesamiento preparado para HDR",
           "Vídeo LOG con LUTs de recuperación para cámaras populares",
@@ -667,7 +667,7 @@ window.T = {
   },
   ar: {
     indexTitle: "Trimly | ذكريات في متناولك",
-    privacyTitle: "سياسة الخصوصية | Trimly",
+    privacyTitle: "Trimly | سياسة الخصوصية",
     nav: {
       features: "المميزات",
       download: "حمِّل",
@@ -714,8 +714,8 @@ window.T = {
         shot: "source-file-clips",
       },
       {
-        title: "كل مقطع في مكانه داخل الصور.",
-        body: "يمكن لكل مقطع أو Live Photo أن يحمل وقت اللحظة ومكانها الحقيقيين، فتظل مكتبتك مرتبة.",
+        title: "معالجة صحيحة للبيانات الوصفية.",
+        body: "يمكن لكل مقطع أو Live Photo أن يطابق وقت اللحظة ومكانها الحقيقيين، حتى لا تصبح مكتبة الصور فوضوية.",
         points: [
           "كتابة لحظة التصوير الحقيقية",
           "الحفاظ على GPS وتفاصيل الجهاز",
@@ -744,7 +744,7 @@ window.T = {
       },
       {
         title: "جاهز للمواد الجادة.",
-        body: "يتعامل مع HDR وLOG وLUT وملفات الصوت فقط كجزء من سير العمل الأساسي.",
+        body: "مصمم مع وضع المبدعين المحترفين في الحسبان.",
         points: [
           "معالجة وسائط جاهزة لـ HDR",
           "فيديو LOG مع LUT استعادة للكاميرات الشائعة",
