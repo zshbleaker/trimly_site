@@ -37,13 +37,12 @@ function shotPath(name) {
     return `${SCREENSHOT_DIR}${name}.webp`;
 }
 
-function shotSrcset(name) {
+function shotSrcset(name, widths = SHOT_WIDTHS) {
     const meta = SHOT_META[name];
-    const responsive = SHOT_WIDTHS
-        .filter(width => !meta || width < meta.width)
+    const responsive = widths
+        .filter(width => !meta || width <= meta.width)
         .map(width => `${SCREENSHOT_DIR}${name}-${width}w.webp ${width}w`);
-    const originalWidth = meta?.width || 2880;
-    return [...responsive, `${shotPath(name)} ${originalWidth}w`].join(', ');
+    return responsive.join(', ');
 }
 
 function shotDimensions(name) {
@@ -64,7 +63,9 @@ function escapeAttr(value) {
 function renderShot(name, alt, themeMode = 'single', options = {}) {
     const loading = options.loading || 'lazy';
     const fetchPriority = options.fetchPriority || (loading === 'eager' ? 'high' : 'auto');
-    const sizes = options.sizes || '(min-width: 900px) 58vw, calc(100vw - 48px)';
+    const sizes = options.sizes || '(min-width: 1121px) 733px, (min-width: 768px) calc(100vw - 76px), calc(100vw - 60px)';
+    const widths = options.widths || SHOT_WIDTHS;
+    const fallbackWidth = widths.includes(1440) ? 1440 : widths[0];
     const escapedAlt = escapeAttr(alt);
 
     if (themeMode === 'adaptive') {
@@ -73,8 +74,8 @@ function renderShot(name, alt, themeMode = 'single', options = {}) {
         const darkName = `${name}-dark`;
         return `
             <picture>
-                <source media="(prefers-color-scheme: dark)" srcset="${shotSrcset(darkName)}" sizes="${sizes}">
-                <img class="shot-img" src="${SCREENSHOT_DIR}${lightName}-1440w.webp" srcset="${shotSrcset(lightName)}" sizes="${sizes}" ${shotDimensions(lightName)} alt="${escapedAlt}" loading="${loading}" fetchpriority="${fetchPriority}" decoding="async">
+                <source media="(prefers-color-scheme: dark)" srcset="${shotSrcset(darkName, widths)}" sizes="${sizes}">
+                <img class="shot-img" src="${SCREENSHOT_DIR}${lightName}-${fallbackWidth}w.webp" srcset="${shotSrcset(lightName, widths)}" sizes="${sizes}" ${shotDimensions(lightName)} alt="${escapedAlt}" loading="${loading}" fetchpriority="${fetchPriority}" decoding="async">
             </picture>
             <div class="shot-missing" aria-hidden="true">
                 <span>${paths.light}</span>
@@ -85,7 +86,7 @@ function renderShot(name, alt, themeMode = 'single', options = {}) {
 
     const path = shotPath(name);
     return `
-        <img class="shot-img" src="${SCREENSHOT_DIR}${name}-1440w.webp" srcset="${shotSrcset(name)}" sizes="${sizes}" ${shotDimensions(name)} alt="${escapedAlt}" loading="${loading}" fetchpriority="${fetchPriority}" decoding="async">
+        <img class="shot-img" src="${SCREENSHOT_DIR}${name}-${fallbackWidth}w.webp" srcset="${shotSrcset(name, widths)}" sizes="${sizes}" ${shotDimensions(name)} alt="${escapedAlt}" loading="${loading}" fetchpriority="${fetchPriority}" decoding="async">
         <div class="shot-missing" aria-hidden="true">
             <span>${path}</span>
         </div>
@@ -104,8 +105,9 @@ function hydrateShotFrames() {
                     loading: isHero ? 'eager' : 'lazy',
                     fetchPriority: isHero ? 'high' : 'auto',
                     sizes: isHero
-                        ? '(min-width: 980px) 58vw, calc(100vw - 56px)'
-                        : '(min-width: 900px) 58vw, calc(100vw - 48px)',
+                        ? '(min-width: 1004px) 884px, (min-width: 768px) calc(100vw - 84px), calc(100vw - 60px)'
+                        : '(min-width: 1121px) 733px, (min-width: 768px) calc(100vw - 76px), calc(100vw - 60px)',
+                    widths: isHero ? [2160] : SHOT_WIDTHS,
                 }
             );
         }
