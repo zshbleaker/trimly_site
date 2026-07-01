@@ -8,7 +8,6 @@ window.T = {
     },
     hero: {
       heading: "Memories\nwithin Reach",
-      tagline: "Huge videos should be easy to revisit.",
       subtitle:
         "Record the whole trip, show, party, or run. Trimly pulls out the moments worth keeping and saves them to Photos in one tap.",
       cta: "Download on the App Store",
@@ -136,15 +135,14 @@ window.T = {
     },
   },
   zh: {
-    indexTitle: "Trimly | 让你记录的美好生活，触手可及",
-    privacyTitle: "隐私政策 | Trimly",
+    indexTitle: "Trimly|美好回忆，触手可及",
+    privacyTitle: "Trimly|隐私政策",
     nav: {
       features: "功能",
       download: "下载",
     },
     hero: {
       heading: "美好回忆，\n触手可及",
-      tagline: "不用再烦恼超大视频如何随时回看",
       subtitle:
         "旅行、演出、聚会、户外运动，安心录全程，Trimly 帮你从长视频中切出精彩片段，一键导入系统相册。在你最熟悉的地方回味最精彩的瞬间",
       cta: "在 App Store 下载",
@@ -275,7 +273,6 @@ window.T = {
     },
     hero: {
       heading: "思い出を、\nすぐそばに。",
-      tagline: "長すぎる動画も、見返したい瞬間だけすぐに。",
       subtitle:
         "旅行もライブもパーティーも、まずは全部録って大丈夫。Trimly が見どころを切り出し、写真アプリへワンタップで保存します。",
       cta: "App Storeでダウンロード",
@@ -319,10 +316,7 @@ window.T = {
       {
         title: "写真アプリで迷子にならない。",
         body: "クリップや Live Photo に、その瞬間の時刻と場所を反映。あとから探しやすいまま残せます。",
-        points: [
-          "実際の撮影時刻を書き込み",
-          "GPS とデバイス情報を保持",
-        ],
+        points: ["実際の撮影時刻を書き込み", "GPS とデバイス情報を保持"],
         shot: "photos-metadata-export",
       },
       {
@@ -412,7 +406,6 @@ window.T = {
     },
     hero: {
       heading: "추억을\n가까이에",
-      tagline: "긴 영상 속 다시 보고 싶은 순간만 빠르게.",
       subtitle:
         "여행, 공연, 모임, 야외 활동은 마음 놓고 길게 찍으세요. Trimly가 하이라이트를 잘라 사진 앱에 한 번에 저장합니다.",
       cta: "App Store에서 다운로드",
@@ -546,7 +539,6 @@ window.T = {
     },
     hero: {
       heading: "Recuerdos\nsiempre a mano",
-      tagline: "Vuelve a lo importante, aunque el vídeo sea enorme.",
       subtitle:
         "Graba el viaje, el concierto, la fiesta o la ruta completa. Trimly extrae los momentos que importan y los guarda en Fotos con un toque.",
       cta: "Descargar en el App Store",
@@ -682,7 +674,6 @@ window.T = {
     },
     hero: {
       heading: "ذكريات\nفي متناولك",
-      tagline: "عد إلى اللحظات المهمة، حتى لو كان الفيديو طويلاً.",
       subtitle:
         "سجّل الرحلة أو الحفل أو التجمع كاملاً. يقتطع Trimly اللحظات التي تستحق الاحتفاظ بها ويحفظها في الصور بلمسة واحدة.",
       cta: "حمِّل من App Store",
