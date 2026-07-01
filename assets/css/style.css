@@ -11,6 +11,7 @@
     --font: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Noto Sans SC", "Noto Sans JP", Arial, sans-serif;
     --max-w: 1120px;
     --hero-w: 1440px;
+    --page-x: 28px;
     --nav-height: 58px;
     --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
 
@@ -198,10 +199,10 @@ nav::before {
 .nav-inner {
     position: relative;
     z-index: 1;
-    width: min(100%, var(--max-w));
+    width: min(100%, var(--hero-w));
     min-height: var(--nav-height);
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 var(--page-x);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -378,7 +379,7 @@ html[dir="rtl"] .lang-dropdown {
     position: relative;
     width: min(100%, var(--hero-w));
     margin: 0 auto;
-    padding: 68px 28px 82px;
+    padding: 68px var(--page-x) 82px;
     display: grid;
     grid-template-columns: minmax(380px, 0.72fr) minmax(0, 1.28fr);
     column-gap: clamp(28px, 3vw, 44px);
@@ -1176,10 +1177,14 @@ footer {
 
 /* === RESPONSIVE === */
 @media (max-width: 1120px) {
+    :root {
+        --page-x: 24px;
+    }
+
     .hero {
         grid-template-columns: 1fr;
         width: min(100%, var(--max-w));
-        padding: 62px 24px 72px;
+        padding: 62px var(--page-x) 72px;
         gap: 34px;
     }
 
@@ -1245,11 +1250,11 @@ footer {
 
 @media (max-width: 767px) {
     :root {
+        --page-x: 20px;
         --nav-height: 54px;
     }
 
     .nav-inner {
-        padding: 0 18px;
         gap: 12px;
     }
 
@@ -1275,15 +1280,13 @@ footer {
     .proofs,
     .privacy,
     .legal {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: var(--page-x);
+        padding-right: var(--page-x);
     }
 
     .hero {
         padding-top: 48px;
         padding-bottom: 34px;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     .hero-cta-row {
@@ -1413,8 +1416,8 @@ footer {
 }
 
 @media (max-width: 420px) {
-    .nav-inner {
-        padding: 0 12px;
+    :root {
+        --page-x: 16px;
     }
 
     .nav-right {
