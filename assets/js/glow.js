@@ -1,5 +1,10 @@
-(function initTrimlyGlow() {
+function initTrimlyGlow() {
     'use strict';
+
+    const connection = navigator.connection || navigator.webkitConnection;
+    if (connection?.saveData) {
+        return;
+    }
 
     const canvas = document.createElement('canvas');
     canvas.id = 'glow-canvas';
@@ -218,9 +223,21 @@
     let running = true;
     let start = performance.now();
     let elapsed = 0;
+    let frameHandle = 0;
+    let activeUntil = 0;
+    let lastFrame = 0;
+    const frameInterval = 1000 / 24;
+
+    function activate(duration = 1600) {
+        activeUntil = Math.max(activeUntil, performance.now() + duration);
+        if (!frameHandle && running) {
+            frameHandle = requestAnimationFrame(frame);
+        }
+    }
 
     function applyTheme() {
         theme = darkMq.matches ? themes.dark : themes.light;
+        activate(600);
     }
 
     darkMq.addEventListener('change', applyTheme);
@@ -235,6 +252,7 @@
             canvas.style.width = window.innerWidth + 'px';
             canvas.style.height = window.innerHeight + 'px';
             gl.viewport(0, 0, w, h);
+            activate(600);
         }
     }
 
@@ -244,20 +262,27 @@
     window.addEventListener('pointermove', (e) => {
         targetPointer.x = e.clientX / window.innerWidth;
         targetPointer.y = 1.0 - e.clientY / window.innerHeight;
+        activate(900);
     }, { passive: true });
 
     document.addEventListener('visibilitychange', () => {
         running = !document.hidden;
         if (running) {
             start = performance.now() - elapsed;
-            requestAnimationFrame(frame);
+            activate(600);
         }
     });
 
     function frame(now) {
+        frameHandle = 0;
         if (!running) {
             return;
         }
+        if (now - lastFrame < frameInterval && now < activeUntil) {
+            frameHandle = requestAnimationFrame(frame);
+            return;
+        }
+        lastFrame = now;
 
         elapsed = now - start;
         const t = motionMq.matches ? 0 : elapsed * 0.001;
@@ -272,9 +297,24 @@
         gl.uniform1f(uTheme, theme.theme);
         gl.uniform2f(uPointer, pointer.x, pointer.y);
         gl.drawArrays(gl.TRIANGLES, 0, 6);
-        requestAnimationFrame(frame);
+        if (now < activeUntil) {
+            frameHandle = requestAnimationFrame(frame);
+        }
     }
 
     document.documentElement.classList.add('glow-ready');
-    requestAnimationFrame(frame);
+    frameHandle = requestAnimationFrame(frame);
+}
+
+(function scheduleTrimlyGlow() {
+    const start = () => {
+        const requestIdle = window.requestIdleCallback || ((cb) => setTimeout(cb, 900));
+        requestIdle(initTrimlyGlow, { timeout: 1800 });
+    };
+
+    if (document.readyState === 'complete') {
+        start();
+    } else {
+        window.addEventListener('load', start, { once: true });
+    }
 })();

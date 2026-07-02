@@ -52,6 +52,16 @@ function getPageLang(el) {
         || 'en';
 }
 
+function escapeComponentAttr(value) {
+    return String(value || '').replace(/[&<>"']/g, char => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;',
+    })[char]);
+}
+
 function renderLangOptions() {
     return LANG_OPTIONS.map(({ code, label }) => `
         <button class="lang-option" type="button" data-lang="${code}">
@@ -136,11 +146,11 @@ class TrimlyHeader extends HTMLElement {
                         <a class="nav-link" href="${featuresHref}">${t.nav.features}</a>
                         <a class="nav-link app-store-link" href="${getAppStoreUrl()}" target="_blank" rel="noopener">${t.nav.download}</a>
                         <div class="lang-switcher">
-                            <button class="lang-btn" type="button" aria-haspopup="listbox" aria-expanded="false">
+                            <button class="lang-btn" type="button" aria-haspopup="listbox" aria-expanded="false" aria-label="Language: ${escapeComponentAttr(currentLangLabel)}">
                                 ${currentFlag}
                                 <span class="lang-current">${currentLangLabel}</span>
                             </button>
-                            <div class="lang-dropdown" id="langDropdown">
+                            <div class="lang-dropdown" id="langDropdown" role="listbox" aria-label="Language">
                                 ${renderLangOptions()}
                             </div>
                         </div>
@@ -179,6 +189,8 @@ class TrimlyHeader extends HTMLElement {
         options.forEach(opt => {
             const isCurrent = opt.dataset.lang === activeLang;
             opt.classList.toggle('active', isCurrent);
+            opt.setAttribute('role', 'option');
+            opt.setAttribute('aria-selected', isCurrent ? 'true' : 'false');
             opt.addEventListener('click', e => {
                 e.stopPropagation();
                 const selectedLang = opt.dataset.lang;

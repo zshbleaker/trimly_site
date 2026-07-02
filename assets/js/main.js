@@ -2,7 +2,7 @@
 
 const EMAIL = 'hi@zshbleaker.me';
 const SCREENSHOT_DIR = 'assets/screenshots/';
-const SHOT_WIDTHS = [960, 1440, 2160];
+const SHOT_WIDTHS = [640, 960, 1440, 2160];
 const SHOT_META = {
     'hero-editor-light': { width: 2880, height: 1800 },
     'hero-editor-dark': { width: 2880, height: 1800 },
@@ -107,7 +107,7 @@ function hydrateShotFrames() {
                     sizes: isHero
                         ? '(min-width: 1004px) 884px, (min-width: 768px) calc(100vw - 84px), calc(100vw - 60px)'
                         : '(min-width: 1121px) 733px, (min-width: 768px) calc(100vw - 76px), calc(100vw - 60px)',
-                    widths: isHero ? [2160] : SHOT_WIDTHS,
+                    widths: SHOT_WIDTHS,
                 }
             );
         }
