@@ -341,13 +341,22 @@ nav::after {
     min-width: 0;
 }
 
-.nav-brand svg {
+.nav-brand picture,
+.nav-brand img {
     width: 32px;
     height: 32px;
     border-radius: 8px;
+}
+
+.nav-brand picture {
+    display: block;
     filter:
         drop-shadow(0 1px 0 rgba(255, 255, 255, 0.72))
         drop-shadow(0 8px 18px rgba(47, 41, 34, 0.14));
+}
+
+.nav-brand img {
+    display: block;
 }
 
 .nav-brand span {
@@ -2311,7 +2320,7 @@ footer {
         opacity: 0.72;
     }
 
-    .nav-brand svg {
+    .nav-brand picture {
         filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.28));
     }
 
