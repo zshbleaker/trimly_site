@@ -2352,16 +2352,26 @@ footer {
     }
 
     .lang-dropdown {
+        background:
+            linear-gradient(180deg, rgba(37,49,52,0.98), rgba(15,23,25,0.98)),
+            #111a1d;
+        border-color: rgba(172, 194, 193, 0.18);
         box-shadow:
             0 1px 0 rgba(232,244,241,0.09) inset,
             0 22px 46px rgba(0,0,0,0.36),
             0 4px 12px rgba(0,0,0,0.18);
     }
 
+    .lang-dropdown::after {
+        background:
+            linear-gradient(160deg, rgba(232,244,241,0.08), rgba(255,255,255,0) 34%),
+            linear-gradient(340deg, rgba(143,192,203,0.05), rgba(255,255,255,0) 44%);
+    }
+
     .lang-option:hover {
         background:
-            linear-gradient(180deg, rgba(232,244,241,0.045), rgba(255,255,255,0.012)),
-            rgba(143, 192, 203, 0.055);
+            linear-gradient(180deg, rgba(232,244,241,0.09), rgba(255,255,255,0.025)),
+            rgba(143, 192, 203, 0.10);
     }
 
     .lang-badge {
@@ -2860,6 +2870,12 @@ footer {
     }
 }
 
+@media (max-width: 1120px) and (orientation: portrait) {
+    .hero {
+        padding-top: 84px;
+    }
+}
+
 @media (max-width: 767px) {
     :root {
         --page-x: 20px;
@@ -2897,7 +2913,7 @@ footer {
     }
 
     .hero {
-        padding-top: 48px;
+        padding-top: 72px;
         padding-bottom: 34px;
     }
 
