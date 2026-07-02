@@ -146,8 +146,6 @@ function buildProofSections(t) {
     return t.proofSections || [];
 }
 
-const USE_CASE_ART = ['travel', 'shows', 'parties', 'outdoor', 'movies'];
-
 function renderUseCases() {
     const el = document.getElementById('useCaseGrid');
     if (!el) {
@@ -162,7 +160,6 @@ function renderUseCases() {
                 <h3>${item.title}</h3>
                 <p>${item.body}</p>
             </div>
-            <span class="case-art case-art--${USE_CASE_ART[index] || 'travel'}" aria-hidden="true"><i></i><b></b><em></em></span>
         </article>
     `).join('');
 }
