@@ -2789,6 +2789,75 @@ footer {
     .proof-shot {
         min-height: 360px;
     }
+
+    .use-case-grid {
+        padding-inline: clamp(38px, 7vw, 84px);
+    }
+
+    .use-case-row {
+        width: 100%;
+    }
+
+    .case-frame-tape {
+        top: -20px;
+        left: -18px;
+        right: auto;
+    }
+
+    .case-scene {
+        top: -30px;
+        right: -42px;
+        bottom: auto;
+        left: auto;
+        width: 96px;
+        height: 76px;
+        opacity: 0.72;
+        transform: rotate(7deg);
+    }
+
+    .case-confetti {
+        display: none;
+    }
+
+    .use-case-row:nth-child(even) .case-scene,
+    .use-case-row:nth-child(4) .case-scene {
+        right: auto;
+        left: -42px;
+        transform: rotate(-7deg);
+    }
+
+    .use-case-row:nth-child(3) .case-scene {
+        top: auto;
+        right: -40px;
+        bottom: -18px;
+        left: auto;
+        transform: rotate(-6deg);
+    }
+
+    .use-case-row:nth-child(5) .case-scene {
+        top: -28px;
+        right: -38px;
+        left: auto;
+        transform: rotate(9deg);
+    }
+
+    html[dir="rtl"] .case-frame-tape {
+        left: auto;
+        right: -18px;
+    }
+
+    html[dir="rtl"] .case-scene {
+        right: auto;
+        left: -42px;
+        transform: rotate(-7deg);
+    }
+
+    html[dir="rtl"] .use-case-row:nth-child(even) .case-scene,
+    html[dir="rtl"] .use-case-row:nth-child(4) .case-scene {
+        right: -42px;
+        left: auto;
+        transform: rotate(7deg);
+    }
 }
 
 @media (max-width: 767px) {
@@ -2944,6 +3013,7 @@ footer {
     .use-case-grid {
         border-top: 0;
         gap: 18px;
+        padding-inline: 12px;
     }
 
     .use-case-row {
@@ -2971,7 +3041,7 @@ footer {
     .case-frame-tape {
         top: -18px;
         right: auto;
-        left: -18px;
+        left: -10px;
         width: 82px;
         height: 19px;
         opacity: 0.58;
@@ -2987,20 +3057,35 @@ footer {
     .case-frame-tape i:last-child { right: 9px; }
 
     .case-scene {
-        top: 22px;
-        right: -82px;
+        top: -18px;
+        right: 12px;
         bottom: auto;
         left: auto;
-        width: 72px;
-        height: 56px;
-        opacity: 0.70;
+        width: 58px;
+        height: 46px;
+        opacity: 0.62;
         transform: rotate(6deg);
     }
 
     .use-case-row:nth-child(even) .case-scene {
         right: auto;
-        left: -66px;
+        left: -10px;
         transform: rotate(-6deg);
+    }
+
+    .use-case-row:nth-child(3) .case-scene {
+        top: auto;
+        right: 10px;
+        bottom: -13px;
+        left: auto;
+        transform: rotate(-5deg);
+    }
+
+    .use-case-row:nth-child(5) .case-scene {
+        top: -18px;
+        right: 12px;
+        left: auto;
+        transform: rotate(8deg);
     }
 
     .case-confetti {
@@ -3024,13 +3109,19 @@ footer {
 
     html[dir="rtl"] .case-frame-tape {
         left: auto;
-        right: -18px;
+        right: -10px;
     }
 
     html[dir="rtl"] .case-scene {
         right: auto;
-        left: -82px;
+        left: 12px;
         transform: rotate(-6deg);
+    }
+
+    html[dir="rtl"] .use-case-row:nth-child(even) .case-scene {
+        right: -10px;
+        left: auto;
+        transform: rotate(6deg);
     }
 
     html[dir="rtl"] .case-confetti {
