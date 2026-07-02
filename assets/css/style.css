@@ -1228,6 +1228,444 @@ html[lang^="ja"] .hero-note {
     pointer-events: none;
 }
 
+.case-decor {
+    --decor-main: var(--accent-3);
+    --decor-ink: rgba(67,62,52,0.56);
+    --decor-fill: rgba(255,253,246,0.78);
+    --decor-glow: rgba(255,255,255,0.72);
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    border-radius: inherit;
+    overflow: visible;
+    pointer-events: none;
+}
+
+.case-decor::before,
+.case-decor::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+.case-decor::before {
+    inset: 8px;
+    z-index: 1;
+    padding: 5px;
+    background:
+        repeating-linear-gradient(90deg, rgba(67,62,52,0.24) 0 2px, transparent 2px 11px),
+        linear-gradient(135deg, rgba(255,255,255,0.88), rgba(255,255,255,0.16) 38%, color-mix(in srgb, var(--decor-main) 34%, transparent));
+    opacity: 0.52;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.case-decor::after {
+    left: 18px;
+    right: 18px;
+    bottom: 10px;
+    z-index: 2;
+    height: 9px;
+    background:
+        radial-gradient(circle, rgba(67,62,52,0.22) 0 1px, transparent 1.5px) 0 0 / 13px 7px repeat-x,
+        linear-gradient(90deg, transparent, color-mix(in srgb, var(--decor-main) 28%, transparent) 28%, transparent 76%);
+    opacity: 0.46;
+}
+
+.case-frame-tape {
+    position: absolute;
+    top: var(--case-tape-top, -24px);
+    right: var(--case-tape-right, auto);
+    left: var(--case-tape-left, -30px);
+    z-index: 5;
+    width: 116px;
+    height: 26px;
+    border: 1px solid rgba(255,255,255,0.58);
+    border-radius: 4px;
+    background:
+        linear-gradient(145deg, rgba(255,255,255,0.76), rgba(255,255,255,0.18)),
+        repeating-linear-gradient(-45deg, color-mix(in srgb, var(--decor-main) 28%, transparent) 0 5px, transparent 5px 11px),
+        rgba(255,253,246,0.58);
+    box-shadow:
+        0 1px 0 rgba(255,255,255,0.72) inset,
+        0 7px 18px rgba(67,62,52,0.12);
+    transform: rotate(var(--case-tape-rotate, -4deg));
+    opacity: 0.72;
+}
+
+.case-frame-tape i {
+    position: absolute;
+    top: 6px;
+    width: 19px;
+    height: 12px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.46);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.60);
+}
+
+.case-frame-tape i:first-child { left: 12px; }
+.case-frame-tape i:last-child { right: 12px; }
+
+.case-scene {
+    position: absolute;
+    top: var(--case-scene-top, -34px);
+    right: var(--case-scene-right, -132px);
+    bottom: var(--case-scene-bottom, auto);
+    left: var(--case-scene-left, auto);
+    z-index: 5;
+    width: 122px;
+    height: 96px;
+    border: 1px solid rgba(255,255,255,0.70);
+    background:
+        linear-gradient(145deg, rgba(255,255,255,0.80), rgba(255,255,255,0.24) 42%, color-mix(in srgb, var(--decor-main) 16%, transparent)),
+        var(--decor-fill);
+    box-shadow:
+        0 1px 0 rgba(255,255,255,0.86) inset,
+        0 -1px 0 rgba(67,62,52,0.08) inset,
+        0 16px 24px rgba(67,62,52,0.14);
+    transform: rotate(var(--case-scene-rotate, 7deg));
+}
+
+.case-scene,
+.case-scene::before,
+.case-scene::after,
+.case-scene i {
+    border-radius: 8px;
+}
+
+.case-scene::before,
+.case-scene::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+}
+
+.case-scene i {
+    position: absolute;
+    display: block;
+}
+
+.case-confetti {
+    position: absolute;
+    top: var(--case-confetti-top, auto);
+    right: var(--case-confetti-right, -88px);
+    bottom: var(--case-confetti-bottom, 22px);
+    left: var(--case-confetti-left, auto);
+    z-index: 5;
+    width: 70px;
+    height: 70px;
+    transform: rotate(var(--case-confetti-rotate, -12deg));
+}
+
+.case-confetti i {
+    position: absolute;
+    display: block;
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--decor-main) 72%, white);
+    box-shadow:
+        0 1px 0 rgba(255,255,255,0.70) inset,
+        0 6px 12px rgba(67,62,52,0.12);
+}
+
+.case-confetti i:nth-child(1) {
+    top: 2px;
+    right: 18px;
+    width: 10px;
+    height: 10px;
+}
+
+.case-confetti i:nth-child(2) {
+    top: 30px;
+    right: 4px;
+    width: 22px;
+    height: 7px;
+    transform: rotate(28deg);
+}
+
+.case-confetti i:nth-child(3) {
+    right: 34px;
+    bottom: 7px;
+    width: 8px;
+    height: 24px;
+    transform: rotate(-18deg);
+}
+
+.case-decor--travel {
+    --decor-main: #ba753a;
+    --decor-fill: rgba(255,248,222,0.78);
+}
+
+.case-decor--travel .case-scene {
+    border-radius: 11px 11px 18px 11px;
+    background:
+        linear-gradient(180deg, rgba(255,244,193,0.82), rgba(235,159,95,0.22) 54%, rgba(63,108,101,0.14)),
+        var(--decor-fill);
+}
+
+.case-decor--travel .case-scene::before {
+    top: 16px;
+    left: 18px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 32% 32%, rgba(255,255,255,0.88), #e8a14a 48%, #b95940);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.42);
+}
+
+.case-decor--travel .case-scene::after {
+    right: 13px;
+    bottom: 16px;
+    width: 66px;
+    height: 26px;
+    border-radius: 4px 4px 12px 12px;
+    background:
+        linear-gradient(135deg, transparent 0 39%, rgba(63,108,101,0.72) 40% 63%, transparent 64%),
+        linear-gradient(45deg, transparent 0 44%, rgba(69,91,92,0.70) 45% 69%, transparent 70%);
+}
+
+.case-decor--travel .case-scene i:nth-child(1) {
+    right: 18px;
+    top: 18px;
+    width: 44px;
+    height: 16px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.58);
+}
+
+.case-decor--travel .case-scene i:nth-child(2) {
+    right: 28px;
+    top: 37px;
+    width: 34px;
+    height: 2px;
+    background: rgba(67,62,52,0.34);
+    transform: rotate(-18deg);
+}
+
+.case-decor--show {
+    --decor-main: #9a3f35;
+    --decor-fill: rgba(255,239,232,0.76);
+}
+
+.case-decor--show .case-scene {
+    border-radius: 50%;
+    background:
+        radial-gradient(circle at 48% 48%, rgba(255,253,246,0.90) 0 15%, rgba(67,62,52,0.22) 16% 18%, transparent 19%),
+        repeating-radial-gradient(circle at 50% 50%, rgba(67,62,52,0.15) 0 1px, transparent 1px 7px),
+        radial-gradient(circle at 38% 30%, rgba(255,255,255,0.64), transparent 28%),
+        color-mix(in srgb, var(--decor-main) 48%, #2f2b25);
+}
+
+.case-decor--show .case-scene::before {
+    right: -6px;
+    bottom: 10px;
+    width: 17px;
+    height: 62px;
+    border-radius: 999px;
+    background: linear-gradient(180deg, #f8f0e6, color-mix(in srgb, var(--decor-main) 54%, #2f2b25));
+    box-shadow: 0 0 0 1px rgba(67,62,52,0.14), 0 8px 14px rgba(67,62,52,0.12);
+    transform: rotate(-26deg);
+}
+
+.case-decor--show .case-scene::after {
+    right: -12px;
+    bottom: 51px;
+    width: 30px;
+    height: 22px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 36% 32%, rgba(255,255,255,0.80), rgba(255,255,255,0.20) 33%, color-mix(in srgb, var(--decor-main) 72%, #2f2b25));
+}
+
+.case-decor--show .case-scene i:nth-child(1),
+.case-decor--show .case-scene i:nth-child(2) {
+    left: 24px;
+    width: 14px;
+    height: 33px;
+    border-radius: 999px;
+    border: 2px solid rgba(255,253,246,0.70);
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    transform: rotate(12deg);
+}
+
+.case-decor--show .case-scene i:nth-child(1) { top: 16px; }
+.case-decor--show .case-scene i:nth-child(2) { top: 30px; left: 45px; transform: rotate(-8deg); }
+
+.case-decor--party {
+    --decor-main: #c34f61;
+    --decor-fill: rgba(255,242,229,0.78);
+}
+
+.case-decor--party .case-scene {
+    border-radius: 12px;
+    background:
+        linear-gradient(90deg, transparent 0 45%, rgba(255,253,246,0.78) 45% 55%, transparent 55%),
+        linear-gradient(180deg, transparent 0 42%, rgba(255,253,246,0.78) 42% 54%, transparent 54%),
+        linear-gradient(145deg, color-mix(in srgb, var(--decor-main) 60%, #fff3db), #f3a34d);
+}
+
+.case-decor--party .case-scene::before {
+    left: 23px;
+    top: -14px;
+    width: 78px;
+    height: 28px;
+    border-radius: 60% 40% 50% 42%;
+    background:
+        radial-gradient(circle at 20% 48%, rgba(255,255,255,0.78) 0 12%, transparent 13%),
+        radial-gradient(circle at 80% 48%, rgba(255,255,255,0.78) 0 12%, transparent 13%),
+        color-mix(in srgb, var(--decor-main) 54%, #fff3db);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.56) inset;
+}
+
+.case-decor--party .case-scene::after {
+    left: 27px;
+    right: 27px;
+    bottom: 15px;
+    height: 17px;
+    border-radius: 999px;
+    background:
+        radial-gradient(circle at 20% 50%, #fff8e7 0 3px, transparent 3.5px),
+        radial-gradient(circle at 50% 50%, #fff8e7 0 3px, transparent 3.5px),
+        radial-gradient(circle at 80% 50%, #fff8e7 0 3px, transparent 3.5px);
+}
+
+.case-decor--party .case-scene i:nth-child(1),
+.case-decor--party .case-scene i:nth-child(2),
+.case-decor--party .case-scene i:nth-child(3) {
+    top: 13px;
+    width: 4px;
+    height: 24px;
+    border-radius: 999px;
+    background: #fff7d4;
+    box-shadow: 0 -8px 0 -2px #dd8d3e;
+}
+
+.case-decor--party .case-scene i:nth-child(1) { left: 36px; }
+.case-decor--party .case-scene i:nth-child(2) { left: 58px; }
+.case-decor--party .case-scene i:nth-child(3) { left: 80px; }
+
+.case-decor--outdoor {
+    --decor-main: #3f6c65;
+    --decor-fill: rgba(232,246,234,0.78);
+}
+
+.case-decor--outdoor .case-scene {
+    border-radius: 18px;
+    background:
+        linear-gradient(180deg, rgba(210,234,225,0.86), rgba(255,253,246,0.28) 52%, rgba(63,108,101,0.18)),
+        var(--decor-fill);
+}
+
+.case-decor--outdoor .case-scene::before {
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    height: 49px;
+    border-radius: 5px 5px 16px 16px;
+    background:
+        linear-gradient(132deg, transparent 0 39%, rgba(55,90,77,0.86) 40% 68%, transparent 69%),
+        linear-gradient(48deg, transparent 0 45%, rgba(79,122,89,0.82) 46% 72%, transparent 73%),
+        linear-gradient(180deg, transparent 0 58%, rgba(255,255,255,0.76) 59% 66%, transparent 67%);
+}
+
+.case-decor--outdoor .case-scene::after {
+    right: 20px;
+    top: 18px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 34% 32%, rgba(255,255,255,0.88), #e4b365);
+}
+
+.case-decor--outdoor .case-scene i:nth-child(1),
+.case-decor--outdoor .case-scene i:nth-child(2) {
+    left: 20px;
+    bottom: 20px;
+    width: 76px;
+    height: 13px;
+    border-radius: 999px;
+    border: 2px solid rgba(255,255,255,0.70);
+    border-left-color: transparent;
+    border-top-color: transparent;
+    transform: rotate(-12deg);
+}
+
+.case-decor--outdoor .case-scene i:nth-child(2) {
+    left: 40px;
+    bottom: 31px;
+    width: 54px;
+    transform: rotate(16deg);
+}
+
+.case-decor--cinema {
+    --decor-main: #846f8e;
+    --decor-fill: rgba(245,239,255,0.76);
+}
+
+.case-decor--cinema .case-scene {
+    border-radius: 8px;
+    background:
+        linear-gradient(90deg, rgba(67,62,52,0.34) 0 10px, transparent 10px calc(100% - 10px), rgba(67,62,52,0.34) calc(100% - 10px)),
+        repeating-linear-gradient(180deg, rgba(255,255,255,0.82) 0 7px, transparent 7px 14px),
+        linear-gradient(145deg, color-mix(in srgb, var(--decor-main) 54%, #fff), #3f6c65);
+}
+
+.case-decor--cinema .case-scene::before {
+    inset: 16px 18px;
+    border-radius: 7px;
+    background:
+        radial-gradient(circle at 72% 22%, rgba(255,253,246,0.82) 0 5px, transparent 5.5px),
+        linear-gradient(135deg, transparent 0 38%, rgba(255,253,246,0.64) 39% 49%, transparent 50%),
+        rgba(47,43,37,0.28);
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.45);
+}
+
+.case-decor--cinema .case-scene::after {
+    left: 22px;
+    bottom: -12px;
+    width: 84px;
+    height: 26px;
+    border-radius: 6px;
+    background:
+        repeating-linear-gradient(90deg, rgba(255,253,246,0.86) 0 5px, transparent 5px 12px),
+        rgba(67,62,52,0.62);
+    box-shadow: 0 8px 14px rgba(67,62,52,0.14);
+    transform: rotate(-8deg);
+}
+
+.case-decor--cinema .case-scene i:nth-child(1),
+.case-decor--cinema .case-scene i:nth-child(2),
+.case-decor--cinema .case-scene i:nth-child(3) {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: rgba(255,253,246,0.82);
+}
+
+.case-decor--cinema .case-scene i:nth-child(1) { right: 22px; top: 18px; }
+.case-decor--cinema .case-scene i:nth-child(2) { right: 42px; top: 28px; opacity: 0.72; }
+.case-decor--cinema .case-scene i:nth-child(3) { right: 27px; top: 44px; opacity: 0.58; }
+
+html[dir="rtl"] .case-scene {
+    right: var(--case-scene-left, auto);
+    left: var(--case-scene-right, -132px);
+    transform: rotate(-7deg);
+}
+
+html[dir="rtl"] .case-frame-tape {
+    left: var(--case-tape-right, auto);
+    right: var(--case-tape-left, -30px);
+    transform: rotate(4deg);
+}
+
+html[dir="rtl"] .case-confetti {
+    right: var(--case-confetti-left, auto);
+    left: var(--case-confetti-right, -88px);
+    transform: rotate(12deg);
+}
+
 .case-index,
 .case-copy {
     position: relative;
@@ -1235,11 +1673,82 @@ html[lang^="ja"] .hero-note {
 }
 
 /* Each glass tile leans at its own angle — no two the same. */
-.use-case-row:nth-child(1) { --case-tilt: -2.6deg; --case-shift: -16px; --case-layer: 1; }
-.use-case-row:nth-child(2) { --case-tilt:  1.9deg; --case-shift:  20px; --case-layer: 2; }
-.use-case-row:nth-child(3) { --case-tilt: -1.2deg; --case-shift:  -6px; --case-layer: 3; }
-.use-case-row:nth-child(4) { --case-tilt:  2.7deg; --case-shift:  14px; --case-layer: 4; }
-.use-case-row:nth-child(5) { --case-tilt: -2.0deg; --case-shift: -18px; --case-layer: 5; }
+.use-case-row:nth-child(1) {
+    --case-tilt: -2.6deg;
+    --case-shift: -16px;
+    --case-layer: 1;
+    --case-scene-top: -34px;
+    --case-scene-right: -132px;
+    --case-scene-rotate: 7deg;
+    --case-tape-left: -30px;
+    --case-confetti-right: -88px;
+}
+
+.use-case-row:nth-child(2) {
+    --case-tilt: 1.9deg;
+    --case-shift: 20px;
+    --case-layer: 2;
+    --case-scene-top: -22px;
+    --case-scene-right: auto;
+    --case-scene-left: -180px;
+    --case-scene-rotate: -8deg;
+    --case-tape-left: auto;
+    --case-tape-right: -42px;
+    --case-tape-rotate: 5deg;
+    --case-confetti-right: auto;
+    --case-confetti-left: -82px;
+    --case-confetti-bottom: 18px;
+    --case-confetti-rotate: 15deg;
+}
+
+.use-case-row:nth-child(3) {
+    --case-tilt: -1.2deg;
+    --case-shift: -6px;
+    --case-layer: 3;
+    --case-scene-top: auto;
+    --case-scene-right: -126px;
+    --case-scene-bottom: -24px;
+    --case-scene-rotate: -6deg;
+    --case-tape-left: 62px;
+    --case-tape-top: -28px;
+    --case-tape-rotate: -7deg;
+    --case-confetti-right: auto;
+    --case-confetti-left: -86px;
+    --case-confetti-bottom: 20px;
+}
+
+.use-case-row:nth-child(4) {
+    --case-tilt: 2.7deg;
+    --case-shift: 14px;
+    --case-layer: 4;
+    --case-scene-top: auto;
+    --case-scene-right: auto;
+    --case-scene-bottom: -20px;
+    --case-scene-left: -180px;
+    --case-scene-rotate: 8deg;
+    --case-tape-left: auto;
+    --case-tape-right: -132px;
+    --case-tape-rotate: 4deg;
+    --case-confetti-right: -92px;
+    --case-confetti-bottom: auto;
+    --case-confetti-top: 30px;
+    --case-confetti-rotate: -18deg;
+}
+
+.use-case-row:nth-child(5) {
+    --case-tilt: -2.0deg;
+    --case-shift: -18px;
+    --case-layer: 5;
+    --case-scene-top: -30px;
+    --case-scene-right: -150px;
+    --case-scene-rotate: 10deg;
+    --case-tape-left: -36px;
+    --case-tape-top: -22px;
+    --case-confetti-right: auto;
+    --case-confetti-left: -78px;
+    --case-confetti-bottom: 24px;
+    --case-confetti-rotate: 13deg;
+}
 
 /* Keep the tilt baked into the fade-in transform (the generic .fade-in rule
    would otherwise reset transform and flatten every row). */
@@ -2114,6 +2623,60 @@ footer {
         opacity: 0.88;
     }
 
+    .case-decor {
+        --decor-ink: rgba(232,244,241,0.34);
+        --decor-fill: rgba(20,29,31,0.82);
+        --decor-glow: rgba(232,244,241,0.11);
+    }
+
+    .case-decor::before {
+        background:
+            repeating-linear-gradient(90deg, rgba(232,244,241,0.14) 0 2px, transparent 2px 11px),
+            linear-gradient(135deg, rgba(232,244,241,0.13), rgba(255,255,255,0.020) 38%, color-mix(in srgb, var(--decor-main) 28%, transparent));
+        opacity: 0.64;
+    }
+
+    .case-decor::after {
+        background:
+            radial-gradient(circle, rgba(232,244,241,0.16) 0 1px, transparent 1.5px) 0 0 / 13px 7px repeat-x,
+            linear-gradient(90deg, transparent, color-mix(in srgb, var(--decor-main) 24%, transparent) 28%, transparent 76%);
+        opacity: 0.52;
+    }
+
+    .case-frame-tape {
+        border-color: rgba(232,244,241,0.12);
+        background:
+            linear-gradient(145deg, rgba(232,244,241,0.10), rgba(255,255,255,0.020)),
+            repeating-linear-gradient(-45deg, color-mix(in srgb, var(--decor-main) 24%, transparent) 0 5px, transparent 5px 11px),
+            rgba(17,26,29,0.62);
+        box-shadow:
+            0 1px 0 rgba(232,244,241,0.08) inset,
+            0 10px 20px rgba(0,0,0,0.24);
+        opacity: 0.82;
+    }
+
+    .case-frame-tape i {
+        background: rgba(232,244,241,0.10);
+        box-shadow: inset 0 1px 0 rgba(232,244,241,0.08);
+    }
+
+    .case-scene {
+        border-color: rgba(232,244,241,0.14);
+        background:
+            linear-gradient(145deg, rgba(232,244,241,0.11), rgba(255,255,255,0.020) 42%, color-mix(in srgb, var(--decor-main) 18%, transparent)),
+            var(--decor-fill);
+        box-shadow:
+            0 1px 0 rgba(232,244,241,0.10) inset,
+            0 -1px 0 rgba(0,0,0,0.30) inset,
+            0 18px 28px rgba(0,0,0,0.30);
+    }
+
+    .case-confetti i {
+        box-shadow:
+            0 1px 0 rgba(232,244,241,0.10) inset,
+            0 8px 14px rgba(0,0,0,0.22);
+    }
+
     .use-case-row.fade-in.visible:hover {
         border-color: rgba(172, 194, 193, 0.26);
         box-shadow:
@@ -2389,6 +2952,90 @@ footer {
         width: 100%;
         padding: 22px 22px 24px;
         border-radius: 16px;
+    }
+
+    .case-decor::before {
+        inset: 7px;
+        padding: 4px;
+        opacity: 0.46;
+    }
+
+    .case-decor::after {
+        left: 14px;
+        right: 14px;
+        bottom: 8px;
+        height: 7px;
+        opacity: 0.34;
+    }
+
+    .case-frame-tape {
+        top: -18px;
+        right: auto;
+        left: -18px;
+        width: 82px;
+        height: 19px;
+        opacity: 0.58;
+    }
+
+    .case-frame-tape i {
+        top: 5px;
+        width: 13px;
+        height: 8px;
+    }
+
+    .case-frame-tape i:first-child { left: 9px; }
+    .case-frame-tape i:last-child { right: 9px; }
+
+    .case-scene {
+        top: 22px;
+        right: -82px;
+        bottom: auto;
+        left: auto;
+        width: 72px;
+        height: 56px;
+        opacity: 0.70;
+        transform: rotate(6deg);
+    }
+
+    .use-case-row:nth-child(even) .case-scene {
+        right: auto;
+        left: -66px;
+        transform: rotate(-6deg);
+    }
+
+    .case-confetti {
+        display: none;
+    }
+
+    .case-confetti i:nth-child(1) {
+        width: 7px;
+        height: 7px;
+    }
+
+    .case-confetti i:nth-child(2) {
+        width: 15px;
+        height: 5px;
+    }
+
+    .case-confetti i:nth-child(3) {
+        width: 6px;
+        height: 17px;
+    }
+
+    html[dir="rtl"] .case-frame-tape {
+        left: auto;
+        right: -18px;
+    }
+
+    html[dir="rtl"] .case-scene {
+        right: auto;
+        left: -82px;
+        transform: rotate(-6deg);
+    }
+
+    html[dir="rtl"] .case-confetti {
+        right: auto;
+        left: -8px;
     }
 
     /* Keep each row's distinct tilt on phones, just pull the side shift in

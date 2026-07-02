@@ -142,6 +142,51 @@ function buildUseCases(t) {
     return t.useCases || [];
 }
 
+const useCaseDecorTypes = [
+    'travel',
+    'show',
+    'party',
+    'outdoor',
+    'cinema',
+];
+
+function getUseCaseDecorType(item, index) {
+    const fallback = useCaseDecorTypes[index % useCaseDecorTypes.length];
+    const text = `${item.title || ''} ${item.body || ''}`.toLowerCase();
+
+    if (/travel|arrival|skyline|旅行|旅|抵达|夜景|到着|여행|도착|viaje|llegada|السفر|الوصول/.test(text)) {
+        return 'travel';
+    }
+
+    if (/show|chorus|solo|encore|演出|演唱会|ライブ|공연|concierto|العروض/.test(text)) {
+        return 'show';
+    }
+
+    if (/party|candles|gifts|laugh|聚会|蜡烛|礼物|パーティ|파티|fiesta|velas|الهدايا|الشموع/.test(text)) {
+        return 'party';
+    }
+
+    if (/outdoor|ski|surf|hiking|jump|户外|滑雪|冲浪|登山|アウトドア|스키|서핑|aire libre|esquí|surf|المغامرات|تزلج/.test(text)) {
+        return 'outdoor';
+    }
+
+    if (/movie|animation|scene|film|live photo|电影|动画|映画|アニメ|영화|애니메이션|películas|animación|الأفلام|الرسوم/.test(text)) {
+        return 'cinema';
+    }
+
+    return fallback;
+}
+
+function renderUseCaseDecor(type) {
+    return `
+        <span class="case-decor case-decor--${type}" aria-hidden="true">
+            <span class="case-frame-tape"><i></i><i></i></span>
+            <span class="case-scene"><i></i><i></i><i></i><i></i></span>
+            <span class="case-confetti"><i></i><i></i><i></i></span>
+        </span>
+    `;
+}
+
 function buildProofSections(t) {
     return t.proofSections || [];
 }
@@ -153,15 +198,19 @@ function renderUseCases() {
     }
 
     const cases = buildUseCases(getTranslation());
-    el.innerHTML = cases.map((item, index) => `
+    el.innerHTML = cases.map((item, index) => {
+        const decorType = getUseCaseDecorType(item, index);
+        return `
         <article class="use-case-row fade-in" style="animation-delay:${(index * 0.05).toFixed(2)}s">
+            ${renderUseCaseDecor(decorType)}
             <span class="case-index">${String(index + 1).padStart(2, '0')}</span>
             <div class="case-copy">
                 <h3>${item.title}</h3>
                 <p>${item.body}</p>
             </div>
         </article>
-    `).join('');
+        `;
+    }).join('');
 }
 
 function renderProofs() {
