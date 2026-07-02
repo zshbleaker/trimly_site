@@ -276,8 +276,7 @@ window.T = {
       subtitle:
         "旅行もライブもパーティーも、まずは全部録って大丈夫。Trimly が見どころを切り出し、写真アプリへワンタップで保存します。",
       cta: "App Storeでダウンロード",
-      purchaseNote:
-        "一度の購入で iPhone、iPad、Mac に対応。サブスクリプション不要。",
+      purchaseNote: "買い切りで iPhone、iPad、Mac 対応。サブスク不要。",
     },
     useCasesHeading: "長い録画の中にある、残したい瞬間へ。",
     useCases: [

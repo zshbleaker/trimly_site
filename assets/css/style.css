@@ -15,8 +15,8 @@
     --nav-height: 58px;
     --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
 
-    --paper: #f2eee5;
-    --paper-2: #e4eadf;
+    --paper: #f4efe7;
+    --paper-2: #f0eee7;
     --paper-3: #fffdf6;
     --ink: #2f2b25;
     --muted: #716d65;
@@ -76,17 +76,17 @@ html[lang^="zh"] {
 
 html:lang(ja),
 html[lang^="ja"] {
-    --font: "Myriad Set Pro", "Myriad Pro", "Hiragino Sans", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Noto Sans JP", "Noto Sans SC", Arial, sans-serif;
+    --font: "Myriad Set Pro", "Myriad Pro", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, "Hiragino Sans", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Noto Sans JP", "Noto Sans SC", Arial, sans-serif;
 }
 
 html {
     scroll-behavior: smooth;
     background:
         linear-gradient(180deg, rgba(255,255,255,0.72), rgba(255,255,255,0) 18rem),
-        radial-gradient(circle at 88% 9%, rgba(217, 154, 67, 0.18), transparent 18rem),
-        radial-gradient(circle at 16% 48%, rgba(47, 130, 124, 0.10), transparent 24rem),
-        linear-gradient(145deg, rgba(214, 228, 222, 0.50), rgba(255, 253, 246, 0) 36rem),
-        linear-gradient(180deg, var(--paper-3), var(--paper) 34rem, var(--paper-2));
+        radial-gradient(circle at 88% 9%, rgba(217, 154, 67, 0.12), transparent 20rem),
+        radial-gradient(circle at 16% 48%, rgba(114, 132, 121, 0.028), transparent 30rem),
+        linear-gradient(145deg, rgba(235, 233, 223, 0.28), rgba(255, 253, 246, 0) 40rem),
+        linear-gradient(180deg, var(--paper-3), var(--paper) 36rem, var(--paper-2));
     overflow-x: clip;
 }
 
@@ -101,9 +101,9 @@ body {
     font-family: var(--font);
     color: var(--text-primary);
     background:
-        repeating-linear-gradient(0deg, rgba(47, 41, 34, 0.018) 0 1px, transparent 1px 7px),
-        repeating-linear-gradient(90deg, rgba(47, 41, 34, 0.026) 0 1px, transparent 1px 80px),
-        linear-gradient(180deg, transparent, rgba(63, 108, 101, 0.035) 44rem, rgba(154, 63, 53, 0.026) 76rem, transparent 104rem);
+        repeating-linear-gradient(0deg, rgba(47, 41, 34, 0.014) 0 1px, transparent 1px 7px),
+        repeating-linear-gradient(90deg, rgba(47, 41, 34, 0.020) 0 1px, transparent 1px 80px),
+        linear-gradient(180deg, transparent, rgba(116, 122, 111, 0.010) 48rem, rgba(154, 63, 53, 0.014) 84rem, transparent 112rem);
     background-size: 100% 7px, 80px 80px, auto;
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
@@ -117,9 +117,9 @@ body::before {
     z-index: 0;
     pointer-events: none;
     background:
-        linear-gradient(90deg, transparent, rgba(255,255,255,0.32) 48%, transparent),
-        repeating-linear-gradient(115deg, rgba(255,255,255,0.16) 0 1px, transparent 1px 11px);
-    opacity: 0.38;
+        linear-gradient(90deg, transparent, rgba(255,255,255,0.26) 48%, transparent),
+        repeating-linear-gradient(115deg, rgba(255,255,255,0.12) 0 1px, transparent 1px 11px);
+    opacity: 0.30;
     mix-blend-mode: soft-light;
 }
 
@@ -130,10 +130,10 @@ body::after {
     z-index: 0;
     pointer-events: none;
     background:
-        radial-gradient(ellipse at center, transparent 36%, rgba(75, 56, 35, 0.055) 100%),
-        linear-gradient(180deg, rgba(217,154,67,0.045), transparent 32%, rgba(47,130,124,0.035) 72%, rgba(154,63,53,0.04));
-    opacity: 0.72;
-    mix-blend-mode: multiply;
+        radial-gradient(ellipse at center, transparent 42%, rgba(75, 56, 35, 0.036) 100%),
+        linear-gradient(180deg, rgba(217,154,67,0.020), transparent 38%, rgba(116,122,111,0.008) 78%, rgba(154,63,53,0.020));
+    opacity: 0.50;
+    mix-blend-mode: soft-light;
 }
 
 main,
@@ -507,7 +507,7 @@ html[dir="rtl"] .lang-dropdown {
 .privacy h2 {
     font-size: clamp(30px, 3.4vw, 48px);
     line-height: 1.14;
-    font-weight: 760;
+    font-weight: 720;
     letter-spacing: 0;
     text-wrap: balance;
 }
@@ -545,7 +545,7 @@ html[dir="rtl"] .lang-dropdown {
     max-width: 620px;
     font-size: clamp(42px, 4vw, 58px);
     line-height: 1.04;
-    font-weight: 780;
+    font-weight: 720;
     letter-spacing: 0;
     text-wrap: balance;
     text-shadow:
@@ -645,6 +645,25 @@ html[dir="rtl"] .lang-dropdown {
     font-size: 13px;
     line-height: 1.35;
     text-shadow: 0 1px 0 rgba(255,255,255,0.50);
+}
+
+html:lang(ja) .hero h1,
+html[lang^="ja"] .hero h1,
+html:lang(ja) .section-heading h2,
+html[lang^="ja"] .section-heading h2,
+html:lang(ja) .proof-copy h2,
+html[lang^="ja"] .proof-copy h2,
+html:lang(ja) .privacy h2,
+html[lang^="ja"] .privacy h2,
+html:lang(ja) .legal h1,
+html[lang^="ja"] .legal h1 {
+    font-weight: 680;
+}
+
+html:lang(ja) .hero-note,
+html[lang^="ja"] .hero-note {
+    max-width: none;
+    white-space: nowrap;
 }
 
 .hero-showcase {
@@ -1268,7 +1287,7 @@ html[dir="rtl"] .lang-dropdown {
     max-width: 360px;
     font-size: clamp(21px, 2vw, 28px);
     line-height: 1.18;
-    font-weight: 740;
+    font-weight: 700;
     text-wrap: balance;
     text-shadow: 0 1px 0 rgba(255,255,255,0.70);
 }
@@ -1483,7 +1502,7 @@ html[dir="rtl"] .lang-dropdown {
 .legal h1 {
     font-size: 44px;
     line-height: 1.12;
-    font-weight: 760;
+    font-weight: 720;
     letter-spacing: 0;
 }
 
@@ -1507,7 +1526,7 @@ html[dir="rtl"] .lang-dropdown {
 .legal-section h2 {
     font-size: 23px;
     line-height: 1.25;
-    font-weight: 720;
+    font-weight: 680;
 }
 
 .legal-section p {
@@ -1520,10 +1539,12 @@ html[dir="rtl"] .lang-dropdown {
 .legal-contact {
     margin-top: 38px;
     padding: 22px;
-    border-radius: 8px;
+    border-radius: 12px;
     color: var(--text-secondary);
     box-shadow:
-        var(--glass-shadow),
+        0 1px 0 rgba(255,255,255,0.72),
+        0 12px 24px -18px rgba(67,62,52,0.22),
+        0 28px 56px -34px rgba(67,62,52,0.18),
         inset 0 1px 0 rgba(255,255,255,0.74);
 }
 
@@ -2010,10 +2031,17 @@ footer {
     }
 
     .proof-shot-wrap,
-    .privacy-icon,
-    .legal-contact {
+    .privacy-icon {
         box-shadow:
             var(--glass-shadow),
+            inset 0 1px 0 rgba(232,244,241,0.08);
+    }
+
+    .legal-contact {
+        box-shadow:
+            0 1px 0 rgba(232,244,241,0.08),
+            0 14px 28px -20px rgba(0,0,0,0.42),
+            0 30px 62px -38px rgba(0,0,0,0.38),
             inset 0 1px 0 rgba(232,244,241,0.08);
     }
 
