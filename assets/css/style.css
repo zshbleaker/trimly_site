@@ -700,6 +700,12 @@ html[lang^="ja"] .hero-note {
         0 0 0 1px rgba(255,255,255,0.32);
 }
 
+@media (orientation: landscape) and (max-height: 820px) and (min-width: 900px) {
+    .hero-showcase {
+        top: 28px;
+    }
+}
+
 .camera-top-rail {
     position: absolute;
     top: 12px;
