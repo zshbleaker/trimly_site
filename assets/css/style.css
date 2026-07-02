@@ -9,6 +9,8 @@
     color-scheme: light;
 
     --font: "Myriad Set Pro", "Myriad Pro", -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Hiragino Sans", "Helvetica Neue", "Noto Sans SC", "Noto Sans JP", Arial, sans-serif;
+    --font-hand-display: "Marker Felt", "Bradley Hand", "Comic Sans MS", "Kaiti SC", "STKaiti", "PingFang SC", cursive;
+    --font-hand-body: "Bradley Hand", "Marker Felt", "Comic Sans MS", "Kaiti SC", "STKaiti", "PingFang SC", cursive;
     --max-w: 1120px;
     --hero-w: 1440px;
     --page-x: 28px;
@@ -72,11 +74,15 @@
 html:lang(zh),
 html[lang^="zh"] {
     --font: "Myriad Set Pro", "Myriad Pro", "PingFang SC", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Noto Sans SC", "Noto Sans JP", Arial, sans-serif;
+    --font-hand-display: "Xingkai SC", "Kaiti SC", "STKaiti", "Hannotate SC", "PingFang SC", cursive;
+    --font-hand-body: "Kaiti SC", "STKaiti", "Xingkai SC", "Hannotate SC", "PingFang SC", cursive;
 }
 
 html:lang(ja),
 html[lang^="ja"] {
     --font: "Myriad Set Pro", "Myriad Pro", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, "Hiragino Sans", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Noto Sans JP", "Noto Sans SC", Arial, sans-serif;
+    --font-hand-display: "Hannotate SC", "YuKyokasho", "Hiragino Mincho ProN", "Yu Mincho", cursive;
+    --font-hand-body: "YuKyokasho", "Hannotate SC", "Hiragino Mincho ProN", "Yu Mincho", cursive;
 }
 
 html {
@@ -159,7 +165,7 @@ html.glow-ready body > :not(#glow-canvas):not(trimly-header) {
 }
 
 main {
-    overflow: hidden;
+    overflow: visible;
 }
 
 a {
@@ -257,6 +263,14 @@ trimly-header {
     inset: 0 0 auto;
     z-index: 200;
     height: calc(var(--nav-height) + env(safe-area-inset-top, 0px));
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.78), rgba(255,255,255,0.20)),
+        linear-gradient(90deg, rgba(63,108,101,0.055), transparent 32%, rgba(154,63,53,0.045)),
+        var(--nav-glass-fill);
+    border-bottom: 1px solid var(--nav-glass-border);
+    box-shadow: var(--nav-glass-shadow);
+    backdrop-filter: saturate(160%) blur(28px);
+    -webkit-backdrop-filter: saturate(160%) blur(28px);
     pointer-events: none;
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
@@ -410,10 +424,14 @@ nav::after {
     overflow: hidden;
     border-radius: 10px;
     direction: ltr;
+    background:
+        linear-gradient(180deg, rgba(255,255,255,0.72), rgba(255,255,255,0.26)),
+        rgba(255,253,246,0.96);
+    border: 1px solid rgba(67,62,52,0.14);
     box-shadow:
         0 1px 0 rgba(255,255,255,0.70) inset,
-        0 20px 44px rgba(58, 49, 39, 0.18),
-        0 4px 12px rgba(58, 49, 39, 0.08);
+        0 20px 44px rgba(58, 49, 39, 0.22),
+        0 4px 12px rgba(58, 49, 39, 0.12);
 }
 
 html[dir="rtl"] .lang-dropdown {
@@ -1149,18 +1167,18 @@ html[lang^="ja"] .hero-note {
     --case-tilt: 0deg;
     --case-shift: 0px;
     display: grid;
-    grid-template-columns: 58px minmax(0, 1fr);
-    gap: 0 30px;
+    grid-template-columns: 54px minmax(0, 1fr);
+    gap: 0 24px;
     align-items: start;
-    width: min(100%, 940px);
+    width: min(100%, 820px);
     margin: 0 auto;
-    padding: 28px 38px 30px;
+    padding: 26px 34px 28px;
     border: 1px solid var(--glass-border);
     border-radius: 20px;
     background:
-        linear-gradient(150deg, rgba(255,255,255,0.64), rgba(255,255,255,0.18) 35%, rgba(63,108,101,0.08) 64%, rgba(154,63,53,0.07)),
+        linear-gradient(150deg, rgba(255,255,255,0.68), rgba(255,255,255,0.20) 36%, rgba(207,151,88,0.075) 66%, rgba(154,63,53,0.060)),
         radial-gradient(circle at 86% 16%, rgba(255,255,255,0.44), transparent 12rem),
-        radial-gradient(circle at 10% 96%, rgba(63,108,101,0.10), transparent 15rem),
+        radial-gradient(circle at 12% 96%, rgba(132,111,142,0.055), transparent 15rem),
         var(--glass-fill);
     box-shadow:
         var(--glass-shadow),
@@ -1173,7 +1191,8 @@ html[lang^="ja"] .hero-note {
     will-change: transform;
     position: relative;
     isolation: isolate;
-    overflow: hidden;
+    z-index: var(--case-layer, 1);
+    overflow: visible;
 }
 
 .use-case-row::before {
@@ -1183,7 +1202,7 @@ html[lang^="ja"] .hero-note {
     z-index: 2;
     padding: 1px;
     border-radius: inherit;
-    background: var(--glass-rim);
+    background: linear-gradient(145deg, rgba(255,255,255,0.96), rgba(255,255,255,0.28) 42%, rgba(207,151,88,0.13) 68%, rgba(154,63,53,0.12));
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
@@ -1200,7 +1219,7 @@ html[lang^="ja"] .hero-note {
     background:
         linear-gradient(145deg, rgba(255,255,255,0.48), rgba(255,255,255,0) 32%),
         radial-gradient(ellipse at 82% 24%, rgba(255,255,255,0.32), transparent 32%),
-        linear-gradient(330deg, rgba(63,108,101,0.07), rgba(255,255,255,0) 42%),
+        linear-gradient(330deg, rgba(207,151,88,0.060), rgba(255,255,255,0) 42%),
         linear-gradient(180deg, rgba(255,255,255,0), rgba(67,62,52,0.045));
     box-shadow:
         inset 0 1px 1px rgba(255,255,255,0.64),
@@ -1212,15 +1231,15 @@ html[lang^="ja"] .hero-note {
 .case-index,
 .case-copy {
     position: relative;
-    z-index: 3;
+    z-index: 6;
 }
 
 /* Each glass tile leans at its own angle — no two the same. */
-.use-case-row:nth-child(1) { --case-tilt: -2.6deg; --case-shift: -16px; }
-.use-case-row:nth-child(2) { --case-tilt:  1.9deg; --case-shift:  20px; }
-.use-case-row:nth-child(3) { --case-tilt: -1.2deg; --case-shift:  -6px; }
-.use-case-row:nth-child(4) { --case-tilt:  2.7deg; --case-shift:  14px; }
-.use-case-row:nth-child(5) { --case-tilt: -2.0deg; --case-shift: -18px; }
+.use-case-row:nth-child(1) { --case-tilt: -2.6deg; --case-shift: -16px; --case-layer: 1; }
+.use-case-row:nth-child(2) { --case-tilt:  1.9deg; --case-shift:  20px; --case-layer: 2; }
+.use-case-row:nth-child(3) { --case-tilt: -1.2deg; --case-shift:  -6px; --case-layer: 3; }
+.use-case-row:nth-child(4) { --case-tilt:  2.7deg; --case-shift:  14px; --case-layer: 4; }
+.use-case-row:nth-child(5) { --case-tilt: -2.0deg; --case-shift: -18px; --case-layer: 5; }
 
 /* Keep the tilt baked into the fade-in transform (the generic .fade-in rule
    would otherwise reset transform and flatten every row). */
@@ -1237,6 +1256,7 @@ html[lang^="ja"] .hero-note {
 
 /* Hover snaps the tile upright and lifts it — the section feels alive. */
 .use-case-row.fade-in.visible:hover {
+    z-index: 10;
     transform: translate(var(--case-shift), -6px) rotate(0deg);
     border-color: rgba(255,255,255,0.82);
     box-shadow:
@@ -1252,9 +1272,11 @@ html[lang^="ja"] .hero-note {
     align-self: start;
     padding-top: 6px;
     color: var(--accent-3);
-    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-    font-size: 13px;
+    font-family: var(--font-hand-body);
+    font-size: 15px;
     line-height: 1.35;
+    font-weight: 500;
+    transform: rotate(-3deg);
     text-shadow: 0 1px 0 rgba(255,255,255,0.72);
 }
 
@@ -1268,7 +1290,7 @@ html[lang^="ja"] .hero-note {
     border: 1px solid rgba(186,117,58,0.44);
     background:
         radial-gradient(circle at 38% 32%, rgba(255,255,255,0.88), transparent 19%),
-        radial-gradient(circle, rgba(186,117,58,0.16) 0 32%, transparent 33% 49%, rgba(63,108,101,0.14) 50% 58%, transparent 59%);
+        radial-gradient(circle, rgba(186,117,58,0.16) 0 32%, transparent 33% 49%, rgba(132,111,142,0.12) 50% 58%, transparent 59%);
     box-shadow:
         inset 0 1px 0 rgba(255,255,255,0.78),
         0 6px 14px rgba(67,62,52,0.08);
@@ -1277,27 +1299,414 @@ html[lang^="ja"] .hero-note {
 .case-copy {
     grid-column: 2;
     display: grid;
-    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1fr);
-    gap: 10px 40px;
+    grid-template-columns: minmax(220px, 0.74fr) minmax(0, 1fr);
+    gap: 10px 24px;
     align-items: center;
 }
 
 .case-copy h3 {
     color: var(--text-primary);
     max-width: 360px;
-    font-size: clamp(21px, 2vw, 28px);
-    line-height: 1.18;
-    font-weight: 700;
+    font-family: var(--font-hand-display);
+    font-size: clamp(27px, 2.8vw, 40px);
+    line-height: 1.02;
+    font-weight: 600;
+    letter-spacing: 0.01em;
     text-wrap: balance;
-    text-shadow: 0 1px 0 rgba(255,255,255,0.70);
+    transform: rotate(-1.2deg);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.70), 0 10px 24px rgba(67,62,52,0.08);
 }
 
 .case-copy p {
     max-width: 480px;
     color: var(--text-secondary);
-    font-size: 16px;
-    line-height: 1.52;
+    font-family: var(--font-hand-body);
+    font-size: 18px;
+    line-height: 1.48;
+    font-weight: 400;
+    letter-spacing: 0.005em;
     text-wrap: pretty;
+}
+
+.case-art {
+    position: absolute;
+    z-index: 4;
+    top: -24px;
+    width: min(42vw, 380px);
+    height: 54px;
+    pointer-events: none;
+    opacity: 0.96;
+    filter: drop-shadow(0 8px 8px rgba(67,62,52,0.14)) drop-shadow(0 1px 0 rgba(255,255,255,0.60));
+    transition: transform 0.28s var(--ease), filter 0.28s var(--ease);
+}
+
+.use-case-row.fade-in.visible:hover .case-art {
+    filter: drop-shadow(0 11px 11px rgba(67,62,52,0.17)) drop-shadow(0 1px 0 rgba(255,255,255,0.66));
+}
+
+.case-art::before,
+.case-art::after,
+.case-art i,
+.case-art b,
+.case-art em {
+    content: "";
+    position: absolute;
+    display: block;
+}
+
+.case-art::before {
+    left: 0;
+    right: 0;
+    top: 25px;
+    height: 19px;
+    border-top: 3px solid rgba(96,112,72,0.82);
+    border-radius: 50%;
+    box-shadow:
+        0 -1px 0 rgba(255,255,255,0.54),
+        0 2px 0 rgba(89,62,42,0.08);
+    transform: rotate(var(--vine-curve, -1deg));
+}
+
+.case-art::after {
+    inset: 0;
+    background:
+        radial-gradient(ellipse 15px 8px at 34px 23px, rgba(122,142,84,0.96) 0 62%, transparent 64%),
+        radial-gradient(ellipse 14px 8px at 73px 31px, rgba(151,164,91,0.92) 0 62%, transparent 64%),
+        radial-gradient(ellipse 16px 9px at 122px 20px, rgba(107,128,78,0.95) 0 62%, transparent 64%),
+        radial-gradient(ellipse 13px 8px at 176px 32px, rgba(151,164,91,0.90) 0 62%, transparent 64%),
+        radial-gradient(ellipse 15px 9px at 226px 22px, rgba(122,142,84,0.92) 0 62%, transparent 64%),
+        radial-gradient(circle at 52px 20px, rgba(154,63,53,0.72) 0 4px, transparent 5px),
+        radial-gradient(circle at 198px 24px, rgba(186,117,58,0.78) 0 4px, transparent 5px),
+        radial-gradient(circle at 268px 31px, rgba(154,63,53,0.56) 0 3px, transparent 4px);
+    filter: drop-shadow(0 1px 0 rgba(255,255,255,0.50));
+}
+
+.case-art i {
+    left: 7%;
+    right: 9%;
+    top: 20px;
+    height: 24px;
+    border-bottom: 2px solid rgba(132,94,59,0.42);
+    border-radius: 0 0 50% 50%;
+    transform: rotate(var(--vine-thread, 1.5deg));
+}
+
+.case-art i::before,
+.case-art i::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 34% 30%, rgba(255,255,255,0.70), rgba(154,63,53,0.76) 70%);
+    box-shadow:
+        40px 9px 0 -2px rgba(186,117,58,0.70),
+        112px -2px 0 -2px rgba(154,63,53,0.56);
+}
+
+.case-art i::before {
+    left: 20%;
+}
+
+.case-art i::after {
+    right: 14%;
+    transform: scale(0.72);
+}
+
+.case-art b,
+.case-art em {
+    z-index: 2;
+    font-style: normal;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.58),
+        0 2px 0 rgba(255,255,255,0.34),
+        0 8px 14px rgba(67,62,52,0.12);
+}
+
+.case-art--travel {
+    top: -34px;
+    right: 8px;
+    left: auto;
+    width: min(34vw, 305px);
+    --vine-curve: -4deg;
+    --vine-thread: 2.8deg;
+    transform: rotate(6deg);
+    transform-origin: right center;
+}
+
+.case-art--travel b {
+    left: 33%;
+    top: 8px;
+    width: 46px;
+    height: 26px;
+    border: 1px solid rgba(122,80,45,0.28);
+    border-radius: 7px 7px 10px 7px;
+    background:
+        radial-gradient(circle at 9px 10px, rgba(255,255,255,0.82), rgba(255,255,255,0) 5px),
+        linear-gradient(145deg, #f3c982, #c8783f);
+    transform: rotate(7deg);
+}
+
+.case-art--travel b::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: -7px;
+    width: 17px;
+    height: 12px;
+    border: 2px solid rgba(92,100,76,0.32);
+    border-bottom: 0;
+    border-radius: 10px 10px 0 0;
+}
+
+.case-art--travel em {
+    right: 12%;
+    top: 16px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(154,63,53,0.40);
+    border-radius: 50% 50% 50% 4px;
+    background: radial-gradient(circle at 42% 38%, rgba(255,255,255,0.84) 0 4px, #c95f49 5px);
+    transform: rotate(-45deg);
+}
+
+.case-art--shows {
+    left: -18px;
+    width: min(34vw, 315px);
+    top: auto;
+    bottom: -32px;
+    --vine-curve: 4deg;
+    --vine-thread: -3deg;
+    transform: rotate(-9deg);
+    transform-origin: left center;
+}
+
+.case-art--shows b {
+    left: 34%;
+    top: 9px;
+    width: 29px;
+    height: 35px;
+    border-left: 4px solid rgba(126,67,84,0.88);
+    border-top: 4px solid rgba(126,67,84,0.88);
+    border-radius: 12px 0 0 0;
+    box-shadow: none;
+    transform: rotate(-8deg);
+}
+
+.case-art--shows b::before,
+.case-art--shows b::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    width: 13px;
+    height: 10px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 36% 34%, rgba(255,255,255,0.70), #c95f49 72%);
+}
+
+.case-art--shows b::before {
+    left: -10px;
+}
+
+.case-art--shows b::after {
+    right: -1px;
+}
+
+.case-art--shows em {
+    right: 18%;
+    top: 18px;
+    width: 46px;
+    height: 19px;
+    border-radius: 6px;
+    background:
+        linear-gradient(to top, rgba(255,255,255,0.66) 0 42%, transparent 42%) 9px 100% / 5px 100% no-repeat,
+        linear-gradient(to top, rgba(255,255,255,0.50) 0 78%, transparent 78%) 20px 100% / 5px 100% no-repeat,
+        linear-gradient(to top, rgba(255,255,255,0.58) 0 58%, transparent 58%) 31px 100% / 5px 100% no-repeat,
+        linear-gradient(145deg, #e0b86a, #b64d4d);
+    transform: rotate(3deg);
+}
+
+.case-art--parties {
+    top: -39px;
+    right: 22px;
+    left: auto;
+    width: min(36vw, 335px);
+    --vine-curve: 2.8deg;
+    --vine-thread: -2.6deg;
+    transform: rotate(-7deg);
+    transform-origin: right center;
+}
+
+.case-art--parties b {
+    left: 31%;
+    top: 2px;
+    width: 34px;
+    height: 44px;
+    border-radius: 50% 50% 47% 47%;
+    background:
+        radial-gradient(circle at 35% 28%, rgba(255,255,255,0.72), rgba(255,255,255,0) 8px),
+        linear-gradient(145deg, #ffd18a, #d86d4b);
+    transform: rotate(-14deg);
+}
+
+.case-art--parties b::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: -17px;
+    width: 1px;
+    height: 20px;
+    background: rgba(132,94,59,0.36);
+    transform: rotate(8deg);
+}
+
+.case-art--parties em {
+    right: 18%;
+    top: 9px;
+    width: 54px;
+    height: 18px;
+    background:
+        linear-gradient(35deg, transparent 0 42%, #c95f49 43% 57%, transparent 58%),
+        linear-gradient(-28deg, transparent 0 40%, #e0b86a 41% 55%, transparent 56%);
+    transform: rotate(8deg);
+    box-shadow: none;
+}
+
+.case-art--outdoor {
+    left: 28px;
+    width: min(30vw, 270px);
+    top: auto;
+    bottom: -32px;
+    --vine-curve: -3.6deg;
+    --vine-thread: 3deg;
+    transform: rotate(-8deg);
+    transform-origin: left center;
+}
+
+.case-art--outdoor b {
+    left: 28%;
+    top: 2px;
+    width: 42px;
+    height: 34px;
+    background: linear-gradient(180deg, #9fb087, #597a64);
+    clip-path: polygon(0 100%, 28% 35%, 43% 65%, 63% 16%, 100% 100%);
+    transform: rotate(-4deg);
+}
+
+.case-art--outdoor b::after {
+    content: "";
+    position: absolute;
+    left: 22px;
+    top: 8px;
+    width: 18px;
+    height: 10px;
+    background: rgba(255,255,255,0.62);
+    clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+
+.case-art--outdoor em {
+    right: 17%;
+    top: 3px;
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(74,96,79,0.30);
+    border-radius: 50%;
+    background:
+        radial-gradient(circle at 38% 34%, rgba(255,255,255,0.78), rgba(255,255,255,0) 9px),
+        conic-gradient(from 20deg, #d58a4c, #6f9174, #e0b86a, #6f9174, #d58a4c);
+    transform: rotate(12deg);
+}
+
+.case-art--outdoor em::after {
+    content: "";
+    position: absolute;
+    inset: 9px;
+    background: linear-gradient(135deg, #fff6d2 0 48%, #8d3f3a 49% 100%);
+    clip-path: polygon(50% 0, 65% 38%, 100% 50%, 65% 62%, 50% 100%, 35% 62%, 0 50%, 35% 38%);
+}
+
+.case-art--movies {
+    top: auto;
+    right: 14px;
+    bottom: -31px;
+    left: auto;
+    width: min(34vw, 318px);
+    --vine-curve: 3.4deg;
+    --vine-thread: -2.2deg;
+    transform: rotate(8deg);
+    transform-origin: right center;
+}
+
+.case-art--movies b {
+    left: 31%;
+    top: 7px;
+    width: 58px;
+    height: 28px;
+    border: 1px solid rgba(42,38,34,0.24);
+    border-radius: 6px;
+    background:
+        linear-gradient(90deg, rgba(255,255,255,0.46) 0 5px, transparent 5px 12px, rgba(255,255,255,0.34) 12px 17px, transparent 17px),
+        linear-gradient(145deg, #4b4339, #201e1b 60%, #654636);
+    transform: rotate(4deg);
+}
+
+.case-art--movies b::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: -12px;
+    height: 12px;
+    border-radius: 4px 4px 1px 1px;
+    background: repeating-linear-gradient(135deg, #f2efe5 0 8px, #2f2b25 8px 16px);
+}
+
+.case-art--movies b::after {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 8px;
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 9px solid rgba(255,255,255,0.70);
+}
+
+.case-art--movies em {
+    right: 15%;
+    top: 14px;
+    width: 42px;
+    height: 14px;
+    border-radius: 999px;
+    background:
+        repeating-linear-gradient(90deg, transparent 0 8px, rgba(255,255,255,0.50) 8px 10px),
+        linear-gradient(145deg, #b94f48, #6f544d);
+    transform: rotate(-5deg);
+}
+
+.case-art--shows::after,
+.case-art--outdoor::after {
+    transform: scaleX(-1);
+}
+
+.use-case-row.fade-in.visible:hover .case-art--travel,
+.use-case-row.fade-in.visible:hover .case-art--movies {
+    transform: rotate(4deg) translateY(-2px);
+}
+
+.use-case-row.fade-in.visible:hover .case-art--parties {
+    transform: rotate(-4deg) translateY(-2px);
+}
+
+.use-case-row.fade-in.visible:hover .case-art--shows,
+.use-case-row.fade-in.visible:hover .case-art--outdoor {
+    transform: rotate(-5deg) translateY(-2px);
+}
+
+.use-case-row.fade-in.visible:hover .case-art--outdoor {
+    transform: rotate(-5deg) translateY(-2px);
 }
 
 /* === PROOFS === */
@@ -1740,6 +2149,17 @@ footer {
             inset 0 -12px 24px rgba(0,0,0,0.12);
     }
 
+    trimly-header {
+        background:
+            linear-gradient(180deg, rgba(232,244,241,0.08), rgba(255,255,255,0.012) 62%, rgba(0,0,0,0.12)),
+            linear-gradient(90deg, rgba(120,191,150,0.026), transparent 34%, rgba(216,145,104,0.022)),
+            var(--nav-glass-fill);
+        border-bottom-color: var(--nav-glass-border);
+        box-shadow: var(--nav-glass-shadow);
+        backdrop-filter: saturate(125%) blur(24px);
+        -webkit-backdrop-filter: saturate(125%) blur(24px);
+    }
+
     nav::before {
         background:
             linear-gradient(180deg, rgba(232,244,241,0.08), rgba(255,255,255,0.012) 62%, rgba(0,0,0,0.12)),
@@ -2017,7 +2437,7 @@ footer {
         border-color: rgba(216,145,104,0.30);
         background:
             radial-gradient(circle at 38% 32%, rgba(232,244,241,0.16), transparent 19%),
-            radial-gradient(circle, rgba(216,145,104,0.09) 0 32%, transparent 33% 49%, rgba(143,192,203,0.085) 50% 58%, transparent 59%);
+            radial-gradient(circle, rgba(216,145,104,0.09) 0 32%, transparent 33% 49%, rgba(171,150,210,0.075) 50% 58%, transparent 59%);
         box-shadow:
             inset 0 1px 0 rgba(232,244,241,0.06),
             0 8px 16px rgba(0,0,0,0.18);
@@ -2048,9 +2468,9 @@ footer {
     .use-case-row {
         border-color: var(--glass-border);
         background:
-            linear-gradient(150deg, rgba(232,244,241,0.060), rgba(255,255,255,0.016) 38%, rgba(143,192,203,0.026) 66%, rgba(216,145,104,0.020)),
-            radial-gradient(circle at 84% 16%, rgba(232,244,241,0.070), transparent 12rem),
-            radial-gradient(circle at 8% 98%, rgba(120,191,150,0.035), transparent 15rem),
+            linear-gradient(150deg, rgba(232,244,241,0.052), rgba(255,255,255,0.014) 38%, rgba(216,145,104,0.036) 66%, rgba(171,150,210,0.022)),
+            radial-gradient(circle at 84% 16%, rgba(232,244,241,0.060), transparent 12rem),
+            radial-gradient(circle at 8% 98%, rgba(216,145,104,0.030), transparent 15rem),
             var(--glass-fill);
         box-shadow:
             var(--glass-shadow),
@@ -2060,14 +2480,14 @@ footer {
     }
 
     .use-case-row::before {
-        background: var(--glass-rim);
+        background: linear-gradient(145deg, rgba(224,238,235,0.15), rgba(255,255,255,0.024) 42%, rgba(216,145,104,0.075) 68%, rgba(171,150,210,0.045));
     }
 
     .use-case-row::after {
         background:
             linear-gradient(145deg, rgba(232,244,241,0.062), rgba(255,255,255,0) 34%),
             radial-gradient(ellipse at 82% 24%, rgba(232,244,241,0.055), transparent 32%),
-            linear-gradient(330deg, rgba(143,192,203,0.026), rgba(255,255,255,0) 42%),
+            linear-gradient(330deg, rgba(216,145,104,0.024), rgba(255,255,255,0) 42%),
             linear-gradient(180deg, rgba(255,255,255,0), rgba(0,0,0,0.14));
         box-shadow:
             inset 0 1px 1px rgba(232,244,241,0.080),
@@ -2082,6 +2502,10 @@ footer {
             0 1px 0 rgba(232,244,241,0.10) inset,
             0 0 0 1px rgba(232,244,241,0.045),
             0 28px 58px rgba(0, 0, 0, 0.36);
+    }
+
+    .case-art {
+        filter: drop-shadow(0 14px 18px rgba(0,0,0,0.34)) drop-shadow(0 1px 0 rgba(232,244,241,0.08));
     }
 
     .proof-lines span {
@@ -2341,7 +2765,7 @@ footer {
 
     .use-case-grid {
         border-top: 0;
-        gap: 18px;
+        gap: 30px;
     }
 
     .use-case-row {
@@ -2384,6 +2808,44 @@ footer {
     .case-copy p {
         font-size: 15px;
         line-height: 1.5;
+    }
+
+    .case-art {
+        scale: 0.56;
+        opacity: 0.84;
+        transform-origin: top right;
+        width: 200px;
+    }
+
+    .case-art--travel {
+        top: -42px;
+        right: -22px;
+    }
+
+    .case-art--parties {
+        top: -40px;
+        right: -18px;
+    }
+
+    .case-art--shows {
+        left: -28px;
+        bottom: -42px;
+        top: auto;
+        transform-origin: bottom left;
+    }
+
+    .case-art--movies {
+        right: -24px;
+        bottom: -42px;
+        top: auto;
+    }
+
+    .case-art--outdoor {
+        top: auto;
+        bottom: -42px;
+        left: -20px;
+        right: auto;
+        transform-origin: bottom left;
     }
 
     .proof-block {
