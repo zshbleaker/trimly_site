@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "TrimlyLucidaGrande";
+    src:
+        url("../fonts/lucida-grande.woff2") format("woff2"),
+        local("Lucida Grande");
+    font-weight: 400 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* === RESET & TOKENS === */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -8,7 +18,9 @@
 :root {
     color-scheme: light;
 
-    --font: "Myriad Set Pro", "Myriad Pro", -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Hiragino Sans", "Helvetica Neue", "Noto Sans SC", "Noto Sans JP", Arial, sans-serif;
+    --font-brand: "TrimlyLucidaGrande", "Lucida Grande", "Lucida Sans Unicode", "Segoe UI", Arial, sans-serif;
+    --font: var(--font-brand);
+    --font-title: "Myriad Set Pro", "Myriad Pro", -apple-system, BlinkMacSystemFont, "SF Pro Display", "PingFang SC", "Hiragino Sans", "Helvetica Neue", "Noto Sans SC", "Noto Sans JP", Arial, sans-serif;
     --font-hand-display: "Marker Felt", "Bradley Hand", "Comic Sans MS", "Kaiti SC", "STKaiti", "PingFang SC", cursive;
     --font-hand-body: "Bradley Hand", "Marker Felt", "Comic Sans MS", "Kaiti SC", "STKaiti", "PingFang SC", cursive;
     --max-w: 1120px;
@@ -73,14 +85,14 @@
 
 html:lang(zh),
 html[lang^="zh"] {
-    --font: "Myriad Set Pro", "Myriad Pro", "PingFang SC", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Noto Sans SC", "Noto Sans JP", Arial, sans-serif;
+    --font-title: "Myriad Set Pro", "Myriad Pro", "PingFang SC", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Noto Sans SC", "Noto Sans JP", Arial, sans-serif;
     --font-hand-display: "Xingkai SC", "Kaiti SC", "STKaiti", "Hannotate SC", "PingFang SC", cursive;
     --font-hand-body: "Kaiti SC", "STKaiti", "Xingkai SC", "Hannotate SC", "PingFang SC", cursive;
 }
 
 html:lang(ja),
 html[lang^="ja"] {
-    --font: "Myriad Set Pro", "Myriad Pro", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, "Hiragino Sans", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Noto Sans JP", "Noto Sans SC", Arial, sans-serif;
+    --font-title: "Myriad Set Pro", "Myriad Pro", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, "Hiragino Sans", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Noto Sans JP", "Noto Sans SC", Arial, sans-serif;
     --font-hand-display: "Hannotate SC", "YuKyokasho", "Hiragino Mincho ProN", "Yu Mincho", cursive;
     --font-hand-body: "YuKyokasho", "Hannotate SC", "Hiragino Mincho ProN", "Yu Mincho", cursive;
 }
@@ -360,6 +372,7 @@ nav::after {
 }
 
 .nav-brand span {
+    font-family: var(--font-brand);
     font-size: 17px;
     font-weight: 650;
     letter-spacing: 0;
@@ -532,6 +545,7 @@ html[dir="rtl"] .lang-dropdown {
 .section-heading h2,
 .proof-copy h2,
 .privacy h2 {
+    font-family: var(--font-title);
     font-size: clamp(30px, 3.4vw, 48px);
     line-height: 1.14;
     font-weight: 720;
@@ -568,6 +582,7 @@ html[dir="rtl"] .lang-dropdown {
 }
 
 .hero h1 {
+    font-family: var(--font-title);
     margin-top: 0;
     max-width: 620px;
     font-size: clamp(42px, 4vw, 58px);
@@ -2053,6 +2068,7 @@ html[dir="rtl"] .case-confetti {
 }
 
 .legal h1 {
+    font-family: var(--font-title);
     font-size: 44px;
     line-height: 1.12;
     font-weight: 720;
@@ -2077,6 +2093,7 @@ html[dir="rtl"] .case-confetti {
 }
 
 .legal-section h2 {
+    font-family: var(--font-title);
     font-size: 23px;
     line-height: 1.25;
     font-weight: 680;
