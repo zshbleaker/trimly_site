@@ -1,7 +1,7 @@
 @font-face {
     font-family: "TrimlyLucidaGrande";
     src:
-        url("../fonts/lucida-grande.woff2") format("woff2"),
+        url("../fonts/LucidaGrande.woff2") format("woff2"),
         local("Lucida Grande");
     font-weight: 400 700;
     font-style: normal;
