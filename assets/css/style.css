@@ -85,6 +85,7 @@
 
 html:lang(zh),
 html[lang^="zh"] {
+    --font: "PingFang SC", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Noto Sans SC", Arial, sans-serif;
     --font-title: "Myriad Set Pro", "Myriad Pro", "PingFang SC", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Noto Sans SC", "Noto Sans JP", Arial, sans-serif;
     --font-hand-display: "Xingkai SC", "Kaiti SC", "STKaiti", "Hannotate SC", "PingFang SC", cursive;
     --font-hand-body: "Kaiti SC", "STKaiti", "Xingkai SC", "Hannotate SC", "PingFang SC", cursive;
@@ -92,9 +93,15 @@ html[lang^="zh"] {
 
 html:lang(ja),
 html[lang^="ja"] {
+    --font: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Noto Sans JP", Arial, sans-serif;
     --font-title: "Myriad Set Pro", "Myriad Pro", "Hiragino Kaku Gothic ProN", "Yu Gothic", YuGothic, "Hiragino Sans", -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", "Noto Sans JP", "Noto Sans SC", Arial, sans-serif;
     --font-hand-display: "Hannotate SC", "YuKyokasho", "Hiragino Mincho ProN", "Yu Mincho", cursive;
     --font-hand-body: "YuKyokasho", "Hannotate SC", "Hiragino Mincho ProN", "Yu Mincho", cursive;
+}
+
+html:lang(ko),
+html[lang^="ko"] {
+    --font: "Apple SD Gothic Neo", "Malgun Gothic", -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", "Noto Sans KR", Arial, sans-serif;
 }
 
 html {
@@ -1953,6 +1960,7 @@ html[dir="rtl"] .case-confetti {
     box-shadow:
         0 1px 0 rgba(255,255,255,0.64) inset,
         0 10px 24px rgba(67,62,52,0.045);
+    unicode-bidi: isolate;
 }
 
 .proof-lines::before {
@@ -1960,7 +1968,7 @@ html[dir="rtl"] .case-confetti {
     position: absolute;
     top: 12px;
     bottom: 12px;
-    left: 13px;
+    inset-inline-start: 13px;
     width: 2px;
     border-radius: 999px;
     background:
@@ -1973,18 +1981,24 @@ html[dir="rtl"] .case-confetti {
 .proof-lines span {
     position: relative;
     display: block;
-    padding: 10px 12px 10px 30px;
+    padding: 10px 12px;
+    padding-inline-start: 30px;
     border-bottom: 1px solid var(--line);
     background:
         linear-gradient(180deg, rgba(255,255,255,0.30), rgba(255,255,255,0.08));
     color: var(--text-primary);
     font-size: 15px;
+    unicode-bidi: isolate;
+}
+
+.proof-lines bdi {
+    unicode-bidi: isolate;
 }
 
 .proof-lines span::before {
     content: "";
     position: absolute;
-    left: 10px;
+    inset-inline-start: 10px;
     top: 50%;
     width: 8px;
     height: 8px;
@@ -3280,19 +3294,20 @@ footer {
     .proof-lines::before {
         top: 14px;
         bottom: 14px;
-        left: 15px;
+        inset-inline-start: 15px;
         width: 2px;
     }
 
     .proof-lines span {
-        padding: 11px 12px 11px 36px;
+        padding: 11px 12px;
+        padding-inline-start: 36px;
         border-bottom: 0;
         color: var(--text-primary);
         font-size: 15px;
     }
 
     .proof-lines span::before {
-        left: 11px;
+        inset-inline-start: 11px;
         width: 8px;
         height: 8px;
     }

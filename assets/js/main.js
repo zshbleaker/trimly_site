@@ -60,6 +60,16 @@ function escapeAttr(value) {
     })[char]);
 }
 
+function escapeHtml(value) {
+    return String(value || '').replace(/[&<>"']/g, char => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;',
+    })[char]);
+}
+
 function renderShot(name, alt, themeMode = 'single', options = {}) {
     const loading = options.loading || 'lazy';
     const fetchPriority = options.fetchPriority || (loading === 'eager' ? 'high' : 'auto');
@@ -205,8 +215,8 @@ function renderUseCases() {
             ${renderUseCaseDecor(decorType)}
             <span class="case-index">${String(index + 1).padStart(2, '0')}</span>
             <div class="case-copy">
-                <h3>${item.title}</h3>
-                <p>${item.body}</p>
+                <h3>${escapeHtml(item.title)}</h3>
+                <p>${escapeHtml(item.body)}</p>
             </div>
         </article>
         `;
@@ -221,18 +231,19 @@ function renderProofs() {
 
     const sections = buildProofSections(getTranslation());
     el.innerHTML = sections.map((sec, index) => {
-        const points = (sec.points || []).map(point => `<span>${point}</span>`).join('');
+        const points = (sec.points || []).map(point => `<span><bdi>${escapeHtml(point)}</bdi></span>`).join('');
         const reverse = index % 2 === 1 ? ' reverse' : '';
         const shot = sec.shot || 'timeline-iphone';
+        const shotAlt = escapeAttr(sec.shotAlt || sec.title);
         return `
             <article class="proof-block${reverse} fade-in">
                 <div class="proof-shot-wrap liquid-glass">
-                    <div class="shot-frame proof-shot" data-shot="${shot}" data-shot-alt="${sec.shotAlt || sec.title}"></div>
+                    <div class="shot-frame proof-shot" data-shot="${escapeAttr(shot)}" data-shot-alt="${shotAlt}"></div>
                 </div>
                 <div class="proof-copy">
                     <p class="proof-number">${String(index + 1).padStart(2, '0')}</p>
-                    <h2>${sec.title}</h2>
-                    <p>${sec.body}</p>
+                    <h2>${escapeHtml(sec.title)}</h2>
+                    <p>${escapeHtml(sec.body)}</p>
                     ${points ? `<div class="proof-lines">${points}</div>` : ''}
                 </div>
             </article>
@@ -251,11 +262,11 @@ function renderSections() {
 
     const t = getTranslation();
     el.innerHTML = (t.legal?.sections || []).map(s =>
-        `<div class="legal-section"><h2>${s.h}</h2><p>${s.p}</p></div>`
+        `<div class="legal-section"><h2>${escapeHtml(s.h)}</h2><p>${escapeHtml(s.p)}</p></div>`
     ).join('');
 
     if (contactEl && t.legal) {
-        contactEl.innerHTML = `${t.legal.contactLabel} <a href="mailto:${EMAIL}">${EMAIL}</a>.`;
+        contactEl.innerHTML = `${escapeHtml(t.legal.contactLabel)} <a href="mailto:${EMAIL}">${EMAIL}</a>.`;
     }
 }
 
