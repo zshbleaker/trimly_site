@@ -32,7 +32,7 @@
     --paper: #f4efe7;
     --paper-2: #f0eee7;
     --paper-3: #fffdf6;
-    --ink: #2f2b25;
+    --ink: #45413a;
     --muted: #716d65;
     --faint: #9a9489;
     --line: rgba(67, 62, 52, 0.15);
@@ -2211,6 +2211,18 @@ footer {
         --text-secondary: var(--muted);
         --text-tertiary: var(--faint);
         --border-color: var(--line);
+        --title-color: #dce6e3;
+        --title-shadow:
+            0 -1px 0 rgba(255, 255, 255, 0.16),
+            0 1px 0 rgba(0, 0, 0, 0.58),
+            0 10px 22px rgba(0, 0, 0, 0.24);
+        --title-gloss: linear-gradient(
+            180deg,
+            #f2f8f6 0%,
+            #cfdad7 28%,
+            #aebcba 58%,
+            #dde7e4 100%
+        );
 
         --glass-fill: rgba(17, 26, 29, 0.66);
         --glass-fill-strong: rgba(24, 35, 38, 0.82);
@@ -2283,6 +2295,55 @@ footer {
         mix-blend-mode: soft-light;
     }
 
+    .hero h1,
+    .section-heading h2,
+    .proof-copy h2,
+    .privacy h2,
+    .legal h1,
+    .legal-section h2 {
+        --title-gloss-height: 1.14em;
+        color: var(--title-color);
+        text-shadow: var(--title-shadow);
+    }
+
+    .hero h1 {
+        --title-gloss-height: 1.04em;
+    }
+
+    .legal h1 {
+        --title-gloss-height: 1.12em;
+    }
+
+    .legal-section h2 {
+        --title-gloss-height: 1.25em;
+    }
+
+    @supports ((background-clip: text) or (-webkit-background-clip: text)) {
+        .hero h1,
+        .section-heading h2,
+        .proof-copy h2,
+        .privacy h2,
+        .legal h1,
+        .legal-section h2 {
+            --title-gloss-offset: 0;
+            background: var(--title-gloss);
+            background-size: 100% var(--title-gloss-height);
+            background-position: 0 var(--title-gloss-offset);
+            background-repeat: repeat;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            -webkit-text-fill-color: transparent;
+            text-shadow: none;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .hero h1 {
+            --title-gloss-height: 1.08em;
+        }
+    }
+
     .liquid-glass,
     .lang-btn,
     .lang-dropdown,
@@ -2342,11 +2403,8 @@ footer {
     }
 
     .nav-link,
-    .hero h1,
     .hero-subtitle,
     .hero-note,
-    .section-heading h2,
-    .privacy h2,
     .case-index,
     .case-copy h3,
     .proof-number {
@@ -2357,10 +2415,6 @@ footer {
     .footer-links a:hover,
     .footer-copy a:hover {
         color: var(--accent);
-        text-shadow: none;
-    }
-
-    .hero h1 {
         text-shadow: none;
     }
 
