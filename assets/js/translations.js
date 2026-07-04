@@ -9,7 +9,7 @@ window.T = {
     hero: {
       heading: "Memories\nwithin Reach",
       subtitle:
-        "Record the whole trip, show, party, or run. Trimly pulls out the moments worth keeping and saves them to Photos in one tap.",
+        "Record the whole trip, show, party, or run. Trimly pulls out the best video clips or Live Photos and saves them to Photos in one tap.",
       cta: "Download on the App Store",
       purchaseNote: "One purchase for iPhone, iPad, and Mac. No subscription.",
     },
@@ -17,32 +17,32 @@ window.T = {
     useCases: [
       {
         title: "Travel days",
-        body: "Arrival, dinner, skyline. Split the day into clips, with time, place, and camera details intact.",
+        body: "Arrival, street scenes, sunset, dinner. Split the day into clips, with time, place, and camera details intact.",
       },
       {
         title: "Live shows",
-        body: "Record the full set. Keep the chorus, solo, or encore you actually want to replay.",
+        body: "Record the full set. Save the best chorus clips and stage moments on their own.",
       },
       {
         title: "Parties",
-        body: "Candles, gifts, one perfect laugh. Trim the moment and send it without sharing the whole video.",
+        body: "Candles, gifts, eyes closed for a wish. Trim the moment, share it with the group, and let everyone keep it.",
       },
       {
-        title: "Outdoor runs",
-        body: "Skiing, surfing, hiking. Mark the jump, turn, or sprint and export a lightweight clip.",
+        title: "Outdoor adventures",
+        body: "Skiing, surfing, hiking, cycling. Mark the turn or sprint you are proud of and show everyone your best moment.",
       },
       {
         title: "Movies and animation",
-        body: "Turn a favorite scene into a clip or Live Photo, ready whenever you want to revisit it.",
+        body: "Turn favorite scenes into clips or Live Photos, ready whenever you want to revisit them.",
       },
     ],
     proofSections: [
       {
-        title: "Open huge files. Export only the keepers.",
-        body: "Work straight from an external drive, card reader, or Photos Library. No upfront copy, no waiting just to start.",
+        title: "Open instantly. Export only what you need.",
+        body: "Recorded a long video on another device? No need to copy it to your phone. Plug in a card reader and start. Source file too large? Choose the export size that fits.",
         points: [
           "Mark clips on the source file",
-          "Passthrough, compressed, and balanced exports",
+          "Pick anything from original quality to highly compressed",
           "Save to Photos or Files",
         ],
         shot: "source-file-clips",
@@ -51,8 +51,9 @@ window.T = {
         title: "Metadata handled correctly.",
         body: "Each clip or Live Photo can line up with the real time and place of the moment, so your library no longer turns messy.",
         points: [
-          "Writes the actual moment on export",
-          "Keeps GPS and device metadata",
+          "Calculates the real time of each clip",
+          "Keeps GPS and camera metadata",
+          "Gives your library a timeline that stays in order",
         ],
         shot: "photos-metadata-export",
       },
@@ -60,7 +61,8 @@ window.T = {
         title: "Mark on the go. Export at your desk.",
         body: "Your edit notes sync as you work. Mark clips on iPhone, then pick up on Mac when you are ready.",
         points: [
-          "iCloud and Handoff for natural continuity",
+          "Only edit notes sync, not the large video files",
+          "If the source file is the same, your edits follow it wherever it lives",
           "AirPlay when you want everyone watching",
         ],
         shot: "cross-device-editing",
@@ -70,27 +72,34 @@ window.T = {
         body: "Trimly is not one interface stretched across devices. iPhone, iPad, and Mac each get their own rhythm.",
         points: [
           "iPhone: a layout carefully tuned for small screens",
-          "iPad: a touch-first workspace for reviewing and trimming, with keyboard and display support when you want it",
+          "iPad: works with touch and external keyboards, with freely resizable windows",
           "Mac: efficient work on a large screen and a real file system",
         ],
         shot: "device-workspaces",
         shotAlt: "Trimly editing interface across different devices",
       },
       {
-        title: "HDR, LOG, and lossless audio. All supported.",
-        body: "Designed with professional creators in mind.",
+        title: "Pro formats supported.",
+        body: "Designed for professional creators, so even short clips can keep their best quality.",
         points: [
           "HDR-ready media pipeline",
-          "LOG video with built-in recovery LUTs for popular cameras",
-          "All kinds of audio files, including raw PCM",
+          {
+            text: "Built-in LOG recovery LUTs for popular devices",
+            note: {
+              label: "*",
+              href: "#lut-disclaimer",
+              ariaLabel: "LUT disclaimer",
+            },
+          },
+          "Lossless audio support, including raw PCM",
         ],
         shot: "pro-media-pipeline",
         shotAlt: "Trimly audio waveform and export controls",
       },
     ],
     privacy: {
-      heading: "Local by default. Private by design.",
-      body: "Trimly has no accounts, no tracking, no diagnostics, and no third-party SDKs. Apart from iCloud sync, it makes no network requests.",
+      heading: "Local and Private",
+      body: "No accounts, tracking, telemetry, or third-party SDKs.",
     },
     footer: {
       home: "Home",
@@ -144,7 +153,7 @@ window.T = {
     hero: {
       heading: "美好回忆，\n触手可及",
       subtitle:
-        "旅行、演出、聚会、户外运动，安心录全程，Trimly 帮你从长视频中切出精彩片段，一键导入系统相册。在你最熟悉的地方回味最精彩的瞬间",
+        "旅行、演出、聚会、户外运动，安心录全程，Trimly 帮你从长视频中切出精彩片段或 Live Photo，一键导入系统相册。在你最熟悉的地方回味那些高光时刻",
       cta: "在 App Store 下载",
       purchaseNote: "一次购买，iPhone、iPad、Mac 全平台通用，无需订阅",
     },
@@ -152,75 +161,87 @@ window.T = {
     useCases: [
       {
         title: "旅行随拍",
-        body: "抵达、晚餐、夜景，各成一段；时间、地点、拍摄设备，全部保留",
+        body: "抵达、街景、日落、晚餐，各成一段；时间、地点、拍摄设备，全部保留",
       },
       {
         title: "现场演出",
-        body: "演唱会整场先录下来，回头只留真正想重看的高光时刻",
+        body: "先录完整场，再把最精彩的副歌片段与舞台高光单独保存",
       },
       {
         title: "聚会开趴",
-        body: "吹蜡烛、拆礼物、一起笑，随手裁出片段发到群里",
+        body: "吹蜡烛、拆礼物、闭眼许愿，随手裁出片段发到群里，让大家轻松珍藏",
       },
       {
         title: "户外探险",
-        body: "滑雪？冲浪？登山？标出一次起跳、转弯或冲刺，导出轻量片段，轻松分享",
+        body: "滑雪、冲浪、登山、骑行，标出最得意的转弯与冲刺，让所有人看到你最炫的瞬间",
       },
       {
         title: "电影动画",
-        body: "制作切片或 Live Photo，随时回看",
+        body: "制作切片或 Live Photo，随时回看每一个名场面",
       },
     ],
     proofSections: [
       {
-        title: "光速打开，按需导出",
-        body: "大文件不用复制，直接读外接硬盘/读卡器或系统相册。支持多档位导出策略",
+        title: "即刻打开，按需导出",
+        body: "用其他设备录了一大段视频？文件不用复制到手机，插上读卡器就好。原始文件太大？可以按需要选择导出大小与画质",
         points: [
           "直接在原始文件上标记片段",
-          "从不转码到高度压缩，几个档位，都支持",
-          "支持导出到系统相册或文件系统",
+          "从原始画质到高度压缩，自由选择",
+          "支持导出到系统相册或文件",
         ],
         shot: "source-file-clips",
       },
       {
         title: "正确处理元数据",
-        body: "每一个片段或 Live Photo，都能对上实际的时间和地点，相册不再杂乱无章",
-        points: ["导出时写入真实时间", "保留 GPS 与设备信息"],
+        body: "每一个片段或 Live Photo，都能匹配实际的时间和地点，相册不再杂乱无章",
+        points: [
+          "智能计算片段的实际时间",
+          "保留 GPS 与拍摄设备信息",
+          "让相册时间线保持严格顺序",
+        ],
         shot: "photos-metadata-export",
       },
       {
         title: "路上先标，回家细看",
         body: "编辑记录实时同步，iPhone 上标注的片段，Mac 上继续导出",
         points: [
-          "iCloud + Handoff，符合直觉的同步策略",
+          "只同步编辑记录，不同步大视频本体",
+          "原始文件放在哪里都可以，编辑记录会自动对上",
           "AirPlay 投屏，与家人朋友一起看",
         ],
         shot: "cross-device-editing",
       },
       {
-        title: "每台设备都是一等公民",
+        title: "每台设备都好用",
         body: "不是把同一个界面放大缩小。Trimly 针对 iPhone、iPad 和 Mac 分别优化。",
         points: [
           "iPhone：针对小屏幕，专门优化的界面布局",
-          "iPad：更大的触控工作区，适合快速浏览、标记与裁剪，也支持键盘和外接显示器",
+          "iPad：触屏和外接键盘都支持，窗口自由缩放",
           "Mac：在大屏幕与真正的文件系统上高效操作",
         ],
         shot: "device-workspaces",
       },
       {
-        title: "HDR、LOG、无损音频，全都支持",
-        body: "为专业创作者专门考虑",
+        title: "专业格式全支持",
+        body: "为专业创作者设计，让短片段也保留最佳质量",
         points: [
           "整个媒体处理管线为 HDR 设计",
-          "支持 LOG 格式视频，并内置热门设备的还原 LUT",
-          "支持各种音频文件，甚至包括 PCM 原始数据",
+          {
+            text: "内置常见品牌热门设备的 LOG 还原 LUT",
+            note: {
+              label: "*",
+              href: "#lut-disclaimer",
+              ariaLabel: "LUT 使用说明",
+            },
+          },
+          "支持无损音频格式，甚至包括 PCM 原始数据",
         ],
         shot: "pro-media-pipeline",
       },
     ],
     privacy: {
-      heading: "本地优先，隐私优先",
-      body: "Trimly 没有账号系统，除 iCloud 外没有任何网络请求，不会收集任何隐私数据与诊断信息，甚至没有使用任何第三方库和 SDK",
+      heading: "本地且私密",
+      body: "无需账号，不追踪，不收集遥测数据，不集成第三方 SDK",
     },
     footer: {
       home: "首页",
@@ -274,7 +295,7 @@ window.T = {
     hero: {
       heading: "思い出を、\nすぐそばに。",
       subtitle:
-        "旅行もライブもパーティーも、まずは全部録って大丈夫。Trimly が見どころを切り出し、写真アプリへワンタップで保存します。",
+        "旅行もライブもパーティーも、まずは全部録って大丈夫。Trimly が見どころを動画クリップや Live Photo に切り出し、写真アプリへワンタップで保存します。",
       cta: "App Storeでダウンロード",
       purchaseNote: "買い切りで iPhone、iPad、Mac 対応。サブスク不要。",
     },
@@ -282,32 +303,32 @@ window.T = {
     useCases: [
       {
         title: "旅の一日",
-        body: "到着、夕食、夜景をそれぞれのクリップに。時刻、場所、カメラ情報もそのまま残ります。",
+        body: "到着、街並み、夕焼け、夕食をそれぞれのクリップに。時刻、場所、カメラ情報もそのまま残ります。",
       },
       {
         title: "ライブ",
-        body: "まずは通しで録画。あとからサビ、ソロ、アンコールだけを残せます。",
+        body: "まずは通しで録画。あとから最高のサビやステージの瞬間だけを保存できます。",
       },
       {
         title: "パーティー",
-        body: "ろうそく、プレゼント、みんなで笑った瞬間。長い動画を送らず、その場面だけ共有できます。",
+        body: "ろうそく、プレゼント、目を閉じて願う瞬間。その場面だけ切り出して共有し、みんなで残せます。",
       },
       {
         title: "アウトドア",
-        body: "スキー、サーフィン、登山。ジャンプやターンをマークして、軽いクリップに。",
+        body: "スキー、サーフィン、登山、サイクリング。自慢のターンやスプリントをマークして、最高の瞬間を見せられます。",
       },
       {
         title: "映画やアニメ",
-        body: "お気に入りの場面をクリップや Live Photo に。思い出した時にすぐ見返せます。",
+        body: "お気に入りの名場面をクリップや Live Photo に。思い出した時にすぐ見返せます。",
       },
     ],
     proofSections: [
       {
-        title: "大きなファイルもすぐ開ける。",
-        body: "外付けドライブ、カードリーダー、写真ライブラリから直接読み込み。コピー待ちなしで、すぐに作業を始められます。",
+        title: "すぐ開いて、必要な分だけ書き出す。",
+        body: "別の機器で長く撮った動画も、スマートフォンへコピーする必要はありません。カードリーダーを挿せばすぐ作業できます。元ファイルが大きすぎる時は、書き出しサイズを選べます。",
         points: [
           "元ファイルのままクリップをマーク",
-          "無変換、圧縮、バランス重視の書き出し",
+          "元の画質から高圧縮まで自由に選択",
           "写真アプリまたはファイルへ保存",
         ],
         shot: "source-file-clips",
@@ -315,14 +336,19 @@ window.T = {
       {
         title: "メタデータを正しく扱う。",
         body: "クリップや Live Photo を、その瞬間の実際の時刻と場所に合わせて保存。写真ライブラリが散らかりません。",
-        points: ["実際の撮影時刻を書き込み", "GPS とデバイス情報を保持"],
+        points: [
+          "クリップの実際の時刻を自動計算",
+          "GPS と撮影機材の情報を保持",
+          "時系列どおりに並ぶ写真ライブラリへ",
+        ],
         shot: "photos-metadata-export",
       },
       {
         title: "外でマーク、家で仕上げ。",
         body: "編集メモは作業しながら同期。iPhone で付けた印を、Mac でそのまま使えます。",
         points: [
-          "iCloud と Handoff で自然に引き継ぎ",
+          "同期するのは編集メモだけ。大きな動画本体は同期しません",
+          "同じ元ファイルなら、保存場所が違っても編集メモを引き継げます",
           "AirPlay でみんなと一緒に確認",
         ],
         shot: "cross-device-editing",
@@ -332,27 +358,34 @@ window.T = {
         body: "同じ画面を拡大縮小しているだけではありません。iPhone、iPad、Mac それぞれに合う作りです。",
         points: [
           "iPhone：小さな画面に合わせて細かく調整したレイアウト",
-          "iPad：広い画面で確認、マーク、トリミングしやすいタッチ中心の作業環境。キーボードや外部ディスプレイにも対応",
+          "iPad：タッチ操作も外部キーボードも使え、ウインドウサイズも自由に調整",
           "Mac：大きな画面と本物のファイルシステムで効率よく操作",
         ],
         shot: "device-workspaces",
         shotAlt: "複数デバイスでの Trimly 編集画面",
       },
       {
-        title: "HDR、LOG、ロスレス音声に対応。",
-        body: "プロのクリエイターのために考え抜いた設計です。",
+        title: "プロ形式にも対応。",
+        body: "短いクリップでも最高の品質を保てるよう、プロのクリエイターのために設計しました。",
         points: [
           "HDR 前提のメディア処理",
-          "LOG 動画と人気カメラ向け復元 LUT",
-          "各種音声ファイル、PCM 生データにも対応",
+          {
+            text: "人気機種向けの LOG 復元 LUT を内蔵",
+            note: {
+              label: "*",
+              href: "#lut-disclaimer",
+              ariaLabel: "LUT に関する注記",
+            },
+          },
+          "PCM 生データを含むロスレス音声形式に対応",
         ],
         shot: "pro-media-pipeline",
         shotAlt: "Trimly の音声波形と書き出しコントロール",
       },
     ],
     privacy: {
-      heading: "ローカルで処理。プライバシーを守る設計。",
-      body: "アカウント、トラッキング、診断収集、サードパーティ SDK はありません。iCloud 同期を除き、ネットワーク通信も行いません。",
+      heading: "ローカルで、プライベート",
+      body: "アカウント、トラッキング、テレメトリ、サードパーティ SDK はありません。",
     },
     footer: {
       home: "ホーム",
@@ -406,7 +439,7 @@ window.T = {
     hero: {
       heading: "추억을\n가까이에",
       subtitle:
-        "여행, 공연, 모임, 야외 활동은 마음 놓고 길게 찍으세요. Trimly가 하이라이트를 잘라 사진 앱에 한 번에 저장합니다.",
+        "여행, 공연, 모임, 야외 활동은 마음 놓고 길게 찍으세요. Trimly가 하이라이트를 영상 클립이나 Live Photo로 잘라 사진 앱에 한 번에 저장합니다.",
       cta: "App Store에서 다운로드",
       purchaseNote:
         "한 번 구매로 iPhone, iPad, Mac 모두. 구독은 필요 없습니다.",
@@ -415,32 +448,32 @@ window.T = {
     useCases: [
       {
         title: "여행의 하루",
-        body: "도착, 저녁, 야경을 각각의 클립으로. 시간, 장소, 카메라 정보까지 그대로 남습니다.",
+        body: "도착, 거리 풍경, 노을, 저녁을 각각의 클립으로. 시간, 장소, 카메라 정보까지 그대로 남습니다.",
       },
       {
         title: "공연",
-        body: "일단 전체를 녹화하세요. 나중에 후렴, 솔로, 앙코르만 골라 남길 수 있습니다.",
+        body: "일단 전체를 녹화하세요. 가장 멋진 후렴과 무대 순간만 따로 저장할 수 있습니다.",
       },
       {
         title: "파티",
-        body: "촛불, 선물, 모두가 웃던 순간. 긴 영상 대신 그 장면만 바로 공유하세요.",
+        body: "촛불, 선물, 눈을 감고 소원을 비는 순간. 그 장면만 잘라 공유하고 모두가 간직할 수 있습니다.",
       },
       {
         title: "아웃도어",
-        body: "스키, 서핑, 등산. 점프나 턴을 표시하고 가벼운 클립으로 내보내세요.",
+        body: "스키, 서핑, 등산, 사이클링. 가장 뿌듯한 턴과 스프린트를 표시해 최고의 순간을 보여주세요.",
       },
       {
         title: "영화와 애니메이션",
-        body: "좋아하는 장면을 클립이나 Live Photo로 만들어, 생각날 때 바로 볼 수 있습니다.",
+        body: "좋아하는 명장면을 클립이나 Live Photo로 만들어, 생각날 때 바로 볼 수 있습니다.",
       },
     ],
     proofSections: [
       {
-        title: "큰 파일도 바로 열기.",
-        body: "외장 드라이브, 카드 리더, 사진 보관함에서 바로 읽습니다. 먼저 복사하느라 기다릴 필요가 없습니다.",
+        title: "바로 열고, 필요한 만큼만 내보내기.",
+        body: "다른 기기로 길게 찍은 영상도 휴대폰에 복사할 필요가 없습니다. 카드 리더를 꽂고 바로 시작하세요. 원본 파일이 너무 크다면 내보내기 크기를 선택할 수 있습니다.",
         points: [
           "원본 파일 위에서 바로 클립 표시",
-          "무변환, 압축, 균형형 내보내기",
+          "원본 화질부터 고압축까지 자유롭게 선택",
           "사진 앱 또는 파일로 저장",
         ],
         shot: "source-file-clips",
@@ -448,14 +481,19 @@ window.T = {
       {
         title: "메타데이터를 올바르게 처리.",
         body: "각 클립과 Live Photo가 실제 시간과 장소에 맞게 남아, 사진 보관함이 더 이상 어수선해지지 않습니다.",
-        points: ["실제 촬영 시각 기록", "GPS와 기기 정보 보존"],
+        points: [
+          "클립의 실제 시각 자동 계산",
+          "GPS와 촬영 기기 정보 보존",
+          "시간순으로 깔끔하게 정렬되는 사진 보관함",
+        ],
         shot: "photos-metadata-export",
       },
       {
         title: "밖에서 표시하고, 집에서 마무리.",
         body: "작업 기록이 자연스럽게 동기화됩니다. iPhone에서 표시한 구간을 Mac에서 이어서 내보내세요.",
         points: [
-          "iCloud와 Handoff로 자연스럽게 이어가기",
+          "동기화되는 것은 편집 기록뿐, 큰 영상 파일은 제외",
+          "원본 파일이 같다면 어디에 저장되어 있어도 편집 기록을 이어서 사용",
           "AirPlay로 함께 보며 고르기",
         ],
         shot: "cross-device-editing",
@@ -465,27 +503,34 @@ window.T = {
         body: "같은 화면을 키우고 줄인 앱이 아닙니다. iPhone, iPad, Mac에 맞게 각각 다듬었습니다.",
         points: [
           "iPhone: 작은 화면에 맞게 세심하게 조정한 레이아웃",
-          "iPad: 넓은 화면에서 확인, 표시, 다듬기에 좋은 터치 중심 작업 공간. 키보드와 외부 디스플레이도 지원",
+          "iPad: 터치와 외장 키보드를 모두 지원하고, 창 크기도 자유롭게 조절",
           "Mac: 큰 화면과 실제 파일 시스템에서 효율적으로 작업",
         ],
         shot: "device-workspaces",
         shotAlt: "여러 기기에서 보이는 Trimly 편집 화면",
       },
       {
-        title: "HDR, LOG, 무손실 오디오까지 모두 지원.",
-        body: "전문 크리에이터를 염두에 두고 설계했습니다.",
+        title: "전문 포맷도 지원.",
+        body: "짧은 클립도 최상의 품질을 유지할 수 있도록 전문 크리에이터를 위해 설계했습니다.",
         points: [
           "HDR을 고려한 미디어 처리",
-          "LOG 영상과 인기 카메라용 복원 LUT",
-          "다양한 오디오 파일과 PCM 원시 데이터 지원",
+          {
+            text: "인기 기기용 LOG 복원 LUT 내장",
+            note: {
+              label: "*",
+              href: "#lut-disclaimer",
+              ariaLabel: "LUT 안내",
+            },
+          },
+          "PCM 원시 데이터를 포함한 무손실 오디오 형식 지원",
         ],
         shot: "pro-media-pipeline",
         shotAlt: "Trimly 오디오 파형과 내보내기 컨트롤",
       },
     ],
     privacy: {
-      heading: "기기에서 처리하고, 사생활은 지킵니다.",
-      body: "계정, 추적, 진단 수집, 서드파티 SDK가 없습니다. iCloud 동기화를 제외하면 네트워크 요청도 하지 않습니다.",
+      heading: "로컬에서, 비공개로",
+      body: "계정, 추적, 텔레메트리, 서드파티 SDK가 없습니다.",
     },
     footer: {
       home: "홈",
@@ -539,7 +584,7 @@ window.T = {
     hero: {
       heading: "Recuerdos\nsiempre a mano",
       subtitle:
-        "Graba el viaje, el concierto, la fiesta o la ruta completa. Trimly extrae los momentos que importan y los guarda en Fotos con un toque.",
+        "Graba el viaje, el concierto, la fiesta o la ruta completa. Trimly extrae los mejores clips de vídeo o Live Photos y los guarda en Fotos con un toque.",
       cta: "Descargar en el App Store",
       purchaseNote: "Una compra para iPhone, iPad y Mac. Sin suscripción.",
     },
@@ -547,32 +592,32 @@ window.T = {
     useCases: [
       {
         title: "Días de viaje",
-        body: "Llegada, cena, skyline. Convierte el día en clips y conserva hora, lugar y datos de cámara.",
+        body: "Llegada, calles, atardecer, cena. Convierte el día en clips y conserva hora, lugar y datos de cámara.",
       },
       {
         title: "Conciertos",
-        body: "Graba el set completo. Quédate con el estribillo, el solo o el encore que sí vas a repetir.",
+        body: "Graba el set completo. Guarda aparte los mejores estribillos y momentos del escenario.",
       },
       {
         title: "Fiestas",
-        body: "Velas, regalos, una risa perfecta. Comparte ese momento, no todo el vídeo.",
+        body: "Velas, regalos, ojos cerrados al pedir un deseo. Recorta ese momento, compártelo con el grupo y deja que todos lo guarden.",
       },
       {
         title: "Aire libre",
-        body: "Esquí, surf, montaña. Marca el salto, el giro o el sprint y expórtalo como clip ligero.",
+        body: "Esquí, surf, montaña, ciclismo. Marca ese giro o sprint del que estás orgulloso y enseña tu mejor momento.",
       },
       {
         title: "Películas y animación",
-        body: "Convierte una escena favorita en clip o Live Photo, lista para verla cuando quieras.",
+        body: "Convierte tus escenas favoritas en clips o Live Photos, listas para volver a ellas cuando quieras.",
       },
     ],
     proofSections: [
       {
-        title: "Abre archivos enormes. Exporta solo lo bueno.",
-        body: "Trabaja directamente desde un disco externo, lector de tarjetas o tu biblioteca de Fotos. Sin copiar primero, sin esperar para empezar.",
+        title: "Abre al instante. Exporta solo lo necesario.",
+        body: "¿Grabaste un vídeo largo en otro dispositivo? No hace falta copiarlo al teléfono: conecta un lector de tarjetas y empieza. Si el original pesa demasiado, elige el tamaño de exportación que te convenga.",
         points: [
           "Marca clips sobre el archivo original",
-          "Exportación directa, comprimida o equilibrada",
+          "Elige desde calidad original hasta alta compresión",
           "Guarda en Fotos o en Archivos",
         ],
         shot: "source-file-clips",
@@ -581,8 +626,9 @@ window.T = {
         title: "Metadatos tratados como corresponde.",
         body: "Cada clip o Live Photo puede alinearse con la hora y el lugar reales del momento, para que tu biblioteca deje de estar desordenada.",
         points: [
-          "Escribe el momento real al exportar",
-          "Conserva GPS y datos del dispositivo",
+          "Calcula la hora real de cada clip",
+          "Conserva GPS y datos de la cámara",
+          "Devuelve a tu biblioteca una línea de tiempo ordenada",
         ],
         shot: "photos-metadata-export",
       },
@@ -590,7 +636,8 @@ window.T = {
         title: "Marca fuera. Termina en casa.",
         body: "Tus notas de edición se sincronizan mientras trabajas. Marca en el iPhone y continúa en el Mac cuando quieras.",
         points: [
-          "iCloud y Handoff para continuar sin pensar",
+          "Solo se sincronizan las notas de edición, no los vídeos grandes",
+          "Si el archivo original es el mismo, tus ediciones lo siguen esté donde esté",
           "AirPlay para verlo con más gente",
         ],
         shot: "cross-device-editing",
@@ -600,27 +647,34 @@ window.T = {
         body: "No es una interfaz estirada de un dispositivo a otro. iPhone, iPad y Mac tienen su propio ritmo.",
         points: [
           "iPhone: una interfaz cuidada para pantallas pequeñas",
-          "iPad: un espacio táctil amplio para revisar, marcar y recortar, con soporte para teclado y pantalla externa",
+          "iPad: funciona con toque y teclado externo, con ventanas de tamaño libre",
           "Mac: trabajo eficiente en pantalla grande y con un sistema de archivos real",
         ],
         shot: "device-workspaces",
         shotAlt: "Interfaz de edición de Trimly en distintos dispositivos",
       },
       {
-        title: "HDR, LOG y audio sin pérdida. Todo compatible.",
-        body: "Pensado especialmente para creadores profesionales.",
+        title: "Formatos profesionales compatibles.",
+        body: "Pensado para creadores profesionales, para que incluso los clips cortos conserven la mejor calidad.",
         points: [
           "Procesamiento preparado para HDR",
-          "Vídeo LOG con LUTs de recuperación para cámaras populares",
-          "Todo tipo de archivos de audio, incluso PCM sin procesar",
+          {
+            text: "LUTs de recuperación LOG para dispositivos populares",
+            note: {
+              label: "*",
+              href: "#lut-disclaimer",
+              ariaLabel: "Nota sobre LUTs",
+            },
+          },
+          "Audio sin pérdida, incluso PCM sin procesar",
         ],
         shot: "pro-media-pipeline",
         shotAlt: "Forma de onda de audio y controles de exportación de Trimly",
       },
     ],
     privacy: {
-      heading: "Local por defecto. Privado por diseño.",
-      body: "Sin cuentas, seguimiento, diagnósticos ni SDKs de terceros. Salvo la sincronización de iCloud, Trimly no hace peticiones de red.",
+      heading: "Local y privado",
+      body: "Sin cuentas, seguimiento, telemetría ni SDKs de terceros.",
     },
     footer: {
       home: "Inicio",
@@ -674,7 +728,7 @@ window.T = {
     hero: {
       heading: "ذكريات\nفي متناولك",
       subtitle:
-        "سجّل الرحلة أو الحفل أو التجمع كاملاً. يقتطع Trimly اللحظات التي تستحق الاحتفاظ بها ويحفظها في الصور بلمسة واحدة.",
+        "سجّل الرحلة أو الحفل أو التجمع كاملاً. يقتطع Trimly أفضل مقاطع الفيديو أو Live Photos ويحفظها في الصور بلمسة واحدة.",
       cta: "حمِّل من App Store",
       purchaseNote: "شراء واحد لـ iPhone وiPad وMac. بلا اشتراك.",
     },
@@ -682,32 +736,32 @@ window.T = {
     useCases: [
       {
         title: "أيام السفر",
-        body: "الوصول، العشاء، منظر المدينة. حوّل اليوم إلى مقاطع مع حفظ الوقت والمكان وتفاصيل الكاميرا.",
+        body: "الوصول، الشوارع، الغروب، العشاء. حوّل اليوم إلى مقاطع مع حفظ الوقت والمكان وتفاصيل الكاميرا.",
       },
       {
         title: "العروض",
-        body: "سجّل العرض كاملاً، ثم احتفظ بالمقطع أو العزف أو النهاية التي ستعود إليها فعلاً.",
+        body: "سجّل العرض كاملاً، ثم احفظ أفضل المقاطع ولحظات المسرح على حدة.",
       },
       {
         title: "التجمعات",
-        body: "الشموع، الهدايا، ضحكة جميلة. شارك تلك اللحظة بدلاً من إرسال الفيديو كله.",
+        body: "الشموع، الهدايا، لحظة إغماض العينين لتمني أمنية. اقتطعها وشاركها مع المجموعة ليحتفظ بها الجميع.",
       },
       {
         title: "المغامرات",
-        body: "تزلج، أمواج، جبال. علّم القفزة أو المنعطف وصدّرها كمقطع خفيف.",
+        body: "تزلج، أمواج، جبال، دراجات. علّم المنعطف أو الانطلاقة التي تفتخر بها واعرض أفضل لحظاتك.",
       },
       {
         title: "الأفلام والرسوم",
-        body: "حوّل مشهداً مفضلاً إلى مقطع أو Live Photo، جاهزاً كلما أردت العودة إليه.",
+        body: "حوّل مشاهدك المفضلة إلى مقاطع أو Live Photos، جاهزة كلما أردت العودة إليها.",
       },
     ],
     proofSections: [
       {
-        title: "افتح الملفات الضخمة فوراً.",
-        body: "اعمل مباشرة من قرص خارجي أو قارئ بطاقات أو مكتبة الصور. لا نسخ مسبق ولا انتظار قبل البدء.",
+        title: "افتح فوراً. وصدّر ما تحتاجه فقط.",
+        body: "صوّرت فيديو طويلاً بجهاز آخر؟ لا حاجة لنسخه إلى الهاتف، وصّل قارئ البطاقات وابدأ. وإذا كان الملف الأصلي ضخماً، فاختر حجم التصدير المناسب.",
         points: [
           "علّم المقاطع على الملف الأصلي",
-          "تصدير مباشر أو مضغوط أو متوازن",
+          "اختر من الجودة الأصلية حتى الضغط العالي",
           "الحفظ إلى الصور أو الملفات",
         ],
         shot: "source-file-clips",
@@ -716,8 +770,9 @@ window.T = {
         title: "معالجة صحيحة للبيانات الوصفية.",
         body: "يمكن لكل مقطع أو Live Photo أن يطابق وقت اللحظة ومكانها الحقيقيين، حتى لا تصبح مكتبة الصور فوضوية.",
         points: [
-          "كتابة لحظة التصوير الحقيقية",
-          "الحفاظ على GPS وتفاصيل الجهاز",
+          "حساب الوقت الحقيقي لكل مقطع",
+          "الحفاظ على GPS وتفاصيل الكاميرا",
+          "إعادة ترتيب مكتبة الصور على خط زمني دقيق",
         ],
         shot: "photos-metadata-export",
       },
@@ -725,7 +780,8 @@ window.T = {
         title: "علّم خارجاً. وأنهِ في البيت.",
         body: "تتزامن ملاحظات التحرير أثناء العمل. علّم المقاطع على iPhone، ثم تابع على Mac عندما تكون جاهزاً.",
         points: [
-          "iCloud وHandoff لاستمرار طبيعي",
+          "تتم مزامنة ملاحظات التحرير فقط، وليس ملفات الفيديو الكبيرة",
+          "إذا كان الملف الأصلي هو نفسه، تنتقل تعديلاتك معه أينما كان محفوظاً",
           "AirPlay عندما تريد أن يشاهد الجميع",
         ],
         shot: "cross-device-editing",
@@ -735,27 +791,34 @@ window.T = {
         body: "ليست واجهة واحدة ممدودة على كل الأجهزة. لكل من iPhone وiPad وMac إيقاعه المناسب.",
         points: [
           "iPhone: واجهة مضبوطة بعناية للشاشات الصغيرة",
-          "iPad: مساحة لمس أوسع للمراجعة ووضع العلامات والقص، مع دعم لوحة المفاتيح والشاشة الخارجية",
+          "iPad: يعمل باللمس ومع لوحة مفاتيح خارجية، ونوافذ يمكن تغيير حجمها بحرية",
           "Mac: عمل فعّال على شاشة كبيرة ونظام ملفات حقيقي",
         ],
         shot: "device-workspaces",
         shotAlt: "واجهة تحرير Trimly على أجهزة مختلفة",
       },
       {
-        title: "HDR وLOG والصوت بلا فقدان، كلها مدعومة.",
-        body: "مصمم مع وضع المبدعين المحترفين في الحسبان.",
+        title: "دعم للصيغ الاحترافية.",
+        body: "مصمم للمبدعين المحترفين حتى تحتفظ المقاطع القصيرة أيضاً بأفضل جودة.",
         points: [
           "معالجة وسائط جاهزة لـ HDR",
-          "فيديو LOG مع LUT استعادة للكاميرات الشائعة",
-          "ملفات صوت متنوعة، بما في ذلك PCM الخام",
+          {
+            text: "LUT استعادة LOG مدمجة للأجهزة الشائعة",
+            note: {
+              label: "*",
+              href: "#lut-disclaimer",
+              ariaLabel: "ملاحظة حول LUT",
+            },
+          },
+          "دعم الصوت بلا فقدان، بما في ذلك PCM الخام",
         ],
         shot: "pro-media-pipeline",
         shotAlt: "موجة الصوت وعناصر التحكم في التصدير داخل Trimly",
       },
     ],
     privacy: {
-      heading: "محلي افتراضياً. خاص بالتصميم.",
-      body: "لا حسابات، لا تتبع، لا تشخيصات، ولا SDKs من أطراف ثالثة. باستثناء مزامنة iCloud، لا يرسل Trimly طلبات شبكة.",
+      heading: "محلي وخاص",
+      body: "لا حسابات أو تتبع أو قياس عن بُعد أو SDKs خارجية.",
     },
     footer: {
       home: "الرئيسية",

@@ -231,7 +231,16 @@ function renderProofs() {
 
     const sections = buildProofSections(getTranslation());
     el.innerHTML = sections.map((sec, index) => {
-        const points = (sec.points || []).map(point => `<span><bdi>${escapeHtml(point)}</bdi></span>`).join('');
+        const points = (sec.points || []).map(point => {
+            if (typeof point === 'object' && point !== null) {
+                const note = point.note || {};
+                const marker = note.label
+                    ? `<sup class="proof-note"><a href="${escapeAttr(note.href || '#lut-disclaimer')}" aria-label="${escapeAttr(note.ariaLabel || note.label)}">${escapeHtml(note.label)}</a></sup>`
+                    : '';
+                return `<span><bdi>${escapeHtml(point.text)}</bdi>${marker}</span>`;
+            }
+            return `<span><bdi>${escapeHtml(point)}</bdi></span>`;
+        }).join('');
         const reverse = index % 2 === 1 ? ' reverse' : '';
         const shot = sec.shot || 'timeline-iphone';
         const shotAlt = escapeAttr(sec.shotAlt || sec.title);
