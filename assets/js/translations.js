@@ -68,6 +68,16 @@ window.T = {
         shot: "cross-device-editing",
       },
       {
+        title: "Find clips intelligently.",
+        body: "Use local AI features provided by Apple systems to quickly find the moments you want to add inside long videos.",
+        points: [
+          "Speech to text, with translation support",
+          "Recognizes sound patterns to locate every laugh",
+          "Identifies a subject from one frame and finds every time they appear in the video",
+        ],
+        shot: "local-intelligence",
+      },
+      {
         title: "Made for each screen.",
         body: "Trimly is not one interface stretched across devices. iPhone, iPad, and Mac each get their own rhythm.",
         points: [
@@ -212,6 +222,16 @@ window.T = {
         shot: "cross-device-editing",
       },
       {
+        title: "智能寻找片段",
+        body: "使用 Apple 系统提供的本地 AI 功能，从长视频中迅速找到想添加的片段",
+        points: [
+          "将语音转为文字，更有翻译功能",
+          "识别声音特征，定位每一处欢笑",
+          "从一帧画面里识别主体，找到TA在视频里每一次出现",
+        ],
+        shot: "local-intelligence",
+      },
+      {
         title: "每台设备都好用",
         body: "不是把同一个界面放大缩小。Trimly 针对 iPhone、iPad 和 Mac 分别优化。",
         points: [
@@ -324,7 +344,7 @@ window.T = {
     ],
     proofSections: [
       {
-        title: "すぐ開いて、必要な分だけ書き出す。",
+        title: "すぐ開いて、必要な\n分だけ書き出す。",
         body: "別の機器で長く撮った動画も、スマートフォンへコピーする必要はありません。カードリーダーを挿せばすぐ作業できます。元ファイルが大きすぎる時は、書き出しサイズを選べます。",
         points: [
           "元ファイルのままクリップをマーク",
@@ -334,7 +354,7 @@ window.T = {
         shot: "source-file-clips",
       },
       {
-        title: "メタデータを正しく扱う。",
+        title: "メタデータを\n正しく扱う。",
         body: "クリップや Live Photo を、その瞬間の実際の時刻と場所に合わせて保存。写真ライブラリが散らかりません。",
         points: [
           "クリップの実際の時刻を自動計算",
@@ -344,7 +364,7 @@ window.T = {
         shot: "photos-metadata-export",
       },
       {
-        title: "外でマーク、家で仕上げ。",
+        title: "外でマーク、\n家で仕上げ。",
         body: "編集メモは作業しながら同期。iPhone で付けた印を、Mac でそのまま使えます。",
         points: [
           "同期するのは編集メモだけ、動画本体は除外",
@@ -354,7 +374,17 @@ window.T = {
         shot: "cross-device-editing",
       },
       {
-        title: "画面ごとに、ちょうどいい操作感。",
+        title: "見つけたい場面を賢く検索。",
+        body: "Apple システムが提供するオンデバイス AI 機能を使い、長い動画の中から追加したい場面をすばやく見つけます。",
+        points: [
+          "音声を文字起こし、翻訳にも対応",
+          "音の特徴を認識し、笑い声の位置を特定",
+          "1 フレームから被写体を認識し、登場箇所を検索",
+        ],
+        shot: "local-intelligence",
+      },
+      {
+        title: "画面ごとに、\n最適な操作感。",
         body: "同じ画面を拡大縮小しているだけではありません。iPhone、iPad、Mac それぞれに合う作りです。",
         points: [
           "iPhone：小さな画面向けに最適化",
@@ -497,6 +527,16 @@ window.T = {
           "AirPlay로 함께 시청",
         ],
         shot: "cross-device-editing",
+      },
+      {
+        title: "클립을 똑똑하게 찾기.",
+        body: "Apple 시스템이 제공하는 기기 내 AI 기능으로 긴 영상 속에서 추가하고 싶은 장면을 빠르게 찾습니다.",
+        points: [
+          "음성을 텍스트로 변환하고 번역도 지원",
+          "소리 특징을 인식해 모든 웃음 지점 찾기",
+          "한 프레임에서 피사체를 인식해 영상 속 등장 장면 모두 찾기",
+        ],
+        shot: "local-intelligence",
       },
       {
         title: "각 화면에 맞는 사용감.",
@@ -643,6 +683,16 @@ window.T = {
         shot: "cross-device-editing",
       },
       {
+        title: "Encuentra clips con inteligencia.",
+        body: "Usa las funciones de IA local que ofrece el sistema de Apple para encontrar rápidamente los momentos que quieres añadir dentro de vídeos largos.",
+        points: [
+          "Transcribe la voz a texto, con traducción incluida",
+          "Reconoce patrones de sonido para ubicar cada risa",
+          "Identifica un sujeto en un fotograma y encuentra cada vez que aparece en el vídeo",
+        ],
+        shot: "local-intelligence",
+      },
+      {
         title: "Hecho para cada pantalla.",
         body: "No es una interfaz estirada de un dispositivo a otro. iPhone, iPad y Mac tienen su propio ritmo.",
         points: [
@@ -785,6 +835,16 @@ window.T = {
           "AirPlay للمشاهدة معاً",
         ],
         shot: "cross-device-editing",
+      },
+      {
+        title: "اعثر على المقاطع بذكاء.",
+        body: "استخدم ميزات الذكاء الاصطناعي المحلية التي يوفرها نظام Apple للعثور سريعاً على اللقطات التي تريد إضافتها داخل الفيديوهات الطويلة.",
+        points: [
+          "تحويل الكلام إلى نص، مع دعم الترجمة",
+          "التعرّف على خصائص الصوت لتحديد كل ضحكة",
+          "التعرّف على الشخص من إطار واحد والعثور على كل ظهور له في الفيديو",
+        ],
+        shot: "local-intelligence",
       },
       {
         title: "مصمم لكل شاشة.",

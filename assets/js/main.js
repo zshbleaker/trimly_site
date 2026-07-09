@@ -9,6 +9,7 @@ const SHOT_META = {
     'source-file-clips': { width: 6000, height: 4500 },
     'photos-metadata-export': { width: 2732, height: 2048 },
     'cross-device-editing': { width: 6000, height: 4500 },
+    'local-intelligence': { width: 4320, height: 2700 },
     'device-workspaces': { width: 2880, height: 1800 },
     'pro-media-pipeline': { width: 2880, height: 1800 },
 };
@@ -68,6 +69,19 @@ function escapeHtml(value) {
         '"': '&quot;',
         "'": '&#39;',
     })[char]);
+}
+
+function renderMultilineText(value) {
+    const text = String(value || '');
+    if (!text.includes('\n')) {
+        return escapeHtml(text);
+    }
+
+    return text
+        .split('\n')
+        .map(escapeHtml)
+        .map(line => `<span style="white-space:nowrap">${line}</span>`)
+        .join('<br>');
 }
 
 function renderShot(name, alt, themeMode = 'single', options = {}) {
@@ -251,7 +265,7 @@ function renderProofs() {
                 </div>
                 <div class="proof-copy">
                     <p class="proof-number">${String(index + 1).padStart(2, '0')}</p>
-                    <h2>${escapeHtml(sec.title)}</h2>
+                    <h2>${renderMultilineText(sec.title)}</h2>
                     <p>${escapeHtml(sec.body)}</p>
                     ${points ? `<div class="proof-lines">${points}</div>` : ''}
                 </div>
