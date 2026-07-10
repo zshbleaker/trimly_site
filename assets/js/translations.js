@@ -121,7 +121,7 @@ window.T = {
     legal: {
       eyebrow: "Legal",
       title: "Privacy Policy",
-      updated: "Last updated: June 15, 2026",
+      updated: "Last updated: July 10, 2026",
       intro:
         "Trimly processes your media entirely on your device. Your footage stays on your iPhone, iPad, or Mac. Your edits and LUTs can sync across your Apple devices via iCloud; video files are never uploaded. This policy explains, in plain terms, what that means for your privacy.",
       contactLabel: "Questions about privacy? Reach us at",
@@ -141,6 +141,10 @@ window.T = {
         {
           h: "No account, no third parties",
           p: "Trimly has no account system and no sign-in. It does not use any third-party SDKs, analytics services, or cloud processing outside of Apple's built-in iCloud sync. Supply chain attacks often enter apps through compromised third-party libraries; Trimly includes none.",
+        },
+        {
+          h: "AI features",
+          p: "All AI features in Trimly are implemented using frameworks built into Apple systems. Trimly does not include, and will never download, any third-party AI models. It also does not provide user data to any third-party AI service providers. All processing happens locally on your device and fully follows the privacy policies that apply to AI features in Apple's systems.",
         },
         {
           h: "Children's privacy",
@@ -273,7 +277,7 @@ window.T = {
     legal: {
       eyebrow: "法律",
       title: "隐私政策",
-      updated: "最后更新：2026 年 6 月 15 日",
+      updated: "最后更新：2026 年 7 月 10 日",
       intro:
         "Trimly 在设备本地处理媒体。你的素材始终留在 iPhone、iPad 或 Mac 上。剪辑记录和 LUT 可以通过 iCloud 在你的 Apple 设备之间同步，但视频文件不会上传。本政策用直白的话说明这些设计对隐私意味着什么。",
       contactLabel: "对隐私有疑问？请联系",
@@ -293,6 +297,10 @@ window.T = {
         {
           h: "无账号、无第三方",
           p: "Trimly 没有账号系统，也不需要登录。除 Apple 内置的 iCloud 同步外，不使用第三方 SDK、分析服务或云端处理。很多供应链风险来自第三方库，Trimly 不集成第三方库。",
+        },
+        {
+          h: "AI 功能",
+          p: "Trimly 中包含的 AI 功能均由 Apple 系统自带的框架实现。Trimly 没有携带，也不会下载任何第三方 AI 模型，更不会将用户数据提供给任何第三方 AI 服务商。所有的计算过程均在用户本地处理，并完全遵循 Apple 系统中 AI 功能的隐私政策。",
         },
         {
           h: "儿童隐私",
@@ -427,7 +435,7 @@ window.T = {
     legal: {
       eyebrow: "法的事項",
       title: "プライバシーポリシー",
-      updated: "最終更新：2026年6月15日",
+      updated: "最終更新：2026年7月10日",
       intro:
         "Trimlyはメディアを端末内で処理します。映像はiPhone、iPad、Macに留まります。iCloudで同期されるのは編集データとLUTのみで、動画ファイルはアップロードされません。本ポリシーでは、それがあなたのプライバシーにとって何を意味するかを平易に説明します。",
       contactLabel: "プライバシーに関するご質問は",
@@ -447,6 +455,10 @@ window.T = {
         {
           h: "アカウントなし、第三者なし",
           p: "Trimlyにはアカウント制度もサインインもありません。Apple組み込みのiCloud同期を除き、第三者SDK、分析サービス、クラウド処理は一切使用しません。サプライチェーン攻撃は第三者ライブラリ経由で入り込むことが多く、Trimlyは第三者ライブラリを一切含みません。",
+        },
+        {
+          h: "AI機能",
+          p: "Trimlyに含まれるAI機能は、すべてAppleのシステムに標準搭載されたフレームワークによって実装されています。Trimlyがサードパーティ製のAIモデルを同梱したり、ダウンロードしたりすることはありません。また、ユーザーデータを第三者のAIサービス事業者に提供することもありません。すべての処理はユーザーのデバイス上でローカルに実行され、AppleのシステムにおけるAI機能のプライバシーポリシーに完全に準拠します。",
         },
         {
           h: "子どものプライバシー",
@@ -582,7 +594,7 @@ window.T = {
     legal: {
       eyebrow: "법적 고지",
       title: "개인정보 처리방침",
-      updated: "최종 업데이트: 2026년 6월 15일",
+      updated: "최종 업데이트: 2026년 7월 10일",
       intro:
         "Trimly는 미디어를 기기에서 로컬로 처리합니다. 촬영본은 iPhone, iPad, Mac에 그대로 둡니다. iCloud로는 편집 기록과 LUT만 동기화되며, 동영상 파일은 업로드되지 않습니다. 이 방침은 그것이 프라이버시에 무엇을 의미하는지 쉬운 말로 설명합니다.",
       contactLabel: "프라이버시 문의는",
@@ -602,6 +614,10 @@ window.T = {
         {
           h: "계정 없음, 제3자 없음",
           p: "Trimly에는 계정 시스템이나 로그인이 없습니다. Apple 내장 iCloud 동기화 외에는 제3자 SDK, 분석 서비스, 클라우드 처리를 사용하지 않습니다. 공급망 공격은 종종 제3자 라이브러리를 통해 앱에 침투하며, Trimly에는 제3자 라이브러리가 없습니다.",
+        },
+        {
+          h: "AI 기능",
+          p: "Trimly에 포함된 AI 기능은 모두 Apple 시스템에 기본 제공되는 프레임워크로 구현됩니다. Trimly는 어떤 제3자 AI 모델도 포함하지 않으며, 앞으로도 다운로드하지 않습니다. 또한 사용자 데이터를 어떤 제3자 AI 서비스 제공업체에도 제공하지 않습니다. 모든 처리는 사용자의 기기에서 로컬로 이루어지며, Apple 시스템의 AI 기능에 적용되는 개인정보 처리방침을 전적으로 따릅니다.",
         },
         {
           h: "아동 프라이버시",
@@ -736,7 +752,7 @@ window.T = {
     legal: {
       eyebrow: "Legal",
       title: "Política de privacidad",
-      updated: "Última actualización: 15 de junio de 2026",
+      updated: "Última actualización: 10 de julio de 2026",
       intro:
         "Trimly procesa tu metraje en el dispositivo. Tus archivos permanecen en tu iPhone, iPad o Mac. Los registros de edición y LUTs pueden sincronizarse entre tus dispositivos Apple mediante iCloud; los archivos de vídeo nunca se suben. Esta política explica, en términos sencillos, qué significa eso para tu privacidad.",
       contactLabel: "¿Preguntas sobre privacidad? Escríbenos a",
@@ -756,6 +772,10 @@ window.T = {
         {
           h: "Sin cuenta ni terceros",
           p: "Trimly no tiene sistema de cuentas ni inicio de sesión. No utiliza SDK, servicios de analíticas ni procesamiento en la nube de terceros, aparte de la sincronización iCloud integrada de Apple. Los ataques a la cadena de suministro suelen entrar en las apps a través de bibliotecas de terceros comprometidas; Trimly no incluye ninguna.",
+        },
+        {
+          h: "Funciones de IA",
+          p: "Todas las funciones de IA incluidas en Trimly están implementadas con frameworks integrados en los sistemas de Apple. Trimly no incorpora ni descargará nunca modelos de IA de terceros. Tampoco comparte datos de los usuarios con proveedores externos de servicios de IA. Todo el procesamiento se realiza localmente en el dispositivo del usuario y se ajusta por completo a las políticas de privacidad aplicables a las funciones de IA de los sistemas de Apple.",
         },
         {
           h: "Privacidad de menores",
@@ -890,7 +910,7 @@ window.T = {
     legal: {
       eyebrow: "قانوني",
       title: "سياسة الخصوصية",
-      updated: "آخر تحديث: 15 يونيو 2026",
+      updated: "آخر تحديث: 10 يوليو 2026",
       intro:
         "Trimly يعالج وسائطك على جهازك. تبقى لقطاتك على iPhone أو iPad أو Mac. يمكن مزامنة سجلات التحرير وملفات LUT عبر iCloud بين أجهزة Apple؛ ملفات الفيديو لا تُرفَع أبداً. تشرح هذه السياسة، بلغة بسيطة، ما يعنيه ذلك لخصوصيتك.",
       contactLabel: "لأي استفسار حول الخصوصية، تواصل معنا على",
@@ -910,6 +930,10 @@ window.T = {
         {
           h: "لا حسابات، لا أطراف ثالثة",
           p: "لا يوجد في Trimly نظام حسابات أو تسجيل دخول. لا تستخدم أي SDKs أو خدمات تحليلات أو معالجة سحابية لأطراف ثالثة، باستثناء مزامنة iCloud المدمجة من Apple. غالباً ما تدخل هجمات سلسلة التوريد عبر مكتبات أطراف ثالثة مخترقة؛ Trimly لا تتضمن أيّاً منها.",
+        },
+        {
+          h: "ميزات الذكاء الاصطناعي",
+          p: "جميع ميزات الذكاء الاصطناعي في Trimly مُنفّذة باستخدام أطر العمل المدمجة في أنظمة Apple. لا يتضمن Trimly أي نماذج ذكاء اصطناعي تابعة لجهات خارجية، ولن يقوم بتنزيلها مطلقاً. كما أنه لا يزوّد أي مزود خارجي لخدمات الذكاء الاصطناعي ببيانات المستخدمين. تتم كل عمليات المعالجة محلياً على جهاز المستخدم، وبما يتوافق بالكامل مع سياسات الخصوصية الخاصة بميزات الذكاء الاصطناعي في أنظمة Apple.",
         },
         {
           h: "خصوصية الأطفال",
