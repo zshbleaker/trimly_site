@@ -11,7 +11,7 @@ window.T = {
       subtitle:
         "Record the whole trip, show, party, or run. Trimly pulls out the best video clips or Live Photos and saves them to Photos in one tap.",
       cta: "Download on the App Store",
-      purchaseNote: "One purchase for iPhone, iPad, and Mac. No subscription.",
+      purchaseNote: "One purchase for iPhone, iPad, Mac, and Apple TV. No subscription.",
     },
     useCasesHeading: "For the moments hiding inside long recordings.",
     useCases: [
@@ -39,9 +39,9 @@ window.T = {
     proofSections: [
       {
         title: "Open instantly. Export only what you need.",
-        body: "Recorded a long video on another device? No need to copy it to your phone. Plug in a card reader and start. Source file too large? Choose the export size that fits.",
+        body: "Recorded a long video on another device? No need to copy it to your phone. Plug in a card reader, or read files directly from your NAS. Source file too large? Choose the export size and quality you need.",
         points: [
-          "Mark clips on the source file",
+          "Local, external, and SMB/WebDAV files",
           "Export quality: from original to compressed",
           "No cache files, no extra storage",
         ],
@@ -59,11 +59,11 @@ window.T = {
       },
       {
         title: "Mark on the go. Export at your desk.",
-        body: "Your edit notes sync as you work. Mark clips on iPhone, then pick up on Mac when you are ready.",
+        body: "Your edit notes sync as you work. Mark clips on iPhone, then pick up on Mac when you are ready. Multiple devices can also mark the same files on your NAS together.",
         points: [
           "Syncs edit notes, not video files",
           "Same source file, edits stay linked after moves",
-          "AirPlay when everyone wants to watch",
+          "Native tvOS app, or AirPlay when everyone wants to watch",
         ],
         shot: "cross-device-editing",
       },
@@ -109,7 +109,7 @@ window.T = {
     ],
     privacy: {
       heading: "Local and Private",
-      body: "No accounts, tracking, telemetry, or third-party SDKs.",
+      body: "No accounts, tracking, or telemetry.",
     },
     footer: {
       home: "Home",
@@ -139,8 +139,8 @@ window.T = {
           p: "When you open media from the Files app, USB storage, or your Photos Library, Trimly reads it only so you can trim and export it. All processing happens locally on your device, and exported clips are saved to the location you choose. Trimly accesses your Photos Library only with your permission, and only to import or save the media you select.",
         },
         {
-          h: "No account, no third parties",
-          p: "Trimly has no account system and no sign-in. It does not use any third-party SDKs, analytics services, or cloud processing outside of Apple's built-in iCloud sync. Supply chain attacks often enter apps through compromised third-party libraries; Trimly includes none.",
+          h: "No account, no third-party network access",
+          p: "Trimly has no account system and no sign-in. Outside of Apple's built-in iCloud sync, it does not use any analytics services or cloud processing.",
         },
         {
           h: "AI features",
@@ -169,7 +169,7 @@ window.T = {
       subtitle:
         "旅行、演出、聚会、户外运动，安心录全程，Trimly 帮你从长视频中切出精彩片段或 Live Photo，一键导入系统相册。在你最熟悉的地方回味那些高光时刻",
       cta: "在 App Store 下载",
-      purchaseNote: "一次购买，iPhone、iPad、Mac 全平台通用，无需订阅",
+      purchaseNote: "一次购买，iPhone、iPad、Mac、Apple TV 全平台通用，无需订阅",
     },
     useCasesHeading: "记录很长，记忆却很短",
     useCases: [
@@ -197,9 +197,9 @@ window.T = {
     proofSections: [
       {
         title: "即刻打开，按需导出",
-        body: "用其他设备录了一大段视频？文件不用复制到手机，插上读卡器就好。原始文件太大？可以按需要选择导出大小与画质",
+        body: "用其他设备录了一大段视频？文件不用复制到手机，插上读卡器就好。还支持打开网络位置。原始文件太大？可以按需要选择导出大小与画质",
         points: [
-          "直接在原始文件上标记片段",
+          "支持本地存储、外置硬盘以及 SMB/WebDAV",
           "导出时选择画质，从原始质量到高度压缩",
           "App 不留缓存，不多占空间",
         ],
@@ -217,11 +217,11 @@ window.T = {
       },
       {
         title: "路上先标，回家细看",
-        body: "编辑记录实时同步，iPhone 上标注的片段，Mac 上继续导出",
+        body: "编辑记录实时同步，iPhone 上标注的片段，Mac 上继续导出。更支持多台设备协同标记 NAS 上的文件",
         points: [
           "只同步编辑记录，不同步视频文件",
           "同一原片换了位置，也能自动对上",
-          "AirPlay 投屏，大家一起看",
+          "原生 tvOS app，或使用 AirPlay 投屏，大家一起看",
         ],
         shot: "cross-device-editing",
       },
@@ -265,7 +265,7 @@ window.T = {
     ],
     privacy: {
       heading: "本地且私密",
-      body: "无需账号，不追踪，不收集遥测数据，不集成第三方 SDK",
+      body: "无需账号，不追踪，不收集遥测数据",
     },
     footer: {
       home: "首页",
@@ -295,8 +295,8 @@ window.T = {
           p: "当你从「文件」App、外接存储或照片图库打开媒体时，Trimly 只会读取你选择的内容，用来裁剪和导出。所有处理都在本机完成，导出的片段会保存到你选择的位置。Trimly 只在获得授权后访问照片图库，并且只用于导入或保存你选择的媒体。",
         },
         {
-          h: "无账号、无第三方",
-          p: "Trimly 没有账号系统，也不需要登录。除 Apple 内置的 iCloud 同步外，不使用第三方 SDK、分析服务或云端处理。很多供应链风险来自第三方库，Trimly 不集成第三方库。",
+          h: "无账号，无第三方网络访问",
+          p: "Trimly 没有账号系统，也不需要登录。除 Apple 内置的 iCloud 同步外，不使用任何分析服务或云端处理。",
         },
         {
           h: "AI 功能",
@@ -325,7 +325,7 @@ window.T = {
       subtitle:
         "旅行もライブもパーティーも、まずは全部録って大丈夫。Trimly が見どころを動画クリップや Live Photo に切り出し、写真アプリへワンタップで保存します。",
       cta: "App Storeでダウンロード",
-      purchaseNote: "買い切りで iPhone、iPad、Mac 対応。サブスク不要。",
+      purchaseNote: "買い切りで iPhone、iPad、Mac、Apple TV 対応。サブスク不要。",
     },
     useCasesHeading: "長い録画の中にある、残したい瞬間へ。",
     useCases: [
@@ -353,9 +353,9 @@ window.T = {
     proofSections: [
       {
         title: "すぐ開いて、必要な\n分だけ書き出す。",
-        body: "別の機器で長く撮った動画も、スマートフォンへコピーする必要はありません。カードリーダーを挿せばすぐ作業できます。元ファイルが大きすぎる時は、書き出しサイズを選べます。",
+        body: "別の機器で長く撮った動画も、スマートフォンへコピーする必要はありません。カードリーダーを挿せばよく、NAS 上のファイルも直接読み込めます。元ファイルが大きすぎる時は、必要に応じて書き出しサイズと画質を選べます。",
         points: [
-          "元ファイルのままクリップをマーク",
+          "ローカル、外付け、SMB/WebDAV のファイル",
           "書き出し品質を元品質から高圧縮まで選択",
           "キャッシュなし、余計な容量も不要",
         ],
@@ -373,11 +373,11 @@ window.T = {
       },
       {
         title: "外でマーク、\n家で仕上げ。",
-        body: "編集メモは作業しながら同期。iPhone で付けた印を、Mac でそのまま使えます。",
+        body: "編集メモは作業しながら同期。iPhone で付けた印を、Mac でそのまま使えます。複数のデバイスで NAS 上の同じファイルを一緒にマークすることもできます。",
         points: [
           "同期するのは編集メモだけ、動画本体は除外",
           "元ファイルの場所が変わっても編集メモを認識",
-          "AirPlay でみんなと一緒に視聴",
+          "tvOS アプリ、または AirPlay で一緒に視聴",
         ],
         shot: "cross-device-editing",
       },
@@ -423,7 +423,7 @@ window.T = {
     ],
     privacy: {
       heading: "ローカルで、プライベート",
-      body: "アカウント、トラッキング、テレメトリ、サードパーティ SDK はありません。",
+      body: "アカウント、トラッキング、テレメトリはありません。",
     },
     footer: {
       home: "ホーム",
@@ -453,8 +453,8 @@ window.T = {
           p: "ファイルApp、外付けドライブ、写真ライブラリからメディアを開くと、Trimlyはトリミングと書き出しのためにそれを読み取るだけです。処理はすべてデバイス内でローカルに行われ、書き出したクリップはあなたが選んだ場所に保存されます。Trimlyはあなたの許可がある場合にのみ写真ライブラリにアクセスし、選択したメディアの読み込みや保存にのみ使用します。",
         },
         {
-          h: "アカウントなし、第三者なし",
-          p: "Trimlyにはアカウント制度もサインインもありません。Apple組み込みのiCloud同期を除き、第三者SDK、分析サービス、クラウド処理は一切使用しません。サプライチェーン攻撃は第三者ライブラリ経由で入り込むことが多く、Trimlyは第三者ライブラリを一切含みません。",
+          h: "アカウントなし、第三者ネットワークアクセスなし",
+          p: "Trimlyにはアカウント制度もサインインもありません。Apple組み込みのiCloud同期を除き、分析サービスやクラウド処理は一切使用しません。",
         },
         {
           h: "AI機能",
@@ -484,7 +484,7 @@ window.T = {
         "여행, 공연, 모임, 야외 활동은 마음 놓고 길게 찍으세요. Trimly가 하이라이트를 영상 클립이나 Live Photo로 잘라 사진 앱에 한 번에 저장합니다.",
       cta: "App Store에서 다운로드",
       purchaseNote:
-        "한 번 구매로 iPhone, iPad, Mac 모두. 구독은 필요 없습니다.",
+        "한 번 구매로 iPhone, iPad, Mac, Apple TV 모두. 구독은 필요 없습니다.",
     },
     useCasesHeading: "긴 기록 속에 숨어 있는 순간들.",
     useCases: [
@@ -512,9 +512,9 @@ window.T = {
     proofSections: [
       {
         title: "바로 열고, 필요한 만큼만 내보내기.",
-        body: "다른 기기로 길게 찍은 영상도 휴대폰에 복사할 필요가 없습니다. 카드 리더를 꽂고 바로 시작하세요. 원본 파일이 너무 크다면 내보내기 크기를 선택할 수 있습니다.",
+        body: "다른 기기로 길게 찍은 영상도 휴대폰에 복사할 필요가 없습니다. 카드 리더를 꽂기만 하면 되고, NAS의 파일도 바로 읽을 수 있습니다. 원본 파일이 너무 크다면 필요한 내보내기 크기와 화질을 선택할 수 있습니다.",
         points: [
-          "원본 파일 위에서 바로 클립 표시",
+          "로컬 저장소, 외장 드라이브, SMB/WebDAV 지원",
           "내보낼 때 원본부터 고압축까지 품질 선택",
           "캐시 없이 추가 공간 절약",
         ],
@@ -532,11 +532,11 @@ window.T = {
       },
       {
         title: "밖에서 표시하고, 집에서 마무리.",
-        body: "작업 기록이 자연스럽게 동기화됩니다. iPhone에서 표시한 구간을 Mac에서 이어서 내보내세요.",
+        body: "작업 기록이 자연스럽게 동기화됩니다. iPhone에서 표시한 구간을 Mac에서 이어서 내보내세요. 여러 기기가 NAS에 있는 같은 파일을 함께 표시할 수도 있습니다.",
         points: [
           "편집 기록만 동기화, 영상 파일은 제외",
           "원본 위치가 바뀌어도 편집 기록을 인식",
-          "AirPlay로 함께 시청",
+          "네이티브 tvOS 앱, 또는 AirPlay로 함께 시청",
         ],
         shot: "cross-device-editing",
       },
@@ -582,7 +582,7 @@ window.T = {
     ],
     privacy: {
       heading: "로컬에서, 비공개로",
-      body: "계정, 추적, 텔레메트리, 서드파티 SDK가 없습니다.",
+      body: "계정, 추적, 텔레메트리가 없습니다.",
     },
     footer: {
       home: "홈",
@@ -612,8 +612,8 @@ window.T = {
           p: "파일 앱, 외장 드라이브, 사진 보관함에서 미디어를 열면 Trimly는 자르고 내보내기 위해 읽을 뿐입니다. 모든 처리는 기기에서 로컬로 이루어지며, 내보낸 클립은 선택한 위치에 저장됩니다. Trimly는 허용된 경우에만 사진 보관함에 접근하며, 선택한 미디어를 가져오거나 저장하는 데만 사용합니다.",
         },
         {
-          h: "계정 없음, 제3자 없음",
-          p: "Trimly에는 계정 시스템이나 로그인이 없습니다. Apple 내장 iCloud 동기화 외에는 제3자 SDK, 분석 서비스, 클라우드 처리를 사용하지 않습니다. 공급망 공격은 종종 제3자 라이브러리를 통해 앱에 침투하며, Trimly에는 제3자 라이브러리가 없습니다.",
+          h: "계정 없음, 제3자 네트워크 접근 없음",
+          p: "Trimly에는 계정 시스템이나 로그인이 없습니다. Apple 내장 iCloud 동기화 외에는 어떤 분석 서비스나 클라우드 처리도 사용하지 않습니다.",
         },
         {
           h: "AI 기능",
@@ -642,7 +642,7 @@ window.T = {
       subtitle:
         "Graba el viaje, el concierto, la fiesta o la ruta completa. Trimly extrae los mejores clips de vídeo o Live Photos y los guarda en Fotos con un toque.",
       cta: "Descargar en el App Store",
-      purchaseNote: "Una compra para iPhone, iPad y Mac. Sin suscripción.",
+      purchaseNote: "Una compra para iPhone, iPad, Mac y Apple TV. Sin suscripción.",
     },
     useCasesHeading: "Para esos momentos escondidos en vídeos largos.",
     useCases: [
@@ -670,9 +670,9 @@ window.T = {
     proofSections: [
       {
         title: "Abre al instante. Exporta solo lo necesario.",
-        body: "¿Grabaste un vídeo largo en otro dispositivo? No hace falta copiarlo al teléfono: conecta un lector de tarjetas y empieza. Si el original pesa demasiado, elige el tamaño de exportación que te convenga.",
+        body: "¿Grabaste un vídeo largo en otro dispositivo? No hace falta copiarlo al teléfono: conecta un lector de tarjetas o lee archivos directamente desde tu NAS. Si el original pesa demasiado, elige el tamaño y la calidad de exportación que necesites.",
         points: [
-          "Marca clips sobre el archivo original",
+          "Compatible con almacenamiento local, discos externos y SMB/WebDAV",
           "Calidad al exportar: original o comprimida",
           "Sin caché ni espacio extra",
         ],
@@ -690,11 +690,11 @@ window.T = {
       },
       {
         title: "Marca fuera. Termina en casa.",
-        body: "Tus notas de edición se sincronizan mientras trabajas. Marca en el iPhone y continúa en el Mac cuando quieras.",
+        body: "Tus notas de edición se sincronizan mientras trabajas. Marca en el iPhone y continúa en el Mac cuando quieras. Varios dispositivos pueden marcar juntos los mismos archivos en tu NAS.",
         points: [
           "Sincroniza notas, no vídeos grandes",
           "Mueve el original; las ediciones siguen enlazadas",
-          "AirPlay para ver juntos",
+          "App nativa para tvOS, o AirPlay para ver juntos",
         ],
         shot: "cross-device-editing",
       },
@@ -740,7 +740,7 @@ window.T = {
     ],
     privacy: {
       heading: "Local y privado",
-      body: "Sin cuentas, seguimiento, telemetría ni SDKs de terceros.",
+      body: "Sin cuentas, seguimiento ni telemetría.",
     },
     footer: {
       home: "Inicio",
@@ -770,8 +770,8 @@ window.T = {
           p: "Cuando abres medios desde la app Archivos, un disco externo o tu biblioteca de Fotos, Trimly solo los lee para que puedas recortarlos y exportarlos. Todo el procesamiento ocurre localmente en tu dispositivo y los clips exportados se guardan donde elijas. Trimly accede a tu biblioteca de Fotos solo con tu permiso y únicamente para importar o guardar los medios que selecciones.",
         },
         {
-          h: "Sin cuenta ni terceros",
-          p: "Trimly no tiene sistema de cuentas ni inicio de sesión. No utiliza SDK, servicios de analíticas ni procesamiento en la nube de terceros, aparte de la sincronización iCloud integrada de Apple. Los ataques a la cadena de suministro suelen entrar en las apps a través de bibliotecas de terceros comprometidas; Trimly no incluye ninguna.",
+          h: "Sin cuenta ni acceso de red de terceros",
+          p: "Trimly no tiene sistema de cuentas ni inicio de sesión. Aparte de la sincronización iCloud integrada de Apple, no utiliza ningún servicio de analíticas ni procesamiento en la nube.",
         },
         {
           h: "Funciones de IA",
@@ -800,7 +800,7 @@ window.T = {
       subtitle:
         "سجّل الرحلة أو الحفل أو التجمع كاملاً. يقتطع Trimly أفضل مقاطع الفيديو أو Live Photos ويحفظها في الصور بلمسة واحدة.",
       cta: "حمِّل من App Store",
-      purchaseNote: "شراء واحد لـ iPhone وiPad وMac. بلا اشتراك.",
+      purchaseNote: "شراء واحد لـ iPhone وiPad وMac وApple TV. بلا اشتراك.",
     },
     useCasesHeading: "للحظات المختبئة داخل التسجيلات الطويلة.",
     useCases: [
@@ -828,9 +828,9 @@ window.T = {
     proofSections: [
       {
         title: "افتح فوراً. وصدّر ما تحتاجه فقط.",
-        body: "صوّرت فيديو طويلاً بجهاز آخر؟ لا حاجة لنسخه إلى الهاتف، وصّل قارئ البطاقات وابدأ. وإذا كان الملف الأصلي ضخماً، فاختر حجم التصدير المناسب.",
+        body: "صوّرت فيديو طويلاً بجهاز آخر؟ لا حاجة لنسخه إلى الهاتف، وصّل قارئ البطاقات أو اقرأ الملفات مباشرة من NAS. وإذا كان الملف الأصلي ضخماً، فاختر حجم التصدير والجودة المناسبين.",
         points: [
-          "علّم المقاطع على الملف الأصلي",
+          "دعم التخزين المحلي والأقراص الخارجية وSMB/WebDAV",
           "جودة التصدير: من الأصلية إلى الضغط العالي",
           "بلا ملفات مؤقتة أو مساحة إضافية",
         ],
@@ -848,11 +848,11 @@ window.T = {
       },
       {
         title: "علّم خارجاً. وأنهِ في البيت.",
-        body: "تتزامن ملاحظات التحرير أثناء العمل. علّم المقاطع على iPhone، ثم تابع على Mac عندما تكون جاهزاً.",
+        body: "تتزامن ملاحظات التحرير أثناء العمل. علّم المقاطع على iPhone، ثم تابع على Mac عندما تكون جاهزاً. ويمكن لعدة أجهزة أيضاً تعليم الملفات نفسها على NAS معاً.",
         points: [
           "تزامن ملاحظات التحرير فقط، لا الفيديو",
           "حتى بعد نقل الأصل، تبقى التعديلات مرتبطة",
-          "AirPlay للمشاهدة معاً",
+          "تطبيق tvOS أصلي، أو AirPlay للمشاهدة معاً",
         ],
         shot: "cross-device-editing",
       },
@@ -898,7 +898,7 @@ window.T = {
     ],
     privacy: {
       heading: "محلي وخاص",
-      body: "لا حسابات أو تتبع أو قياس عن بُعد أو SDKs خارجية.",
+      body: "لا حسابات أو تتبع أو قياس عن بُعد.",
     },
     footer: {
       home: "الرئيسية",
@@ -928,8 +928,8 @@ window.T = {
           p: "عندما تفتح وسائط من تطبيق الملفات أو قرص خارجي أو مكتبة الصور، تقرأها Trimly فقط لتتمكن من القص والتصدير. تتم جميع المعالجات محلياً على جهازك، وتُحفَظ المقاطع المصدَّرة في المكان الذي تختاره. لا تصل Trimly إلى مكتبة الصور إلا بإذنك، ولاستيراد أو حفظ الوسائط التي تحددها فقط.",
         },
         {
-          h: "لا حسابات، لا أطراف ثالثة",
-          p: "لا يوجد في Trimly نظام حسابات أو تسجيل دخول. لا تستخدم أي SDKs أو خدمات تحليلات أو معالجة سحابية لأطراف ثالثة، باستثناء مزامنة iCloud المدمجة من Apple. غالباً ما تدخل هجمات سلسلة التوريد عبر مكتبات أطراف ثالثة مخترقة؛ Trimly لا تتضمن أيّاً منها.",
+          h: "لا حسابات ولا وصول شبكي لأطراف ثالثة",
+          p: "لا يوجد في Trimly نظام حسابات أو تسجيل دخول. باستثناء مزامنة iCloud المدمجة من Apple، لا يستخدم أي خدمات تحليلات أو معالجة سحابية.",
         },
         {
           h: "ميزات الذكاء الاصطناعي",
