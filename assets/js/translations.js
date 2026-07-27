@@ -7,7 +7,7 @@ window.T = {
       download: "Download",
     },
     hero: {
-      heading: "Highlights, within reach.",
+      heading: "Memories\nwithin Reach",
       subtitle:
         "Open the original from Photos, an external drive, or your NAS. Mark as many clips, stills, or Live Photos as you like, then save them to Photos with the moment's real time, place, and quality intact.",
       cta: "Download on the App Store",
@@ -166,7 +166,7 @@ window.T = {
       download: "下载",
     },
     hero: {
-      heading: "高光，触手可及。",
+      heading: "美好回忆，\n触手可及",
       subtitle:
         "直接打开相册、外置硬盘或 NAS 里的原片。标出任意多个视频片段、截图或 Live Photo，再按真实的时间、地点和画质导入系统相册。",
       cta: "在 App Store 下载",
@@ -197,7 +197,7 @@ window.T = {
     ],
     proofSections: [
       {
-        title: "直接打开原片，保留每个高光",
+        title: "原片直开，保留高光",
         body: "直接打开相册、外置硬盘或 NAS 里的长视频。标出任意多个片段、截图或 Live Photo，只导出真正值得保存的部分。",
         points: [
           "支持本地存储、外置硬盘以及 SMB/WebDAV",
@@ -323,7 +323,7 @@ window.T = {
       download: "ダウンロード",
     },
     hero: {
-      heading: "ハイライトを、すぐ手元に。",
+      heading: "思い出を、\nすぐそばに。",
       subtitle:
         "写真、外付けドライブ、NAS から元ファイルを直接開き、動画クリップ、静止画、Live Photo を好きな数だけマーク。実際の時刻、場所、画質を保ったまま写真アプリへ保存します。",
       cta: "App Storeでダウンロード",
@@ -482,7 +482,7 @@ window.T = {
       download: "다운로드",
     },
     hero: {
-      heading: "하이라이트를, 손에 닿게.",
+      heading: "추억을\n가까이에",
       subtitle:
         "사진 앱, 외장 드라이브, NAS에서 원본을 바로 여세요. 원하는 만큼 영상 클립, 스틸 이미지, Live Photo를 표시하고 실제 시간과 장소를 보존해 사진 앱에 저장하세요.",
       cta: "App Store에서 다운로드",
@@ -642,7 +642,7 @@ window.T = {
       download: "Descargar",
     },
     hero: {
-      heading: "Momentos importantes, al alcance.",
+      heading: "Recuerdos\nsiempre a mano",
       subtitle:
         "Abre el original desde Fotos, un disco externo o tu NAS. Marca tantos clips, imágenes fijas o Live Photos como quieras y guárdalos en Fotos con su hora y lugar reales.",
       cta: "Descargar en el App Store",
@@ -801,7 +801,7 @@ window.T = {
       download: "حمِّل",
     },
     hero: {
-      heading: "اللحظات المهمة في متناول اليد.",
+      heading: "ذكريات\nفي متناولك",
       subtitle:
         "افتح الأصل مباشرة من الصور أو قرص خارجي أو NAS. علّم أي عدد تريده من المقاطع والصور وLive Photos واحفظها في الصور مع وقتها ومكانها الحقيقيين.",
       cta: "حمِّل من App Store",
