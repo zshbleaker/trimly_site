@@ -1,6 +1,6 @@
 window.T = {
   en: {
-    indexTitle: "Trimly | From long videos to highlights",
+    indexTitle: "Memories within Reach",
     privacyTitle: "Trimly | Privacy Policy",
     nav: {
       features: "Features",
@@ -159,7 +159,7 @@ window.T = {
     },
   },
   zh: {
-    indexTitle: "Trimly | 长视频里的高光，回到相册",
+    indexTitle: "美好回忆，触手可及",
     privacyTitle: "Trimly | 隐私政策",
     nav: {
       features: "功能",
@@ -316,7 +316,7 @@ window.T = {
     },
   },
   ja: {
-    indexTitle: "Trimly | 長い動画から、ハイライトを",
+    indexTitle: "思い出を、すぐそばに。",
     privacyTitle: "Trimly | プライバシーポリシー",
     nav: {
       features: "機能",
@@ -475,7 +475,7 @@ window.T = {
     },
   },
   ko: {
-    indexTitle: "Trimly | 긴 영상에서 하이라이트로",
+    indexTitle: "추억을 가까이에",
     privacyTitle: "Trimly | 개인정보 처리방침",
     nav: {
       features: "기능",
@@ -635,7 +635,7 @@ window.T = {
     },
   },
   es: {
-    indexTitle: "Trimly | Del vídeo largo al momento importante",
+    indexTitle: "Recuerdos siempre a mano",
     privacyTitle: "Trimly | Política de privacidad",
     nav: {
       features: "Funciones",
@@ -794,7 +794,7 @@ window.T = {
     },
   },
   ar: {
-    indexTitle: "Trimly | من الفيديو الطويل إلى اللحظة المهمة",
+    indexTitle: "ذكريات في متناولك",
     privacyTitle: "Trimly | سياسة الخصوصية",
     nav: {
       features: "المميزات",
