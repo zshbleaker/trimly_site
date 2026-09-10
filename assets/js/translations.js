@@ -9,57 +9,57 @@ window.T = {
     hero: {
       heading: "Memories\nwithin Reach",
       subtitle:
-        "Open the original from Photos, an external drive, or your NAS. Mark as many clips, stills, or Live Photos as you like, then save them to Photos with the moment's real time, place, and quality intact.",
+        "Open the original from Photos, an external drive, or your NAS. Mark the clips, stills, and Live Photos worth keeping, then save them back to Photos with the moment's real time, place, and quality intact.",
       cta: "Download on the App Store",
       purchaseNote: "One purchase for iPhone, iPad, Mac, and Apple TV. No subscription.",
     },
-    useCasesHeading: "For the moments hiding inside long recordings.",
+    useCasesHeading: "Recordings run long. Memories stay short.",
     useCases: [
       {
         title: "Travel days",
-        body: "Arrival, street scenes, sunset, dinner. Split the day into clips, with time, place, and camera details intact.",
+        body: "Arrival, the streets, sunset, dinner. Split the day into clips, each one keeping its own time, place, and camera details.",
       },
       {
         title: "Live shows",
-        body: "Record the full set. Save the best chorus clips and stage moments on their own.",
+        body: "Record the whole set. Save only the chorus that gave you chills.",
       },
       {
         title: "Parties",
-        body: "Candles, gifts, eyes closed for a wish. Trim the moment, share it with the group, and let everyone keep it.",
+        body: "Candles, gifts, eyes closed for a wish. Trim that moment and send it to the group, so everyone gets to keep it.",
       },
       {
         title: "Outdoor adventures",
-        body: "Skiing, surfing, hiking, cycling. Mark the turn or sprint you are proud of and show everyone your best moment.",
+        body: "Skiing, surfing, hiking, cycling. Mark the run you're proud of, and let everyone see it.",
       },
       {
         title: "Family moments",
-        body: "Keep a first step, a pet's reaction, or a small moment you want to revisit without searching through the whole recording.",
+        body: "A first step, a pet's double take, the small moment you'll want back. Keep it without digging through the whole recording.",
       },
     ],
     proofSections: [
       {
         title: "Open the original. Keep every highlight.",
-        body: "Open long recordings directly from Photos, an external drive, or your NAS. Mark as many clips, stills, or Live Photos as you like, then export only what you want.",
+        body: "Open long recordings straight from Photos, an external drive, or your NAS. Mark the clips, stills, and Live Photos worth keeping, then export just those.",
         points: [
-          "Local, external, and SMB/WebDAV files",
-          "One recording, multiple clips, one batch export",
-          "No source copy or full-size duplicate",
+          "Local storage, external drives, SMB and WebDAV",
+          "One recording in, as many clips out",
+          "No source copies, no full-size duplicates",
         ],
         shot: "source-file-clips",
       },
       {
-        title: "Metadata handled correctly.",
-        body: "Each clip or Live Photo can line up with the real time and place of the moment, so your library no longer turns messy.",
+        title: "Every detail, right where it belongs.",
+        body: "Every clip and Live Photo carries the real time and place of the moment, so your library never turns into a mess.",
         points: [
-          "Calculates the real time of each clip",
-          "Keeps GPS and camera metadata",
-          "Gives your library a timeline that stays in order",
+          "Calculates each clip's real timestamp",
+          "Keeps GPS and camera data intact",
+          "Your library, back in order",
         ],
         shot: "photos-metadata-export",
       },
       {
         title: "Mark on the go. Export at your desk.",
-        body: "Your edit notes sync through iCloud. Mark clips on iPhone, then pick up on Mac when you are ready. Your own devices can continue working with the same source file on your NAS.",
+        body: "Your edit notes sync through iCloud. Mark clips on iPhone, then pick things up on Mac when you're ready. All your devices can keep working from the same source file on your NAS.",
         points: [
           "Syncs edit notes, not video files",
           "Same source file, edits stay linked after moves",
@@ -68,12 +68,12 @@ window.T = {
         shot: "cross-device-editing",
       },
       {
-        title: "Find clips intelligently.",
-        body: "Use Apple's on-device features to search long videos before you start exporting. Results stay on your device, and you decide which moments become clips.",
+        title: "Search finds it. You decide.",
+        body: "Apple's on-device intelligence searches long videos for you, right on your device. You still decide which moments become clips.",
         points: [
-          "Transcribe speech, translate it on supported OS versions, and export subtitles",
-          "Recognizes sound patterns to locate every laugh",
-          "Identifies a subject from one frame and finds every time they appear in the video",
+          "Transcribes speech, with translation and subtitle export on supported OS versions",
+          "Picks out every laugh by sound",
+          "Spot someone once, find them everywhere in the video",
         ],
         shot: "local-intelligence",
       },
@@ -91,7 +91,7 @@ window.T = {
       },
       {
         title: "HDR & Log.",
-        body: "The export pipeline is ready for HDR footage, common Log workflows, and lossless audio, so short clips can keep the qualities that matter.",
+        body: "The export pipeline handles HDR footage, common Log workflows, and lossless audio, so a short clip loses nothing that mattered in the original.",
         points: [
           "HDR-ready media pipeline",
           {
@@ -109,8 +109,8 @@ window.T = {
       },
     ],
     privacy: {
-      heading: "Local and Private",
-      body: "No Trimly account, tracking, or telemetry. iCloud sync is used only for your edits and LUTs.",
+      heading: "Local first. Private always.",
+      body: "No account, no tracking, no telemetry. iCloud syncs only your edits and LUTs, never your footage.",
     },
     footer: {
       home: "Home",
@@ -124,7 +124,7 @@ window.T = {
       title: "Privacy Policy",
       updated: "Last updated: July 10, 2026",
       intro:
-        "Trimly processes your media entirely on your device. Your footage stays on your iPhone, iPad, or Mac. Your edits and LUTs can sync across your Apple devices via iCloud; video files are never uploaded. This policy explains, in plain terms, what that means for your privacy.",
+        "Trimly processes your media entirely on your device, and your footage stays on your iPhone, iPad, or Mac. Edits and LUTs can sync across your Apple devices through iCloud, but video files are never uploaded. This policy explains, in plain terms, what that means for your privacy.",
       contactLabel: "Questions about privacy? Reach us at",
       sections: [
         {
@@ -133,7 +133,7 @@ window.T = {
         },
         {
           h: "iCloud sync",
-          p: "Trimly does not connect to Trimly servers or any third-party services. The only network activity is iCloud sync, which uses Apple's iCloud to keep your edits and LUTs in sync across your devices when you enable it, subject to Apple's iCloud terms and privacy policy. Your video and audio files are never uploaded or synced.",
+          p: "Trimly has no backend servers of its own, and it does not connect to any third-party service. The only network activity is iCloud sync: when you turn it on, Apple's iCloud keeps your edits and LUTs synced across your devices, subject to Apple's iCloud terms and privacy policy. Video and audio files are never uploaded or synced.",
         },
         {
           h: "Files and Photos access",
@@ -145,7 +145,7 @@ window.T = {
         },
         {
           h: "AI features",
-          p: "All AI features in Trimly are implemented using frameworks built into Apple systems. Trimly does not include, and will never download, any third-party AI models. It also does not provide user data to any third-party AI service providers. All processing happens locally on your device and fully follows the privacy policies that apply to AI features in Apple's systems.",
+          p: "All of Trimly's AI features run on frameworks built into Apple's systems. Trimly doesn't include any third-party AI models, and never will. It also doesn't share your data with any third-party AI provider. Everything runs locally on your device, following the same privacy policies that apply to AI features across Apple's systems.",
         },
         {
           h: "Children's privacy",
@@ -168,57 +168,57 @@ window.T = {
     hero: {
       heading: "美好回忆，\n触手可及",
       subtitle:
-        "直接打开相册、外置硬盘或 NAS 里的原片。标出任意多个视频片段、截图或 Live Photo，再按真实的时间、地点和画质导入系统相册。",
+        "直接打开相册、外置硬盘或 NAS 里的原片，标出真正想留下的片段、截图与 Live Photo，连同真实的时间、地点和画质，一起存回相册。",
       cta: "在 App Store 下载",
       purchaseNote: "一次购买，iPhone、iPad、Mac、Apple TV 全平台通用，无需订阅",
     },
-    useCasesHeading: "记录很长，记忆却很短",
+    useCasesHeading: "录得很长，记得很短。",
     useCases: [
       {
         title: "旅行随拍",
-        body: "抵达、街景、日落、晚餐，各成一段；时间、地点、拍摄设备，全部保留",
+        body: "抵达、街景、日落、晚餐，各自成片，时间、地点、拍摄参数一并留住。",
       },
       {
         title: "现场演出",
-        body: "先录完整场，再把最精彩的副歌片段与舞台高光单独保存",
+        body: "先录下整场演出，副歌爆发的那一刻，单独留下。",
       },
       {
         title: "聚会开趴",
-        body: "吹蜡烛、拆礼物、闭眼许愿，随手裁出片段发到群里，让大家轻松珍藏",
+        body: "吹蜡烛、拆礼物、闭眼许愿，剪下这一刻发到群里，人人都能留一份。",
       },
       {
         title: "户外探险",
-        body: "滑雪、冲浪、登山、骑行，标出最得意的转弯与冲刺，让所有人看到你最炫的瞬间",
+        body: "滑雪、冲浪、登山、骑行，标出那个漂亮的转弯，让所有人看看。",
       },
       {
         title: "家人和宠物",
-        body: "宝宝迈出的第一步、宠物突然的反应，或任何值得反复回看的小瞬间，都不用再从整段录像里慢慢找",
+        body: "宝宝迈出的第一步，猫咪愣住的那一秒，这些想重温的瞬间，不用再从整段录像里翻找。",
       },
     ],
     proofSections: [
       {
         title: "原片直开，保留高光",
-        body: "直接打开相册、外置硬盘或 NAS 里的长视频。标出任意多个片段、截图或 Live Photo，只导出真正值得保存的部分。",
+        body: "直接打开相册、外置硬盘或 NAS 里的长视频，标出真正想留下的片段、截图或 Live Photo，只导出你要的那部分。",
         points: [
-          "支持本地存储、外置硬盘以及 SMB/WebDAV",
+          "本地存储、外置硬盘、SMB/WebDAV 都能打开",
           "一条视频标记多段，一次批量导出",
-          "不复制原片，不额外占用一整份视频空间",
+          "不复制原片，不多占一份存储",
         ],
         shot: "source-file-clips",
       },
       {
-        title: "正确处理元数据",
-        body: "每一个片段或 Live Photo，都能匹配实际的时间和地点，相册不再杂乱无章",
+        title: "时间地点，原封不动",
+        body: "每个片段和 Live Photo，都带着它真实发生的时间和地点，相册不会因此变得杂乱。",
         points: [
-          "智能计算片段的实际时间",
+          "自动推算每个片段的真实时间",
           "保留 GPS 与拍摄设备信息",
-          "让相册时间线保持严格顺序",
+          "相册时间线，井井有条",
         ],
         shot: "photos-metadata-export",
       },
       {
         title: "路上先标，回家细看",
-        body: "编辑记录通过 iCloud 自动同步。iPhone 上标注片段，回到 Mac 继续导出；自己的多台设备都能接着处理 NAS 上的同一份原片。",
+        body: "编辑记录通过 iCloud 自动同步。iPhone 上标好的片段，回到 Mac 就能直接导出；你的所有设备，都能接着处理 NAS 上的同一份原片。",
         points: [
           "只同步编辑记录，不同步视频文件",
           "同一原片换了位置，也能自动对上",
@@ -227,12 +227,12 @@ window.T = {
         shot: "cross-device-editing",
       },
       {
-        title: "智能寻找片段",
-        body: "使用 Apple 设备提供的本地智能功能，先在长视频里找到候选时刻，再由你决定哪些片段值得导出。分析结果留在设备上。",
+        title: "搜索来找，你来定",
+        body: "Apple 设备自带的本地智能，会在长视频里先帮你圈出候选时刻，分析全程留在设备本地，最终留不留，由你决定。",
         points: [
-          "将语音转为文字，在支持的系统版本上翻译并导出字幕",
-          "识别声音特征，定位每一处欢笑",
-          "从一帧画面里识别主体，找到TA在视频里每一次出现",
+          "语音转文字，在支持的系统版本上可翻译并导出字幕",
+          "识别声音特征，定位每一次欢笑",
+          "认出一个人，就能找到TA在视频里的每一次出现",
         ],
         shot: "local-intelligence",
       },
@@ -243,15 +243,15 @@ window.T = {
           "iPhone：小屏幕界面专门优化",
           "iPad：触屏、键盘与自由窗口都支持",
           "Mac：大屏幕和真实文件系统，高效操作",
-          "Apple TV：与亲朋好友一同标注片段",
+          "Apple TV：原生 App，或用 AirPlay 与家人朋友一起看",
         ],
         shot: "device-workspaces",
       },
       {
         title: "HDR 与 Log",
-        body: "媒体处理管线为 HDR、常见 Log 工作流和无损音频做好准备，让短片段保留真正重要的画质与声音。",
+        body: "导出链路支持 HDR、常见 Log 工作流和无损音频，让短片段也留住原片真正重要的画质与声音。",
         points: [
-          "整个媒体处理管线为 HDR 设计",
+          "全链路支持 HDR",
           {
             text: "内置常见品牌热门设备的 LOG 还原 LUT",
             note: {
@@ -266,8 +266,8 @@ window.T = {
       },
     ],
     privacy: {
-      heading: "本地且私密",
-      body: "无需 Trimly 账号，不追踪，不收集遥测数据。iCloud 只用于同步你的编辑记录与 LUT。",
+      heading: "本地优先，隐私优先",
+      body: "不需要账号，不追踪，不收集遥测数据。iCloud 只同步你的编辑记录与 LUT，从不触碰你的素材。",
     },
     footer: {
       home: "首页",
@@ -281,36 +281,36 @@ window.T = {
       title: "隐私政策",
       updated: "最后更新：2026 年 7 月 10 日",
       intro:
-        "Trimly 在设备本地处理媒体。你的素材始终留在 iPhone、iPad 或 Mac 上。剪辑记录和 LUT 可以通过 iCloud 在你的 Apple 设备之间同步，但视频文件不会上传。本政策用直白的话说明这些设计对隐私意味着什么。",
+        "Trimly 只在设备本地处理媒体，你的素材始终留在 iPhone、iPad 或 Mac 上。剪辑记录和 LUT 可以通过 iCloud 在你的 Apple 设备之间同步，但视频文件从不上传。这份政策用直白的话，说明这些设计对你的隐私意味着什么。",
       contactLabel: "对隐私有疑问？请联系",
       sections: [
         {
           h: "不收集数据",
-          p: "Trimly 不收集、不存储、也不传输个人信息。没有数据分析，没有追踪，没有广告标识符，也没有任何形式的使用统计。",
+          p: "Trimly 不收集、不存储，也不传输任何个人信息。没有数据分析，没有追踪，没有广告标识符，也没有任何形式的使用统计。",
         },
         {
           h: "iCloud 同步",
-          p: "Trimly 不连接 Trimly 服务器，也不连接第三方服务。唯一的网络活动是 iCloud 同步：启用后，Apple 的 iCloud 会在你的设备之间同步剪辑记录和 LUT，相关数据受 Apple iCloud 条款与隐私政策约束。视频和音频文件不会上传，也不会通过 iCloud 同步。",
+          p: "Trimly 没有自己的后台服务器，也不会连接任何第三方服务。唯一涉及网络的动作是 iCloud 同步：开启后，Apple 的 iCloud 会在你的设备之间同步剪辑记录与 LUT，相关数据受 Apple iCloud 条款与隐私政策约束。视频和音频文件不会上传，也不会经由 iCloud 同步。",
         },
         {
           h: "文件与照片访问",
-          p: "当你从「文件」App、外接存储或照片图库打开媒体时，Trimly 只会读取你选择的内容，用来裁剪和导出。所有处理都在本机完成，导出的片段会保存到你选择的位置。Trimly 只在获得授权后访问照片图库，并且只用于导入或保存你选择的媒体。",
+          p: "当你从「文件」App、外接存储或照片图库打开媒体时，Trimly 只会读取你选择的内容，用来裁剪和导出。所有处理都在本机完成，导出的片段会保存到你选择的位置。Trimly 只在你授权后才会访问照片图库，并且只用于导入或保存你选择的媒体。",
         },
         {
           h: "无账号，无第三方网络访问",
-          p: "Trimly 没有账号系统，也不需要登录。除 Apple 内置的 iCloud 同步外，不使用任何分析服务或云端处理。",
+          p: "Trimly 没有账号系统，也无需登录。除 Apple 内置的 iCloud 同步外，不使用任何分析服务或云端处理。",
         },
         {
           h: "AI 功能",
-          p: "Trimly 中包含的 AI 功能均由 Apple 系统自带的框架实现。Trimly 没有携带，也不会下载任何第三方 AI 模型，更不会将用户数据提供给任何第三方 AI 服务商。所有的计算过程均在用户本地处理，并完全遵循 Apple 系统中 AI 功能的隐私政策。",
+          p: "Trimly 中的 AI 功能，全部基于 Apple 系统自带的框架实现。它不携带、也不会下载任何第三方 AI 模型，更不会把用户数据提供给第三方 AI 服务商。所有运算都在你的设备本地完成，并完全遵循 Apple 系统中 AI 功能适用的隐私政策。",
         },
         {
           h: "儿童隐私",
-          p: "由于 Trimly 不收集数据，因此不会有意收集包括儿童在内的任何人的信息。",
+          p: "因为 Trimly 不收集任何数据，也就不会刻意收集包括儿童在内的任何人的信息。",
         },
         {
           h: "政策变更",
-          p: "如本政策有所变更，更新后的版本将连同新的日期发布在本页面。",
+          p: "如果本政策有变动，更新后的版本会连同新日期一起发布在这个页面。",
         },
       ],
     },
@@ -325,51 +325,51 @@ window.T = {
     hero: {
       heading: "思い出を、\nすぐそばに。",
       subtitle:
-        "写真、外付けドライブ、NAS から元ファイルを直接開き、動画クリップ、静止画、Live Photo を好きな数だけマーク。実際の時刻、場所、画質を保ったまま写真アプリへ保存します。",
+        "写真、外付けドライブ、NAS から元ファイルを直接開き、残したい動画クリップ、静止画、Live Photo をマーク。実際の時刻、場所、画質を保ったまま写真アプリへ保存します。",
       cta: "App Storeでダウンロード",
       purchaseNote: "買い切りで iPhone、iPad、Mac、Apple TV 対応。サブスク不要。",
     },
-    useCasesHeading: "長い録画の中にある、残したい瞬間へ。",
+    useCasesHeading: "録画は長く、記憶は短く。",
     useCases: [
       {
         title: "旅の一日",
-        body: "到着、街並み、夕焼け、夕食をそれぞれのクリップに。時刻、場所、カメラ情報もそのまま残ります。",
+        body: "到着、街並み、夕焼け、夕食を、それぞれのクリップに。時刻や場所、カメラ情報もそのまま残ります。",
       },
       {
         title: "ライブ",
-        body: "まずは通しで録画。あとから最高のサビやステージの瞬間だけを保存できます。",
+        body: "まずは公演をまるごと録画。鳥肌が立ったサビだけを、あとで残せます。",
       },
       {
         title: "パーティー",
-        body: "ろうそく、プレゼント、目を閉じて願う瞬間。その場面だけ切り出して共有し、みんなで残せます。",
+        body: "ろうそく、プレゼント、目を閉じて願う瞬間。その場面を切り出してグループに送れば、みんなで残せます。",
       },
       {
         title: "アウトドア",
-        body: "スキー、サーフィン、登山、サイクリング。自慢のターンやスプリントをマークして、最高の瞬間を見せられます。",
+        body: "スキー、サーフィン、登山、サイクリング。自慢の一本をマークして、みんなに見せましょう。",
       },
       {
         title: "家族とペット",
-        body: "家族やペットの小さな瞬間をクリップや Live Photo に。長い録画を探し直さず、思い出した時にすぐ見返せます。",
+        body: "赤ちゃんの初めの一歩、ペットが二度見した瞬間。ふと見返したくなる場面を、長い録画から探し直さずに残せます。",
       },
     ],
     proofSections: [
       {
         title: "元ファイルを開いて、\nハイライトだけ残す。",
-        body: "別の機器で長く撮った動画も、スマートフォンへコピーする必要はありません。カードリーダーを挿せばよく、NAS 上のファイルも直接読み込めます。元ファイルが大きすぎる時は、必要に応じて書き出しサイズと画質を選べます。",
+        body: "写真、外付けドライブ、NAS にある長い動画を直接開きます。残したいクリップや静止画、Live Photo をマークし、必要な分だけ書き出します。",
         points: [
-          "ローカル、外付け、SMB/WebDAV のファイル",
-          "書き出し品質を元品質から高圧縮まで選択",
-          "元ファイルをコピーせず、原本サイズの重複も不要",
+          "ローカル、外付けドライブ、SMB/WebDAV に対応",
+          "1 本の動画から複数クリップを一括書き出し",
+          "元ファイルはコピーせず、フルサイズの複製も作らない",
         ],
         shot: "source-file-clips",
       },
       {
-        title: "メタデータを\n正しく扱う。",
-        body: "クリップや Live Photo を、その瞬間の実際の時刻と場所に合わせて保存。写真ライブラリが散らかりません。",
+        title: "時刻と場所を、\nそのままに。",
+        body: "クリップや Live Photo は、実際に起きた時刻と場所を保ったまま保存されます。写真ライブラリが散らからずに済みます。",
         points: [
-          "クリップの実際の時刻を自動計算",
+          "各クリップの実際の時刻を自動計算",
           "GPS と撮影機材の情報を保持",
-          "時系列どおりに並ぶ写真ライブラリへ",
+          "写真ライブラリは、いつも時系列どおりに",
         ],
         shot: "photos-metadata-export",
       },
@@ -384,12 +384,12 @@ window.T = {
         shot: "cross-device-editing",
       },
       {
-        title: "見つけたい場面を賢く検索。",
-        body: "Apple システムが提供するオンデバイス AI 機能を使い、長い動画の中から追加したい場面をすばやく見つけます。",
+        title: "検索が見つけ、\n決めるのはあなた。",
+        body: "Apple のオンデバイス AI が、長い動画の中から候補の場面を自動で探します。どのクリップにするかは、あなた次第です。",
         points: [
-          "音声を文字起こし、翻訳にも対応",
+          "音声を文字起こし。対応 OS では翻訳と字幕書き出しにも対応",
           "音の特徴を認識し、笑い声の位置を特定",
-          "1 フレームから被写体を認識し、登場箇所を検索",
+          "1 フレームから被写体を認識し、動画内の登場箇所をすべて検索",
         ],
         shot: "local-intelligence",
       },
@@ -406,10 +406,10 @@ window.T = {
         shotAlt: "複数デバイスでの Trimly 編集画面",
       },
       {
-        title: "プロ形式にも対応。",
-        body: "短いクリップでも最高の品質を保てるよう、プロのクリエイターのために設計しました。",
+        title: "HDR も、Log も。",
+        body: "書き出しは HDR 映像、主要な Log ワークフロー、ロスレス音声に対応。短いクリップでも、元の大切な画質と音を損ないません。",
         points: [
-          "HDR 前提のメディア処理",
+          "全工程が HDR に対応",
           {
             text: "人気機種向けの LOG 復元 LUT を内蔵",
             note: {
@@ -425,8 +425,8 @@ window.T = {
       },
     ],
     privacy: {
-      heading: "ローカルで、プライベート",
-      body: "Trimly のアカウント、追跡、テレメトリはありません。iCloud は編集データと LUT の同期にのみ使います。",
+      heading: "いつもローカルで、いつもプライベートに。",
+      body: "アカウントも、追跡も、テレメトリもありません。iCloud で同期するのは編集データと LUT だけ。動画そのものには触れません。",
     },
     footer: {
       home: "ホーム",
@@ -440,7 +440,7 @@ window.T = {
       title: "プライバシーポリシー",
       updated: "最終更新：2026年7月10日",
       intro:
-        "Trimlyはメディアを端末内で処理します。映像はiPhone、iPad、Macに留まります。iCloudで同期されるのは編集データとLUTのみで、動画ファイルはアップロードされません。本ポリシーでは、それがあなたのプライバシーにとって何を意味するかを平易に説明します。",
+        "Trimlyはメディアをすべて端末内で処理し、映像はiPhone、iPad、Macに留まります。iCloudで同期されるのは編集データとLUTのみで、動画ファイルがアップロードされることはありません。このポリシーでは、それがあなたのプライバシーにとって何を意味するかを、平易な言葉で説明します。",
       contactLabel: "プライバシーに関するご質問は",
       sections: [
         {
@@ -449,7 +449,7 @@ window.T = {
         },
         {
           h: "iCloud同期",
-          p: "TrimlyはTrimlyのサーバーや第三者サービスに接続しません。ネットワーク通信はiCloud同期のみです。有効にすると、AppleのiCloud経由で編集データとLUTをデバイス間に同期します。動画・音声ファイルはアップロードも同期もされません。同期データはAppleのiCloud利用規約とプライバシーポリシーの対象となります。",
+          p: "Trimlyには独自のサーバーがなく、第三者のサービスにも接続しません。唯一のネットワーク通信はiCloud同期です。有効にすると、AppleのiCloud経由で編集データとLUTをデバイス間に同期します。この同期データには、AppleのiCloud利用規約とプライバシーポリシーが適用されます。動画・音声ファイルは、アップロードも同期もされません。",
         },
         {
           h: "ファイルと写真へのアクセス",
@@ -484,12 +484,12 @@ window.T = {
     hero: {
       heading: "추억을\n가까이에",
       subtitle:
-        "사진 앱, 외장 드라이브, NAS에서 원본을 바로 여세요. 원하는 만큼 영상 클립, 스틸 이미지, Live Photo를 표시하고 실제 시간과 장소를 보존해 사진 앱에 저장하세요.",
+        "사진 앱, 외장 드라이브, NAS에서 원본을 바로 여세요. 간직하고 싶은 영상 클립, 스틸 이미지, Live Photo를 표시하고 실제 시간과 장소, 화질을 그대로 담아 사진 앱에 저장하세요.",
       cta: "App Store에서 다운로드",
       purchaseNote:
         "한 번 구매로 iPhone, iPad, Mac, Apple TV 모두. 구독은 필요 없습니다.",
     },
-    useCasesHeading: "긴 기록 속에 숨어 있는 순간들.",
+    useCasesHeading: "기록은 길어도, 기억은 짧게.",
     useCases: [
       {
         title: "여행의 하루",
@@ -497,39 +497,39 @@ window.T = {
       },
       {
         title: "공연",
-        body: "일단 전체를 녹화하세요. 가장 멋진 후렴과 무대 순간만 따로 저장할 수 있습니다.",
+        body: "일단 공연 전체를 녹화하세요. 소름 돋았던 그 후렴만 따로 남길 수 있습니다.",
       },
       {
         title: "파티",
-        body: "촛불, 선물, 눈을 감고 소원을 비는 순간. 그 장면만 잘라 공유하고 모두가 간직할 수 있습니다.",
+        body: "촛불, 선물, 눈을 감고 소원을 비는 순간. 그 장면을 잘라 그룹에 보내면 모두가 간직할 수 있습니다.",
       },
       {
         title: "아웃도어",
-        body: "스키, 서핑, 등산, 사이클링. 가장 뿌듯한 턴과 스프린트를 표시해 최고의 순간을 보여주세요.",
+        body: "스키, 서핑, 등산, 사이클링. 가장 뿌듯했던 그 순간을 표시해 모두에게 보여주세요.",
       },
       {
         title: "가족과 반려동물",
-        body: "아이의 첫걸음이나 반려동물의 재미있는 반응처럼, 긴 영상을 다시 찾지 않아도 간직하고 싶은 순간을 남기세요.",
+        body: "아이의 첫걸음, 반려동물이 두 번 쳐다본 순간. 다시 보고 싶은 그 장면을, 긴 영상을 뒤지지 않고 간직하세요.",
       },
     ],
     proofSections: [
       {
         title: "원본을 열고,\n하이라이트만 남기기.",
-        body: "다른 기기로 길게 찍은 영상도 휴대폰에 복사할 필요가 없습니다. 카드 리더를 꽂기만 하면 되고, NAS의 파일도 바로 읽을 수 있습니다. 원본 파일이 너무 크다면 필요한 내보내기 크기와 화질을 선택할 수 있습니다.",
+        body: "사진 앱, 외장 드라이브, NAS에 있는 긴 영상을 그대로 엽니다. 간직하고 싶은 클립과 스틸, Live Photo를 표시하고, 필요한 만큼만 내보내세요.",
         points: [
           "로컬 저장소, 외장 드라이브, SMB/WebDAV 지원",
-          "내보낼 때 원본부터 고압축까지 품질 선택",
-          "원본을 복사하지 않고 전체 크기의 중복도 만들지 않음",
+          "영상 하나에서 여러 클립을 한 번에 내보내기",
+          "원본을 복사하지 않고, 전체 크기의 중복도 만들지 않음",
         ],
         shot: "source-file-clips",
       },
       {
-        title: "메타데이터를 올바르게 처리.",
-        body: "각 클립과 Live Photo가 실제 시간과 장소에 맞게 남아, 사진 보관함이 더 이상 어수선해지지 않습니다.",
+        title: "모든 디테일이,\n제자리에.",
+        body: "모든 클립과 Live Photo에는 실제 일어난 시간과 장소가 그대로 담겨, 사진 보관함이 더 이상 어수선해지지 않습니다.",
         points: [
-          "클립의 실제 시각 자동 계산",
+          "각 클립의 실제 시각을 자동 계산",
           "GPS와 촬영 기기 정보 보존",
-          "시간순으로 깔끔하게 정렬되는 사진 보관함",
+          "언제나 시간순으로 정렬되는 사진 보관함",
         ],
         shot: "photos-metadata-export",
       },
@@ -544,10 +544,10 @@ window.T = {
         shot: "cross-device-editing",
       },
       {
-        title: "클립을 똑똑하게 찾기.",
-        body: "Apple 시스템이 제공하는 기기 내 AI 기능으로 긴 영상 속에서 추가하고 싶은 장면을 빠르게 찾습니다.",
+        title: "검색이 찾고,\n결정은 당신이.",
+        body: "Apple의 기기 내 AI가 긴 영상 속 후보 장면을 자동으로 찾아 줍니다. 어떤 클립으로 남길지는 여전히 당신이 결정합니다.",
         points: [
-          "음성을 텍스트로 변환하고 번역도 지원",
+          "음성을 텍스트로 변환, 지원되는 OS에서는 번역과 자막 내보내기까지",
           "소리 특징을 인식해 모든 웃음 지점 찾기",
           "한 프레임에서 피사체를 인식해 영상 속 등장 장면 모두 찾기",
         ],
@@ -566,10 +566,10 @@ window.T = {
         shotAlt: "여러 기기에서 보이는 Trimly 편집 화면",
       },
       {
-        title: "전문 포맷도 지원.",
-        body: "짧은 클립도 최상의 품질을 유지할 수 있도록 전문 크리에이터를 위해 설계했습니다.",
+        title: "HDR과 Log, 모두.",
+        body: "내보내기는 HDR 영상, 주요 Log 워크플로, 무손실 오디오를 지원합니다. 짧은 클립도 원본에서 중요했던 화질과 소리를 그대로 지킵니다.",
         points: [
-          "HDR을 고려한 미디어 처리",
+          "전 과정이 HDR을 고려해 설계됨",
           {
             text: "인기 기기용 LOG 복원 LUT 내장",
             note: {
@@ -585,8 +585,8 @@ window.T = {
       },
     ],
     privacy: {
-      heading: "로컬에서, 비공개로",
-      body: "Trimly 계정, 추적, 텔레메트리가 없습니다. iCloud는 편집 기록과 LUT 동기화에만 사용됩니다.",
+      heading: "언제나 로컬에서, 언제나 비공개로",
+      body: "계정도, 추적도, 텔레메트리도 없습니다. iCloud는 편집 기록과 LUT만 동기화할 뿐, 영상 자체는 건드리지 않습니다.",
     },
     footer: {
       home: "홈",
@@ -600,7 +600,7 @@ window.T = {
       title: "개인정보 처리방침",
       updated: "최종 업데이트: 2026년 7월 10일",
       intro:
-        "Trimly는 미디어를 기기에서 로컬로 처리합니다. 촬영본은 iPhone, iPad, Mac에 그대로 둡니다. iCloud로는 편집 기록과 LUT만 동기화되며, 동영상 파일은 업로드되지 않습니다. 이 방침은 그것이 프라이버시에 무엇을 의미하는지 쉬운 말로 설명합니다.",
+        "Trimly는 미디어를 기기에서 로컬로 처리하며, 촬영본은 iPhone, iPad, Mac에 그대로 둡니다. iCloud로는 편집 기록과 LUT만 동기화되며, 동영상 파일이 업로드되는 일은 없습니다. 이 방침은 그것이 프라이버시에 무엇을 의미하는지, 쉬운 말로 설명합니다.",
       contactLabel: "프라이버시 문의는",
       sections: [
         {
@@ -609,7 +609,7 @@ window.T = {
         },
         {
           h: "iCloud 동기화",
-          p: "Trimly는 Trimly 서버나 제3자 서비스에 연결하지 않습니다. 유일한 네트워크 활동은 iCloud 동기화입니다. 활성화하면 Apple iCloud를 통해 편집 기록과 LUT를 기기 간에 동기화합니다. 동영상·오디오 파일은 업로드되거나 동기화되지 않습니다. 동기화 데이터는 Apple iCloud 약관 및 개인정보 처리방침의 적용을 받습니다.",
+          p: "Trimly에는 자체 서버가 없으며, 어떤 제3자 서비스에도 연결하지 않습니다. 유일한 네트워크 활동은 iCloud 동기화입니다. 활성화하면 Apple iCloud를 통해 편집 기록과 LUT를 기기 간에 동기화하며, 이 동기화 데이터는 Apple iCloud 약관 및 개인정보 처리방침의 적용을 받습니다. 동영상·오디오 파일은 업로드되거나 동기화되지 않습니다.",
         },
         {
           h: "파일 및 사진 접근",
@@ -644,71 +644,71 @@ window.T = {
     hero: {
       heading: "Recuerdos\nsiempre a mano",
       subtitle:
-        "Abre el original desde Fotos, un disco externo o tu NAS. Marca tantos clips, imágenes fijas o Live Photos como quieras y guárdalos en Fotos con su hora y lugar reales.",
+        "Abre el original desde Fotos, un disco externo o tu NAS. Marca los clips, imágenes fijas y Live Photos que valen la pena, y guárdalos de nuevo en Fotos con su hora, lugar y calidad reales.",
       cta: "Descargar en el App Store",
       purchaseNote: "Una compra para iPhone, iPad, Mac y Apple TV. Sin suscripción.",
     },
-    useCasesHeading: "Para esos momentos escondidos en vídeos largos.",
+    useCasesHeading: "Los vídeos son largos. Los recuerdos, cortos.",
     useCases: [
       {
         title: "Días de viaje",
-        body: "Llegada, calles, atardecer, cena. Convierte el día en clips y conserva hora, lugar y datos de cámara.",
+        body: "Llegada, calles, atardecer, cena. Cada uno en su propio clip, con su hora, lugar y datos de cámara.",
       },
       {
         title: "Conciertos",
-        body: "Graba el set completo. Guarda aparte los mejores estribillos y momentos del escenario.",
+        body: "Graba el concierto entero. Guarda solo el estribillo que te puso la piel de gallina.",
       },
       {
         title: "Fiestas",
-        body: "Velas, regalos, ojos cerrados al pedir un deseo. Recorta ese momento, compártelo con el grupo y deja que todos lo guarden.",
+        body: "Velas, regalos, ojos cerrados al pedir un deseo. Recorta ese momento y mándalo al grupo, para que todos se lo queden.",
       },
       {
         title: "Aire libre",
-        body: "Esquí, surf, montaña, ciclismo. Marca ese giro o sprint del que estás orgulloso y enseña tu mejor momento.",
+        body: "Esquí, surf, montaña, ciclismo. Marca ese momento del que estás orgulloso y déjalo ver a todos.",
       },
       {
         title: "Familia y mascotas",
-        body: "Guarda los primeros pasos, una reacción divertida de tu mascota o cualquier pequeño momento sin volver a buscarlo en todo el vídeo.",
+        body: "Un primer paso, esa mirada de sorpresa de tu mascota, el pequeño momento que querrás recuperar. Guárdalo sin rebuscar en todo el vídeo.",
       },
     ],
     proofSections: [
       {
         title: "Abre el original.\nQuédate con cada momento.",
-        body: "¿Grabaste un vídeo largo en otro dispositivo? No hace falta copiarlo al teléfono: conecta un lector de tarjetas o lee archivos directamente desde tu NAS. Si el original pesa demasiado, elige el tamaño y la calidad de exportación que necesites.",
+        body: "Abre vídeos largos directamente desde Fotos, un disco externo o tu NAS. Marca los clips, imágenes fijas y Live Photos que valen la pena, y exporta solo esos.",
         points: [
           "Compatible con almacenamiento local, discos externos y SMB/WebDAV",
-          "Calidad al exportar: original o comprimida",
-          "Sin copiar el original ni crear un duplicado de tamaño completo",
+          "Un vídeo, varios clips, una sola exportación",
+          "Sin copiar el original ni crear duplicados de tamaño completo",
         ],
         shot: "source-file-clips",
       },
       {
-        title: "Metadatos tratados como corresponde.",
-        body: "Cada clip o Live Photo puede alinearse con la hora y el lugar reales del momento, para que tu biblioteca deje de estar desordenada.",
+        title: "Cada detalle, en su sitio.",
+        body: "Cada clip y Live Photo conserva la hora y el lugar reales del momento, así que tu biblioteca nunca se convierte en un caos.",
         points: [
           "Calcula la hora real de cada clip",
-          "Conserva GPS y datos de la cámara",
-          "Devuelve a tu biblioteca una línea de tiempo ordenada",
+          "Conserva GPS y datos de la cámara intactos",
+          "Tu biblioteca, siempre en orden",
         ],
         shot: "photos-metadata-export",
       },
       {
         title: "Marca fuera. Termina en casa.",
-        body: "Tus notas de edición se sincronizan mediante iCloud. Marca en el iPhone y continúa en el Mac cuando quieras; tus propios dispositivos pueden seguir trabajando con el mismo original en tu NAS.",
+        body: "Tus notas de edición se sincronizan mediante iCloud. Marca en el iPhone y sigue en el Mac cuando quieras; todos tus dispositivos pueden seguir trabajando con el mismo original en tu NAS.",
         points: [
           "Sincroniza notas, no vídeos grandes",
-          "Mueve el original; las ediciones siguen enlazadas",
+          "Mueve el original y las ediciones siguen enlazadas",
           "App nativa para tvOS, o AirPlay para ver juntos",
         ],
         shot: "cross-device-editing",
       },
       {
-        title: "Encuentra clips con inteligencia.",
-        body: "Usa las funciones de IA local que ofrece el sistema de Apple para encontrar rápidamente los momentos que quieres añadir dentro de vídeos largos.",
+        title: "La búsqueda encuentra. Tú decides.",
+        body: "La inteligencia local de Apple busca por ti dentro de vídeos largos, directamente en tu dispositivo. Tú sigues decidiendo qué momentos se convierten en clips.",
         points: [
-          "Transcribe la voz a texto, con traducción incluida",
+          "Transcribe la voz a texto, con traducción y subtítulos en versiones de sistema compatibles",
           "Reconoce patrones de sonido para ubicar cada risa",
-          "Identifica un sujeto en un fotograma y encuentra cada vez que aparece en el vídeo",
+          "Identifica a alguien en un fotograma y lo encuentra cada vez que aparece en el vídeo",
         ],
         shot: "local-intelligence",
       },
@@ -725,8 +725,8 @@ window.T = {
         shotAlt: "Interfaz de edición de Trimly en distintos dispositivos",
       },
       {
-        title: "Formatos profesionales compatibles.",
-        body: "Pensado para creadores profesionales, para que incluso los clips cortos conserven la mejor calidad.",
+        title: "HDR y Log.",
+        body: "La exportación admite vídeo HDR, los flujos Log más comunes y audio sin pérdida, así un clip corto no pierde nada que importara en el original.",
         points: [
           "Procesamiento preparado para HDR",
           {
@@ -744,8 +744,8 @@ window.T = {
       },
     ],
     privacy: {
-      heading: "Local y privado",
-      body: "Sin cuenta de Trimly, seguimiento ni telemetría. iCloud solo sincroniza tus notas de edición y LUTs.",
+      heading: "Local primero. Privado siempre.",
+      body: "Sin cuenta, sin seguimiento, sin telemetría. iCloud solo sincroniza tus ediciones y LUTs, nunca tu metraje.",
     },
     footer: {
       home: "Inicio",
@@ -759,7 +759,7 @@ window.T = {
       title: "Política de privacidad",
       updated: "Última actualización: 10 de julio de 2026",
       intro:
-        "Trimly procesa tu metraje en el dispositivo. Tus archivos permanecen en tu iPhone, iPad o Mac. Los registros de edición y LUTs pueden sincronizarse entre tus dispositivos Apple mediante iCloud; los archivos de vídeo nunca se suben. Esta política explica, en términos sencillos, qué significa eso para tu privacidad.",
+        "Trimly procesa tu metraje enteramente en el dispositivo, y tus archivos permanecen en tu iPhone, iPad o Mac. Los registros de edición y LUTs pueden sincronizarse entre tus dispositivos Apple mediante iCloud, pero los archivos de vídeo nunca se suben. Esta política explica, en términos sencillos, qué significa eso para tu privacidad.",
       contactLabel: "¿Preguntas sobre privacidad? Escríbenos a",
       sections: [
         {
@@ -768,7 +768,7 @@ window.T = {
         },
         {
           h: "Sincronización iCloud",
-          p: "Trimly no se conecta a servidores de Trimly ni a servicios de terceros. La única actividad de red es la sincronización iCloud, que usa el iCloud de Apple para mantener tus registros de edición y LUTs sincronizados entre tus dispositivos cuando la activas. Los archivos de vídeo y audio nunca se suben ni se sincronizan; los datos sincronizados están sujetos a los términos y la política de privacidad de iCloud de Apple.",
+          p: "Trimly no tiene servidores propios ni se conecta a ningún servicio de terceros. La única actividad de red es la sincronización iCloud: al activarla, el iCloud de Apple mantiene tus registros de edición y LUTs sincronizados entre tus dispositivos, sujeto a los términos y la política de privacidad de iCloud de Apple. Los archivos de vídeo y audio nunca se suben ni se sincronizan.",
         },
         {
           h: "Acceso a Archivos y Fotos",
@@ -803,51 +803,51 @@ window.T = {
     hero: {
       heading: "ذكريات\nفي متناولك",
       subtitle:
-        "افتح الأصل مباشرة من الصور أو قرص خارجي أو NAS. علّم أي عدد تريده من المقاطع والصور وLive Photos واحفظها في الصور مع وقتها ومكانها الحقيقيين.",
+        "افتح الأصل مباشرة من الصور أو قرص خارجي أو NAS. علّم المقاطع والصور وLive Photos التي تستحق الاحتفاظ بها، ثم احفظها من جديد في الصور مع وقتها ومكانها وجودتها الحقيقية.",
       cta: "حمِّل من App Store",
       purchaseNote: "شراء واحد لـ iPhone وiPad وMac وApple TV. بلا اشتراك.",
     },
-    useCasesHeading: "للحظات المختبئة داخل التسجيلات الطويلة.",
+    useCasesHeading: "التسجيل طويل، والذكرى قصيرة.",
     useCases: [
       {
         title: "أيام السفر",
-        body: "الوصول، الشوارع، الغروب، العشاء. حوّل اليوم إلى مقاطع مع حفظ الوقت والمكان وتفاصيل الكاميرا.",
+        body: "الوصول، الشوارع، الغروب، العشاء. حوّل اليوم إلى مقاطع، كل واحد بوقته ومكانه وتفاصيل الكاميرا الخاصة به.",
       },
       {
         title: "العروض",
-        body: "سجّل العرض كاملاً، ثم احفظ أفضل المقاطع ولحظات المسرح على حدة.",
+        body: "سجّل الحفل كاملاً، ثم احتفظ فقط باللازمة التي أقشعرّ لها بدنك.",
       },
       {
         title: "التجمعات",
-        body: "الشموع، الهدايا، لحظة إغماض العينين لتمني أمنية. اقتطعها وشاركها مع المجموعة ليحتفظ بها الجميع.",
+        body: "الشموع، الهدايا، لحظة إغماض العينين لتمني أمنية. اقتطع تلك اللحظة وأرسلها إلى المجموعة، ليحتفظ بها الجميع.",
       },
       {
         title: "المغامرات",
-        body: "تزلج، أمواج، جبال، دراجات. علّم المنعطف أو الانطلاقة التي تفتخر بها واعرض أفضل لحظاتك.",
+        body: "تزلج، أمواج، جبال، دراجات. علّم اللحظة التي تفتخر بها، ودع الجميع يراها.",
       },
       {
         title: "العائلة والحيوانات الأليفة",
-        body: "احتفظ بالخطوات الأولى أو بردّة فعل طريفة لحيوانك الأليف أو بأي لحظة صغيرة تريد العودة إليها، من دون البحث في التسجيل كله.",
+        body: "الخطوة الأولى، نظرة حيوانك الأليف المندهشة، تلك اللحظة الصغيرة التي تريد استعادتها. احتفظ بها من دون البحث في التسجيل كله.",
       },
     ],
     proofSections: [
       {
         title: "افتح الأصل.\nواحتفظ بكل لحظة مهمة.",
-        body: "افتح التسجيلات الطويلة مباشرة من الصور أو قرص خارجي أو NAS. علّم أي عدد تريده من المقاطع والصور وLive Photos، ثم صدّر ما يستحق الاحتفاظ به فقط.",
+        body: "افتح التسجيلات الطويلة مباشرة من الصور أو قرص خارجي أو NAS. علّم المقاطع والصور وLive Photos التي تستحق الاحتفاظ بها، ثم صدّر ذلك فقط.",
         points: [
           "دعم التخزين المحلي والأقراص الخارجية وSMB/WebDAV",
-          "جودة التصدير: من الأصلية إلى الضغط العالي",
-          "من دون نسخ الأصل أو إنشاء نسخة كاملة الحجم",
+          "من تسجيل واحد إلى مقاطع عديدة، بتصدير واحد",
+          "من دون نسخ الأصل أو إنشاء نسخ كاملة الحجم",
         ],
         shot: "source-file-clips",
       },
       {
-        title: "معالجة صحيحة للبيانات الوصفية.",
-        body: "يمكن لكل مقطع أو Live Photo أن يطابق وقت اللحظة ومكانها الحقيقيين، حتى لا تصبح مكتبة الصور فوضوية.",
+        title: "كل تفصيل، في مكانه الصحيح.",
+        body: "يحمل كل مقطع وكل Live Photo وقت اللحظة ومكانها الحقيقيين، فلا تتحول مكتبة الصور إلى فوضى أبداً.",
         points: [
           "حساب الوقت الحقيقي لكل مقطع",
-          "الحفاظ على GPS وتفاصيل الكاميرا",
-          "إعادة ترتيب مكتبة الصور على خط زمني دقيق",
+          "الحفاظ على GPS وتفاصيل الكاميرا كاملة",
+          "مكتبة صورك، مرتّبة دائماً",
         ],
         shot: "photos-metadata-export",
       },
@@ -862,10 +862,10 @@ window.T = {
         shot: "cross-device-editing",
       },
       {
-        title: "اعثر على المقاطع بذكاء.",
-        body: "استخدم ميزات الذكاء الاصطناعي المحلية التي يوفرها نظام Apple للعثور سريعاً على اللقطات التي تريد إضافتها داخل الفيديوهات الطويلة.",
+        title: "البحث يجد. أنت تقرر.",
+        body: "يبحث الذكاء الاصطناعي المحلي من Apple عن اللحظات المحتملة داخل الفيديوهات الطويلة، مباشرة على جهازك. وتبقى أنت من يقرر أي لحظة تصبح مقطعاً.",
         points: [
-          "تحويل الكلام إلى نص، مع دعم الترجمة",
+          "تحويل الكلام إلى نص، مع الترجمة وتصدير الترجمة المصاحبة على إصدارات النظام المدعومة",
           "التعرّف على خصائص الصوت لتحديد كل ضحكة",
           "التعرّف على الشخص من إطار واحد والعثور على كل ظهور له في الفيديو",
         ],
@@ -884,8 +884,8 @@ window.T = {
         shotAlt: "واجهة تحرير Trimly على أجهزة مختلفة",
       },
       {
-        title: "دعم للصيغ الاحترافية.",
-        body: "مصمم للمبدعين المحترفين حتى تحتفظ المقاطع القصيرة أيضاً بأفضل جودة.",
+        title: "HDR وLog، معاً.",
+        body: "يدعم مسار التصدير لقطات HDR، وأشيع مسارات عمل Log، والصوت بلا فقدان، حتى لا يفقد المقطع القصير أي شيء كان مهماً في الأصل.",
         points: [
           "معالجة وسائط جاهزة لـ HDR",
           {
@@ -903,8 +903,8 @@ window.T = {
       },
     ],
     privacy: {
-      heading: "محلي وخاص",
-      body: "لا حساب لـ Trimly ولا تتبع أو قياس عن بُعد. يُستخدم iCloud فقط لمزامنة تعديلاتك وملفات LUT.",
+      heading: "محلي دائماً. خاص دائماً.",
+      body: "لا حساب، لا تتبع، لا قياس عن بُعد. يُستخدم iCloud فقط لمزامنة تعديلاتك وملفات LUT، ولا يلمس لقطاتك أبداً.",
     },
     footer: {
       home: "الرئيسية",
@@ -918,7 +918,7 @@ window.T = {
       title: "سياسة الخصوصية",
       updated: "آخر تحديث: 10 يوليو 2026",
       intro:
-        "Trimly يعالج وسائطك على جهازك. تبقى لقطاتك على iPhone أو iPad أو Mac. يمكن مزامنة سجلات التحرير وملفات LUT عبر iCloud بين أجهزة Apple؛ ملفات الفيديو لا تُرفَع أبداً. تشرح هذه السياسة، بلغة بسيطة، ما يعنيه ذلك لخصوصيتك.",
+        "يعالج Trimly وسائطك بالكامل على جهازك، وتبقى لقطاتك على iPhone أو iPad أو Mac. يمكن مزامنة سجلات التحرير وملفات LUT عبر iCloud بين أجهزة Apple، لكن ملفات الفيديو لا تُرفَع أبداً. تشرح هذه السياسة، بلغة بسيطة، ما يعنيه ذلك لخصوصيتك.",
       contactLabel: "لأي استفسار حول الخصوصية، تواصل معنا على",
       sections: [
         {
@@ -927,7 +927,7 @@ window.T = {
         },
         {
           h: "مزامنة iCloud",
-          p: "لا تتصل Trimly بخوادم Trimly أو أي خدمات لأطراف ثالثة. النشاط الشبكي الوحيد هو مزامنة iCloud، التي تستخدم iCloud من Apple لمزامنة سجلات التحرير وملفات LUT بين أجهزتك عند تفعيلها. ملفات الفيديو والصوت لا تُرفَع ولا تُزامَن، وتخضع البيانات المُزامَنة لشروط iCloud وسياسة خصوصية Apple.",
+          p: "لا تملك Trimly أي خوادم خاصة بها، ولا تتصل بأي خدمة لطرف ثالث. النشاط الشبكي الوحيد هو مزامنة iCloud: عند تفعيلها، يزامن iCloud من Apple سجلات التحرير وملفات LUT بين أجهزتك، وتخضع هذه البيانات المُزامَنة لشروط iCloud وسياسة خصوصية Apple. ملفات الفيديو والصوت لا تُرفَع ولا تُزامَن أبداً.",
         },
         {
           h: "الوصول إلى الملفات والصور",
