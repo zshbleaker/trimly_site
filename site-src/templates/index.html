@@ -1,0 +1,269 @@
+        <!-- 01 · HERO (high fidelity prototype) -->
+        <section class="hero" id="top">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow"><span class="eyebrow-dot"></span>{{home.hero.eyebrow}}</p>
+                    <h1>{{home.hero.h1}}</h1>
+                    <p class="lede">{{home.hero.lede}}</p>
+                    <div class="cta-row">
+                        <a class="btn-store" href="{{store}}">
+                            {{appleLogo}}
+                            <span>{{common.downloadOnAppStore}}</span>
+                        </a>
+                    </div>
+                    <p class="fine">{{common.purchaseNote}}</p>
+                </div>
+
+                <div class="desk" role="img" aria-label="{{home.hero.deskLabel}}">
+                    <div class="slot" style="--x:0%;--y:20%">
+                        <figure class="print" style="--c:var(--clip-1)" data-moment="0" data-r="-5">
+                            <img src="{{root}}img/moment-summit.webp" alt="" width="600" height="400">
+                            <figcaption>
+                                <span class="tag">{{home.prints.0.tag}}</span>
+                                <span class="meta">{{home.prints.0.date}}</span>
+                                <span class="meta">{{home.prints.0.detail}}</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slot" style="--x:31%;--y:0%">
+                        <figure class="print" style="--c:var(--clip-2)" data-moment="1" data-r="2.5">
+                            <img src="{{root}}img/moment-zebra.webp" alt="" width="600" height="400">
+                            <figcaption>
+                                <span class="tag">{{home.prints.1.tag}}</span>
+                                <span class="meta">{{home.prints.1.date}}</span>
+                                <span class="meta">{{home.prints.1.detail}}</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="slot" style="--x:58%;--y:26%">
+                        <figure class="print" style="--c:var(--clip-3)" data-moment="2" data-r="-1.5">
+                            <img src="{{root}}img/moment-dance.webp" alt="" width="600" height="400">
+                            <figcaption>
+                                <span class="tag">{{home.prints.2.tag}}</span>
+                                <span class="meta">{{home.prints.2.date}}</span>
+                                <span class="meta">{{home.prints.2.detail}}</span>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recorder" dir="ltr" aria-hidden="true"
+                data-t-scrubbing="{{home.recorder.scrubbing}}"
+                data-t-mark-start="{{home.recorder.markStart}}"
+                data-t-mark-end="{{home.recorder.markEnd}}"
+                data-t-saved="{{home.recorder.saved}}">
+                <div class="rec-head">
+                    <div class="rec-file">
+                        <span class="rec-name">TRIP_DAY_01.MOV</span>
+                        <span class="rec-meta">4K · HEVC · 1:12:48</span>
+                    </div>
+                    <div class="rec-tc" data-tc>0:00:00.00</div>
+                    <div class="rec-status">
+                        <span class="rec-pill" data-pill>{{home.recorder.scrubbing}}</span>
+                        <span class="rec-count">{{home.recorder.clipsCount}}</span>
+                        <button class="rec-replay" type="button" data-replay hidden tabindex="-1">{{home.recorder.replay}}</button>
+                    </div>
+                </div>
+                <div class="track" data-track>
+                    <div class="strip" data-strip data-base="{{root}}img/"></div>
+                    <div class="wave" data-wave></div>
+                    <div class="bands">
+                        <div class="band" data-range="0" style="--a:.14;--b:.22;--c:var(--clip-1)"></div>
+                        <div class="band" data-range="1" style="--a:.47;--b:.56;--c:var(--clip-2)"></div>
+                        <div class="band" data-range="2" style="--a:.80;--b:.88;--c:var(--clip-3)"></div>
+                    </div>
+                    <div class="playhead" data-playhead><span class="playhead-head"></span></div>
+                </div>
+                <div class="ruler">
+                    <span style="--p:0">0:00</span>
+                    <span style="--p:.206">15:00</span>
+                    <span style="--p:.412">30:00</span>
+                    <span style="--p:.618">45:00</span>
+                    <span style="--p:.824">1:00:00</span>
+                    <span style="--p:1">1:12:48</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- STRUCTURE DRAFT (wireframes). Design notes stay in English: they are for review, not visitors. -->
+        <div class="draft-banner" lang="en" dir="ltr">
+            <p><b>Structure draft</b> — everything below is a wireframe. Headlines and body copy are a first pass; the dashed boxes describe the planned visual and the asset it needs.</p>
+        </div>
+
+        <div class="story">
+            <section class="wf" id="rolling">
+                <div class="wf-label"><span class="wf-num">02</span>{{home.rolling.label}}</div>
+                <h2>{{home.rolling.h2}}</h2>
+                <p class="wf-copy">{{home.rolling.copy}}</p>
+                <div class="wf-visual wf-shift">
+                    <div class="wf-shift-row">
+                        <p><b>{{home.rolling.before}}</b>{{home.rolling.beforeSub}}</p>
+                        <div class="wf-shift-track" dir="ltr">
+                            <span class="seg" style="--a:.04;--b:.1"></span>
+                            <span class="seg" style="--a:.35;--b:.41"></span>
+                            <span class="seg" style="--a:.6;--b:.67"></span>
+                            <span class="seg" style="--a:.9;--b:.95"></span>
+                            <i class="missed" style="--a:.15;--b:.22;--c:var(--clip-1)"></i>
+                            <i class="missed" style="--a:.31;--b:.38;--c:var(--clip-2)"></i>
+                            <i class="missed" style="--a:.73;--b:.8;--c:var(--clip-3)"></i>
+                        </div>
+                    </div>
+                    <div class="wf-shift-row">
+                        <p><b>{{home.rolling.after}}</b>{{home.rolling.afterSub}}</p>
+                        <div class="wf-shift-track" dir="ltr">
+                            <span class="seg seg-full" style="--a:0;--b:1"></span>
+                            <i style="--a:.15;--b:.22;--c:var(--clip-1)"></i>
+                            <i style="--a:.31;--b:.38;--c:var(--clip-2)"></i>
+                            <i style="--a:.73;--b:.8;--c:var(--clip-3)"></i>
+                        </div>
+                    </div>
+                </div>
+                <ul class="wf-points">
+                    <li>{{home.rolling.points.0}}</li>
+                    <li>{{home.rolling.points.1}}</li>
+                    <li>{{home.rolling.points.2}}</li>
+                    <li>{{home.rolling.points.3}}</li>
+                </ul>
+                <div class="wf-scenes">
+                    <span>{{home.rolling.scenes.0}}</span><span>{{home.rolling.scenes.1}}</span><span>{{home.rolling.scenes.2}}</span><span>{{home.rolling.scenes.3}}</span><span>{{home.rolling.scenes.4}}</span>
+                </div>
+                <p class="wf-note" lang="en" dir="ltr"><b>Visual:</b> the two tracks play side by side as the section scrolls in. Moments glow on both; on the top one the record dot turns on too late and they fade away, on the bottom one each moment gets its clip band. The scene names below become five small prints with 3-second loops.<br><b>Asset:</b> nothing new for the tracks (reuses the hero footage). Optional: five 3–4&nbsp;s loops, one per scene.</p>
+            </section>
+
+            <section class="wf" id="how">
+                <div class="wf-label"><span class="wf-num">03</span>{{home.how.label}}</div>
+                <h2>{{home.how.h2}}</h2>
+                <div class="wf-steps">
+                    <div>
+                        <h3>{{home.how.steps.0.h}}</h3>
+                        <p>{{home.how.steps.0.p}}</p>
+                    </div>
+                    <div>
+                        <h3>{{home.how.steps.1.h}}</h3>
+                        <p>{{home.how.steps.1.p}}</p>
+                    </div>
+                    <div>
+                        <h3>{{home.how.steps.2.h}}</h3>
+                        <p>{{home.how.steps.2.p}}</p>
+                    </div>
+                </div>
+                <p class="wf-note" lang="en" dir="ltr"><b>Visual:</b> a sticky-scroll sequence. The green playhead from the hero becomes the rail on the left of the page; each step is one clip on it. The step's screen shows the real iPhone UI at that moment.<br><b>Asset:</b> three iPhone screen recordings (or stills): import sheet with sources, timeline with clips marked, export sheet.</p>
+            </section>
+
+            <section class="wf" id="find">
+                <div class="wf-label"><span class="wf-num">04</span>{{home.find.label}}</div>
+                <h2>{{home.find.h2}}</h2>
+                <p class="wf-copy">{{home.find.copy}}</p>
+                <div class="wf-visual wf-demo">
+                    <div class="wf-chips">
+                        <span>{{home.find.chips.0}}</span><span>{{home.find.chips.1}}</span><span>{{home.find.chips.2}}</span><span>{{home.find.chips.3}}</span><span>{{home.find.chips.4}}</span><span>{{home.find.chips.5}}</span>
+                    </div>
+                    <div class="wf-mini-track" dir="ltr"><i style="--a:.08;--b:.12;--c:var(--clip-1)"></i><i style="--a:.33;--b:.4;--c:var(--clip-2)"></i><i style="--a:.71;--b:.76;--c:var(--clip-3)"></i></div>
+                </div>
+                <p class="wf-note" lang="en" dir="ltr"><b>Visual:</b> interactive. Tapping a chip lights up matching segments on a recorder like the hero's; the transcript chip shows translated subtitles. Small print: runs on Apple's on-device frameworks; nothing is uploaded.<br><b>Asset:</b> one 5–15&nbsp;min recording with speech, a laugh, an animal and on-screen text, plus Find Clips screenshots for each search.</p>
+            </section>
+
+            <section class="wf wf-signature" id="photos">
+                <div class="wf-label"><span class="wf-num">05</span>{{home.photos.label}}</div>
+                <h2>{{home.photos.h2}}</h2>
+                <p class="wf-copy">{{home.photos.copy}}</p>
+                <div class="wf-visual wf-compare">
+                    <div class="wf-side">
+                        <span class="wf-chip">{{home.photos.typical}}</span>
+                        <p>{{home.photos.typicalDesc}}</p>
+                    </div>
+                    <div class="wf-side wf-side-good">
+                        <span class="wf-chip wf-chip-good">{{home.photos.trimly}}</span>
+                        <p>{{home.photos.trimlyDesc}}</p>
+                    </div>
+                </div>
+                <ul class="wf-points">
+                    <li>{{home.photos.points.0}}</li>
+                    <li>{{home.photos.points.1}}</li>
+                    <li>{{home.photos.points.2}}</li>
+                    <li>{{home.photos.points.3}}</li>
+                </ul>
+                <p class="wf-note" lang="en" dir="ltr"><b>Visual:</b> the hero's prints drop into a Photos-style day grid. A toggle switches between "typical export" and "Trimly". This is the section to spend the most effort on.<br><b>Asset:</b> one clip's real Photos grid (the day it was shot, 8–12 neighbouring photos) and its Info panel, on iPhone or Mac. Plus the same view for a "typical" export for comparison.</p>
+            </section>
+
+            <section class="wf" id="log">
+                <div class="wf-label"><span class="wf-num">06</span>{{home.log.label}}</div>
+                <h2>{{home.log.h2}}</h2>
+                <p class="wf-copy">{{home.log.copy}}</p>
+                <div class="wf-visual wf-library" data-grade>
+                    <div class="wf-library-head">
+                        <span>{{home.log.libraryHead}}</span>
+                        <span class="wf-library-action">{{home.log.libraryAction}}</span>
+                    </div>
+                    <div class="wf-library-grid"><img src="{{root}}img/strip-01.webp" alt="" style="--i:0"><img src="{{root}}img/strip-08.webp" alt="" style="--i:1"><img src="{{root}}img/strip-14.webp" alt="" style="--i:2"><img src="{{root}}img/strip-03.webp" alt="" style="--i:3"><img src="{{root}}img/strip-10.webp" alt="" style="--i:4"><img src="{{root}}img/strip-16.webp" alt="" style="--i:5"><img src="{{root}}img/strip-05.webp" alt="" style="--i:6"><img src="{{root}}img/strip-12.webp" alt="" style="--i:7"><img src="{{root}}img/strip-18.webp" alt="" style="--i:8"><img src="{{root}}img/strip-06.webp" alt="" style="--i:9"><img src="{{root}}img/strip-09.webp" alt="" style="--i:10"><img src="{{root}}img/strip-15.webp" alt="" style="--i:11"></div>
+                </div>
+                <ul class="wf-points">
+                    <li>{{home.log.points.0}}</li>
+                    <li>{{home.log.points.1}}</li>
+                    <li>{{home.log.points.2}}</li>
+                    <li>{{home.log.points.3}}</li>
+                    <li>{{home.log.points.4}}</li>
+                    <li>{{home.log.points.5}}</li>
+                </ul>
+                <p class="wf-note" lang="en" dir="ltr"><b>Visual:</b> as the section scrolls in, flat Log thumbnails in a Photos grid turn graded one by one (working sketch above, with a simulated Log look). Then a before/after slider with a tab per camera.<br><b>Asset:</b> (1) a real Photos grid before and after a batch apply, on iPhone and Mac; (2) a Log frame and its graded version for each camera brand, 2400&nbsp;px wide; (3) a screen recording: Home → select videos → Apply LUT → open Photos.</p>
+            </section>
+
+            <section class="wf" id="devices">
+                <div class="wf-label"><span class="wf-num">07</span>{{home.devices.label}}</div>
+                <h2>{{home.devices.h2}}</h2>
+                <p class="wf-copy">{{home.devices.copy}}</p>
+                <div class="wf-visual wf-devices">
+                    <div>iPhone<small>{{home.devices.where.0}}</small></div>
+                    <div>iPad<small>{{home.devices.where.1}}</small></div>
+                    <div>Mac<small>{{home.devices.where.2}}</small></div>
+                    <div>Apple TV<small>{{home.devices.where.3}}</small></div>
+                </div>
+                <ul class="wf-points">
+                    <li>{{home.devices.points.0}}</li>
+                    <li>{{home.devices.points.1}}</li>
+                    <li>{{home.devices.points.2}}</li>
+                    <li>{{home.devices.points.3}}</li>
+                </ul>
+                <p class="wf-note" lang="en" dir="ltr"><b>Visual:</b> the same project on four screens in a row, with a progress line passing through them like a clip moving along a timeline.<br><b>Asset:</b> matching screenshots of the same project on each device (the App Store set nearly covers this; the Apple TV editor shot needs real footage instead of a slide).</p>
+            </section>
+        </div>
+
+        <section class="wf-bay" id="bay">
+            <div class="story">
+                <section class="wf">
+                    <div class="wf-label"><span class="wf-num">08</span>{{home.bay.label}}</div>
+                    <h2>{{home.bay.h2}}</h2>
+                    <p class="wf-copy">{{home.bay.copy}}</p>
+                    <div class="wf-grid3">
+                        <div><b>{{home.bay.items.0.h}}</b>{{home.bay.items.0.p}}</div>
+                        <div><b>{{home.bay.items.1.h}}</b>{{home.bay.items.1.p}}</div>
+                        <div><b>{{home.bay.items.2.h}}</b>{{home.bay.items.2.p}}</div>
+                        <div><b>{{home.bay.items.3.h}}</b>{{home.bay.items.3.p}}</div>
+                        <div><b>{{home.bay.items.4.h}}</b>{{home.bay.items.4.p}}</div>
+                        <div><b>{{home.bay.items.5.h}}</b>{{home.bay.items.5.p}}</div>
+                    </div>
+                    <p class="wf-note" lang="en" dir="ltr"><b>Visual:</b> the page turns dark like the app's editor, with the Mac editor full-bleed behind the grid.<br><b>Asset:</b> a clean Mac editor screenshot with a file open from an SMB share, ideally HDR footage.</p>
+                </section>
+            </div>
+        </section>
+
+        <div class="story">
+            <section class="wf">
+                <div class="wf-label"><span class="wf-num">09</span>{{home.privacy.label}}</div>
+                <h2>{{home.privacy.h2}}</h2>
+                <p class="wf-copy">{{home.privacy.copy}}</p>
+                <p class="wf-note" lang="en" dir="ltr"><b>Visual:</b> quiet, type-only band; one line icon.</p>
+            </section>
+
+            <section class="wf">
+                <div class="wf-label"><span class="wf-num">10</span>{{home.buy.label}}</div>
+                <h2>{{home.buy.h2}}</h2>
+                <div class="wf-visual wf-buy">
+                    <div><b>{{home.buy.items.0.h}}</b>{{home.buy.items.0.p}}</div>
+                    <div><b>{{home.buy.items.1.h}}</b>{{home.buy.items.1.p}}</div>
+                    <div><b>{{home.buy.items.2.h}}</b><a href="{{supportHref}}">{{home.buy.items.2.p}}</a></div>
+                </div>
+                <p class="wf-note" lang="en" dir="ltr"><b>Visual:</b> the app icon large, the App Store button, the four device names. Closing image: the three prints from the hero, stacked.</p>
+            </section>
+        </div>

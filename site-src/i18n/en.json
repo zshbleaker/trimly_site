@@ -1,0 +1,403 @@
+{
+  "meta": {
+    "htmlLang": "en",
+    "dir": "ltr",
+    "name": "English",
+    "short": "EN"
+  },
+  "common": {
+    "getTrimly": "Get Trimly",
+    "downloadOnAppStore": "Download on the App Store",
+    "language": "Language",
+    "purchaseNote": "One purchase for iPhone, iPad, Mac and Apple&nbsp;TV. No subscription."
+  },
+  "home": {
+    "title": "Trimly | Memories within Reach",
+    "description": "Trimly finds the moments worth keeping in long recordings, cuts them out, and saves them back to Photos on the day and in the place they happened.",
+    "hero": {
+      "eyebrow": "A highlight editor for long recordings",
+      "h1": "Memories<br>within reach.",
+      "lede": "Your best moments are buried in hour-long recordings. Trimly helps you find them, cut them out, and put them back in Photos, on the day and in the place they happened.",
+      "deskLabel": "Three moments from one long recording, saved to Photos with their own date and place"
+    },
+    "prints": [
+      { "tag": "Summit", "date": "Apr 5, 2026 · 06:40", "detail": "DJI · 4K" },
+      { "tag": "Crossing", "date": "Oct 1, 2025 · 14:21", "detail": "Serengeti, Tanzania" },
+      { "tag": "First dance", "date": "Apr 26, 2026 · 20:43", "detail": "iPhone · Apple Log" }
+    ],
+    "recorder": {
+      "scrubbing": "Scrubbing",
+      "markStart": "Mark Start",
+      "markEnd": "Mark End",
+      "saved": "Saved to Photos",
+      "clipsCount": "<b data-count>0</b> clips",
+      "replay": "Replay"
+    },
+    "rolling": {
+      "label": "Keep rolling",
+      "h2": "Stop guessing when<br>to press record.",
+      "copy": "By the time you reach for the camera, the moment is already half over, so the best ones are the ones you missed. With Trimly you start recording when you arrive and stop when you leave. Keeping only the good parts takes minutes, not an evening.",
+      "before": "Before",
+      "beforeSub": "Press record when something happens",
+      "after": "With Trimly",
+      "afterSub": "Record it all, keep the best",
+      "points": [
+        "Hour-long recordings open straight from Photos, a drive or your NAS, without a copy",
+        "Find Clips listens and looks for the good parts for you",
+        "Cut as many clips as you like from one recording",
+        "Keep the clips; the long original stays where it is"
+      ],
+      "scenes": ["Travel days", "Live shows", "Parties", "Outdoors", "Family"]
+    },
+    "how": {
+      "label": "How it works",
+      "h2": "Open. Mark. Keep.",
+      "steps": [
+        { "h": "Open it where it lives", "p": "Photos, Files, an external drive, or your NAS over SMB and WebDAV. Trimly reads the original in place, without making a copy." },
+        { "h": "Mark what matters", "p": "Drag in and out points, step frame by frame, follow the waveform. Make as many clips as you like, grab a still or a Live Photo, and give each one a label." },
+        { "h": "Keep it in Photos", "p": "Each clip goes back to your library at the original quality, HDR included, ready to share." }
+      ]
+    },
+    "find": {
+      "label": "Find moments",
+      "h2": "An hour of footage.<br>The good parts, found.",
+      "copy": "On-device intelligence listens and looks through the recording for you: what was said, a laugh, an animal, words on screen, the beat of the music. You pick what to keep.",
+      "chips": ["“Trust yourself.”", "Laughter", "Animal", "Text on screen", "Highlights", "On the beat"]
+    },
+    "photos": {
+      "label": "Signature · In Photos",
+      "h2": "It lands on the day it happened.",
+      "copy": "Most editors save a clip as if it were shot today. Trimly works out the real moment of every frame, so each clip shows up next to the photos from that afternoon, with its place, camera and lens.",
+      "typical": "A typical export",
+      "typicalDesc": "Photos grid, the clip sits under <b>Today</b>. Info panel shows no place, no camera.",
+      "trimly": "Exported by Trimly",
+      "trimlyDesc": "Same clip sits under <b>Wednesday, Oct 1, 2025 · 14:21</b>, among that day&rsquo;s photos. Info panel: map pin in the Serengeti, iPhone 17 Pro, Telephoto 100&nbsp;mm ƒ2.8.",
+      "points": [
+        "The real capture time of each clip, still and Live Photo",
+        "GPS, camera and lens details carried over",
+        "Choose the time zone for travel footage",
+        "GoPro HiLight and DJI marks come along"
+      ]
+    },
+    "log": {
+      "label": "Shoot Log",
+      "h2": "Leave Log on.<br>Your library still looks right.",
+      "copy": "Log keeps the most from every scene, but it comes out of the camera grey and flat. Grading it used to be an evening&rsquo;s work, so many people simply stopped shooting Log. With Trimly you pick a LUT once and the graded look is saved straight back to the video in Photos. Scroll your library and it already looks like the day you had.",
+      "libraryHead": "Photos · Recents",
+      "libraryAction": "Apply LUT · Apple Log 2 → Rec.&nbsp;709 · 12 videos",
+      "points": [
+        "Choose a LUT and the look is saved to the video in Photos",
+        "The original Log is kept; remove the look any time",
+        "Select a batch on the home screen and grade them together",
+        "Or grade your whole library with one Shortcut",
+        "Clips you export have the look baked in, ready to share",
+        "Built-in Rec.&nbsp;709 LUTs for Apple Log 2, DJI D-Log, GoPro GP-Log and Insta360 I-Log, plus your own .cube files"
+      ]
+    },
+    "devices": {
+      "label": "Every device",
+      "h2": "Start on iPhone. Finish on Mac.<br>Watch it on TV.",
+      "copy": "Mark clips on the way home, pick them up at your desk, then play the highlights for everyone in the living room. iCloud carries your edits, never your footage.",
+      "where": ["on the train", "on the sofa", "at the desk", "with everyone"],
+      "points": [
+        "Edits sync through iCloud; the video stays where it is",
+        "Handoff and a Continue Editing widget",
+        "Shortcuts actions for trimming and exporting",
+        "One purchase covers all four"
+      ]
+    },
+    "bay": {
+      "label": "For enthusiasts · the edit bay",
+      "h2": "For the footage you shot on purpose.",
+      "copy": "HDR, lossless audio, a NAS full of originals, an editor waiting for your selects. The quick tool goes deeper when you need it to.",
+      "items": [
+        { "h": "HDR all the way", "p": "HDR footage stays HDR from import to export." },
+        { "h": "Network originals", "p": "Play and cut straight from SMB or WebDAV shares." },
+        { "h": "Lossless audio", "p": "Keep the original sound, PCM included." },
+        { "h": "Frame-accurate", "p": "Clip edges snap to frames and audio samples." },
+        { "h": "Hand off to your editor", "p": "FCPXML, EDL and SRT export." },
+        { "h": "Automate it", "p": "Shortcuts actions for every step." }
+      ]
+    },
+    "privacy": {
+      "label": "Privacy",
+      "h2": "Your footage never leaves your device.",
+      "copy": "No account, no ads, no tracking. Intelligence runs on Apple&rsquo;s on-device frameworks. iCloud syncs only your edits and LUTs."
+    },
+    "buy": {
+      "label": "Get Trimly",
+      "h2": "One purchase. Four devices.",
+      "items": [
+        { "h": "Requirements", "p": "iOS 18 · iPadOS 18 · macOS 15 · tvOS 18" },
+        { "h": "Price", "p": "Shown from the App Store in your region" },
+        { "h": "Questions", "p": "Does it re-encode? Does it copy my files? Which cameras? See Support." }
+      ]
+    }
+  },
+  "footer": {
+    "tagline": "Memories within reach.",
+    "platforms": "iPhone · iPad · Mac · Apple TV",
+    "purchase": "One purchase. No subscription.",
+    "help": "Help",
+    "support": "Support &amp; FAQ",
+    "changelog": "What&rsquo;s new",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "trademarks": "Trademarks",
+    "notices": "Apple, Apple Log, iPhone, iPad, Mac and Apple TV are trademarks of Apple Inc. GoPro is a trademark of GoPro, Inc. DJI is a trademark of SZ DJI Technology Co., Ltd. Insta360 is a trademark of Arashi Vision Inc. Trimly is developed independently and is not affiliated with, sponsored by, or endorsed by any of these companies. Built-in LUT files are provided to help you process your own footage for personal, non-commercial use only. All trademarks are the property of their respective owners.",
+    "crafted": "Crafted by"
+  },
+  "support": {
+    "title": "Trimly | Support",
+    "description": "Answers to common questions about Trimly, and how to contact us.",
+    "eyebrow": "Support",
+    "h1": "How can we help?",
+    "lede": "Answers to the questions people ask most. If yours isn&rsquo;t here, write to us.",
+    "contactTitle": "Contact",
+    "contactBody": "Send feedback from <b>Settings</b> in Trimly: it attaches the app&rsquo;s log, which helps us see what happened. Or email us directly.",
+    "topicsLabel": "Topics",
+    "groups": [
+      {
+        "id": "start",
+        "title": "Getting started",
+        "items": [
+          { "q": "Which devices does Trimly work on?", "a": "<p>iPhone and iPad with iOS 18 or later, Mac with macOS 15 or later, and Apple TV with tvOS 18 or later. One purchase covers all of them.</p>" },
+          { "q": "Is there a subscription?", "a": "<p>No. Trimly is a one-time purchase on the App Store.</p>" },
+          { "q": "Do I need an account?", "a": "<p>No. There is no sign-in. If you use iCloud, your edits sync through your own iCloud account.</p>" }
+        ]
+      },
+      {
+        "id": "open",
+        "title": "Opening videos",
+        "items": [
+          { "q": "Where can I open videos from?", "a": "<p>Your Photos library, the Files app, external drives, and network shares over SMB or WebDAV. You can also share a video to Trimly from another app, or drag files onto Trimly on Mac and iPad.</p>" },
+          { "q": "Does Trimly make a copy of my video?", "a": "<p>No. Trimly reads the original where it already is, so a long recording never takes up space twice.</p><p>The one exception is a video shared to Trimly from another app on iPhone or iPad. That one is copied, and you can review and delete those copies in <b>Settings&nbsp;▸ Imported Copies</b>.</p>" },
+          { "q": "Which formats can Trimly open?", "a": "<p>Most video and audio files your Apple device can play, such as MOV and MP4 video and common audio formats. Trimly also opens raw PCM recordings; it asks you for the sample format when you open one.</p>" },
+          { "q": "Why is a video from Photos slow to open?", "a": "<p>If the original is stored in iCloud, it has to download first; you can cancel the download at any time. Videos you have edited in Photos can also take a little longer, because Photos prepares the edited version before Trimly can read it.</p>" }
+        ]
+      },
+      {
+        "id": "edit",
+        "title": "Editing",
+        "items": [
+          { "q": "Can I cut several clips from one video?", "a": "<p>Yes, as many as you like. Give each clip a label, and capture stills or Live Photos at any frame.</p>" },
+          { "q": "Can Trimly find the good parts for me?", "a": "<p>Find Clips searches the recording on your device: what was said, sounds such as laughter or music, people and animals, text on screen, highlights, and the beat of the music. GoPro HiLight and DJI highlight marks appear too. You look through what it found and choose what to keep.</p>" }
+        ]
+      },
+      {
+        "id": "export",
+        "title": "Exporting and Photos",
+        "items": [
+          { "q": "Why do my clips show up on the right day in Photos?", "a": "<p>Trimly works out when each clip was really filmed from the original&rsquo;s capture time, and saves it with that time, along with the location, camera and lens details when the original has them.</p>" },
+          { "q": "My travel clips show the wrong time. What can I do?", "a": "<p>Set a time zone shift in Settings, and exported clips are saved with the local time where you filmed. If the camera&rsquo;s own clock was wrong, set the correct capture time for that file, and every clip from it is corrected.</p>" },
+          { "q": "Does exporting reduce quality?", "a": "<p>With transcoding set to <b>Off</b>, Trimly keeps the original picture and sound, and export is almost instant. A LUT, a crop or some rotations need the video to be re-encoded; choose <b>Quality</b>, <b>Balance</b> or <b>Efficiency</b> to trade quality against file size.</p>" },
+          { "q": "Can I take my selects into Final Cut Pro or another editor?", "a": "<p>Yes. Export FCPXML or EDL for your editor, and SRT for subtitles.</p>" }
+        ]
+      },
+      {
+        "id": "log",
+        "title": "LUTs and Log",
+        "items": [
+          { "q": "Which LUTs are built in?", "a": "<p>Rec.&nbsp;709 conversions for Apple Log&nbsp;2, DJI D-Log and D-Log&nbsp;M, GoPro GP-Log and Insta360 I-Log. You can also import your own .cube files, and they sync to your other devices through iCloud.</p>" },
+          { "q": "How do I see my graded Log footage in Photos?", "a": "<p>Open the video from Photos and choose a LUT. With <b>Settings&nbsp;▸ Save LUT to Photos</b> turned on (it is by default), Trimly saves the graded look to that video in Photos. The original Log is kept.</p>" },
+          { "q": "How do I remove the look again?", "a": "<p>Choose <b>No LUT</b> for that video in Trimly. On a Mac you can also use <b>Revert to Original</b> in Photos.</p>" },
+          { "q": "Can I grade many videos at once?", "a": "<p>Select several videos on Trimly&rsquo;s home screen and apply a LUT to all of them. To grade a whole album, use the <b>Save LUT to Photos</b> action in Shortcuts.</p>" },
+          { "q": "Can I apply a LUT inside the Photos app?", "a": "<p>Yes. On iPhone, iPad and Mac, Trimly adds a Photos editing extension that applies a LUT to a video right in Photos, for videos Photos lets you edit. For Log footage, use Save LUT to Photos instead.</p>" }
+        ]
+      },
+      {
+        "id": "sync",
+        "title": "Sync and privacy",
+        "items": [
+          { "q": "What does iCloud sync?", "a": "<p>Your clips, labels and other edits, and your LUT library. The videos themselves are never uploaded.</p>" },
+          { "q": "Can I start on one device and finish on another?", "a": "<p>Yes. Your edits sync through iCloud, and Handoff lets you carry on from the next device. If the other device can reach the same file, through Photos, iCloud Drive or the same NAS, it opens where you left off.</p>" },
+          { "q": "Is my footage analysed in the cloud?", "a": "<p>No. Find Clips and every other analysis runs on your device using Apple&rsquo;s built-in frameworks. See the <a href=\"privacy.html\">Privacy Policy</a>.</p>" }
+        ]
+      },
+      {
+        "id": "network",
+        "title": "NAS and network shares",
+        "items": [
+          { "q": "Can I edit videos stored on my NAS?", "a": "<p>Yes, over SMB or WebDAV. Trimly plays and cuts straight from the share, without downloading the whole file first.</p>" },
+          { "q": "Where are my NAS passwords stored?", "a": "<p>In your device&rsquo;s Keychain.</p>" }
+        ]
+      }
+    ]
+  },
+  "changelog": {
+    "title": "Trimly | What's New",
+    "description": "Every Trimly release, newest first.",
+    "eyebrow": "Changelog",
+    "h1": "What&rsquo;s new in Trimly",
+    "lede": "Every version since the first release, newest first.",
+    "whatsNew": "What&rsquo;s new",
+    "bugFixes": "Bug fixes",
+    "releases": [
+      {
+        "version": "1.8.1",
+        "date": "Oct 2026",
+        "headline": "Widgets, time zones and multi-select",
+        "new": [
+          "Adjust the time zone used for exported files",
+          "Added desktop widgets",
+          "Improved Shortcuts support",
+          "Select multiple files and sort the file list"
+        ],
+        "fixes": [
+          "Fixed an issue where videos imported from Photos could disappear from the library after restarting",
+          "Fixed a crash that could occur when opening PCM audio from a network location",
+          "Refined the interface and improved overall stability"
+        ]
+      },
+      {
+        "version": "1.8",
+        "date": "Oct 2026",
+        "headline": "Camera highlight marks and on-screen text",
+        "new": [
+          "GoPro HiLight and DJI highlight marks appear in Find Clips and on the timeline",
+          "Find Clips can search text that appears on screen",
+          "Transcripts are embedded as subtitle tracks in exported videos",
+          "Spatial audio is kept through rotation and export, with a warning when an export would flatten it",
+          "Capture time and place follow the changes you made in Photos",
+          "Skim through a video by hovering over its filmstrip",
+          "File details show where the file came from and what was exported"
+        ],
+        "fixes": []
+      },
+      {
+        "version": "1.7",
+        "date": "Sep 2026",
+        "headline": "Spotlight",
+        "new": [
+          "Find your Trimly files in Spotlight",
+          "Trimly actions appear in Siri suggestions"
+        ],
+        "fixes": []
+      },
+      {
+        "version": "1.6",
+        "date": "Jul–Sep 2026",
+        "headline": "Apple TV, network shares and Find Clips",
+        "new": [
+          "Trimly on Apple TV",
+          "Open and cut videos on SMB and WebDAV shares",
+          "A new home screen grid, with cassettes for audio and vinyl for lossless files",
+          "Export FCPXML and EDL for your editor",
+          "Find Clips brings together highlights, music analysis, subjects, transcripts and sounds in one place",
+          "Smart thumbnails and automatic clip labels",
+          "Export only the clips you select",
+          "Crop, straighten and correct perspective",
+          "Trim points snap to speech, silence and the beat",
+          "Stickers in Messages"
+        ],
+        "fixes": []
+      },
+      {
+        "version": "1.5",
+        "date": "Jul 2026",
+        "headline": "On-device transcription",
+        "new": [
+          "Transcribe speech and translate it, on device",
+          "Add clips straight from the transcript, and save it as SRT",
+          "Recognise sounds and find subjects",
+          "Clip labels are written to Photos captions",
+          "Long-press to speed up playback, and swipe to change the volume"
+        ],
+        "fixes": []
+      },
+      {
+        "version": "1.4",
+        "date": "Jul 2026",
+        "headline": "Shortcuts",
+        "new": [
+          "Shortcuts actions for trimming and exporting",
+          "Export straight from the file list",
+          "Faster exports on Macs with Max and Ultra chips",
+          "Reveal exported files in Files on iPhone and iPad"
+        ],
+        "fixes": []
+      },
+      {
+        "version": "1.3",
+        "date": "Jun 2026",
+        "headline": "iCloud sync and Handoff",
+        "new": [
+          "Edits and LUTs sync across your devices through iCloud",
+          "Continue on another device with Handoff",
+          "AirPlay to your TV or Mac",
+          "A LUT Manager for all your LUTs",
+          "iPhone landscape layout",
+          "More built-in LUTs, including DJI",
+          "A timeline overview you can drag to move around a long video"
+        ],
+        "fixes": []
+      },
+      {
+        "version": "1.2",
+        "date": "Jun 2026",
+        "headline": "Filmstrip timeline",
+        "new": [
+          "A filmstrip on the timeline, and a timeline you can resize",
+          "Colour bars for every clip",
+          "Haptic feedback while you edit",
+          "Export clips without sound"
+        ],
+        "fixes": []
+      },
+      {
+        "version": "1.1",
+        "date": "Jun 2026",
+        "headline": "Camera LUTs and HDR",
+        "new": [
+          "Built-in LUTs for GoPro, DJI and Insta360",
+          "HDR LUTs, and HDR stills and Live Photos",
+          "Clips keep the original video&rsquo;s metadata",
+          "Save exports to an album in Photos",
+          "Open videos from Photos without making a copy",
+          "Playback speed controls and the share sheet"
+        ],
+        "fixes": []
+      },
+      {
+        "version": "1.0",
+        "date": "Jun 3, 2026",
+        "headline": "First release",
+        "new": [
+          "Cut as many clips as you like from one video",
+          "Capture stills and Live Photos",
+          "Save to Photos or Files",
+          "Waveform timeline with frame-by-frame stepping and undo",
+          "Apple Log LUT and your own .cube files",
+          "Rotation, audio files and raw PCM recordings"
+        ],
+        "fixes": []
+      }
+    ]
+  },
+  "privacyPage": {
+    "title": "Trimly | Privacy Policy",
+    "description": "Trimly collects no data. Your footage stays on your device.",
+    "eyebrow": "Legal",
+    "h1": "Privacy Policy",
+    "updated": "Last updated: July 10, 2026",
+    "facts": [
+      { "h": "No account", "p": "Nothing to sign up for." },
+      { "h": "No tracking", "p": "No analytics, ads or telemetry." },
+      { "h": "On device", "p": "Your footage never leaves it." },
+      { "h": "iCloud: edits only", "p": "Never your videos." }
+    ],
+    "intro": "Trimly processes your media entirely on your device, and your footage stays on your iPhone, iPad, Mac or Apple&nbsp;TV. Edits and LUTs can sync across your Apple devices through iCloud, but video files are never uploaded. This policy explains, in plain terms, what that means for your privacy.",
+    "sections": [
+      { "h": "No data collection", "p": "Trimly does not collect, store, or transmit any personal information. There is no analytics, no tracking, no advertising identifiers, and no telemetry of any kind." },
+      { "h": "iCloud sync", "p": "Trimly has no servers of its own, and it does not connect to any third-party service. The only network activity is iCloud sync: when you turn it on, Apple&rsquo;s iCloud keeps your edits and LUTs in sync across your devices, under Apple&rsquo;s iCloud terms and privacy policy. Video and audio files are never uploaded or synced." },
+      { "h": "Files and Photos access", "p": "When you open media from the Files app, external storage, a network share, or your Photos library, Trimly reads it only so you can trim and export it. All processing happens on your device, and exported clips are saved where you choose. Trimly accesses your Photos library only with your permission: to open the media you select, to save the clips you export, and, when you ask it to, to save a LUT look to a video in your library." },
+      { "h": "Network shares", "p": "When you add an SMB or WebDAV share, Trimly connects only to the address you enter. The password is stored in your device&rsquo;s Keychain." },
+      { "h": "No account, no third-party network access", "p": "Trimly has no account system and no sign-in. Apart from Apple&rsquo;s built-in iCloud sync and the network shares you add, it makes no network connections, and it does not use any analytics service or cloud processing." },
+      { "h": "AI features", "p": "All of Trimly&rsquo;s AI features run on frameworks built into Apple&rsquo;s systems. Trimly doesn&rsquo;t include any third-party AI models, and never will. It doesn&rsquo;t share your data with any third-party AI provider. Everything runs locally on your device, under the same privacy rules that apply to AI features across Apple&rsquo;s systems." },
+      { "h": "Children&rsquo;s privacy", "p": "Because Trimly collects no data at all, it does not knowingly collect information from anyone, including children." },
+      { "h": "Changes to this policy", "p": "If this policy changes, the updated version will be posted on this page with a new date." }
+    ],
+    "contact": "Questions about privacy? Write to"
+  }
+}
