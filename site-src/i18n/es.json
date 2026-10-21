@@ -49,6 +49,7 @@
       "steps": [
         { "h": "Ábrelo donde está", "p": "Desde Fotos, Archivos, un disco externo o tu NAS mediante SMB y WebDAV. Trimly lee el original en su sitio, sin hacer una copia." },
         { "h": "Marca lo que importa", "p": "Arrastra los puntos de entrada y salida, avanza fotograma a fotograma y sigue la forma de onda. Crea todos los clips que quieras, captura una imagen fija o un Live Photo y pon una etiqueta a cada uno." },
+        { "h": "Aprovecha las marcas de la cámara", "p": "Trimly también lee las marcas que añadiste manualmente al grabar con DJI y GoPro." },
         { "h": "Guárdalo en Fotos", "p": "Cada clip vuelve a tu biblioteca con la calidad original, listo para compartir." }
       ]
     },
@@ -67,8 +68,7 @@
       "trimly": "Exportado con Trimly",
       "trimlyDesc": "El mismo clip aparece bajo <b>miércoles, 1 oct 2025 · 14:21</b>, entre las fotos de ese día. Panel de información: chincheta en el mapa del Serengueti, iPhone 17 Pro, teleobjetivo 100&nbsp;mm ƒ2.8.",
       "points": [
-        "Elige la zona horaria para las grabaciones de viaje",
-        "Las marcas GoPro HiLight y DJI se conservan"
+        "Elige la zona horaria para las grabaciones de viaje"
       ]
     },
     "log": {
@@ -81,7 +81,7 @@
         "El Log original se conserva; quita el aspecto cuando quieras",
         "Selecciona varios videos en la pantalla de inicio y corrígelos juntos",
         "Los clips que exportes llevan el aspecto incorporado",
-        "LUTs Rec.&nbsp;709 integrados para Apple Log 2, DJI D-Log, GoPro GP-Log e Insta360 I-Log, además de tus propios archivos .cube"
+        "LUTs integrados para Apple Log 2 y otras marcas de cámaras populares"
       ]
     },
     "devices": {

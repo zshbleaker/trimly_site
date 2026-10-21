@@ -568,7 +568,6 @@ a { color: inherit; }
     text-transform: uppercase;
     letter-spacing: 0.06em;
 }
-.wf-num { font-family: var(--mono); color: var(--ink-2); }
 
 .wf h2 {
     margin-block: 14px 16px;
@@ -610,7 +609,7 @@ a { color: inherit; }
 
 .wf-steps {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 24px;
     margin-block-start: 28px;
 }
@@ -785,8 +784,6 @@ a { color: inherit; }
 }
 .wf-grid b { display: block; color: var(--ink); }
 .wf-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.wf-more { margin-block-start: 16px; font-size: 14px; }
-.wf-more a { text-decoration: underline; text-underline-offset: 3px; }
 
 
 /* The edit bay: the page turns dark, like the app's editor */

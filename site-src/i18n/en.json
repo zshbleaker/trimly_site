@@ -49,6 +49,7 @@
       "steps": [
         { "h": "Open it where it lives", "p": "Photos, Files, an external drive, or your NAS over SMB and WebDAV. Trimly reads the original in place, without making a copy." },
         { "h": "Mark what matters", "p": "Drag in and out points, step frame by frame, follow the waveform. Make as many clips as you like, grab a still or a Live Photo, and give each one a label." },
+        { "h": "Pick up camera marks", "p": "Trimly also reads the marks you added by hand while recording on DJI and GoPro." },
         { "h": "Keep it in Photos", "p": "Each clip goes back to your library at the original quality, ready to share." }
       ]
     },
@@ -67,8 +68,7 @@
       "trimly": "Exported by Trimly",
       "trimlyDesc": "Same clip sits under <b>Wednesday, Oct 1, 2025 · 14:21</b>, among that day&rsquo;s photos. Info panel: map pin in the Serengeti, iPhone 17 Pro, Telephoto 100&nbsp;mm ƒ2.8.",
       "points": [
-        "Choose the time zone for travel footage",
-        "GoPro HiLight and DJI marks come along"
+        "Choose the time zone for travel footage"
       ]
     },
     "log": {
@@ -81,7 +81,7 @@
         "The original Log is kept; remove the look any time",
         "Select a batch on the home screen and grade them together",
         "Clips you export have the look baked in",
-        "Built-in Rec.&nbsp;709 LUTs for Apple Log 2, DJI D-Log, GoPro GP-Log and Insta360 I-Log, plus your own .cube files"
+        "Built-in LUTs for Apple Log 2 and other popular camera brands"
       ]
     },
     "devices": {
