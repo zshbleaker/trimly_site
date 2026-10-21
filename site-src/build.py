@@ -182,9 +182,6 @@ def footer(s, folder, page, root):
             </nav>
         </div>
         <div class="foot-bottom">
-            <nav class="foot-langs" aria-label="{s["common"]["language"]}">
-{lang_links(folder, page, 16)}
-            </nav>
             <p class="foot-legal" id="notices">{f["notices"]}</p>
             <p class="foot-copy">&copy; 2026 Trimly · {f["crafted"]} <a href="https://zshbleaker.me" rel="noopener">@zshbleaker</a></p>
         </div>
