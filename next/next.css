@@ -114,54 +114,84 @@
 @media (prefers-color-scheme: dark) {
     :root {
         color-scheme: dark;
-        --paper: #1b1a17;
-        --paper-deep: #141310;
-        --grid: rgba(255, 240, 210, 0.045);
-        --hairline: rgba(255, 240, 210, 0.022);
-        --ink: #efeae1;
-        --ink-2: #b1a99b;
-        --ink-3: #7f786c;
-        --line: rgba(255, 240, 220, 0.12);
+        /* The app's dark stage: StageBaseTop #182226 → StageBaseBottom #0b1113, cool graphite-teal,
+           with the system label greys (PillText*Dark) for type and the app's stage blooms. */
+        --paper: #11181b;
+        --paper-deep: #0b1113;
+        --grid: rgba(255, 255, 255, 0.03);
+        --hairline: rgba(255, 255, 255, 0.02);
+        --ink: #f2f2f7;
+        --ink-2: #a4a4aa;
+        --ink-3: #6e6e73;
+        --line: rgba(235, 235, 245, 0.14);
         --emboss: 0 -1px 0 rgba(0, 0, 0, 0.5);
-        --bloom-amber: rgba(216, 153, 66, 0.085);
-        --bloom-copper: rgba(215, 144, 103, 0.06);
-        --bloom-sage: rgba(119, 190, 149, 0.04);
-        --bay: #0f1012;
-        --bay-2: #1b1d20;
+        --playhead: #30d158;
+        --bloom-amber: rgba(217, 154, 67, 0.12);
+        --bloom-copper: rgba(216, 145, 104, 0.08);
+        --bloom-sage: rgba(120, 191, 150, 0.055);
+        --bay: #0b1113;
+        --bay-2: #182226;
+        --bay-top: #1f2b30;
+        --bay-ink: #f2f2f7;
+        --bay-ink-2: #8e8e93;
         --print: #ebe6dc;
-        --surface: #242219;
-        --card: #24221d;
-        --card-shade: #1e1c18;
-        --stitch: rgba(255, 236, 200, 0.16);
+        --surface: #1a2529;
+        --card: #1b272b;
+        --card-shade: #141d20;
+        --stitch: rgba(232, 244, 241, 0.16);
         --print-shadow:
             0 1px 1px rgba(0, 0, 0, 0.4),
             0 12px 28px rgba(0, 0, 0, 0.45),
             0 30px 60px rgba(0, 0, 0, 0.3);
         --card-shadow:
-            0 1px 0 rgba(255, 240, 220, 0.07) inset,
+            0 1px 0 rgba(232, 244, 241, 0.08) inset,
             0 -1px 0 rgba(0, 0, 0, 0.3) inset,
             0 1px 2px rgba(0, 0, 0, 0.3),
-            0 14px 32px rgba(0, 0, 0, 0.3);
+            0 14px 32px rgba(0, 0, 0, 0.34);
         --tape: rgba(236, 226, 200, 0.34);
         --tape-stripe: rgba(214, 160, 92, 0.2);
-        --note: #29271f;
+        --note: #1f2b30;
         --note-rule: rgba(120, 160, 230, 0.14);
         --note-margin: rgba(235, 100, 88, 0.35);
-        --note-ink: #cfc6b5;
-        --gel-top: #faf5ea;
-        --gel-mid: #ebe3d3;
-        --gel-low: #e2d8c5;
-        --gel-base: #ddd2be;
-        --gel-edge: #a99c84;
-        --gel-fg: #1b1a17;
+        --note-ink: #d2dad9;
+        /* Cream gel: the app's dark AccentColor #f2ede4 */
+        --gel-top: #faf6ee;
+        --gel-mid: #f2ede4;
+        --gel-low: #e6dfd2;
+        --gel-base: #e0d9cb;
+        --gel-edge: #a9a294;
+        --gel-fg: #11181b;
         --gel-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.55);
         --gel-sheen: rgba(255, 255, 255, 0.35);
-        --pill-top: #3a3833;
-        --pill-low: #282622;
+        /* Primary pill, dark: PillPrimaryTopDark / PillPrimaryBottomDark */
+        --aqua-top: #6cc2f7;
+        --aqua-mid: #47aef3;
+        --aqua-low: #3a8eda;
+        --aqua-base: #47aef3;
+        --aqua-edge: #2a6fbd;
+        /* Secondary pill, dark: PillSurfaceTopDark / PillSurfaceBottomDark */
+        --pill-top: #3a3a3c;
+        --pill-low: #2c2c2e;
         --pill-edge: rgba(0, 0, 0, 0.55);
-        --store-bg: #f3ede3;
-        --store-fg: #1b1a17;
+        --store-bg: #f2ede4;
+        --store-fg: #11181b;
         --grain-opacity: 0.26;
+    }
+
+    /* The stage itself runs top-to-bottom from #182226 to #0b1113 */
+    body {
+        background:
+            radial-gradient(60rem 36rem at 92% -6rem, var(--bloom-amber), transparent 70%),
+            radial-gradient(48rem 40rem at -8% 46rem, var(--bloom-copper), transparent 70%),
+            radial-gradient(50rem 50rem at 100% 120rem, var(--bloom-sage), transparent 70%),
+            repeating-linear-gradient(0deg, var(--hairline) 0 1px, transparent 1px 7px),
+            repeating-linear-gradient(90deg, var(--hairline) 0 1px, transparent 1px 80px),
+            linear-gradient(180deg, #182226, #11181b 40rem, #0b1113);
+    }
+    body::after {
+        background:
+            radial-gradient(ellipse at center, transparent 55%, rgba(0, 0, 0, 0.18) 100%),
+            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .02 0 0 0 0 .04 0 0 0 0 .05 1.6 0 0 0 -.62'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
     }
 }
 
@@ -1180,7 +1210,7 @@ a { color: inherit; }
     border-radius: 8px;
     background:
         repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 2.4%),
-        linear-gradient(180deg, #2c2f34, var(--bay));
+        linear-gradient(180deg, var(--bay-top, #2c2f34), var(--bay));
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35) inset, 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 .wf-mini-track i {
@@ -1198,7 +1228,7 @@ a { color: inherit; }
     position: relative;
     height: 64px;
     border-radius: 10px;
-    background: linear-gradient(180deg, #2c2f34, var(--bay));
+    background: linear-gradient(180deg, var(--bay-top, #2c2f34), var(--bay));
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35) inset, 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 .wf-shift-track .seg {
@@ -1461,6 +1491,15 @@ a { color: inherit; }
         var(--bay);
     color: var(--ink);
     margin-block: 24px;
+}
+@media (prefers-color-scheme: dark) {
+    .wf-bay {
+        --ink-3: #6e6e73;
+        --card: #1f2b30;
+        --card-shade: #182226;
+        --note: #1c272b;
+        --note-ink: #c9d2d1;
+    }
 }
 .wf-bay::before,
 .wf-bay::after {
