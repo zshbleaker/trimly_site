@@ -601,8 +601,7 @@ a { color: inherit; }
 .wf-note b { color: var(--ink-2); }
 
 .wf-devices > div,
-.wf-grid3 > div,
-.wf-buy > div {
+.wf-grid > div {
     padding: 14px;
     border-radius: 10px;
     background: color-mix(in srgb, var(--paper) 70%, transparent);
@@ -686,29 +685,33 @@ a { color: inherit; }
 .wf-shift-row p b { display: block; font-size: 14px; }
 .wf-shift-track {
     position: relative;
-    height: 52px;
+    height: 64px;
     border-radius: 10px;
     background: var(--bay);
 }
 .wf-shift-track .seg {
     position: absolute;
     top: 7px;
-    height: 22px;
+    height: 30px;
     left: calc(var(--a) * 100%);
     width: calc((var(--b) - var(--a)) * 100%);
     border-radius: 4px;
     background: repeating-linear-gradient(90deg, #5d5a55 0 14px, #4b4945 14px 15px);
 }
 .wf-shift-track .seg-full {
-    background-image:
-        url("img/strip-02.webp"), url("img/strip-07.webp"), url("img/strip-09.webp"),
-        url("img/strip-13.webp"), url("img/strip-16.webp");
-    background-size: 20% 100%;
-    background-position: 0 0, 25% 0, 50% 0, 75% 0, 100% 0;
-    background-repeat: no-repeat;
+    display: flex;
+    overflow: hidden;
+    background: var(--bay-2);
+}
+.wf-shift-track .seg-full img {
+    flex: 1 1 0;
+    min-width: 0;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0.85) brightness(0.92);
 }
 .wf-shift-track i {
-    top: 34px;
+    top: 44px;
     left: calc(var(--a) * 100%);
     width: calc((var(--b) - var(--a)) * 100%);
 }
@@ -772,17 +775,19 @@ a { color: inherit; }
 .wf-devices > div { min-height: 140px; font-weight: 650; color: var(--ink); }
 .wf-devices small { display: block; font-weight: 400; color: var(--ink-3); }
 
-.wf-grid3 {
+.wf-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
     margin-block-start: 20px;
     font-size: 14px;
     color: var(--ink-2);
 }
-.wf-grid3 b { display: block; color: var(--ink); }
+.wf-grid b { display: block; color: var(--ink); }
+.wf-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.wf-more { margin-block-start: 16px; font-size: 14px; }
+.wf-more a { text-decoration: underline; text-underline-offset: 3px; }
 
-.wf-buy { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 
 /* The edit bay: the page turns dark, like the app's editor */
 
@@ -801,12 +806,12 @@ a { color: inherit; }
 
 @media (max-width: 860px) {
     .wf { padding-inline-start: 22px; }
-    .wf-steps, .wf-compare, .wf-buy { grid-template-columns: 1fr; }
+    .wf-steps, .wf-compare { grid-template-columns: 1fr; }
     .wf-devices { grid-template-columns: repeat(2, 1fr); }
-    .wf-grid3 { grid-template-columns: 1fr; }
+    .wf-grid { grid-template-columns: 1fr; }
     .wf-points { grid-template-columns: 1fr; }
     .wf-shift-row { grid-template-columns: 1fr; gap: 8px; }
-    .wf-library-grid { grid-template-columns: repeat(4, 1fr); }
+    .wf-shift-track .seg-full img:nth-child(even) { display: none; }
 }
 
 /* ---------- Footer ---------- */

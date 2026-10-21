@@ -161,7 +161,7 @@ def footer(s, folder, page, root):
                 </a>
                 <p class="foot-tagline">{f["tagline"]}</p>
                 <a class="btn-store btn-small" href="{STORE}">{APPLE_LOGO}<span>{s["common"]["downloadOnAppStore"]}</span></a>
-                <p class="foot-platforms">{f["platforms"]}<br>{f["purchase"]}</p>
+                <p class="foot-platforms">{f["platforms"]}</p>
             </div>
             <nav class="foot-cols" aria-label="Footer">
                 <div>

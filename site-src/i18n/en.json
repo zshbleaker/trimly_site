@@ -41,12 +41,6 @@
       "beforeSub": "Press record when something happens",
       "after": "With Trimly",
       "afterSub": "Record it all, keep the best",
-      "points": [
-        "Hour-long recordings open straight from Photos, a drive or your NAS, without a copy",
-        "Find Clips listens and looks for the good parts for you",
-        "Cut as many clips as you like from one recording",
-        "Keep the clips; the long original stays where it is"
-      ],
       "scenes": ["Travel days", "Live shows", "Parties", "Outdoors", "Family"]
     },
     "how": {
@@ -55,7 +49,7 @@
       "steps": [
         { "h": "Open it where it lives", "p": "Photos, Files, an external drive, or your NAS over SMB and WebDAV. Trimly reads the original in place, without making a copy." },
         { "h": "Mark what matters", "p": "Drag in and out points, step frame by frame, follow the waveform. Make as many clips as you like, grab a still or a Live Photo, and give each one a label." },
-        { "h": "Keep it in Photos", "p": "Each clip goes back to your library at the original quality, HDR included, ready to share." }
+        { "h": "Keep it in Photos", "p": "Each clip goes back to your library at the original quality, ready to share." }
       ]
     },
     "find": {
@@ -73,8 +67,6 @@
       "trimly": "Exported by Trimly",
       "trimlyDesc": "Same clip sits under <b>Wednesday, Oct 1, 2025 · 14:21</b>, among that day&rsquo;s photos. Info panel: map pin in the Serengeti, iPhone 17 Pro, Telephoto 100&nbsp;mm ƒ2.8.",
       "points": [
-        "The real capture time of each clip, still and Live Photo",
-        "GPS, camera and lens details carried over",
         "Choose the time zone for travel footage",
         "GoPro HiLight and DJI marks come along"
       ]
@@ -84,13 +76,11 @@
       "h2": "Leave Log on.<br>Your library still looks right.",
       "copy": "Log keeps the most from every scene, but it comes out of the camera grey and flat. Grading it used to be an evening&rsquo;s work, so many people simply stopped shooting Log. With Trimly you pick a LUT once and the graded look is saved straight back to the video in Photos. Scroll your library and it already looks like the day you had.",
       "libraryHead": "Photos · Recents",
-      "libraryAction": "Apply LUT · Apple Log 2 → Rec.&nbsp;709 · 12 videos",
+      "libraryAction": "Apply LUT · Apple Log 2 → Rec.&nbsp;709 · 6 videos",
       "points": [
-        "Choose a LUT and the look is saved to the video in Photos",
         "The original Log is kept; remove the look any time",
         "Select a batch on the home screen and grade them together",
-        "Or grade your whole library with one Shortcut",
-        "Clips you export have the look baked in, ready to share",
+        "Clips you export have the look baked in",
         "Built-in Rec.&nbsp;709 LUTs for Apple Log 2, DJI D-Log, GoPro GP-Log and Insta360 I-Log, plus your own .cube files"
       ]
     },
@@ -100,10 +90,8 @@
       "copy": "Mark clips on the way home, pick them up at your desk, then play the highlights for everyone in the living room. iCloud carries your edits, never your footage.",
       "where": ["on the train", "on the sofa", "at the desk", "with everyone"],
       "points": [
-        "Edits sync through iCloud; the video stays where it is",
         "Handoff and a Continue Editing widget",
-        "Shortcuts actions for trimming and exporting",
-        "One purchase covers all four"
+        "Shortcuts actions for trimming and exporting"
       ]
     },
     "bay": {
@@ -112,34 +100,22 @@
       "copy": "HDR, lossless audio, a NAS full of originals, an editor waiting for your selects. The quick tool goes deeper when you need it to.",
       "items": [
         { "h": "HDR all the way", "p": "HDR footage stays HDR from import to export." },
-        { "h": "Network originals", "p": "Play and cut straight from SMB or WebDAV shares." },
         { "h": "Lossless audio", "p": "Keep the original sound, PCM included." },
         { "h": "Frame-accurate", "p": "Clip edges snap to frames and audio samples." },
-        { "h": "Hand off to your editor", "p": "FCPXML, EDL and SRT export." },
-        { "h": "Automate it", "p": "Shortcuts actions for every step." }
+        { "h": "Hand off to your editor", "p": "FCPXML, EDL and SRT export." }
       ]
     },
     "privacy": {
       "label": "Privacy",
       "h2": "Your footage never leaves your device.",
-      "copy": "No account, no ads, no tracking. Intelligence runs on Apple&rsquo;s on-device frameworks. iCloud syncs only your edits and LUTs."
-    },
-    "buy": {
-      "label": "Get Trimly",
-      "h2": "One purchase. Four devices.",
-      "items": [
-        { "h": "Requirements", "p": "iOS 18 · iPadOS 18 · macOS 15 · tvOS 18" },
-        { "h": "Price", "p": "Shown from the App Store in your region" },
-        { "h": "Questions", "p": "Does it re-encode? Does it copy my files? Which cameras? See Support." }
-      ]
+      "copy": "Trimly has no servers of its own. It reaches out only to the network shares you add and to Apple&rsquo;s iCloud, and its smart features use frameworks built into Apple&rsquo;s systems, never a third-party AI. It asks for Photos access only to open what you pick and save what you export, and keeps share passwords in your Keychain."
     }
   },
   "footer": {
     "tagline": "Memories within reach.",
     "platforms": "iPhone · iPad · Mac · Apple TV",
-    "purchase": "One purchase. No subscription.",
     "help": "Help",
-    "support": "Support &amp; FAQ",
+    "support": "Support",
     "changelog": "What&rsquo;s new",
     "contact": "Contact",
     "legal": "Legal",

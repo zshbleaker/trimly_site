@@ -41,12 +41,6 @@
       "beforeSub": "Pulsa grabar cuando pase algo",
       "after": "Con Trimly",
       "afterSub": "Graba todo, quédate con lo mejor",
-      "points": [
-        "Las grabaciones de una hora se abren directamente desde Fotos, un disco o tu NAS, sin hacer copias",
-        "Encontrar clips escucha y busca los buenos momentos por ti",
-        "Recorta todos los clips que quieras de una misma grabación",
-        "Conserva los clips; el original largo se queda donde está"
-      ],
       "scenes": ["Días de viaje", "Conciertos", "Fiestas", "Aire libre", "Familia"]
     },
     "how": {
@@ -55,7 +49,7 @@
       "steps": [
         { "h": "Ábrelo donde está", "p": "Desde Fotos, Archivos, un disco externo o tu NAS mediante SMB y WebDAV. Trimly lee el original en su sitio, sin hacer una copia." },
         { "h": "Marca lo que importa", "p": "Arrastra los puntos de entrada y salida, avanza fotograma a fotograma y sigue la forma de onda. Crea todos los clips que quieras, captura una imagen fija o un Live Photo y pon una etiqueta a cada uno." },
-        { "h": "Guárdalo en Fotos", "p": "Cada clip vuelve a tu biblioteca con la calidad original, incluido HDR, listo para compartir." }
+        { "h": "Guárdalo en Fotos", "p": "Cada clip vuelve a tu biblioteca con la calidad original, listo para compartir." }
       ]
     },
     "find": {
@@ -73,8 +67,6 @@
       "trimly": "Exportado con Trimly",
       "trimlyDesc": "El mismo clip aparece bajo <b>miércoles, 1 oct 2025 · 14:21</b>, entre las fotos de ese día. Panel de información: chincheta en el mapa del Serengueti, iPhone 17 Pro, teleobjetivo 100&nbsp;mm ƒ2.8.",
       "points": [
-        "La hora real de captura de cada clip, en imágenes fijas y Live Photos",
-        "Datos de GPS, cámara y objetivo conservados",
         "Elige la zona horaria para las grabaciones de viaje",
         "Las marcas GoPro HiLight y DJI se conservan"
       ]
@@ -84,13 +76,11 @@
       "h2": "Graba en Log.<br>Tu biblioteca seguirá viéndose bien.",
       "copy": "Log conserva la mayor parte de cada escena, pero sale de la cámara gris y plano. Retocarlo solía llevar una tarde entera, así que mucha gente dejó de grabar en Log. Con Trimly eliges un LUT una vez y el aspecto corregido se guarda directamente en el video de Fotos. Desliza por tu biblioteca y ya se ve como el día que viviste.",
       "libraryHead": "Fotos · Recientes",
-      "libraryAction": "Aplicar LUT · Apple Log 2 → Rec.&nbsp;709 · 12 videos",
+      "libraryAction": "Aplicar LUT · Apple Log 2 → Rec.&nbsp;709 · 6 videos",
       "points": [
-        "Elige un LUT y el aspecto se guarda en el video de Fotos",
         "El Log original se conserva; quita el aspecto cuando quieras",
         "Selecciona varios videos en la pantalla de inicio y corrígelos juntos",
-        "O corrige toda tu biblioteca con un solo atajo",
-        "Los clips que exportes llevan el aspecto incorporado, listos para compartir",
+        "Los clips que exportes llevan el aspecto incorporado",
         "LUTs Rec.&nbsp;709 integrados para Apple Log 2, DJI D-Log, GoPro GP-Log e Insta360 I-Log, además de tus propios archivos .cube"
       ]
     },
@@ -100,10 +90,8 @@
       "copy": "Marca clips de camino a casa, retómalos en tu escritorio y luego reproduce los momentos destacados para todos en el salón. iCloud lleva tus ediciones, nunca tu metraje.",
       "where": ["en el tren", "en el sofá", "en el escritorio", "con todos"],
       "points": [
-        "Las ediciones se sincronizan con iCloud; el video se queda donde está",
         "Handoff y un widget de Seguir editando",
-        "Acciones de Atajos para recortar y exportar",
-        "Una sola compra cubre los cuatro"
+        "Acciones de Atajos para recortar y exportar"
       ]
     },
     "bay": {
@@ -112,34 +100,22 @@
       "copy": "HDR, audio sin pérdida, un NAS lleno de originales, un editor esperando tus selecciones. La herramienta rápida llega más lejos cuando la necesitas.",
       "items": [
         { "h": "HDR de principio a fin", "p": "El metraje HDR se mantiene en HDR desde la importación hasta la exportación." },
-        { "h": "Originales en red", "p": "Reproduce y corta directamente desde recursos compartidos SMB o WebDAV." },
         { "h": "Audio sin pérdida", "p": "Conserva el sonido original, incluido PCM." },
         { "h": "Precisión de fotograma", "p": "Los bordes de los clips se ajustan a fotogramas y muestras de audio." },
-        { "h": "Entrega a tu editor", "p": "Exportación FCPXML, EDL y SRT." },
-        { "h": "Automatízalo", "p": "Acciones de Atajos para cada paso." }
+        { "h": "Entrega a tu editor", "p": "Exportación FCPXML, EDL y SRT." }
       ]
     },
     "privacy": {
       "label": "Privacidad",
       "h2": "Tu metraje nunca sale de tu dispositivo.",
-      "copy": "Sin cuenta, sin anuncios, sin seguimiento. La inteligencia funciona con los frameworks de Apple en el dispositivo. iCloud sincroniza solo tus ediciones y LUTs."
-    },
-    "buy": {
-      "label": "Obtener Trimly",
-      "h2": "Una compra. Cuatro dispositivos.",
-      "items": [
-        { "h": "Requisitos", "p": "iOS 18 · iPadOS 18 · macOS 15 · tvOS 18" },
-        { "h": "Precio", "p": "Se muestra desde el App Store según tu región" },
-        { "h": "Preguntas", "p": "¿Vuelve a codificar? ¿Copia mis archivos? ¿Qué cámaras son compatibles? Consulta Soporte." }
-      ]
+      "copy": "Trimly no tiene servidores propios. Solo se conecta a los recursos compartidos de red que añades y al iCloud de Apple, y sus funciones inteligentes usan frameworks integrados en los sistemas de Apple, nunca una IA de terceros. Pide acceso a Fotos solo para abrir lo que eliges y guardar lo que exportas, y guarda las contraseñas de los recursos compartidos en tu llavero."
     }
   },
   "footer": {
     "tagline": "Recuerdos al alcance de la mano.",
     "platforms": "iPhone · iPad · Mac · Apple TV",
-    "purchase": "Una compra. Sin suscripción.",
     "help": "Ayuda",
-    "support": "Soporte y preguntas frecuentes",
+    "support": "Soporte",
     "changelog": "Novedades",
     "contact": "Contacto",
     "legal": "Legal",
